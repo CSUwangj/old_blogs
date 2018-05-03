@@ -1,0 +1,879 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next mist use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.2" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="Misc,Crypto,CTF,Web,Rev,PWN," />
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="LuckyBlog" type="application/atom+xml" />
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.2" />
+
+
+
+
+
+
+<meta name="description" content="第一周难度还是挺温柔，居然让我AK了，好开心呀 对了，这篇是先在本地生成的，周日才传上博客的。">
+<meta name="keywords" content="Misc,Crypto,CTF,Web,Rev,PWN">
+<meta property="og:type" content="article">
+<meta property="og:title" content="HGAME2018-week1WP">
+<meta property="og:url" content="http://yoursite.com/2018/02/08/HGAME2018-week1WP/index.html">
+<meta property="og:site_name" content="LuckyBlog">
+<meta property="og:description" content="第一周难度还是挺温柔，居然让我AK了，好开心呀 对了，这篇是先在本地生成的，周日才传上博客的。">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="http://yoursite.com/2018/02/08/HGAME2018-week1WP/snipaste20180205_010720.png">
+<meta property="og:image" content="http://yoursite.com/2018/02/08/HGAME2018-week1WP/snipaste20180205_010751.png">
+<meta property="og:image" content="http://yoursite.com/2018/02/08/HGAME2018-week1WP/snipaste20180205_215726.png">
+<meta property="og:image" content="http://yoursite.com/2018/02/08/HGAME2018-week1WP/snipaste20180205_215734.png">
+<meta property="og:image" content="http://yoursite.com/2018/02/08/HGAME2018-week1WP/snipaste20180205_215746.png">
+<meta property="og:image" content="http://yoursite.com/2018/02/08/HGAME2018-week1WP/snipaste20180204_201235.png">
+<meta property="og:image" content="http://yoursite.com/2018/02/08/HGAME2018-week1WP/snipaste20180208_104340.png">
+<meta property="og:image" content="http://yoursite.com/2018/02/08/HGAME2018-week1WP/snipaste20180204_201018.png">
+<meta property="og:image" content="http://yoursite.com/2018/02/08/HGAME2018-week1WP/snipaste20180204_202350.png">
+<meta property="og:image" content="http://yoursite.com/2018/02/08/HGAME2018-week1WP/snipaste20180204_231047.png">
+<meta property="og:image" content="http://yoursite.com/2018/02/08/HGAME2018-week1WP/snipaste20180204_230513.png">
+<meta property="og:image" content="http://yoursite.com/2018/02/08/HGAME2018-week1WP/snipaste20180205_110549.png">
+<meta property="og:image" content="http://yoursite.com/2018/02/08/HGAME2018-week1WP/snipaste20180205_110559.png">
+<meta property="og:image" content="http://yoursite.com/2018/02/08/HGAME2018-week1WP/snipaste20180204_233230.png">
+<meta property="og:image" content="http://yoursite.com/2018/02/08/HGAME2018-week1WP/snipaste20180207_222045.png">
+<meta property="og:image" content="http://yoursite.com/2018/02/08/HGAME2018-week1WP/snipaste20180207_221248.png">
+<meta property="og:image" content="http://yoursite.com/2018/02/08/HGAME2018-week1WP/snipaste20180207_220202.png">
+<meta property="og:image" content="http://yoursite.com/2018/02/08/HGAME2018-week1WP/snipaste20180205_012851.png">
+<meta property="og:image" content="http://yoursite.com/2018/02/08/HGAME2018-week1WP/snipaste20180205_013254.png">
+<meta property="og:image" content="http://yoursite.com/2018/02/08/HGAME2018-week1WP/snipaste20180204_230153.png">
+<meta property="og:image" content="http://yoursite.com/2018/02/08/HGAME2018-week1WP/snipaste20180204_225419.png">
+<meta property="og:image" content="http://yoursite.com/2018/02/08/HGAME2018-week1WP/snipaste20180204_225549.png">
+<meta property="og:image" content="http://yoursite.com/2018/02/08/HGAME2018-week1WP/snipaste20180204_221038.png">
+<meta property="og:image" content="http://yoursite.com/2018/02/08/HGAME2018-week1WP/snipaste20180204_211631.png">
+<meta property="og:image" content="http://yoursite.com/2018/02/08/HGAME2018-week1WP/snipaste20180204_211959.png">
+<meta property="og:image" content="http://yoursite.com/2018/02/08/HGAME2018-week1WP/snipaste20180204_212008.png">
+<meta property="og:image" content="http://yoursite.com/2018/02/08/HGAME2018-week1WP/snipaste20180204_212027.png">
+<meta property="og:updated_time" content="2018-02-11T17:24:03.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="HGAME2018-week1WP">
+<meta name="twitter:description" content="第一周难度还是挺温柔，居然让我AK了，好开心呀 对了，这篇是先在本地生成的，周日才传上博客的。">
+<meta name="twitter:image" content="http://yoursite.com/2018/02/08/HGAME2018-week1WP/snipaste20180205_010720.png">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Mist',
+    sidebar: {"position":"left","display":"post","offset":12,"offset_float":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: true,
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+
+
+
+
+  <title>HGAME2018-week1WP | LuckyBlog</title>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">LuckyBlog</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">LuckDog</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/02/08/HGAME2018-week1WP/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="CSUwangj">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="LuckyBlog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">HGAME2018-week1WP</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-02-08T10:17:34+08:00">
+                2018-02-08
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/WriteUp/" itemprop="url" rel="index">
+                    <span itemprop="name">WriteUp</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>第一周难度还是挺温柔，居然让我AK了，好开心呀</p>
+<p>对了，这篇是先在本地生成的，周日才传上博客的。</p>
+<a id="more"></a>
+<h1 id="Web"><a href="#Web" class="headerlink" title="Web"></a>Web</h1><h2 id="Are-you-from-Europe"><a href="#Are-you-from-Europe" class="headerlink" title="Are you from Europe?"></a>Are you from Europe?</h2><p>第一次做这种题，还学到了一点浏览器console的用法……<br>直接看源码，最开始发现在F12的console里输入quartz +=100000000有用<br>然后很开心地抽卡，抽了半天感觉不对，仔细看了下概率……淦哦我是不是傻</p>
+<p>翻到最底下有个函数，看着就是和flag有关的样子<br><img src="/2018/02/08/HGAME2018-week1WP/snipaste20180205_010720.png" title="Are_you_from_Europe?1"><br>代码美化一哈<br><img src="/2018/02/08/HGAME2018-week1WP/snipaste20180205_010751.png" title="Are_you_from_Europe?2"></p>
+<h2 id="special-number"><a href="#special-number" class="headerlink" title="special number"></a>special number</h2><p>源码已经放了出来<br><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">include_once</span>(<span class="string">"flag.php"</span>);</span><br><span class="line"><span class="keyword">if</span>(<span class="keyword">isset</span>($_GET[<span class="string">'key'</span>]))&#123;</span><br><span class="line">    $pattern = <span class="string">'/^(?=.*[0-9].*)(?=.*[a-zA-Z].*).&#123;7,&#125;$/ '</span>;</span><br><span class="line">    $key = $_GET[<span class="string">'key'</span>];</span><br><span class="line">    <span class="keyword">if</span>(preg_match($pattern,$key)===<span class="number">0</span>)&#123;</span><br><span class="line">        <span class="keyword">echo</span> <span class="string">"格式错误"</span>;</span><br><span class="line">    &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">        $lock=<span class="string">"******************"</span>;</span><br><span class="line">        $b = json_decode($key);</span><br><span class="line">        <span class="keyword">if</span>($b==$lock)</span><br><span class="line">            <span class="keyword">echo</span> $flag;</span><br><span class="line">        <span class="keyword">else</span></span><br><span class="line">            <span class="keyword">echo</span> <span class="string">"this is no special number"</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>这个题的考点就是PHP弱类型中0==string这个情况（PHP混乱邪恶无疑<br>就是要让json_decode出来的结果是0，于是在沙盒<a href="http://sandbox.onlinephpfunctions[.]com/里实验出了结果" target="_blank" rel="noopener">http://sandbox.onlinephpfunctions[.]com/里实验出了结果</a><br><img src="/2018/02/08/HGAME2018-week1WP/snipaste20180205_215726.png" title="special_number1"><br>然后去原网页的时候还失败了一次……<br><img src="/2018/02/08/HGAME2018-week1WP/snipaste20180205_215734.png" title="special_number2"><br>因为传入的时候会再加对引号……<br><img src="/2018/02/08/HGAME2018-week1WP/snipaste20180205_215746.png" title="special_number3"><br>这里必须感谢一下飘零大大指点的，一开始光想着怎么绕过正则，反而偏离了正轨<br>顺便正则的效果大概是需要传入的字符串既有数字又有字母长度大于6就行</p>
+<h2 id="can-u-find-me"><a href="#can-u-find-me" class="headerlink" title="can u find me?"></a>can u find me?</h2><blockquote>
+<p>Description<br>only robot know where is the flag</p>
+</blockquote>
+<p>那当然是robots.txt啦，这不是送？<br><img src="/2018/02/08/HGAME2018-week1WP/snipaste20180204_201235.png" title="can_u_find_me?1"><br>直接访问看到<br><img src="/2018/02/08/HGAME2018-week1WP/snipaste20180208_104340.png" title="can_u_find_me?2"><br>抓包看看，发现Cookie里有个user=<br>补上，发出，得flag<br><img src="/2018/02/08/HGAME2018-week1WP/snipaste20180204_201018.png" title="can_u_find_me?3"></p>
+<h2 id="tell-me-what-you-want"><a href="#tell-me-what-you-want" class="headerlink" title="tell me what you want"></a>tell me what you want</h2><p>这个题就是纯练改HTTP头的<br>点进去问你想要啥，你输flag告诉你用POST更好，然后之后每改一次都会告诉你新的要改的地方，全改完得到flag<br><img src="/2018/02/08/HGAME2018-week1WP/snipaste20180204_202350.png" title="tell_me_what_you_want"></p>
+<h2 id="我们不一样"><a href="#我们不一样" class="headerlink" title="我们不一样"></a>我们不一样</h2><p>还是源码放出，还是弱类型<br><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">include_once</span>(<span class="string">"flag.php"</span>);</span><br><span class="line"><span class="keyword">if</span> (<span class="keyword">isset</span>($_POST[<span class="string">'str1'</span>]) &amp;&amp; <span class="keyword">isset</span>($_POST[<span class="string">'str2'</span>])) &#123;</span><br><span class="line"></span><br><span class="line">	<span class="keyword">if</span> ($_POST[<span class="string">'str1'</span>] != $_POST[<span class="string">'str2'</span>] &amp;&amp; strcmp($_POST[<span class="string">'str1'</span>], $_POST[<span class="string">'str2'</span>]) == <span class="number">0</span>) &#123;</span><br><span class="line">		<span class="keyword">echo</span> <span class="string">"flag is:"</span>.$flag;</span><br><span class="line">		<span class="keyword">exit</span>();</span><br><span class="line">	&#125; <span class="keyword">else</span> &#123;</span><br><span class="line">		<span class="keyword">echo</span> <span class="string">"Something wrong.."</span>;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>这里的弱类型在于string和非string的strcmp返回0，而array!=string成立<br><img src="/2018/02/08/HGAME2018-week1WP/snipaste20180204_231047.png" title="我们不一样"></p>
+<h1 id="Rev"><a href="#Rev" class="headerlink" title="Rev"></a>Rev</h1><h2 id="re0"><a href="#re0" class="headerlink" title="re0"></a>re0</h2><p>拖进IDA，F5出flag<br><img src="/2018/02/08/HGAME2018-week1WP/snipaste20180204_230513.png" title="re0"></p>
+<h2 id="baby-crack"><a href="#baby-crack" class="headerlink" title="baby_crack"></a>baby_crack</h2><p>拖进IDA，F5，读代码。发现对操作做了这样的操作：</p>
+<ul>
+<li>按位置进行循环移位</li>
+<li>将输入的每个通过一个映射转到另一个<img src="/2018/02/08/HGAME2018-week1WP/snipaste20180205_110549.png" title="baby_crack2"></li>
+<li>进行几轮交换<img src="/2018/02/08/HGAME2018-week1WP/snipaste20180205_110559.png" title="baby_crack3"></li>
+<li>与flag进行同意操作得到的结果进行比较<br>于是写出反着来的操作<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//baby1.cpp</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="keyword">int</span> indx[]=&#123;<span class="number">17</span>,<span class="number">191</span>,<span class="number">186</span>,<span class="number">15</span>,<span class="number">213</span>,<span class="number">204</span>,<span class="number">188</span>,<span class="number">30</span>,<span class="number">25</span>,<span class="number">1</span>,<span class="number">135</span>,<span class="number">27</span>,<span class="number">150</span>,<span class="number">195</span>,<span class="number">134</span>,<span class="number">26</span>,<span class="number">126</span>,<span class="number">107</span>,<span class="number">90</span>,<span class="number">141</span>,<span class="number">251</span>,<span class="number">194</span>,<span class="number">139</span>,<span class="number">179</span>,<span class="number">177</span>,<span class="number">221</span>,<span class="number">239</span>,<span class="number">10</span>,<span class="number">75</span>,<span class="number">248</span>,<span class="number">85</span>,<span class="number">38</span>,<span class="number">118</span>,<span class="number">171</span>,<span class="number">193</span>,<span class="number">100</span>,<span class="number">23</span>,<span class="number">201</span>,<span class="number">175</span>,<span class="number">97</span>,<span class="number">103</span>,<span class="number">74</span>,<span class="number">202</span>,<span class="number">18</span>,<span class="number">36</span>,<span class="number">225</span>,<span class="number">174</span>,<span class="number">80</span>,<span class="number">58</span>,<span class="number">112</span>,<span class="number">55</span>,<span class="number">237</span>,<span class="number">224</span>,<span class="number">119</span>,<span class="number">183</span>,<span class="number">46</span>,<span class="number">161</span>,<span class="number">45</span>,<span class="number">50</span>,<span class="number">123</span>,<span class="number">137</span>,<span class="number">207</span>,<span class="number">240</span>,<span class="number">148</span>,<span class="number">33</span>,<span class="number">101</span>,<span class="number">11</span>,<span class="number">63</span>,<span class="number">125</span>,<span class="number">41</span>,<span class="number">59</span>,<span class="number">5</span>,<span class="number">81</span>,<span class="number">231</span>,<span class="number">129</span>,<span class="number">110</span>,<span class="number">51</span>,<span class="number">198</span>,<span class="number">215</span>,<span class="number">172</span>,<span class="number">60</span>,<span class="number">154</span>,<span class="number">34</span>,<span class="number">220</span>,<span class="number">122</span>,<span class="number">8</span>,<span class="number">106</span>,<span class="number">151</span>,<span class="number">241</span>,<span class="number">95</span>,<span class="number">142</span>,<span class="number">98</span>,<span class="number">111</span>,<span class="number">19</span>,<span class="number">138</span>,<span class="number">130</span>,<span class="number">140</span>,<span class="number">42</span>,<span class="number">73</span>,<span class="number">57</span>,<span class="number">24</span>,<span class="number">104</span>,<span class="number">208</span>,<span class="number">131</span>,<span class="number">180</span>,<span class="number">66</span>,<span class="number">54</span>,<span class="number">113</span>,<span class="number">12</span>,<span class="number">87</span>,<span class="number">16</span>,<span class="number">243</span>,<span class="number">40</span>,<span class="number">212</span>,<span class="number">52</span>,<span class="number">14</span>,<span class="number">228</span>,<span class="number">255</span>,<span class="number">6</span>,<span class="number">173</span>,<span class="number">92</span>,<span class="number">252</span>,<span class="number">219</span>,<span class="number">222</span>,<span class="number">218</span>,<span class="number">159</span>,<span class="number">234</span>,<span class="number">53</span>,<span class="number">94</span>,<span class="number">120</span>,<span class="number">82</span>,<span class="number">217</span>,<span class="number">79</span>,<span class="number">109</span>,<span class="number">187</span>,<span class="number">168</span>,<span class="number">176</span>,<span class="number">21</span>,<span class="number">67</span>,<span class="number">144</span>,<span class="number">37</span>,<span class="number">166</span>,<span class="number">84</span>,<span class="number">254</span>,<span class="number">13</span>,<span class="number">235</span>,<span class="number">169</span>,<span class="number">253</span>,<span class="number">233</span>,<span class="number">93</span>,<span class="number">22</span>,<span class="number">203</span>,<span class="number">47</span>,<span class="number">78</span>,<span class="number">189</span>,<span class="number">197</span>,<span class="number">9</span>,<span class="number">70</span>,<span class="number">247</span>,<span class="number">192</span>,<span class="number">31</span>,<span class="number">89</span>,<span class="number">211</span>,<span class="number">2</span>,<span class="number">35</span>,<span class="number">157</span>,<span class="number">96</span>,<span class="number">4</span>,<span class="number">132</span>,<span class="number">246</span>,<span class="number">164</span>,<span class="number">29</span>,<span class="number">49</span>,<span class="number">76</span>,<span class="number">200</span>,<span class="number">155</span>,<span class="number">199</span>,<span class="number">223</span>,<span class="number">102</span>,<span class="number">44</span>,<span class="number">236</span>,<span class="number">121</span>,<span class="number">115</span>,<span class="number">48</span>,<span class="number">105</span>,<span class="number">99</span>,<span class="number">149</span>,<span class="number">214</span>,<span class="number">190</span>,<span class="number">68</span>,<span class="number">232</span>,<span class="number">165</span>,<span class="number">242</span>,<span class="number">153</span>,<span class="number">216</span>,<span class="number">56</span>,<span class="number">160</span>,<span class="number">227</span>,<span class="number">143</span>,<span class="number">210</span>,<span class="number">83</span>,<span class="number">61</span>,<span class="number">86</span>,<span class="number">146</span>,<span class="number">114</span>,<span class="number">250</span>,<span class="number">184</span>,<span class="number">167</span>,<span class="number">205</span>,<span class="number">238</span>,<span class="number">147</span>,<span class="number">133</span>,<span class="number">108</span>,<span class="number">127</span>,<span class="number">170</span>,<span class="number">178</span>,<span class="number">71</span>,<span class="number">206</span>,<span class="number">128</span>,<span class="number">32</span>,<span class="number">28</span>,<span class="number">124</span>,<span class="number">7</span>,<span class="number">226</span>,<span class="number">185</span>,<span class="number">145</span>,<span class="number">69</span>,<span class="number">116</span>,<span class="number">152</span>,<span class="number">245</span>,<span class="number">62</span>,<span class="number">3</span>,<span class="number">196</span>,<span class="number">65</span>,<span class="number">1</span>,<span class="number">43</span>,<span class="number">72</span>,<span class="number">39</span>,<span class="number">230</span>,<span class="number">91</span>,<span class="number">244</span>,<span class="number">156</span>,<span class="number">136</span>,<span class="number">117</span>,<span class="number">162</span>,<span class="number">182</span>,<span class="number">20</span>,<span class="number">209</span>,<span class="number">229</span>,<span class="number">77</span>,<span class="number">64</span>,<span class="number">249</span>,<span class="number">158</span>,<span class="number">88</span>,<span class="number">163</span>&#125;;</span><br><span class="line"><span class="keyword">int</span> arr[]=&#123;<span class="number">166</span>,<span class="number">78</span>,<span class="number">5</span>,<span class="number">162</span>,<span class="number">182</span>,<span class="number">8</span>,<span class="number">162</span>,<span class="number">206</span>,<span class="number">140</span>,<span class="number">238</span>,<span class="number">32</span>,<span class="number">194</span>,<span class="number">152</span>,<span class="number">160</span>,<span class="number">208</span>,<span class="number">205</span>,<span class="number">35</span>,<span class="number">166</span>,<span class="number">106</span>,<span class="number">130</span>&#125;;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line"><span class="comment">//	int a;</span></span><br><span class="line"><span class="comment">//	while(cin&gt;&gt;a)&#123;</span></span><br><span class="line"><span class="comment">//		cout&lt;&lt;indx[a]&lt;&lt;endl;</span></span><br><span class="line"><span class="comment">//	&#125;</span></span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;<span class="number">20</span>;++i)&#123;</span><br><span class="line">		<span class="keyword">for</span>(<span class="keyword">int</span> j=<span class="number">0</span>;j&lt;<span class="number">256</span>;++j)&#123;</span><br><span class="line">			<span class="keyword">if</span>(indx[j]==arr[i])&#123;</span><br><span class="line">				<span class="built_in">cout</span>&lt;&lt;<span class="keyword">int</span>(*(<span class="keyword">char</span>*)(&amp;j))&lt;&lt;<span class="string">','</span>;</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//baby2.cpp</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="keyword">int</span> arr[]=&#123;<span class="number">141</span>,<span class="number">153</span>,<span class="number">71</span>,<span class="number">245</span>,<span class="number">246</span>,<span class="number">85</span>,<span class="number">245</span>,<span class="number">217</span>,<span class="number">96</span>,<span class="number">209</span>,<span class="number">219</span>,<span class="number">21</span>,<span class="number">228</span>,<span class="number">196</span>,<span class="number">102</span>,<span class="number">208</span>,<span class="number">164</span>,<span class="number">141</span>,<span class="number">86</span>,<span class="number">95</span>&#125;;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line"><span class="comment">//	for(int i=0;i&lt;20;++i)&#123;</span></span><br><span class="line"><span class="comment">//		newa[indx[i]]=arr[i];</span></span><br><span class="line"><span class="comment">//	&#125;</span></span><br><span class="line"><span class="comment">//	for(int i=0;i&lt;20;++i)&#123;</span></span><br><span class="line"><span class="comment">//		cout&lt;&lt;newa[i]&lt;&lt;',';</span></span><br><span class="line"><span class="comment">//	&#125;</span></span><br><span class="line">	swap(arr[<span class="number">10</span>],arr[<span class="number">15</span>]);</span><br><span class="line">	swap(arr[<span class="number">10</span>],arr[<span class="number">6</span>]);</span><br><span class="line">	swap(arr[<span class="number">6</span>],arr[<span class="number">3</span>]);</span><br><span class="line">	swap(arr[<span class="number">3</span>],arr[<span class="number">1</span>]);</span><br><span class="line">	swap(arr[<span class="number">0</span>],arr[<span class="number">1</span>]);</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;<span class="number">20</span>;++i)&#123;</span><br><span class="line">		<span class="built_in">printf</span>(<span class="string">"%d,"</span>,arr[i]);</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//baby3.cpp</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="keyword">uint8_t</span> arr[]=&#123;<span class="number">208</span>,<span class="number">141</span>,<span class="number">71</span>,<span class="number">153</span>,<span class="number">246</span>,<span class="number">85</span>,<span class="number">245</span>,<span class="number">217</span>,<span class="number">96</span>,<span class="number">209</span>,<span class="number">245</span>,<span class="number">21</span>,<span class="number">228</span>,<span class="number">196</span>,<span class="number">102</span>,<span class="number">219</span>,<span class="number">164</span>,<span class="number">141</span>,<span class="number">86</span>,<span class="number">95</span>&#125;;</span><br><span class="line"><span class="keyword">unsigned</span> <span class="keyword">char</span> flg[<span class="number">22</span>]=<span class="string">""</span>;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;<span class="number">20</span>;++i)&#123;</span><br><span class="line">		<span class="built_in">bitset</span>&lt;8&gt; a(arr[i]);</span><br><span class="line">		<span class="built_in">cout</span>&lt;&lt;a&lt;&lt;<span class="built_in">endl</span>;</span><br><span class="line">		<span class="keyword">if</span>(i%<span class="number">4</span>==<span class="number">1</span>)&#123;</span><br><span class="line">			a=(a&lt;&lt;<span class="number">6</span>)|(a&gt;&gt;<span class="number">2</span>);</span><br><span class="line">		&#125;<span class="keyword">else</span> <span class="keyword">if</span>(i%<span class="number">4</span>==<span class="number">2</span>)&#123;</span><br><span class="line">			a=(a&gt;&gt;<span class="number">4</span>)|(a&lt;&lt;<span class="number">4</span>);</span><br><span class="line">		&#125;<span class="keyword">else</span> <span class="keyword">if</span>(i%<span class="number">4</span>==<span class="number">3</span>)&#123;</span><br><span class="line">			a=(a&lt;&lt;<span class="number">2</span>)|(a&gt;&gt;<span class="number">6</span>);</span><br><span class="line">		&#125;<span class="keyword">else</span>&#123;</span><br><span class="line">			a=(a&gt;&gt;<span class="number">1</span>)|(a&lt;&lt;<span class="number">7</span>);</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="built_in">cout</span>&lt;&lt;a&lt;&lt;<span class="string">' '</span>&lt;&lt;a.to_ulong()&lt;&lt;<span class="built_in">endl</span>;</span><br><span class="line">		flg[i]=a.to_ulong();</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;<span class="number">20</span>;++i)&#123;</span><br><span class="line">		<span class="built_in">cout</span>&lt;&lt;<span class="keyword">char</span>(flg[i]);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>这里需要说一下……<br>C/C++的左右移有毒！换bitset保平安！</p>
+<h2 id="nop-pop"><a href="#nop-pop" class="headerlink" title="nop_pop"></a>nop_pop</h2><p>一月霸权当然是我pop team epic啦！食我粪作！<br>EXEinfo显示是PE文件，那就运行一下看<br><br>打开OD搜一下<br><img src="/2018/02/08/HGAME2018-week1WP/snipaste20180204_233230.png" title="nop_pop2"><br>先是把跳转nop掉，然后出来那个Con…的，联系出题人，出题人表示是要nop掉pop子<br>于是再看，然后发现上面有个nop_me（提示真明显wwwww）<br>nop掉，程序发给出题人，得到flag</p>
+<h2 id="sc2-player"><a href="#sc2-player" class="headerlink" title="sc2_player"></a>sc2_player</h2><p>看了一下程序F5出来的东西大概做了这几步操作</p>
+<ul>
+<li>arr=(index%7+35)^special</li>
+<li>special(index%7)=special^0x34</li>
+<li>arr=input^ index^(index/7)<br>这几个都是长度为28的数组，arr是最后用来比对的数组，input是输入的flag，special是一个程序存储的数组<br>所以前两步有什么意义……<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//sc2.cpp</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="keyword">char</span> arr[<span class="number">29</span>]=&#123;<span class="number">104</span>,<span class="number">98</span>,<span class="number">118</span>,<span class="number">101</span>,<span class="number">127</span>,<span class="number">72</span>,<span class="number">50</span>,<span class="number">127</span>,<span class="number">86</span>,<span class="number">124</span>,<span class="number">99</span>,<span class="number">63</span>,<span class="number">82</span>,<span class="number">101</span>,<span class="number">72</span>,<span class="number">108</span>,<span class="number">77</span>,<span class="number">116</span>,<span class="number">101</span>,<span class="number">32</span>,<span class="number">114</span>,<span class="number">115</span>,<span class="number">74</span>,<span class="number">96</span>,<span class="number">115</span>,<span class="number">127</span>,<span class="number">124</span>,<span class="number">101</span>&#125;;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;<span class="number">28</span>;++i)&#123;</span><br><span class="line">		arr[i]=arr[i]^i^(i/<span class="number">7</span>);</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;<span class="number">28</span>;++i)&#123;</span><br><span class="line">		<span class="built_in">putchar</span>(arr[i]);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h1 id="PWN"><a href="#PWN" class="headerlink" title="PWN"></a>PWN</h1><p>前两题做的时候不在家，借朋友电脑用了下</p>
+<h2 id="guess-number"><a href="#guess-number" class="headerlink" title="guess_number"></a>guess_number</h2><p>其实是很明显的溢出，scanf这个东西不安全，可以直接覆盖到比较的数字<br><img src="/2018/02/08/HGAME2018-week1WP/snipaste20180207_222045.png" title="guess_number"></p>
+<h2 id="flag-server"><a href="#flag-server" class="headerlink" title="flag_server"></a>flag_server</h2><p>还是输入超限，不过一开始要输入长度而且还不能大于63，后面的对比又用!=（继续吐槽我那个超喜欢用!=的队友<br>所以输入一个负数就好了<br>然后就可以覆盖到猜测的数字了<br><img src="/2018/02/08/HGAME2018-week1WP/snipaste20180207_221248.png" title="flag_server"></p>
+<h2 id="zazahui"><a href="#zazahui" class="headerlink" title="zazahui"></a>zazahui</h2><p>先看整个流程，发现它先把flag读进了一个固定地址<br>这次换成了read，但是大小却是188，于是还是能搞事，直接用地址覆盖后面的*s就能输出flag了<br><br>本机测试过关直接发payload了，顺便*s后面是计数器，所以可以覆盖可以不覆盖，但是不能改成0，那样就直接退出了<br><img src="/2018/02/08/HGAME2018-week1WP/snipaste20180207_220202.png" title="zazahui2"></p>
+<h1 id="Misc"><a href="#Misc" class="headerlink" title="Misc"></a>Misc</h1><h2 id="白菜1"><a href="#白菜1" class="headerlink" title="白菜1"></a>白菜1</h2><p>先用stegsolver打开看了一遍，都没东西<br>于是考虑lsb（算是常规套路了吧）<br><img src="/2018/02/08/HGAME2018-week1WP/snipaste20180205_012851.png" title="白菜1_1"><br>然后文件头不熟练的我还跑了下binwalk,wwwwwww<br><img src="/2018/02/08/HGAME2018-week1WP/snipaste20180205_013254.png" title="白菜1_2"><br>就是个zip包，解压出来就是flag</p>
+<h2 id="白菜2"><a href="#白菜2" class="headerlink" title="白菜2"></a>白菜2</h2><p>跑一下binwalk，发现有东西<br>然后就得到了flag<br><img src="/2018/02/08/HGAME2018-week1WP/snipaste20180204_230153.png" title="白菜2"></p>
+<h2 id="pacp1"><a href="#pacp1" class="headerlink" title="pacp1"></a>pacp1</h2><p>搜下flag<br><img src="/2018/02/08/HGAME2018-week1WP/snipaste20180204_225419.png" title="pacp1_1"><br>看最后这个返回200的分组<br><img src="/2018/02/08/HGAME2018-week1WP/snipaste20180204_225549.png" title="pacp1_2"></p>
+<h1 id="Crypto"><a href="#Crypto" class="headerlink" title="Crypto"></a>Crypto</h1><p>知识点全部给出来了哇，真系给力</p>
+<h2 id="easy-Caesar"><a href="#easy-Caesar" class="headerlink" title="easy Caesar"></a>easy Caesar</h2><p>一开始题目还有错，于是找出题人说，拿到了1血（然而改错没加分wwww）<br>直接上工具<br><br>然后数字也有变过，那么按照常识判断，就是qu1ck,4x,la2y,br0wn<br>于是有了flag</p>
+<h2 id="Polybius"><a href="#Polybius" class="headerlink" title="Polybius"></a>Polybius</h2><p>看到的时候就反应过来了，可惜当时没找到工具手解的……<br>看它给的提示网址<a href="https://www.wikiwand[.]com/en/Polybius#/Cryptography就行了，这种出题真的很照顾人了" target="_blank" rel="noopener">https://www.wikiwand[.]com/en/Polybius#/Cryptography就行了，这种出题真的很照顾人了</a></p>
+<h2 id="Hill"><a href="#Hill" class="headerlink" title="Hill"></a>Hill</h2><p>学到了一种新的加密方式，不过要算数论中矩阵的逆，如果阶数高了，感觉就是灾难啊……<br>顺便我又没找到工具一开始还没仔细看链接，矩阵的逆还是手算的……淦了<br>同样的<a href="https://www.wikiwand[.]com/en/Hill_cipher" target="_blank" rel="noopener">https://www.wikiwand[.]com/en/Hill_cipher</a><br><img src="/2018/02/08/HGAME2018-week1WP/snipaste20180204_221038.png" title="Hill"></p>
+<h2 id="confusion"><a href="#confusion" class="headerlink" title="confusion"></a>confusion</h2><p>这个题就比较舒服，不就是大杂烩嘛，上工具~<br><img src="/2018/02/08/HGAME2018-week1WP/snipaste20180204_211631.png" title="confusion1"><br><img src="/2018/02/08/HGAME2018-week1WP/snipaste20180204_211959.png" title="confusion2"><br><img src="/2018/02/08/HGAME2018-week1WP/snipaste20180204_212008.png" title="confusion3"><br><img src="/2018/02/08/HGAME2018-week1WP/snipaste20180204_212027.png" title="confusion4"></p>
+<h2 id="baby-step"><a href="#baby-step" class="headerlink" title="baby step"></a>baby step</h2><p>刚学完密码学，然而不想自己手写<br>网上直接找的python脚本太腊鸡了……慢得不行<br>最后换ACM大佬博客找的就好了<br>解出来基础解是191091022097，然后加上i个0x1111111111模0x976693344d的逆元就好，顺便后面这个数是质数，所以逆元可以用费马小定理算</p>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/Misc/" rel="tag"># Misc</a>
+          
+            <a href="/tags/Crypto/" rel="tag"># Crypto</a>
+          
+            <a href="/tags/CTF/" rel="tag"># CTF</a>
+          
+            <a href="/tags/Web/" rel="tag"># Web</a>
+          
+            <a href="/tags/Rev/" rel="tag"># Rev</a>
+          
+            <a href="/tags/PWN/" rel="tag"># PWN</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/02/03/HIT2018新生赛/" rel="next" title="HIT2018新生赛部分WP">
+                <i class="fa fa-chevron-left"></i> HIT2018新生赛部分WP
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/02/08/CTF轻工具个人集合/" rel="prev" title="CTF轻工具个人集合">
+                CTF轻工具个人集合 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/images/avatar.jpg"
+               alt="CSUwangj" />
+          <p class="site-author-name" itemprop="name">CSUwangj</p>
+           
+              <p class="site-description motion-element" itemprop="description">CSUwangj's blog~</p>
+          
+        </div>
+        <nav class="site-state motion-element">
+
+          
+            <div class="site-state-item site-state-posts">
+              <a href="/archives/">
+                <span class="site-state-item-count">11</span>
+                <span class="site-state-item-name">日志</span>
+              </a>
+            </div>
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-categories">
+              <a href="/categories/index.html">
+                <span class="site-state-item-count">3</span>
+                <span class="site-state-item-name">分类</span>
+              </a>
+            </div>
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-tags">
+              <a href="/tags/index.html">
+                <span class="site-state-item-count">10</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+          <div class="feed-link motion-element">
+            <a href="/atom.xml" rel="alternate">
+              <i class="fa fa-rss"></i>
+              RSS
+            </a>
+          </div>
+        
+
+        <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+                <a href="https://github.com/CSUwangj" target="_blank" title="GitHub">
+                  
+                    <i class="fa fa-fw fa-github"></i>
+                  
+                    
+                      GitHub
+                    
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="mailto:CSUwangj@protonmail.com" target="_blank" title="E-Mail">
+                  
+                    <i class="fa fa-fw fa-envelope"></i>
+                  
+                    
+                      E-Mail
+                    
+                </a>
+              </span>
+            
+          
+        </div>
+
+        
+        
+
+        
+        
+          <div class="links-of-blogroll motion-element links-of-blogroll-block">
+            <div class="links-of-blogroll-title">
+              <i class="fa  fa-fw fa-globe"></i>
+              Links
+            </div>
+            <ul class="links-of-blogroll-list">
+              
+                <li class="links-of-blogroll-item">
+                  <a href="http://www.cnblogs.com/0xJDchen/" title="领路人JDchen学长" target="_blank">领路人JDchen学长</a>
+                </li>
+              
+                <li class="links-of-blogroll-item">
+                  <a href="http://looston.cn/" title="小菜鸡成长之路（博主要求的）" target="_blank">小菜鸡成长之路（博主要求的）</a>
+                </li>
+              
+                <li class="links-of-blogroll-item">
+                  <a href="https://csuvc.github.io/" title="Web组学长博客1" target="_blank">Web组学长博客1</a>
+                </li>
+              
+                <li class="links-of-blogroll-item">
+                  <a href="http://www.porlockz.com/" title="Web组学长博客2" target="_blank">Web组学长博客2</a>
+                </li>
+              
+                <li class="links-of-blogroll-item">
+                  <a href="http://wolfbolin.cn/" title="大灰狼的博客" target="_blank">大灰狼的博客</a>
+                </li>
+              
+                <li class="links-of-blogroll-item">
+                  <a href="http://0xpoker.cuit.site/" title="Poker的博客" target="_blank">Poker的博客</a>
+                </li>
+              
+                <li class="links-of-blogroll-item">
+                  <a href="https://zickshen.github.io/" title="ZickShen" target="_blank">ZickShen</a>
+                </li>
+              
+            </ul>
+          </div>
+        
+
+        
+
+
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Web"><span class="nav-number">1.</span> <span class="nav-text">Web</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Are-you-from-Europe"><span class="nav-number">1.1.</span> <span class="nav-text">Are you from Europe?</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#special-number"><span class="nav-number">1.2.</span> <span class="nav-text">special number</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#can-u-find-me"><span class="nav-number">1.3.</span> <span class="nav-text">can u find me?</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#tell-me-what-you-want"><span class="nav-number">1.4.</span> <span class="nav-text">tell me what you want</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#我们不一样"><span class="nav-number">1.5.</span> <span class="nav-text">我们不一样</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Rev"><span class="nav-number">2.</span> <span class="nav-text">Rev</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#re0"><span class="nav-number">2.1.</span> <span class="nav-text">re0</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#baby-crack"><span class="nav-number">2.2.</span> <span class="nav-text">baby_crack</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#nop-pop"><span class="nav-number">2.3.</span> <span class="nav-text">nop_pop</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#sc2-player"><span class="nav-number">2.4.</span> <span class="nav-text">sc2_player</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#PWN"><span class="nav-number">3.</span> <span class="nav-text">PWN</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#guess-number"><span class="nav-number">3.1.</span> <span class="nav-text">guess_number</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#flag-server"><span class="nav-number">3.2.</span> <span class="nav-text">flag_server</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#zazahui"><span class="nav-number">3.3.</span> <span class="nav-text">zazahui</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Misc"><span class="nav-number">4.</span> <span class="nav-text">Misc</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#白菜1"><span class="nav-number">4.1.</span> <span class="nav-text">白菜1</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#白菜2"><span class="nav-number">4.2.</span> <span class="nav-text">白菜2</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#pacp1"><span class="nav-number">4.3.</span> <span class="nav-text">pacp1</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Crypto"><span class="nav-number">5.</span> <span class="nav-text">Crypto</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#easy-Caesar"><span class="nav-number">5.1.</span> <span class="nav-text">easy Caesar</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Polybius"><span class="nav-number">5.2.</span> <span class="nav-text">Polybius</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Hill"><span class="nav-number">5.3.</span> <span class="nav-text">Hill</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#confusion"><span class="nav-number">5.4.</span> <span class="nav-text">confusion</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#baby-step"><span class="nav-number">5.5.</span> <span class="nav-text">baby step</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2018</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">CSUwangj</span>
+</div>
+
+
+<div class="powered-by">
+  由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Mist
+  </a>
+</div>
+
+
+        
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+  
+  <script type="text/javascript" src="/lib/canvas-nest/canvas-nest.min.js"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.2"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.2"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.2"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.2"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.2"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  <!-- 页面点击小红心 -->
+  <script type="text/javascript" src="/js/src/love.js"></script>
+</body>
+</html>

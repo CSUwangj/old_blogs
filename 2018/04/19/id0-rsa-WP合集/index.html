@@ -1,0 +1,891 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next mist use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.2" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="Crypto,CTF," />
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="LuckyBlog" type="application/atom+xml" />
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.2" />
+
+
+
+
+
+
+<meta name="description" content="最近时间紧，先嘴炮AC一下，然后等这周（4月28号）实验检查完了再玩 进度表  Intro to Hashing  Intro to PGP  Hello PGP  Hello OpenSSL  Intro to RSA  Caesar  Hello Bitcoin  Ps and Qs  Affine Cipher  Cut and Paste Attack On AES-ECB  Rail F">
+<meta name="keywords" content="Crypto,CTF">
+<meta property="og:type" content="article">
+<meta property="og:title" content="id0-rsa WP合集">
+<meta property="og:url" content="http://yoursite.com/2018/04/19/id0-rsa-WP合集/index.html">
+<meta property="og:site_name" content="LuckyBlog">
+<meta property="og:description" content="最近时间紧，先嘴炮AC一下，然后等这周（4月28号）实验检查完了再玩 进度表  Intro to Hashing  Intro to PGP  Hello PGP  Hello OpenSSL  Intro to RSA  Caesar  Hello Bitcoin  Ps and Qs  Affine Cipher  Cut and Paste Attack On AES-ECB  Rail F">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="http://yoursite.com/2018/04/19/id0-rsa-WP合集/1524188467870.png">
+<meta property="og:image" content="http://yoursite.com/2018/04/19/id0-rsa-WP合集/1524830782157.png">
+<meta property="og:image" content="http://yoursite.com/2018/04/19/id0-rsa-WP合集/1524830884875.png">
+<meta property="og:image" content="http://yoursite.com/2018/04/19/id0-rsa-WP合集/1524833328837.png">
+<meta property="og:updated_time" content="2018-04-27T13:40:08.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="id0-rsa WP合集">
+<meta name="twitter:description" content="最近时间紧，先嘴炮AC一下，然后等这周（4月28号）实验检查完了再玩 进度表  Intro to Hashing  Intro to PGP  Hello PGP  Hello OpenSSL  Intro to RSA  Caesar  Hello Bitcoin  Ps and Qs  Affine Cipher  Cut and Paste Attack On AES-ECB  Rail F">
+<meta name="twitter:image" content="http://yoursite.com/2018/04/19/id0-rsa-WP合集/1524188467870.png">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Mist',
+    sidebar: {"position":"left","display":"post","offset":12,"offset_float":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: true,
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+
+
+
+
+  <title>id0-rsa WP合集 | LuckyBlog</title>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">LuckyBlog</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">LuckDog</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/04/19/id0-rsa-WP合集/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="CSUwangj">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="LuckyBlog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">id0-rsa WP合集</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-04-19T15:53:15+08:00">
+                2018-04-19
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/WriteUp/" itemprop="url" rel="index">
+                    <span itemprop="name">WriteUp</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>最近时间紧，先嘴炮AC一下，然后等这周（4月28号）实验检查完了再玩</p>
+<h1 id="进度表"><a href="#进度表" class="headerlink" title="进度表"></a>进度表</h1><ul>
+<li style="list-style: none"><input type="checkbox" checked> <a href="https://id0-rsa.pub/problem/18/" target="_blank" rel="noopener">Intro to Hashing</a></li>
+<li style="list-style: none"><input type="checkbox" checked> <a href="https://id0-rsa.pub/problem/19/" target="_blank" rel="noopener">Intro to PGP</a></li>
+<li style="list-style: none"><input type="checkbox" checked> <a href="https://id0-rsa.pub/problem/1/" target="_blank" rel="noopener">Hello PGP</a></li>
+<li style="list-style: none"><input type="checkbox" checked> <a href="https://id0-rsa.pub/problem/3/" target="_blank" rel="noopener">Hello OpenSSL</a></li>
+<li style="list-style: none"><input type="checkbox" checked> <a href="https://id0-rsa.pub/problem/21/" target="_blank" rel="noopener">Intro to RSA</a></li>
+<li style="list-style: none"><input type="checkbox"> <a href="https://id0-rsa.pub/problem/32/" target="_blank" rel="noopener">Caesar</a></li>
+<li style="list-style: none"><input type="checkbox" checked> <a href="https://id0-rsa.pub/problem/2/" target="_blank" rel="noopener">Hello Bitcoin</a></li>
+<li style="list-style: none"><input type="checkbox" checked> <a href="https://id0-rsa.pub/problem/8/" target="_blank" rel="noopener">Ps and Qs</a></li>
+<li style="list-style: none"><input type="checkbox" checked> <a href="https://id0-rsa.pub/problem/5/" target="_blank" rel="noopener">Affine Cipher</a></li>
+<li style="list-style: none"><input type="checkbox" checked> <a href="https://id0-rsa.pub/problem/26/" target="_blank" rel="noopener">Cut and Paste Attack On AES-ECB</a></li>
+<li style="list-style: none"><input type="checkbox"> <a href="https://id0-rsa.pub/problem/34/" target="_blank" rel="noopener">Rail Fence</a></li>
+<li style="list-style: none"><input type="checkbox"> <a href="https://id0-rsa.pub/problem/15/" target="_blank" rel="noopener">Factoring RSA With CRT Optimization</a></li>
+<li style="list-style: none"><input type="checkbox"> <a href="https://id0-rsa.pub/problem/38/" target="_blank" rel="noopener">Easy Passwords</a></li>
+<li style="list-style: none"><input type="checkbox"> <a href="https://id0-rsa.pub/problem/45/" target="_blank" rel="noopener">RSA Modulus Factorization</a></li>
+<li style="list-style: none"><input type="checkbox"> <a href="https://id0-rsa.pub/problem/24/" target="_blank" rel="noopener">Fast Hashing Passwords</a></li>
+<li style="list-style: none"><input type="checkbox" checked> <a href="https://id0-rsa.pub/problem/33/" target="_blank" rel="noopener">Vigenère</a></li>
+<li style="list-style: none"><input type="checkbox" checked> <a href="https://id0-rsa.pub/problem/12/" target="_blank" rel="noopener">Monoalphabetic Cipher</a></li>
+<li style="list-style: none"><input type="checkbox"> <a href="https://id0-rsa.pub/problem/25/" target="_blank" rel="noopener">Salt Alone Won’t Save You</a></li>
+<li style="list-style: none"><input type="checkbox"> <a href="https://id0-rsa.pub/problem/23/" target="_blank" rel="noopener">CCA on Textbook RSA</a></li>
+<li style="list-style: none"><input type="checkbox"> <a href="https://id0-rsa.pub/problem/4/" target="_blank" rel="noopener">AES-CTR with Nonce Reuse</a></li>
+<li style="list-style: none"><input type="checkbox"> …</li>
+</ul>
+<a id="more"></a>
+<h1 id="Intro-to-Hashing"><a href="#Intro-to-Hashing" class="headerlink" title="Intro to Hashing"></a>Intro to Hashing</h1><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Python</span></span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">import</span> hashlib</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>hashlib.md5(hashlib.sha256(<span class="string">'id0-rsa.pub'</span>).hexdigest()).hexdigest()</span><br><span class="line"><span class="comment"># 'b25d449d86aa07981d358d3b71b891de'</span></span><br></pre></td></tr></table></figure>
+<h1 id="Intro-to-PGP"><a href="#Intro-to-PGP" class="headerlink" title="Intro to PGP"></a>Intro to PGP</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># bash</span></span><br><span class="line"></span><br><span class="line">root@kali:~/Documents/id0-rsa<span class="comment"># touch Intro_to_PGP.key</span></span><br><span class="line">root@kali:~/Documents/id0-rsa<span class="comment"># gpg --import Intro_to_PGP.key </span></span><br><span class="line">gpg: key 2503D0F1A81B09D4: public key <span class="string">"id0-rsa.pub (http://id0-rsa.pub) &lt;id0rsa.pub@gmail.com&gt;"</span> imported</span><br><span class="line">gpg: Total number processed: 1</span><br><span class="line">gpg:               imported: 1</span><br><span class="line">root@kali:~/Documents/id0-rsa<span class="comment"># touch Intro_to_PGP.txt</span></span><br><span class="line">root@kali:~/Documents/id0-rsa<span class="comment"># gpg -d Intro_to_PGP.txt</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Thank you Phil Zimmermann!</span></span><br></pre></td></tr></table></figure>
+<h1 id="Hello-PGP"><a href="#Hello-PGP" class="headerlink" title="Hello PGP"></a>Hello PGP</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#!/bin/bash</span></span><br><span class="line"></span><br><span class="line">count=1</span><br><span class="line"></span><br><span class="line"><span class="keyword">while</span> <span class="built_in">read</span> WORD; <span class="keyword">do</span></span><br><span class="line">	gpg --batch --passphrase <span class="variable">$WORD</span> --decrypt test.txt 2&gt;/dev/null</span><br><span class="line">	<span class="keyword">if</span> [ $? -eq 0 ]; <span class="keyword">then</span></span><br><span class="line">		<span class="built_in">echo</span> </span><br><span class="line">		<span class="built_in">echo</span> <span class="variable">$WORD</span></span><br><span class="line">		<span class="built_in">exit</span></span><br><span class="line">	<span class="keyword">fi</span></span><br><span class="line">	count=$(( count + 1 ))</span><br><span class="line">	<span class="keyword">if</span> [ $((count % 1000)) -eq 0 ]; <span class="keyword">then</span></span><br><span class="line">		<span class="built_in">echo</span> <span class="variable">$count</span></span><br><span class="line">	<span class="keyword">fi</span></span><br><span class="line"><span class="keyword">done</span> &lt; words</span><br><span class="line"></span><br><span class="line"><span class="comment"># passionately apathetic</span></span><br><span class="line"><span class="comment"># seamanship</span></span><br><span class="line"><span class="comment"># gpg: AES256 encrypted data</span></span><br><span class="line"><span class="comment"># gpg: encrypted with 1 passphrase</span></span><br></pre></td></tr></table></figure>
+<h1 id="Hello-OpenSSL"><a href="#Hello-OpenSSL" class="headerlink" title="Hello OpenSSL"></a>Hello OpenSSL</h1><h2 id="繁琐的解法"><a href="#繁琐的解法" class="headerlink" title="繁琐的解法"></a>繁琐的解法</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># bash</span></span><br><span class="line">root@kali:~/Documents/id0-rsa/Hello_OpenSSL<span class="comment"># openssl rsa -in priva.pem -text</span></span><br><span class="line">Private-Key: (256 bit)</span><br><span class="line">modulus:</span><br><span class="line">    00:e6:dc:a0:a5:26:5d:39:95:0c:7e:e3:b7:a1:31:</span><br><span class="line">    96:47:87:00:2c:1b:56:ba:2e:54:ce:b4:30:db:ff:</span><br><span class="line">    09:95:9d</span><br><span class="line">publicExponent: 65537 (0x10001)</span><br><span class="line">privateExponent:</span><br><span class="line">    00:8f:67:e1:8a:75:28:57:ca:94:76:85:f1:dd:79:</span><br><span class="line">    b6:05:0e:35:05:e7:f9:ed:da:23:e6:de:14:aa:22:</span><br><span class="line">    d9:78:a9</span><br><span class="line">prime1:</span><br><span class="line">    00:fd:99:07:3e:67:03:c1:72:2a:96:81:ab:9a:29:</span><br><span class="line">    db:d7</span><br><span class="line">prime2:</span><br><span class="line">    00:e9:0c:76:fe:de:98:c1:9d:d3:c8:30:c0:e4:3a:</span><br><span class="line">    8b:ab</span><br><span class="line">exponent1:</span><br><span class="line">    00:b4:a6:37:17:c7:d0:50:14:20:ac:58:30:c2:c0:</span><br><span class="line">    00:bf</span><br><span class="line">exponent2:</span><br><span class="line">    00:c5:87:27:25:07:8e:fa:2c:c7:e0:9a:52:24:1f:</span><br><span class="line">    eb:59</span><br><span class="line">coefficient:</span><br><span class="line">    00:e3:bd:9b:a2:47:11:68:33:2d:80:fe:7d:ed:34:</span><br><span class="line">    de:<span class="built_in">fc</span></span><br><span class="line">writing RSA key</span><br><span class="line">-----BEGIN RSA PRIVATE KEY-----</span><br><span class="line">MIGtAgEAAiEA5tygpSZdOZUMfuO3oTGWR4cALBtWui5UzrQw2/8JlZ0CAwEAAQIh</span><br><span class="line">AI9n4Yp1KFfKlHaF8d15tgUONQXn+e3aI+beFKoi2XipAhEA/ZkHPmcDwXIqloGr</span><br><span class="line">minb1wIRAOkMdv7emMGd08gwwOQ6i6sCEQC0pjcXx9BQFCCsWDDCwAC/AhEAxYcn</span><br><span class="line">JQeO+izH4JpSJB/rWQIRAOO9m6JHEWgzLYD+fe003vw=</span><br><span class="line">-----END RSA PRIVATE KEY-----</span><br></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Python</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>n = <span class="number">0xe6dca0a5265d39950c7ee3b7a131964787002c1b56ba2e54ceb430dbff09959d</span></span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>d = <span class="number">0x8f67e18a752857ca947685f1dd79b6050e3505e7f9edda23e6de14aa22d978a9</span></span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>c = <span class="number">0x6794893f3c47247262e95fbed846e1a623fc67b1dd96e13c7f9fc3b880642e42</span></span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>hex(pow(c,d,n))</span><br><span class="line"><span class="string">'0x310f2eb0634ed1ab'</span></span><br></pre></td></tr></table></figure>
+<h2 id="一行"><a href="#一行" class="headerlink" title="一行"></a>一行</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># bash</span></span><br><span class="line">root@kali:~/Documents/id0-rsa/Hello_OpenSSL<span class="comment"># openssl rsautl -decrypt -in &lt;(xxd -r -p cipher) -inkey priva.pem -raw | xxd -p -c 8 | tail -n1</span></span><br><span class="line"><span class="comment"># 310f2eb0634ed1ab</span></span><br></pre></td></tr></table></figure>
+<h1 id="Intro-to-RSA"><a href="#Intro-to-RSA" class="headerlink" title="Intro to RSA"></a>Intro to RSA</h1><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Python</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>(e, N) = (<span class="number">0x3</span>, <span class="number">0x64ac4671cb4401e906cd273a2ecbc679f55b879f0ecb25eefcb377ac724ee3b1</span>)</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>d = <span class="number">0x431d844bdcd801460488c4d17487d9a5ccc95698301d6ab2e218e4b575d52ea3</span></span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>c = <span class="number">0x599f55a1b0520a19233c169b8c339f10695f9e61c92bd8fd3c17c8bba0d5677e</span></span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>hex(pow(c,d,N))</span><br><span class="line"><span class="string">'0x4d801868d894740b2be29309fcd3edcd51bd2c2a685028b89290f9268c727581'</span></span><br></pre></td></tr></table></figure>
+<h1 id="Caesar"><a href="#Caesar" class="headerlink" title="Caesar"></a>Caesar</h1><img src="/2018/04/19/id0-rsa-WP合集/1524188467870.png" title="Caesar">
+<p>但是交了以后就显示错误，不知道为什么……</p>
+<h1 id="Hello-Bitcoin"><a href="#Hello-Bitcoin" class="headerlink" title="Hello Bitcoin"></a>Hello Bitcoin</h1><p>按资料算就是了</p>
+<p>然而我找到了在线计算的<a href="http://gobittest.appspot.com/PrivateKey" target="_blank" rel="noopener">工具</a>;D</p>
+<p>按照比特币wiki的说法，计算过程大概是这样的：</p>
+<ol>
+<li>首先我们生成一个私钥</li>
+<li>获取对应的公钥</li>
+<li>获得公钥的SHA256散列值</li>
+<li>获取上一步结果的RIPEMD-160散列值</li>
+<li>在散列值前加入版本号</li>
+<li>计算上一步结果的SHA-256散列</li>
+<li>取第二个SHA-256散列值的前四字节作为地址校验和</li>
+<li>在第四步的结果末尾加入校验和</li>
+<li>进行Base28编码</li>
+</ol>
+<p><code>You already solved this one! Solution:  18GZRs5nx8sVhF1xVAaEjKrYJga4hMbYc2</code></p>
+<h1 id="Ps-and-Qs"><a href="#Ps-and-Qs" class="headerlink" title="Ps and Qs"></a>Ps and Qs</h1><p>factordb.com 完成 </p>
+<p>噫，年老体衰也就算了，眼神也不好了，其实没有分解成功</p>
+<p>然后开了个yafu，结果还是很不错的，我做出来了以后依然没有分解出答案</p>
+<p>先是打开题目看了下，说是生成的素数<code>low entropy</code>(低熵)吗，然后打开论文大概看了下，就说生成素数有毛病，就猜测是不是共同素数的锅</p>
+<p>结果还真是</p>
+<img src="/2018/04/19/id0-rsa-WP合集/1524830782157.png" title="Ps and Qs1">
+<p>先读两个公钥，然后gcd了一波，成功</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># python</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">gcd</span><span class="params">(a, b)</span>:</span></span><br><span class="line">	<span class="keyword">if</span> b == <span class="number">0</span>:</span><br><span class="line">		<span class="keyword">return</span> a</span><br><span class="line">	<span class="keyword">else</span>:</span><br><span class="line">		<span class="keyword">return</span> gcd(b, a%b)</span><br><span class="line"></span><br><span class="line"><span class="comment">#q = gcd(3367646059138877442579820972831876412006279917097809082279412851693123955964282545145500497393579598954859534731890460229194372339215098506788375050698427369, 9055404640500300109405801152935663267176218320785348541566663982172162265778445107320065187449062375525002632043722734566593185461999286625234528036605141)</span></span><br><span class="line"><span class="comment">#print(q)</span></span><br></pre></td></tr></table></figure>
+<p>然后懒得写求拓展欧几里得求逆元了，直接拿工具了</p>
+<img src="/2018/04/19/id0-rsa-WP合集/1524830884875.png" title="Ps and Qs2">
+<p>补全代码</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># python</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">gcd</span><span class="params">(a, b)</span>:</span></span><br><span class="line">	<span class="keyword">if</span> b == <span class="number">0</span>:</span><br><span class="line">		<span class="keyword">return</span> a</span><br><span class="line">	<span class="keyword">else</span>:</span><br><span class="line">		<span class="keyword">return</span> gcd(b, a%b)</span><br><span class="line"></span><br><span class="line"><span class="comment">#q = gcd(3367646059138877442579820972831876412006279917097809082279412851693123955964282545145500497393579598954859534731890460229194372339215098506788375050698427369, 9055404640500300109405801152935663267176218320785348541566663982172162265778445107320065187449062375525002632043722734566593185461999286625234528036605141)</span></span><br><span class="line"><span class="comment">#print(q)</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#print(9055404640500300109405801152935663267176218320785348541566663982172162265778445107320065187449062375525002632043722734566593185461999286625234528036605141//q)</span></span><br><span class="line"></span><br><span class="line">n = <span class="number">9055404640500300109405801152935663267176218320785348541566663982172162265778445107320065187449062375525002632043722734566593185461999286625234528036605141</span></span><br><span class="line"></span><br><span class="line">d = <span class="number">5595429548525262877923879998920954875376781621351655927785581040054379710925982991727871918848397312612397095534700830662119225899345003601005897300178945</span></span><br><span class="line"></span><br><span class="line">c = <span class="number">0xf5ed9da29d8d260f22657e091f34eb930bc42f26f1e023f863ba13bee39071d1ea988ca62b9ad59d4f234fa7d682e22ce3194bbe5b801df3bd976db06b944da</span></span><br><span class="line"></span><br><span class="line">print(hex(pow(c,d,n))[<span class="number">2</span>:])</span><br><span class="line"></span><br><span class="line"><span class="comment"># f6a1df363229c6ec</span></span><br></pre></td></tr></table></figure>
+<h1 id="Affine-Cipher"><a href="#Affine-Cipher" class="headerlink" title="Affine Cipher"></a>Affine Cipher</h1><p>暴力一下肉眼看吧</p>
+<p>是的，暴力以后搜索THE，出现次数最多的那个基本就确定了</p>
+<p>不过得感叹一下 ……自己越来越蠢了……求个逆元，不是a*b%c==1则mod c下ab互为逆元么，我™a的b次方是要闹哪样……</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># python</span></span><br><span class="line">plain = <span class="string">"BOHHIKBI,OZ,REI,WZRIKZIR,EX.,BOHI,RO,KISU,XSHO.R,ICBSG.WYISU,OZ, WZXZBWXS,WZ.RWRGRWOZ.,.IKYWZP,X.RKG.RIT,REWKT,DXKRWI.,RO,DKOBI..,ISIBRKOZWB,DXUHIZR.F,NEWSI,REI,.U.RIH,NOKA.,NISS,IZOGPE, OKHO.R,RKXZ.XBRWOZ.Q,WR,.RWSS,.G  IK., KOH,REI,WZEIKIZR,NIXAZI..I.,O ,REI,RKG.R,MX.IT,HOTISF,BOHDSIRISU,ZOZKIYIK.WMSI,RKXZ.XBRWOZ.,XKI,ZOR,KIXSSU,DO..WMSIQ,.WZBI, WZXZBWXS,WZ.RWRGRWOZ.,BXZZORXYOWT,HITWXRWZP,TW.DGRI.F,REI,BO.R,O ,HITWXRWOZ,WZBKIX.I.,RKXZ.XBRWOZ,BO.R.Q,SWHWRWZP,REIHWZWHGH,DKXBRWBXS,RKXZ.XBRWOZ,.WJI,XZT,BGRRWZP,O  ,REI,DO..WMWSWRU, OK,.HXSS,BX.GXS,RKXZ.XBRWOZ.QXZT,REIKI,W.,X,MKOXTIK,BO.R,WZ,REI,SO..,O ,XMWSWRU,RO,HXAI,ZOZKIYIK.WMSI,DXUHIZR., OK,ZOZKIYIK.WMSI.IKYWBI.F,NWRE,REI,DO..WMWSWRU,O ,KIYIK.XSQ,REI,ZIIT, OK,RKG.R,.DKIXT.F,HIKBEXZR.,HG.RMI,NXKU,O ,REIWK,BG.ROHIK.Q,EX..SWZP,REIH, OK,HOKI,WZ OKHXRWOZ,REXZ,REIU,NOGST,OREIKNW.I,ZIITF,X,BIKRXWZ,DIKBIZRXPI,O , KXGT,W.,XBBIDRIT,X.,GZXYOWTXMSIF,REI.I,BO.R.,XZT,DXUHIZR,GZBIKRXWZRWI.BXZ,MI,XYOWTIT,WZ,DIK.OZ,MU,G.WZP,DEU.WBXS,BGKKIZBUQ,MGR,ZO,HIBEXZW.H,ICW.R.,RO,HXAI,DXUHIZR.OYIK,X,BOHHGZWBXRWOZ.,BEXZZIS,NWREOGR,X,RKG.RIT,DXKRUF"</span></span><br><span class="line">mp = <span class="string">"ABCDEFGHIJKLMNOPQRSTUVWXYZ ,."</span></span><br><span class="line">dict = &#123;&#125;</span><br><span class="line">inv_dict = &#123;&#125;</span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">0</span>, len(mp)):</span><br><span class="line">    dict[i] = mp[i]</span><br><span class="line">    dict[mp[i]] = i</span><br><span class="line"></span><br><span class="line"><span class="comment"># print(dict)</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">1</span>, <span class="number">29</span>):</span><br><span class="line">    <span class="keyword">for</span> j <span class="keyword">in</span> range(<span class="number">1</span>, <span class="number">29</span>):</span><br><span class="line">        <span class="keyword">if</span> i*j%<span class="number">29</span> == <span class="number">1</span>:</span><br><span class="line">            inv_dict[i] = j</span><br><span class="line">            <span class="keyword">break</span></span><br><span class="line"></span><br><span class="line">print(inv_dict)</span><br><span class="line"></span><br><span class="line">newarr = []</span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">0</span>, len(plain)):</span><br><span class="line">    newarr.append(dict[plain[i]])</span><br><span class="line"></span><br><span class="line"><span class="comment"># print(newarr)</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">decry</span><span class="params">(c, a, b)</span>:</span></span><br><span class="line">    s = <span class="string">""</span></span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">0</span>, len(c)):</span><br><span class="line">        s += dict[(c[i]-b+<span class="number">29</span>)*inv_dict[a]%<span class="number">29</span>]</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> s</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">1</span>, <span class="number">29</span>):</span><br><span class="line">    <span class="keyword">for</span> j <span class="keyword">in</span> range(<span class="number">0</span>, <span class="number">29</span>):</span><br><span class="line">        print(decry(newarr, i, j))</span><br><span class="line">        print(i, j)</span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> j <span class="keyword">in</span> range(<span class="number">0</span>, <span class="number">29</span>):</span><br><span class="line">    print(decry(newarr, <span class="number">0</span>, j))</span><br><span class="line">    print(<span class="number">0</span>, j)</span><br><span class="line"></span><br><span class="line"><span class="comment"># plain = "RLZZC SCIZJB"</span></span><br><span class="line"><span class="comment">#</span></span><br><span class="line"><span class="comment"># newarr = []</span></span><br><span class="line"><span class="comment">#</span></span><br><span class="line"><span class="comment"># for i in range(0, len(plain)):</span></span><br><span class="line"><span class="comment">#     newarr.append(dict[plain[i]])</span></span><br><span class="line"><span class="comment">#</span></span><br><span class="line"><span class="comment"># print(decry(newarr, 2, 3))</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">λ python</span><br><span class="line">Python <span class="number">3.6</span><span class="number">.1</span> on win32</span><br><span class="line">Type <span class="string">"help"</span>, <span class="string">"copyright"</span>, <span class="string">"credits"</span> <span class="keyword">or</span> <span class="string">"license"</span> <span class="keyword">for</span> more information.</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">import</span> hashlib</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>plain = <span class="string">"COMMERCE ON THE INTERNET HAS COME TO RELY ALMOST EXCLUSIVELY ON FINANCIAL INSTITUTIONS SERVING ASTRUSTED THIRD PARTIES TO PROCESS ELECTRONIC PAYMENTS. WHILE THE SYSTEM WORKS WELL ENOUGH FORMOST TRANSACTIONS, IT STILL SUFFERS FROM THE INHERENT WEAKNESSES OF THE TRUST BASED MODEL. COMPLETELY NONREVERSIBLE TRANSACTIONS ARE NOT REALLY POSSIBLE, SINCE FINANCIAL INSTITUTIONS CANNOTAVOID MEDIATING DISPUTES. THE COST OF MEDIATION INCREASES TRANSACTION COSTS, LIMITING THEMINIMUM PRACTICAL TRANSACTION SIZE AND CUTTING OFF THE POSSIBILITY FOR SMALL CASUAL TRANSACTIONS,AND THERE IS A BROADER COST IN THE LOSS OF ABILITY TO MAKE NONREVERSIBLE PAYMENTS FOR NONREVERSIBLESERVICES. WITH THE POSSIBILITY OF REVERSAL, THE NEED FOR TRUST SPREADS. MERCHANTS MUSTBE WARY OF THEIR CUSTOMERS, HASSLING THEM FOR MORE INFORMATION THAN THEY WOULD OTHERWISE NEED. A CERTAIN PERCENTAGE OF FRAUD IS ACCEPTED AS UNAVOIDABLE. THESE COSTS AND PAYMENT UNCERTAINTIESCAN BE AVOIDED IN PERSON BY USING PHYSICAL CURRENCY, BUT NO MECHANISM EXISTS TO MAKE PAYMENTSOVER A COMMUNICATIONS CHANNEL WITHOUT A TRUSTED PARTY."</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>hashlib.md5(plain.encode()).hexdigest()</span><br><span class="line"><span class="string">'880cabd53df2f03050a7214d3ae30a07'</span></span><br></pre></td></tr></table></figure>
+<h1 id="Cut-and-Paste-Attack-On-AES-ECB"><a href="#Cut-and-Paste-Attack-On-AES-ECB" class="headerlink" title="Cut and Paste Attack On AES-ECB"></a>Cut and Paste Attack On AES-ECB</h1><p>截取一哈就行</p>
+<p>ECB的问题就在于同样的明文总是对应相同的密文，而AES又是分组加密，所以我们只需要16字节截一段，然后从截出来的字段里拼出<code>Deposit amount: One million dollars</code>就吼啦</p>
+<img src="/2018/04/19/id0-rsa-WP合集/1524833328837.png" title="Cut and Paste Attack On AES-ECB">
+<p>然后把对应的密文组合提交就好啦</p>
+<h1 id="Rail-Fence"><a href="#Rail-Fence" class="headerlink" title="Rail Fence"></a>Rail Fence</h1><p>栅栏密码</p>
+<p>不是栅栏密码，丢人</p>
+<p>就是这个名字，密码是17</p>
+<p>然而提交又失败……是不是要加空格？？？</p>
+<p><code>WEATTACKATDAWNISACOMMONEXAMPLEPLAINTEXTSOIFIGUREWECANUSEITHERETOPROVETHATYOUHAVEDECRYPTEDTHISMESSAGESUCCESSFULLYSUBMITTHEWORDBIRDCAGEWHICHISAMOVIETHATISONTVWHILEIAMWRITINGTHISIAMADDINGALOTOFTEXTHERETOHELPTHOSEOFYOUTHATDECIDETODOCHARACTERFREQUNCYANALYSISWHICHISHONESTLYAPRETTYGOODSTRATEGYHOPEFULLYYOUALREADYHAVEBUILTORHAVEACCESSTOASOMETHINGTHATCANANALYSETEXTANDDETERMINEIFTHECHARACTERFREQUENCIESMATCHTHEENGLISHLANGUAGEBECAUSEITMAYTAKEAWHILETOROLLONEFROMSCRATCHWHILETRYINGTOSOLVETHISPROBLEM</code></p>
+<h1 id="Factoring-RSA-With-CRT-Optimization"><a href="#Factoring-RSA-With-CRT-Optimization" class="headerlink" title="Factoring RSA With CRT Optimization"></a>Factoring RSA With CRT Optimization</h1><p>看看论文</p>
+<h1 id="Easy-Passwords"><a href="#Easy-Passwords" class="headerlink" title="Easy Passwords"></a>Easy Passwords</h1><p>暴力/去他们推特看看</p>
+<h1 id="RSA-Modulus-Factorization"><a href="#RSA-Modulus-Factorization" class="headerlink" title="RSA Modulus Factorization"></a>RSA Modulus Factorization</h1><p>有公钥、私钥，分解N</p>
+<h1 id="Fast-Hashing-Passwords"><a href="#Fast-Hashing-Passwords" class="headerlink" title="Fast Hashing Passwords"></a>Fast Hashing Passwords</h1><p>母鸡</p>
+<h1 id="Vigenere"><a href="#Vigenere" class="headerlink" title="Vigenère"></a>Vigenère</h1><p>多表，工具即可</p>
+<p><a href="https://f00l.de/hacking/vigenere.php" target="_blank" rel="noopener">https://f00l.de/hacking/vigenere.php</a></p>
+<p>成功</p>
+<p><code>You already solved this one! Solution: BARLEY</code></p>
+<h1 id="Monoalphabetic-Cipher"><a href="#Monoalphabetic-Cipher" class="headerlink" title="Monoalphabetic Cipher"></a>Monoalphabetic Cipher</h1><p>单表，工具解决</p>
+<p><a href="https://quipqiup.com/" target="_blank" rel="noopener">https://quipqiup.com/</a></p>
+<p>成功</p>
+<p><code>You already solved this one! Solution: c21c7f2384dabd723c6d265b1315ddb5</code></p>
+<h1 id="Salt-Alone-Won’t-Save-You"><a href="#Salt-Alone-Won’t-Save-You" class="headerlink" title="Salt Alone Won’t Save You"></a>Salt Alone Won’t Save You</h1><p>暴力？字典暴力？</p>
+<h1 id="CCA-on-Textbook-RSA"><a href="#CCA-on-Textbook-RSA" class="headerlink" title="CCA on Textbook RSA"></a>CCA on Textbook RSA</h1><p>还没看公钥呐</p>
+<h1 id="AES-CTR-with-Nonce-Reuse"><a href="#AES-CTR-with-Nonce-Reuse" class="headerlink" title="AES-CTR with Nonce Reuse"></a>AES-CTR with Nonce Reuse</h1><p>母鸡，还没看</p>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/Crypto/" rel="tag"># Crypto</a>
+          
+            <a href="/tags/CTF/" rel="tag"># CTF</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/03/01/安装式工具集合/" rel="next" title="安装式工具集合">
+                <i class="fa fa-chevron-left"></i> 安装式工具集合
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/04/27/ctf-magic-number-WP/" rel="prev" title="*ctf magic_number WP">
+                *ctf magic_number WP <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/images/avatar.jpg"
+               alt="CSUwangj" />
+          <p class="site-author-name" itemprop="name">CSUwangj</p>
+           
+              <p class="site-description motion-element" itemprop="description">CSUwangj's blog~</p>
+          
+        </div>
+        <nav class="site-state motion-element">
+
+          
+            <div class="site-state-item site-state-posts">
+              <a href="/archives/">
+                <span class="site-state-item-count">11</span>
+                <span class="site-state-item-name">日志</span>
+              </a>
+            </div>
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-categories">
+              <a href="/categories/index.html">
+                <span class="site-state-item-count">3</span>
+                <span class="site-state-item-name">分类</span>
+              </a>
+            </div>
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-tags">
+              <a href="/tags/index.html">
+                <span class="site-state-item-count">10</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+          <div class="feed-link motion-element">
+            <a href="/atom.xml" rel="alternate">
+              <i class="fa fa-rss"></i>
+              RSS
+            </a>
+          </div>
+        
+
+        <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+                <a href="https://github.com/CSUwangj" target="_blank" title="GitHub">
+                  
+                    <i class="fa fa-fw fa-github"></i>
+                  
+                    
+                      GitHub
+                    
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="mailto:CSUwangj@protonmail.com" target="_blank" title="E-Mail">
+                  
+                    <i class="fa fa-fw fa-envelope"></i>
+                  
+                    
+                      E-Mail
+                    
+                </a>
+              </span>
+            
+          
+        </div>
+
+        
+        
+
+        
+        
+          <div class="links-of-blogroll motion-element links-of-blogroll-block">
+            <div class="links-of-blogroll-title">
+              <i class="fa  fa-fw fa-globe"></i>
+              Links
+            </div>
+            <ul class="links-of-blogroll-list">
+              
+                <li class="links-of-blogroll-item">
+                  <a href="http://www.cnblogs.com/0xJDchen/" title="领路人JDchen学长" target="_blank">领路人JDchen学长</a>
+                </li>
+              
+                <li class="links-of-blogroll-item">
+                  <a href="http://looston.cn/" title="小菜鸡成长之路（博主要求的）" target="_blank">小菜鸡成长之路（博主要求的）</a>
+                </li>
+              
+                <li class="links-of-blogroll-item">
+                  <a href="https://csuvc.github.io/" title="Web组学长博客1" target="_blank">Web组学长博客1</a>
+                </li>
+              
+                <li class="links-of-blogroll-item">
+                  <a href="http://www.porlockz.com/" title="Web组学长博客2" target="_blank">Web组学长博客2</a>
+                </li>
+              
+                <li class="links-of-blogroll-item">
+                  <a href="http://wolfbolin.cn/" title="大灰狼的博客" target="_blank">大灰狼的博客</a>
+                </li>
+              
+                <li class="links-of-blogroll-item">
+                  <a href="http://0xpoker.cuit.site/" title="Poker的博客" target="_blank">Poker的博客</a>
+                </li>
+              
+                <li class="links-of-blogroll-item">
+                  <a href="https://zickshen.github.io/" title="ZickShen" target="_blank">ZickShen</a>
+                </li>
+              
+            </ul>
+          </div>
+        
+
+        
+
+
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#进度表"><span class="nav-number">1.</span> <span class="nav-text">进度表</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Intro-to-Hashing"><span class="nav-number">2.</span> <span class="nav-text">Intro to Hashing</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Intro-to-PGP"><span class="nav-number">3.</span> <span class="nav-text">Intro to PGP</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Hello-PGP"><span class="nav-number">4.</span> <span class="nav-text">Hello PGP</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Hello-OpenSSL"><span class="nav-number">5.</span> <span class="nav-text">Hello OpenSSL</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#繁琐的解法"><span class="nav-number">5.1.</span> <span class="nav-text">繁琐的解法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#一行"><span class="nav-number">5.2.</span> <span class="nav-text">一行</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Intro-to-RSA"><span class="nav-number">6.</span> <span class="nav-text">Intro to RSA</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Caesar"><span class="nav-number">7.</span> <span class="nav-text">Caesar</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Hello-Bitcoin"><span class="nav-number">8.</span> <span class="nav-text">Hello Bitcoin</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Ps-and-Qs"><span class="nav-number">9.</span> <span class="nav-text">Ps and Qs</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Affine-Cipher"><span class="nav-number">10.</span> <span class="nav-text">Affine Cipher</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Cut-and-Paste-Attack-On-AES-ECB"><span class="nav-number">11.</span> <span class="nav-text">Cut and Paste Attack On AES-ECB</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Rail-Fence"><span class="nav-number">12.</span> <span class="nav-text">Rail Fence</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Factoring-RSA-With-CRT-Optimization"><span class="nav-number">13.</span> <span class="nav-text">Factoring RSA With CRT Optimization</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Easy-Passwords"><span class="nav-number">14.</span> <span class="nav-text">Easy Passwords</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#RSA-Modulus-Factorization"><span class="nav-number">15.</span> <span class="nav-text">RSA Modulus Factorization</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Fast-Hashing-Passwords"><span class="nav-number">16.</span> <span class="nav-text">Fast Hashing Passwords</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Vigenere"><span class="nav-number">17.</span> <span class="nav-text">Vigenère</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Monoalphabetic-Cipher"><span class="nav-number">18.</span> <span class="nav-text">Monoalphabetic Cipher</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Salt-Alone-Won’t-Save-You"><span class="nav-number">19.</span> <span class="nav-text">Salt Alone Won’t Save You</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#CCA-on-Textbook-RSA"><span class="nav-number">20.</span> <span class="nav-text">CCA on Textbook RSA</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#AES-CTR-with-Nonce-Reuse"><span class="nav-number">21.</span> <span class="nav-text">AES-CTR with Nonce Reuse</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2018</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">CSUwangj</span>
+</div>
+
+
+<div class="powered-by">
+  由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Mist
+  </a>
+</div>
+
+
+        
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+  
+  <script type="text/javascript" src="/lib/canvas-nest/canvas-nest.min.js"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.2"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.2"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.2"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.2"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.2"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  <!-- 页面点击小红心 -->
+  <script type="text/javascript" src="/js/src/love.js"></script>
+</body>
+</html>
