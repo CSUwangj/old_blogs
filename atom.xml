@@ -44,7 +44,7 @@
     <link href="http://yoursite.com/2018/04/19/id0-rsa-WP%E5%90%88%E9%9B%86/"/>
     <id>http://yoursite.com/2018/04/19/id0-rsa-WP合集/</id>
     <published>2018-04-19T07:53:15.000Z</published>
-    <updated>2018-05-06T18:34:03.166Z</updated>
+    <updated>2018-05-07T13:52:58.483Z</updated>
     
     <summary type="html">
     
@@ -62,15 +62,36 @@
 &lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot; checked&gt; &lt;a href=&quot;https://id0-rsa.pub/problem/26/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Cut and Paste Attack On AES-ECB&lt;/a&gt;&lt;/li&gt;
 &lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot; checked&gt; &lt;a href=&quot;https://id0-rsa.pub/problem/34/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Rail Fence&lt;/a&gt;&lt;/li&gt;
 &lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot; checked&gt; &lt;a href=&quot;https://id0-rsa.pub/problem/15/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Factoring RSA With CRT Optimization&lt;/a&gt;&lt;/li&gt;
-&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot;&gt; &lt;a href=&quot;https://id0-rsa.pub/problem/38/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Easy Passwords&lt;/a&gt;&lt;/li&gt;
-&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot;&gt; &lt;a href=&quot;https://id0-rsa.pub/problem/45/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;RSA Modulus Factorization&lt;/a&gt;&lt;/li&gt;
-&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot;&gt; &lt;a href=&quot;https://id0-rsa.pub/problem/24/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Fast Hashing Passwords&lt;/a&gt;&lt;/li&gt;
+&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot; checked&gt; &lt;a href=&quot;https://id0-rsa.pub/problem/38/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Easy Passwords&lt;/a&gt;&lt;/li&gt;
+&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot; checked&gt; &lt;a href=&quot;https://id0-rsa.pub/problem/45/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;RSA Modulus Factorization&lt;/a&gt;&lt;/li&gt;
+&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot; checked&gt; &lt;a href=&quot;https://id0-rsa.pub/problem/24/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Fast Hashing Passwords&lt;/a&gt;&lt;/li&gt;
 &lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot; checked&gt; &lt;a href=&quot;https://id0-rsa.pub/problem/33/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Vigenère&lt;/a&gt;&lt;/li&gt;
 &lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot; checked&gt; &lt;a href=&quot;https://id0-rsa.pub/problem/12/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Monoalphabetic Cipher&lt;/a&gt;&lt;/li&gt;
 &lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot;&gt; &lt;a href=&quot;https://id0-rsa.pub/problem/25/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Salt Alone Won’t Save You&lt;/a&gt;&lt;/li&gt;
 &lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot;&gt; &lt;a href=&quot;https://id0-rsa.pub/problem/23/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;CCA on Textbook RSA&lt;/a&gt;&lt;/li&gt;
 &lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot;&gt; &lt;a href=&quot;https://id0-rsa.pub/problem/4/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;AES-CTR with Nonce Reuse&lt;/a&gt;&lt;/li&gt;
-&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot;&gt; …&lt;/li&gt;
+&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot;&gt; &lt;a href=&quot;https://id0-rsa.pub/problem/30/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Bad Entropy&lt;/a&gt;&lt;/li&gt;
+&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot;&gt; &lt;a href=&quot;https://id0-rsa.pub/problem/6/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Double Strength Affine&lt;/a&gt;&lt;/li&gt;
+&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot;&gt; &lt;a href=&quot;https://id0-rsa.pub/problem/16/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Rainbow Table Hash Chain&lt;/a&gt;&lt;/li&gt;
+&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot;&gt; &lt;a href=&quot;https://id0-rsa.pub/problem/10/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Elliptic Curve Private Key Recovery&lt;/a&gt;&lt;/li&gt;
+&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot;&gt; &lt;a href=&quot;https://id0-rsa.pub/problem/17/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;ECDSA Nonce Recovery&lt;/a&gt;&lt;/li&gt;
+&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot;&gt; &lt;a href=&quot;https://id0-rsa.pub/problem/41/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Slightly harder passwords&lt;/a&gt;&lt;/li&gt;
+&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot;&gt; &lt;a href=&quot;https://id0-rsa.pub/problem/40/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Upgraded Affine&lt;/a&gt;&lt;/li&gt;
+&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot;&gt; &lt;a href=&quot;https://id0-rsa.pub/problem/39/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Fvtavat Xrl Erpbirel&lt;/a&gt;&lt;/li&gt;
+&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot; checked&gt; &lt;a href=&quot;https://id0-rsa.pub/problem/9/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Insufficient Key Size&lt;/a&gt;&lt;/li&gt;
+&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot;&gt; &lt;a href=&quot;https://id0-rsa.pub/problem/11/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Håstad’s Broadcast Attack&lt;/a&gt;&lt;/li&gt;
+&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot;&gt; &lt;a href=&quot;https://id0-rsa.pub/problem/22/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;CBC Padding Attack&lt;/a&gt;&lt;/li&gt;
+&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot;&gt; &lt;a href=&quot;https://id0-rsa.pub/problem/29/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Breaking PDF Passwords&lt;/a&gt;&lt;/li&gt;
+&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot; checked&gt; &lt;a href=&quot;https://id0-rsa.pub/problem/35/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Vigenère + Rail Fence&lt;/a&gt;&lt;/li&gt;
+&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot; checked&gt; &lt;a href=&quot;https://id0-rsa.pub/problem/43/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Recover the secret phone number&lt;/a&gt;&lt;/li&gt;
+&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot;&gt; &lt;a href=&quot;https://id0-rsa.pub/problem/42/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Optimal Backpack Allocation&lt;/a&gt;&lt;/li&gt;
+&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot;&gt; &lt;a href=&quot;https://id0-rsa.pub/problem/27/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Insecure PRNG&lt;/a&gt;&lt;/li&gt;
+&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot;&gt; &lt;a href=&quot;https://id0-rsa.pub/problem/13/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Playfair&lt;/a&gt;&lt;/li&gt;
+&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot;&gt; &lt;a href=&quot;https://id0-rsa.pub/problem/20/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;CRIMEs against TLS&lt;/a&gt;&lt;/li&gt;
+&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot;&gt; &lt;a href=&quot;https://id0-rsa.pub/problem/14/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Bleichenbacher’s CCA2 on RSA&lt;/a&gt;&lt;/li&gt;
+&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot;&gt; &lt;a href=&quot;https://id0-rsa.pub/problem/31/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Backdoored PRNG&lt;/a&gt;&lt;/li&gt;
+&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot;&gt; &lt;a href=&quot;https://id0-rsa.pub/problem/37/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Not So Safe Primes&lt;/a&gt;&lt;/li&gt;
+&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot;&gt; &lt;a href=&quot;https://id0-rsa.pub/problem/44/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;DSA with LCG nonces&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
     
     </summary>
@@ -78,9 +99,9 @@
       <category term="WriteUp" scheme="http://yoursite.com/categories/WriteUp/"/>
     
     
-      <category term="Crypto" scheme="http://yoursite.com/tags/Crypto/"/>
-    
       <category term="CTF" scheme="http://yoursite.com/tags/CTF/"/>
+    
+      <category term="Crypto" scheme="http://yoursite.com/tags/Crypto/"/>
     
   </entry>
   
@@ -135,15 +156,15 @@
       <category term="WriteUp" scheme="http://yoursite.com/categories/WriteUp/"/>
     
     
-      <category term="Misc" scheme="http://yoursite.com/tags/Misc/"/>
-    
-      <category term="Crypto" scheme="http://yoursite.com/tags/Crypto/"/>
-    
       <category term="CTF" scheme="http://yoursite.com/tags/CTF/"/>
     
       <category term="Web" scheme="http://yoursite.com/tags/Web/"/>
     
       <category term="PWN" scheme="http://yoursite.com/tags/PWN/"/>
+    
+      <category term="Misc" scheme="http://yoursite.com/tags/Misc/"/>
+    
+      <category term="Crypto" scheme="http://yoursite.com/tags/Crypto/"/>
     
   </entry>
   
@@ -233,17 +254,17 @@
       <category term="WriteUp" scheme="http://yoursite.com/categories/WriteUp/"/>
     
     
-      <category term="Misc" scheme="http://yoursite.com/tags/Misc/"/>
-    
-      <category term="Crypto" scheme="http://yoursite.com/tags/Crypto/"/>
-    
       <category term="CTF" scheme="http://yoursite.com/tags/CTF/"/>
     
       <category term="Web" scheme="http://yoursite.com/tags/Web/"/>
     
+      <category term="Rev" scheme="http://yoursite.com/tags/Rev/"/>
+    
       <category term="PWN" scheme="http://yoursite.com/tags/PWN/"/>
     
-      <category term="Rev" scheme="http://yoursite.com/tags/Rev/"/>
+      <category term="Misc" scheme="http://yoursite.com/tags/Misc/"/>
+    
+      <category term="Crypto" scheme="http://yoursite.com/tags/Crypto/"/>
     
   </entry>
   
@@ -263,11 +284,11 @@
       <category term="WriteUp" scheme="http://yoursite.com/categories/WriteUp/"/>
     
     
-      <category term="Misc" scheme="http://yoursite.com/tags/Misc/"/>
-    
       <category term="CTF" scheme="http://yoursite.com/tags/CTF/"/>
     
       <category term="Rev" scheme="http://yoursite.com/tags/Rev/"/>
+    
+      <category term="Misc" scheme="http://yoursite.com/tags/Misc/"/>
     
   </entry>
   
