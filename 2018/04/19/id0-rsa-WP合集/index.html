@@ -78,7 +78,7 @@
 <link href="/css/main.css?v=5.1.2" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Crypto,CTF," />
+  <meta name="keywords" content="CTF,Crypto," />
 
 
 
@@ -96,13 +96,13 @@
 
 
 
-<meta name="description" content="填了一些坑，于是开心地来写写题~ 进度表  Intro to Hashing  Intro to PGP  Hello PGP  Hello OpenSSL  Intro to RSA  Caesar  Hello Bitcoin  Ps and Qs  Affine Cipher  Cut and Paste Attack On AES-ECB  Rail Fence  Factoring RS">
-<meta name="keywords" content="Crypto,CTF">
+<meta name="description" content="填了一些坑，于是开心地来写写题~ 进度表因为太长被吞辣！">
+<meta name="keywords" content="CTF,Crypto">
 <meta property="og:type" content="article">
 <meta property="og:title" content="id0-rsa WP合集">
 <meta property="og:url" content="http://CSUwangj.top/2018/04/19/id0-rsa-WP合集/index.html">
 <meta property="og:site_name" content="LuckyBlog">
-<meta property="og:description" content="填了一些坑，于是开心地来写写题~ 进度表  Intro to Hashing  Intro to PGP  Hello PGP  Hello OpenSSL  Intro to RSA  Caesar  Hello Bitcoin  Ps and Qs  Affine Cipher  Cut and Paste Attack On AES-ECB  Rail Fence  Factoring RS">
+<meta property="og:description" content="填了一些坑，于是开心地来写写题~ 进度表因为太长被吞辣！">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http://csuwangj.top/2018/04/19/id0-rsa-WP合集/1524188467870.png">
 <meta property="og:image" content="http://csuwangj.top/2018/04/19/id0-rsa-WP合集/1525509896561.png">
@@ -113,10 +113,10 @@
 <meta property="og:image" content="http://csuwangj.top/2018/04/19/id0-rsa-WP合集/1525631225843.png">
 <meta property="og:image" content="http://csuwangj.top/2018/04/19/id0-rsa-WP合集/1525698998368.png">
 <meta property="og:image" content="http://csuwangj.top/2018/04/19/id0-rsa-WP合集/1525700559472.png">
-<meta property="og:updated_time" content="2018-05-07T13:52:58.000Z">
+<meta property="og:updated_time" content="2018-05-10T01:12:15.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="id0-rsa WP合集">
-<meta name="twitter:description" content="填了一些坑，于是开心地来写写题~ 进度表  Intro to Hashing  Intro to PGP  Hello PGP  Hello OpenSSL  Intro to RSA  Caesar  Hello Bitcoin  Ps and Qs  Affine Cipher  Cut and Paste Attack On AES-ECB  Rail Fence  Factoring RS">
+<meta name="twitter:description" content="填了一些坑，于是开心地来写写题~ 进度表因为太长被吞辣！">
 <meta name="twitter:image" content="http://csuwangj.top/2018/04/19/id0-rsa-WP合集/1524188467870.png">
 
 
@@ -373,6 +373,8 @@
 
       
         <p>填了一些坑，于是开心地来写写题~</p>
+<p>进度表因为太长被吞辣！</p>
+<a id="more"></a>
 <h1 id="进度表"><a href="#进度表" class="headerlink" title="进度表"></a>进度表</h1><ul>
 <li style="list-style: none"><input type="checkbox" checked> <a href="https://id0-rsa.pub/problem/18/" target="_blank" rel="noopener">Intro to Hashing</a></li>
 <li style="list-style: none"><input type="checkbox" checked> <a href="https://id0-rsa.pub/problem/19/" target="_blank" rel="noopener">Intro to PGP</a></li>
@@ -417,7 +419,6 @@
 <li style="list-style: none"><input type="checkbox"> <a href="https://id0-rsa.pub/problem/37/" target="_blank" rel="noopener">Not So Safe Primes</a></li>
 <li style="list-style: none"><input type="checkbox"> <a href="https://id0-rsa.pub/problem/44/" target="_blank" rel="noopener">DSA with LCG nonces</a></li>
 </ul>
-<a id="more"></a>
 <h1 id="Intro-to-Hashing"><a href="#Intro-to-Hashing" class="headerlink" title="Intro to Hashing"></a>Intro to Hashing</h1><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Python</span></span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">import</span> hashlib</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>hashlib.md5(hashlib.sha256(<span class="string">'id0-rsa.pub'</span>).hexdigest()).hexdigest()</span><br><span class="line"><span class="comment"># 'b25d449d86aa07981d358d3b71b891de'</span></span><br></pre></td></tr></table></figure>
 <h1 id="Intro-to-PGP"><a href="#Intro-to-PGP" class="headerlink" title="Intro to PGP"></a>Intro to PGP</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># bash</span></span><br><span class="line"></span><br><span class="line">root@kali:~/Documents/id0-rsa<span class="comment"># touch Intro_to_PGP.key</span></span><br><span class="line">root@kali:~/Documents/id0-rsa<span class="comment"># gpg --import Intro_to_PGP.key </span></span><br><span class="line">gpg: key 2503D0F1A81B09D4: public key <span class="string">"id0-rsa.pub (http://id0-rsa.pub) &lt;id0rsa.pub@gmail.com&gt;"</span> imported</span><br><span class="line">gpg: Total number processed: 1</span><br><span class="line">gpg:               imported: 1</span><br><span class="line">root@kali:~/Documents/id0-rsa<span class="comment"># touch Intro_to_PGP.txt</span></span><br><span class="line">root@kali:~/Documents/id0-rsa<span class="comment"># gpg -d Intro_to_PGP.txt</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Thank you Phil Zimmermann!</span></span><br></pre></td></tr></table></figure>
 <h1 id="Hello-PGP"><a href="#Hello-PGP" class="headerlink" title="Hello PGP"></a>Hello PGP</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#!/bin/bash</span></span><br><span class="line"></span><br><span class="line">count=1</span><br><span class="line"></span><br><span class="line"><span class="keyword">while</span> <span class="built_in">read</span> WORD; <span class="keyword">do</span></span><br><span class="line">	gpg --batch --passphrase <span class="variable">$WORD</span> --decrypt test.txt 2&gt;/dev/null</span><br><span class="line">	<span class="keyword">if</span> [ $? -eq 0 ]; <span class="keyword">then</span></span><br><span class="line">		<span class="built_in">echo</span> </span><br><span class="line">		<span class="built_in">echo</span> <span class="variable">$WORD</span></span><br><span class="line">		<span class="built_in">exit</span></span><br><span class="line">	<span class="keyword">fi</span></span><br><span class="line">	count=$(( count + 1 ))</span><br><span class="line">	<span class="keyword">if</span> [ $((count % 1000)) -eq 0 ]; <span class="keyword">then</span></span><br><span class="line">		<span class="built_in">echo</span> <span class="variable">$count</span></span><br><span class="line">	<span class="keyword">fi</span></span><br><span class="line"><span class="keyword">done</span> &lt; words</span><br><span class="line"></span><br><span class="line"><span class="comment"># passionately apathetic</span></span><br><span class="line"><span class="comment"># seamanship</span></span><br><span class="line"><span class="comment"># gpg: AES256 encrypted data</span></span><br><span class="line"><span class="comment"># gpg: encrypted with 1 passphrase</span></span><br></pre></td></tr></table></figure>
@@ -545,9 +546,9 @@
       
         <div class="post-tags">
           
-            <a href="/tags/Crypto/" rel="tag"># Crypto</a>
-          
             <a href="/tags/CTF/" rel="tag"># CTF</a>
+          
+            <a href="/tags/Crypto/" rel="tag"># Crypto</a>
           
         </div>
       
@@ -649,7 +650,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives/">
-                <span class="site-state-item-count">10</span>
+                <span class="site-state-item-count">11</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
