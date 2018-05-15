@@ -78,7 +78,7 @@
 <link href="/css/main.css?v=5.1.2" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Crypto,CTF," />
+  <meta name="keywords" content="CTF,Crypto," />
 
 
 
@@ -97,7 +97,7 @@
 
 
 <meta name="description" content="忙里偷闲做做题wwwwwwwwwwwww">
-<meta name="keywords" content="Crypto,CTF">
+<meta name="keywords" content="CTF,Crypto">
 <meta property="og:type" content="article">
 <meta property="og:title" content="id0-rsa WP合集">
 <meta property="og:url" content="http://CSUwangj.top/2018/04/19/id0-rsa-WP合集/index.html">
@@ -113,7 +113,7 @@
 <meta property="og:image" content="http://csuwangj.top/2018/04/19/id0-rsa-WP合集/1525631225843.png">
 <meta property="og:image" content="http://csuwangj.top/2018/04/19/id0-rsa-WP合集/1525698998368.png">
 <meta property="og:image" content="http://csuwangj.top/2018/04/19/id0-rsa-WP合集/1525700559472.png">
-<meta property="og:updated_time" content="2018-05-15T03:12:03.000Z">
+<meta property="og:updated_time" content="2018-05-15T16:30:04.381Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="id0-rsa WP合集">
 <meta name="twitter:description" content="忙里偷闲做做题wwwwwwwwwwwww">
@@ -557,6 +557,8 @@
 <hr>
 <h1 id="Bad-Entropy"><a href="#Bad-Entropy" class="headerlink" title="Bad Entropy"></a>Bad Entropy</h1><p>就是爆破咯</p>
 <hr>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> hashlib <span class="keyword">import</span> md5</span><br><span class="line"><span class="keyword">from</span> Crypto.Cipher <span class="keyword">import</span> AES</span><br><span class="line"><span class="keyword">import</span> binascii</span><br><span class="line">c = binascii.unhexlify(<span class="string">"a99210d796a1e37503febf65c329c1b2"</span>)</span><br><span class="line">print(c)</span><br><span class="line"></span><br><span class="line">i = <span class="number">1453651200</span></span><br><span class="line"><span class="keyword">while</span> i &lt;= <span class="number">1454169600</span>:</span><br><span class="line">    s = md5(str(i).encode()).hexdigest()</span><br><span class="line">    s = binascii.unhexlify(s)</span><br><span class="line">    cipher = AES.new(s, AES.MODE_ECB)</span><br><span class="line">    <span class="keyword">try</span>:</span><br><span class="line">        cipher.decrypt(c).decode(<span class="string">'ascii'</span>)</span><br><span class="line">        print(cipher.decrypt(c))</span><br><span class="line">        a = input()</span><br><span class="line">        <span class="keyword">if</span> int(a) == <span class="number">0</span>:</span><br><span class="line">            print(i)</span><br><span class="line">            <span class="keyword">break</span></span><br><span class="line">    <span class="keyword">except</span>:</span><br><span class="line">        <span class="keyword">pass</span></span><br><span class="line">    i += <span class="number">1</span></span><br></pre></td></tr></table></figure>
+<p>爆破成功，密钥时间是<code>1453862488</code></p>
 <h1 id="Rainbow-Table-Hash-Chain"><a href="#Rainbow-Table-Hash-Chain" class="headerlink" title="Rainbow Table Hash Chain"></a>Rainbow Table Hash Chain</h1><p>直觉告诉我hashcat可解</p>
 <hr>
 <h1 id="Elliptic-Curve-Private-Key-Recovery"><a href="#Elliptic-Curve-Private-Key-Recovery" class="headerlink" title="Elliptic Curve Private Key Recovery"></a>Elliptic Curve Private Key Recovery</h1><p>貌似是公钥选得腊鸡？但是我需要复（yu）习一下ECC</p>
@@ -606,9 +608,9 @@
       
         <div class="post-tags">
           
-            <a href="/tags/Crypto/" rel="tag"># Crypto</a>
-          
             <a href="/tags/CTF/" rel="tag"># CTF</a>
+          
+            <a href="/tags/Crypto/" rel="tag"># Crypto</a>
           
         </div>
       
