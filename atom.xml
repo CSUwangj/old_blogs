@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://CSUwangj.top/"/>
-  <updated>2018-05-22T11:37:31.482Z</updated>
+  <updated>2018-05-22T12:02:27.551Z</updated>
   <id>http://CSUwangj.top/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="http://CSUwangj.top/2018/05/21/AFCTF-Crypto-OfficialWriteUp/"/>
     <id>http://CSUwangj.top/2018/05/21/AFCTF-Crypto-OfficialWriteUp/</id>
     <published>2018-05-21T06:46:15.000Z</published>
-    <updated>2018-05-22T11:37:31.482Z</updated>
+    <updated>2018-05-22T12:02:27.551Z</updated>
     
     <summary type="html">
     
@@ -34,11 +34,11 @@
       <category term="WriteUp" scheme="http://CSUwangj.top/categories/WriteUp/"/>
     
     
-      <category term="CTF" scheme="http://CSUwangj.top/tags/CTF/"/>
+      <category term="Misc" scheme="http://CSUwangj.top/tags/Misc/"/>
     
       <category term="Crypto" scheme="http://CSUwangj.top/tags/Crypto/"/>
     
-      <category term="Misc" scheme="http://CSUwangj.top/tags/Misc/"/>
+      <category term="CTF" scheme="http://CSUwangj.top/tags/CTF/"/>
     
   </entry>
   
@@ -58,15 +58,15 @@
       <category term="WriteUp" scheme="http://CSUwangj.top/categories/WriteUp/"/>
     
     
-      <category term="CTF" scheme="http://CSUwangj.top/tags/CTF/"/>
+      <category term="Misc" scheme="http://CSUwangj.top/tags/Misc/"/>
     
       <category term="Crypto" scheme="http://CSUwangj.top/tags/Crypto/"/>
     
-      <category term="Misc" scheme="http://CSUwangj.top/tags/Misc/"/>
-    
-      <category term="Web" scheme="http://CSUwangj.top/tags/Web/"/>
+      <category term="CTF" scheme="http://CSUwangj.top/tags/CTF/"/>
     
       <category term="Rev" scheme="http://CSUwangj.top/tags/Rev/"/>
+    
+      <category term="Web" scheme="http://CSUwangj.top/tags/Web/"/>
     
       <category term="PWN" scheme="http://CSUwangj.top/tags/PWN/"/>
     
@@ -111,9 +111,9 @@
       <category term="WriteUp" scheme="http://CSUwangj.top/categories/WriteUp/"/>
     
     
-      <category term="CTF" scheme="http://CSUwangj.top/tags/CTF/"/>
-    
       <category term="Crypto" scheme="http://CSUwangj.top/tags/Crypto/"/>
+    
+      <category term="CTF" scheme="http://CSUwangj.top/tags/CTF/"/>
     
   </entry>
   
@@ -168,11 +168,11 @@
       <category term="WriteUp" scheme="http://CSUwangj.top/categories/WriteUp/"/>
     
     
-      <category term="CTF" scheme="http://CSUwangj.top/tags/CTF/"/>
+      <category term="Misc" scheme="http://CSUwangj.top/tags/Misc/"/>
     
       <category term="Crypto" scheme="http://CSUwangj.top/tags/Crypto/"/>
     
-      <category term="Misc" scheme="http://CSUwangj.top/tags/Misc/"/>
+      <category term="CTF" scheme="http://CSUwangj.top/tags/CTF/"/>
     
       <category term="Web" scheme="http://CSUwangj.top/tags/Web/"/>
     
@@ -243,9 +243,9 @@
       <category term="Tools" scheme="http://CSUwangj.top/categories/Tools/"/>
     
     
-      <category term="Crypto" scheme="http://CSUwangj.top/tags/Crypto/"/>
-    
       <category term="Misc" scheme="http://CSUwangj.top/tags/Misc/"/>
+    
+      <category term="Crypto" scheme="http://CSUwangj.top/tags/Crypto/"/>
     
   </entry>
   
@@ -266,15 +266,15 @@
       <category term="WriteUp" scheme="http://CSUwangj.top/categories/WriteUp/"/>
     
     
-      <category term="CTF" scheme="http://CSUwangj.top/tags/CTF/"/>
+      <category term="Misc" scheme="http://CSUwangj.top/tags/Misc/"/>
     
       <category term="Crypto" scheme="http://CSUwangj.top/tags/Crypto/"/>
     
-      <category term="Misc" scheme="http://CSUwangj.top/tags/Misc/"/>
-    
-      <category term="Web" scheme="http://CSUwangj.top/tags/Web/"/>
+      <category term="CTF" scheme="http://CSUwangj.top/tags/CTF/"/>
     
       <category term="Rev" scheme="http://CSUwangj.top/tags/Rev/"/>
+    
+      <category term="Web" scheme="http://CSUwangj.top/tags/Web/"/>
     
       <category term="PWN" scheme="http://CSUwangj.top/tags/PWN/"/>
     
@@ -296,9 +296,9 @@
       <category term="WriteUp" scheme="http://CSUwangj.top/categories/WriteUp/"/>
     
     
-      <category term="CTF" scheme="http://CSUwangj.top/tags/CTF/"/>
-    
       <category term="Misc" scheme="http://CSUwangj.top/tags/Misc/"/>
+    
+      <category term="CTF" scheme="http://CSUwangj.top/tags/CTF/"/>
     
       <category term="Rev" scheme="http://CSUwangj.top/tags/Rev/"/>
     
