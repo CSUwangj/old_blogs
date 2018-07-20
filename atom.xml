@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://CSUwangj.top/"/>
-  <updated>2018-06-02T18:32:18.911Z</updated>
+  <updated>2018-07-20T07:21:42.429Z</updated>
   <id>http://CSUwangj.top/</id>
   
   <author>
@@ -17,11 +17,50 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>CTF用环境搭建</title>
+    <link href="http://CSUwangj.top/2018/07/20/CTF%E7%94%A8%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/"/>
+    <id>http://CSUwangj.top/2018/07/20/CTF用环境搭建/</id>
+    <published>2018-07-20T06:57:49.000Z</published>
+    <updated>2018-07-20T07:21:42.429Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;目前工具集合&quot;&gt;&lt;a href=&quot;#目前工具集合&quot; class=&quot;headerlink&quot; title=&quot;目前工具集合&quot;&gt;&lt;/a&gt;目前工具集合&lt;/h1&gt;&lt;h2 id=&quot;安装式&quot;&gt;&lt;a href=&quot;#安装式&quot; class=&quot;headerlink&quot; title=&quot;安装式&quot;&gt;&lt;/a&gt;安装式&lt;/h2&gt;&lt;p&gt;这里的话就是那种安装以后直接用的，也有的是插件&lt;/p&gt;
+&lt;ul&gt;
+&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot; checked&gt; 86架构及基本库&lt;/li&gt;
+&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot; checked&gt; pwndbg&lt;/li&gt;
+&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot; checked&gt; r2&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;非安装式&quot;&gt;&lt;a href=&quot;#非安装式&quot; class=&quot;headerlink&quot; title=&quot;非安装式&quot;&gt;&lt;/a&gt;非安装式&lt;/h2&gt;&lt;p&gt;这里的是不用/不能安装的库，比如脚本等&lt;/p&gt;
+&lt;p&gt;统一放置在/opt/目录下，可能根据类别再分&lt;/p&gt;
+&lt;ul&gt;
+&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot; checked&gt; rsatool&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;Python库&quot;&gt;&lt;a href=&quot;#Python库&quot; class=&quot;headerlink&quot; title=&quot;Python库&quot;&gt;&lt;/a&gt;Python库&lt;/h2&gt;&lt;ul&gt;
+&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot; checked&gt; pwntools&lt;/li&gt;
+&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot; checked&gt; gmpy2&lt;/li&gt;
+&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot; checked&gt; unicorn&lt;/li&gt;
+&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot; checked&gt; zio&lt;/li&gt;
+&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot; checked&gt; angr&lt;/li&gt;
+&lt;/ul&gt;
+    
+    </summary>
+    
+      <category term="Notes" scheme="http://CSUwangj.top/categories/Notes/"/>
+    
+    
+      <category term="CTF" scheme="http://CSUwangj.top/tags/CTF/"/>
+    
+      <category term="environment" scheme="http://CSUwangj.top/tags/environment/"/>
+    
+  </entry>
+  
+  <entry>
     <title>关于散列函数的一点思考</title>
     <link href="http://CSUwangj.top/2018/06/03/%E5%85%B3%E4%BA%8E%E6%95%A3%E5%88%97%E5%87%BD%E6%95%B0%E7%9A%84%E4%B8%80%E7%82%B9%E6%80%9D%E8%80%83/"/>
     <id>http://CSUwangj.top/2018/06/03/关于散列函数的一点思考/</id>
     <published>2018-06-02T17:35:47.000Z</published>
-    <updated>2018-06-02T18:32:18.911Z</updated>
+    <updated>2018-06-02T18:32:18.000Z</updated>
     
     <summary type="html">
     
@@ -43,7 +82,7 @@
     <link href="http://CSUwangj.top/2018/05/21/AFCTF-Crypto-OfficialWriteUp/"/>
     <id>http://CSUwangj.top/2018/05/21/AFCTF-Crypto-OfficialWriteUp/</id>
     <published>2018-05-21T06:46:15.000Z</published>
-    <updated>2018-05-22T12:02:27.000Z</updated>
+    <updated>2018-05-22T12:02:27.551Z</updated>
     
     <summary type="html">
     
@@ -56,11 +95,11 @@
       <category term="WriteUp" scheme="http://CSUwangj.top/categories/WriteUp/"/>
     
     
-      <category term="Misc" scheme="http://CSUwangj.top/tags/Misc/"/>
+      <category term="CTF" scheme="http://CSUwangj.top/tags/CTF/"/>
     
       <category term="Crypto" scheme="http://CSUwangj.top/tags/Crypto/"/>
     
-      <category term="CTF" scheme="http://CSUwangj.top/tags/CTF/"/>
+      <category term="Misc" scheme="http://CSUwangj.top/tags/Misc/"/>
     
   </entry>
   
@@ -69,7 +108,7 @@
     <link href="http://CSUwangj.top/2018/05/10/JarvisOJ-WP%E5%90%88%E9%9B%86/"/>
     <id>http://CSUwangj.top/2018/05/10/JarvisOJ-WP合集/</id>
     <published>2018-05-10T01:11:00.000Z</published>
-    <updated>2018-05-15T15:49:49.991Z</updated>
+    <updated>2018-05-15T15:49:49.000Z</updated>
     
     <summary type="html">
     
@@ -80,11 +119,11 @@
       <category term="WriteUp" scheme="http://CSUwangj.top/categories/WriteUp/"/>
     
     
-      <category term="Misc" scheme="http://CSUwangj.top/tags/Misc/"/>
+      <category term="CTF" scheme="http://CSUwangj.top/tags/CTF/"/>
     
       <category term="Crypto" scheme="http://CSUwangj.top/tags/Crypto/"/>
     
-      <category term="CTF" scheme="http://CSUwangj.top/tags/CTF/"/>
+      <category term="Misc" scheme="http://CSUwangj.top/tags/Misc/"/>
     
       <category term="Web" scheme="http://CSUwangj.top/tags/Web/"/>
     
@@ -99,7 +138,7 @@
     <link href="http://CSUwangj.top/2018/04/27/ctf-magic-number-WP/"/>
     <id>http://CSUwangj.top/2018/04/27/ctf-magic-number-WP/</id>
     <published>2018-04-27T13:48:19.000Z</published>
-    <updated>2018-04-27T13:58:26.409Z</updated>
+    <updated>2018-04-27T13:58:26.000Z</updated>
     
     <summary type="html">
     
@@ -122,7 +161,7 @@
     <link href="http://CSUwangj.top/2018/04/19/id0-rsa-WP%E5%90%88%E9%9B%86/"/>
     <id>http://CSUwangj.top/2018/04/19/id0-rsa-WP合集/</id>
     <published>2018-04-19T07:53:15.000Z</published>
-    <updated>2018-05-15T16:31:43.533Z</updated>
+    <updated>2018-05-15T16:31:43.000Z</updated>
     
     <summary type="html">
     
@@ -133,9 +172,9 @@
       <category term="WriteUp" scheme="http://CSUwangj.top/categories/WriteUp/"/>
     
     
-      <category term="Crypto" scheme="http://CSUwangj.top/tags/Crypto/"/>
-    
       <category term="CTF" scheme="http://CSUwangj.top/tags/CTF/"/>
+    
+      <category term="Crypto" scheme="http://CSUwangj.top/tags/Crypto/"/>
     
   </entry>
   
@@ -144,7 +183,7 @@
     <link href="http://CSUwangj.top/2018/03/01/%E5%AE%89%E8%A3%85%E5%BC%8F%E5%B7%A5%E5%85%B7%E9%9B%86%E5%90%88/"/>
     <id>http://CSUwangj.top/2018/03/01/安装式工具集合/</id>
     <published>2018-03-01T13:59:01.000Z</published>
-    <updated>2018-03-01T14:07:06.140Z</updated>
+    <updated>2018-03-01T14:07:06.000Z</updated>
     
     <summary type="html">
     
@@ -165,7 +204,7 @@
     <link href="http://CSUwangj.top/2018/02/26/%E9%80%86%E5%90%91%E5%B7%A5%E7%A8%8B%E6%A0%B8%E5%BF%83%E5%8E%9F%E7%90%86%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%88%E4%B8%80%EF%BC%89/"/>
     <id>http://CSUwangj.top/2018/02/26/逆向工程核心原理学习笔记（一）/</id>
     <published>2018-02-26T13:52:44.000Z</published>
-    <updated>2018-02-26T13:52:44.329Z</updated>
+    <updated>2018-02-26T13:52:44.000Z</updated>
     
     <summary type="html">
     
@@ -179,7 +218,7 @@
     <link href="http://CSUwangj.top/2018/02/16/HGAME2018-week2%E9%83%A8%E5%88%86WP/"/>
     <id>http://CSUwangj.top/2018/02/16/HGAME2018-week2部分WP/</id>
     <published>2018-02-16T08:00:20.000Z</published>
-    <updated>2018-03-09T05:23:53.879Z</updated>
+    <updated>2018-03-09T05:23:53.000Z</updated>
     
     <summary type="html">
     
@@ -190,11 +229,11 @@
       <category term="WriteUp" scheme="http://CSUwangj.top/categories/WriteUp/"/>
     
     
-      <category term="Misc" scheme="http://CSUwangj.top/tags/Misc/"/>
+      <category term="CTF" scheme="http://CSUwangj.top/tags/CTF/"/>
     
       <category term="Crypto" scheme="http://CSUwangj.top/tags/Crypto/"/>
     
-      <category term="CTF" scheme="http://CSUwangj.top/tags/CTF/"/>
+      <category term="Misc" scheme="http://CSUwangj.top/tags/Misc/"/>
     
       <category term="Web" scheme="http://CSUwangj.top/tags/Web/"/>
     
@@ -230,7 +269,7 @@
     <link href="http://CSUwangj.top/2018/02/08/%E8%BD%BB%E5%B7%A5%E5%85%B7%E4%B8%AA%E4%BA%BA%E9%9B%86%E5%90%88/"/>
     <id>http://CSUwangj.top/2018/02/08/轻工具个人集合/</id>
     <published>2018-02-08T15:17:31.000Z</published>
-    <updated>2018-03-09T04:50:31.172Z</updated>
+    <updated>2018-03-09T04:50:31.000Z</updated>
     
     <summary type="html">
     
@@ -253,7 +292,7 @@
     <link href="http://CSUwangj.top/2018/02/08/CTF%E8%BD%BB%E5%B7%A5%E5%85%B7%E4%B8%AA%E4%BA%BA%E9%9B%86%E5%90%88/"/>
     <id>http://CSUwangj.top/2018/02/08/CTF轻工具个人集合/</id>
     <published>2018-02-08T05:12:03.000Z</published>
-    <updated>2018-05-03T15:09:15.496Z</updated>
+    <updated>2018-05-03T15:09:15.000Z</updated>
     
     <summary type="html">
     
@@ -265,9 +304,9 @@
       <category term="Tools" scheme="http://CSUwangj.top/categories/Tools/"/>
     
     
-      <category term="Misc" scheme="http://CSUwangj.top/tags/Misc/"/>
-    
       <category term="Crypto" scheme="http://CSUwangj.top/tags/Crypto/"/>
+    
+      <category term="Misc" scheme="http://CSUwangj.top/tags/Misc/"/>
     
   </entry>
   
@@ -288,11 +327,11 @@
       <category term="WriteUp" scheme="http://CSUwangj.top/categories/WriteUp/"/>
     
     
-      <category term="Misc" scheme="http://CSUwangj.top/tags/Misc/"/>
+      <category term="CTF" scheme="http://CSUwangj.top/tags/CTF/"/>
     
       <category term="Crypto" scheme="http://CSUwangj.top/tags/Crypto/"/>
     
-      <category term="CTF" scheme="http://CSUwangj.top/tags/CTF/"/>
+      <category term="Misc" scheme="http://CSUwangj.top/tags/Misc/"/>
     
       <category term="Web" scheme="http://CSUwangj.top/tags/Web/"/>
     
@@ -318,9 +357,9 @@
       <category term="WriteUp" scheme="http://CSUwangj.top/categories/WriteUp/"/>
     
     
-      <category term="Misc" scheme="http://CSUwangj.top/tags/Misc/"/>
-    
       <category term="CTF" scheme="http://CSUwangj.top/tags/CTF/"/>
+    
+      <category term="Misc" scheme="http://CSUwangj.top/tags/Misc/"/>
     
       <category term="Rev" scheme="http://CSUwangj.top/tags/Rev/"/>
     

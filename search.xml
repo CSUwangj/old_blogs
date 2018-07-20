@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[CTF用环境搭建]]></title>
+    <url>%2F2018%2F07%2F20%2FCTF%E7%94%A8%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA%2F</url>
+    <content type="text"><![CDATA[目前工具集合安装式这里的话就是那种安装以后直接用的，也有的是插件 86架构及基本库 pwndbg r2 非安装式这里的是不用/不能安装的库，比如脚本等 统一放置在/opt/目录下，可能根据类别再分 rsatool Python库 pwntools gmpy2 unicorn zio angr 正文安装式86架构及其个别基本库12345dpkg --add-architecture i386 apt-get updateapt-get -f dist-upgrade apt-get updateapt-get install lib32c-dev lib32stdc++6 pwndbg123git clone https://github.com/pwndbg/pwndbg /opt/pwndbgcd /opt/pwndbg./setup.sh 如果对pip无法用的时候怎么安装感兴趣，可以戳这里 r2123git clone https://github.com/radare/radare2.git /opt/r2cd /opt/r2/sys/install.sh 非安装式 工具 指令 备注 rsatool git clone https://github.com/ius/rsatool.git /opt/Crypto/rsatool rsatool12 Python库默认在pip能用的情况下，默认为python2.7，其他版本会备注 工具 指令 备注 pwntools pip install pwntools gmpy2 apt-get install python-gmpy2 zio pip install termcolor zio angr pip install angr unicorn pip install unicorn pwntools自带，但是不妨碍你只安装它]]></content>
+      <categories>
+        <category>Notes</category>
+      </categories>
+      <tags>
+        <tag>CTF</tag>
+        <tag>environment</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[关于散列函数的一点思考]]></title>
     <url>%2F2018%2F06%2F03%2F%E5%85%B3%E4%BA%8E%E6%95%A3%E5%88%97%E5%87%BD%E6%95%B0%E7%9A%84%E4%B8%80%E7%82%B9%E6%80%9D%E8%80%83%2F</url>
     <content type="text"><![CDATA[今天在ACM群灌水的时候因为一个题目引发了一些思考，题目是比赛链接的A题 其实题目很明显，3e4的字符串总量，1e3的字符串长度上限，样例就显示了有字母、数字、符号，就10M内存，用字典树妥妥炸了。 所以就哈希呗。 幸运的是STL里就有自带的hash函数，于是就水过去了。 1234567891011121314151617#include &lt;bits/stdc++.h&gt;using namespace std;int main()&#123; ios::sync_with_stdio(0); set&lt;long long&gt; m; hash&lt;string&gt; h; int n; string temp; cin&gt;&gt;n; while(n--)&#123; cin&gt;&gt;temp; m.insert(h(temp)); &#125; cout&lt;&lt;m.size()&lt;&lt;endl; return 0;&#125; 因为其实3e4这个字符串数量还是比较大的，在群里聊起了碰撞的问题，然后发现还是有丶东西，索性写一篇博文分析一下。 散列函数简介散列函数，也称哈希函数，是一种将任意大小数据映射到固定长度数字的单向函数。 散列函数常见于密码学的目的，随着密码学渗透到计算机的方方面面，因为其一些有用的特性也被用于ACM竞赛中。 通常来说，好的散列函数拥有以下几个特性： 确定性。固定输入对应的散列值是固定的。 分布均一。优秀的散列函数会使得所有值可能出现的概率尽量一致，这也导出了后面引出的一些特性。 值域固定。比如std::hash的值域为size_t的可表示范围，SHA-1的值域为$[0,2^{160}-1]$。 于是，用于密码学的散列函数经常有以下的特性： 单向性。这里有两个含义，一方面来说既然任意大小的数据都被映射到固定范围的一些值上，那么必然是一个多对一的关系，这就是第一个单向的原因；第二个原因则是函数本身的算法经常会保证无法通过散列值计算原始数据可能的集合。 雪崩效应。一个比特的改变，可能就会引起值的大幅度变化（按CryptoExchane的说法，是一半以上的比特）。这样就很难通过碰撞发起攻击了。 抗碰撞性。这里具体又分为两种，一种为抗弱碰撞性，另一种为抗强碰撞性，分别对应第二原像攻击和碰撞攻击。 抗弱碰撞性。指对于某散列函数$H()$与任意给定的$x$，找到$y≠x$且$H(x)=H(y)$在计算上不可行。 抗强碰撞性。值对于某散列函数$H()$而言，找到$H(x)=H(y)$且$x≠y$这样的数对在计算上不可行。 公开性。为了鉴别需求，常见的散列函数算法公开，这样任何能够编程的人都可以自己编程验证散列值。 ACM中的散列函数这里毕竟一个是我也退役了，没碰ACM有些时日，另一个我打ACM时也没有学得很深，所以这里的举例只能拿我们讲课的课件来粗糙地分析一下了，如果有误欢迎指出。 顺便ACM这比赛打过的同学就知道，不可能真写一个类似MD5这样的散列函数，ACM中的散列函数我通常用一句话概括：“又不是不能用。” 对于ACM当然是够用的，用其他地方就，再商量吧~ 直接模余法首先对于整数来说，最简单的方式就是模余法了，这也是很多题目处理大数的方式。模余法要尽量模上一个素数，这样会使得冲突的可能性降低。 但是选手在写题的时候通常不会直接模余，因为即便这样冲突降低，但是依然不小，而且会后续规避这样冲突的处理操作并不是很舒服。 转换(模余)法这里请看这个例题(HDOJ-1496 Equations) 题意简单，就类似“百钱买百鸡”问题。 但是如果直接暴力地四重循环，那可就很嗨了……虽说一般一秒做$10^8$简单计算的确可以，但是这题的数据的确就是在超时的边缘。 正确的做法就是预处理两个变量所有可能对应值的相反数，然后进行查找。 但是如果直接搞，那就需要开$2×10^7$大小的数组，不仅在MLE的边缘，而且还有初始化TLE的风险。 所以这里就可以用散列了。具体讨论见这里 同样的，对于一个纯字母的字符串来说，也可以进行这样的转换。就是将一个字符串视为二十六进制的数字，然后求这个数字的十进制值，因为可能会溢出，就模上一个素数如$1000000007$这样的。 字符串HASH——ELFHASH这里直接放它的代码吧，十分简短。 12345678910111213141516171819202122// ELF Hash Function unsigned int ELFHash(char *str) &#123; unsigned int hash = 0; unsigned int x = 0; while (*str) &#123; hash = (hash &lt;&lt; 4) + (*str++);//hash左移4位，把当前字符ASCII存入hash低四位。 if ((x = hash &amp; 0xF0000000L) != 0) &#123; //如果最高的四位不为0，则说明字符多余7个，现在正在存第7个字符，如果不处理，再加下一个字符时，第一个字符会被移出，因此要有如下处理。 //该处理，如果最高位为0，就会仅仅影响5-8位，否则会影响5-31位，因为C语言使用的算数移位 //因为1-4位刚刚存储了新加入到字符，所以不能&gt;&gt;28 hash ^= (x &gt;&gt; 24); //上面这行代码并不会对X有影响，本身X和hash的高4位相同，下面这行代码&amp;~即对28-31(高4位)位清零。 hash &amp;= ~x; &#125; &#125; //返回一个符号位为0的数，即丢弃最高位，以免函数外产生影响。(我们可以考虑，如果只有字符，符号位不可能为负) return (hash &amp; 0x7FFFFFFF); &#125; 这个函数写起来十分简单。我把注释也复制过来了，就不多解释了。 散列值碰撞了，怎么办？扯了那么多前篇，终于到这篇博文真实目的了，不过估计会很短…… 既然是散列函数，就要面对这个问题，一旦发生碰撞，很多问题就出来了，这里就简单分析一下针对散列函数的几个攻击吧。同时也会分析一下在ACM中散列函数的一点使用方法。 穷举攻击对于一个理想的散列函数来说，既然满足了上面的几个特性，穷举攻击需要的次数应该就是$\frac{值域}{2}$。 给你一个懂事的微笑。 生日攻击现在我们就尝试攻击散列函数的强抗碰撞性。这里以std::hash为例。 基于散列函数的几个特性来说，我们得到值域内任意值的可能性都为$\frac1{2^{32}}$。那么，在计算不同的任意$n$个字符串候，这些散列值都不冲突的可能性就是$\frac{2^{32}-1}{2^{32}}×\frac{2^{32}-2}{2^{32}}×…×\frac{2^{32}-n+1}{2^{32}}$。 对于题目给的数据，使用下面Python代码可以计算得不发生冲突的概率为$0.9005311337474664$即发生错误的可能性为$0.0994688662525336$。 12345678# a.pya = 1 &lt;&lt; 32s = 1for i in range(0, 30000): s *= (a-i)/aprint(s)#python a.py#0.9005311337474664 可见这个数字对于脸白的人来说是够了的。 教练我脸黑——多重散列函数那么我们就要考虑找路子了，这里又有两条分支了： 既然一个散列函数不行，那我就再来一个。之前是把字母字符串视为二十六进制数，那我就加个ELFHASH。这样做的好处是发生冲突的可能性稳定下降（变为两者发生冲突的乘积），坏处是编码难度上升。 加盐，加不同的盐值。但是这里要求散列函数是对块进行操作的。 加盐，可以简单理解为在字符串前/后面加上一个字符串，这样就可以使散列值发生变化。 对散列函数的要求是显而易见的，因为不论是二十六进制还是ELFHASH，只要之前字符串的散列值是同一个，那么在加盐后结果也不会发生改变。（块的大小对这里也会有影响，这里留给读者自行考虑） 对于GCC的std::hash来说，它用的是$MurmurHash Unaligned 2$，是一个分块大小为4的非密码学散列函数。 考虑理想状况，我们将多个盐值对应的不同散列值作为比对的标准，我们就能在一定程度上解决冲突，这里又能分出两条线。 将不同散列值放在不同容器里考虑这样的比对算法 12345678910111213141516//There is a bunch of set containers named s[0]/s[1]/etcstring str;cin &gt;&gt;str;temp = hash(str)if(!s[0].count(temp))&#123; s[0].insert(temp) count++&#125;else&#123; temp = hash(str+"salt1") if(!s[1].count(temp))&#123; s[1].insert(temp) count++ &#125;else&#123; //etc &#125;&#125; 那么可能会发生这样的问题，就是字符串s在第一次比对时和a串冲突，在第二次比对时又和b串冲突。 易知对于固定数量$n$的生日攻击来说，不发生冲突的概率$p$是一定的，假设多重散列函数就像我们所想的一样工作，那么该实验可以认为是一个成功率为$1-p$的伯努利实验。 在$m$重散列函数的情况下，均发生冲突的可能性是$P_0(m)=C_m^0(1-p)^m$，取这次题目的数据来说，两重散列函数发生冲突的概率为$0.009894055353564416$。 将各散列值包装成一个整体也就是说算法改为 1234567891011121314struct hashv&#123; size_t v[2];&#125;;set&lt;hashv&gt; s;string str;cin&gt;&gt;str;hashv temptemp.v[0] = hash(str)temp.v[1] = hash(str+"salt")if(!s.count(temp))&#123; s.insert(temp); count++;&#125; 理想状态下，此时发生单次冲突的概率为两次散列均冲突的概率，即两者的乘积，也就是$2^{64}-2^{33}+1$ 利用以下python代码计算得在题设情况下，不发生冲突的可能性为$0.9999999999999999999971601954045129840219384586382661991347799758614026869784477630643202473665079505271849114917935938025327598810920608449$ ，太强辣！ 1234567891011from decimal import *a = 1 &lt;&lt; 64 - 1&lt;&lt;33 +1a = Decimal(str(a))print(a)s = Decimal("1")getcontext().prec = 2000for i in range(0, 30000): if not i% 1000: print(i) s *= (a-Decimal(str(i)))/aprint(s) 可以发现，这样做以后是几何倍数降低发生碰撞的可能性了。 那么只有一个考虑了，就是这个结构体打算怎么写，不过这个问题就不是我操心的啦~ 后记思考使我快乐，即便这篇文章很水嘻嘻嘻 睡觉去啦~]]></content>
@@ -20,9 +32,9 @@
         <category>WriteUp</category>
       </categories>
       <tags>
-        <tag>Misc</tag>
-        <tag>Crypto</tag>
         <tag>CTF</tag>
+        <tag>Crypto</tag>
+        <tag>Misc</tag>
       </tags>
   </entry>
   <entry>
@@ -33,9 +45,9 @@
         <category>WriteUp</category>
       </categories>
       <tags>
-        <tag>Misc</tag>
-        <tag>Crypto</tag>
         <tag>CTF</tag>
+        <tag>Crypto</tag>
+        <tag>Misc</tag>
         <tag>Web</tag>
         <tag>Rev</tag>
         <tag>PWN</tag>
@@ -61,8 +73,8 @@
         <category>WriteUp</category>
       </categories>
       <tags>
-        <tag>Crypto</tag>
         <tag>CTF</tag>
+        <tag>Crypto</tag>
       </tags>
   </entry>
   <entry>
@@ -89,9 +101,9 @@
         <category>WriteUp</category>
       </categories>
       <tags>
-        <tag>Misc</tag>
-        <tag>Crypto</tag>
         <tag>CTF</tag>
+        <tag>Crypto</tag>
+        <tag>Misc</tag>
         <tag>Web</tag>
         <tag>PWN</tag>
       </tags>
@@ -128,8 +140,8 @@
         <category>Tools</category>
       </categories>
       <tags>
-        <tag>Misc</tag>
         <tag>Crypto</tag>
+        <tag>Misc</tag>
       </tags>
   </entry>
   <entry>
@@ -140,9 +152,9 @@
         <category>WriteUp</category>
       </categories>
       <tags>
-        <tag>Misc</tag>
-        <tag>Crypto</tag>
         <tag>CTF</tag>
+        <tag>Crypto</tag>
+        <tag>Misc</tag>
         <tag>Web</tag>
         <tag>Rev</tag>
         <tag>PWN</tag>
@@ -156,8 +168,8 @@
         <category>WriteUp</category>
       </categories>
       <tags>
-        <tag>Misc</tag>
         <tag>CTF</tag>
+        <tag>Misc</tag>
         <tag>Rev</tag>
       </tags>
   </entry>
