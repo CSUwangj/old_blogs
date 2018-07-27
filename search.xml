@@ -57,9 +57,9 @@
         <category>WriteUp</category>
       </categories>
       <tags>
+        <tag>CTF</tag>
         <tag>Misc</tag>
         <tag>Crypto</tag>
-        <tag>CTF</tag>
       </tags>
   </entry>
   <entry>
@@ -70,12 +70,12 @@
         <category>WriteUp</category>
       </categories>
       <tags>
+        <tag>CTF</tag>
         <tag>Misc</tag>
         <tag>Crypto</tag>
-        <tag>CTF</tag>
         <tag>PWN</tag>
-        <tag>Rev</tag>
         <tag>Web</tag>
+        <tag>Rev</tag>
       </tags>
   </entry>
   <entry>
@@ -98,8 +98,8 @@
         <category>WriteUp</category>
       </categories>
       <tags>
-        <tag>Crypto</tag>
         <tag>CTF</tag>
+        <tag>Crypto</tag>
       </tags>
   </entry>
   <entry>
@@ -126,9 +126,9 @@
         <category>WriteUp</category>
       </categories>
       <tags>
+        <tag>CTF</tag>
         <tag>Misc</tag>
         <tag>Crypto</tag>
-        <tag>CTF</tag>
         <tag>PWN</tag>
         <tag>Web</tag>
       </tags>
@@ -177,12 +177,12 @@
         <category>WriteUp</category>
       </categories>
       <tags>
+        <tag>CTF</tag>
         <tag>Misc</tag>
         <tag>Crypto</tag>
-        <tag>CTF</tag>
         <tag>PWN</tag>
-        <tag>Rev</tag>
         <tag>Web</tag>
+        <tag>Rev</tag>
       </tags>
   </entry>
   <entry>
@@ -193,8 +193,8 @@
         <category>WriteUp</category>
       </categories>
       <tags>
-        <tag>Misc</tag>
         <tag>CTF</tag>
+        <tag>Misc</tag>
         <tag>Rev</tag>
       </tags>
   </entry>
