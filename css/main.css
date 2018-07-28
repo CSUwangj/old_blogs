@@ -1169,7 +1169,7 @@ pre .javascript .function {
   position: relative;
   display: inline-block;
   padding: 0 40px;
-  color: #222;
+  color: #eee;
   background: #222;
   border-bottom: none;
 }
@@ -2027,7 +2027,7 @@ img:hover {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #997a14;
+  background: #edd7ff;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3040,7 +3040,25 @@ body {
   background-position: center;
 }
 .content {
-  border-radius: -50px;
+  border-radius: 30px;
   margin-top: 60px;
-  background: rgba(255,255,255,0.69) none repeat scroll !important;
+  padding: 30px 30px 30px 30px;
+  background: rgba(255,255,255,0.8) none repeat scroll !important;
+}
+.header {
+  background: rgba(8,31,71,0.9) none repeat scroll !important;
+}
+.footer {
+  background: rgba(8,31,71,0.9) none repeat scroll !important;
+}
+#sidebar {
+  background: url("/images/sidebar.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#sidebar p,
+#sidebar span,
+#sidebar a {
+  color: #fff;
 }
