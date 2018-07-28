@@ -116,7 +116,7 @@
 <meta name="keywords" content="CTF,environment">
 <meta property="og:type" content="article">
 <meta property="og:title" content="CTF用环境搭建">
-<meta property="og:url" content="http://CSUwangj.top/2018/07/20/CTF用环境搭建/index.html">
+<meta property="og:url" content="http://CSUwangj.github.io/2018/07/20/CTF用环境搭建/index.html">
 <meta property="og:site_name" content="LuckyBlog">
 <meta property="og:description" content="目前工具集合安装式这里的话就是那种安装以后直接用的，也有的是插件   86架构及基本库  pwndbg  r2  非安装式这里的是不用/不能安装的库，比如脚本等 统一放置在/opt/目录下，可能根据类别再分   rsatool  Python库  pwntools  gmpy2  unicorn  zio  angr">
 <meta property="og:locale" content="zh-CN">
@@ -132,7 +132,7 @@
 
 
 
-  <link rel="canonical" href="http://CSUwangj.top/2018/07/20/CTF用环境搭建/"/>
+  <link rel="canonical" href="http://CSUwangj.github.io/2018/07/20/CTF用环境搭建/"/>
 
 
 
@@ -354,7 +354,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://CSUwangj.top/2018/07/20/CTF用环境搭建/">
+    <link itemprop="mainEntityOfPage" href="http://CSUwangj.github.io/2018/07/20/CTF用环境搭建/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="CSUwangj">
@@ -536,7 +536,7 @@
 <a id="more"></a>
 <h1 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h1><h2 id="安装式-1"><a href="#安装式-1" class="headerlink" title="安装式"></a>安装式</h2><h3 id="86架构及其个别基本库"><a href="#86架构及其个别基本库" class="headerlink" title="86架构及其个别基本库"></a>86架构及其个别基本库</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">dpkg --add-architecture i386 </span><br><span class="line">apt-get update</span><br><span class="line">apt-get -f dist-upgrade </span><br><span class="line">apt-get update</span><br><span class="line">apt-get install lib32c-dev lib32stdc++6</span><br></pre></td></tr></table></figure>
 <h3 id="pwndbg"><a href="#pwndbg" class="headerlink" title="pwndbg"></a>pwndbg</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">clone</span> https://github.com/pwndbg/pwndbg /opt/pwndbg</span><br><span class="line"><span class="built_in">cd</span> /opt/pwndbg</span><br><span class="line">./setup.sh</span><br></pre></td></tr></table></figure>
-<p>如果对pip无法用的时候怎么安装感兴趣，可以戳<a href="http://csuwangj.top/2018/07/21/在pip连不上网的时候安装pwntools/">这里</a></p>
+<p>如果对pip无法用的时候怎么安装感兴趣，可以戳<a href="http://csuwangj.top/2018/07/21/在pip连不上网的时候安装pwntools/" target="_blank" rel="noopener">这里</a></p>
 <h3 id="r2"><a href="#r2" class="headerlink" title="r2"></a>r2</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">clone</span> https://github.com/radare/radare2.git /opt/r2</span><br><span class="line"><span class="built_in">cd</span> /opt/r2/</span><br><span class="line">sys/install.sh</span><br></pre></td></tr></table></figure>
 <h2 id="非安装式-1"><a href="#非安装式-1" class="headerlink" title="非安装式"></a>非安装式</h2><table>
 <thead>
@@ -630,15 +630,6 @@
   
     <li class="popular-posts-item">
       
-        <div class="popular-posts-date">2018-02-08</div>
-      
-      
-      <div class="popular-posts-title"><a href="/2018/02/08/HGAME2018-week1WP/" rel="bookmark">HGAME2018-week1WP</a></div>
-      
-    </li>
-  
-    <li class="popular-posts-item">
-      
         <div class="popular-posts-date">2018-02-03</div>
       
       
@@ -648,10 +639,19 @@
   
     <li class="popular-posts-item">
       
-        <div class="popular-posts-date">2018-05-10</div>
+        <div class="popular-posts-date">2018-02-08</div>
       
       
-      <div class="popular-posts-title"><a href="/2018/05/10/JarvisOJ-WP合集/" rel="bookmark">JarvisOJ-WP合集</a></div>
+      <div class="popular-posts-title"><a href="/2018/02/08/HGAME2018-week1WP/" rel="bookmark">HGAME2018-week1WP</a></div>
+      
+    </li>
+  
+    <li class="popular-posts-item">
+      
+        <div class="popular-posts-date">2018-02-10</div>
+      
+      
+      <div class="popular-posts-title"><a href="/2018/02/10/PWN学习记录/" rel="bookmark">PWN学习记录</a></div>
       
     </li>
   
@@ -699,7 +699,7 @@
     <strong>本文作者： </strong>CSUwangj</li>
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
-    <a href="http://CSUwangj.top/2018/07/20/CTF用环境搭建/" title="CTF用环境搭建">http://CSUwangj.top/2018/07/20/CTF用环境搭建/</a>
+    <a href="http://CSUwangj.github.io/2018/07/20/CTF用环境搭建/" title="CTF用环境搭建">http://CSUwangj.github.io/2018/07/20/CTF用环境搭建/</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc/2.0/" rel="external nofollow" target="_blank">CC BY-NC 2.0</a> 许可协议。欢迎你将我的收获分享出去，记得署名哟~</li>
@@ -1201,7 +1201,7 @@
   
     <script type="text/javascript">
       var disqus_config = function () {
-        this.page.url = 'http://CSUwangj.top/2018/07/20/CTF用环境搭建/';
+        this.page.url = 'http://CSUwangj.github.io/2018/07/20/CTF用环境搭建/';
         this.page.identifier = '2018/07/20/CTF用环境搭建/';
         this.page.title = 'CTF用环境搭建';
         };
