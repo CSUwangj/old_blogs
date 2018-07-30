@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://CSUwangj.github.io/"/>
-  <updated>2018-07-29T02:53:51.643Z</updated>
+  <updated>2018-07-29T14:46:00.450Z</updated>
   <id>http://CSUwangj.github.io/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="http://CSUwangj.github.io/2018/07/22/Exploit-Exercise-Protostar%E5%85%A8%E6%94%BB%E7%95%A5-%E8%A7%A3%E6%9E%90/"/>
     <id>http://CSUwangj.github.io/2018/07/22/Exploit-Exercise-Protostar全攻略-解析/</id>
     <published>2018-07-22T06:46:15.000Z</published>
-    <updated>2018-07-29T02:53:51.643Z</updated>
+    <updated>2018-07-29T14:46:00.450Z</updated>
     
     <summary type="html">
     
@@ -61,9 +61,9 @@
       <category term="Notes" scheme="http://CSUwangj.github.io/categories/Notes/"/>
     
     
-      <category term="WARGAME" scheme="http://CSUwangj.github.io/tags/WARGAME/"/>
-    
       <category term="PWN" scheme="http://CSUwangj.github.io/tags/PWN/"/>
+    
+      <category term="WARGAME" scheme="http://CSUwangj.github.io/tags/WARGAME/"/>
     
       <category term="stackoverflow" scheme="http://CSUwangj.github.io/tags/stackoverflow/"/>
     
@@ -96,20 +96,30 @@
     <link href="http://CSUwangj.github.io/2018/07/20/CTF%E7%94%A8%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/"/>
     <id>http://CSUwangj.github.io/2018/07/20/CTF用环境搭建/</id>
     <published>2018-07-20T06:57:49.000Z</published>
-    <updated>2018-07-24T04:29:23.749Z</updated>
+    <updated>2018-07-29T15:21:16.510Z</updated>
     
     <summary type="html">
     
-      &lt;h1 id=&quot;目前工具集合&quot;&gt;&lt;a href=&quot;#目前工具集合&quot; class=&quot;headerlink&quot; title=&quot;目前工具集合&quot;&gt;&lt;/a&gt;目前工具集合&lt;/h1&gt;&lt;h2 id=&quot;安装式&quot;&gt;&lt;a href=&quot;#安装式&quot; class=&quot;headerlink&quot; title=&quot;安装式&quot;&gt;&lt;/a&gt;安装式&lt;/h2&gt;&lt;p&gt;这里的话就是那种安装以后直接用的，也有的是插件&lt;/p&gt;
-&lt;ul&gt;
+      &lt;h1 id=&quot;目前工具集合&quot;&gt;&lt;a href=&quot;#目前工具集合&quot; class=&quot;headerlink&quot; title=&quot;目前工具集合&quot;&gt;&lt;/a&gt;目前工具集合&lt;/h1&gt;&lt;h2 id=&quot;环境&quot;&gt;&lt;a href=&quot;#环境&quot; class=&quot;headerlink&quot; title=&quot;环境&quot;&gt;&lt;/a&gt;环境&lt;/h2&gt;&lt;ul&gt;
 &lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot; checked&gt; 86架构及基本库&lt;/li&gt;
+&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot; checked&gt; wine32&lt;/li&gt;
+&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot;&gt; pattern&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;安装式&quot;&gt;&lt;a href=&quot;#安装式&quot; class=&quot;headerlink&quot; title=&quot;安装式&quot;&gt;&lt;/a&gt;安装式&lt;/h2&gt;&lt;p&gt;这里的话就是那种安装以后直接用的，也有的是插件&lt;/p&gt;
+&lt;ul&gt;
 &lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot; checked&gt; pwndbg&lt;/li&gt;
 &lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot; checked&gt; r2&lt;/li&gt;
+&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot; checked&gt; Audacity&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&quot;非安装式&quot;&gt;&lt;a href=&quot;#非安装式&quot; class=&quot;headerlink&quot; title=&quot;非安装式&quot;&gt;&lt;/a&gt;非安装式&lt;/h2&gt;&lt;p&gt;这里的是不用/不能安装的库，比如脚本等&lt;/p&gt;
 &lt;p&gt;统一放置在/opt/目录下，可能根据类别再分&lt;/p&gt;
 &lt;ul&gt;
 &lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot; checked&gt; rsatool&lt;/li&gt;
+&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot; checked&gt; cloacked-pixel&lt;/li&gt;
+&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot; checked&gt; volatility&lt;/li&gt;
+&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot; checked&gt; routerpassview&lt;/li&gt;
+&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot; checked&gt; Stegsolve &lt;/li&gt;
+&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot;&gt; CTFcrackTools&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&quot;Python库&quot;&gt;&lt;a href=&quot;#Python库&quot; class=&quot;headerlink&quot; title=&quot;Python库&quot;&gt;&lt;/a&gt;Python库&lt;/h2&gt;&lt;ul&gt;
 &lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot; checked&gt; pwntools&lt;/li&gt;
@@ -117,6 +127,7 @@
 &lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot; checked&gt; unicorn&lt;/li&gt;
 &lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot; checked&gt; zio&lt;/li&gt;
 &lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot; checked&gt; angr&lt;/li&gt;
+&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot; checked&gt; request &lt;/li&gt;
 &lt;/ul&gt;
     
     </summary>
@@ -170,11 +181,11 @@
       <category term="WriteUp" scheme="http://CSUwangj.github.io/categories/WriteUp/"/>
     
     
-      <category term="CTF" scheme="http://CSUwangj.github.io/tags/CTF/"/>
+      <category term="Misc" scheme="http://CSUwangj.github.io/tags/Misc/"/>
     
       <category term="Crypto" scheme="http://CSUwangj.github.io/tags/Crypto/"/>
     
-      <category term="Misc" scheme="http://CSUwangj.github.io/tags/Misc/"/>
+      <category term="CTF" scheme="http://CSUwangj.github.io/tags/CTF/"/>
     
   </entry>
   
@@ -194,15 +205,15 @@
       <category term="WriteUp" scheme="http://CSUwangj.github.io/categories/WriteUp/"/>
     
     
-      <category term="CTF" scheme="http://CSUwangj.github.io/tags/CTF/"/>
+      <category term="Misc" scheme="http://CSUwangj.github.io/tags/Misc/"/>
     
       <category term="Crypto" scheme="http://CSUwangj.github.io/tags/Crypto/"/>
     
-      <category term="Misc" scheme="http://CSUwangj.github.io/tags/Misc/"/>
-    
-      <category term="PWN" scheme="http://CSUwangj.github.io/tags/PWN/"/>
+      <category term="CTF" scheme="http://CSUwangj.github.io/tags/CTF/"/>
     
       <category term="Web" scheme="http://CSUwangj.github.io/tags/Web/"/>
+    
+      <category term="PWN" scheme="http://CSUwangj.github.io/tags/PWN/"/>
     
       <category term="Rev" scheme="http://CSUwangj.github.io/tags/Rev/"/>
     
@@ -247,9 +258,9 @@
       <category term="WriteUp" scheme="http://CSUwangj.github.io/categories/WriteUp/"/>
     
     
-      <category term="CTF" scheme="http://CSUwangj.github.io/tags/CTF/"/>
-    
       <category term="Crypto" scheme="http://CSUwangj.github.io/tags/Crypto/"/>
+    
+      <category term="CTF" scheme="http://CSUwangj.github.io/tags/CTF/"/>
     
   </entry>
   
@@ -304,15 +315,15 @@
       <category term="WriteUp" scheme="http://CSUwangj.github.io/categories/WriteUp/"/>
     
     
-      <category term="CTF" scheme="http://CSUwangj.github.io/tags/CTF/"/>
+      <category term="Misc" scheme="http://CSUwangj.github.io/tags/Misc/"/>
     
       <category term="Crypto" scheme="http://CSUwangj.github.io/tags/Crypto/"/>
     
-      <category term="Misc" scheme="http://CSUwangj.github.io/tags/Misc/"/>
-    
-      <category term="PWN" scheme="http://CSUwangj.github.io/tags/PWN/"/>
+      <category term="CTF" scheme="http://CSUwangj.github.io/tags/CTF/"/>
     
       <category term="Web" scheme="http://CSUwangj.github.io/tags/Web/"/>
+    
+      <category term="PWN" scheme="http://CSUwangj.github.io/tags/PWN/"/>
     
   </entry>
   
@@ -379,9 +390,9 @@
       <category term="Tools" scheme="http://CSUwangj.github.io/categories/Tools/"/>
     
     
-      <category term="Crypto" scheme="http://CSUwangj.github.io/tags/Crypto/"/>
-    
       <category term="Misc" scheme="http://CSUwangj.github.io/tags/Misc/"/>
+    
+      <category term="Crypto" scheme="http://CSUwangj.github.io/tags/Crypto/"/>
     
   </entry>
   
@@ -402,15 +413,15 @@
       <category term="WriteUp" scheme="http://CSUwangj.github.io/categories/WriteUp/"/>
     
     
-      <category term="CTF" scheme="http://CSUwangj.github.io/tags/CTF/"/>
+      <category term="Misc" scheme="http://CSUwangj.github.io/tags/Misc/"/>
     
       <category term="Crypto" scheme="http://CSUwangj.github.io/tags/Crypto/"/>
     
-      <category term="Misc" scheme="http://CSUwangj.github.io/tags/Misc/"/>
-    
-      <category term="PWN" scheme="http://CSUwangj.github.io/tags/PWN/"/>
+      <category term="CTF" scheme="http://CSUwangj.github.io/tags/CTF/"/>
     
       <category term="Web" scheme="http://CSUwangj.github.io/tags/Web/"/>
+    
+      <category term="PWN" scheme="http://CSUwangj.github.io/tags/PWN/"/>
     
       <category term="Rev" scheme="http://CSUwangj.github.io/tags/Rev/"/>
     
@@ -432,9 +443,9 @@
       <category term="WriteUp" scheme="http://CSUwangj.github.io/categories/WriteUp/"/>
     
     
-      <category term="CTF" scheme="http://CSUwangj.github.io/tags/CTF/"/>
-    
       <category term="Misc" scheme="http://CSUwangj.github.io/tags/Misc/"/>
+    
+      <category term="CTF" scheme="http://CSUwangj.github.io/tags/CTF/"/>
     
       <category term="Rev" scheme="http://CSUwangj.github.io/tags/Rev/"/>
     
