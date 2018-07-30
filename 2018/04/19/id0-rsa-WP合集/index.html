@@ -117,7 +117,7 @@
 
 
   <meta name="description" content="忙里偷闲做做题wwwwwwwwwwwww">
-<meta name="keywords" content="CTF,Crypto">
+<meta name="keywords" content="Crypto,CTF">
 <meta property="og:type" content="article">
 <meta property="og:title" content="id0-rsa WP合集">
 <meta property="og:url" content="http://CSUwangj.github.io/2018/04/19/id0-rsa-WP合集/index.html">
@@ -740,19 +740,19 @@
   
     <li class="popular-posts-item">
       
-        <div class="popular-posts-date">2018-02-08</div>
+        <div class="popular-posts-date">2018-02-16</div>
       
       
-      <div class="popular-posts-title"><a href="/2018/02/08/HGAME2018-week1WP/" rel="bookmark">HGAME2018-week1WP</a></div>
+      <div class="popular-posts-title"><a href="/2018/02/16/HGAME2018-week2部分WP/" rel="bookmark">HGAME2018-week2部分WP</a></div>
       
     </li>
   
     <li class="popular-posts-item">
       
-        <div class="popular-posts-date">2018-02-16</div>
+        <div class="popular-posts-date">2018-02-08</div>
       
       
-      <div class="popular-posts-title"><a href="/2018/02/16/HGAME2018-week2部分WP/" rel="bookmark">HGAME2018-week2部分WP</a></div>
+      <div class="popular-posts-title"><a href="/2018/02/08/HGAME2018-week1WP/" rel="bookmark">HGAME2018-week1WP</a></div>
       
     </li>
   
@@ -767,10 +767,10 @@
   
     <li class="popular-posts-item">
       
-        <div class="popular-posts-date">2018-07-20</div>
+        <div class="popular-posts-date">2018-02-08</div>
       
       
-      <div class="popular-posts-title"><a href="/2018/07/20/CTF用环境搭建/" rel="bookmark">CTF用环境搭建</a></div>
+      <div class="popular-posts-title"><a href="/2018/02/08/CTF轻工具个人集合/" rel="bookmark">CTF轻工具个人集合</a></div>
       
     </li>
   
@@ -836,9 +836,9 @@
       
         <div class="post-tags">
           
-            <a href="/tags/CTF/" rel="tag"># CTF</a>
-          
             <a href="/tags/Crypto/" rel="tag"># Crypto</a>
+          
+            <a href="/tags/CTF/" rel="tag"># CTF</a>
           
         </div>
       
@@ -1708,7 +1708,7 @@
 
   
   <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.4.js"></script>
-  <script>AV.initialize("kgprBDCTPulkIKEgGLktcvrr-gzGzoHsz", "A2SHvIUgzjLt7zL2dKv9I2uH");</script>
+  <script>AV.initialize("zeF6sm997gd33RkGk6pWMFHm-gzGzoHsz", "36WJhdApeyIDHAXA0lQ6HYPl");</script>
   <script>
     function showTime(Counter) {
       var query = new AV.Query(Counter);
@@ -1778,9 +1778,25 @@
             });
           } else {
             
-              var $element = $(document.getElementById(url));
-              $element.find('.leancloud-visitors-count').text('Counter not initialized! See more at console err msg.');
-              console.error('ATTENTION! LeanCloud counter has security bug, see here how to solve it: https://github.com/theme-next/hexo-leancloud-counter-security. \n But you also can use LeanCloud without security, by set \'security\' option to \'false\'.');
+              var newcounter = new Counter();
+              /* Set ACL */
+              var acl = new AV.ACL();
+              acl.setPublicReadAccess(true);
+              acl.setPublicWriteAccess(true);
+              newcounter.setACL(acl);
+              /* End Set ACL */
+              newcounter.set("title", title);
+              newcounter.set("url", url);
+              newcounter.set("time", 1);
+              newcounter.save(null, {
+                success: function(newcounter) {
+                  var $element = $(document.getElementById(url));
+                  $element.find('.leancloud-visitors-count').text(newcounter.get('time'));
+                },
+                error: function(newcounter, error) {
+                  console.log('Failed to create');
+                }
+              });
             
           }
         },

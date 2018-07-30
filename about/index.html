@@ -129,6 +129,8 @@
 <meta name="twitter:description" content="我们需要勇气去接纳贯穿我们生命始终的裂缝，因为不管生活多么美好，裂缝总是存在：理性的理想告诉我们世界应该是什么样子；经验却告诉我们现实往往不是理想的样子。长大需要我们面对两者之间的鸿沟——两者都不放弃。 ——苏珊·奈曼《为什么长大》  安全方面的小菜鸟，因为幸运拿到了实习OFFER。 一路走来，感谢有你们的陪伴，无以为报！">
 
 
+  
+
 
   <link rel="alternate" href="/atom.xml" title="LuckyBlog" type="application/atom+xml" />
 
@@ -1185,7 +1187,7 @@
 
   
   <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.4.js"></script>
-  <script>AV.initialize("kgprBDCTPulkIKEgGLktcvrr-gzGzoHsz", "A2SHvIUgzjLt7zL2dKv9I2uH");</script>
+  <script>AV.initialize("zeF6sm997gd33RkGk6pWMFHm-gzGzoHsz", "36WJhdApeyIDHAXA0lQ6HYPl");</script>
   <script>
     function showTime(Counter) {
       var query = new AV.Query(Counter);
@@ -1255,9 +1257,25 @@
             });
           } else {
             
-              var $element = $(document.getElementById(url));
-              $element.find('.leancloud-visitors-count').text('Counter not initialized! See more at console err msg.');
-              console.error('ATTENTION! LeanCloud counter has security bug, see here how to solve it: https://github.com/theme-next/hexo-leancloud-counter-security. \n But you also can use LeanCloud without security, by set \'security\' option to \'false\'.');
+              var newcounter = new Counter();
+              /* Set ACL */
+              var acl = new AV.ACL();
+              acl.setPublicReadAccess(true);
+              acl.setPublicWriteAccess(true);
+              newcounter.setACL(acl);
+              /* End Set ACL */
+              newcounter.set("title", title);
+              newcounter.set("url", url);
+              newcounter.set("time", 1);
+              newcounter.save(null, {
+                success: function(newcounter) {
+                  var $element = $(document.getElementById(url));
+                  $element.find('.leancloud-visitors-count').text(newcounter.get('time'));
+                },
+                error: function(newcounter, error) {
+                  console.log('Failed to create');
+                }
+              });
             
           }
         },
