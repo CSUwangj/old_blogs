@@ -117,7 +117,7 @@
 
 
   <meta name="description" content="最后四个题没人做出来 题目丢到了github，欢迎来玩~ https://github.com/CSUwangj/AFCTF2018-Crypto">
-<meta name="keywords" content="CTF,Crypto,Misc">
+<meta name="keywords" content="CTF,Misc,Crypto">
 <meta property="og:type" content="article">
 <meta property="og:title" content="AFCTF-Crypto_OfficialWriteUp">
 <meta property="og:url" content="http://CSUwangj.github.io/2018/05/21/AFCTF-Crypto-OfficialWriteUp/index.html">
@@ -726,9 +726,9 @@
           
             <a href="/tags/CTF/" rel="tag"># CTF</a>
           
-            <a href="/tags/Crypto/" rel="tag"># Crypto</a>
-          
             <a href="/tags/Misc/" rel="tag"># Misc</a>
+          
+            <a href="/tags/Crypto/" rel="tag"># Crypto</a>
           
         </div>
       
@@ -1655,11 +1655,11 @@
             counter.fetchWhenSave(true);
             counter.increment("time");
             
+              var $element = $(document.getElementById(url));
+              $element.find('.leancloud-visitors-count').text(counter.get('time'));
+            
             counter.save(null, {
               success: function(counter) {
-                
-                  var $element = $(document.getElementById(url));
-                  $element.find('.leancloud-visitors-count').text(counter.get('time'));
                 
               },
               error: function(counter, error) {

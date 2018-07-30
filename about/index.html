@@ -129,8 +129,6 @@
 <meta name="twitter:description" content="我们需要勇气去接纳贯穿我们生命始终的裂缝，因为不管生活多么美好，裂缝总是存在：理性的理想告诉我们世界应该是什么样子；经验却告诉我们现实往往不是理想的样子。长大需要我们面对两者之间的鸿沟——两者都不放弃。 ——苏珊·奈曼《为什么长大》  安全方面的小菜鸟，因为幸运拿到了实习OFFER。 一路走来，感谢有你们的陪伴，无以为报！">
 
 
-  
-
 
   <link rel="alternate" href="/atom.xml" title="LuckyBlog" type="application/atom+xml" />
 
@@ -1244,11 +1242,11 @@
             counter.fetchWhenSave(true);
             counter.increment("time");
             
+              var $element = $(document.getElementById(url));
+              $element.find('.leancloud-visitors-count').text(counter.get('time'));
+            
             counter.save(null, {
               success: function(counter) {
-                
-                  var $element = $(document.getElementById(url));
-                  $element.find('.leancloud-visitors-count').text(counter.get('time'));
                 
               },
               error: function(counter, error) {

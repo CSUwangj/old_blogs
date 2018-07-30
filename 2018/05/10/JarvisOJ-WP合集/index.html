@@ -117,7 +117,7 @@
 
 
   <meta name="description" content="因为预感进度表会很长，所以不放了">
-<meta name="keywords" content="CTF,Crypto,Misc,Web,Rev,PWN">
+<meta name="keywords" content="CTF,Misc,Crypto,PWN,Web,Rev">
 <meta property="og:type" content="article">
 <meta property="og:title" content="JarvisOJ-WP合集">
 <meta property="og:url" content="http://CSUwangj.github.io/2018/05/10/JarvisOJ-WP合集/index.html">
@@ -786,15 +786,15 @@
           
             <a href="/tags/CTF/" rel="tag"># CTF</a>
           
+            <a href="/tags/Misc/" rel="tag"># Misc</a>
+          
             <a href="/tags/Crypto/" rel="tag"># Crypto</a>
           
-            <a href="/tags/Misc/" rel="tag"># Misc</a>
+            <a href="/tags/PWN/" rel="tag"># PWN</a>
           
             <a href="/tags/Web/" rel="tag"># Web</a>
           
             <a href="/tags/Rev/" rel="tag"># Rev</a>
-          
-            <a href="/tags/PWN/" rel="tag"># PWN</a>
           
         </div>
       
@@ -1721,11 +1721,11 @@
             counter.fetchWhenSave(true);
             counter.increment("time");
             
+              var $element = $(document.getElementById(url));
+              $element.find('.leancloud-visitors-count').text(counter.get('time'));
+            
             counter.save(null, {
               success: function(counter) {
-                
-                  var $element = $(document.getElementById(url));
-                  $element.find('.leancloud-visitors-count').text(counter.get('time'));
                 
               },
               error: function(counter, error) {

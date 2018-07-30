@@ -546,19 +546,19 @@
   
     <li class="popular-posts-item">
       
-        <div class="popular-posts-date">2018-02-03</div>
+        <div class="popular-posts-date">2018-02-16</div>
       
       
-      <div class="popular-posts-title"><a href="/2018/02/03/HIT2018新生赛/" rel="bookmark">HIT2018新生赛部分WP</a></div>
+      <div class="popular-posts-title"><a href="/2018/02/16/HGAME2018-week2部分WP/" rel="bookmark">HGAME2018-week2部分WP</a></div>
       
     </li>
   
     <li class="popular-posts-item">
       
-        <div class="popular-posts-date">2018-02-16</div>
+        <div class="popular-posts-date">2018-05-10</div>
       
       
-      <div class="popular-posts-title"><a href="/2018/02/16/HGAME2018-week2部分WP/" rel="bookmark">HGAME2018-week2部分WP</a></div>
+      <div class="popular-posts-title"><a href="/2018/05/10/JarvisOJ-WP合集/" rel="bookmark">JarvisOJ-WP合集</a></div>
       
     </li>
   
@@ -1528,11 +1528,11 @@
             counter.fetchWhenSave(true);
             counter.increment("time");
             
+              var $element = $(document.getElementById(url));
+              $element.find('.leancloud-visitors-count').text(counter.get('time'));
+            
             counter.save(null, {
               success: function(counter) {
-                
-                  var $element = $(document.getElementById(url));
-                  $element.find('.leancloud-visitors-count').text(counter.get('time'));
                 
               },
               error: function(counter, error) {

@@ -587,19 +587,19 @@
   
     <li class="popular-posts-item">
       
-        <div class="popular-posts-date">2018-05-21</div>
+        <div class="popular-posts-date">2018-02-08</div>
       
       
-      <div class="popular-posts-title"><a href="/2018/05/21/AFCTF-Crypto-OfficialWriteUp/" rel="bookmark">AFCTF-Crypto_OfficialWriteUp</a></div>
+      <div class="popular-posts-title"><a href="/2018/02/08/CTF轻工具个人集合/" rel="bookmark">CTF轻工具个人集合</a></div>
       
     </li>
   
     <li class="popular-posts-item">
       
-        <div class="popular-posts-date">2018-02-08</div>
+        <div class="popular-posts-date">2018-05-21</div>
       
       
-      <div class="popular-posts-title"><a href="/2018/02/08/CTF轻工具个人集合/" rel="bookmark">CTF轻工具个人集合</a></div>
+      <div class="popular-posts-title"><a href="/2018/05/21/AFCTF-Crypto-OfficialWriteUp/" rel="bookmark">AFCTF-Crypto_OfficialWriteUp</a></div>
       
     </li>
   
@@ -1621,11 +1621,11 @@
             counter.fetchWhenSave(true);
             counter.increment("time");
             
+              var $element = $(document.getElementById(url));
+              $element.find('.leancloud-visitors-count').text(counter.get('time'));
+            
             counter.save(null, {
               success: function(counter) {
-                
-                  var $element = $(document.getElementById(url));
-                  $element.find('.leancloud-visitors-count').text(counter.get('time'));
                 
               },
               error: function(counter, error) {
