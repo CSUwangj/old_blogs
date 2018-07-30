@@ -117,7 +117,7 @@
 
 
   <meta name="description" content="因为预感进度表会很长，所以不放了">
-<meta name="keywords" content="Misc,Crypto,CTF,PWN,Web,Rev">
+<meta name="keywords" content="CTF,Crypto,Misc,PWN,Web,Rev">
 <meta property="og:type" content="article">
 <meta property="og:title" content="JarvisOJ-WP合集">
 <meta property="og:url" content="http://CSUwangj.github.io/2018/05/10/JarvisOJ-WP合集/index.html">
@@ -697,15 +697,6 @@
   
     <li class="popular-posts-item">
       
-        <div class="popular-posts-date">2018-02-03</div>
-      
-      
-      <div class="popular-posts-title"><a href="/2018/02/03/HIT2018新生赛/" rel="bookmark">HIT2018新生赛部分WP</a></div>
-      
-    </li>
-  
-    <li class="popular-posts-item">
-      
         <div class="popular-posts-date">2018-05-21</div>
       
       
@@ -715,10 +706,19 @@
   
     <li class="popular-posts-item">
       
-        <div class="popular-posts-date">2018-04-19</div>
+        <div class="popular-posts-date">2018-02-03</div>
       
       
-      <div class="popular-posts-title"><a href="/2018/04/19/id0-rsa-WP合集/" rel="bookmark">id0-rsa WP合集</a></div>
+      <div class="popular-posts-title"><a href="/2018/02/03/HIT2018新生赛/" rel="bookmark">HIT2018新生赛部分WP</a></div>
+      
+    </li>
+  
+    <li class="popular-posts-item">
+      
+        <div class="popular-posts-date">2018-02-10</div>
+      
+      
+      <div class="popular-posts-title"><a href="/2018/02/10/PWN学习记录/" rel="bookmark">PWN学习记录</a></div>
       
     </li>
   
@@ -784,11 +784,11 @@
       
         <div class="post-tags">
           
-            <a href="/tags/Misc/" rel="tag"># Misc</a>
+            <a href="/tags/CTF/" rel="tag"># CTF</a>
           
             <a href="/tags/Crypto/" rel="tag"># Crypto</a>
           
-            <a href="/tags/CTF/" rel="tag"># CTF</a>
+            <a href="/tags/Misc/" rel="tag"># Misc</a>
           
             <a href="/tags/PWN/" rel="tag"># PWN</a>
           
@@ -1734,25 +1734,9 @@
             });
           } else {
             
-              var newcounter = new Counter();
-              /* Set ACL */
-              var acl = new AV.ACL();
-              acl.setPublicReadAccess(true);
-              acl.setPublicWriteAccess(true);
-              newcounter.setACL(acl);
-              /* End Set ACL */
-              newcounter.set("title", title);
-              newcounter.set("url", url);
-              newcounter.set("time", 1);
-              newcounter.save(null, {
-                success: function(newcounter) {
-                  var $element = $(document.getElementById(url));
-                  $element.find('.leancloud-visitors-count').text(newcounter.get('time'));
-                },
-                error: function(newcounter, error) {
-                  console.log('Failed to create');
-                }
-              });
+              var $element = $(document.getElementById(url));
+              $element.find('.leancloud-visitors-count').text('Counter not initialized! See more at console err msg.');
+              console.error('ATTENTION! LeanCloud counter has security bug, see here how to solve it: https://github.com/theme-next/hexo-leancloud-counter-security. \n But you also can use LeanCloud without security, by set \'security\' option to \'false\'.');
             
           }
         },

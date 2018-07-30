@@ -559,19 +559,19 @@
   
     <li class="popular-posts-item">
       
-        <div class="popular-posts-date">2018-05-10</div>
+        <div class="popular-posts-date">2018-02-10</div>
       
       
-      <div class="popular-posts-title"><a href="/2018/05/10/JarvisOJ-WP合集/" rel="bookmark">JarvisOJ-WP合集</a></div>
+      <div class="popular-posts-title"><a href="/2018/02/10/PWN学习记录/" rel="bookmark">PWN学习记录</a></div>
       
     </li>
   
     <li class="popular-posts-item">
       
-        <div class="popular-posts-date">2018-02-10</div>
+        <div class="popular-posts-date">2018-05-10</div>
       
       
-      <div class="popular-posts-title"><a href="/2018/02/10/PWN学习记录/" rel="bookmark">PWN学习记录</a></div>
+      <div class="popular-posts-title"><a href="/2018/05/10/JarvisOJ-WP合集/" rel="bookmark">JarvisOJ-WP合集</a></div>
       
     </li>
   
@@ -1552,25 +1552,9 @@
             });
           } else {
             
-              var newcounter = new Counter();
-              /* Set ACL */
-              var acl = new AV.ACL();
-              acl.setPublicReadAccess(true);
-              acl.setPublicWriteAccess(true);
-              newcounter.setACL(acl);
-              /* End Set ACL */
-              newcounter.set("title", title);
-              newcounter.set("url", url);
-              newcounter.set("time", 1);
-              newcounter.save(null, {
-                success: function(newcounter) {
-                  var $element = $(document.getElementById(url));
-                  $element.find('.leancloud-visitors-count').text(newcounter.get('time'));
-                },
-                error: function(newcounter, error) {
-                  console.log('Failed to create');
-                }
-              });
+              var $element = $(document.getElementById(url));
+              $element.find('.leancloud-visitors-count').text('Counter not initialized! See more at console err msg.');
+              console.error('ATTENTION! LeanCloud counter has security bug, see here how to solve it: https://github.com/theme-next/hexo-leancloud-counter-security. \n But you also can use LeanCloud without security, by set \'security\' option to \'false\'.');
             
           }
         },

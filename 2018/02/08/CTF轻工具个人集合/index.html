@@ -117,7 +117,7 @@
 
 
   <meta name="description" content="持续更新ing 可能以后还会重新整理">
-<meta name="keywords" content="Misc,Crypto">
+<meta name="keywords" content="Crypto,Misc">
 <meta property="og:type" content="article">
 <meta property="og:title" content="CTF轻工具个人集合">
 <meta property="og:url" content="http://CSUwangj.github.io/2018/02/08/CTF轻工具个人集合/index.html">
@@ -654,10 +654,10 @@
   
     <li class="popular-posts-item">
       
-        <div class="popular-posts-date">2018-02-03</div>
+        <div class="popular-posts-date">2018-04-19</div>
       
       
-      <div class="popular-posts-title"><a href="/2018/02/03/HIT2018新生赛/" rel="bookmark">HIT2018新生赛部分WP</a></div>
+      <div class="popular-posts-title"><a href="/2018/04/19/id0-rsa-WP合集/" rel="bookmark">id0-rsa WP合集</a></div>
       
     </li>
   
@@ -723,9 +723,9 @@
       
         <div class="post-tags">
           
-            <a href="/tags/Misc/" rel="tag"># Misc</a>
-          
             <a href="/tags/Crypto/" rel="tag"># Crypto</a>
+          
+            <a href="/tags/Misc/" rel="tag"># Misc</a>
           
         </div>
       
@@ -1665,25 +1665,9 @@
             });
           } else {
             
-              var newcounter = new Counter();
-              /* Set ACL */
-              var acl = new AV.ACL();
-              acl.setPublicReadAccess(true);
-              acl.setPublicWriteAccess(true);
-              newcounter.setACL(acl);
-              /* End Set ACL */
-              newcounter.set("title", title);
-              newcounter.set("url", url);
-              newcounter.set("time", 1);
-              newcounter.save(null, {
-                success: function(newcounter) {
-                  var $element = $(document.getElementById(url));
-                  $element.find('.leancloud-visitors-count').text(newcounter.get('time'));
-                },
-                error: function(newcounter, error) {
-                  console.log('Failed to create');
-                }
-              });
+              var $element = $(document.getElementById(url));
+              $element.find('.leancloud-visitors-count').text('Counter not initialized! See more at console err msg.');
+              console.error('ATTENTION! LeanCloud counter has security bug, see here how to solve it: https://github.com/theme-next/hexo-leancloud-counter-security. \n But you also can use LeanCloud without security, by set \'security\' option to \'false\'.');
             
           }
         },
