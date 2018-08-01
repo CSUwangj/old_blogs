@@ -1,13 +1,14 @@
 ---
 title: 在pip连不上网的时候安装pwntools
 connments: true
-date: 2018-07-21 14:38:02
-tags: 
-	- PWN
-categories: 
-	- Notes
-desc: 本文描述了这样一种特殊情况下安装pwntools的解决方案：有方法联网，但是pip连不上网。 
+tags:
+  - PWN
+categories:
+  - Notes
+desc: 本文描述了这样一种特殊情况下安装pwntools的解决方案：有方法联网，但是pip连不上网。
 summary: 手动下载安装
+abbrlink: 38390
+date: 2018-07-21 14:38:02
 ---
 
 本文描述了这样一种特殊情况下安装pwntools的解决方案：有方法联网，但是pip连不上网。 

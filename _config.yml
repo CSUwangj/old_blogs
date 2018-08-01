@@ -7,12 +7,12 @@ title: LuckyBlog
 subtitle: LuckDog
 description: CSUwangj's blog~
 author: CSUwangj
-language: zh-Hans
+language: zh-CN
 timezone:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://CSUwangj.top/
+url: http://CSUwangj.github.io/
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -27,7 +27,18 @@ code_dir: downloads/code
 i18n_dir: :lang
 skip_render:
 
+# Word Count
+symbols_count_time:
+  symbols: true
+  time: true
+  total_symbols: true
+  total_time: true
 
+# Sitemap  
+sitemap:
+  path: sitemap.xml
+  template: ./sitemap.xml  
+  
 # Writing
 new_post_name: :title.md # File name of new posts
 default_layout: post
@@ -90,12 +101,30 @@ feed:
   content_limit: 140
   content_limit_delim: ' '
 ## Themes: https://hexo.io/themes/
-theme: next
+theme: next-reloaded
+
+leancloud_counter_security:
+  enable_sync: true
+  app_id: zeF6sm997gd33RkGk6pWMFHm-gzGzoHsz
+  app_key: 36WJhdApeyIDHAXA0lQ6HYPl
+  username: CSUwangj
+
+# hexo-admin authentification
+admin:
+  username: CSUwangj
+  password_hash: $2a$10$am.WgtW4DBj09s3wUJDPK.GwBoTWyc9lyQ3apwKBnrDJD0WDRt/Ui
+  secret: ~!@#$%^&*()_+{}|:"<>?,./l;'[]\`-=
+  
+# Security
+##
+encrypt:
+  enable: true
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
-  type: git
+#- type: leancloud_counter_security_sync
+- type: git
   repository: git@CSUwangj:CSUwangj/CSUwangj.github.io.git
   branch: master
   name: CSUwangj

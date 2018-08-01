@@ -1,11 +1,12 @@
 ---
 title: PWN学习记录
 connments: true
-date: 2018-02-10 00:17:50
-tags: 
-	- CTF
-	- PWN
+tags:
+  - CTF
+  - PWN
 categories: Notes
+abbrlink: 52311
+date: 2018-02-10 00:17:50
 desc:
 summary:
 ---
@@ -38,46 +39,9 @@ cd /opt/pwndbg
 
 -    Exploit-Exercise
 
-     -    Nebula
-
-          - [ ] Level 00
-          - [ ] Level 01
-          - [ ] Level 02
-          - [ ] Level 03
-          - [ ] Level 04
-          - [ ] Level 05
-          - [ ] Level 06
-          - [ ] Level 07
-          - [ ] Level 08
-          - [ ] Level 09
-          - [ ] Level 10
-          - [ ] Level 11
-          - [ ] Level 12
-          - [ ] Level 13
-          - [ ] Level 14
-          - [ ] Level 15
-          - [ ] Level 16
-          - [ ] Level 17
-          - [ ] Level 18
-          - [ ] Level 19
-     -    Protostar
-     -    Fusion
-
-          - [ ] Level 00
-          - [ ] Level 01
-          - [ ] Level 02
-          - [ ] Level 03
-          - [ ] Level 04
-          - [ ] Level 05
-          - [ ] Level 06
-          - [ ] Level 07
-          - [ ] Level 08
-          - [ ] Level 09
-          - [ ] Level 10
-          - [ ] Level 11
-          - [ ] Level 12
-          - [ ] Level 13
-          - [ ] Level 14
+     - [ ] Nebula
+     - [ ] [Protostar](http://csuwangj.top/2018/07/22/Exploit-Exercise-Protostar%E5%85%A8%E6%94%BB%E7%95%A5-%E8%A7%A3%E6%9E%90/)
+     - [ ] Fusion
      -    Main Sequence
           - [ ] Main Sequence
           - [ ] Story line
@@ -92,11 +56,11 @@ cd /opt/pwndbg
           - [ ] Vicious Platypus
 -    CTF
      -    HGAME2018
-          -    [week1](https://csuwangj.github.io/2018/02/08/HGAME2018-week1WP/)
+          -    [week1](http://csuwangj.github.io/2018/02/08/HGAME2018-week1WP/)
                - [x] guess_number
                - [x] flag_server
                - [x] zazahui
-          -    week2
+          -    [week2](http://csuwangj.top/2018/02/16/HGAME2018-week2%E9%83%A8%E5%88%86WP/)
                - [x] ez_shellcode
                - [x] ez bash jail
                - [ ] hacker_system_ver1

@@ -1,17 +1,18 @@
 ---
 title: JarvisOJ-WP合集
 connments: true
-date: 2018-05-10 09:11:00
-tags: 
-	- CTF
-	- Web
-	- PWN
-	- Misc
-	- Crypto
-	- Rev
+tags:
+  - CTF
+  - Web
+  - PWN
+  - Misc
+  - Crypto
+  - Rev
 categories: WriteUp
 desc: JarvisOJ-WP合集
 summary: 慢慢填坑
+abbrlink: 3830
+date: 2018-05-10 09:11:00
 ---
 
  因为预感进度表会很长，所以不放了

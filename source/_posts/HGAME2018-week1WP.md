@@ -1,17 +1,18 @@
 ---
 title: HGAME2018-week1WP
 connments: true
-date: 2018-02-08 10:17:34
-tags: 
-	- CTF
-	- Web
-	- Rev
-	- PWN
-	- Misc
-	- Crypto
+tags:
+  - CTF
+  - Web
+  - Rev
+  - PWN
+  - Misc
+  - Crypto
 categories: WriteUp
 desc: HGAME2018-week1WP
-summary: 
+abbrlink: 35885
+date: 2018-02-08 10:17:34
+summary:
 ---
 第一周难度还是挺温柔，居然让我AK了，好开心呀
 

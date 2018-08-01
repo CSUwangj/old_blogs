@@ -1,13 +1,14 @@
 ---
 title: '*ctf magic_number WP'
 connments: true
-date: 2018-04-27 21:48:19
-tags: 
-	- CTF
-	- PPC
+tags:
+  - CTF
+  - PPC
 categories: WriteUp
 desc: starctf_magic_number
 summary: 一道交互ACM题
+abbrlink: 34218
+date: 2018-04-27 21:48:19
 ---
 
 99次内猜14个[0,1023]内的数，那肯定是不仅二分而且要整体二分了

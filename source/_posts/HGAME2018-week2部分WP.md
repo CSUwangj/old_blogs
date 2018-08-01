@@ -1,15 +1,16 @@
 ---
 title: HGAME2018-week2部分WP
 connments: true
-date: 2018-02-16 16:00:20
-tags: 
-	- CTF
-	- Web
-	- PWN
-	- Misc
-	- Crypto
+tags:
+  - CTF
+  - Web
+  - PWN
+  - Misc
+  - Crypto
 categories: WriteUp
 desc: HGAME2018-week2部分WP
+abbrlink: 7371
+date: 2018-02-16 16:00:20
 summary:
 ---
 

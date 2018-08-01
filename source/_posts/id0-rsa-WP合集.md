@@ -1,13 +1,14 @@
 ---
 title: id0-rsa WP合集
 connments: true
-date: 2018-04-19 15:53:15
-tags: 
-	- CTF
-	- Crypto
+tags:
+  - CTF
+  - Crypto
 categories: WriteUp
 desc: id0-rsa WP合集
 summary: id0-rsa WP合集
+abbrlink: 65234
+date: 2018-04-19 15:53:15
 ---
 忙里偷闲做做题wwwwwwwwwwwww
 
