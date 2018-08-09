@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://CSUwangj.github.io/"/>
-  <updated>2018-08-02T17:22:02.605Z</updated>
+  <updated>2018-08-09T09:33:08.651Z</updated>
   <id>http://CSUwangj.github.io/</id>
   
   <author>
@@ -15,6 +15,49 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Exploit-Exercise_Fusion全攻略+解析</title>
+    <link href="http://CSUwangj.github.io/2018/08/03/Exploit-Exercise-Fusion%E5%85%A8%E6%94%BB%E7%95%A5-%E8%A7%A3%E6%9E%90/"/>
+    <id>http://CSUwangj.github.io/2018/08/03/Exploit-Exercise-Fusion全攻略-解析/</id>
+    <published>2018-08-02T17:31:36.000Z</published>
+    <updated>2018-08-09T09:33:08.651Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;目前进度：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot; checked&gt; Level 00&lt;/li&gt;
+&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot;&gt; Level 01&lt;/li&gt;
+&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot;&gt; Level 02&lt;/li&gt;
+&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot;&gt; Level 03&lt;/li&gt;
+&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot;&gt; Level 04&lt;/li&gt;
+&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot;&gt; Level 05&lt;/li&gt;
+&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot;&gt; Level 06&lt;/li&gt;
+&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot;&gt; Level 07&lt;/li&gt;
+&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot;&gt; Level 08&lt;/li&gt;
+&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot;&gt; Level 09&lt;/li&gt;
+&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot;&gt; Level 10&lt;/li&gt;
+&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot;&gt; Level 11&lt;/li&gt;
+&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot;&gt; Level 12&lt;/li&gt;
+&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot;&gt; Level 13&lt;/li&gt;
+&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot;&gt; Level 14&lt;/li&gt;
+&lt;/ul&gt;
+    
+    </summary>
+    
+      <category term="Notes" scheme="http://CSUwangj.github.io/categories/Notes/"/>
+    
+    
+      <category term="WARGAME" scheme="http://CSUwangj.github.io/tags/WARGAME/"/>
+    
+      <category term="PWN" scheme="http://CSUwangj.github.io/tags/PWN/"/>
+    
+      <category term="stackoverflow" scheme="http://CSUwangj.github.io/tags/stackoverflow/"/>
+    
+      <category term="mitigation" scheme="http://CSUwangj.github.io/tags/mitigation/"/>
+    
+  </entry>
   
   <entry>
     <title>Exploit-Exercise_Protostar全攻略+解析</title>
@@ -61,9 +104,9 @@
       <category term="Notes" scheme="http://CSUwangj.github.io/categories/Notes/"/>
     
     
-      <category term="PWN" scheme="http://CSUwangj.github.io/tags/PWN/"/>
-    
       <category term="WARGAME" scheme="http://CSUwangj.github.io/tags/WARGAME/"/>
+    
+      <category term="PWN" scheme="http://CSUwangj.github.io/tags/PWN/"/>
     
       <category term="stackoverflow" scheme="http://CSUwangj.github.io/tags/stackoverflow/"/>
     
@@ -182,9 +225,9 @@
     
       <category term="CTF" scheme="http://CSUwangj.github.io/tags/CTF/"/>
     
-      <category term="Misc" scheme="http://CSUwangj.github.io/tags/Misc/"/>
-    
       <category term="Crypto" scheme="http://CSUwangj.github.io/tags/Crypto/"/>
+    
+      <category term="Misc" scheme="http://CSUwangj.github.io/tags/Misc/"/>
     
   </entry>
   
@@ -204,17 +247,17 @@
       <category term="WriteUp" scheme="http://CSUwangj.github.io/categories/WriteUp/"/>
     
     
-      <category term="CTF" scheme="http://CSUwangj.github.io/tags/CTF/"/>
+      <category term="PWN" scheme="http://CSUwangj.github.io/tags/PWN/"/>
     
-      <category term="Misc" scheme="http://CSUwangj.github.io/tags/Misc/"/>
+      <category term="CTF" scheme="http://CSUwangj.github.io/tags/CTF/"/>
     
       <category term="Crypto" scheme="http://CSUwangj.github.io/tags/Crypto/"/>
     
-      <category term="Rev" scheme="http://CSUwangj.github.io/tags/Rev/"/>
+      <category term="Misc" scheme="http://CSUwangj.github.io/tags/Misc/"/>
     
       <category term="Web" scheme="http://CSUwangj.github.io/tags/Web/"/>
     
-      <category term="PWN" scheme="http://CSUwangj.github.io/tags/PWN/"/>
+      <category term="Rev" scheme="http://CSUwangj.github.io/tags/Rev/"/>
     
   </entry>
   
@@ -314,15 +357,15 @@
       <category term="WriteUp" scheme="http://CSUwangj.github.io/categories/WriteUp/"/>
     
     
-      <category term="CTF" scheme="http://CSUwangj.github.io/tags/CTF/"/>
+      <category term="PWN" scheme="http://CSUwangj.github.io/tags/PWN/"/>
     
-      <category term="Misc" scheme="http://CSUwangj.github.io/tags/Misc/"/>
+      <category term="CTF" scheme="http://CSUwangj.github.io/tags/CTF/"/>
     
       <category term="Crypto" scheme="http://CSUwangj.github.io/tags/Crypto/"/>
     
-      <category term="Web" scheme="http://CSUwangj.github.io/tags/Web/"/>
+      <category term="Misc" scheme="http://CSUwangj.github.io/tags/Misc/"/>
     
-      <category term="PWN" scheme="http://CSUwangj.github.io/tags/PWN/"/>
+      <category term="Web" scheme="http://CSUwangj.github.io/tags/Web/"/>
     
   </entry>
   
@@ -343,9 +386,9 @@
       <category term="Notes" scheme="http://CSUwangj.github.io/categories/Notes/"/>
     
     
-      <category term="CTF" scheme="http://CSUwangj.github.io/tags/CTF/"/>
-    
       <category term="PWN" scheme="http://CSUwangj.github.io/tags/PWN/"/>
+    
+      <category term="CTF" scheme="http://CSUwangj.github.io/tags/CTF/"/>
     
   </entry>
   
@@ -389,9 +432,9 @@
       <category term="Tools" scheme="http://CSUwangj.github.io/categories/Tools/"/>
     
     
-      <category term="Misc" scheme="http://CSUwangj.github.io/tags/Misc/"/>
-    
       <category term="Crypto" scheme="http://CSUwangj.github.io/tags/Crypto/"/>
+    
+      <category term="Misc" scheme="http://CSUwangj.github.io/tags/Misc/"/>
     
   </entry>
   
@@ -412,17 +455,17 @@
       <category term="WriteUp" scheme="http://CSUwangj.github.io/categories/WriteUp/"/>
     
     
-      <category term="CTF" scheme="http://CSUwangj.github.io/tags/CTF/"/>
+      <category term="PWN" scheme="http://CSUwangj.github.io/tags/PWN/"/>
     
-      <category term="Misc" scheme="http://CSUwangj.github.io/tags/Misc/"/>
+      <category term="CTF" scheme="http://CSUwangj.github.io/tags/CTF/"/>
     
       <category term="Crypto" scheme="http://CSUwangj.github.io/tags/Crypto/"/>
     
-      <category term="Rev" scheme="http://CSUwangj.github.io/tags/Rev/"/>
+      <category term="Misc" scheme="http://CSUwangj.github.io/tags/Misc/"/>
     
       <category term="Web" scheme="http://CSUwangj.github.io/tags/Web/"/>
     
-      <category term="PWN" scheme="http://CSUwangj.github.io/tags/PWN/"/>
+      <category term="Rev" scheme="http://CSUwangj.github.io/tags/Rev/"/>
     
   </entry>
   
