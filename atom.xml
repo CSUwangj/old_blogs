@@ -46,11 +46,11 @@
     <link href="http://CSUwangj.github.io/2018-12-20-%E6%AF%8F%E6%97%A5%E6%8C%91%E6%88%98/"/>
     <id>http://CSUwangj.github.io/2018-12-20-每日挑战/</id>
     <published>2018-12-19T16:09:07.000Z</published>
-    <updated>2018-12-19T17:31:49.383Z</updated>
+    <updated>2018-12-19T17:36:09.479Z</updated>
     
     <summary type="html">
     
-      &lt;p&gt;What I’ve done today is &lt;em&gt;Last Digits&lt;/em&gt; of &lt;em&gt;Number Theory&lt;/em&gt; and &lt;em&gt;Longest Substring Without Repeating Characters&lt;/em&gt; in &lt;em&gt;JavaScript&lt;/em&gt;.&lt;/p&gt;
+      &lt;p&gt;What I’ve done today is &lt;em&gt;Secret Messages&lt;/em&gt; of &lt;em&gt;Number Theory&lt;/em&gt; and &lt;em&gt;Course Schedule II&lt;/em&gt; in &lt;em&gt;JavaScript&lt;/em&gt;.&lt;/p&gt;
 &lt;p&gt;If no source is provided, then I’m doing these challenge at &lt;a href=&quot;https://brilliant.org&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://brilliant.org&lt;/a&gt; and &lt;a href=&quot;https://leetcode.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://leetcode.com/&lt;/a&gt;.&lt;/p&gt;
     
     </summary>
@@ -386,9 +386,9 @@
       <category term="WriteUp" scheme="http://CSUwangj.github.io/categories/WriteUp/"/>
     
     
-      <category term="CTF" scheme="http://CSUwangj.github.io/tags/CTF/"/>
-    
       <category term="Crypto" scheme="http://CSUwangj.github.io/tags/Crypto/"/>
+    
+      <category term="CTF" scheme="http://CSUwangj.github.io/tags/CTF/"/>
     
       <category term="Misc" scheme="http://CSUwangj.github.io/tags/Misc/"/>
     
@@ -410,9 +410,9 @@
       <category term="WriteUp" scheme="http://CSUwangj.github.io/categories/WriteUp/"/>
     
     
-      <category term="CTF" scheme="http://CSUwangj.github.io/tags/CTF/"/>
-    
       <category term="Crypto" scheme="http://CSUwangj.github.io/tags/Crypto/"/>
+    
+      <category term="CTF" scheme="http://CSUwangj.github.io/tags/CTF/"/>
     
       <category term="PWN" scheme="http://CSUwangj.github.io/tags/PWN/"/>
     
@@ -463,9 +463,9 @@
       <category term="WriteUp" scheme="http://CSUwangj.github.io/categories/WriteUp/"/>
     
     
-      <category term="CTF" scheme="http://CSUwangj.github.io/tags/CTF/"/>
-    
       <category term="Crypto" scheme="http://CSUwangj.github.io/tags/Crypto/"/>
+    
+      <category term="CTF" scheme="http://CSUwangj.github.io/tags/CTF/"/>
     
   </entry>
   
@@ -520,9 +520,9 @@
       <category term="WriteUp" scheme="http://CSUwangj.github.io/categories/WriteUp/"/>
     
     
-      <category term="CTF" scheme="http://CSUwangj.github.io/tags/CTF/"/>
-    
       <category term="Crypto" scheme="http://CSUwangj.github.io/tags/Crypto/"/>
+    
+      <category term="CTF" scheme="http://CSUwangj.github.io/tags/CTF/"/>
     
       <category term="PWN" scheme="http://CSUwangj.github.io/tags/PWN/"/>
     
