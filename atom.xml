@@ -42,15 +42,43 @@
   </entry>
   
   <entry>
+    <title>2018-12-20 每日挑战</title>
+    <link href="http://CSUwangj.github.io/2018-12-20-%E6%AF%8F%E6%97%A5%E6%8C%91%E6%88%98/"/>
+    <id>http://CSUwangj.github.io/2018-12-20-每日挑战/</id>
+    <published>2018-12-19T16:09:07.000Z</published>
+    <updated>2018-12-19T17:31:49.383Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;What I’ve done today is &lt;em&gt;Last Digits&lt;/em&gt; of &lt;em&gt;Number Theory&lt;/em&gt; and &lt;em&gt;Longest Substring Without Repeating Characters&lt;/em&gt; in &lt;em&gt;JavaScript&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;If no source is provided, then I’m doing these challenge at &lt;a href=&quot;https://brilliant.org&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://brilliant.org&lt;/a&gt; and &lt;a href=&quot;https://leetcode.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://leetcode.com/&lt;/a&gt;.&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Notes" scheme="http://CSUwangj.github.io/categories/Notes/"/>
+    
+    
+      <category term="Math" scheme="http://CSUwangj.github.io/tags/Math/"/>
+    
+      <category term="NumberTheory" scheme="http://CSUwangj.github.io/tags/NumberTheory/"/>
+    
+      <category term="Algorithm" scheme="http://CSUwangj.github.io/tags/Algorithm/"/>
+    
+      <category term="LeetCode" scheme="http://CSUwangj.github.io/tags/LeetCode/"/>
+    
+  </entry>
+  
+  <entry>
     <title>2018-12-19 每日挑战</title>
     <link href="http://CSUwangj.github.io/2018-12-19-%E6%AF%8F%E6%97%A5%E6%8C%91%E6%88%98/"/>
     <id>http://CSUwangj.github.io/2018-12-19-每日挑战/</id>
     <published>2018-12-19T03:00:09.000Z</published>
-    <updated>2018-12-19T04:58:18.993Z</updated>
+    <updated>2018-12-19T16:15:40.106Z</updated>
     
     <summary type="html">
     
-      &lt;p&gt;Today what I do is &lt;em&gt;Last Digits&lt;/em&gt; of &lt;em&gt;Number Theory&lt;/em&gt; and &lt;em&gt;Longest Substring Without Repeating Characters&lt;/em&gt; in &lt;em&gt;JavaScript&lt;/em&gt;.&lt;/p&gt;
+      &lt;p&gt;What I’ve done today is &lt;em&gt;Last Digits&lt;/em&gt; of &lt;em&gt;Number Theory&lt;/em&gt; and &lt;em&gt;Longest Substring Without Repeating Characters&lt;/em&gt; in &lt;em&gt;JavaScript&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;If no source is provided, then I’m doing these challenge at &lt;a href=&quot;https://brilliant.org&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://brilliant.org&lt;/a&gt; and &lt;a href=&quot;https://leetcode.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://leetcode.com/&lt;/a&gt;.&lt;/p&gt;
     
     </summary>
     
@@ -58,6 +86,10 @@
     
     
       <category term="Math" scheme="http://CSUwangj.github.io/tags/Math/"/>
+    
+      <category term="NumberTheory" scheme="http://CSUwangj.github.io/tags/NumberTheory/"/>
+    
+      <category term="Algorithm" scheme="http://CSUwangj.github.io/tags/Algorithm/"/>
     
       <category term="LeetCode" scheme="http://CSUwangj.github.io/tags/LeetCode/"/>
     
@@ -382,13 +414,13 @@
     
       <category term="Crypto" scheme="http://CSUwangj.github.io/tags/Crypto/"/>
     
-      <category term="Misc" scheme="http://CSUwangj.github.io/tags/Misc/"/>
-    
       <category term="PWN" scheme="http://CSUwangj.github.io/tags/PWN/"/>
     
-      <category term="Rev" scheme="http://CSUwangj.github.io/tags/Rev/"/>
+      <category term="Misc" scheme="http://CSUwangj.github.io/tags/Misc/"/>
     
       <category term="Web" scheme="http://CSUwangj.github.io/tags/Web/"/>
+    
+      <category term="Rev" scheme="http://CSUwangj.github.io/tags/Rev/"/>
     
   </entry>
   
@@ -492,9 +524,9 @@
     
       <category term="Crypto" scheme="http://CSUwangj.github.io/tags/Crypto/"/>
     
-      <category term="Misc" scheme="http://CSUwangj.github.io/tags/Misc/"/>
-    
       <category term="PWN" scheme="http://CSUwangj.github.io/tags/PWN/"/>
+    
+      <category term="Misc" scheme="http://CSUwangj.github.io/tags/Misc/"/>
     
       <category term="Web" scheme="http://CSUwangj.github.io/tags/Web/"/>
     
@@ -566,37 +598,6 @@
       <category term="Crypto" scheme="http://CSUwangj.github.io/tags/Crypto/"/>
     
       <category term="Misc" scheme="http://CSUwangj.github.io/tags/Misc/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>HGAME2018-week1WP</title>
-    <link href="http://CSUwangj.github.io/HGAME2018-week1WP/"/>
-    <id>http://CSUwangj.github.io/HGAME2018-week1WP/</id>
-    <published>2018-02-08T02:17:34.000Z</published>
-    <updated>2018-12-19T02:33:50.244Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;第一周难度还是挺温柔，居然让我AK了，好开心呀&lt;/p&gt;
-&lt;p&gt;对了，这篇是先在本地生成的，周日才传上博客的。&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="WriteUp" scheme="http://CSUwangj.github.io/categories/WriteUp/"/>
-    
-    
-      <category term="CTF" scheme="http://CSUwangj.github.io/tags/CTF/"/>
-    
-      <category term="Crypto" scheme="http://CSUwangj.github.io/tags/Crypto/"/>
-    
-      <category term="Misc" scheme="http://CSUwangj.github.io/tags/Misc/"/>
-    
-      <category term="PWN" scheme="http://CSUwangj.github.io/tags/PWN/"/>
-    
-      <category term="Rev" scheme="http://CSUwangj.github.io/tags/Rev/"/>
-    
-      <category term="Web" scheme="http://CSUwangj.github.io/tags/Web/"/>
     
   </entry>
   
