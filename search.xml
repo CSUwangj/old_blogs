@@ -11,7 +11,7 @@
   <entry>
     <title><![CDATA[2018-12-19 每日挑战]]></title>
     <url>%2F2018-12-19-%E6%AF%8F%E6%97%A5%E6%8C%91%E6%88%98%2F</url>
-    <content type="text"><![CDATA[Today what I do is Last Digits of Number Theory and in JavaScript. Math On the first view of problem, there comes the answer is three. Five times an even number is zero, whatever number time zero is zero. Five times an odd number is five. Obviously there is loop (2-&gt;4-&gt;8-&gt;6) in the multiply chain. So obvious~ LeetCodeProblem12345678910111213141516171819203. Longest Substring Without Repeating CharactersGiven a string, find the length of the longest substring without repeating characters.Example 1:Input: &quot;abcabcbb&quot;Output: 3 Explanation: The answer is &quot;abc&quot;, with the length of 3. Example 2:Input: &quot;bbbbb&quot;Output: 1Explanation: The answer is &quot;b&quot;, with the length of 1.Example 3:Input: &quot;pwwkew&quot;Output: 3Explanation: The answer is &quot;wke&quot;, with the length of 3. Note that the answer must be a substring, &quot;pwke&quot; is a subsequence and not a substring. My Idea Implication12345678910111213141516171819/** * @param &#123;string&#125; s * @return &#123;number&#125; */var lengthOfLongestSubstring = function(s) &#123; let map = new Map(); let lp = 0; let ans = 0; let len = s.length; for(let i = 0; i &lt; len ; ++i)&#123; if(map.has(s[i]) &amp;&amp; lp &lt; map.get(s[i]) + 1) lp = map.get(s[i]) + 1; ans = ans &gt; ( i - lp + 1 ) ? ans : ( i - lp + 1 ); //console.log(ans,lp) map.set(s[i], i); &#125; return ans;&#125;;//console.log(lengthOfLongestSubstring("abba"));]]></content>
+    <content type="text"><![CDATA[Today what I do is Last Digits of Number Theory and Longest Substring Without Repeating Characters in JavaScript. Math On the first view of problem, there comes the answer is three. Five times an even number is zero, whatever number time zero is zero. Five times an odd number is five. Obviously there is loop (2-&gt;4-&gt;8-&gt;6) in the multiply chain. So obvious~ LeetCodeProblem12345678910111213141516171819203. Longest Substring Without Repeating CharactersGiven a string, find the length of the longest substring without repeating characters.Example 1:Input: &quot;abcabcbb&quot;Output: 3 Explanation: The answer is &quot;abc&quot;, with the length of 3. Example 2:Input: &quot;bbbbb&quot;Output: 1Explanation: The answer is &quot;b&quot;, with the length of 1.Example 3:Input: &quot;pwwkew&quot;Output: 3Explanation: The answer is &quot;wke&quot;, with the length of 3. Note that the answer must be a substring, &quot;pwke&quot; is a subsequence and not a substring. My Idea Implication12345678910111213141516171819/** * @param &#123;string&#125; s * @return &#123;number&#125; */var lengthOfLongestSubstring = function(s) &#123; let map = new Map(); let lp = 0; let ans = 0; let len = s.length; for(let i = 0; i &lt; len ; ++i)&#123; if(map.has(s[i]) &amp;&amp; lp &lt; map.get(s[i]) + 1) lp = map.get(s[i]) + 1; ans = ans &gt; ( i - lp + 1 ) ? ans : ( i - lp + 1 ); //console.log(ans,lp) map.set(s[i], i); &#125; return ans;&#125;;//console.log(lengthOfLongestSubstring("abba"));]]></content>
       <categories>
         <category>WriteUp</category>
       </categories>
@@ -118,8 +118,8 @@
       </categories>
       <tags>
         <tag>CTF</tag>
-        <tag>Misc</tag>
         <tag>Crypto</tag>
+        <tag>Misc</tag>
       </tags>
   </entry>
   <entry>
@@ -131,11 +131,11 @@
       </categories>
       <tags>
         <tag>CTF</tag>
-        <tag>Misc</tag>
         <tag>Crypto</tag>
+        <tag>Misc</tag>
         <tag>PWN</tag>
-        <tag>Web</tag>
         <tag>Rev</tag>
+        <tag>Web</tag>
       </tags>
   </entry>
   <entry>
@@ -187,8 +187,8 @@
       </categories>
       <tags>
         <tag>CTF</tag>
-        <tag>Misc</tag>
         <tag>Crypto</tag>
+        <tag>Misc</tag>
         <tag>PWN</tag>
         <tag>Web</tag>
       </tags>
@@ -225,8 +225,8 @@
         <category>Tools</category>
       </categories>
       <tags>
-        <tag>Misc</tag>
         <tag>Crypto</tag>
+        <tag>Misc</tag>
       </tags>
   </entry>
   <entry>
@@ -238,11 +238,11 @@
       </categories>
       <tags>
         <tag>CTF</tag>
-        <tag>Misc</tag>
         <tag>Crypto</tag>
+        <tag>Misc</tag>
         <tag>PWN</tag>
-        <tag>Web</tag>
         <tag>Rev</tag>
+        <tag>Web</tag>
       </tags>
   </entry>
   <entry>
