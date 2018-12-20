@@ -117,7 +117,7 @@
 
 
   <meta name="description" content="What I’ve done today is Last Digits of Number Theory and Longest Substring Without Repeating Characters in JavaScript. If no source is provided, then I’m doing these challenge at https://brilliant.org">
-<meta name="keywords" content="Math,NumberTheory,Algorithm,LeetCode">
+<meta name="keywords" content="Math,NumberTheory,Brilliant,Algorithm,LeetCode">
 <meta property="og:type" content="article">
 <meta property="og:title" content="2018-12-19 Daily Challenge">
 <meta property="og:url" content="http://CSUwangj.github.io/2018-12-19-Daily-Challenge/index.html">
@@ -130,7 +130,7 @@
 <meta property="og:image" content="http://csuwangj.github.io/2018-12-19-Daily-Challenge/1545189016747.png">
 <meta property="og:image" content="http://csuwangj.github.io/2018-12-19-Daily-Challenge/1545189284001.png">
 <meta property="og:image" content="http://csuwangj.github.io/2018-12-19-Daily-Challenge/1545195187445.png">
-<meta property="og:updated_time" content="2018-12-20T02:37:34.105Z">
+<meta property="og:updated_time" content="2018-12-20T11:58:32.386Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="2018-12-19 Daily Challenge">
 <meta name="twitter:description" content="What I’ve done today is Last Digits of Number Theory and Longest Substring Without Repeating Characters in JavaScript. If no source is provided, then I’m doing these challenge at https://brilliant.org">
@@ -416,7 +416,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2018-12-20 10:37:34" itemprop="dateModified" datetime="2018-12-20T10:37:34+08:00">2018-12-20</time>
+                <time title="修改时间：2018-12-20 19:58:32" itemprop="dateModified" datetime="2018-12-20T19:58:32+08:00">2018-12-20</time>
               
             
           </span>
@@ -520,7 +520,7 @@
 <p>Obviously there is loop (2-&gt;4-&gt;8-&gt;6) in the multiply chain.</p>
 <img src="/2018-12-19-Daily-Challenge/1545189284001.png" title="five">
 <p>So obvious~</p>
-<h1 id="LeetCode"><a href="#LeetCode" class="headerlink" title="LeetCode"></a>LeetCode</h1><h2 id="Problem"><a href="#Problem" class="headerlink" title="Problem"></a>Problem</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">3. Longest Substring Without Repeating Characters</span><br><span class="line"></span><br><span class="line">Given a string, find the length of the longest substring without repeating characters.</span><br><span class="line"></span><br><span class="line">Example 1:</span><br><span class="line"></span><br><span class="line">Input: &quot;abcabcbb&quot;</span><br><span class="line">Output: 3 </span><br><span class="line">Explanation: The answer is &quot;abc&quot;, with the length of 3. </span><br><span class="line">Example 2:</span><br><span class="line"></span><br><span class="line">Input: &quot;bbbbb&quot;</span><br><span class="line">Output: 1</span><br><span class="line">Explanation: The answer is &quot;b&quot;, with the length of 1.</span><br><span class="line">Example 3:</span><br><span class="line"></span><br><span class="line">Input: &quot;pwwkew&quot;</span><br><span class="line">Output: 3</span><br><span class="line">Explanation: The answer is &quot;wke&quot;, with the length of 3. </span><br><span class="line">             Note that the answer must be a substring, &quot;pwke&quot; is a subsequence and not a substring.</span><br></pre></td></tr></table></figure>
+<h1 id="Algorithm"><a href="#Algorithm" class="headerlink" title="Algorithm"></a>Algorithm</h1><h2 id="Problem"><a href="#Problem" class="headerlink" title="Problem"></a>Problem</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">3. Longest Substring Without Repeating Characters</span><br><span class="line"></span><br><span class="line">Given a string, find the length of the longest substring without repeating characters.</span><br><span class="line"></span><br><span class="line">Example 1:</span><br><span class="line"></span><br><span class="line">Input: &quot;abcabcbb&quot;</span><br><span class="line">Output: 3 </span><br><span class="line">Explanation: The answer is &quot;abc&quot;, with the length of 3. </span><br><span class="line">Example 2:</span><br><span class="line"></span><br><span class="line">Input: &quot;bbbbb&quot;</span><br><span class="line">Output: 1</span><br><span class="line">Explanation: The answer is &quot;b&quot;, with the length of 1.</span><br><span class="line">Example 3:</span><br><span class="line"></span><br><span class="line">Input: &quot;pwwkew&quot;</span><br><span class="line">Output: 3</span><br><span class="line">Explanation: The answer is &quot;wke&quot;, with the length of 3. </span><br><span class="line">             Note that the answer must be a substring, &quot;pwke&quot; is a subsequence and not a substring.</span><br></pre></td></tr></table></figure>
 <h2 id="My-Idea"><a href="#My-Idea" class="headerlink" title="My Idea"></a>My Idea</h2><img src="/2018-12-19-Daily-Challenge/1545195187445.png" title="idea">
 <h2 id="Implication"><a href="#Implication" class="headerlink" title="Implication"></a>Implication</h2><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * @param &#123;string&#125; s</span></span><br><span class="line"><span class="comment"> * @return &#123;number&#125;</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">var</span> lengthOfLongestSubstring = <span class="function"><span class="keyword">function</span>(<span class="params">s</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">let</span> map = <span class="keyword">new</span> <span class="built_in">Map</span>();</span><br><span class="line">    <span class="keyword">let</span> lp = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">let</span> ans = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">let</span> len = s.length;</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">let</span> i = <span class="number">0</span>; i &lt; len ; ++i)&#123;</span><br><span class="line">        <span class="keyword">if</span>(map.has(s[i]) &amp;&amp; lp &lt; map.get(s[i]) + <span class="number">1</span>) lp = map.get(s[i]) + <span class="number">1</span>;</span><br><span class="line">        ans = ans &gt; ( i - lp + <span class="number">1</span> ) ? ans : ( i - lp + <span class="number">1</span> );</span><br><span class="line">        <span class="comment">//console.log(ans,lp)</span></span><br><span class="line">        map.set(s[i], i);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> ans;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="comment">//console.log(lengthOfLongestSubstring("abba"));</span></span><br></pre></td></tr></table></figure>
       
@@ -538,6 +538,15 @@
       
       
       <div class="popular-posts-title"><a href="/2018-12-20-Daily-Challenge/" rel="bookmark">2018-12-20 Daily Challenge</a></div>
+      
+    </li>
+  
+    <li class="popular-posts-item">
+      
+        <div class="popular-posts-date">2018-12-21</div>
+      
+      
+      <div class="popular-posts-title"><a href="/2018-12-21-Daily-Challenge/" rel="bookmark">2018-12-21 Daily Challenge</a></div>
       
     </li>
   
@@ -606,6 +615,8 @@
             <a href="/tags/Math/" rel="tag"># Math</a>
           
             <a href="/tags/NumberTheory/" rel="tag"># NumberTheory</a>
+          
+            <a href="/tags/Brilliant/" rel="tag"># Brilliant</a>
           
             <a href="/tags/Algorithm/" rel="tag"># Algorithm</a>
           
@@ -737,7 +748,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">22</span>
+                    <span class="site-state-item-count">23</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -823,7 +834,15 @@
                     
                       
                     
-                    <span class="site-state-item-count">24</span>
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">28</span>
                     <span class="site-state-item-name">标签</span>
                   </a>
                 </div>
@@ -964,7 +983,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Math"><span class="nav-number">1.</span> <span class="nav-text">Math</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#LeetCode"><span class="nav-number">2.</span> <span class="nav-text">LeetCode</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Problem"><span class="nav-number">2.1.</span> <span class="nav-text">Problem</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#My-Idea"><span class="nav-number">2.2.</span> <span class="nav-text">My Idea</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Implication"><span class="nav-number">2.3.</span> <span class="nav-text">Implication</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Math"><span class="nav-number">1.</span> <span class="nav-text">Math</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Algorithm"><span class="nav-number">2.</span> <span class="nav-text">Algorithm</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Problem"><span class="nav-number">2.1.</span> <span class="nav-text">Problem</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#My-Idea"><span class="nav-number">2.2.</span> <span class="nav-text">My Idea</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Implication"><span class="nav-number">2.3.</span> <span class="nav-text">Implication</span></a></li></ol></li></ol></div>
             
 
           </div>
@@ -1003,7 +1022,7 @@
     
       <span class="post-meta-item-text">站点总字数：</span>
     
-    <span title="站点总字数">125k</span>
+    <span title="站点总字数">128k</span>
   
 
   
@@ -1014,7 +1033,7 @@
     
       <span class="post-meta-item-text">站点阅读时长 &asymp;</span>
     
-    <span title="站点阅读时长">3:28</span>
+    <span title="站点阅读时长">3:33</span>
   
 </div>
 

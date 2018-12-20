@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://CSUwangj.github.io/"/>
-  <updated>2018-12-20T02:29:08.481Z</updated>
+  <updated>2018-12-20T16:06:08.844Z</updated>
   <id>http://CSUwangj.github.io/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="http://CSUwangj.github.io/%E5%8D%9A%E6%96%87%E6%95%B4%E7%90%86/"/>
     <id>http://CSUwangj.github.io/博文整理/</id>
     <published>8102-12-19T02:36:02.000Z</published>
-    <updated>2018-12-20T02:29:08.481Z</updated>
+    <updated>2018-12-20T16:06:08.844Z</updated>
     
     <summary type="html">
     
@@ -35,16 +35,46 @@
   </entry>
   
   <entry>
+    <title>2018-12-21 Daily Challenge</title>
+    <link href="http://CSUwangj.github.io/2018-12-21-Daily-Challenge/"/>
+    <id>http://CSUwangj.github.io/2018-12-21-Daily-Challenge/</id>
+    <published>2018-12-20T16:00:46.000Z</published>
+    <updated>2018-12-20T16:03:04.115Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;What I’ve done today is &lt;em&gt;Multiples of 3 and 5&lt;/em&gt; in &lt;em&gt;Rust&lt;/em&gt; and &lt;em&gt;Max Chunks To Make Sorted&lt;/em&gt; in &lt;em&gt;JavaScript&lt;/em&gt;.&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="DailyChallenge" scheme="http://CSUwangj.github.io/categories/DailyChallenge/"/>
+    
+    
+      <category term="Math" scheme="http://CSUwangj.github.io/tags/Math/"/>
+    
+      <category term="Algorithm" scheme="http://CSUwangj.github.io/tags/Algorithm/"/>
+    
+      <category term="LeetCode" scheme="http://CSUwangj.github.io/tags/LeetCode/"/>
+    
+      <category term="ProjectEuler" scheme="http://CSUwangj.github.io/tags/ProjectEuler/"/>
+    
+      <category term="Division" scheme="http://CSUwangj.github.io/tags/Division/"/>
+    
+      <category term="Inclusion–exclusionPrinciple" scheme="http://CSUwangj.github.io/tags/Inclusion%E2%80%93exclusionPrinciple/"/>
+    
+  </entry>
+  
+  <entry>
     <title>2018-12-20 Daily Challenge</title>
     <link href="http://CSUwangj.github.io/2018-12-20-Daily-Challenge/"/>
     <id>http://CSUwangj.github.io/2018-12-20-Daily-Challenge/</id>
     <published>2018-12-19T16:09:07.000Z</published>
-    <updated>2018-12-20T02:37:05.583Z</updated>
+    <updated>2018-12-20T11:58:18.789Z</updated>
     
     <summary type="html">
     
       &lt;p&gt;What I’ve done today is &lt;em&gt;Secret Messages&lt;/em&gt; of &lt;em&gt;Number Theory&lt;/em&gt; and &lt;em&gt;Course Schedule II&lt;/em&gt; in &lt;em&gt;JavaScript&lt;/em&gt;.&lt;/p&gt;
-&lt;p&gt;If no source is provided, then I’m doing these challenge at &lt;a href=&quot;https://brilliant.org&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://brilliant.org&lt;/a&gt; and &lt;a href=&quot;https://leetcode.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://leetcode.com/&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Due to the high cost of [brilliant.org]‘s subscription, and low difficulty, I decide to change to &lt;a href=&quot;https://projecteuler.net&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://projecteuler.net&lt;/a&gt;. So again, if there is no source provided, I’m doing challenge with it and &lt;a href=&quot;https://LeetCode.com&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://LeetCode.com&lt;/a&gt;&lt;/p&gt;
     
     </summary>
     
@@ -54,6 +84,8 @@
       <category term="Math" scheme="http://CSUwangj.github.io/tags/Math/"/>
     
       <category term="NumberTheory" scheme="http://CSUwangj.github.io/tags/NumberTheory/"/>
+    
+      <category term="Brilliant" scheme="http://CSUwangj.github.io/tags/Brilliant/"/>
     
       <category term="Algorithm" scheme="http://CSUwangj.github.io/tags/Algorithm/"/>
     
@@ -66,7 +98,7 @@
     <link href="http://CSUwangj.github.io/2018-12-19-Daily-Challenge/"/>
     <id>http://CSUwangj.github.io/2018-12-19-Daily-Challenge/</id>
     <published>2018-12-19T03:00:09.000Z</published>
-    <updated>2018-12-20T02:37:34.105Z</updated>
+    <updated>2018-12-20T11:58:32.386Z</updated>
     
     <summary type="html">
     
@@ -81,6 +113,8 @@
       <category term="Math" scheme="http://CSUwangj.github.io/tags/Math/"/>
     
       <category term="NumberTheory" scheme="http://CSUwangj.github.io/tags/NumberTheory/"/>
+    
+      <category term="Brilliant" scheme="http://CSUwangj.github.io/tags/Brilliant/"/>
     
       <category term="Algorithm" scheme="http://CSUwangj.github.io/tags/Algorithm/"/>
     
@@ -379,11 +413,11 @@
       <category term="WriteUp" scheme="http://CSUwangj.github.io/categories/WriteUp/"/>
     
     
-      <category term="CTF" scheme="http://CSUwangj.github.io/tags/CTF/"/>
-    
       <category term="Misc" scheme="http://CSUwangj.github.io/tags/Misc/"/>
     
       <category term="Crypto" scheme="http://CSUwangj.github.io/tags/Crypto/"/>
+    
+      <category term="CTF" scheme="http://CSUwangj.github.io/tags/CTF/"/>
     
   </entry>
   
@@ -403,11 +437,11 @@
       <category term="WriteUp" scheme="http://CSUwangj.github.io/categories/WriteUp/"/>
     
     
-      <category term="CTF" scheme="http://CSUwangj.github.io/tags/CTF/"/>
-    
       <category term="Misc" scheme="http://CSUwangj.github.io/tags/Misc/"/>
     
       <category term="Crypto" scheme="http://CSUwangj.github.io/tags/Crypto/"/>
+    
+      <category term="CTF" scheme="http://CSUwangj.github.io/tags/CTF/"/>
     
       <category term="PWN" scheme="http://CSUwangj.github.io/tags/PWN/"/>
     
@@ -456,9 +490,9 @@
       <category term="WriteUp" scheme="http://CSUwangj.github.io/categories/WriteUp/"/>
     
     
-      <category term="CTF" scheme="http://CSUwangj.github.io/tags/CTF/"/>
-    
       <category term="Crypto" scheme="http://CSUwangj.github.io/tags/Crypto/"/>
+    
+      <category term="CTF" scheme="http://CSUwangj.github.io/tags/CTF/"/>
     
   </entry>
   
@@ -513,11 +547,11 @@
       <category term="WriteUp" scheme="http://CSUwangj.github.io/categories/WriteUp/"/>
     
     
-      <category term="CTF" scheme="http://CSUwangj.github.io/tags/CTF/"/>
-    
       <category term="Misc" scheme="http://CSUwangj.github.io/tags/Misc/"/>
     
       <category term="Crypto" scheme="http://CSUwangj.github.io/tags/Crypto/"/>
+    
+      <category term="CTF" scheme="http://CSUwangj.github.io/tags/CTF/"/>
     
       <category term="PWN" scheme="http://CSUwangj.github.io/tags/PWN/"/>
     
@@ -568,29 +602,6 @@
       <category term="cpp" scheme="http://CSUwangj.github.io/tags/cpp/"/>
     
       <category term="software_development" scheme="http://CSUwangj.github.io/tags/software-development/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>CTF轻工具个人集合</title>
-    <link href="http://CSUwangj.github.io/CTF%E8%BD%BB%E5%B7%A5%E5%85%B7%E4%B8%AA%E4%BA%BA%E9%9B%86%E5%90%88/"/>
-    <id>http://CSUwangj.github.io/CTF轻工具个人集合/</id>
-    <published>2018-02-08T05:12:03.000Z</published>
-    <updated>2018-07-30T02:00:33.643Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;持续更新ing&lt;/p&gt;
-&lt;p&gt;可能以后还会重新整理&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="Tools" scheme="http://CSUwangj.github.io/categories/Tools/"/>
-    
-    
-      <category term="Misc" scheme="http://CSUwangj.github.io/tags/Misc/"/>
-    
-      <category term="Crypto" scheme="http://CSUwangj.github.io/tags/Crypto/"/>
     
   </entry>
   
