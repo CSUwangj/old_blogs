@@ -42,11 +42,11 @@
   </entry>
   
   <entry>
-    <title>2018-12-20 每日挑战</title>
+    <title>2018-12-20 Daily Challenge</title>
     <link href="http://CSUwangj.github.io/2018-12-20-%E6%AF%8F%E6%97%A5%E6%8C%91%E6%88%98/"/>
     <id>http://CSUwangj.github.io/2018-12-20-每日挑战/</id>
     <published>2018-12-19T16:09:07.000Z</published>
-    <updated>2018-12-19T17:36:09.479Z</updated>
+    <updated>2018-12-20T01:52:53.373Z</updated>
     
     <summary type="html">
     
@@ -69,11 +69,11 @@
   </entry>
   
   <entry>
-    <title>2018-12-19 每日挑战</title>
+    <title>2018-12-19 Daily Challenge</title>
     <link href="http://CSUwangj.github.io/2018-12-19-%E6%AF%8F%E6%97%A5%E6%8C%91%E6%88%98/"/>
     <id>http://CSUwangj.github.io/2018-12-19-每日挑战/</id>
     <published>2018-12-19T03:00:09.000Z</published>
-    <updated>2018-12-19T16:15:40.106Z</updated>
+    <updated>2018-12-20T01:52:42.681Z</updated>
     
     <summary type="html">
     
@@ -386,11 +386,11 @@
       <category term="WriteUp" scheme="http://CSUwangj.github.io/categories/WriteUp/"/>
     
     
-      <category term="Crypto" scheme="http://CSUwangj.github.io/tags/Crypto/"/>
-    
       <category term="CTF" scheme="http://CSUwangj.github.io/tags/CTF/"/>
     
       <category term="Misc" scheme="http://CSUwangj.github.io/tags/Misc/"/>
+    
+      <category term="Crypto" scheme="http://CSUwangj.github.io/tags/Crypto/"/>
     
   </entry>
   
@@ -410,17 +410,17 @@
       <category term="WriteUp" scheme="http://CSUwangj.github.io/categories/WriteUp/"/>
     
     
-      <category term="Crypto" scheme="http://CSUwangj.github.io/tags/Crypto/"/>
-    
       <category term="CTF" scheme="http://CSUwangj.github.io/tags/CTF/"/>
-    
-      <category term="PWN" scheme="http://CSUwangj.github.io/tags/PWN/"/>
     
       <category term="Misc" scheme="http://CSUwangj.github.io/tags/Misc/"/>
     
-      <category term="Web" scheme="http://CSUwangj.github.io/tags/Web/"/>
+      <category term="Crypto" scheme="http://CSUwangj.github.io/tags/Crypto/"/>
+    
+      <category term="PWN" scheme="http://CSUwangj.github.io/tags/PWN/"/>
     
       <category term="Rev" scheme="http://CSUwangj.github.io/tags/Rev/"/>
+    
+      <category term="Web" scheme="http://CSUwangj.github.io/tags/Web/"/>
     
   </entry>
   
@@ -463,9 +463,9 @@
       <category term="WriteUp" scheme="http://CSUwangj.github.io/categories/WriteUp/"/>
     
     
-      <category term="Crypto" scheme="http://CSUwangj.github.io/tags/Crypto/"/>
-    
       <category term="CTF" scheme="http://CSUwangj.github.io/tags/CTF/"/>
+    
+      <category term="Crypto" scheme="http://CSUwangj.github.io/tags/Crypto/"/>
     
   </entry>
   
@@ -520,13 +520,13 @@
       <category term="WriteUp" scheme="http://CSUwangj.github.io/categories/WriteUp/"/>
     
     
-      <category term="Crypto" scheme="http://CSUwangj.github.io/tags/Crypto/"/>
-    
       <category term="CTF" scheme="http://CSUwangj.github.io/tags/CTF/"/>
     
-      <category term="PWN" scheme="http://CSUwangj.github.io/tags/PWN/"/>
-    
       <category term="Misc" scheme="http://CSUwangj.github.io/tags/Misc/"/>
+    
+      <category term="Crypto" scheme="http://CSUwangj.github.io/tags/Crypto/"/>
+    
+      <category term="PWN" scheme="http://CSUwangj.github.io/tags/PWN/"/>
     
       <category term="Web" scheme="http://CSUwangj.github.io/tags/Web/"/>
     
@@ -595,9 +595,9 @@
       <category term="Tools" scheme="http://CSUwangj.github.io/categories/Tools/"/>
     
     
-      <category term="Crypto" scheme="http://CSUwangj.github.io/tags/Crypto/"/>
-    
       <category term="Misc" scheme="http://CSUwangj.github.io/tags/Misc/"/>
+    
+      <category term="Crypto" scheme="http://CSUwangj.github.io/tags/Crypto/"/>
     
   </entry>
   
