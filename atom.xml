@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://CSUwangj.github.io/"/>
-  <updated>2018-12-19T02:39:08.711Z</updated>
+  <updated>2018-12-20T02:29:08.481Z</updated>
   <id>http://CSUwangj.github.io/</id>
   
   <author>
@@ -21,18 +21,11 @@
     <link href="http://CSUwangj.github.io/%E5%8D%9A%E6%96%87%E6%95%B4%E7%90%86/"/>
     <id>http://CSUwangj.github.io/博文整理/</id>
     <published>8102-12-19T02:36:02.000Z</published>
-    <updated>2018-12-19T02:39:08.711Z</updated>
+    <updated>2018-12-20T02:29:08.481Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;p&gt;打算专门搞个整理用的东西。。。目前没有更新计划，等再攒点东西&lt;/p&gt;
-
-        
-      
+      &lt;p&gt;打算专门搞个整理用的东西，顺便可以看看自己有多少挖完没填的坑。&lt;/p&gt;
     
     </summary>
     
@@ -43,10 +36,10 @@
   
   <entry>
     <title>2018-12-20 Daily Challenge</title>
-    <link href="http://CSUwangj.github.io/2018-12-20-%E6%AF%8F%E6%97%A5%E6%8C%91%E6%88%98/"/>
-    <id>http://CSUwangj.github.io/2018-12-20-每日挑战/</id>
+    <link href="http://CSUwangj.github.io/2018-12-20-Daily-Challenge/"/>
+    <id>http://CSUwangj.github.io/2018-12-20-Daily-Challenge/</id>
     <published>2018-12-19T16:09:07.000Z</published>
-    <updated>2018-12-20T01:52:53.373Z</updated>
+    <updated>2018-12-20T02:37:05.583Z</updated>
     
     <summary type="html">
     
@@ -55,7 +48,7 @@
     
     </summary>
     
-      <category term="Notes" scheme="http://CSUwangj.github.io/categories/Notes/"/>
+      <category term="DailyChallenge" scheme="http://CSUwangj.github.io/categories/DailyChallenge/"/>
     
     
       <category term="Math" scheme="http://CSUwangj.github.io/tags/Math/"/>
@@ -70,10 +63,10 @@
   
   <entry>
     <title>2018-12-19 Daily Challenge</title>
-    <link href="http://CSUwangj.github.io/2018-12-19-%E6%AF%8F%E6%97%A5%E6%8C%91%E6%88%98/"/>
-    <id>http://CSUwangj.github.io/2018-12-19-每日挑战/</id>
+    <link href="http://CSUwangj.github.io/2018-12-19-Daily-Challenge/"/>
+    <id>http://CSUwangj.github.io/2018-12-19-Daily-Challenge/</id>
     <published>2018-12-19T03:00:09.000Z</published>
-    <updated>2018-12-20T01:52:42.681Z</updated>
+    <updated>2018-12-20T02:37:34.105Z</updated>
     
     <summary type="html">
     
@@ -82,7 +75,7 @@
     
     </summary>
     
-      <category term="WriteUp" scheme="http://CSUwangj.github.io/categories/WriteUp/"/>
+      <category term="DailyChallenge" scheme="http://CSUwangj.github.io/categories/DailyChallenge/"/>
     
     
       <category term="Math" scheme="http://CSUwangj.github.io/tags/Math/"/>
@@ -418,9 +411,9 @@
     
       <category term="PWN" scheme="http://CSUwangj.github.io/tags/PWN/"/>
     
-      <category term="Rev" scheme="http://CSUwangj.github.io/tags/Rev/"/>
-    
       <category term="Web" scheme="http://CSUwangj.github.io/tags/Web/"/>
+    
+      <category term="Rev" scheme="http://CSUwangj.github.io/tags/Rev/"/>
     
   </entry>
   

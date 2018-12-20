@@ -3,17 +3,17 @@
   <entry>
     <title><![CDATA[博文整理]]></title>
     <url>%2F%E5%8D%9A%E6%96%87%E6%95%B4%E7%90%86%2F</url>
-    <content type="text"><![CDATA[打算专门搞个整理用的东西。。。目前没有更新计划，等再攒点东西]]></content>
+    <content type="text"><![CDATA[打算专门搞个整理用的东西，顺便可以看看自己有多少挖完没填的坑。 Daily Challenge 2018-12-19 Daily Challenge 2018-12-20 Daily Challenge Series Cryptography_Engineering_Exercise（暂时不打算填） OverTheWire-Bandit全攻略+解析（暂时不打算填） Exploit-Exercise_Fusion全攻略+解析（有弃坑的想法） Exploit-Exercise_Protostar全攻略+解析（EXP放完了，解析暂时不打算填） 逆向工程核心原理学习笔记（一）（还没开始就已经想弃坑了） PWN学习记录（短时间不可能填了） id0-rsa WP合集（暂时不打算填） WriteUp AFCTF2018-Crypto_OfficialWriteUp（完结） JarvisOJ-WP合集（弃坑） HGAME2018-week2部分WP HGAME2018-week1WP HIT2018新生赛部分WP Tools 在pip连不上网的时候安装pwntools CTF用环境搭建 安装式工具集合 轻工具个人集合 CTF轻工具个人集合 Other 关于散列函数的一点思考]]></content>
       <categories>
         <category>Notes</category>
       </categories>
   </entry>
   <entry>
     <title><![CDATA[2018-12-20 Daily Challenge]]></title>
-    <url>%2F2018-12-20-%E6%AF%8F%E6%97%A5%E6%8C%91%E6%88%98%2F</url>
+    <url>%2F2018-12-20-Daily-Challenge%2F</url>
     <content type="text"><![CDATA[What I’ve done today is Secret Messages of Number Theory and Course Schedule II in JavaScript. If no source is provided, then I’m doing these challenge at https://brilliant.org and https://leetcode.com/. Math Ha, Caesar cipher! Dr. Smith. Emmmm…… …… “like” is “dip”, “cats” is “sip”, “parrots” is “tif”, apples is “nit”, “don’t” is “rit”. Fence cipher. LeetCodeProblem123456789101112131415161718192021222324252627210. Course Schedule IIThere are a total of n courses you have to take, labeled from 0 to n-1.Some courses may have prerequisites, for example to take course 0 you have to first take course 1, which is expressed as a pair: [0,1]Given the total number of courses and a list of prerequisite pairs, return the ordering of courses you should take to finish all courses.There may be multiple correct orders, you just need to return one of them. If it is impossible to finish all courses, return an empty array.Example 1:Input: 2, [[1,0]] Output: [0,1]Explanation: There are a total of 2 courses to take. To take course 1 you should have finished course 0. So the correct course order is [0,1] .Example 2:Input: 4, [[1,0],[2,0],[3,1],[3,2]]Output: [0,1,2,3] or [0,2,1,3]Explanation: There are a total of 4 courses to take. To take course 3 you should have finished both courses 1 and 2. Both courses 1 and 2 should be taken after you finished course 0. So one correct course order is [0,1,2,3]. Another correct ordering is [0,2,1,3] .Note:The input prerequisites is a graph represented by a list of edges, not adjacency matrices. Read more about how a graph is represented.You may assume that there are no duplicate edges in the input prerequisites. IdeaJust do a topological sort. Implication123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657585960/** * @param &#123;number&#125; numCourses * @param &#123;number[][]&#125; prerequisites * @return &#123;number[]&#125; */var findOrder = function(numCourses, prerequisites) &#123; class Queue &#123; constructor(dataStore = []) &#123; this.dataStore = dataStore; &#125; push(element) &#123; this.dataStore.push(element); &#125; shift() &#123; this.dataStore.shift(); &#125; peekFront() &#123; return this.dataStore[0]; &#125; isEmpty() &#123; return !this.dataStore.length; &#125; &#125; let iDegree = []; let iG = []; let queue = new Queue(); let ans = []; for(let i = 0; i &lt; numCourses ; ++i)&#123; iDegree[i] = 0; iG[i] = []; &#125; for(const i of prerequisites)&#123; iDegree[i[0]] += 1; iG[i[1]].push(i[0]); &#125; // console.log(iG); // console.log(iDegree); for(const [index, value] of iDegree.entries())&#123; if(value == 0) &#123; queue.push(index); &#125; &#125; while(!queue.isEmpty())&#123; let i = queue.peekFront(); queue.shift(); ans.push(i); for(const j of iG[i])&#123; iDegree[j] -= 1; if(!iDegree[j])&#123; queue.push(j); &#125; &#125; &#125; return ans.length == numCourses? ans:[];&#125;;// console.log(findOrder(2, [[0,1]]));// console.log(findOrder(2, [[1,0]]));// console.log(findOrder(4, [[1,0],[2,0],[3,1],[3,2]]));// console.log(findOrder(3, [[1,0],[1,2],[0,1]]));]]></content>
       <categories>
-        <category>Notes</category>
+        <category>DailyChallenge</category>
       </categories>
       <tags>
         <tag>Math</tag>
@@ -24,10 +24,10 @@
   </entry>
   <entry>
     <title><![CDATA[2018-12-19 Daily Challenge]]></title>
-    <url>%2F2018-12-19-%E6%AF%8F%E6%97%A5%E6%8C%91%E6%88%98%2F</url>
+    <url>%2F2018-12-19-Daily-Challenge%2F</url>
     <content type="text"><![CDATA[What I’ve done today is Last Digits of Number Theory and Longest Substring Without Repeating Characters in JavaScript. If no source is provided, then I’m doing these challenge at https://brilliant.org and https://leetcode.com/. Math On the first view of problem, there comes the answer is three. Five times an even number is zero, whatever number time zero is zero. Five times an odd number is five. Obviously there is loop (2-&gt;4-&gt;8-&gt;6) in the multiply chain. So obvious~ LeetCodeProblem12345678910111213141516171819203. Longest Substring Without Repeating CharactersGiven a string, find the length of the longest substring without repeating characters.Example 1:Input: &quot;abcabcbb&quot;Output: 3 Explanation: The answer is &quot;abc&quot;, with the length of 3. Example 2:Input: &quot;bbbbb&quot;Output: 1Explanation: The answer is &quot;b&quot;, with the length of 1.Example 3:Input: &quot;pwwkew&quot;Output: 3Explanation: The answer is &quot;wke&quot;, with the length of 3. Note that the answer must be a substring, &quot;pwke&quot; is a subsequence and not a substring. My Idea Implication12345678910111213141516171819/** * @param &#123;string&#125; s * @return &#123;number&#125; */var lengthOfLongestSubstring = function(s) &#123; let map = new Map(); let lp = 0; let ans = 0; let len = s.length; for(let i = 0; i &lt; len ; ++i)&#123; if(map.has(s[i]) &amp;&amp; lp &lt; map.get(s[i]) + 1) lp = map.get(s[i]) + 1; ans = ans &gt; ( i - lp + 1 ) ? ans : ( i - lp + 1 ); //console.log(ans,lp) map.set(s[i], i); &#125; return ans;&#125;;//console.log(lengthOfLongestSubstring("abba"));]]></content>
       <categories>
-        <category>WriteUp</category>
+        <category>DailyChallenge</category>
       </categories>
       <tags>
         <tag>Math</tag>
@@ -150,8 +150,8 @@
         <tag>Misc</tag>
         <tag>Crypto</tag>
         <tag>PWN</tag>
-        <tag>Rev</tag>
         <tag>Web</tag>
+        <tag>Rev</tag>
       </tags>
   </entry>
   <entry>
@@ -257,8 +257,8 @@
         <tag>Misc</tag>
         <tag>Crypto</tag>
         <tag>PWN</tag>
-        <tag>Rev</tag>
         <tag>Web</tag>
+        <tag>Rev</tag>
       </tags>
   </entry>
   <entry>
