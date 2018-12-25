@@ -117,7 +117,7 @@
 
 
   <meta name="description" content="第一周难度还是挺温柔，居然让我AK了，好开心呀 对了，这篇是先在本地生成的，周日才传上博客的。">
-<meta name="keywords" content="CTF,Misc,Crypto,PWN,Web,Rev">
+<meta name="keywords" content="CTF,Misc,Crypto,Web,PWN,Rev">
 <meta property="og:type" content="article">
 <meta property="og:title" content="HGAME2018-week1WP">
 <meta property="og:url" content="http://CSUwangj.github.io/HGAME2018-week1WP/index.html">
@@ -554,7 +554,7 @@
 <figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//baby2.cpp</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="keyword">int</span> arr[]=&#123;<span class="number">141</span>,<span class="number">153</span>,<span class="number">71</span>,<span class="number">245</span>,<span class="number">246</span>,<span class="number">85</span>,<span class="number">245</span>,<span class="number">217</span>,<span class="number">96</span>,<span class="number">209</span>,<span class="number">219</span>,<span class="number">21</span>,<span class="number">228</span>,<span class="number">196</span>,<span class="number">102</span>,<span class="number">208</span>,<span class="number">164</span>,<span class="number">141</span>,<span class="number">86</span>,<span class="number">95</span>&#125;;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line"><span class="comment">//	for(int i=0;i&lt;20;++i)&#123;</span></span><br><span class="line"><span class="comment">//		newa[indx[i]]=arr[i];</span></span><br><span class="line"><span class="comment">//	&#125;</span></span><br><span class="line"><span class="comment">//	for(int i=0;i&lt;20;++i)&#123;</span></span><br><span class="line"><span class="comment">//		cout&lt;&lt;newa[i]&lt;&lt;',';</span></span><br><span class="line"><span class="comment">//	&#125;</span></span><br><span class="line">	swap(arr[<span class="number">10</span>],arr[<span class="number">15</span>]);</span><br><span class="line">	swap(arr[<span class="number">10</span>],arr[<span class="number">6</span>]);</span><br><span class="line">	swap(arr[<span class="number">6</span>],arr[<span class="number">3</span>]);</span><br><span class="line">	swap(arr[<span class="number">3</span>],arr[<span class="number">1</span>]);</span><br><span class="line">	swap(arr[<span class="number">0</span>],arr[<span class="number">1</span>]);</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;<span class="number">20</span>;++i)&#123;</span><br><span class="line">		<span class="built_in">printf</span>(<span class="string">"%d,"</span>,arr[i]);</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//baby3.cpp</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="keyword">uint8_t</span> arr[]=&#123;<span class="number">208</span>,<span class="number">141</span>,<span class="number">71</span>,<span class="number">153</span>,<span class="number">246</span>,<span class="number">85</span>,<span class="number">245</span>,<span class="number">217</span>,<span class="number">96</span>,<span class="number">209</span>,<span class="number">245</span>,<span class="number">21</span>,<span class="number">228</span>,<span class="number">196</span>,<span class="number">102</span>,<span class="number">219</span>,<span class="number">164</span>,<span class="number">141</span>,<span class="number">86</span>,<span class="number">95</span>&#125;;</span><br><span class="line"><span class="keyword">unsigned</span> <span class="keyword">char</span> flg[<span class="number">22</span>]=<span class="string">""</span>;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;<span class="number">20</span>;++i)&#123;</span><br><span class="line">		<span class="built_in">bitset</span>&lt;8&gt; a(arr[i]);</span><br><span class="line">		<span class="built_in">cout</span>&lt;&lt;a&lt;&lt;<span class="built_in">endl</span>;</span><br><span class="line">		<span class="keyword">if</span>(i%<span class="number">4</span>==<span class="number">1</span>)&#123;</span><br><span class="line">			a=(a&lt;&lt;<span class="number">6</span>)|(a&gt;&gt;<span class="number">2</span>);</span><br><span class="line">		&#125;<span class="keyword">else</span> <span class="keyword">if</span>(i%<span class="number">4</span>==<span class="number">2</span>)&#123;</span><br><span class="line">			a=(a&gt;&gt;<span class="number">4</span>)|(a&lt;&lt;<span class="number">4</span>);</span><br><span class="line">		&#125;<span class="keyword">else</span> <span class="keyword">if</span>(i%<span class="number">4</span>==<span class="number">3</span>)&#123;</span><br><span class="line">			a=(a&lt;&lt;<span class="number">2</span>)|(a&gt;&gt;<span class="number">6</span>);</span><br><span class="line">		&#125;<span class="keyword">else</span>&#123;</span><br><span class="line">			a=(a&gt;&gt;<span class="number">1</span>)|(a&lt;&lt;<span class="number">7</span>);</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="built_in">cout</span>&lt;&lt;a&lt;&lt;<span class="string">' '</span>&lt;&lt;a.to_ulong()&lt;&lt;<span class="built_in">endl</span>;</span><br><span class="line">		flg[i]=a.to_ulong();</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;<span class="number">20</span>;++i)&#123;</span><br><span class="line">		<span class="built_in">cout</span>&lt;&lt;<span class="keyword">char</span>(flg[i]);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>这里需要说一下……<br>C/C++的左右移有毒！换bitset保平安！</p>
-<h2 id="nop-pop"><a href="#nop-pop" class="headerlink" title="nop_pop"></a>nop_pop</h2><p>一月霸权当然是我pop team epic啦！食我粪作！<br>EXEinfo显示是PE文件，那就运行一下看<br><br>打开OD搜一下<br><img src="/HGAME2018-week1WP/snipaste20180204_233230.png" title="nop_pop2"><br>先是把跳转nop掉，然后出来那个Con…的，联系出题人，出题人表示是要nop掉pop子<br>于是再看，然后发现上面有个nop_me（提示真明显wwwww）<br>nop掉，程序发给出题人，得到flag</p>
+<h2 id="nop-pop"><a href="#nop-pop" class="headerlink" title="nop_pop"></a>nop_pop</h2><p>一月霸权当然是我pop team epic啦！食我粪作！<br>EXEinfo显示是PE文件，那就运行一下看<br><br>打开OD搜一下<br><img src="/HGAME2018-week1WP/snipaste20180204_233230.png" title="nop_pop2"><br>先是把跳转nop掉，然后出来那个Con...的，联系出题人，出题人表示是要nop掉pop子<br>于是再看，然后发现上面有个nop_me（提示真明显wwwww）<br>nop掉，程序发给出题人，得到flag</p>
 <h2 id="sc2-player"><a href="#sc2-player" class="headerlink" title="sc2_player"></a>sc2_player</h2><p>看了一下程序F5出来的东西大概做了这几步操作</p>
 <ul>
 <li>arr=(index%7+35)^special</li>
@@ -698,9 +698,9 @@
           
             <a href="/tags/Crypto/" rel="tag"># Crypto</a>
           
-            <a href="/tags/PWN/" rel="tag"># PWN</a>
-          
             <a href="/tags/Web/" rel="tag"># Web</a>
+          
+            <a href="/tags/PWN/" rel="tag"># PWN</a>
           
             <a href="/tags/Rev/" rel="tag"># Rev</a>
           
@@ -830,7 +830,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">26</span>
+                    <span class="site-state-item-count">27</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -1108,7 +1108,7 @@
     
       <span class="post-meta-item-text">站点总字数：</span>
     
-    <span title="站点总字数">143k</span>
+    <span title="站点总字数">147k</span>
   
 
   
@@ -1119,7 +1119,7 @@
     
       <span class="post-meta-item-text">站点阅读时长 &asymp;</span>
     
-    <span title="站点阅读时长">3:58</span>
+    <span title="站点阅读时长">4:05</span>
   
 </div>
 

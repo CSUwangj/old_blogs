@@ -116,18 +116,18 @@
 
 
 
-  <meta name="description" content="What I’ve done today is Largest prime factor in Rust and Coin Change in JavaScript.">
+  <meta name="description" content="What I&amp;#39;ve done today is Largest prime factor in Rust and Coin Change in JavaScript.">
 <meta name="keywords" content="Math,Algorithm,LeetCode,ProjectEuler,Factorize">
 <meta property="og:type" content="article">
 <meta property="og:title" content="2018-12-23 Daily Challenge">
 <meta property="og:url" content="http://CSUwangj.github.io/2018-12-23-Daily-Challenge/index.html">
 <meta property="og:site_name" content="LuckyDog">
-<meta property="og:description" content="What I’ve done today is Largest prime factor in Rust and Coin Change in JavaScript.">
+<meta property="og:description" content="What I&amp;#39;ve done today is Largest prime factor in Rust and Coin Change in JavaScript.">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:updated_time" content="2018-12-23T06:08:14.790Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="2018-12-23 Daily Challenge">
-<meta name="twitter:description" content="What I’ve done today is Largest prime factor in Rust and Coin Change in JavaScript.">
+<meta name="twitter:description" content="What I&amp;#39;ve done today is Largest prime factor in Rust and Coin Change in JavaScript.">
 
 
 
@@ -488,11 +488,11 @@
       
 
       
-        <p>What I’ve done today is <em>Largest prime factor</em> in <em>Rust</em> and <em>Coin Change</em> in <em>JavaScript</em>.</p>
+        <p>What I&#39;ve done today is <em>Largest prime factor</em> in <em>Rust</em> and <em>Coin Change</em> in <em>JavaScript</em>.</p>
 <a id="more"></a>
 <h1 id="Math"><a href="#Math" class="headerlink" title="Math"></a>Math</h1><h2 id="Problem"><a href="#Problem" class="headerlink" title="Problem"></a>Problem</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">Largest prime factor</span><br><span class="line"></span><br><span class="line">Problem 3 </span><br><span class="line"></span><br><span class="line">The prime factors of 13195 are 5, 7, 13 and 29.</span><br><span class="line"></span><br><span class="line">What is the largest prime factor of the number 600851475143 ?</span><br></pre></td></tr></table></figure>
 <h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2><p>At least we know we can factorize one number $n$ in roughly $O(\sqrt{n})$time.</p>
-<p>There is also more complicated, more fast algorithm like Pollard’s rho algorithm, but writing a implication on my own cost too much and need more knowledge with Rust, so just leave it.</p>
+<p>There is also more complicated, more fast algorithm like Pollard&#39;s rho algorithm, but writing a implication on my own cost too much and need more knowledge with Rust, so just leave it.</p>
 <p>There is already some tools like <a href="http://factordb.com/" target="_blank" rel="noopener">factordb</a>, <a href="https://github.com/DarkenCode/yafu" target="_blank" rel="noopener">yafu</a>.</p>
 <p>By the way, I found optimization of Rust is incredible!</p>
 <h2 id="Implication"><a href="#Implication" class="headerlink" title="Implication"></a>Implication</h2><figure class="highlight rust"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">extern</span> <span class="keyword">crate</span> primal;</span><br><span class="line"></span><br><span class="line"><span class="keyword">use</span> std::vec::<span class="built_in">Vec</span>;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">fn</span> <span class="title">main</span></span>() &#123;</span><br><span class="line">    <span class="keyword">let</span> <span class="keyword">mut</span> cur_num:<span class="built_in">u64</span> = <span class="number">2</span>;</span><br><span class="line">    <span class="keyword">let</span> <span class="keyword">mut</span> ans:<span class="built_in">u64</span> = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">let</span> <span class="keyword">mut</span> target:<span class="built_in">u64</span> = <span class="number">600851475143</span>;</span><br><span class="line">    <span class="keyword">let</span> mx:<span class="built_in">u64</span> = <span class="number">600851475143</span>;</span><br><span class="line">    <span class="keyword">while</span> cur_num &lt;= target &amp;&amp; cur_num*cur_num &lt;= mx &#123;</span><br><span class="line">        <span class="keyword">while</span> target % cur_num == <span class="number">0</span> &#123;</span><br><span class="line">            target /= cur_num;</span><br><span class="line">            ans = cur_num;</span><br><span class="line">        &#125;</span><br><span class="line">        cur_num += <span class="number">1</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">println!</span>(<span class="string">"answer is &#123;&#125;"</span>, ans);</span><br><span class="line"></span><br><span class="line">    <span class="keyword">let</span> mx:<span class="built_in">usize</span> = <span class="number">600851475143</span>;</span><br><span class="line">    <span class="keyword">let</span> sieve = primal::Sieve::new(<span class="number">1</span>&lt;&lt;<span class="number">311475143</span>);</span><br><span class="line">    <span class="keyword">let</span> ans: <span class="built_in">Vec</span>&lt;(<span class="built_in">usize</span>, <span class="built_in">usize</span>)&gt; = <span class="keyword">match</span> sieve.factor(mx) &#123;</span><br><span class="line">        <span class="literal">Ok</span>(v) =&gt; v,</span><br><span class="line">        <span class="literal">Err</span>(_) =&gt; <span class="built_in">Vec</span>::new(),</span><br><span class="line">    &#125;;</span><br><span class="line">    <span class="keyword">for</span> factor <span class="keyword">in</span> ans &#123;</span><br><span class="line">        <span class="built_in">println!</span>(<span class="string">"(&#123;&#125;, &#123;&#125;)"</span>, factor.<span class="number">0</span>, factor.<span class="number">1</span>)</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
@@ -500,7 +500,7 @@
 <h2 id="Solution-1"><a href="#Solution-1" class="headerlink" title="Solution"></a>Solution</h2><p>I have a vague feeling this problem could be a $NP$ problem.</p>
 <p>I guess I can do it with Dynamic Programming approach, and its time complexity is $O(coins.length*amount)$.</p>
 <hr>
-<p>With the help of qt, I figure out that this question is the equivalence of Knapsack Problem, so it’s a $NP-Hard$ problem. Dynamic Programming is the only way I know to deal with it.</p>
+<p>With the help of qt, I figure out that this question is the equivalence of Knapsack Problem, so it&#39;s a $NP-Hard$ problem. Dynamic Programming is the only way I know to deal with it.</p>
 <h2 id="Implication-1"><a href="#Implication-1" class="headerlink" title="Implication"></a>Implication</h2><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * @param &#123;number[]&#125; coins</span></span><br><span class="line"><span class="comment"> * @param &#123;number&#125; amount</span></span><br><span class="line"><span class="comment"> * @return &#123;number&#125;</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">var</span> coinChange = <span class="function">(<span class="params">coins = [], amount</span>) =&gt;</span> &#123;</span><br><span class="line">  <span class="keyword">let</span> dp = [<span class="number">0</span>];</span><br><span class="line">  <span class="keyword">for</span>(<span class="keyword">let</span> i = <span class="number">1</span>; i &lt;= amount; ++i)&#123;</span><br><span class="line">    dp.push(<span class="number">0x7F7F7F7F</span>);</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">for</span>(<span class="keyword">const</span> v <span class="keyword">of</span> coins)&#123;</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">let</span> i = v; i &lt;= amount; ++i)&#123;</span><br><span class="line">      <span class="keyword">if</span>(dp[i-v]!=<span class="number">0x7F7F7F7F</span> &amp;&amp; dp[i-v] + <span class="number">1</span> &lt; dp[i]) dp[i] = dp[i-v] + <span class="number">1</span>;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">return</span> dp[amount] == <span class="number">0x7F7F7F7F</span>? <span class="number">-1</span>: dp[amount];</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="comment">// console.log(coinChange([1, 2, 5],11));</span></span><br><span class="line"><span class="comment">// console.log(coinChange([2],3))</span></span><br></pre></td></tr></table></figure>
 
       
@@ -541,19 +541,19 @@
   
     <li class="popular-posts-item">
       
-        <div class="popular-posts-date">2018-12-19</div>
+        <div class="popular-posts-date">2018-12-24</div>
       
       
-      <div class="popular-posts-title"><a href="/2018-12-19-Daily-Challenge/" rel="bookmark">2018-12-19 Daily Challenge</a></div>
+      <div class="popular-posts-title"><a href="/2018-12-25-Daily-Challenge/" rel="bookmark">2018-12-25 Daily Challenge</a></div>
       
     </li>
   
     <li class="popular-posts-item">
       
-        <div class="popular-posts-date">2018-12-20</div>
+        <div class="popular-posts-date">2018-12-19</div>
       
       
-      <div class="popular-posts-title"><a href="/2018-12-20-Daily-Challenge/" rel="bookmark">2018-12-20 Daily Challenge</a></div>
+      <div class="popular-posts-title"><a href="/2018-12-19-Daily-Challenge/" rel="bookmark">2018-12-19 Daily Challenge</a></div>
       
     </li>
   
@@ -755,7 +755,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">26</span>
+                    <span class="site-state-item-count">27</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -1033,7 +1033,7 @@
     
       <span class="post-meta-item-text">站点总字数：</span>
     
-    <span title="站点总字数">143k</span>
+    <span title="站点总字数">147k</span>
   
 
   
@@ -1044,7 +1044,7 @@
     
       <span class="post-meta-item-text">站点阅读时长 &asymp;</span>
     
-    <span title="站点阅读时长">3:58</span>
+    <span title="站点阅读时长">4:05</span>
   
 </div>
 

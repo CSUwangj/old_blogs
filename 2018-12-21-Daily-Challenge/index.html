@@ -509,7 +509,7 @@
 <h1 id="Math"><a href="#Math" class="headerlink" title="Math"></a>Math</h1><h2 id="Problem"><a href="#Problem" class="headerlink" title="Problem"></a>Problem</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">Multiples of 3 and 5</span><br><span class="line"></span><br><span class="line">Problem 1 </span><br><span class="line"></span><br><span class="line">If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6 and 9. The sum of these multiples is 23.</span><br><span class="line"></span><br><span class="line">Find the sum of all the multiples of 3 or 5 below 1000.</span><br></pre></td></tr></table></figure>
 <h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2><p>One way to do it is brute force method, this range is small enough.</p>
 <p>Another way to do it is to come up with a formula which can compute the multiples of a number in constant time, then we should use <a href="https://en.wikipedia.org/wiki/Inclusion%E2%80%93exclusion_principle" target="_blank" rel="noopener">Inclusion–exclusion principle</a> to get the final answer.</p>
-<p>I’ll show you both ways in Rust.</p>
+<p>I&#39;ll show you both ways in Rust.</p>
 <h2 id="Implication"><a href="#Implication" class="headerlink" title="Implication"></a>Implication</h2><figure class="highlight rust"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">use</span> std::io;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">fn</span> <span class="title">main</span></span>() &#123;</span><br><span class="line">    <span class="keyword">let</span> <span class="keyword">mut</span> range = <span class="built_in">String</span>::new();</span><br><span class="line">    io::stdin().read_line(&amp;<span class="keyword">mut</span> range)</span><br><span class="line">        .expect(<span class="string">"Failed to read line"</span>);</span><br><span class="line"></span><br><span class="line">    <span class="keyword">let</span> range: <span class="built_in">i32</span> = <span class="keyword">match</span> range.trim().parse()&#123;</span><br><span class="line">        <span class="literal">Ok</span>(num) =&gt; num,</span><br><span class="line">        <span class="literal">Err</span>(_) =&gt; <span class="number">0</span>,</span><br><span class="line">    &#125;;</span><br><span class="line"></span><br><span class="line">    <span class="built_in">println!</span>(<span class="string">"&#123;&#125;"</span>, multiples_of_3_and_5(range - <span class="number">1</span>));</span><br><span class="line">    <span class="built_in">println!</span>(<span class="string">"&#123;&#125;"</span>, multiples_of_3_and_5_brute(range - <span class="number">1</span>));</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">fn</span> <span class="title">multiples_of_a_number</span></span>(n: <span class="built_in">i32</span>, d: <span class="built_in">i32</span>) -&gt; <span class="built_in">i32</span> &#123;</span><br><span class="line">    (n / d * d + d) * (n / d) / <span class="number">2</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">fn</span> <span class="title">multiples_of_3_and_5</span></span>(n: <span class="built_in">i32</span>) -&gt; <span class="built_in">i32</span> &#123;</span><br><span class="line">    multiples_of_a_number(n, <span class="number">3</span>) + multiples_of_a_number(n, <span class="number">5</span>) - multiples_of_a_number(n, <span class="number">15</span>)</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">fn</span> <span class="title">multiples_of_3_and_5_brute</span></span>(n: <span class="built_in">i32</span>) -&gt; <span class="built_in">i32</span> &#123;</span><br><span class="line">    <span class="keyword">let</span> <span class="keyword">mut</span> ans = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">for</span> x <span class="keyword">in</span> <span class="number">1</span>..n+<span class="number">1</span> &#123;</span><br><span class="line">        <span class="keyword">if</span> x%<span class="number">3</span> == <span class="number">0</span> || x%<span class="number">5</span>==<span class="number">0</span> &#123;</span><br><span class="line">            ans += x;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    ans</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <h1 id="Algorithm"><a href="#Algorithm" class="headerlink" title="Algorithm"></a>Algorithm</h1><h2 id="Problem-1"><a href="#Problem-1" class="headerlink" title="Problem"></a>Problem</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">769. Max Chunks To Make Sorted</span><br><span class="line"></span><br><span class="line">Given an array arr that is a permutation of [0, 1, ..., arr.length - 1], we split the array into some number of &quot;chunks&quot; (partitions), and individually sort each chunk.  After concatenating them, the result equals the sorted array.</span><br><span class="line"></span><br><span class="line">What is the most number of chunks we could have made?</span><br><span class="line"></span><br><span class="line">Example 1:</span><br><span class="line"></span><br><span class="line">Input: arr = [4,3,2,1,0]</span><br><span class="line">Output: 1</span><br><span class="line">Explanation:</span><br><span class="line">Splitting into two or more chunks will not return the required result.</span><br><span class="line">For example, splitting into [4, 3], [2, 1, 0] will result in [3, 4, 0, 1, 2], which isn&apos;t sorted.</span><br><span class="line">Example 2:</span><br><span class="line"></span><br><span class="line">Input: arr = [1,0,2,3,4]</span><br><span class="line">Output: 4</span><br><span class="line">Explanation:</span><br><span class="line">We can split into two chunks, such as [1, 0], [2, 3, 4].</span><br><span class="line">However, splitting into [1, 0], [2], [3], [4] is the highest number of chunks possible.</span><br><span class="line">Note:</span><br><span class="line"></span><br><span class="line">arr will have length in range [1, 10].</span><br><span class="line">arr[i] will be a permutation of [0, 1, ..., arr.length - 1].</span><br></pre></td></tr></table></figure>
 <h2 id="Solution-1"><a href="#Solution-1" class="headerlink" title="Solution"></a>Solution</h2><img src="/2018-12-21-Daily-Challenge/SharedImage.png" title="so">
@@ -517,8 +517,8 @@
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * @param &#123;number[]&#125; arr</span></span><br><span class="line"><span class="comment"> * @return &#123;number&#125;</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">var</span> maxChunksToSorted = <span class="function">(<span class="params">arr</span>) =&gt;</span> &#123;</span><br><span class="line">  <span class="keyword">let</span> count = <span class="number">0</span>;</span><br><span class="line">  <span class="keyword">let</span> mx;</span><br><span class="line">  <span class="keyword">let</span> el = <span class="literal">false</span>;</span><br><span class="line">  <span class="keyword">for</span>(<span class="keyword">const</span> [index, value] <span class="keyword">of</span> arr.entries())&#123;</span><br><span class="line">    <span class="keyword">if</span>(!el &amp;&amp; index == value) count += <span class="number">1</span>;</span><br><span class="line">    <span class="keyword">else</span> <span class="keyword">if</span> (!el) &#123;</span><br><span class="line">      el = <span class="literal">true</span>;</span><br><span class="line">      mx = value;</span><br><span class="line">    &#125;<span class="keyword">else</span> <span class="keyword">if</span> (value &gt; mx)&#123;</span><br><span class="line">      mx = value;</span><br><span class="line">    &#125;<span class="keyword">else</span> <span class="keyword">if</span>(mx == index)&#123;</span><br><span class="line">      count +=<span class="number">1</span>;</span><br><span class="line">      el = <span class="literal">false</span>;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">return</span> count;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
 <p>And got 1A.</p>
 <img src="/2018-12-21-Daily-Challenge/1545314277148.png" title="sub">
-<p>I’m very happy but when I check the solution page I find a more gentle implication.</p>
-<p>When there is a maintained max indicate the situation, there is no way find a index equal max, but the range [i: max] doesn’t meet the criteria.</p>
+<p>I&#39;m very happy but when I check the solution page I find a more gentle implication.</p>
+<p>When there is a maintained max indicate the situation, there is no way find a index equal max, but the range [i: max] doesn&#39;t meet the criteria.</p>
 <p>So I improved my implication and beat 100% online submissions, what a cheerful thing!!!</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * @param &#123;number[]&#125; arr</span></span><br><span class="line"><span class="comment"> * @return &#123;number&#125;</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">var</span> maxChunksToSorted = <span class="function">(<span class="params">arr</span>) =&gt;</span> &#123;</span><br><span class="line">  <span class="keyword">let</span> count = <span class="number">0</span>;</span><br><span class="line">  <span class="keyword">let</span> mx = <span class="number">-1</span>;</span><br><span class="line">  <span class="keyword">for</span>(<span class="keyword">const</span> [index, value] <span class="keyword">of</span> arr.entries())&#123;</span><br><span class="line">    mx = (mx &gt; value)? mx : value;</span><br><span class="line">    <span class="keyword">if</span>(mx == index) ++count;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">return</span> count;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
 <img src="/2018-12-21-Daily-Challenge/1545314327135.png" title="sub2">
@@ -530,15 +530,6 @@
 
   <div class="popular-posts-header">相关文章</div>
   <ul class="popular-posts">
-  
-    <li class="popular-posts-item">
-      
-        <div class="popular-posts-date">2018-12-23</div>
-      
-      
-      <div class="popular-posts-title"><a href="/2018-12-23-Daily-Challenge/" rel="bookmark">2018-12-23 Daily Challenge</a></div>
-      
-    </li>
   
     <li class="popular-posts-item">
       
@@ -560,19 +551,28 @@
   
     <li class="popular-posts-item">
       
-        <div class="popular-posts-date">2018-12-19</div>
+        <div class="popular-posts-date">2018-12-24</div>
       
       
-      <div class="popular-posts-title"><a href="/2018-12-19-Daily-Challenge/" rel="bookmark">2018-12-19 Daily Challenge</a></div>
+      <div class="popular-posts-title"><a href="/2018-12-25-Daily-Challenge/" rel="bookmark">2018-12-25 Daily Challenge</a></div>
       
     </li>
   
     <li class="popular-posts-item">
       
-        <div class="popular-posts-date">2018-12-20</div>
+        <div class="popular-posts-date">2018-12-23</div>
       
       
-      <div class="popular-posts-title"><a href="/2018-12-20-Daily-Challenge/" rel="bookmark">2018-12-20 Daily Challenge</a></div>
+      <div class="popular-posts-title"><a href="/2018-12-23-Daily-Challenge/" rel="bookmark">2018-12-23 Daily Challenge</a></div>
+      
+    </li>
+  
+    <li class="popular-posts-item">
+      
+        <div class="popular-posts-date">2018-12-19</div>
+      
+      
+      <div class="popular-posts-title"><a href="/2018-12-19-Daily-Challenge/" rel="bookmark">2018-12-19 Daily Challenge</a></div>
       
     </li>
   
@@ -776,7 +776,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">26</span>
+                    <span class="site-state-item-count">27</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -1054,7 +1054,7 @@
     
       <span class="post-meta-item-text">站点总字数：</span>
     
-    <span title="站点总字数">143k</span>
+    <span title="站点总字数">147k</span>
   
 
   
@@ -1065,7 +1065,7 @@
     
       <span class="post-meta-item-text">站点阅读时长 &asymp;</span>
     
-    <span title="站点阅读时长">3:58</span>
+    <span title="站点阅读时长">4:05</span>
   
 </div>
 

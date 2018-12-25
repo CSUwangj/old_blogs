@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://CSUwangj.github.io/"/>
-  <updated>2018-12-24T02:49:56.154Z</updated>
+  <updated>2018-12-25T03:26:43.304Z</updated>
   <id>http://CSUwangj.github.io/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="http://CSUwangj.github.io/%E5%8D%9A%E6%96%87%E6%95%B4%E7%90%86/"/>
     <id>http://CSUwangj.github.io/博文整理/</id>
     <published>8102-12-19T02:36:02.000Z</published>
-    <updated>2018-12-24T02:49:56.154Z</updated>
+    <updated>2018-12-25T03:26:43.304Z</updated>
     
     <summary type="html">
     
@@ -35,6 +35,32 @@
   </entry>
   
   <entry>
+    <title>2018-12-25 Daily Challenge</title>
+    <link href="http://CSUwangj.github.io/2018-12-25-Daily-Challenge/"/>
+    <id>http://CSUwangj.github.io/2018-12-25-Daily-Challenge/</id>
+    <published>2018-12-24T13:04:34.000Z</published>
+    <updated>2018-12-25T03:26:27.440Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;What I&amp;#39;ve done today is &lt;em&gt;Smallest multiple&lt;/em&gt; in &lt;em&gt;Rust&lt;/em&gt; and &lt;em&gt;Remove Duplicates from Sorted Array&lt;/em&gt; in &lt;em&gt;JavaScript&lt;/em&gt;.&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="DailyChallenge" scheme="http://CSUwangj.github.io/categories/DailyChallenge/"/>
+    
+    
+      <category term="Math" scheme="http://CSUwangj.github.io/tags/Math/"/>
+    
+      <category term="Algorithm" scheme="http://CSUwangj.github.io/tags/Algorithm/"/>
+    
+      <category term="LeetCode" scheme="http://CSUwangj.github.io/tags/LeetCode/"/>
+    
+      <category term="ProjectEuler" scheme="http://CSUwangj.github.io/tags/ProjectEuler/"/>
+    
+  </entry>
+  
+  <entry>
     <title>2018-12-24 Daily Challenge</title>
     <link href="http://CSUwangj.github.io/2018-12-24-Daily-Challenge/"/>
     <id>http://CSUwangj.github.io/2018-12-24-Daily-Challenge/</id>
@@ -43,7 +69,7 @@
     
     <summary type="html">
     
-      &lt;p&gt;What I’ve done today is &lt;em&gt;Largest palindrome product&lt;/em&gt; in &lt;em&gt;Rust&lt;/em&gt; and &lt;em&gt;Remove Duplicates from Sorted Array&lt;/em&gt; in &lt;em&gt;JavaScript&lt;/em&gt;.&lt;/p&gt;
+      &lt;p&gt;What I&amp;#39;ve done today is &lt;em&gt;Largest palindrome product&lt;/em&gt; in &lt;em&gt;Rust&lt;/em&gt; and &lt;em&gt;Remove Duplicates from Sorted Array&lt;/em&gt; in &lt;em&gt;JavaScript&lt;/em&gt;.&lt;/p&gt;
     
     </summary>
     
@@ -69,7 +95,7 @@
     
     <summary type="html">
     
-      &lt;p&gt;What I’ve done today is &lt;em&gt;Largest prime factor&lt;/em&gt; in &lt;em&gt;Rust&lt;/em&gt; and &lt;em&gt;Coin Change&lt;/em&gt; in &lt;em&gt;JavaScript&lt;/em&gt;.&lt;/p&gt;
+      &lt;p&gt;What I&amp;#39;ve done today is &lt;em&gt;Largest prime factor&lt;/em&gt; in &lt;em&gt;Rust&lt;/em&gt; and &lt;em&gt;Coin Change&lt;/em&gt; in &lt;em&gt;JavaScript&lt;/em&gt;.&lt;/p&gt;
     
     </summary>
     
@@ -97,7 +123,7 @@
     
     <summary type="html">
     
-      &lt;p&gt;What I’ve done today is &lt;em&gt;Even Fibonacci numbers&lt;/em&gt; in &lt;em&gt;Rust&lt;/em&gt; and &lt;em&gt;K-th Smallest Prime Fraction&lt;/em&gt; in &lt;em&gt;cpp&lt;/em&gt;.&lt;/p&gt;
+      &lt;p&gt;What I&amp;#39;ve done today is &lt;em&gt;Even Fibonacci numbers&lt;/em&gt; in &lt;em&gt;Rust&lt;/em&gt; and &lt;em&gt;K-th Smallest Prime Fraction&lt;/em&gt; in &lt;em&gt;cpp&lt;/em&gt;.&lt;/p&gt;
     
     </summary>
     
@@ -155,8 +181,8 @@
     
     <summary type="html">
     
-      &lt;p&gt;What I’ve done today is &lt;em&gt;Secret Messages&lt;/em&gt; of &lt;em&gt;Number Theory&lt;/em&gt; and &lt;em&gt;Course Schedule II&lt;/em&gt; in &lt;em&gt;JavaScript&lt;/em&gt;.&lt;/p&gt;
-&lt;p&gt;Due to the high cost of [brilliant.org]‘s subscription, and low difficulty, I decide to change to &lt;a href=&quot;https://projecteuler.net&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://projecteuler.net&lt;/a&gt;. So again, if there is no source provided, I’m doing challenge with it and &lt;a href=&quot;https://LeetCode.com&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://LeetCode.com&lt;/a&gt;&lt;/p&gt;
+      &lt;p&gt;What I&amp;#39;ve done today is &lt;em&gt;Secret Messages&lt;/em&gt; of &lt;em&gt;Number Theory&lt;/em&gt; and &lt;em&gt;Course Schedule II&lt;/em&gt; in &lt;em&gt;JavaScript&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;Due to the high cost of [brilliant.org]&amp;#39;s subscription, and low difficulty, I decide to change to &lt;a href=&quot;https://projecteuler.net&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://projecteuler.net&lt;/a&gt;. So again, if there is no source provided, I&amp;#39;m doing challenge with it and &lt;a href=&quot;https://LeetCode.com&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://LeetCode.com&lt;/a&gt;&lt;/p&gt;
     
     </summary>
     
@@ -184,8 +210,8 @@
     
     <summary type="html">
     
-      &lt;p&gt;What I’ve done today is &lt;em&gt;Last Digits&lt;/em&gt; of &lt;em&gt;Number Theory&lt;/em&gt; and &lt;em&gt;Longest Substring Without Repeating Characters&lt;/em&gt; in &lt;em&gt;JavaScript&lt;/em&gt;.&lt;/p&gt;
-&lt;p&gt;If no source is provided, then I’m doing these challenge at &lt;a href=&quot;https://brilliant.org&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://brilliant.org&lt;/a&gt; and &lt;a href=&quot;https://leetcode.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://leetcode.com/&lt;/a&gt;.&lt;/p&gt;
+      &lt;p&gt;What I&amp;#39;ve done today is &lt;em&gt;Last Digits&lt;/em&gt; of &lt;em&gt;Number Theory&lt;/em&gt; and &lt;em&gt;Longest Substring Without Repeating Characters&lt;/em&gt; in &lt;em&gt;JavaScript&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;If no source is provided, then I&amp;#39;m doing these challenge at &lt;a href=&quot;https://brilliant.org&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://brilliant.org&lt;/a&gt; and &lt;a href=&quot;https://leetcode.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://leetcode.com/&lt;/a&gt;.&lt;/p&gt;
     
     </summary>
     
@@ -317,9 +343,9 @@
       <category term="Notes" scheme="http://CSUwangj.github.io/categories/Notes/"/>
     
     
-      <category term="WARGAME" scheme="http://CSUwangj.github.io/tags/WARGAME/"/>
-    
       <category term="PWN" scheme="http://CSUwangj.github.io/tags/PWN/"/>
+    
+      <category term="WARGAME" scheme="http://CSUwangj.github.io/tags/WARGAME/"/>
     
       <category term="stackoverflow" scheme="http://CSUwangj.github.io/tags/stackoverflow/"/>
     
@@ -372,9 +398,9 @@
       <category term="Notes" scheme="http://CSUwangj.github.io/categories/Notes/"/>
     
     
-      <category term="WARGAME" scheme="http://CSUwangj.github.io/tags/WARGAME/"/>
-    
       <category term="PWN" scheme="http://CSUwangj.github.io/tags/PWN/"/>
+    
+      <category term="WARGAME" scheme="http://CSUwangj.github.io/tags/WARGAME/"/>
     
       <category term="stackoverflow" scheme="http://CSUwangj.github.io/tags/stackoverflow/"/>
     
@@ -525,9 +551,9 @@
     
       <category term="Crypto" scheme="http://CSUwangj.github.io/tags/Crypto/"/>
     
-      <category term="PWN" scheme="http://CSUwangj.github.io/tags/PWN/"/>
-    
       <category term="Web" scheme="http://CSUwangj.github.io/tags/Web/"/>
+    
+      <category term="PWN" scheme="http://CSUwangj.github.io/tags/PWN/"/>
     
       <category term="Rev" scheme="http://CSUwangj.github.io/tags/Rev/"/>
     
@@ -596,20 +622,6 @@
     
     
       <category term="Software" scheme="http://CSUwangj.github.io/tags/Software/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>逆向工程核心原理学习笔记（一）</title>
-    <link href="http://CSUwangj.github.io/%E9%80%86%E5%90%91%E5%B7%A5%E7%A8%8B%E6%A0%B8%E5%BF%83%E5%8E%9F%E7%90%86%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%88%E4%B8%80%EF%BC%89/"/>
-    <id>http://CSUwangj.github.io/逆向工程核心原理学习笔记（一）/</id>
-    <published>2018-02-26T13:52:44.000Z</published>
-    <updated>2018-07-30T02:00:33.666Z</updated>
-    
-    <summary type="html">
-    
-    </summary>
-    
     
   </entry>
   

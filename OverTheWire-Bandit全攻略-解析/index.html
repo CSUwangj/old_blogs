@@ -553,10 +553,10 @@
 <p>或者在windows用命令行的方式也行<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cat <span class="string">"/home/bandit2/spaces in this filename"</span></span><br><span class="line">cat <span class="string">"space in this filename</span></span><br></pre></td></tr></table></figure></p>
 <h1 id="Level-3-→-Level-4"><a href="#Level-3-→-Level-4" class="headerlink" title="Level 3 → Level 4"></a>Level 3 → Level 4</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cat ~/inhere/.hidden</span><br></pre></td></tr></table></figure>
 <h1 id="Level-4-→-Level-5"><a href="#Level-4-→-Level-5" class="headerlink" title="Level 4 → Level 5"></a>Level 4 → Level 5</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">i=0; <span class="keyword">while</span> [ <span class="variable">$i</span> -le 9 ]; <span class="keyword">do</span> file `python -c <span class="string">"print '/home/bandit4/inhere/-file%02d' % <span class="variable">$i</span>"</span>`; i=$((i+1)); <span class="keyword">done</span></span><br></pre></td></tr></table></figure>
-<h1 id="Level-5-→-Level-6"><a href="#Level-5-→-Level-6" class="headerlink" title="Level 5 → Level 6"></a>Level 5 → Level 6</h1><p>难度不够啊，同大小的就一个…<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">find . -<span class="built_in">type</span> f -size 1033c -<span class="built_in">print</span> | xargs cat</span><br></pre></td></tr></table></figure></p>
+<h1 id="Level-5-→-Level-6"><a href="#Level-5-→-Level-6" class="headerlink" title="Level 5 → Level 6"></a>Level 5 → Level 6</h1><p>难度不够啊，同大小的就一个...<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">find . -<span class="built_in">type</span> f -size 1033c -<span class="built_in">print</span> | xargs cat</span><br></pre></td></tr></table></figure></p>
 <p>还要过滤的话文件加-perm参数未必有用，目前考虑用ls -l和file命令做。</p>
 <h1 id="Level-6-→-Level-7"><a href="#Level-6-→-Level-7" class="headerlink" title="Level 6 → Level 7"></a>Level 6 → Level 7</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">find / -user bandit7 -group bandit6 -size 33c 2&gt;/dev/null | xargs cat</span><br></pre></td></tr></table></figure>
-<p>很见鬼的是，-print后面放哪些东西会出问题…</p>
+<p>很见鬼的是，-print后面放哪些东西会出问题...</p>
 <h1 id="Level-7-→-Level-8"><a href="#Level-7-→-Level-8" class="headerlink" title="Level 7 → Level 8"></a>Level 7 → Level 8</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cat ~/data.txt | grep millionth</span><br></pre></td></tr></table></figure>
 <h1 id="Level-8-→-Level-9"><a href="#Level-8-→-Level-9" class="headerlink" title="Level 8 → Level 9"></a>Level 8 → Level 9</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sort ~/data.txt | uniq -u</span><br></pre></td></tr></table></figure>
 <h1 id="Level-9-→-Level-10"><a href="#Level-9-→-Level-10" class="headerlink" title="Level 9 → Level 10"></a>Level 9 → Level 10</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">strings ~/data.txt | grep ==</span><br></pre></td></tr></table></figure>
@@ -758,7 +758,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">26</span>
+                    <span class="site-state-item-count">27</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -1036,7 +1036,7 @@
     
       <span class="post-meta-item-text">站点总字数：</span>
     
-    <span title="站点总字数">143k</span>
+    <span title="站点总字数">147k</span>
   
 
   
@@ -1047,7 +1047,7 @@
     
       <span class="post-meta-item-text">站点阅读时长 &asymp;</span>
     
-    <span title="站点阅读时长">3:58</span>
+    <span title="站点阅读时长">4:05</span>
   
 </div>
 

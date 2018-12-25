@@ -549,7 +549,7 @@
 <p>给你一个懂事的微笑。</p>
 <h3 id="生日攻击"><a href="#生日攻击" class="headerlink" title="生日攻击"></a>生日攻击</h3><p>现在我们就尝试攻击散列函数的强抗碰撞性。这里以<code>std::hash</code>为例。</p>
 <img src="/关于散列函数的一点思考/1527960903963.png" title="cpp reference">
-<p>基于散列函数的几个特性来说，我们得到值域内任意值的可能性都为$\frac1{2^{32}}$。那么，在计算不同的任意$n$个字符串候，这些散列值都不冲突的可能性就是$\frac{2^{32}-1}{2^{32}}×\frac{2^{32}-2}{2^{32}}×…×\frac{2^{32}-n+1}{2^{32}}$。</p>
+<p>基于散列函数的几个特性来说，我们得到值域内任意值的可能性都为$\frac1{2^{32}}$。那么，在计算不同的任意$n$个字符串候，这些散列值都不冲突的可能性就是$\frac{2^{32}-1}{2^{32}}×\frac{2^{32}-2}{2^{32}}×...×\frac{2^{32}-n+1}{2^{32}}$。</p>
 <p>对于题目给的数据，使用下面Python代码可以计算得不发生冲突的概率为$0.9005311337474664$即发生错误的可能性为$0.0994688662525336$。</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># a.py</span></span><br><span class="line">a = <span class="number">1</span> &lt;&lt; <span class="number">32</span></span><br><span class="line">s = <span class="number">1</span></span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">0</span>, <span class="number">30000</span>):</span><br><span class="line">	s *= (a-i)/a</span><br><span class="line">print(s)</span><br><span class="line"><span class="comment">#python a.py</span></span><br><span class="line"><span class="comment">#0.9005311337474664</span></span><br></pre></td></tr></table></figure>
 <p>可见这个数字对于脸白的人来说是够了的。</p>
@@ -624,10 +624,10 @@
   
     <li class="popular-posts-item">
       
-        <div class="popular-posts-date">2018-05-21</div>
+        <div class="popular-posts-date">2018-05-10</div>
       
       
-      <div class="popular-posts-title"><a href="/AFCTF2018-Crypto-OfficialWriteUp/" rel="bookmark">AFCTF2018-Crypto_OfficialWriteUp</a></div>
+      <div class="popular-posts-title"><a href="/JarvisOJ-WP合集/" rel="bookmark">JarvisOJ-WP合集</a></div>
       
     </li>
   
@@ -823,7 +823,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">26</span>
+                    <span class="site-state-item-count">27</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -1101,7 +1101,7 @@
     
       <span class="post-meta-item-text">站点总字数：</span>
     
-    <span title="站点总字数">143k</span>
+    <span title="站点总字数">147k</span>
   
 
   
@@ -1112,7 +1112,7 @@
     
       <span class="post-meta-item-text">站点阅读时长 &asymp;</span>
     
-    <span title="站点阅读时长">3:58</span>
+    <span title="站点阅读时长">4:05</span>
   
 </div>
 

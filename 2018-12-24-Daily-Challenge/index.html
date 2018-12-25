@@ -116,19 +116,19 @@
 
 
 
-  <meta name="description" content="What I’ve done today is Largest palindrome product in Rust and Remove Duplicates from Sorted Array in JavaScript.">
+  <meta name="description" content="What I&amp;#39;ve done today is Largest palindrome product in Rust and Remove Duplicates from Sorted Array in JavaScript.">
 <meta name="keywords" content="Math,Algorithm,LeetCode,ProjectEuler">
 <meta property="og:type" content="article">
 <meta property="og:title" content="2018-12-24 Daily Challenge">
 <meta property="og:url" content="http://CSUwangj.github.io/2018-12-24-Daily-Challenge/index.html">
 <meta property="og:site_name" content="LuckyDog">
-<meta property="og:description" content="What I’ve done today is Largest palindrome product in Rust and Remove Duplicates from Sorted Array in JavaScript.">
+<meta property="og:description" content="What I&amp;#39;ve done today is Largest palindrome product in Rust and Remove Duplicates from Sorted Array in JavaScript.">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="http://csuwangj.github.io/2018-12-24-Daily-Challenge/1545619672492.png">
 <meta property="og:updated_time" content="2018-12-24T02:48:30.011Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="2018-12-24 Daily Challenge">
-<meta name="twitter:description" content="What I’ve done today is Largest palindrome product in Rust and Remove Duplicates from Sorted Array in JavaScript.">
+<meta name="twitter:description" content="What I&amp;#39;ve done today is Largest palindrome product in Rust and Remove Duplicates from Sorted Array in JavaScript.">
 <meta name="twitter:image" content="http://csuwangj.github.io/2018-12-24-Daily-Challenge/1545619672492.png">
 
 
@@ -490,10 +490,10 @@
       
 
       
-        <p>What I’ve done today is <em>Largest palindrome product</em> in <em>Rust</em> and <em>Remove Duplicates from Sorted Array</em> in <em>JavaScript</em>.</p>
+        <p>What I&#39;ve done today is <em>Largest palindrome product</em> in <em>Rust</em> and <em>Remove Duplicates from Sorted Array</em> in <em>JavaScript</em>.</p>
 <a id="more"></a>
 <h1 id="Math"><a href="#Math" class="headerlink" title="Math"></a>Math</h1><h2 id="Problem"><a href="#Problem" class="headerlink" title="Problem"></a>Problem</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">Largest palindrome product</span><br><span class="line"></span><br><span class="line">Problem 4 </span><br><span class="line"></span><br><span class="line">A palindromic number reads the same both ways. The largest palindrome made from the product of two 2-digit numbers is 9009 = 91 × 99.</span><br><span class="line"></span><br><span class="line">Find the largest palindrome made from the product of two 3-digit numbers.</span><br></pre></td></tr></table></figure>
-<h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2><p>I can’t come up with a more gentle solution than brute force.</p>
+<h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2><p>I can&#39;t come up with a more gentle solution than brute force.</p>
 <hr>
 <p>Even that I find I can do some optimization on it.</p>
 <p>But when check the overview I find something new. Just check my code~</p>
@@ -501,7 +501,7 @@
 <h1 id="Algorithm"><a href="#Algorithm" class="headerlink" title="Algorithm"></a>Algorithm</h1><h2 id="Problem-1"><a href="#Problem-1" class="headerlink" title="Problem"></a>Problem</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line">26. Remove Duplicates from Sorted Array</span><br><span class="line"></span><br><span class="line">Given a sorted array nums, remove the duplicates in-place such that each element appear only once and return the new length.</span><br><span class="line"></span><br><span class="line">Do not allocate extra space for another array, you must do this by modifying the input array in-place with O(1) extra memory.</span><br><span class="line"></span><br><span class="line">Example 1:</span><br><span class="line"></span><br><span class="line">Given nums = [1,1,2],</span><br><span class="line"></span><br><span class="line">Your function should return length = 2, with the first two elements of nums being 1 and 2 respectively.</span><br><span class="line"></span><br><span class="line">It doesn&apos;t matter what you leave beyond the returned length.</span><br><span class="line">Example 2:</span><br><span class="line"></span><br><span class="line">Given nums = [0,0,1,1,1,2,2,3,3,4],</span><br><span class="line"></span><br><span class="line">Your function should return length = 5, with the first five elements of nums being modified to 0, 1, 2, 3, and 4 respectively.</span><br><span class="line"></span><br><span class="line">It doesn&apos;t matter what values are set beyond the returned length.</span><br><span class="line">Clarification:</span><br><span class="line"></span><br><span class="line">Confused why the returned value is an integer but your answer is an array?</span><br><span class="line"></span><br><span class="line">Note that the input array is passed in by reference, which means modification to the input array will be known to the caller as well.</span><br></pre></td></tr></table></figure>
 <h2 id="Solution-1"><a href="#Solution-1" class="headerlink" title="Solution"></a>Solution</h2><p>Just use two pointer/indice to deal it~</p>
 <hr>
-<p>I write an implication that move duplicated element to the end, but find that it’s said “remove”~So I rewrite it.</p>
+<p>I write an implication that move duplicated element to the end, but find that it&#39;s said &quot;remove&quot;~So I rewrite it.</p>
 <h2 id="Implication-1"><a href="#Implication-1" class="headerlink" title="Implication"></a>Implication</h2><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * @param &#123;number[]&#125; nums</span></span><br><span class="line"><span class="comment"> * @return &#123;number&#125;</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">var</span> moveDuplicates = <span class="function">(<span class="params">nums = []</span>) =&gt;</span> &#123;</span><br><span class="line">  <span class="keyword">let</span> len = nums.length;</span><br><span class="line">  <span class="keyword">if</span>(len == <span class="number">1</span>) <span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line">  <span class="keyword">let</span> rp = <span class="number">1</span>;</span><br><span class="line">  <span class="keyword">let</span> lp = <span class="number">0</span>;</span><br><span class="line">  <span class="keyword">while</span>(rp &lt; len)&#123;</span><br><span class="line">    <span class="keyword">while</span>(rp &lt; len &amp;&amp; nums[lp] == nums[rp]) ++rp;</span><br><span class="line">    <span class="keyword">if</span>(rp &lt; len &amp;&amp; rp != lp+<span class="number">1</span>)&#123;</span><br><span class="line">      [nums[lp+<span class="number">1</span>], nums[rp]] = [nums[rp], nums[lp+<span class="number">1</span>]];</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">if</span>(nums[lp] &lt; nums[lp+<span class="number">1</span>]) ++lp;</span><br><span class="line">    ++rp</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">return</span> lp+<span class="number">1</span>;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * @param &#123;number[]&#125; nums</span></span><br><span class="line"><span class="comment"> * @return &#123;number&#125;</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">var</span> removeDuplicates = <span class="function">(<span class="params">nums = []</span>) =&gt;</span> &#123;</span><br><span class="line">  <span class="keyword">let</span> len = nums.length;</span><br><span class="line">  <span class="keyword">if</span>(len &lt; <span class="number">2</span>) <span class="keyword">return</span> len;</span><br><span class="line">  <span class="keyword">let</span> rp = <span class="number">1</span>;</span><br><span class="line">  <span class="keyword">let</span> lp = <span class="number">0</span>;</span><br><span class="line">  <span class="keyword">while</span>(rp &lt; len)&#123;</span><br><span class="line">    <span class="keyword">if</span>(nums[rp] != nums[lp])&#123;</span><br><span class="line">      ++lp;</span><br><span class="line">      nums[lp] = nums[rp];</span><br><span class="line">    &#125;</span><br><span class="line">    ++rp;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">return</span> lp+<span class="number">1</span>;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="keyword">let</span> nums = [<span class="number">1</span>,<span class="number">1</span>,<span class="number">2</span>];</span><br><span class="line"><span class="built_in">console</span>.log(removeDuplicates(nums));</span><br><span class="line"><span class="built_in">console</span>.log(nums);</span><br><span class="line"></span><br><span class="line">nums = [<span class="number">0</span>,<span class="number">0</span>,<span class="number">1</span>,<span class="number">1</span>,<span class="number">1</span>,<span class="number">2</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">3</span>,<span class="number">4</span>];</span><br><span class="line"><span class="built_in">console</span>.log(removeDuplicates(nums));</span><br><span class="line"><span class="built_in">console</span>.log(nums);</span><br><span class="line"></span><br><span class="line">nums = [<span class="number">0</span>,<span class="number">0</span>,<span class="number">1</span>,<span class="number">1</span>,<span class="number">1</span>,<span class="number">2</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">4</span>,<span class="number">4</span>];</span><br><span class="line"><span class="built_in">console</span>.log(removeDuplicates(nums));</span><br><span class="line"><span class="built_in">console</span>.log(nums);</span><br><span class="line"></span><br><span class="line">nums = [<span class="number">0</span>,<span class="number">0</span>];</span><br><span class="line"><span class="built_in">console</span>.log(removeDuplicates(nums));</span><br><span class="line"><span class="built_in">console</span>.log(nums);</span><br><span class="line"></span><br><span class="line">nums = [<span class="number">1</span>,<span class="number">2</span>];</span><br><span class="line"><span class="built_in">console</span>.log(removeDuplicates(nums));</span><br><span class="line"><span class="built_in">console</span>.log(nums);</span><br></pre></td></tr></table></figure>
 <img src="/2018-12-24-Daily-Challenge/1545619672492.png" title="wwwww">
       
@@ -512,15 +512,6 @@
 
   <div class="popular-posts-header">相关文章</div>
   <ul class="popular-posts">
-  
-    <li class="popular-posts-item">
-      
-        <div class="popular-posts-date">2018-12-23</div>
-      
-      
-      <div class="popular-posts-title"><a href="/2018-12-23-Daily-Challenge/" rel="bookmark">2018-12-23 Daily Challenge</a></div>
-      
-    </li>
   
     <li class="popular-posts-item">
       
@@ -542,19 +533,28 @@
   
     <li class="popular-posts-item">
       
-        <div class="popular-posts-date">2018-12-19</div>
+        <div class="popular-posts-date">2018-12-24</div>
       
       
-      <div class="popular-posts-title"><a href="/2018-12-19-Daily-Challenge/" rel="bookmark">2018-12-19 Daily Challenge</a></div>
+      <div class="popular-posts-title"><a href="/2018-12-25-Daily-Challenge/" rel="bookmark">2018-12-25 Daily Challenge</a></div>
       
     </li>
   
     <li class="popular-posts-item">
       
-        <div class="popular-posts-date">2018-12-20</div>
+        <div class="popular-posts-date">2018-12-23</div>
       
       
-      <div class="popular-posts-title"><a href="/2018-12-20-Daily-Challenge/" rel="bookmark">2018-12-20 Daily Challenge</a></div>
+      <div class="popular-posts-title"><a href="/2018-12-23-Daily-Challenge/" rel="bookmark">2018-12-23 Daily Challenge</a></div>
+      
+    </li>
+  
+    <li class="popular-posts-item">
+      
+        <div class="popular-posts-date">2018-12-19</div>
+      
+      
+      <div class="popular-posts-title"><a href="/2018-12-19-Daily-Challenge/" rel="bookmark">2018-12-19 Daily Challenge</a></div>
       
     </li>
   
@@ -664,8 +664,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/博文整理/" rel="prev" title="博文整理">
-                博文整理 <i class="fa fa-chevron-right"></i>
+              <a href="/2018-12-25-Daily-Challenge/" rel="prev" title="2018-12-25 Daily Challenge">
+                2018-12-25 Daily Challenge <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -754,7 +754,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">26</span>
+                    <span class="site-state-item-count">27</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -1032,7 +1032,7 @@
     
       <span class="post-meta-item-text">站点总字数：</span>
     
-    <span title="站点总字数">143k</span>
+    <span title="站点总字数">147k</span>
   
 
   
@@ -1043,7 +1043,7 @@
     
       <span class="post-meta-item-text">站点阅读时长 &asymp;</span>
     
-    <span title="站点阅读时长">3:58</span>
+    <span title="站点阅读时长">4:05</span>
   
 </div>
 
