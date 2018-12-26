@@ -9,9 +9,23 @@
       </categories>
   </entry>
   <entry>
+    <title><![CDATA[2018-12-26 Daily Challenge]]></title>
+    <url>%2F2018-12-26-Daily-Challenge%2F</url>
+    <content type="text"><![CDATA[What I&#39;ve done today is Sum square difference in Rust and Split Array into Consecutive Subsequences in JavaScript. MathProblem12345678910111213Sum square differenceProblem 6 The sum of the squares of the first ten natural numbers is,1^2 + 2^2 + ... + 10^2 = 385The square of the sum of the first ten natural numbers is,(1 + 2 + ... + 10)^2 = 55^2 = 3025Hence the difference between the sum of the squares of the first ten natural numbers and the square of the sum is 3025 − 385 = 2640.Find the difference between the sum of the squares of the first one hundred natural numbers and the square of the sum. SolutionBrute force is enough for such a small range. But if I want to solve it more elegantly, there is one formula show up during my high school life. $1^2+2^2+3^2+...+n^2=\frac{n(n+1)(2n+1)}{6}$ So the answer will be $\frac{n^4}{4}+\frac{n^3}{6}-\frac{n^2}{4}-\frac{n}{6}$ Implication1234567891011121314151617181920212223fn main() &#123; println!("Answer is &#123;&#125;", solve_brute(100)); println!("Answer is &#123;&#125;", solve_formula(100));&#125;fn solve_brute(n: i32) -&gt; i64 &#123; let ans: i64; let mut tmp: i64 = 0; for i in 1..n+1 &#123; tmp += i as i64; &#125; ans = tmp * tmp; tmp = 0; for i in 1..n+1 &#123; tmp += (i * i) as i64; &#125; ans - tmp&#125;fn solve_formula(n: i32) -&gt; i64 &#123; let tmp: f64 = n as f64; (tmp.powf(4.0)/4.0 + tmp.powf(3.0)/6.0 - tmp.powf(2.0) / 4.0 - tmp/6.0) as i64&#125; AlgorithmProblem1234567891011121314151617181920212223659. Split Array into Consecutive SubsequencesYou are given an integer array sorted in ascending order (may contain duplicates), you need to split them into several subsequences, where each subsequences consist of at least 3 consecutive integers. Return whether you can make such a split.Example 1:Input: [1,2,3,3,4,5]Output: TrueExplanation:You can split them into two consecutive subsequences : 1, 2, 33, 4, 5Example 2:Input: [1,2,3,3,4,4,5,5]Output: TrueExplanation:You can split them into two consecutive subsequences : 1, 2, 3, 4, 53, 4, 5Example 3:Input: [1,2,3,4,4,5]Output: FalseNote:The length of the input is in range of [1, 10000] SolutionCall a chain a sequence of 3 or more consecutive numbers. Considering numbers x from left to right, if x can be added to a current chain, it&#39;s at least as good to add x to that chain first, rather than to start a new chain. So we just need to see if current x can be add to a chain or can be first of a new chain. Implication1234567891011121314151617181920212223242526272829303132333435/** * @param &#123;number[]&#125; nums * @return &#123;boolean&#125; */var isPossible = (nums) =&gt; &#123; let map = new Map(); let need = new Map(); for(const i of nums)&#123; if(!map.has(i)) map.set(i, 1); else map.set(i, map.get(i)+1); &#125; // console.log(map); // console.log(need); for(const i of nums)&#123; if(map.get(i) == 0) continue; else if(need.has(i)&amp;&amp;need.get(i) &gt; 0)&#123; need.set(i, need.get(i)-1); need.set(i+1, need.has(i+1)?need.get(i+1)+1:1); &#125;else if(map.has(i+1)&amp;&amp;map.get(i+1)&gt;0&amp;&amp;map.has(i+2)&amp;&amp;map.get(i+2)&gt;0)&#123; map.set(i+1, map.get(i+1)-1); map.set(i+2, map.get(i+2)-1); need.set(i+3, need.has(i+3)?need.get(i+3)+1:1); &#125;else return false; map.set(i, map.get(i)-1); &#125; return true;&#125;;// console.log(isPossible([1,2,3,3,4,5]));// console.log(isPossible([1,2,3,3,4,4,5,5]));// console.log(isPossible([1,2,3,4,4,5]));]]></content>
+      <categories>
+        <category>DailyChallenge</category>
+      </categories>
+      <tags>
+        <tag>Math</tag>
+        <tag>Algorithm</tag>
+        <tag>LeetCode</tag>
+        <tag>ProjectEuler</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[2018-12-25 Daily Challenge]]></title>
     <url>%2F2018-12-25-Daily-Challenge%2F</url>
-    <content type="text"><![CDATA[What I&#39;ve done today is Smallest multiple in Rust and Remove Duplicates from Sorted Array in JavaScript. MathProblem1234567Smallest multipleProblem 5 2520 is the smallest number that can be divided by each of the numbers from 1 to 10 without any remainder.What is the smallest positive number that is evenly divisible by all of the numbers from 1 to 20? SolutionOn the one hand I can compute the LCM with Euclidean Algorithm, one the other hand I can compute the contribution of each prime, and then, get the right answer. Implication1234567891011121314151617181920212223242526272829303132333435363738extern crate primal;use primal::Primes;fn main() &#123; let mut ans = lcm(1,2); for i in 3..21 &#123; ans = lcm(ans, i); &#125; println!("Answer is &#123;&#125;", ans); ans = 1; let twenty: f64 = 20f64; let mut tmp: u64; for p in Primes::all().take(20) &#123; if p &gt; 19 &#123; break; &#125; let q = twenty.log(p as f64) as u32; tmp = p as u64; ans *= tmp.pow(q); &#125; println!("Answer is &#123;&#125;", ans);&#125;fn lcm(a: u64, b: u64) -&gt; u64 &#123; a/ gcd(a, b) * b&#125;fn gcd(mut a: u64, mut b: u64) -&gt; u64 &#123; let mut tmp: u64; while b!= 0 &#123; tmp = a; a = b; b = tmp % b; &#125; a&#125; AlgorithmProblem1234567891011121314151617181920212223242526272829303132866. Prime PalindromeFind the smallest prime palindrome greater than or equal to N.Recall that a number is prime if it&apos;s only divisors are 1 and itself, and it is greater than 1. For example, 2,3,5,7,11 and 13 are primes.Recall that a number is a palindrome if it reads the same from left to right as it does from right to left. For example, 12321 is a palindrome. Example 1:Input: 6Output: 7Example 2:Input: 8Output: 11Example 3:Input: 13Output: 101 Note:1 &lt;= N &lt;= 10^8The answer is guaranteed to exist and be less than 2 * 10^8. SolutionFirst, according to the math problem I&#39;ve done yesterday, every even-lengthed palindrome number is a multiple of eleven. So we can just skip them. To check if a number is a prime, there is a lot of ways to do it. I once want use Miller-Rabin, but find it is so difficult to implicate it in JavaScript. Implication1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950515253545556575859/** * @param &#123;number&#125; N * @return &#123;number&#125; */let primePalindrome = function(N) &#123; let cur = N; switch (N) &#123; case 1: return 2; case 2: return 2; case 3: return 3; case 4: return 5; case 5: return 5; case 6: return 7; case 7: return 7; case 8: return 11; case 9: return 11; case 10: return 11; case 11: return 11; default: while(!isPal(cur)) cur++; &#125; while (true)&#123; if(isPrime(cur)) return cur; cur = nextPal(cur); &#125;&#125;;let isPal = (n) =&gt;&#123; return ("" + n) == ("" + n).split("").reverse().join("");&#125;;let nextPal = (n) =&gt; &#123; let s = ("" + n); let len = s.length; if(len % 2 == 0)&#123; return "1"+ "0".repeat(len-1) + "1"; &#125;else&#123; let half = Math.ceil(len / 2); let left = s.slice(0, half); let plus1 = (+left + 1) + ""; return +(plus1 + plus1.slice(0, plus1.length - 1).split("").reverse().join("")); &#125;&#125;;let isPrime = (n) =&gt; &#123; if(n%2===0) return false; for(let i=3; i*i&lt;=n; i+=2)&#123; if(n%i===0) return false; &#125; return true;&#125;;// console.log(primePalindrome(1));// console.log(primePalindrome(2));// console.log(primePalindrome(3));// console.log(primePalindrome(6));// console.log(primePalindrome(8));// console.log(primePalindrome(13));// console.log(primePalindrome(11));// console.log(primePalindrome(1234));]]></content>
+    <content type="text"><![CDATA[What I&#39;ve done today is Smallest multiple in Rust and Remove Duplicates from Sorted Array in JavaScript. MathProblem1234567Smallest multipleProblem 5 2520 is the smallest number that can be divided by each of the numbers from 1 to 10 without any remainder.What is the smallest positive number that is evenly divisible by all of the numbers from 1 to 20? SolutionOn the one hand I can compute the LCM with Euclidean Algorithm, one the other hand I can compute the contribution of each prime, and then, get the right answer. Implication1234567891011121314151617181920212223242526272829303132333435363738extern crate primal;use primal::Primes;fn main() &#123; let mut ans = lcm(1,2); for i in 3..21 &#123; ans = lcm(ans, i); &#125; println!("Answer is &#123;&#125;", ans); ans = 1; let twenty: f64 = 20f64; let mut tmp: u64; for p in Primes::all().take(20) &#123; if p &gt; 19 &#123; break; &#125; let q = twenty.log(p as f64) as u32; tmp = p as u64; ans *= tmp.pow(q); &#125; println!("Answer is &#123;&#125;", ans);&#125;fn lcm(a: u64, b: u64) -&gt; u64 &#123; a/ gcd(a, b) * b&#125;fn gcd(mut a: u64, mut b: u64) -&gt; u64 &#123; let mut tmp: u64; while b!= 0 &#123; tmp = a; a = b; b = tmp % b; &#125; a&#125; AlgorithmProblem1234567891011121314151617181920212223242526272829303132866. Prime PalindromeFind the smallest prime palindrome greater than or equal to N.Recall that a number is prime if it&apos;s only divisors are 1 and itself, and it is greater than 1. For example, 2,3,5,7,11 and 13 are primes.Recall that a number is a palindrome if it reads the same from left to right as it does from right to left. For example, 12321 is a palindrome. Example 1:Input: 6Output: 7Example 2:Input: 8Output: 11Example 3:Input: 13Output: 101 Note:1 &lt;= N &lt;= 10^8The answer is guaranteed to exist and be less than 2 * 10^8. SolutionFirst, according to the math problem I&#39;ve done yesterday, every even-lengthed palindrome number is a multiple of eleven. So we can just skip them. To check if a number is a prime, there is a lot of ways to do it. I once want use Miller-Rabin, but find it is so difficult to implicate it in JavaScript. Implication1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950/** * @param &#123;number&#125; N * @return &#123;number&#125; */let primePalindrome = function(N) &#123; let cur = N; if (N &lt; 12)&#123; while(!isPrime(cur)) ++cur; return cur; &#125; while(!isPal(cur)) cur++; while (true)&#123; if(isPrime(cur)) return cur; cur = nextPal(cur); &#125;&#125;;let isPal = (n) =&gt;&#123; return ("" + n) == ("" + n).split("").reverse().join("");&#125;;let nextPal = (n) =&gt; &#123; let s = ("" + n); let len = s.length; if(len % 2 == 0)&#123; return "1"+ "0".repeat(len-1) + "1"; &#125;else&#123; let half = Math.ceil(len / 2); let left = s.slice(0, half); let plus1 = (+left + 1) + ""; return +(plus1 + plus1.slice(0, plus1.length - 1).split("").reverse().join("")); &#125;&#125;;let isPrime = (n) =&gt; &#123; if(n%2 == 0) return n==2; for(let i=3; i*i&lt;=n; i+=2)&#123; if(n%i===0) return false; &#125; return n!=1;&#125;;// console.log(primePalindrome(1));// console.log(primePalindrome(2));// console.log(primePalindrome(3));// console.log(primePalindrome(6));// console.log(primePalindrome(8));// console.log(primePalindrome(13));// console.log(primePalindrome(11));// console.log(primePalindrome(1234));]]></content>
       <categories>
         <category>DailyChallenge</category>
       </categories>
@@ -144,8 +158,8 @@
         <category>Notes</category>
       </categories>
       <tags>
-        <tag>PWN</tag>
         <tag>WARGAME</tag>
+        <tag>PWN</tag>
         <tag>stackoverflow</tag>
         <tag>mitigation</tag>
       </tags>
@@ -158,8 +172,8 @@
         <category>Notes</category>
       </categories>
       <tags>
-        <tag>PWN</tag>
         <tag>WARGAME</tag>
+        <tag>PWN</tag>
         <tag>stackoverflow</tag>
         <tag>formatstring</tag>
         <tag>heapoverflow</tag>
@@ -210,8 +224,8 @@
       </categories>
       <tags>
         <tag>CTF</tag>
-        <tag>Misc</tag>
         <tag>Crypto</tag>
+        <tag>Misc</tag>
       </tags>
   </entry>
   <entry>
@@ -223,10 +237,10 @@
       </categories>
       <tags>
         <tag>CTF</tag>
-        <tag>Misc</tag>
-        <tag>Crypto</tag>
-        <tag>Web</tag>
         <tag>PWN</tag>
+        <tag>Crypto</tag>
+        <tag>Misc</tag>
+        <tag>Web</tag>
         <tag>Rev</tag>
       </tags>
   </entry>
@@ -279,10 +293,10 @@
       </categories>
       <tags>
         <tag>CTF</tag>
-        <tag>Misc</tag>
-        <tag>Crypto</tag>
-        <tag>Web</tag>
         <tag>PWN</tag>
+        <tag>Crypto</tag>
+        <tag>Misc</tag>
+        <tag>Web</tag>
       </tags>
   </entry>
   <entry>
@@ -317,8 +331,8 @@
         <category>Tools</category>
       </categories>
       <tags>
-        <tag>Misc</tag>
         <tag>Crypto</tag>
+        <tag>Misc</tag>
       </tags>
   </entry>
   <entry>
@@ -330,10 +344,10 @@
       </categories>
       <tags>
         <tag>CTF</tag>
-        <tag>Misc</tag>
-        <tag>Crypto</tag>
-        <tag>Web</tag>
         <tag>PWN</tag>
+        <tag>Crypto</tag>
+        <tag>Misc</tag>
+        <tag>Web</tag>
         <tag>Rev</tag>
       </tags>
   </entry>
