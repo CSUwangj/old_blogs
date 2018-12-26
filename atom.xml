@@ -549,9 +549,9 @@
     
       <category term="CTF" scheme="http://CSUwangj.github.io/tags/CTF/"/>
     
-      <category term="Crypto" scheme="http://CSUwangj.github.io/tags/Crypto/"/>
-    
       <category term="Misc" scheme="http://CSUwangj.github.io/tags/Misc/"/>
+    
+      <category term="Crypto" scheme="http://CSUwangj.github.io/tags/Crypto/"/>
     
   </entry>
   
@@ -573,11 +573,11 @@
     
       <category term="CTF" scheme="http://CSUwangj.github.io/tags/CTF/"/>
     
-      <category term="PWN" scheme="http://CSUwangj.github.io/tags/PWN/"/>
+      <category term="Misc" scheme="http://CSUwangj.github.io/tags/Misc/"/>
     
       <category term="Crypto" scheme="http://CSUwangj.github.io/tags/Crypto/"/>
     
-      <category term="Misc" scheme="http://CSUwangj.github.io/tags/Misc/"/>
+      <category term="PWN" scheme="http://CSUwangj.github.io/tags/PWN/"/>
     
       <category term="Web" scheme="http://CSUwangj.github.io/tags/Web/"/>
     

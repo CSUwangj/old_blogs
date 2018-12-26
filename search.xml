@@ -224,8 +224,8 @@
       </categories>
       <tags>
         <tag>CTF</tag>
-        <tag>Crypto</tag>
         <tag>Misc</tag>
+        <tag>Crypto</tag>
       </tags>
   </entry>
   <entry>
@@ -237,9 +237,9 @@
       </categories>
       <tags>
         <tag>CTF</tag>
-        <tag>PWN</tag>
-        <tag>Crypto</tag>
         <tag>Misc</tag>
+        <tag>Crypto</tag>
+        <tag>PWN</tag>
         <tag>Web</tag>
         <tag>Rev</tag>
       </tags>
@@ -293,9 +293,9 @@
       </categories>
       <tags>
         <tag>CTF</tag>
-        <tag>PWN</tag>
-        <tag>Crypto</tag>
         <tag>Misc</tag>
+        <tag>Crypto</tag>
+        <tag>PWN</tag>
         <tag>Web</tag>
       </tags>
   </entry>
@@ -331,8 +331,8 @@
         <category>Tools</category>
       </categories>
       <tags>
-        <tag>Crypto</tag>
         <tag>Misc</tag>
+        <tag>Crypto</tag>
       </tags>
   </entry>
   <entry>
@@ -344,9 +344,9 @@
       </categories>
       <tags>
         <tag>CTF</tag>
-        <tag>PWN</tag>
-        <tag>Crypto</tag>
         <tag>Misc</tag>
+        <tag>Crypto</tag>
+        <tag>PWN</tag>
         <tag>Web</tag>
         <tag>Rev</tag>
       </tags>
