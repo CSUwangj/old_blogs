@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://CSUwangj.github.io/"/>
-  <updated>2018-12-25T03:26:43.304Z</updated>
+  <updated>2018-12-27T03:09:21.618Z</updated>
   <id>http://CSUwangj.github.io/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="http://CSUwangj.github.io/%E5%8D%9A%E6%96%87%E6%95%B4%E7%90%86/"/>
     <id>http://CSUwangj.github.io/博文整理/</id>
     <published>8102-12-19T02:36:02.000Z</published>
-    <updated>2018-12-25T03:26:43.304Z</updated>
+    <updated>2018-12-27T03:09:21.618Z</updated>
     
     <summary type="html">
     
@@ -31,6 +31,32 @@
     
       <category term="Notes" scheme="http://CSUwangj.github.io/categories/Notes/"/>
     
+    
+  </entry>
+  
+  <entry>
+    <title>2018-12-27 Daily Challenge</title>
+    <link href="http://CSUwangj.github.io/2018-12-27-Daily-Challenge/"/>
+    <id>http://CSUwangj.github.io/2018-12-27-Daily-Challenge/</id>
+    <published>2018-12-27T01:14:07.000Z</published>
+    <updated>2018-12-27T03:12:42.317Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;What I&amp;#39;ve done today is &lt;em&gt;10001st prime&lt;/em&gt; in &lt;em&gt;Rust&lt;/em&gt; and &lt;em&gt;Binary Tree Preorder Traversal&lt;/em&gt; in &lt;em&gt;JavaScript&lt;/em&gt;.&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="DailyChallenge" scheme="http://CSUwangj.github.io/categories/DailyChallenge/"/>
+    
+    
+      <category term="Math" scheme="http://CSUwangj.github.io/tags/Math/"/>
+    
+      <category term="Algorithm" scheme="http://CSUwangj.github.io/tags/Algorithm/"/>
+    
+      <category term="LeetCode" scheme="http://CSUwangj.github.io/tags/LeetCode/"/>
+    
+      <category term="ProjectEuler" scheme="http://CSUwangj.github.io/tags/ProjectEuler/"/>
     
   </entry>
   
@@ -605,28 +631,6 @@
       <category term="CTF" scheme="http://CSUwangj.github.io/tags/CTF/"/>
     
       <category term="PPC" scheme="http://CSUwangj.github.io/tags/PPC/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>id0-rsa WP合集</title>
-    <link href="http://CSUwangj.github.io/id0-rsa-WP%E5%90%88%E9%9B%86/"/>
-    <id>http://CSUwangj.github.io/id0-rsa-WP合集/</id>
-    <published>2018-04-19T07:53:15.000Z</published>
-    <updated>2018-07-30T02:00:33.658Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;忙里偷闲做做题wwwwwwwwwwwww&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="WriteUp" scheme="http://CSUwangj.github.io/categories/WriteUp/"/>
-    
-    
-      <category term="CTF" scheme="http://CSUwangj.github.io/tags/CTF/"/>
-    
-      <category term="Crypto" scheme="http://CSUwangj.github.io/tags/Crypto/"/>
     
   </entry>
   
