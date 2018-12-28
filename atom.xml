@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://CSUwangj.github.io/"/>
-  <updated>2018-12-27T03:09:21.618Z</updated>
+  <updated>2018-12-28T02:25:37.153Z</updated>
   <id>http://CSUwangj.github.io/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="http://CSUwangj.github.io/%E5%8D%9A%E6%96%87%E6%95%B4%E7%90%86/"/>
     <id>http://CSUwangj.github.io/博文整理/</id>
     <published>8102-12-19T02:36:02.000Z</published>
-    <updated>2018-12-27T03:09:21.618Z</updated>
+    <updated>2018-12-28T02:25:37.153Z</updated>
     
     <summary type="html">
     
@@ -35,11 +35,37 @@
   </entry>
   
   <entry>
+    <title>2018-12-28 Daily Challenge</title>
+    <link href="http://CSUwangj.github.io/2018-12-28-Daily-Challenge/"/>
+    <id>http://CSUwangj.github.io/2018-12-28-Daily-Challenge/</id>
+    <published>2018-12-28T01:56:51.000Z</published>
+    <updated>2018-12-28T02:25:08.429Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;What I&amp;#39;ve done today is &lt;em&gt;10001st prime&lt;/em&gt; in &lt;em&gt;Rust&lt;/em&gt; and &lt;em&gt;Binary Tree Preorder Traversal&lt;/em&gt; in &lt;em&gt;JavaScript&lt;/em&gt;.&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="DailyChallenge" scheme="http://CSUwangj.github.io/categories/DailyChallenge/"/>
+    
+    
+      <category term="Math" scheme="http://CSUwangj.github.io/tags/Math/"/>
+    
+      <category term="Algorithm" scheme="http://CSUwangj.github.io/tags/Algorithm/"/>
+    
+      <category term="LeetCode" scheme="http://CSUwangj.github.io/tags/LeetCode/"/>
+    
+      <category term="ProjectEuler" scheme="http://CSUwangj.github.io/tags/ProjectEuler/"/>
+    
+  </entry>
+  
+  <entry>
     <title>2018-12-27 Daily Challenge</title>
     <link href="http://CSUwangj.github.io/2018-12-27-Daily-Challenge/"/>
     <id>http://CSUwangj.github.io/2018-12-27-Daily-Challenge/</id>
     <published>2018-12-27T01:14:07.000Z</published>
-    <updated>2018-12-27T03:12:42.317Z</updated>
+    <updated>2018-12-27T14:21:39.239Z</updated>
     
     <summary type="html">
     
@@ -608,29 +634,6 @@
       <category term="Web" scheme="http://CSUwangj.github.io/tags/Web/"/>
     
       <category term="Rev" scheme="http://CSUwangj.github.io/tags/Rev/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>*ctf magic_number WP</title>
-    <link href="http://CSUwangj.github.io/ctf-magic-number-WP/"/>
-    <id>http://CSUwangj.github.io/ctf-magic-number-WP/</id>
-    <published>2018-04-27T13:48:19.000Z</published>
-    <updated>2018-07-30T02:00:33.657Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;99次内猜14个[0,1023]内的数，那肯定是不仅二分而且要整体二分了&lt;/p&gt;
-&lt;p&gt;简单说来是&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="WriteUp" scheme="http://CSUwangj.github.io/categories/WriteUp/"/>
-    
-    
-      <category term="CTF" scheme="http://CSUwangj.github.io/tags/CTF/"/>
-    
-      <category term="PPC" scheme="http://CSUwangj.github.io/tags/PPC/"/>
     
   </entry>
   
