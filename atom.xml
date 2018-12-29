@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://CSUwangj.github.io/"/>
-  <updated>2018-12-28T02:25:37.153Z</updated>
+  <updated>2018-12-29T02:39:56.095Z</updated>
   <id>http://CSUwangj.github.io/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="http://CSUwangj.github.io/%E5%8D%9A%E6%96%87%E6%95%B4%E7%90%86/"/>
     <id>http://CSUwangj.github.io/博文整理/</id>
     <published>8102-12-19T02:36:02.000Z</published>
-    <updated>2018-12-28T02:25:37.153Z</updated>
+    <updated>2018-12-29T02:39:56.095Z</updated>
     
     <summary type="html">
     
@@ -35,15 +35,41 @@
   </entry>
   
   <entry>
+    <title>2018-12-29 Daily Challenge</title>
+    <link href="http://CSUwangj.github.io/2018-12-29-Daily-Challenge/"/>
+    <id>http://CSUwangj.github.io/2018-12-29-Daily-Challenge/</id>
+    <published>2018-12-29T01:27:37.000Z</published>
+    <updated>2018-12-29T02:39:41.013Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;What I&amp;#39;ve done today is &lt;em&gt;Special Pythagorean triplet&lt;/em&gt; in &lt;em&gt;Rust&lt;/em&gt; and &lt;em&gt;Dota2 Senate&lt;/em&gt; in &lt;em&gt;JavaScript&lt;/em&gt;.&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="DailyChallenge" scheme="http://CSUwangj.github.io/categories/DailyChallenge/"/>
+    
+    
+      <category term="Math" scheme="http://CSUwangj.github.io/tags/Math/"/>
+    
+      <category term="Algorithm" scheme="http://CSUwangj.github.io/tags/Algorithm/"/>
+    
+      <category term="LeetCode" scheme="http://CSUwangj.github.io/tags/LeetCode/"/>
+    
+      <category term="ProjectEuler" scheme="http://CSUwangj.github.io/tags/ProjectEuler/"/>
+    
+  </entry>
+  
+  <entry>
     <title>2018-12-28 Daily Challenge</title>
     <link href="http://CSUwangj.github.io/2018-12-28-Daily-Challenge/"/>
     <id>http://CSUwangj.github.io/2018-12-28-Daily-Challenge/</id>
     <published>2018-12-28T01:56:51.000Z</published>
-    <updated>2018-12-28T02:25:08.429Z</updated>
+    <updated>2018-12-28T02:28:11.208Z</updated>
     
     <summary type="html">
     
-      &lt;p&gt;What I&amp;#39;ve done today is &lt;em&gt;10001st prime&lt;/em&gt; in &lt;em&gt;Rust&lt;/em&gt; and &lt;em&gt;Binary Tree Preorder Traversal&lt;/em&gt; in &lt;em&gt;JavaScript&lt;/em&gt;.&lt;/p&gt;
+      &lt;p&gt;What I&amp;#39;ve done today is &lt;em&gt;Largest product in a series&lt;/em&gt; in &lt;em&gt;Rust&lt;/em&gt; and &lt;em&gt;Magical String&lt;/em&gt; in &lt;em&gt;JavaScript&lt;/em&gt;.&lt;/p&gt;
     
     </summary>
     
@@ -601,39 +627,9 @@
     
       <category term="CTF" scheme="http://CSUwangj.github.io/tags/CTF/"/>
     
-      <category term="Misc" scheme="http://CSUwangj.github.io/tags/Misc/"/>
-    
       <category term="Crypto" scheme="http://CSUwangj.github.io/tags/Crypto/"/>
     
-  </entry>
-  
-  <entry>
-    <title>JarvisOJ-WP合集</title>
-    <link href="http://CSUwangj.github.io/JarvisOJ-WP%E5%90%88%E9%9B%86/"/>
-    <id>http://CSUwangj.github.io/JarvisOJ-WP合集/</id>
-    <published>2018-05-10T01:11:00.000Z</published>
-    <updated>2018-08-14T12:12:38.232Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt; 因为预感进度表会很长，所以不放了&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="WriteUp" scheme="http://CSUwangj.github.io/categories/WriteUp/"/>
-    
-    
-      <category term="CTF" scheme="http://CSUwangj.github.io/tags/CTF/"/>
-    
       <category term="Misc" scheme="http://CSUwangj.github.io/tags/Misc/"/>
-    
-      <category term="Crypto" scheme="http://CSUwangj.github.io/tags/Crypto/"/>
-    
-      <category term="PWN" scheme="http://CSUwangj.github.io/tags/PWN/"/>
-    
-      <category term="Web" scheme="http://CSUwangj.github.io/tags/Web/"/>
-    
-      <category term="Rev" scheme="http://CSUwangj.github.io/tags/Rev/"/>
     
   </entry>
   
