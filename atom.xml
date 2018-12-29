@@ -35,11 +35,37 @@
   </entry>
   
   <entry>
+    <title>2018-12-30 Daily Challenge</title>
+    <link href="http://CSUwangj.github.io/2018-12-30-Daily-Challenge/"/>
+    <id>http://CSUwangj.github.io/2018-12-30-Daily-Challenge/</id>
+    <published>2018-12-29T17:10:04.000Z</published>
+    <updated>2018-12-29T17:11:23.072Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;What I&amp;#39;ve done today is &lt;em&gt;Summation of primes&lt;/em&gt; in &lt;em&gt;Rust&lt;/em&gt; and &lt;em&gt;Best Time to Buy and Sell Stock with Transaction Fee&lt;/em&gt; in &lt;em&gt;JavaScript&lt;/em&gt;.&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="DailyChallenge" scheme="http://CSUwangj.github.io/categories/DailyChallenge/"/>
+    
+    
+      <category term="Math" scheme="http://CSUwangj.github.io/tags/Math/"/>
+    
+      <category term="Algorithm" scheme="http://CSUwangj.github.io/tags/Algorithm/"/>
+    
+      <category term="LeetCode" scheme="http://CSUwangj.github.io/tags/LeetCode/"/>
+    
+      <category term="ProjectEuler" scheme="http://CSUwangj.github.io/tags/ProjectEuler/"/>
+    
+  </entry>
+  
+  <entry>
     <title>2018-12-29 Daily Challenge</title>
     <link href="http://CSUwangj.github.io/2018-12-29-Daily-Challenge/"/>
     <id>http://CSUwangj.github.io/2018-12-29-Daily-Challenge/</id>
     <published>2018-12-29T01:27:37.000Z</published>
-    <updated>2018-12-29T02:39:41.013Z</updated>
+    <updated>2018-12-29T06:46:29.968Z</updated>
     
     <summary type="html">
     
@@ -65,7 +91,7 @@
     <link href="http://CSUwangj.github.io/2018-12-28-Daily-Challenge/"/>
     <id>http://CSUwangj.github.io/2018-12-28-Daily-Challenge/</id>
     <published>2018-12-28T01:56:51.000Z</published>
-    <updated>2018-12-28T02:28:11.208Z</updated>
+    <updated>2018-12-29T06:46:11.970Z</updated>
     
     <summary type="html">
     
@@ -91,7 +117,7 @@
     <link href="http://CSUwangj.github.io/2018-12-27-Daily-Challenge/"/>
     <id>http://CSUwangj.github.io/2018-12-27-Daily-Challenge/</id>
     <published>2018-12-27T01:14:07.000Z</published>
-    <updated>2018-12-27T14:21:39.239Z</updated>
+    <updated>2018-12-29T06:45:57.931Z</updated>
     
     <summary type="html">
     
@@ -117,7 +143,7 @@
     <link href="http://CSUwangj.github.io/2018-12-26-Daily-Challenge/"/>
     <id>http://CSUwangj.github.io/2018-12-26-Daily-Challenge/</id>
     <published>2018-12-26T02:09:24.000Z</published>
-    <updated>2018-12-26T03:16:11.188Z</updated>
+    <updated>2018-12-29T06:45:46.183Z</updated>
     
     <summary type="html">
     
@@ -143,7 +169,7 @@
     <link href="http://CSUwangj.github.io/2018-12-25-Daily-Challenge/"/>
     <id>http://CSUwangj.github.io/2018-12-25-Daily-Challenge/</id>
     <published>2018-12-24T13:04:34.000Z</published>
-    <updated>2018-12-25T03:47:36.000Z</updated>
+    <updated>2018-12-29T06:45:35.274Z</updated>
     
     <summary type="html">
     
@@ -169,7 +195,7 @@
     <link href="http://CSUwangj.github.io/2018-12-24-Daily-Challenge/"/>
     <id>http://CSUwangj.github.io/2018-12-24-Daily-Challenge/</id>
     <published>2018-12-24T01:23:29.000Z</published>
-    <updated>2018-12-24T02:48:30.011Z</updated>
+    <updated>2018-12-29T06:45:23.288Z</updated>
     
     <summary type="html">
     
@@ -195,7 +221,7 @@
     <link href="http://CSUwangj.github.io/2018-12-23-Daily-Challenge/"/>
     <id>http://CSUwangj.github.io/2018-12-23-Daily-Challenge/</id>
     <published>2018-12-22T16:48:00.000Z</published>
-    <updated>2018-12-23T06:08:14.790Z</updated>
+    <updated>2018-12-29T06:45:11.251Z</updated>
     
     <summary type="html">
     
@@ -223,7 +249,7 @@
     <link href="http://CSUwangj.github.io/2018-12-22-Daily-Challenge/"/>
     <id>http://CSUwangj.github.io/2018-12-22-Daily-Challenge/</id>
     <published>2018-12-21T17:04:40.000Z</published>
-    <updated>2018-12-23T06:07:50.101Z</updated>
+    <updated>2018-12-29T06:44:59.137Z</updated>
     
     <summary type="html">
     
@@ -251,7 +277,7 @@
     <link href="http://CSUwangj.github.io/2018-12-21-Daily-Challenge/"/>
     <id>http://CSUwangj.github.io/2018-12-21-Daily-Challenge/</id>
     <published>2018-12-20T16:00:46.000Z</published>
-    <updated>2018-12-22T05:59:20.483Z</updated>
+    <updated>2018-12-29T06:43:26.108Z</updated>
     
     <summary type="html">
     
@@ -281,7 +307,7 @@
     <link href="http://CSUwangj.github.io/2018-12-20-Daily-Challenge/"/>
     <id>http://CSUwangj.github.io/2018-12-20-Daily-Challenge/</id>
     <published>2018-12-19T16:09:07.000Z</published>
-    <updated>2018-12-20T11:58:18.789Z</updated>
+    <updated>2018-12-29T06:44:21.130Z</updated>
     
     <summary type="html">
     
@@ -310,7 +336,7 @@
     <link href="http://CSUwangj.github.io/2018-12-19-Daily-Challenge/"/>
     <id>http://CSUwangj.github.io/2018-12-19-Daily-Challenge/</id>
     <published>2018-12-19T03:00:09.000Z</published>
-    <updated>2018-12-20T11:58:32.386Z</updated>
+    <updated>2018-12-29T06:44:34.853Z</updated>
     
     <summary type="html">
     
@@ -604,32 +630,6 @@
       <category term="Crypto" scheme="http://CSUwangj.github.io/tags/Crypto/"/>
     
       <category term="ACM" scheme="http://CSUwangj.github.io/tags/ACM/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>AFCTF2018-Crypto_OfficialWriteUp</title>
-    <link href="http://CSUwangj.github.io/AFCTF2018-Crypto-OfficialWriteUp/"/>
-    <id>http://CSUwangj.github.io/AFCTF2018-Crypto-OfficialWriteUp/</id>
-    <published>2018-05-21T06:46:15.000Z</published>
-    <updated>2018-08-01T16:28:25.181Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;最后四个题没人做出来&lt;/p&gt;
-&lt;p&gt;题目丢到了github，欢迎来玩~&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://github.com/CSUwangj/AFCTF2018-Crypto&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://github.com/CSUwangj/AFCTF2018-Crypto&lt;/a&gt;&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="WriteUp" scheme="http://CSUwangj.github.io/categories/WriteUp/"/>
-    
-    
-      <category term="CTF" scheme="http://CSUwangj.github.io/tags/CTF/"/>
-    
-      <category term="Crypto" scheme="http://CSUwangj.github.io/tags/Crypto/"/>
-    
-      <category term="Misc" scheme="http://CSUwangj.github.io/tags/Misc/"/>
     
   </entry>
   
