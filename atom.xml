@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://CSUwangj.github.io/"/>
-  <updated>2018-12-29T02:39:56.095Z</updated>
+  <updated>2018-12-30T13:32:30.442Z</updated>
   <id>http://CSUwangj.github.io/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="http://CSUwangj.github.io/%E5%8D%9A%E6%96%87%E6%95%B4%E7%90%86/"/>
     <id>http://CSUwangj.github.io/博文整理/</id>
     <published>8102-12-19T02:36:02.000Z</published>
-    <updated>2018-12-29T02:39:56.095Z</updated>
+    <updated>2018-12-30T13:32:30.442Z</updated>
     
     <summary type="html">
     
@@ -31,6 +31,32 @@
     
       <category term="Notes" scheme="http://CSUwangj.github.io/categories/Notes/"/>
     
+    
+  </entry>
+  
+  <entry>
+    <title>2018-12-31 Daily Challenge</title>
+    <link href="http://CSUwangj.github.io/2018-12-31-Daily-Challenge/"/>
+    <id>http://CSUwangj.github.io/2018-12-31-Daily-Challenge/</id>
+    <published>2018-12-30T16:04:27.000Z</published>
+    <updated>2018-12-30T16:23:22.211Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;What I&amp;#39;ve done today is &lt;em&gt;Largest product in a grid&lt;/em&gt; in &lt;em&gt;Rust&lt;/em&gt; and &lt;em&gt;Best Time to Buy and Reveal Cards In Increasing Order&lt;/em&gt; in &lt;em&gt;JavaScript&lt;/em&gt;.&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="DailyChallenge" scheme="http://CSUwangj.github.io/categories/DailyChallenge/"/>
+    
+    
+      <category term="Math" scheme="http://CSUwangj.github.io/tags/Math/"/>
+    
+      <category term="Algorithm" scheme="http://CSUwangj.github.io/tags/Algorithm/"/>
+    
+      <category term="LeetCode" scheme="http://CSUwangj.github.io/tags/LeetCode/"/>
+    
+      <category term="ProjectEuler" scheme="http://CSUwangj.github.io/tags/ProjectEuler/"/>
     
   </entry>
   
@@ -608,28 +634,6 @@
       <category term="CTF" scheme="http://CSUwangj.github.io/tags/CTF/"/>
     
       <category term="environment" scheme="http://CSUwangj.github.io/tags/environment/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>关于散列函数的一点思考</title>
-    <link href="http://CSUwangj.github.io/%E5%85%B3%E4%BA%8E%E6%95%A3%E5%88%97%E5%87%BD%E6%95%B0%E7%9A%84%E4%B8%80%E7%82%B9%E6%80%9D%E8%80%83/"/>
-    <id>http://CSUwangj.github.io/关于散列函数的一点思考/</id>
-    <published>2018-06-02T17:35:47.000Z</published>
-    <updated>2018-07-30T02:00:33.661Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;今天在ACM群灌水的时候因为一个题目引发了一些思考，题目是&lt;a href=&quot;http://qscoj.cn/#/contest/show/220&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;比赛链接&lt;/a&gt;的A题&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="Notes" scheme="http://CSUwangj.github.io/categories/Notes/"/>
-    
-    
-      <category term="Crypto" scheme="http://CSUwangj.github.io/tags/Crypto/"/>
-    
-      <category term="ACM" scheme="http://CSUwangj.github.io/tags/ACM/"/>
     
   </entry>
   
