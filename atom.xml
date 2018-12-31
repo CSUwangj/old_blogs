@@ -35,6 +35,33 @@
   </entry>
   
   <entry>
+    <title>2019-01-01 Daily Challenge</title>
+    <link href="http://CSUwangj.github.io/2019-01-01-Daily-Challenge/"/>
+    <id>http://CSUwangj.github.io/2019-01-01-Daily-Challenge/</id>
+    <published>2018-12-31T19:50:53.000Z</published>
+    <updated>2018-12-31T20:21:03.919Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;strong&gt;HAPPY NEW YEAR!&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;What I&amp;#39;ve done today is &lt;em&gt;Highly divisible triangular number&lt;/em&gt; in &lt;em&gt;Rust&lt;/em&gt; and &lt;em&gt;Same Tree&lt;/em&gt; in &lt;em&gt;JavaScript&lt;/em&gt;.&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="DailyChallenge" scheme="http://CSUwangj.github.io/categories/DailyChallenge/"/>
+    
+    
+      <category term="Math" scheme="http://CSUwangj.github.io/tags/Math/"/>
+    
+      <category term="Algorithm" scheme="http://CSUwangj.github.io/tags/Algorithm/"/>
+    
+      <category term="LeetCode" scheme="http://CSUwangj.github.io/tags/LeetCode/"/>
+    
+      <category term="ProjectEuler" scheme="http://CSUwangj.github.io/tags/ProjectEuler/"/>
+    
+  </entry>
+  
+  <entry>
     <title>2018-12-31 Daily Challenge</title>
     <link href="http://CSUwangj.github.io/2018-12-31-Daily-Challenge/"/>
     <id>http://CSUwangj.github.io/2018-12-31-Daily-Challenge/</id>
@@ -585,55 +612,6 @@
     
     
       <category term="PWN" scheme="http://CSUwangj.github.io/tags/PWN/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>CTF用环境搭建</title>
-    <link href="http://CSUwangj.github.io/CTF%E7%94%A8%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/"/>
-    <id>http://CSUwangj.github.io/CTF用环境搭建/</id>
-    <published>2018-07-20T06:57:49.000Z</published>
-    <updated>2018-08-02T04:22:03.940Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;目前工具集合&quot;&gt;&lt;a href=&quot;#目前工具集合&quot; class=&quot;headerlink&quot; title=&quot;目前工具集合&quot;&gt;&lt;/a&gt;目前工具集合&lt;/h1&gt;&lt;h2 id=&quot;环境&quot;&gt;&lt;a href=&quot;#环境&quot; class=&quot;headerlink&quot; title=&quot;环境&quot;&gt;&lt;/a&gt;环境&lt;/h2&gt;&lt;ul&gt;
-&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot; checked&gt; 86架构及基本库&lt;/li&gt;
-&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot; checked&gt; wine32&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;安装式&quot;&gt;&lt;a href=&quot;#安装式&quot; class=&quot;headerlink&quot; title=&quot;安装式&quot;&gt;&lt;/a&gt;安装式&lt;/h2&gt;&lt;p&gt;这里的话就是那种安装以后直接用的，也有的是插件&lt;/p&gt;
-&lt;ul&gt;
-&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot; checked&gt; pwndbg&lt;/li&gt;
-&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot; checked&gt; r2&lt;/li&gt;
-&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot; checked&gt; Audacity&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;非安装式&quot;&gt;&lt;a href=&quot;#非安装式&quot; class=&quot;headerlink&quot; title=&quot;非安装式&quot;&gt;&lt;/a&gt;非安装式&lt;/h2&gt;&lt;p&gt;这里的是不用/不能安装的库，比如脚本等&lt;/p&gt;
-&lt;p&gt;统一放置在/opt/目录下，可能根据类别再分&lt;/p&gt;
-&lt;ul&gt;
-&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot; checked&gt; rsatool&lt;/li&gt;
-&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot; checked&gt; cloacked-pixel&lt;/li&gt;
-&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot; checked&gt; volatility&lt;/li&gt;
-&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot; checked&gt; routerpassview&lt;/li&gt;
-&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot; checked&gt; Stegsolve &lt;/li&gt;
-&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot;&gt; CTFcrackTools&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;Python库&quot;&gt;&lt;a href=&quot;#Python库&quot; class=&quot;headerlink&quot; title=&quot;Python库&quot;&gt;&lt;/a&gt;Python库&lt;/h2&gt;&lt;ul&gt;
-&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot; checked&gt; pwntools&lt;/li&gt;
-&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot; checked&gt; gmpy2&lt;/li&gt;
-&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot; checked&gt; unicorn&lt;/li&gt;
-&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot; checked&gt; zio&lt;/li&gt;
-&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot; checked&gt; angr&lt;/li&gt;
-&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot; checked&gt; request &lt;/li&gt;
-&lt;/ul&gt;
-    
-    </summary>
-    
-      <category term="Notes" scheme="http://CSUwangj.github.io/categories/Notes/"/>
-    
-    
-      <category term="CTF" scheme="http://CSUwangj.github.io/tags/CTF/"/>
-    
-      <category term="environment" scheme="http://CSUwangj.github.io/tags/environment/"/>
     
   </entry>
   
