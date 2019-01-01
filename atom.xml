@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://CSUwangj.github.io/"/>
-  <updated>2018-12-30T13:32:30.442Z</updated>
+  <updated>2019-01-01T16:50:34.615Z</updated>
   <id>http://CSUwangj.github.io/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="http://CSUwangj.github.io/%E5%8D%9A%E6%96%87%E6%95%B4%E7%90%86/"/>
     <id>http://CSUwangj.github.io/博文整理/</id>
     <published>8102-12-19T02:36:02.000Z</published>
-    <updated>2018-12-30T13:32:30.442Z</updated>
+    <updated>2019-01-01T16:50:34.615Z</updated>
     
     <summary type="html">
     
@@ -31,6 +31,32 @@
     
       <category term="Notes" scheme="http://CSUwangj.github.io/categories/Notes/"/>
     
+    
+  </entry>
+  
+  <entry>
+    <title>2019-01-02 Daily Challenge</title>
+    <link href="http://CSUwangj.github.io/2019-01-02-Daily-Challenge/"/>
+    <id>http://CSUwangj.github.io/2019-01-02-Daily-Challenge/</id>
+    <published>2019-01-01T16:09:02.000Z</published>
+    <updated>2019-01-01T16:50:02.661Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;What I&amp;#39;ve done today is &lt;em&gt;Large sum&lt;/em&gt; in &lt;em&gt;Rust&lt;/em&gt; and &lt;em&gt;Same Tree&lt;/em&gt; in &lt;em&gt;JavaScript&lt;/em&gt;.&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="DailyChallenge" scheme="http://CSUwangj.github.io/categories/DailyChallenge/"/>
+    
+    
+      <category term="Math" scheme="http://CSUwangj.github.io/tags/Math/"/>
+    
+      <category term="Algorithm" scheme="http://CSUwangj.github.io/tags/Algorithm/"/>
+    
+      <category term="LeetCode" scheme="http://CSUwangj.github.io/tags/LeetCode/"/>
+    
+      <category term="ProjectEuler" scheme="http://CSUwangj.github.io/tags/ProjectEuler/"/>
     
   </entry>
   
@@ -221,8 +247,8 @@
     <title>2018-12-25 Daily Challenge</title>
     <link href="http://CSUwangj.github.io/2018-12-25-Daily-Challenge/"/>
     <id>http://CSUwangj.github.io/2018-12-25-Daily-Challenge/</id>
-    <published>2018-12-24T13:04:34.000Z</published>
-    <updated>2018-12-29T06:45:35.274Z</updated>
+    <published>2018-12-25T13:04:34.000Z</published>
+    <updated>2018-12-31T20:24:05.526Z</updated>
     
     <summary type="html">
     
@@ -592,26 +618,6 @@
       <category term="heapoverflow" scheme="http://CSUwangj.github.io/tags/heapoverflow/"/>
     
       <category term="unlink" scheme="http://CSUwangj.github.io/tags/unlink/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>在pip连不上网的时候安装pwntools</title>
-    <link href="http://CSUwangj.github.io/%E5%9C%A8pip%E8%BF%9E%E4%B8%8D%E4%B8%8A%E7%BD%91%E7%9A%84%E6%97%B6%E5%80%99%E5%AE%89%E8%A3%85pwntools/"/>
-    <id>http://CSUwangj.github.io/在pip连不上网的时候安装pwntools/</id>
-    <published>2018-07-21T06:38:02.000Z</published>
-    <updated>2018-07-30T02:00:33.663Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;本文描述了这样一种特殊情况下安装pwntools的解决方案：有方法联网，但是pip连不上网。 &lt;/p&gt;
-    
-    </summary>
-    
-      <category term="Notes" scheme="http://CSUwangj.github.io/categories/Notes/"/>
-    
-    
-      <category term="PWN" scheme="http://CSUwangj.github.io/tags/PWN/"/>
     
   </entry>
   
