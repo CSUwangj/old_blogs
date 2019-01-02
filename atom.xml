@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://CSUwangj.github.io/"/>
-  <updated>2019-01-01T16:50:34.615Z</updated>
+  <updated>2019-01-02T16:04:26.094Z</updated>
   <id>http://CSUwangj.github.io/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="http://CSUwangj.github.io/%E5%8D%9A%E6%96%87%E6%95%B4%E7%90%86/"/>
     <id>http://CSUwangj.github.io/博文整理/</id>
     <published>8102-12-19T02:36:02.000Z</published>
-    <updated>2019-01-01T16:50:34.615Z</updated>
+    <updated>2019-01-02T16:04:26.094Z</updated>
     
     <summary type="html">
     
@@ -35,15 +35,41 @@
   </entry>
   
   <entry>
+    <title>2019-01-03 Daily Challenge</title>
+    <link href="http://CSUwangj.github.io/2019-01-03-Daily-Challenge/"/>
+    <id>http://CSUwangj.github.io/2019-01-03-Daily-Challenge/</id>
+    <published>2019-01-02T16:04:05.000Z</published>
+    <updated>2019-01-02T16:08:58.634Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;What I&amp;#39;ve done today is &lt;em&gt;Longest Collatz sequence&lt;/em&gt; in &lt;em&gt;Rust&lt;/em&gt; and &lt;em&gt;Permutation Sequence&lt;/em&gt; in &lt;em&gt;JavaScript&lt;/em&gt;.&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="DailyChallenge" scheme="http://CSUwangj.github.io/categories/DailyChallenge/"/>
+    
+    
+      <category term="Math" scheme="http://CSUwangj.github.io/tags/Math/"/>
+    
+      <category term="Algorithm" scheme="http://CSUwangj.github.io/tags/Algorithm/"/>
+    
+      <category term="LeetCode" scheme="http://CSUwangj.github.io/tags/LeetCode/"/>
+    
+      <category term="ProjectEuler" scheme="http://CSUwangj.github.io/tags/ProjectEuler/"/>
+    
+  </entry>
+  
+  <entry>
     <title>2019-01-02 Daily Challenge</title>
     <link href="http://CSUwangj.github.io/2019-01-02-Daily-Challenge/"/>
     <id>http://CSUwangj.github.io/2019-01-02-Daily-Challenge/</id>
     <published>2019-01-01T16:09:02.000Z</published>
-    <updated>2019-01-01T16:50:02.661Z</updated>
+    <updated>2019-01-01T16:53:07.310Z</updated>
     
     <summary type="html">
     
-      &lt;p&gt;What I&amp;#39;ve done today is &lt;em&gt;Large sum&lt;/em&gt; in &lt;em&gt;Rust&lt;/em&gt; and &lt;em&gt;Same Tree&lt;/em&gt; in &lt;em&gt;JavaScript&lt;/em&gt;.&lt;/p&gt;
+      &lt;p&gt;What I&amp;#39;ve done today is &lt;em&gt;Large sum&lt;/em&gt; in &lt;em&gt;Rust&lt;/em&gt; and &lt;em&gt;Subdomain Visit Count&lt;/em&gt; in &lt;em&gt;JavaScript&lt;/em&gt;.&lt;/p&gt;
     
     </summary>
     
@@ -92,11 +118,11 @@
     <link href="http://CSUwangj.github.io/2018-12-31-Daily-Challenge/"/>
     <id>http://CSUwangj.github.io/2018-12-31-Daily-Challenge/</id>
     <published>2018-12-30T16:04:27.000Z</published>
-    <updated>2018-12-30T16:23:22.211Z</updated>
+    <updated>2019-01-01T16:52:49.644Z</updated>
     
     <summary type="html">
     
-      &lt;p&gt;What I&amp;#39;ve done today is &lt;em&gt;Largest product in a grid&lt;/em&gt; in &lt;em&gt;Rust&lt;/em&gt; and &lt;em&gt;Best Time to Buy and Reveal Cards In Increasing Order&lt;/em&gt; in &lt;em&gt;JavaScript&lt;/em&gt;.&lt;/p&gt;
+      &lt;p&gt;What I&amp;#39;ve done today is &lt;em&gt;Largest product in a grid&lt;/em&gt; in &lt;em&gt;Rust&lt;/em&gt; and &lt;em&gt;Reveal Cards In Increasing Order&lt;/em&gt; in &lt;em&gt;JavaScript&lt;/em&gt;.&lt;/p&gt;
     
     </summary>
     
@@ -559,65 +585,6 @@
       <category term="stackoverflow" scheme="http://CSUwangj.github.io/tags/stackoverflow/"/>
     
       <category term="mitigation" scheme="http://CSUwangj.github.io/tags/mitigation/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Exploit-Exercise_Protostar全攻略+解析</title>
-    <link href="http://CSUwangj.github.io/Exploit-Exercise-Protostar%E5%85%A8%E6%94%BB%E7%95%A5-%E8%A7%A3%E6%9E%90/"/>
-    <id>http://CSUwangj.github.io/Exploit-Exercise-Protostar全攻略-解析/</id>
-    <published>2018-07-22T06:46:15.000Z</published>
-    <updated>2018-08-23T02:54:35.685Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;目前进度：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot; checked&gt; Stack 0&lt;/li&gt;
-&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot; checked&gt; Stack 1&lt;/li&gt;
-&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot; checked&gt; Stack 2&lt;/li&gt;
-&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot; checked&gt; Stack 3&lt;/li&gt;
-&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot;&gt; 小结一：C/C++程序中的栈&lt;/li&gt;
-&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot; checked&gt; Stack 4&lt;/li&gt;
-&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot;&gt; 小结二：EIP能好怎&lt;/li&gt;
-&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot; checked&gt; Stack 5&lt;/li&gt;
-&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot;&gt; 小结三：shellcode&lt;/li&gt;
-&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot; checked&gt; Stack 6&lt;/li&gt;
-&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot; checked&gt; Stack 7&lt;/li&gt;
-&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot; checked&gt; Format 0&lt;/li&gt;
-&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot; checked&gt; Format 1&lt;/li&gt;
-&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot; checked&gt; Format 2&lt;/li&gt;
-&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot; checked&gt; Format 3&lt;/li&gt;
-&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot; checked&gt; Format 4&lt;/li&gt;
-&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot;&gt; 小结四：格式化字符串&lt;/li&gt;
-&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot; checked&gt; Heap 0&lt;/li&gt;
-&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot; checked&gt; Heap 1&lt;/li&gt;
-&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot; checked&gt; Heap 2&lt;/li&gt;
-&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot; checked&gt; Heap 3&lt;/li&gt;
-&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot; checked&gt; Net 0&lt;/li&gt;
-&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot; checked&gt; Net 1&lt;/li&gt;
-&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot; checked&gt; Net 2&lt;/li&gt;
-&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot; checked&gt; Final 0&lt;/li&gt;
-&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot; checked&gt; Final 1&lt;/li&gt;
-&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot; checked&gt; Final 2&lt;/li&gt;
-&lt;/ul&gt;
-    
-    </summary>
-    
-      <category term="Notes" scheme="http://CSUwangj.github.io/categories/Notes/"/>
-    
-    
-      <category term="WARGAME" scheme="http://CSUwangj.github.io/tags/WARGAME/"/>
-    
-      <category term="PWN" scheme="http://CSUwangj.github.io/tags/PWN/"/>
-    
-      <category term="stackoverflow" scheme="http://CSUwangj.github.io/tags/stackoverflow/"/>
-    
-      <category term="formatstring" scheme="http://CSUwangj.github.io/tags/formatstring/"/>
-    
-      <category term="heapoverflow" scheme="http://CSUwangj.github.io/tags/heapoverflow/"/>
-    
-      <category term="unlink" scheme="http://CSUwangj.github.io/tags/unlink/"/>
     
   </entry>
   
