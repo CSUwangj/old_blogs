@@ -9,6 +9,20 @@
       </categories>
   </entry>
   <entry>
+    <title><![CDATA[2019-01-04 Daily Challenge]]></title>
+    <url>%2F2019-01-04-Daily-Challenge%2F</url>
+    <content type="text"><![CDATA[What I&#39;ve done today is Lattice paths in Rust and Robot Return to Origin in JavaScript. MathProblem12345678Lattice pathsProblem 15 Starting in the top left corner of a 2×2 grid, and only being able to move to the right and down, there are exactly 6 routes to the bottom right corner.How many such routes are there through a 20×20 grid? SolutionTo a $n*n$ grid, the answer is $C_{2n}^{n}$. Implementation123456789101112131415161718extern crate num_bigint;extern crate num_traits;use num_bigint::&#123;BigUint&#125;;use num_traits::&#123;One&#125;;fn main() &#123; let mut f1: BigUint = One::one(); for i in 21u32..41u32 &#123; let f2 = BigUint::from(i); f1 = f1 * &amp;f2; &#125; for i in 1u32..21u32 &#123; let f2 = BigUint::from(i); f1 = f1 / &amp;f2; &#125; println!("Answer is &#123;&#125;", f1.to_str_radix(10));&#125; AlgorithmProblem1234567891011121314151617181920657. Robot Return to OriginThere is a robot starting at position (0, 0), the origin, on a 2D plane. Given a sequence of its moves, judge if this robot ends up at (0, 0) after it completes its moves.The move sequence is represented by a string, and the character moves[i] represents its ith move. Valid moves are R (right), L (left), U (up), and D (down). If the robot returns to the origin after it finishes all of its moves, return true. Otherwise, return false.Note: The way that the robot is &quot;facing&quot; is irrelevant. &quot;R&quot; will always make the robot move to the right once, &quot;L&quot; will always make it move left, etc. Also, assume that the magnitude of the robot&apos;s movement is the same for each move.Example 1:Input: &quot;UD&quot;Output: true Explanation: The robot moves up once, and then down once. All moves have the same magnitude, so it ended up at the origin where it started. Therefore, we return true. Example 2:Input: &quot;LL&quot;Output: falseExplanation: The robot moves left twice. It ends up two &quot;moves&quot; to the left of the origin. We return false because it is not at the origin at the end of its moves. SolutionNothing to say. Implemtation123456789101112131415/** * @param &#123;string&#125; moves * @return &#123;boolean&#125; */var judgeCircle = function(moves) &#123; let up = 0; let left = 0; for(const i of moves)&#123; if(i === "L") left++; else if(i === "R") left--; else if(i === "U") up++; else up--; &#125; return up==left&amp;&amp;up==0;&#125;;]]></content>
+      <categories>
+        <category>DailyChallenge</category>
+      </categories>
+      <tags>
+        <tag>Math</tag>
+        <tag>Algorithm</tag>
+        <tag>LeetCode</tag>
+        <tag>ProjectEuler</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[2019-01-03 Daily Challenge]]></title>
     <url>%2F2019-01-03-Daily-Challenge%2F</url>
     <content type="text"><![CDATA[What I&#39;ve done today is Longest Collatz sequence in Rust and Permutation Sequence in JavaScript. MathProblem1234567891011121314151617Longest Collatz sequenceProblem 14 The following iterative sequence is defined for the set of positive integers:n → n/2 (n is even)n → 3n + 1 (n is odd)Using the rule above and starting with 13, we generate the following sequence:13 → 40 → 20 → 10 → 5 → 16 → 8 → 4 → 2 → 1It can be seen that this sequence (starting at 13 and finishing at 1) contains 10 terms. Although it has not been proved yet (Collatz Problem), it is thought that all starting numbers finish at 1.Which starting number, under one million, produces the longest chain?NOTE: Once the chain starts the terms are allowed to go above one million. SolutionBrute force, and you&#39;ll find that every number less than half a million can be get with its double, and therefore in a definitely longer chain. Implementation123456789101112131415161718192021fn main() &#123; let mut ans = 0; let mut cnt = 0; for i in 500_000u64..1_000_000u64 &#123; let mut tmp = i; let mut tcnt = 0; while tmp != 1 &#123; if tmp%2 == 0 &#123; tmp /=2; &#125; else &#123; tmp = tmp * 3 + 1; &#125; tcnt += 1; &#125; if tcnt &gt; cnt &#123; ans = i; cnt = tcnt; &#125; &#125; println!("Answer is &#123;&#125;", ans);&#125; AlgorithmProblem123456789101112131415161718192021222324252660. Permutation SequenceThe set [1,2,3,...,n] contains a total of n! unique permutations.By listing and labeling all of the permutations in order, we get the following sequence for n = 3:&quot;123&quot;&quot;132&quot;&quot;213&quot;&quot;231&quot;&quot;312&quot;&quot;321&quot;Given n and k, return the kth permutation sequence.Note:Given n will be between 1 and 9 inclusive.Given k will be between 1 and n! inclusive.Example 1:Input: n = 3, k = 3Output: &quot;213&quot;Example 2:Input: n = 4, k = 9Output: &quot;2314&quot; SolutionI&#39;m too tired doing my project to explain it... Sry for delay. Implementation12345678910111213141516171819202122232425262728293031/** * @param &#123;number&#125; n * @param &#123;number&#125; k * @return &#123;string&#125; */var getPermutation = function(n, k) &#123; k -= 1; let fac = [1, 1, 2, 6, 24, 120, 720, 5040, 40320, 369880]; let used = new Array(n); let nums = new Array(); let ans = ""; for(let i = 1; i &lt;= n ; ++i)&#123; nums.push(i); &#125; let cur = n - 1; while(cur &gt;= 0) &#123; let index = Math.floor(k/fac[cur]); k %= fac[cur]; for(const [i, v] of nums.entries())&#123; if(used[i] === undefined)&#123; if(index) --index; else &#123;ans += v; used[i] = 1; break;&#125; &#125; &#125; --cur; &#125; return ans;&#125;;// console.log(getPermutation(3,3));// console.log(getPermutation(4,9));]]></content>
@@ -352,8 +366,8 @@
         <tag>Misc</tag>
         <tag>Crypto</tag>
         <tag>PWN</tag>
-        <tag>Web</tag>
         <tag>Rev</tag>
+        <tag>Web</tag>
       </tags>
   </entry>
   <entry>
@@ -459,8 +473,8 @@
         <tag>Misc</tag>
         <tag>Crypto</tag>
         <tag>PWN</tag>
-        <tag>Web</tag>
         <tag>Rev</tag>
+        <tag>Web</tag>
       </tags>
   </entry>
   <entry>

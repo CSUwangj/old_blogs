@@ -35,6 +35,32 @@
   </entry>
   
   <entry>
+    <title>2019-01-04 Daily Challenge</title>
+    <link href="http://CSUwangj.github.io/2019-01-04-Daily-Challenge/"/>
+    <id>http://CSUwangj.github.io/2019-01-04-Daily-Challenge/</id>
+    <published>2019-01-04T06:50:05.000Z</published>
+    <updated>2019-01-04T07:37:54.394Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;What I&amp;#39;ve done today is &lt;em&gt;Lattice paths&lt;/em&gt; in &lt;em&gt;Rust&lt;/em&gt; and &lt;em&gt;Robot Return to Origin&lt;/em&gt; in &lt;em&gt;JavaScript&lt;/em&gt;.&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="DailyChallenge" scheme="http://CSUwangj.github.io/categories/DailyChallenge/"/>
+    
+    
+      <category term="Math" scheme="http://CSUwangj.github.io/tags/Math/"/>
+    
+      <category term="Algorithm" scheme="http://CSUwangj.github.io/tags/Algorithm/"/>
+    
+      <category term="LeetCode" scheme="http://CSUwangj.github.io/tags/LeetCode/"/>
+    
+      <category term="ProjectEuler" scheme="http://CSUwangj.github.io/tags/ProjectEuler/"/>
+    
+  </entry>
+  
+  <entry>
     <title>2019-01-03 Daily Challenge</title>
     <link href="http://CSUwangj.github.io/2019-01-03-Daily-Challenge/"/>
     <id>http://CSUwangj.github.io/2019-01-03-Daily-Challenge/</id>
@@ -542,49 +568,6 @@
     
     
       <category term="Notes" scheme="http://CSUwangj.github.io/tags/Notes/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Exploit-Exercise_Fusion全攻略+解析</title>
-    <link href="http://CSUwangj.github.io/Exploit-Exercise-Fusion%E5%85%A8%E6%94%BB%E7%95%A5-%E8%A7%A3%E6%9E%90/"/>
-    <id>http://CSUwangj.github.io/Exploit-Exercise-Fusion全攻略-解析/</id>
-    <published>2018-08-02T17:31:36.000Z</published>
-    <updated>2018-08-09T09:33:08.651Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;目前进度：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot; checked&gt; Level 00&lt;/li&gt;
-&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot;&gt; Level 01&lt;/li&gt;
-&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot;&gt; Level 02&lt;/li&gt;
-&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot;&gt; Level 03&lt;/li&gt;
-&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot;&gt; Level 04&lt;/li&gt;
-&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot;&gt; Level 05&lt;/li&gt;
-&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot;&gt; Level 06&lt;/li&gt;
-&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot;&gt; Level 07&lt;/li&gt;
-&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot;&gt; Level 08&lt;/li&gt;
-&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot;&gt; Level 09&lt;/li&gt;
-&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot;&gt; Level 10&lt;/li&gt;
-&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot;&gt; Level 11&lt;/li&gt;
-&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot;&gt; Level 12&lt;/li&gt;
-&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot;&gt; Level 13&lt;/li&gt;
-&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot;&gt; Level 14&lt;/li&gt;
-&lt;/ul&gt;
-    
-    </summary>
-    
-      <category term="Notes" scheme="http://CSUwangj.github.io/categories/Notes/"/>
-    
-    
-      <category term="WARGAME" scheme="http://CSUwangj.github.io/tags/WARGAME/"/>
-    
-      <category term="PWN" scheme="http://CSUwangj.github.io/tags/PWN/"/>
-    
-      <category term="stackoverflow" scheme="http://CSUwangj.github.io/tags/stackoverflow/"/>
-    
-      <category term="mitigation" scheme="http://CSUwangj.github.io/tags/mitigation/"/>
     
   </entry>
   
