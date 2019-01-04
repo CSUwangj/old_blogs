@@ -3,10 +3,24 @@
   <entry>
     <title><![CDATA[博文整理]]></title>
     <url>%2F%E5%8D%9A%E6%96%87%E6%95%B4%E7%90%86%2F</url>
-    <content type="text"><![CDATA[打算专门搞个整理用的东西，顺便可以看看自己有多少挖完没填的坑。 Daily Challenge 2018-12-19 Daily Challenge 2018-12-20 Daily Challenge 2018-12-21 Daily Challenge 2018-12-22 Daily Challenge 2018-12-23 Daily Challenge 2018-12-24 Daily Challenge 2018-12-25 Daily Challenge 2018-12-26 Daily Challenge 2018-12-27 Daily Challenge 2018-12-28 Daily Challenge 2018-12-29 Daily Challenge 2018-12-30 Daily Challenge 2018-12-31 Daily Challenge 2019-01-01 Daily Challenge 2019-01-02 Daily Challenge 2019-01-03 Daily Challenge Series Cryptography_Engineering_Exercise（暂时不打算填） OverTheWire-Bandit全攻略+解析（暂时不打算填） Exploit-Exercise_Fusion全攻略+解析（有弃坑的想法） Exploit-Exercise_Protostar全攻略+解析（EXP放完了，解析暂时不打算填） 逆向工程核心原理学习笔记（一）（还没开始就已经想弃坑了） PWN学习记录（短时间不可能填了） id0-rsa WP合集（暂时不打算填） WriteUp AFCTF2018-Crypto_OfficialWriteUp（完结） JarvisOJ-WP合集（弃坑） HGAME2018-week2部分WP HGAME2018-week1WP HIT2018新生赛部分WP Tools 在pip连不上网的时候安装pwntools CTF用环境搭建 安装式工具集合 轻工具个人集合 CTF轻工具个人集合 Other 关于散列函数的一点思考]]></content>
+    <content type="text"><![CDATA[打算专门搞个整理用的东西，顺便可以看看自己有多少挖完没填的坑。 Daily Challenge 2018-12-19 Daily Challenge 2018-12-20 Daily Challenge 2018-12-21 Daily Challenge 2018-12-22 Daily Challenge 2018-12-23 Daily Challenge 2018-12-24 Daily Challenge 2018-12-25 Daily Challenge 2018-12-26 Daily Challenge 2018-12-27 Daily Challenge 2018-12-28 Daily Challenge 2018-12-29 Daily Challenge 2018-12-30 Daily Challenge 2018-12-31 Daily Challenge 2019-01-01 Daily Challenge 2019-01-02 Daily Challenge 2019-01-03 Daily Challenge 2019-01-04 Daily Challenge 2019-01-05 Daily Challenge Series Cryptography_Engineering_Exercise（暂时不打算填） OverTheWire-Bandit全攻略+解析（暂时不打算填） Exploit-Exercise_Fusion全攻略+解析（有弃坑的想法） Exploit-Exercise_Protostar全攻略+解析（EXP放完了，解析暂时不打算填） 逆向工程核心原理学习笔记（一）（还没开始就已经想弃坑了） PWN学习记录（短时间不可能填了） id0-rsa WP合集（暂时不打算填） WriteUp AFCTF2018-Crypto_OfficialWriteUp（完结） JarvisOJ-WP合集（弃坑） HGAME2018-week2部分WP HGAME2018-week1WP HIT2018新生赛部分WP Tools 在pip连不上网的时候安装pwntools CTF用环境搭建 安装式工具集合 轻工具个人集合 CTF轻工具个人集合 Other 关于散列函数的一点思考]]></content>
       <categories>
         <category>Notes</category>
       </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[2019-01-05 Daily Challenge]]></title>
+    <url>%2F2019-01-05-Daily-Challenge%2F</url>
+    <content type="text"><![CDATA[What I&#39;ve done today is Lattice paths in Rust and Robot Return to Origin in JavaScript. MathProblem1234567Power digit sumProblem 16 2^15 = 32768 and the sum of its digits is 3 + 2 + 7 + 6 + 8 = 26.What is the sum of the digits of the number 2^1000? SolutionNothing to say. Implementation12345678910111213141516extern crate num_bigint;use num_bigint::&#123;BigInt&#125;;use std::ops::Shl;fn main() &#123; let mut num: BigInt = BigInt::from(1u32); num = num.shl(1000 as usize); let num = num.to_str_radix(10); let mut ans = 0; const MINES: i32 = 48; for i in num.chars() &#123; ans += (i as i32) - MINES; &#125; println!("Answer is &#123;&#125;", ans);&#125; AlgorithmProblem12345678910111213141516171819777. Swap Adjacent in LR StringIn a string composed of &apos;L&apos;, &apos;R&apos;, and &apos;X&apos; characters, like &quot;RXXLRXRXL&quot;, a move consists of either replacing one occurrence of &quot;XL&quot; with &quot;LX&quot;, or replacing one occurrence of &quot;RX&quot; with &quot;XR&quot;. Given the starting string start and the ending string end, return True if and only if there exists a sequence of moves to transform one string to the other.Example:Input: start = &quot;RXXLRXRXL&quot;, end = &quot;XRLXXRRLX&quot;Output: TrueExplanation:We can transform start to end following these steps:RXXLRXRXL -&gt;XRXLRXRXL -&gt;XRLXRXRXL -&gt;XRLXXRRXL -&gt;XRLXXRRLXNote:1 &lt;= len(start) = len(end) &lt;= 10000.Both start and end will only consist of characters in &#123;&apos;L&apos;, &apos;R&apos;, &apos;X&apos;&#125;. SolutionWe could observe these pattern: Any one &quot;L&quot; and another &quot;R&quot; won&#39;t change their relative position. Position of &quot;L&quot;s only can be more left, &quot;R&quot; only can be more right. Implementation1234567891011121314151617181920212223242526272829303132/** * @param &#123;string&#125; start * @param &#123;string&#125; end * @return &#123;boolean&#125; */var canTransform = function(start, end) &#123; let fset = []; let fpos = []; let sset = []; let spos = []; for(let i = 0, l = start.length; i &lt; l; ++i)&#123; if(start[i] != "X")&#123; fset.push(start[i]); fpos.push(i); &#125; &#125; for(let i = 0, l = start.length; i &lt; l; ++i)&#123; if(end[i] != "X")&#123; sset.push(end[i]); spos.push(i); &#125; &#125; if(fset.length != sset.length) return false; for(let i = 0, l = fset.length; i &lt; l; ++i)&#123; if(fset[i] != sset[i]|| (fset[i] == "L" &amp;&amp; fpos[i] &lt; spos[i])|| (fset[i] == "R" &amp;&amp; fpos[i] &gt; spos[i]))&#123; return false; &#125; &#125; return true;&#125;;]]></content>
+      <categories>
+        <category>DailyChallenge</category>
+      </categories>
+      <tags>
+        <tag>Math</tag>
+        <tag>Algorithm</tag>
+        <tag>LeetCode</tag>
+        <tag>ProjectEuler</tag>
+      </tags>
   </entry>
   <entry>
     <title><![CDATA[2019-01-04 Daily Challenge]]></title>
@@ -349,9 +363,9 @@
         <category>WriteUp</category>
       </categories>
       <tags>
-        <tag>CTF</tag>
         <tag>Misc</tag>
         <tag>Crypto</tag>
+        <tag>CTF</tag>
       </tags>
   </entry>
   <entry>
@@ -362,12 +376,12 @@
         <category>WriteUp</category>
       </categories>
       <tags>
-        <tag>CTF</tag>
         <tag>Misc</tag>
         <tag>Crypto</tag>
+        <tag>CTF</tag>
         <tag>PWN</tag>
-        <tag>Rev</tag>
         <tag>Web</tag>
+        <tag>Rev</tag>
       </tags>
   </entry>
   <entry>
@@ -390,8 +404,8 @@
         <category>WriteUp</category>
       </categories>
       <tags>
-        <tag>CTF</tag>
         <tag>Crypto</tag>
+        <tag>CTF</tag>
       </tags>
   </entry>
   <entry>
@@ -418,9 +432,9 @@
         <category>WriteUp</category>
       </categories>
       <tags>
-        <tag>CTF</tag>
         <tag>Misc</tag>
         <tag>Crypto</tag>
+        <tag>CTF</tag>
         <tag>PWN</tag>
         <tag>Web</tag>
       </tags>
@@ -469,12 +483,12 @@
         <category>WriteUp</category>
       </categories>
       <tags>
-        <tag>CTF</tag>
         <tag>Misc</tag>
         <tag>Crypto</tag>
+        <tag>CTF</tag>
         <tag>PWN</tag>
-        <tag>Rev</tag>
         <tag>Web</tag>
+        <tag>Rev</tag>
       </tags>
   </entry>
   <entry>
@@ -485,8 +499,8 @@
         <category>WriteUp</category>
       </categories>
       <tags>
-        <tag>CTF</tag>
         <tag>Misc</tag>
+        <tag>CTF</tag>
         <tag>Rev</tag>
       </tags>
   </entry>

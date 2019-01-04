@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://CSUwangj.github.io/"/>
-  <updated>2019-01-02T16:04:26.094Z</updated>
+  <updated>2019-01-04T16:24:35.588Z</updated>
   <id>http://CSUwangj.github.io/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="http://CSUwangj.github.io/%E5%8D%9A%E6%96%87%E6%95%B4%E7%90%86/"/>
     <id>http://CSUwangj.github.io/博文整理/</id>
     <published>8102-12-19T02:36:02.000Z</published>
-    <updated>2019-01-02T16:04:26.094Z</updated>
+    <updated>2019-01-04T16:24:35.588Z</updated>
     
     <summary type="html">
     
@@ -31,6 +31,32 @@
     
       <category term="Notes" scheme="http://CSUwangj.github.io/categories/Notes/"/>
     
+    
+  </entry>
+  
+  <entry>
+    <title>2019-01-05 Daily Challenge</title>
+    <link href="http://CSUwangj.github.io/2019-01-05-Daily-Challenge/"/>
+    <id>http://CSUwangj.github.io/2019-01-05-Daily-Challenge/</id>
+    <published>2019-01-04T16:01:21.000Z</published>
+    <updated>2019-01-04T16:23:52.963Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;What I&amp;#39;ve done today is &lt;em&gt;Lattice paths&lt;/em&gt; in &lt;em&gt;Rust&lt;/em&gt; and &lt;em&gt;Robot Return to Origin&lt;/em&gt; in &lt;em&gt;JavaScript&lt;/em&gt;.&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="DailyChallenge" scheme="http://CSUwangj.github.io/categories/DailyChallenge/"/>
+    
+    
+      <category term="Math" scheme="http://CSUwangj.github.io/tags/Math/"/>
+    
+      <category term="Algorithm" scheme="http://CSUwangj.github.io/tags/Algorithm/"/>
+    
+      <category term="LeetCode" scheme="http://CSUwangj.github.io/tags/LeetCode/"/>
+    
+      <category term="ProjectEuler" scheme="http://CSUwangj.github.io/tags/ProjectEuler/"/>
     
   </entry>
   
@@ -510,64 +536,6 @@
       <category term="Crypto" scheme="http://CSUwangj.github.io/tags/Crypto/"/>
     
       <category term="Engineering" scheme="http://CSUwangj.github.io/tags/Engineering/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>OverTheWire-Bandit全攻略+解析</title>
-    <link href="http://CSUwangj.github.io/OverTheWire-Bandit%E5%85%A8%E6%94%BB%E7%95%A5-%E8%A7%A3%E6%9E%90/"/>
-    <id>http://CSUwangj.github.io/OverTheWire-Bandit全攻略-解析/</id>
-    <published>2018-08-23T08:10:57.000Z</published>
-    <updated>2018-08-24T16:49:21.343Z</updated>
-    
-    <summary type="html">
-    
-      &lt;ul&gt;
-&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot; checked&gt; &lt;a href=&quot;http://overthewire.org/wargames/bandit/bandit0.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Level 0&lt;/a&gt;&lt;/li&gt;
-&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot; checked&gt; &lt;a href=&quot;http://overthewire.org/wargames/bandit/bandit1.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Level 0 → Level 1&lt;/a&gt;&lt;/li&gt;
-&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot; checked&gt; &lt;a href=&quot;http://overthewire.org/wargames/bandit/bandit2.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Level 1 → Level 2&lt;/a&gt;&lt;/li&gt;
-&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot; checked&gt; &lt;a href=&quot;http://overthewire.org/wargames/bandit/bandit3.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Level 2 → Level 3&lt;/a&gt;&lt;/li&gt;
-&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot; checked&gt; &lt;a href=&quot;http://overthewire.org/wargames/bandit/bandit4.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Level 3 → Level 4&lt;/a&gt;&lt;/li&gt;
-&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot; checked&gt; &lt;a href=&quot;http://overthewire.org/wargames/bandit/bandit5.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Level 4 → Level 5&lt;/a&gt;&lt;/li&gt;
-&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot; checked&gt; &lt;a href=&quot;http://overthewire.org/wargames/bandit/bandit6.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Level 5 → Level 6&lt;/a&gt;&lt;/li&gt;
-&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot; checked&gt; &lt;a href=&quot;http://overthewire.org/wargames/bandit/bandit7.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Level 6 → Level 7&lt;/a&gt;&lt;/li&gt;
-&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot; checked&gt; &lt;a href=&quot;http://overthewire.org/wargames/bandit/bandit8.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Level 7 → Level 8&lt;/a&gt;&lt;/li&gt;
-&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot; checked&gt; &lt;a href=&quot;http://overthewire.org/wargames/bandit/bandit9.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Level 8 → Level 9&lt;/a&gt;&lt;/li&gt;
-&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot; checked&gt; &lt;a href=&quot;http://overthewire.org/wargames/bandit/bandit10.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Level 9 → Level 10&lt;/a&gt;&lt;/li&gt;
-&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot; checked&gt; &lt;a href=&quot;http://overthewire.org/wargames/bandit/bandit11.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Level 10 → Level 11&lt;/a&gt;&lt;/li&gt;
-&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot; checked&gt; &lt;a href=&quot;http://overthewire.org/wargames/bandit/bandit12.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Level 11 → Level 12&lt;/a&gt;&lt;/li&gt;
-&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot; checked&gt; &lt;a href=&quot;http://overthewire.org/wargames/bandit/bandit13.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Level 12 → Level 13&lt;/a&gt;&lt;/li&gt;
-&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot; checked&gt; &lt;a href=&quot;http://overthewire.org/wargames/bandit/bandit14.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Level 13 → Level 14&lt;/a&gt;&lt;/li&gt;
-&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot;&gt; &lt;a href=&quot;http://overthewire.org/wargames/bandit/bandit15.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Level 14 → Level 15&lt;/a&gt;&lt;/li&gt;
-&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot;&gt; &lt;a href=&quot;http://overthewire.org/wargames/bandit/bandit16.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Level 15 → Level 16&lt;/a&gt;&lt;/li&gt;
-&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot;&gt; &lt;a href=&quot;http://overthewire.org/wargames/bandit/bandit17.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Level 16 → Level 17&lt;/a&gt;&lt;/li&gt;
-&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot;&gt; &lt;a href=&quot;http://overthewire.org/wargames/bandit/bandit18.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Level 17 → Level 18&lt;/a&gt;&lt;/li&gt;
-&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot;&gt; &lt;a href=&quot;http://overthewire.org/wargames/bandit/bandit19.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Level 18 → Level 19&lt;/a&gt;&lt;/li&gt;
-&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot;&gt; &lt;a href=&quot;http://overthewire.org/wargames/bandit/bandit20.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Level 19 → Level 20&lt;/a&gt;&lt;/li&gt;
-&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot;&gt; &lt;a href=&quot;http://overthewire.org/wargames/bandit/bandit21.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Level 20 → Level 21&lt;/a&gt;&lt;/li&gt;
-&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot;&gt; &lt;a href=&quot;http://overthewire.org/wargames/bandit/bandit22.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Level 21 → Level 22&lt;/a&gt;&lt;/li&gt;
-&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot;&gt; &lt;a href=&quot;http://overthewire.org/wargames/bandit/bandit23.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Level 22 → Level 23&lt;/a&gt;&lt;/li&gt;
-&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot;&gt; &lt;a href=&quot;http://overthewire.org/wargames/bandit/bandit24.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Level 23 → Level 24&lt;/a&gt;&lt;/li&gt;
-&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot;&gt; &lt;a href=&quot;http://overthewire.org/wargames/bandit/bandit25.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Level 24 → Level 25&lt;/a&gt;&lt;/li&gt;
-&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot;&gt; &lt;a href=&quot;http://overthewire.org/wargames/bandit/bandit26.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Level 25 → Level 26&lt;/a&gt;&lt;/li&gt;
-&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot;&gt; &lt;a href=&quot;http://overthewire.org/wargames/bandit/bandit27.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Level 26 → Level 27&lt;/a&gt;&lt;/li&gt;
-&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot;&gt; &lt;a href=&quot;http://overthewire.org/wargames/bandit/bandit28.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Level 27 → Level 28&lt;/a&gt;&lt;/li&gt;
-&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot;&gt; &lt;a href=&quot;http://overthewire.org/wargames/bandit/bandit29.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Level 28 → Level 29&lt;/a&gt;&lt;/li&gt;
-&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot;&gt; &lt;a href=&quot;http://overthewire.org/wargames/bandit/bandit30.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Level 29 → Level 30&lt;/a&gt;&lt;/li&gt;
-&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot;&gt; &lt;a href=&quot;http://overthewire.org/wargames/bandit/bandit31.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Level 30 → Level 31&lt;/a&gt;&lt;/li&gt;
-&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot;&gt; &lt;a href=&quot;http://overthewire.org/wargames/bandit/bandit32.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Level 31 → Level 32&lt;/a&gt;&lt;/li&gt;
-&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot;&gt; &lt;a href=&quot;http://overthewire.org/wargames/bandit/bandit33.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Level 32 → Level 33&lt;/a&gt;&lt;/li&gt;
-&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot;&gt; &lt;a href=&quot;http://overthewire.org/wargames/bandit/bandit34.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Level 33 → Level 34&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-    
-    </summary>
-    
-      <category term="WARGAME" scheme="http://CSUwangj.github.io/categories/WARGAME/"/>
-    
-      <category term="Linux" scheme="http://CSUwangj.github.io/categories/WARGAME/Linux/"/>
-    
-    
-      <category term="Notes" scheme="http://CSUwangj.github.io/tags/Notes/"/>
     
   </entry>
   
