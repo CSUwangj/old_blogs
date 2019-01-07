@@ -116,18 +116,18 @@
 
 
 
-  <meta name="description" content="What I&amp;#39;ve done today is Number letter counts in Rust and Reverse String in JavaScript.">
+  <meta name="description" content="What I&amp;#39;ve done today is Maximum path sum I in Rust and Valid Parenthesis String in JavaScript.">
 <meta name="keywords" content="Math,Algorithm,LeetCode,ProjectEuler">
 <meta property="og:type" content="article">
 <meta property="og:title" content="2019-01-07 Daily Challenge">
 <meta property="og:url" content="http://CSUwangj.github.io/2019-01-07-Daily-Challenge/index.html">
 <meta property="og:site_name" content="LuckyDog">
-<meta property="og:description" content="What I&amp;#39;ve done today is Number letter counts in Rust and Reverse String in JavaScript.">
+<meta property="og:description" content="What I&amp;#39;ve done today is Maximum path sum I in Rust and Valid Parenthesis String in JavaScript.">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-01-06T16:33:05.192Z">
+<meta property="og:updated_time" content="2019-01-06T16:38:28.643Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="2019-01-07 Daily Challenge">
-<meta name="twitter:description" content="What I&amp;#39;ve done today is Number letter counts in Rust and Reverse String in JavaScript.">
+<meta name="twitter:description" content="What I&amp;#39;ve done today is Maximum path sum I in Rust and Valid Parenthesis String in JavaScript.">
 
 
 
@@ -392,7 +392,7 @@
                 
               
 
-              <time title="创建时间：2019-01-07 00:06:14 / 修改时间：00:33:05" itemprop="dateCreated datePublished" datetime="2019-01-07T00:06:14+08:00">2019-01-07</time>
+              <time title="创建时间：2019-01-07 00:06:14 / 修改时间：00:38:28" itemprop="dateCreated datePublished" datetime="2019-01-07T00:06:14+08:00">2019-01-07</time>
             
 
             
@@ -488,7 +488,7 @@
       
 
       
-        <p>What I&#39;ve done today is <em>Number letter counts</em> in <em>Rust</em> and <em>Reverse String</em> in <em>JavaScript</em>.</p>
+        <p>What I&#39;ve done today is <em>Maximum path sum I</em> in <em>Rust</em> and <em>Valid Parenthesis String</em> in <em>JavaScript</em>.</p>
 <a id="more"></a>
 <h1 id="Math"><a href="#Math" class="headerlink" title="Math"></a>Math</h1><h2 id="Problem"><a href="#Problem" class="headerlink" title="Problem"></a>Problem</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line">Maximum path sum I</span><br><span class="line"></span><br><span class="line">Problem 18 </span><br><span class="line"></span><br><span class="line">By starting at the top of the triangle below and moving to adjacent numbers on the row below, the maximum total from top to bottom is 23.</span><br><span class="line"></span><br><span class="line">3</span><br><span class="line">7 4</span><br><span class="line">2 4 6</span><br><span class="line">8 5 9 3</span><br><span class="line"></span><br><span class="line">That is, 3 + 7 + 4 + 9 = 23.</span><br><span class="line"></span><br><span class="line">Find the maximum total from top to bottom of the triangle below:</span><br><span class="line"></span><br><span class="line">75</span><br><span class="line">95 64</span><br><span class="line">17 47 82</span><br><span class="line">18 35 87 10</span><br><span class="line">20 04 82 47 65</span><br><span class="line">19 01 23 75 03 34</span><br><span class="line">88 02 77 73 07 63 67</span><br><span class="line">99 65 04 28 06 16 70 92</span><br><span class="line">41 41 26 56 83 40 80 70 33</span><br><span class="line">41 48 72 33 47 32 37 16 94 29</span><br><span class="line">53 71 44 65 25 43 91 52 97 51 14</span><br><span class="line">70 11 33 28 77 73 17 78 39 68 17 57</span><br><span class="line">91 71 52 38 17 14 91 43 58 50 27 29 48</span><br><span class="line">63 66 04 68 89 53 67 30 73 16 69 87 40 31</span><br><span class="line">04 62 98 27 23 09 70 98 73 93 38 53 60 04 23</span><br><span class="line"></span><br><span class="line">NOTE: As there are only 16384 routes, it is possible to solve this problem by trying every route. However, Problem 67, is the same challenge with a triangle containing one-hundred rows; it cannot be solved by brute force, and requires a clever method! ;o)</span><br></pre></td></tr></table></figure>
 <h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2><p>DP or recursive method is capable of doing this.</p>
@@ -512,10 +512,10 @@
   
     <li class="popular-posts-item">
       
-        <div class="popular-posts-date">2018-12-28</div>
+        <div class="popular-posts-date">2018-12-29</div>
       
       
-      <div class="popular-posts-title"><a href="/2018-12-28-Daily-Challenge/" rel="bookmark">2018-12-28 Daily Challenge</a></div>
+      <div class="popular-posts-title"><a href="/2018-12-29-Daily-Challenge/" rel="bookmark">2018-12-29 Daily Challenge</a></div>
       
     </li>
   
@@ -525,15 +525,6 @@
       
       
       <div class="popular-posts-title"><a href="/2019-01-02-Daily-Challenge/" rel="bookmark">2019-01-02 Daily Challenge</a></div>
-      
-    </li>
-  
-    <li class="popular-posts-item">
-      
-        <div class="popular-posts-date">2018-12-21</div>
-      
-      
-      <div class="popular-posts-title"><a href="/2018-12-21-Daily-Challenge/" rel="bookmark">2018-12-21 Daily Challenge</a></div>
       
     </li>
   
@@ -552,6 +543,15 @@
       
       
       <div class="popular-posts-title"><a href="/2018-12-23-Daily-Challenge/" rel="bookmark">2018-12-23 Daily Challenge</a></div>
+      
+    </li>
+  
+    <li class="popular-posts-item">
+      
+        <div class="popular-posts-date">2018-12-21</div>
+      
+      
+      <div class="popular-posts-title"><a href="/2018-12-21-Daily-Challenge/" rel="bookmark">2018-12-21 Daily Challenge</a></div>
       
     </li>
   
@@ -661,8 +661,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/博文整理/" rel="prev" title="博文整理">
-                博文整理 <i class="fa fa-chevron-right"></i>
+              <a href="/2019-01-08-Daily-Challenge/" rel="prev" title="2019-01-08 Daily Challenge">
+                2019-01-08 Daily Challenge <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -751,7 +751,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">40</span>
+                    <span class="site-state-item-count">41</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -1017,7 +1017,7 @@
     
       <span class="post-meta-item-text">站点总字数：</span>
     
-    <span title="站点总字数">210k</span>
+    <span title="站点总字数">213k</span>
   
 
   
@@ -1028,7 +1028,7 @@
     
       <span class="post-meta-item-text">站点阅读时长 &asymp;</span>
     
-    <span title="站点阅读时长">5:50</span>
+    <span title="站点阅读时长">5:54</span>
   
 </div>
 

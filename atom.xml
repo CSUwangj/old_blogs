@@ -35,15 +35,41 @@
   </entry>
   
   <entry>
+    <title>2019-01-08 Daily Challenge</title>
+    <link href="http://CSUwangj.github.io/2019-01-08-Daily-Challenge/"/>
+    <id>http://CSUwangj.github.io/2019-01-08-Daily-Challenge/</id>
+    <published>2019-01-07T16:31:26.000Z</published>
+    <updated>2019-01-07T16:34:39.644Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;What I&amp;#39;ve done today is &lt;em&gt;Counting Sundays&lt;/em&gt; in &lt;em&gt;Rust&lt;/em&gt; and &lt;em&gt;N-Queens II&lt;/em&gt; in &lt;em&gt;JavaScript&lt;/em&gt;.&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="DailyChallenge" scheme="http://CSUwangj.github.io/categories/DailyChallenge/"/>
+    
+    
+      <category term="Math" scheme="http://CSUwangj.github.io/tags/Math/"/>
+    
+      <category term="Algorithm" scheme="http://CSUwangj.github.io/tags/Algorithm/"/>
+    
+      <category term="LeetCode" scheme="http://CSUwangj.github.io/tags/LeetCode/"/>
+    
+      <category term="ProjectEuler" scheme="http://CSUwangj.github.io/tags/ProjectEuler/"/>
+    
+  </entry>
+  
+  <entry>
     <title>2019-01-07 Daily Challenge</title>
     <link href="http://CSUwangj.github.io/2019-01-07-Daily-Challenge/"/>
     <id>http://CSUwangj.github.io/2019-01-07-Daily-Challenge/</id>
     <published>2019-01-06T16:06:14.000Z</published>
-    <updated>2019-01-06T16:33:05.192Z</updated>
+    <updated>2019-01-06T16:38:28.643Z</updated>
     
     <summary type="html">
     
-      &lt;p&gt;What I&amp;#39;ve done today is &lt;em&gt;Number letter counts&lt;/em&gt; in &lt;em&gt;Rust&lt;/em&gt; and &lt;em&gt;Reverse String&lt;/em&gt; in &lt;em&gt;JavaScript&lt;/em&gt;.&lt;/p&gt;
+      &lt;p&gt;What I&amp;#39;ve done today is &lt;em&gt;Maximum path sum I&lt;/em&gt; in &lt;em&gt;Rust&lt;/em&gt; and &lt;em&gt;Valid Parenthesis String&lt;/em&gt; in &lt;em&gt;JavaScript&lt;/em&gt;.&lt;/p&gt;
     
     </summary>
     
@@ -508,35 +534,6 @@
       <category term="Division" scheme="http://CSUwangj.github.io/tags/Division/"/>
     
       <category term="Inclusion–exclusionPrinciple" scheme="http://CSUwangj.github.io/tags/Inclusion%E2%80%93exclusionPrinciple/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>2018-12-20 Daily Challenge</title>
-    <link href="http://CSUwangj.github.io/2018-12-20-Daily-Challenge/"/>
-    <id>http://CSUwangj.github.io/2018-12-20-Daily-Challenge/</id>
-    <published>2018-12-19T16:09:07.000Z</published>
-    <updated>2018-12-29T06:44:21.130Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;What I&amp;#39;ve done today is &lt;em&gt;Secret Messages&lt;/em&gt; of &lt;em&gt;Number Theory&lt;/em&gt; and &lt;em&gt;Course Schedule II&lt;/em&gt; in &lt;em&gt;JavaScript&lt;/em&gt;.&lt;/p&gt;
-&lt;p&gt;Due to the high cost of [brilliant.org]&amp;#39;s subscription, and low difficulty, I decide to change to &lt;a href=&quot;https://projecteuler.net&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://projecteuler.net&lt;/a&gt;. So again, if there is no source provided, I&amp;#39;m doing challenge with it and &lt;a href=&quot;https://LeetCode.com&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://LeetCode.com&lt;/a&gt;&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="DailyChallenge" scheme="http://CSUwangj.github.io/categories/DailyChallenge/"/>
-    
-    
-      <category term="Math" scheme="http://CSUwangj.github.io/tags/Math/"/>
-    
-      <category term="NumberTheory" scheme="http://CSUwangj.github.io/tags/NumberTheory/"/>
-    
-      <category term="Brilliant" scheme="http://CSUwangj.github.io/tags/Brilliant/"/>
-    
-      <category term="Algorithm" scheme="http://CSUwangj.github.io/tags/Algorithm/"/>
-    
-      <category term="LeetCode" scheme="http://CSUwangj.github.io/tags/LeetCode/"/>
     
   </entry>
   
