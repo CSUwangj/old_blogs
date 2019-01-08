@@ -35,6 +35,32 @@
   </entry>
   
   <entry>
+    <title>2019-01-09 Daily Challenge</title>
+    <link href="http://CSUwangj.github.io/2019-01-09-Daily-Challenge/"/>
+    <id>http://CSUwangj.github.io/2019-01-09-Daily-Challenge/</id>
+    <published>2019-01-08T16:29:11.000Z</published>
+    <updated>2019-01-08T16:32:16.893Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;What I&amp;#39;ve done today is &lt;em&gt;Factorial digit sum&lt;/em&gt; in &lt;em&gt;Rust&lt;/em&gt; and &lt;em&gt;Minimum Window Substring&lt;/em&gt; in &lt;em&gt;JavaScript&lt;/em&gt;.&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="DailyChallenge" scheme="http://CSUwangj.github.io/categories/DailyChallenge/"/>
+    
+    
+      <category term="Math" scheme="http://CSUwangj.github.io/tags/Math/"/>
+    
+      <category term="Algorithm" scheme="http://CSUwangj.github.io/tags/Algorithm/"/>
+    
+      <category term="LeetCode" scheme="http://CSUwangj.github.io/tags/LeetCode/"/>
+    
+      <category term="ProjectEuler" scheme="http://CSUwangj.github.io/tags/ProjectEuler/"/>
+    
+  </entry>
+  
+  <entry>
     <title>2019-01-08 Daily Challenge</title>
     <link href="http://CSUwangj.github.io/2019-01-08-Daily-Challenge/"/>
     <id>http://CSUwangj.github.io/2019-01-08-Daily-Challenge/</id>
@@ -504,36 +530,6 @@
       <category term="ProjectEuler" scheme="http://CSUwangj.github.io/tags/ProjectEuler/"/>
     
       <category term="Fibonacci" scheme="http://CSUwangj.github.io/tags/Fibonacci/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>2018-12-21 Daily Challenge</title>
-    <link href="http://CSUwangj.github.io/2018-12-21-Daily-Challenge/"/>
-    <id>http://CSUwangj.github.io/2018-12-21-Daily-Challenge/</id>
-    <published>2018-12-20T16:00:46.000Z</published>
-    <updated>2018-12-29T06:43:26.108Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;What I’ve done today is &lt;em&gt;Multiples of 3 and 5&lt;/em&gt; in &lt;em&gt;Rust&lt;/em&gt; and &lt;em&gt;Max Chunks To Make Sorted&lt;/em&gt; in &lt;em&gt;JavaScript&lt;/em&gt;.&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="DailyChallenge" scheme="http://CSUwangj.github.io/categories/DailyChallenge/"/>
-    
-    
-      <category term="Math" scheme="http://CSUwangj.github.io/tags/Math/"/>
-    
-      <category term="Algorithm" scheme="http://CSUwangj.github.io/tags/Algorithm/"/>
-    
-      <category term="LeetCode" scheme="http://CSUwangj.github.io/tags/LeetCode/"/>
-    
-      <category term="ProjectEuler" scheme="http://CSUwangj.github.io/tags/ProjectEuler/"/>
-    
-      <category term="Division" scheme="http://CSUwangj.github.io/tags/Division/"/>
-    
-      <category term="Inclusion–exclusionPrinciple" scheme="http://CSUwangj.github.io/tags/Inclusion%E2%80%93exclusionPrinciple/"/>
     
   </entry>
   
