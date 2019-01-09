@@ -35,6 +35,32 @@
   </entry>
   
   <entry>
+    <title>2019-01-10 Daily Challenge</title>
+    <link href="http://CSUwangj.github.io/2019-01-10-Daily-Challenge/"/>
+    <id>http://CSUwangj.github.io/2019-01-10-Daily-Challenge/</id>
+    <published>2019-01-09T16:08:38.000Z</published>
+    <updated>2019-01-09T16:29:48.519Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;What I&amp;#39;ve done today is &lt;em&gt;Amicable number&lt;/em&gt; in &lt;em&gt;Rust&lt;/em&gt; and &lt;em&gt;Unique Morse Code Words&lt;/em&gt; in &lt;em&gt;JavaScript&lt;/em&gt;.&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="DailyChallenge" scheme="http://CSUwangj.github.io/categories/DailyChallenge/"/>
+    
+    
+      <category term="Math" scheme="http://CSUwangj.github.io/tags/Math/"/>
+    
+      <category term="Algorithm" scheme="http://CSUwangj.github.io/tags/Algorithm/"/>
+    
+      <category term="LeetCode" scheme="http://CSUwangj.github.io/tags/LeetCode/"/>
+    
+      <category term="ProjectEuler" scheme="http://CSUwangj.github.io/tags/ProjectEuler/"/>
+    
+  </entry>
+  
+  <entry>
     <title>2019-01-09 Daily Challenge</title>
     <link href="http://CSUwangj.github.io/2019-01-09-Daily-Challenge/"/>
     <id>http://CSUwangj.github.io/2019-01-09-Daily-Challenge/</id>
@@ -502,34 +528,6 @@
       <category term="ProjectEuler" scheme="http://CSUwangj.github.io/tags/ProjectEuler/"/>
     
       <category term="Factorize" scheme="http://CSUwangj.github.io/tags/Factorize/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>2018-12-22 Daily Challenge</title>
-    <link href="http://CSUwangj.github.io/2018-12-22-Daily-Challenge/"/>
-    <id>http://CSUwangj.github.io/2018-12-22-Daily-Challenge/</id>
-    <published>2018-12-21T17:04:40.000Z</published>
-    <updated>2018-12-29T06:44:59.137Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;What I&amp;#39;ve done today is &lt;em&gt;Even Fibonacci numbers&lt;/em&gt; in &lt;em&gt;Rust&lt;/em&gt; and &lt;em&gt;K-th Smallest Prime Fraction&lt;/em&gt; in &lt;em&gt;cpp&lt;/em&gt;.&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="DailyChallenge" scheme="http://CSUwangj.github.io/categories/DailyChallenge/"/>
-    
-    
-      <category term="Math" scheme="http://CSUwangj.github.io/tags/Math/"/>
-    
-      <category term="Algorithm" scheme="http://CSUwangj.github.io/tags/Algorithm/"/>
-    
-      <category term="LeetCode" scheme="http://CSUwangj.github.io/tags/LeetCode/"/>
-    
-      <category term="ProjectEuler" scheme="http://CSUwangj.github.io/tags/ProjectEuler/"/>
-    
-      <category term="Fibonacci" scheme="http://CSUwangj.github.io/tags/Fibonacci/"/>
     
   </entry>
   
