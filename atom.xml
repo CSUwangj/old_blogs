@@ -35,11 +35,37 @@
   </entry>
   
   <entry>
+    <title>2019-01-11 Daily Challenge</title>
+    <link href="http://CSUwangj.github.io/2019-01-11-Daily-Challenge/"/>
+    <id>http://CSUwangj.github.io/2019-01-11-Daily-Challenge/</id>
+    <published>2019-01-10T16:37:59.000Z</published>
+    <updated>2019-01-10T16:47:35.876Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;What I&amp;#39;ve done today is &lt;em&gt;Names scores&lt;/em&gt; in &lt;em&gt;Rust&lt;/em&gt; and &lt;em&gt;Optimal Division&lt;/em&gt; in &lt;em&gt;JavaScript&lt;/em&gt;.&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="DailyChallenge" scheme="http://CSUwangj.github.io/categories/DailyChallenge/"/>
+    
+    
+      <category term="Math" scheme="http://CSUwangj.github.io/tags/Math/"/>
+    
+      <category term="Algorithm" scheme="http://CSUwangj.github.io/tags/Algorithm/"/>
+    
+      <category term="LeetCode" scheme="http://CSUwangj.github.io/tags/LeetCode/"/>
+    
+      <category term="ProjectEuler" scheme="http://CSUwangj.github.io/tags/ProjectEuler/"/>
+    
+  </entry>
+  
+  <entry>
     <title>2019-01-10 Daily Challenge</title>
     <link href="http://CSUwangj.github.io/2019-01-10-Daily-Challenge/"/>
     <id>http://CSUwangj.github.io/2019-01-10-Daily-Challenge/</id>
     <published>2019-01-09T16:08:38.000Z</published>
-    <updated>2019-01-09T16:29:48.519Z</updated>
+    <updated>2019-01-09T16:36:01.230Z</updated>
     
     <summary type="html">
     
@@ -500,34 +526,6 @@
       <category term="LeetCode" scheme="http://CSUwangj.github.io/tags/LeetCode/"/>
     
       <category term="ProjectEuler" scheme="http://CSUwangj.github.io/tags/ProjectEuler/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>2018-12-23 Daily Challenge</title>
-    <link href="http://CSUwangj.github.io/2018-12-23-Daily-Challenge/"/>
-    <id>http://CSUwangj.github.io/2018-12-23-Daily-Challenge/</id>
-    <published>2018-12-22T16:48:00.000Z</published>
-    <updated>2018-12-29T06:45:11.251Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;What I&amp;#39;ve done today is &lt;em&gt;Largest prime factor&lt;/em&gt; in &lt;em&gt;Rust&lt;/em&gt; and &lt;em&gt;Coin Change&lt;/em&gt; in &lt;em&gt;JavaScript&lt;/em&gt;.&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="DailyChallenge" scheme="http://CSUwangj.github.io/categories/DailyChallenge/"/>
-    
-    
-      <category term="Math" scheme="http://CSUwangj.github.io/tags/Math/"/>
-    
-      <category term="Algorithm" scheme="http://CSUwangj.github.io/tags/Algorithm/"/>
-    
-      <category term="LeetCode" scheme="http://CSUwangj.github.io/tags/LeetCode/"/>
-    
-      <category term="ProjectEuler" scheme="http://CSUwangj.github.io/tags/ProjectEuler/"/>
-    
-      <category term="Factorize" scheme="http://CSUwangj.github.io/tags/Factorize/"/>
     
   </entry>
   

@@ -124,7 +124,7 @@
 <meta property="og:site_name" content="LuckyDog">
 <meta property="og:description" content="What I&amp;#39;ve done today is Amicable number in Rust and Unique Morse Code Words in JavaScript.">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-01-09T16:29:48.519Z">
+<meta property="og:updated_time" content="2019-01-09T16:36:01.230Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="2019-01-10 Daily Challenge">
 <meta name="twitter:description" content="What I&amp;#39;ve done today is Amicable number in Rust and Unique Morse Code Words in JavaScript.">
@@ -392,7 +392,7 @@
                 
               
 
-              <time title="创建时间：2019-01-10 00:08:38 / 修改时间：00:29:48" itemprop="dateCreated datePublished" datetime="2019-01-10T00:08:38+08:00">2019-01-10</time>
+              <time title="创建时间：2019-01-10 00:08:38 / 修改时间：00:36:01" itemprop="dateCreated datePublished" datetime="2019-01-10T00:08:38+08:00">2019-01-10</time>
             
 
             
@@ -454,7 +454,7 @@
                 
                   <span class="post-meta-item-text">本文字数：</span>
                 
-                <span title="本文字数">4.7k</span>
+                <span title="本文字数">4.8k</span>
               
 
               
@@ -497,6 +497,7 @@
 <p>$$n=p_1^{a_1}p_2^{a_2}...p_k^{a_k}$$</p>
 <p>Then, the sum of divisors(including itself) is </p>
 <p>$$\prod_{i=1}^{k}(p_i^0+p_i^1+...+p_i^{a_i})$$</p>
+<p>ref: <a href="https://mathschallenge.net/library/number/sum_of_divisors" target="_blank" rel="noopener">https://mathschallenge.net/library/number/sum_of_divisors</a></p>
 <h2 id="Implementation"><a href="#Implementation" class="headerlink" title="Implementation"></a>Implementation</h2><figure class="highlight rust"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">extern</span> <span class="keyword">crate</span> primal;</span><br><span class="line"></span><br><span class="line"><span class="keyword">use</span> std::vec::<span class="built_in">Vec</span>;</span><br><span class="line"><span class="keyword">use</span> primal::Sieve;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">fn</span> <span class="title">main</span></span>() &#123;</span><br><span class="line">    <span class="keyword">let</span> sieve = Sieve::new(<span class="number">10000</span>);</span><br><span class="line">    <span class="keyword">let</span> <span class="keyword">mut</span> ans = <span class="number">0</span>;</span><br><span class="line">    <span class="built_in">assert!</span>(sum_of_divisor(<span class="number">284</span>, &amp;sieve) == <span class="number">220</span>);</span><br><span class="line">    <span class="built_in">assert!</span>(sum_of_divisor(<span class="number">220</span>, &amp;sieve) == <span class="number">284</span>);</span><br><span class="line">    <span class="keyword">for</span> num <span class="keyword">in</span> <span class="number">2</span>..<span class="number">10000</span> &#123;</span><br><span class="line">        <span class="keyword">let</span> tmp = sum_of_divisor(num, &amp;sieve);</span><br><span class="line">        <span class="keyword">if</span> tmp &lt; <span class="number">10000</span> &amp;&amp; tmp != num &amp;&amp;sum_of_divisor(tmp, &amp;sieve) == num &#123;</span><br><span class="line">            ans += tmp + num;</span><br><span class="line">        &#125; </span><br><span class="line">    &#125;</span><br><span class="line">    ans /= <span class="number">2</span>;</span><br><span class="line">    <span class="built_in">println!</span>(<span class="string">"Answer is &#123;&#125;"</span>, ans);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">fn</span> <span class="title">sum_of_divisor</span></span>(n: <span class="built_in">i32</span>, sieve: &amp;Sieve) -&gt; <span class="built_in">i32</span> &#123;</span><br><span class="line">    <span class="keyword">let</span> factors: <span class="built_in">Vec</span>&lt;(<span class="built_in">usize</span>, <span class="built_in">usize</span>)&gt; = <span class="keyword">match</span> sieve.factor(n <span class="keyword">as</span> <span class="built_in">usize</span>) &#123;</span><br><span class="line">        <span class="literal">Ok</span>(v) =&gt; v,</span><br><span class="line">        <span class="literal">Err</span>(_) =&gt; <span class="built_in">Vec</span>::new(),</span><br><span class="line">    &#125;;</span><br><span class="line">    <span class="keyword">let</span> <span class="keyword">mut</span> ans = <span class="number">1</span>;</span><br><span class="line">    <span class="keyword">for</span> factor <span class="keyword">in</span> factors &#123;</span><br><span class="line">        <span class="keyword">let</span> <span class="keyword">mut</span> tmp = <span class="number">1</span>;</span><br><span class="line">        <span class="keyword">let</span> <span class="keyword">mut</span> sum = <span class="number">1</span>;</span><br><span class="line">        <span class="keyword">for</span> _ <span class="keyword">in</span> <span class="number">0</span>..factor.<span class="number">1</span> &#123;</span><br><span class="line">            tmp *= factor.<span class="number">0</span>;</span><br><span class="line">            sum += tmp;</span><br><span class="line">        &#125;</span><br><span class="line">        ans *= sum;</span><br><span class="line">    &#125;</span><br><span class="line">    ans <span class="keyword">as</span> <span class="built_in">i32</span> - n</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <h1 id="Algorithm"><a href="#Algorithm" class="headerlink" title="Algorithm"></a>Algorithm</h1><h2 id="Problem-1"><a href="#Problem-1" class="headerlink" title="Problem"></a>Problem</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line">804. Unique Morse Code Words</span><br><span class="line"></span><br><span class="line">International Morse Code defines a standard encoding where each letter is mapped to a series of dots and dashes, as follows: &quot;a&quot; maps to &quot;.-&quot;, &quot;b&quot; maps to &quot;-...&quot;, &quot;c&quot; maps to &quot;-.-.&quot;, and so on.</span><br><span class="line"></span><br><span class="line">For convenience, the full table for the 26 letters of the English alphabet is given below:</span><br><span class="line"></span><br><span class="line">[&quot;.-&quot;,&quot;-...&quot;,&quot;-.-.&quot;,&quot;-..&quot;,&quot;.&quot;,&quot;..-.&quot;,&quot;--.&quot;,&quot;....&quot;,&quot;..&quot;,&quot;.---&quot;,&quot;-.-&quot;,&quot;.-..&quot;,&quot;--&quot;,&quot;-.&quot;,&quot;---&quot;,&quot;.--.&quot;,&quot;--.-&quot;,&quot;.-.&quot;,&quot;...&quot;,&quot;-&quot;,&quot;..-&quot;,&quot;...-&quot;,&quot;.--&quot;,&quot;-..-&quot;,&quot;-.--&quot;,&quot;--..&quot;]</span><br><span class="line">Now, given a list of words, each word can be written as a concatenation of the Morse code of each letter. For example, &quot;cba&quot; can be written as &quot;-.-..--...&quot;, (which is the concatenation &quot;-.-.&quot; + &quot;-...&quot; + &quot;.-&quot;). We&apos;ll call such a concatenation, the transformation of a word.</span><br><span class="line"></span><br><span class="line">Return the number of different transformations among all words we have.</span><br><span class="line"></span><br><span class="line">Example:</span><br><span class="line">Input: words = [&quot;gin&quot;, &quot;zen&quot;, &quot;gig&quot;, &quot;msg&quot;]</span><br><span class="line">Output: 2</span><br><span class="line">Explanation: </span><br><span class="line">The transformation of each word is:</span><br><span class="line">&quot;gin&quot; -&gt; &quot;--...-.&quot;</span><br><span class="line">&quot;zen&quot; -&gt; &quot;--...-.&quot;</span><br><span class="line">&quot;gig&quot; -&gt; &quot;--...--.&quot;</span><br><span class="line">&quot;msg&quot; -&gt; &quot;--...--.&quot;</span><br><span class="line"></span><br><span class="line">There are 2 different transformations, &quot;--...-.&quot; and &quot;--...--.&quot;.</span><br><span class="line">Note:</span><br><span class="line"></span><br><span class="line">The length of words will be at most 100.</span><br><span class="line">Each words[i] will have length in range [1, 12].</span><br><span class="line">words[i] will only consist of lowercase letters.</span><br></pre></td></tr></table></figure>
 <h2 id="Solution-1"><a href="#Solution-1" class="headerlink" title="Solution"></a>Solution</h2><p>Use map to encode, set to record.</p>
@@ -513,10 +514,10 @@
   
     <li class="popular-posts-item">
       
-        <div class="popular-posts-date">2018-12-31</div>
+        <div class="popular-posts-date">2018-12-30</div>
       
       
-      <div class="popular-posts-title"><a href="/2018-12-31-Daily-Challenge/" rel="bookmark">2018-12-31 Daily Challenge</a></div>
+      <div class="popular-posts-title"><a href="/2018-12-30-Daily-Challenge/" rel="bookmark">2018-12-30 Daily Challenge</a></div>
       
     </li>
   
@@ -540,19 +541,19 @@
   
     <li class="popular-posts-item">
       
-        <div class="popular-posts-date">2018-12-23</div>
+        <div class="popular-posts-date">2018-12-22</div>
       
       
-      <div class="popular-posts-title"><a href="/2018-12-23-Daily-Challenge/" rel="bookmark">2018-12-23 Daily Challenge</a></div>
+      <div class="popular-posts-title"><a href="/2018-12-22-Daily-Challenge/" rel="bookmark">2018-12-22 Daily Challenge</a></div>
       
     </li>
   
     <li class="popular-posts-item">
       
-        <div class="popular-posts-date">2018-12-24</div>
+        <div class="popular-posts-date">2018-12-23</div>
       
       
-      <div class="popular-posts-title"><a href="/2018-12-24-Daily-Challenge/" rel="bookmark">2018-12-24 Daily Challenge</a></div>
+      <div class="popular-posts-title"><a href="/2018-12-23-Daily-Challenge/" rel="bookmark">2018-12-23 Daily Challenge</a></div>
       
     </li>
   
@@ -662,8 +663,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/博文整理/" rel="prev" title="博文整理">
-                博文整理 <i class="fa fa-chevron-right"></i>
+              <a href="/2019-01-11-Daily-Challenge/" rel="prev" title="2019-01-11 Daily Challenge">
+                2019-01-11 Daily Challenge <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -752,7 +753,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">43</span>
+                    <span class="site-state-item-count">44</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -1018,7 +1019,7 @@
     
       <span class="post-meta-item-text">站点总字数：</span>
     
-    <span title="站点总字数">220k</span>
+    <span title="站点总字数">223k</span>
   
 
   
@@ -1029,7 +1030,7 @@
     
       <span class="post-meta-item-text">站点阅读时长 &asymp;</span>
     
-    <span title="站点阅读时长">6:07</span>
+    <span title="站点阅读时长">6:12</span>
   
 </div>
 
