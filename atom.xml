@@ -35,6 +35,32 @@
   </entry>
   
   <entry>
+    <title>2019-01-13 Daily Challenge</title>
+    <link href="http://CSUwangj.github.io/2019-01-13-Daily-Challenge/"/>
+    <id>http://CSUwangj.github.io/2019-01-13-Daily-Challenge/</id>
+    <published>2019-01-12T16:02:16.000Z</published>
+    <updated>2019-01-12T16:15:01.079Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;What I&amp;#39;ve done today is &lt;em&gt;Lexicographic permutations&lt;/em&gt; in &lt;em&gt;Rust&lt;/em&gt; and &lt;em&gt;Unique Binary Search Trees II&lt;/em&gt; in &lt;em&gt;JavaScript&lt;/em&gt;.&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="DailyChallenge" scheme="http://CSUwangj.github.io/categories/DailyChallenge/"/>
+    
+    
+      <category term="Math" scheme="http://CSUwangj.github.io/tags/Math/"/>
+    
+      <category term="Algorithm" scheme="http://CSUwangj.github.io/tags/Algorithm/"/>
+    
+      <category term="LeetCode" scheme="http://CSUwangj.github.io/tags/LeetCode/"/>
+    
+      <category term="ProjectEuler" scheme="http://CSUwangj.github.io/tags/ProjectEuler/"/>
+    
+  </entry>
+  
+  <entry>
     <title>2019-01-12 Daily Challenge</title>
     <link href="http://CSUwangj.github.io/2019-01-12-Daily-Challenge/"/>
     <id>http://CSUwangj.github.io/2019-01-12-Daily-Challenge/</id>
@@ -487,32 +513,6 @@
     <summary type="html">
     
       &lt;p&gt;What I&amp;#39;ve done today is &lt;em&gt;Sum square difference&lt;/em&gt; in &lt;em&gt;Rust&lt;/em&gt; and &lt;em&gt;Split Array into Consecutive Subsequences&lt;/em&gt; in &lt;em&gt;JavaScript&lt;/em&gt;.&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="DailyChallenge" scheme="http://CSUwangj.github.io/categories/DailyChallenge/"/>
-    
-    
-      <category term="Math" scheme="http://CSUwangj.github.io/tags/Math/"/>
-    
-      <category term="Algorithm" scheme="http://CSUwangj.github.io/tags/Algorithm/"/>
-    
-      <category term="LeetCode" scheme="http://CSUwangj.github.io/tags/LeetCode/"/>
-    
-      <category term="ProjectEuler" scheme="http://CSUwangj.github.io/tags/ProjectEuler/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>2018-12-25 Daily Challenge</title>
-    <link href="http://CSUwangj.github.io/2018-12-25-Daily-Challenge/"/>
-    <id>http://CSUwangj.github.io/2018-12-25-Daily-Challenge/</id>
-    <published>2018-12-25T13:04:34.000Z</published>
-    <updated>2018-12-31T20:24:05.526Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;What I&amp;#39;ve done today is &lt;em&gt;Smallest multiple&lt;/em&gt; in &lt;em&gt;Rust&lt;/em&gt; and &lt;em&gt;Remove Duplicates from Sorted Array&lt;/em&gt; in &lt;em&gt;JavaScript&lt;/em&gt;.&lt;/p&gt;
     
     </summary>
     
