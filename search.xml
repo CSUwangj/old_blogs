@@ -9,6 +9,20 @@
       </categories>
   </entry>
   <entry>
+    <title><![CDATA[2019-01-14 Daily Challenge]]></title>
+    <url>%2F2019-01-14-Daily-Challenge%2F</url>
+    <content type="text"><![CDATA[What I&#39;ve done today is 1000-digit Fibonacci number in Rust and Best Time to Buy and Sell Stock IV in JavaScript. MathProblem1234567891011121314151617181920212223241000-digit Fibonacci numberProblem 25 The Fibonacci sequence is defined by the recurrence relation:Fn = Fn−1 + Fn−2, where F1 = 1 and F2 = 1.Hence the first 12 terms will be:F1 = 1F2 = 1F3 = 2F4 = 3F5 = 5F6 = 8F7 = 13F8 = 21F9 = 34F10 = 55F11 = 89F12 = 144The 12th term, F12, is the first term to contain three digits.What is the index of the first term in the Fibonacci sequence to contain 1000 digits? SolutionNothing to say. Implementation123456789101112131415161718extern crate num_bigint;extern crate num_traits;use num_bigint::BigUint;use num_traits::&#123;Zero, One&#125;;use std::mem::replace;fn main() &#123; let mut f0: BigUint = Zero::zero(); let mut f1: BigUint = One::one(); let mut index = 0; while f0.to_str_radix(10).len() &lt; 1000usize &#123; let f2 = f0 + &amp;f1; f0 = replace(&amp;mut f1, f2); index += 1; &#125; println!("Answer is &#123;&#125;", index);&#125; AlgorithmProblem1234567891011121314151617181920188. Best Time to Buy and Sell Stock IVSay you have an array for which the ith element is the price of a given stock on day i.Design an algorithm to find the maximum profit. You may complete at most k transactions.Note:You may not engage in multiple transactions at the same time (ie, you must sell the stock before you buy again).Example 1:Input: [2,4,1], k = 2Output: 2Explanation: Buy on day 1 (price = 2) and sell on day 2 (price = 4), profit = 4-2 = 2.Example 2:Input: [3,2,6,5,0,3], k = 2Output: 7Explanation: Buy on day 2 (price = 2) and sell on day 3 (price = 6), profit = 6-2 = 4. Then buy on day 5 (price = 0) and sell on day 6 (price = 3), profit = 3-0 = 3. SolutionDP. But I&#39;m too tired doing school project to explain it. Leave it for later... Implementation1234567891011121314151617181920212223242526272829303132333435363738/** * @param &#123;number&#125; k * @param &#123;number[]&#125; prices * @return &#123;number&#125; */var maxProfit = function(k, prices) &#123; if(!prices.length) return 0; if(k*2 &gt;= prices.length) return maxProf(prices); let n = prices.length; let dp = new Array(n); dp.fill(0); for(let i = 0; i &lt; k; ++i) &#123; let min_paid = prices[0]; let prev = dp[0]; for(let j = 1; j &lt; n; ++j) &#123; let tmp = dp[j]; min_paid = Math.min(min_paid, prices[j] - prev); dp[j] = Math.max(dp[j-1], prices[j]-min_paid); prev = tmp; &#125; &#125; return dp[n-1];&#125;;/** * @param &#123;number[]&#125; prices * @return &#123;number&#125; */function maxProf(prices)&#123; let ans = 0; let n = prices.length; for(let i = 1; i &lt; n; ++i) &#123; if(prices[i] &gt; prices[i-1]) ans += prices[i]-prices[i-1]; &#125; return ans;&#125;// console.log(maxProfit(2,[2,1,2,0,1]));]]></content>
+      <categories>
+        <category>DailyChallenge</category>
+      </categories>
+      <tags>
+        <tag>Math</tag>
+        <tag>Algorithm</tag>
+        <tag>LeetCode</tag>
+        <tag>ProjectEuler</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[2019-01-13 Daily Challenge]]></title>
     <url>%2F2019-01-13-Daily-Challenge%2F</url>
     <content type="text"><![CDATA[What I&#39;ve done today is Lexicographic permutations in Rust and Unique Binary Search Trees II in JavaScript. MathProblem123456789Lexicographic permutationsProblem 24 A permutation is an ordered arrangement of objects. For example, 3124 is one possible permutation of the digits 1, 2, 3 and 4. If all of the permutations are listed numerically or alphabetically, we call it lexicographic order. The lexicographic permutations of 0, 1 and 2 are:012 021 102 120 201 210What is the millionth lexicographic permutation of the digits 0, 1, 2, 3, 4, 5, 6, 7, 8 and 9? SolutionI&#39;ve done it with javascript in 2019-01-03 Daily Challenge, so what I need to do is just translate it into Rust. Implementation123456789101112131415161718192021222324252627282930313233343536373839404142434445use std::vec::Vec;fn main() &#123; for i in nth_permutation(3, 3) &#123; println!("&#123;&#125;", i); &#125; println!(""); for i in nth_permutation(4, 9) &#123; print!("&#123;&#125;", i); &#125; println!(""); for i in nth_permutation(10, 1_000_000) &#123; print!("&#123;&#125;", i); &#125;&#125;fn nth_permutation(n: i32, mut k: i64) -&gt; Vec&lt;i32&gt; &#123; k -= 1; let mut fac: Vec&lt;i64&gt; = [1].to_vec(); let mut ans: Vec&lt;i32&gt; = Vec::new(); let mut used: Vec&lt;bool&gt; = [false].to_vec(); for i in 1i64..(n as i64) &#123; let tmp = fac[i as usize - 1]*i; fac.push(tmp); used.push(false); &#125; let mut cur = n-1; while cur &gt;= 0 &#123; let mut index = k/fac[cur as usize]; k %= fac[cur as usize]; for i in 0..used.len() &#123; if !used[i] &#123; if index &gt; 0 &#123; index -= 1; &#125;else&#123; ans.push(i as i32); used[i] = true; break; &#125; &#125; &#125; cur -= 1; &#125; return ans;&#125; AlgorithmProblem123456789101112131415161718192021222395. Unique Binary Search Trees IIGiven an integer n, generate all structurally unique BST&apos;s (binary search trees) that store values 1 ... n.Example:Input: 3Output:[ [1,null,3,2], [3,2,null,1], [3,1,null,null,2], [2,1,3], [1,null,2,null,3]]Explanation:The above output corresponds to the 5 unique BST&apos;s shown below: 1 3 3 2 1 \ / / / \ \ 3 2 1 1 3 2 / / \ \ 2 1 2 3 SolutionBecause it is BST, so when we determine one root, we will known what&#39;s on its left and what&#39;s on right. So we could do it recursively. Because recursive process will go through many repeated tree nodes(like recursive fibonacci function), so we could memorize it. Implementation123456789101112131415161718192021222324252627282930313233343536373839404142434445464748/** * Definition for a binary tree node. * function TreeNode(val) &#123; * this.val = val; * this.left = this.right = null; * &#125; *//** * @param &#123;number&#125; n * @return &#123;TreeNode[]&#125; */var generateTrees = function(n) &#123; if(n===0) return []; const map = new Map(); return generateTreess(1,n+1,map);&#125;;/** * Interval is left-closed right-opened * @param &#123;number&#125; l * @param &#123;number&#125; r * @param &#123;Map&#125; map * @return &#123;TreeNode[]&#125; */function generateTreess(l,r,map)&#123; if(l===r) return [null]; if(map.has(l)&amp;&amp;map.get(l).has(r))&#123; return map.get(l).get(r); &#125; let trees = []; for(let i = l; i &lt; r; ++i)&#123; const left = generateTreess(l,i,map); const right = generateTreess(i+1,r,map); for(let j = 0; j &lt; left.length; ++j)&#123; for(let k = 0; k &lt; right.length; ++k)&#123; const node = new TreeNode(i); node.left = left[i]; node.right = right[k]; trees.push(node); &#125; &#125; &#125; if(!map.has(l))&#123; map.set(l,new Map()); &#125; map.get(l).set(r,trees); return trees;&#125;]]></content>
@@ -476,8 +490,8 @@
       </categories>
       <tags>
         <tag>CTF</tag>
-        <tag>Crypto</tag>
         <tag>Misc</tag>
+        <tag>Crypto</tag>
       </tags>
   </entry>
   <entry>
@@ -489,9 +503,9 @@
       </categories>
       <tags>
         <tag>CTF</tag>
-        <tag>PWN</tag>
-        <tag>Crypto</tag>
         <tag>Misc</tag>
+        <tag>Crypto</tag>
+        <tag>PWN</tag>
         <tag>Rev</tag>
         <tag>Web</tag>
       </tags>
@@ -545,9 +559,9 @@
       </categories>
       <tags>
         <tag>CTF</tag>
-        <tag>PWN</tag>
-        <tag>Crypto</tag>
         <tag>Misc</tag>
+        <tag>Crypto</tag>
+        <tag>PWN</tag>
         <tag>Web</tag>
       </tags>
   </entry>
@@ -583,8 +597,8 @@
         <category>Tools</category>
       </categories>
       <tags>
-        <tag>Crypto</tag>
         <tag>Misc</tag>
+        <tag>Crypto</tag>
       </tags>
   </entry>
   <entry>
@@ -596,9 +610,9 @@
       </categories>
       <tags>
         <tag>CTF</tag>
-        <tag>PWN</tag>
-        <tag>Crypto</tag>
         <tag>Misc</tag>
+        <tag>Crypto</tag>
+        <tag>PWN</tag>
         <tag>Rev</tag>
         <tag>Web</tag>
       </tags>
