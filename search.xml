@@ -9,6 +9,20 @@
       </categories>
   </entry>
   <entry>
+    <title><![CDATA[2019-01-17 Daily Challenge]]></title>
+    <url>%2F2019-01-17-Daily-Challenge%2F</url>
+    <content type="text"><![CDATA[What I&#39;ve done today is Number spiral diagonals in Rust and Add Binary in JavaScript. BTW, I decided to the change style of problem section~ MathProblemNumber spiral diagonalsProblem 28Starting with the number 1 and moving to the right in a clockwise direction a 5 by 5 spiral is formed as follows: 21 22 23 24 2520 7 8 9 1019 6 1 2 1118 5 4 3 1217 16 15 14 13 It can be verified that the sum of the numbers on the diagonals is 101. What is the sum of the numbers on the diagonals in a 1001 by 1001 spiral formed in the same way? SolutionWhen you check the sequence 1, 3, 5, 7, 9, 13, 17, 21, 25, you will find that the numbers of sequence except the first one, others can be grouped by each four number. Implementation1234567891011fn main() &#123; let mut ans: i64 = 1; let mut tmp: i64 = 1; for i in 1i64..501i64 &#123; for _j in 0..4 &#123; tmp += i*2; ans += tmp; &#125; &#125; println!("Answer is &#123;&#125;", ans);&#125; AlgorithmProblem67. Add BinaryGiven two binary strings, return their sum (also a binary string). The input strings are both non-empty and contains only characters 1 or 0. Example 1: 12Input: a = &quot;11&quot;, b = &quot;1&quot;Output: &quot;100&quot; Example 2: 12Input: a = &quot;1010&quot;, b = &quot;1011&quot;Output: &quot;10101&quot; SolutionBecause of large input, naive implementation will fail. ImplementationFailed implementation: 12345678/** * @param &#123;string&#125; a * @param &#123;string&#125; b * @return &#123;string&#125; */var addBinary = function(a, b) &#123; return (parseInt(a,2)+parseInt(b,2)).toString(2);&#125;; Successful submission: 12345678/** * @param &#123;string&#125; a * @param &#123;string&#125; b * @return &#123;string&#125; */var addBinary = function(a, b) &#123; return (BigInt("0b"+a)+BigInt("0b"+b)).toString(2);&#125;; If I want to be more efficient, I should write a function do string binary add.]]></content>
+      <categories>
+        <category>DailyChallenge</category>
+      </categories>
+      <tags>
+        <tag>Math</tag>
+        <tag>Algorithm</tag>
+        <tag>LeetCode</tag>
+        <tag>ProjectEuler</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[2019-01-16 Daily Challenge]]></title>
     <url>%2F2019-01-16-Daily-Challenge%2F</url>
     <content type="text"><![CDATA[What I&#39;ve done today is Quadratic primes in Rust and Longest Absolute File Path in JavaScript. MathProblem123456789101112131415161718Quadratic primesProblem 27 Euler discovered the remarkable quadratic formula:n……2+n+41It turns out that the formula will produce 40 primes for the consecutive integer values 0≤n≤39. However, when n=40,40^2+40+41=40(40+1)+41 is divisible by 41, and certainly when n=41,41^2+41+41 is clearly divisible by 41.The incredible formula n^2−79n+1601 was discovered, which produces 80 primes for the consecutive values 0≤n≤79. The product of the coefficients, −79 and 1601, is −126479.Considering quadratics of the form:n^2+an+b, where |a|&lt;1000 and |b|≤1000where |n| is the modulus/absolute value of ne.g. |11|=11 and |−4|=4Find the product of the coefficients, a and b, for the quadratic expression that produces the maximum number of primes for consecutive values of n, starting with n=0. SolutionBecause n start from zero, so b must be a prime. Because maximum number of primes for consecutive values must be greater than one, so when n equals one, the expression will be a prime, which means $1 + a + b$ is prime, when $b$ equals two, $a$ must be even, otherwise $a$ must be odd. But I don&#39;t want to do it. Implementation1234567891011121314151617181920212223242526272829303132extern crate primal;use primal::Sieve;fn main() &#123; let sieve = Sieve::new(2_000_000); let mut ansa = 0; let mut ansb = 0; let mut ansc = 0; let count = sieve.prime_pi(1000) + 1usize; for i in -999i32..1000 &#123; for j in 1..count &#123; let mut tmpc = 1; loop &#123; let tmp = tmpc * tmpc + i * tmpc + (sieve.nth_prime(j) as i32); if tmp &lt; 0 &#123; break; &#125; if !sieve.is_prime(tmp as usize) &#123; break; &#125; tmpc += 1; &#125; if tmpc &gt; ansc &#123; ansa = i; ansb = sieve.nth_prime(j); ansc = tmpc; &#125; &#125; &#125; println!("Answer is &#123;&#125;, &#123;&#125;, &#123;&#125;", ansa, ansb, ansc);&#125; Alogorithm12345678910111213141516171819202122232425262728293031323334388. Longest Absolute File PathSuppose we abstract our file system by a string in the following manner:The string &quot;dir\n\tsubdir1\n\tsubdir2\n\t\tfile.ext&quot; represents:dir subdir1 subdir2 file.extThe directory dir contains an empty sub-directory subdir1 and a sub-directory subdir2 containing a file file.ext.The string &quot;dir\n\tsubdir1\n\t\tfile1.ext\n\t\tsubsubdir1\n\tsubdir2\n\t\tsubsubdir2\n\t\t\tfile2.ext&quot; represents:dir subdir1 file1.ext subsubdir1 subdir2 subsubdir2 file2.extThe directory dir contains two sub-directories subdir1 and subdir2. subdir1 contains a file file1.ext and an empty second-level sub-directory subsubdir1. subdir2 contains a second-level sub-directory subsubdir2 containing a file file2.ext.We are interested in finding the longest (number of characters) absolute path to a file within our file system. For example, in the second example above, the longest absolute path is &quot;dir/subdir2/subsubdir2/file2.ext&quot;, and its length is 32 (not including the double quotes).Given a string representing the file system in the above format, return the length of the longest absolute path to file in the abstracted file system. If there is no file in the system, return 0.Note:The name of a file contains at least a . and an extension.The name of a directory or sub-directory will not contain a ..Time complexity required: O(n) where n is the size of the input string.Notice that a/aa/aaa/file1.txt is not the longest file path, if there is another path aaaaaaaaaaaaaaaaaaaaa/sth.png. SolutionThis problem looks like real world problem happens on Windows. Solution is quite clear so I don&#39;t want to explain it. The point is that when you come cross one file, you can know its ancestor directories&#39;s length. Implementation123456789101112131415161718192021222324252627/** * @param &#123;string&#125; input * @return &#123;number&#125; */var lengthLongestPath = function(input) &#123; let sumArr = []; let ans = 0; const countTab = (str) =&gt; &#123; for(let i = 0; i &lt; str.length; ++i)&#123; if(str[i] !== "\t") return i; &#125; &#125;; for(const str of input.split('\n')) &#123; if(str.includes("."))&#123; let pos = countTab(str); ans = Math.max(ans, pos?str.length - pos + sumArr[pos - 1]:str.length); &#125;else&#123; let pos = countTab(str); sumArr[pos] = pos?sumArr[pos - 1] + str.length - pos + 1:str.length+1; &#125; &#125; return ans;&#125;;// console.log(lengthLongestPath("dir\n\tsubdir1\n\tsubdir2\n\t\tfile.ext"));// console.log(lengthLongestPath("dir\n\tsubdir1\n\t\tfile1.ext\n\t\tsubsubdir1\n\tsubdir2\n\t\tsubsubdir2\n\t\t\tfile2.ext"));// console.log(lengthLongestPath("asdf.asdf"));]]></content>
@@ -517,9 +531,9 @@
         <category>WriteUp</category>
       </categories>
       <tags>
+        <tag>CTF</tag>
         <tag>Misc</tag>
         <tag>Crypto</tag>
-        <tag>CTF</tag>
       </tags>
   </entry>
   <entry>
@@ -530,10 +544,10 @@
         <category>WriteUp</category>
       </categories>
       <tags>
+        <tag>CTF</tag>
         <tag>Misc</tag>
         <tag>Crypto</tag>
         <tag>PWN</tag>
-        <tag>CTF</tag>
         <tag>Web</tag>
         <tag>Rev</tag>
       </tags>
@@ -558,8 +572,8 @@
         <category>WriteUp</category>
       </categories>
       <tags>
-        <tag>Crypto</tag>
         <tag>CTF</tag>
+        <tag>Crypto</tag>
       </tags>
   </entry>
   <entry>
@@ -586,10 +600,10 @@
         <category>WriteUp</category>
       </categories>
       <tags>
+        <tag>CTF</tag>
         <tag>Misc</tag>
         <tag>Crypto</tag>
         <tag>PWN</tag>
-        <tag>CTF</tag>
         <tag>Web</tag>
       </tags>
   </entry>
@@ -601,8 +615,8 @@
         <category>Notes</category>
       </categories>
       <tags>
-        <tag>PWN</tag>
         <tag>CTF</tag>
+        <tag>PWN</tag>
       </tags>
   </entry>
   <entry>
@@ -637,10 +651,10 @@
         <category>WriteUp</category>
       </categories>
       <tags>
+        <tag>CTF</tag>
         <tag>Misc</tag>
         <tag>Crypto</tag>
         <tag>PWN</tag>
-        <tag>CTF</tag>
         <tag>Web</tag>
         <tag>Rev</tag>
       </tags>
@@ -653,8 +667,8 @@
         <category>WriteUp</category>
       </categories>
       <tags>
-        <tag>Misc</tag>
         <tag>CTF</tag>
+        <tag>Misc</tag>
         <tag>Rev</tag>
       </tags>
   </entry>
