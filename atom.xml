@@ -35,6 +35,32 @@
   </entry>
   
   <entry>
+    <title>2019-01-18 Daily Challenge</title>
+    <link href="http://CSUwangj.github.io/2019-01-18-Daily-Challenge/"/>
+    <id>http://CSUwangj.github.io/2019-01-18-Daily-Challenge/</id>
+    <published>2019-01-17T17:22:10.000Z</published>
+    <updated>2019-01-17T17:26:31.896Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;What I&amp;#39;ve done today is &lt;em&gt;Distinct powers&lt;/em&gt; in &lt;del&gt;&lt;em&gt;Oral Calculation&lt;/em&gt;&lt;/del&gt;&lt;em&gt;Rust&lt;/em&gt; and &lt;em&gt;To Lower Case&lt;/em&gt; in &lt;em&gt;JavaScript&lt;/em&gt;.&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="DailyChallenge" scheme="http://CSUwangj.github.io/categories/DailyChallenge/"/>
+    
+    
+      <category term="Math" scheme="http://CSUwangj.github.io/tags/Math/"/>
+    
+      <category term="Algorithm" scheme="http://CSUwangj.github.io/tags/Algorithm/"/>
+    
+      <category term="LeetCode" scheme="http://CSUwangj.github.io/tags/LeetCode/"/>
+    
+      <category term="ProjectEuler" scheme="http://CSUwangj.github.io/tags/ProjectEuler/"/>
+    
+  </entry>
+  
+  <entry>
     <title>2019-01-17 Daily Challenge</title>
     <link href="http://CSUwangj.github.io/2019-01-17-Daily-Challenge/"/>
     <id>http://CSUwangj.github.io/2019-01-17-Daily-Challenge/</id>
@@ -488,32 +514,6 @@
     <summary type="html">
     
       &lt;p&gt;What I&amp;#39;ve done today is &lt;em&gt;Largest product in a grid&lt;/em&gt; in &lt;em&gt;Rust&lt;/em&gt; and &lt;em&gt;Reveal Cards In Increasing Order&lt;/em&gt; in &lt;em&gt;JavaScript&lt;/em&gt;.&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="DailyChallenge" scheme="http://CSUwangj.github.io/categories/DailyChallenge/"/>
-    
-    
-      <category term="Math" scheme="http://CSUwangj.github.io/tags/Math/"/>
-    
-      <category term="Algorithm" scheme="http://CSUwangj.github.io/tags/Algorithm/"/>
-    
-      <category term="LeetCode" scheme="http://CSUwangj.github.io/tags/LeetCode/"/>
-    
-      <category term="ProjectEuler" scheme="http://CSUwangj.github.io/tags/ProjectEuler/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>2018-12-30 Daily Challenge</title>
-    <link href="http://CSUwangj.github.io/2018-12-30-Daily-Challenge/"/>
-    <id>http://CSUwangj.github.io/2018-12-30-Daily-Challenge/</id>
-    <published>2018-12-29T17:10:04.000Z</published>
-    <updated>2018-12-29T17:11:23.072Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;What I&amp;#39;ve done today is &lt;em&gt;Summation of primes&lt;/em&gt; in &lt;em&gt;Rust&lt;/em&gt; and &lt;em&gt;Best Time to Buy and Sell Stock with Transaction Fee&lt;/em&gt; in &lt;em&gt;JavaScript&lt;/em&gt;.&lt;/p&gt;
     
     </summary>
     
