@@ -35,11 +35,37 @@
   </entry>
   
   <entry>
+    <title>2019-01-19 Daily Challenge</title>
+    <link href="http://CSUwangj.github.io/2019-01-19-Daily-Challenge/"/>
+    <id>http://CSUwangj.github.io/2019-01-19-Daily-Challenge/</id>
+    <published>2019-01-18T17:04:34.000Z</published>
+    <updated>2019-01-18T17:15:26.967Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;What I&amp;#39;ve done today is &lt;em&gt;Digit fifth powers&lt;/em&gt; in &lt;em&gt;Rust&lt;/em&gt; and &lt;em&gt;Valid Square&lt;/em&gt; in &lt;em&gt;JavaScript&lt;/em&gt;.&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="DailyChallenge" scheme="http://CSUwangj.github.io/categories/DailyChallenge/"/>
+    
+    
+      <category term="Math" scheme="http://CSUwangj.github.io/tags/Math/"/>
+    
+      <category term="Algorithm" scheme="http://CSUwangj.github.io/tags/Algorithm/"/>
+    
+      <category term="LeetCode" scheme="http://CSUwangj.github.io/tags/LeetCode/"/>
+    
+      <category term="ProjectEuler" scheme="http://CSUwangj.github.io/tags/ProjectEuler/"/>
+    
+  </entry>
+  
+  <entry>
     <title>2019-01-18 Daily Challenge</title>
     <link href="http://CSUwangj.github.io/2019-01-18-Daily-Challenge/"/>
     <id>http://CSUwangj.github.io/2019-01-18-Daily-Challenge/</id>
     <published>2019-01-17T17:22:10.000Z</published>
-    <updated>2019-01-17T17:26:31.896Z</updated>
+    <updated>2019-01-17T17:31:42.050Z</updated>
     
     <summary type="html">
     
@@ -488,32 +514,6 @@
     
       &lt;p&gt;&lt;strong&gt;HAPPY NEW YEAR!&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;What I&amp;#39;ve done today is &lt;em&gt;Highly divisible triangular number&lt;/em&gt; in &lt;em&gt;Rust&lt;/em&gt; and &lt;em&gt;Same Tree&lt;/em&gt; in &lt;em&gt;JavaScript&lt;/em&gt;.&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="DailyChallenge" scheme="http://CSUwangj.github.io/categories/DailyChallenge/"/>
-    
-    
-      <category term="Math" scheme="http://CSUwangj.github.io/tags/Math/"/>
-    
-      <category term="Algorithm" scheme="http://CSUwangj.github.io/tags/Algorithm/"/>
-    
-      <category term="LeetCode" scheme="http://CSUwangj.github.io/tags/LeetCode/"/>
-    
-      <category term="ProjectEuler" scheme="http://CSUwangj.github.io/tags/ProjectEuler/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>2018-12-31 Daily Challenge</title>
-    <link href="http://CSUwangj.github.io/2018-12-31-Daily-Challenge/"/>
-    <id>http://CSUwangj.github.io/2018-12-31-Daily-Challenge/</id>
-    <published>2018-12-30T16:04:27.000Z</published>
-    <updated>2019-01-01T16:52:49.644Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;What I&amp;#39;ve done today is &lt;em&gt;Largest product in a grid&lt;/em&gt; in &lt;em&gt;Rust&lt;/em&gt; and &lt;em&gt;Reveal Cards In Increasing Order&lt;/em&gt; in &lt;em&gt;JavaScript&lt;/em&gt;.&lt;/p&gt;
     
     </summary>
     
