@@ -9,6 +9,20 @@
       </categories>
   </entry>
   <entry>
+    <title><![CDATA[2019-01-20 Daily Challenge]]></title>
+    <url>%2F2019-01-20-Daily-Challenge%2F</url>
+    <content type="text"><![CDATA[What I&#39;ve done today is Digit fifth powers in Rust and Valid Square in JavaScript. MathProblemCoin sumsProblem 31In England the currency is made up of pound, £, and pence, p, and there are eight coins in general circulation: 1p, 2p, 5p, 10p, 20p, 50p, £1 (100p) and £2 (200p). It is possible to make £2 in the following way: 1×£1 + 1×50p + 2×20p + 1×5p + 1×2p + 3×1p How many different ways can £2 be made using any number of coins? SolutionUse DP to solve it. Implementation12345678910111213141516171819use std::vec::Vec;fn main() &#123; println!("Answer is &#123;&#125;", solve(200));&#125;fn solve(n: usize) -&gt; i32 &#123; let mut arr: Vec&lt;i32&gt; = vec![0; n + 1]; let coins: [usize; 8] = [1, 2, 5, 10, 20, 50, 100, 200]; arr[0] = 1; for coin in coins.iter() &#123; if *coin &lt;= n &#123; for i in *coin..(n+1) &#123; arr[i] += arr[i - coin]; &#125; &#125; &#125; return arr[n];&#125; AlgorithmProblem168. Excel Sheet Column TitleEasy Given a positive integer, return its corresponding column title as appear in an Excel sheet. For example: 123456781 -&gt; A2 -&gt; B3 -&gt; C...26 -&gt; Z27 -&gt; AA28 -&gt; AB ... Example 1: 12Input: 1Output: &quot;A&quot; Example 2: 12Input: 28Output: &quot;AB&quot; Example 3: 12Input: 701Output: &quot;ZY&quot; SolutionNothing to say. Implementation123456789101112131415161718192021/** * @param &#123;number&#125; n * @return &#123;string&#125; */var convertToTitle = function(n) &#123; n -= 1; let base = 26; let len = 1; let ans = ""; while(n &gt;= base)&#123; n -= base; len += 1; base *= 26; &#125; while(len)&#123; ans += String.fromCharCode(n%26+65); len -= 1; n = Math.floor(n/26); &#125; return ans.split('').reverse().join('');&#125;;]]></content>
+      <categories>
+        <category>DailyChallenge</category>
+      </categories>
+      <tags>
+        <tag>Math</tag>
+        <tag>Algorithm</tag>
+        <tag>LeetCode</tag>
+        <tag>ProjectEuler</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[2019-01-19 Daily Challenge]]></title>
     <url>%2F2019-01-19-Daily-Challenge%2F</url>
     <content type="text"><![CDATA[What I&#39;ve done today is Digit fifth powers in Rust and Valid Square in JavaScript. MathProblemDigit fifth powersProblem 30Surprisingly there are only three numbers that can be written as the sum of fourth powers of their digits: $1634 = 1^4 + 6^4 + 3^4 + 4^4$$8208 = 8^4 + 2^4 + 0^4 + 8^4$$9474 = 9^4 + 4^4 + 7^4 + 4^4$ As $1 = 1^4$ is not a sum it is not included. The sum of these numbers is 1634 + 8208 + 9474 = 19316. Find the sum of all the numbers that can be written as the sum of fifth powers of their digits. SolutionAll you need is a DFS. Because $9^5&lt;10^5$,$7\times 9^5&lt;10^6$, so upper bound of DFS is 6. Implementation123456789101112131415161718192021222324252627use std::vec::Vec;fn main() &#123; let mut ans: Vec&lt;i32&gt; = Vec::new(); dfs(0, 5, 0, 0, &amp;mut ans); ans.sort(); ans.dedup(); let mut ans_sum = 0; for num in &amp;ans &#123; println!("&#123;&#125;", num); ans_sum += num; &#125; println!("Answer is &#123;&#125;", ans_sum);&#125;fn dfs(c: i32, n: i32, num: i32, sum: i32, ans: &amp;mut Vec&lt;i32&gt;)&#123; if sum == num &amp;&amp; sum &gt; 1 &#123; ans.push(num); &#125; if c &gt; n &#123; return; &#125; for i in 0i32..10i32 &#123; dfs(c+1, n, num*10 + i, sum + i.pow(n as u32), ans); &#125;&#125; AlgorithmProblem593. Valid SquareMedium Given the coordinates of four points in 2D space, return whether the four points could construct a square. The coordinate (x,y) of a point is represented by an integer array with two integers. Example: 12Input: p1 = [0,0], p2 = [1,1], p3 = [1,0], p4 = [0,1]Output: True Note: All the input integers are in the range [-10000, 10000]. A valid square has four equal sides with positive length and four equal angles (90-degree angles). Input points have no order. SolutionHere&#39;s how I solve it: There is three line when you fixed one point, and pick up shorter two. Check if these two line are of same length and don&#39;t equal zero. Check if these two line are perpendicular. Implementation1234567891011121314151617181920212223242526/** * @param &#123;number[]&#125; p1 * @param &#123;number[]&#125; p2 * @param &#123;number[]&#125; p3 * @param &#123;number[]&#125; p4 * @return &#123;boolean&#125; */var validSquare = function(p1, p2, p3, p4) &#123; const dis = (p1, p2) =&gt; &#123; return Math.sqrt((p1[0]-p2[0])*(p1[0]-p2[0])+(p1[1]-p2[1])*(p1[1]-p2[1])); &#125;; const cmp = (a, b) =&gt; &#123; return a-b &gt;1e-6; &#125;; if(cmp(dis(p1,p2), dis(p1,p3))) [p2, p4] = [p4, p2]; else if(cmp(dis(p1,p3), dis(p1, p2))) [p3, p4] = [p4, p3]; return !cmp(dis(p1,p2),dis(p1,p3)) &amp;&amp; !cmp(dis(p1,p3),dis(p1,p2)) &amp;&amp; cmp(dis(p1,p2),0)&amp;&amp; (Math.abs(p1[0]-p2[0]) === Math.abs(p3[0]-p4[0])) &amp;&amp; (Math.abs(p1[1]-p2[1]) === Math.abs(p3[1]-p4[1])) &amp;&amp; (Math.abs(p1[0]-p3[0]) === Math.abs(p2[0]-p4[0])) &amp;&amp; (Math.abs(p1[1]-p3[1]) === Math.abs(p2[1]-p4[1])) &amp;&amp; ((p1[0]-p2[0])*(p1[0]-p3[0])+(p1[1]-p3[1])*(p1[1]-p2[1]) === 0);&#125;;// console.log(validSquare(p1 = [0,0], p2 = [1,1], p3 = [1,0], p4 = [0,1]));// console.log(validSquare([0,0], [5,0], [5,4], [0,4]));]]></content>
@@ -559,9 +573,9 @@
         <category>WriteUp</category>
       </categories>
       <tags>
+        <tag>CTF</tag>
         <tag>Misc</tag>
         <tag>Crypto</tag>
-        <tag>CTF</tag>
       </tags>
   </entry>
   <entry>
@@ -572,9 +586,9 @@
         <category>WriteUp</category>
       </categories>
       <tags>
+        <tag>CTF</tag>
         <tag>Misc</tag>
         <tag>Crypto</tag>
-        <tag>CTF</tag>
         <tag>PWN</tag>
         <tag>Web</tag>
         <tag>Rev</tag>
@@ -600,8 +614,8 @@
         <category>WriteUp</category>
       </categories>
       <tags>
-        <tag>Crypto</tag>
         <tag>CTF</tag>
+        <tag>Crypto</tag>
       </tags>
   </entry>
   <entry>
@@ -628,9 +642,9 @@
         <category>WriteUp</category>
       </categories>
       <tags>
+        <tag>CTF</tag>
         <tag>Misc</tag>
         <tag>Crypto</tag>
-        <tag>CTF</tag>
         <tag>PWN</tag>
         <tag>Web</tag>
       </tags>
@@ -679,9 +693,9 @@
         <category>WriteUp</category>
       </categories>
       <tags>
+        <tag>CTF</tag>
         <tag>Misc</tag>
         <tag>Crypto</tag>
-        <tag>CTF</tag>
         <tag>PWN</tag>
         <tag>Web</tag>
         <tag>Rev</tag>
@@ -695,8 +709,8 @@
         <category>WriteUp</category>
       </categories>
       <tags>
-        <tag>Misc</tag>
         <tag>CTF</tag>
+        <tag>Misc</tag>
         <tag>Rev</tag>
       </tags>
   </entry>
