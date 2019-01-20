@@ -9,6 +9,20 @@
       </categories>
   </entry>
   <entry>
+    <title><![CDATA[2019-01-21 Daily Challenge]]></title>
+    <url>%2F2019-01-21-Daily-Challenge%2F</url>
+    <content type="text"><![CDATA[What I&#39;ve done today is Pandigital products in Rust and Candy in JavaScript. MathProblemPandigital productsProblem 32We shall say that an n-digit number is pandigital if it makes use of all the digits 1 to n exactly once; for example, the 5-digit number, 15234, is 1 through 5 pandigital. The product 7254 is unusual, as the identity, 39 × 186 = 7254, containing multiplicand, multiplier, and product is 1 through 9 pandigital. Find the sum of all products whose multiplicand/multiplier/product identity can be written as a 1 through 9 pandigital. HINT: Some products can be obtained in more than one way so be sure to only include it once in your sum. SolutionBecause there are nine digits, so multiplication will be $a\times bcde=fghi$ or $ab\times cde=fghi$. But apart from brute force approach, I can&#39;t find another solution. Implementation12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152535455565758596061use std::collections::HashSet;fn main() &#123; let mut set: HashSet&lt;i32&gt; = HashSet::new(); let mut ans = 0; for i in 1..10 &#123; for j in 1234..9877 &#123; if i*j &gt; 9999 &#123; break; &#125; if check(i, j, i*j) &#123; println!("&#123;&#125; * &#123;&#125; = &#123;&#125;", i, j, i*j); set.insert(i*j); &#125; &#125; &#125; for i in 12..99 &#123; for j in 123..988&#123; if i*j &gt; 9999 &#123; break; &#125; if check(i, j, i*j) &#123; println!("&#123;&#125; * &#123;&#125; = &#123;&#125;", i, j, i*j); set.insert(i*j); &#125; &#125; &#125; for num in set &#123; ans += num; &#125; println!("Answer is &#123;&#125;", ans);&#125;fn check(mut multiplicand: i32, mut multiplier: i32, mut product: i32) -&gt; bool &#123; let mut ok: [bool; 10] = [false; 10]; while multiplicand &gt; 0 &#123; let tmp = multiplicand % 10; multiplicand /= 10; if tmp == 0 || ok[tmp as usize] &#123; return false; &#125; ok[tmp as usize] = true; &#125; while multiplier &gt; 0 &#123; let tmp = multiplier % 10; multiplier /= 10; if tmp == 0 || ok[tmp as usize] &#123; return false; &#125; ok[tmp as usize] = true; &#125; while product &gt; 0 &#123; let tmp = product % 10; product /= 10; if tmp == 0 || ok[tmp as usize] &#123; return false; &#125; ok[tmp as usize] = true; &#125; return true;&#125; AlgorithmProblem135. CandyThere are N children standing in a line. Each child is assigned a rating value. You are giving candies to these children subjected to the following requirements: Each child must have at least one candy. Children with a higher rating get more candies than their neighbors. What is the minimum candies you must give? Example 1: 123Input: [1,0,2]Output: 5Explanation: You can allocate to the first, second and third child with 2, 1, 2 candies respectively. Example 2: 1234Input: [1,2,2]Output: 4Explanation: You can allocate to the first, second and third child with 1, 2, 1 candies respectively. The third child gets 1 candy because it satisfies the above two conditions. SolutionIf ultimate answer is arr[n], consider one position k, arr[k] can only be arr[k-1] + 1, 1, or arr[k+1] + 1, which means all we need is scanning ratings from left, and scanning ratings from right. Implementation1234567891011121314151617181920212223/** * @param &#123;number[]&#125; ratings * @return &#123;number&#125; */var candy = function(ratings) &#123; let n = ratings.length; let ans = 0; let left = new Array(n); let right = new Array(n); left[0] = 1; right[n-1] = 1; for(let i = 1; i &lt; n; ++i)&#123; left[i] = ratings[i] &gt; ratings[i-1]? left[i-1] + 1: 1; right[n-1-i] = ratings[n-1-i] &gt; ratings[n-i]? right[n-i] + 1: 1; &#125; for(let i = 0; i &lt; n; ++i)&#123; ans += Math.max(left[i], right[i]); &#125; return ans;&#125;;// console.log(candy([1,0,2]));// console.log(candy([1,2,2]));]]></content>
+      <categories>
+        <category>DailyChallenge</category>
+      </categories>
+      <tags>
+        <tag>Math</tag>
+        <tag>Algorithm</tag>
+        <tag>LeetCode</tag>
+        <tag>ProjectEuler</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[2019-01-20 Daily Challenge]]></title>
     <url>%2F2019-01-20-Daily-Challenge%2F</url>
     <content type="text"><![CDATA[What I&#39;ve done today is Digit fifth powers in Rust and Valid Square in JavaScript. MathProblemCoin sumsProblem 31In England the currency is made up of pound, £, and pence, p, and there are eight coins in general circulation: 1p, 2p, 5p, 10p, 20p, 50p, £1 (100p) and £2 (200p). It is possible to make £2 in the following way: 1×£1 + 1×50p + 2×20p + 1×5p + 1×2p + 3×1p How many different ways can £2 be made using any number of coins? SolutionUse DP to solve it. Implementation12345678910111213141516171819use std::vec::Vec;fn main() &#123; println!("Answer is &#123;&#125;", solve(200));&#125;fn solve(n: usize) -&gt; i32 &#123; let mut arr: Vec&lt;i32&gt; = vec![0; n + 1]; let coins: [usize; 8] = [1, 2, 5, 10, 20, 50, 100, 200]; arr[0] = 1; for coin in coins.iter() &#123; if *coin &lt;= n &#123; for i in *coin..(n+1) &#123; arr[i] += arr[i - coin]; &#125; &#125; &#125; return arr[n];&#125; AlgorithmProblem168. Excel Sheet Column TitleEasy Given a positive integer, return its corresponding column title as appear in an Excel sheet. For example: 123456781 -&gt; A2 -&gt; B3 -&gt; C...26 -&gt; Z27 -&gt; AA28 -&gt; AB ... Example 1: 12Input: 1Output: &quot;A&quot; Example 2: 12Input: 28Output: &quot;AB&quot; Example 3: 12Input: 701Output: &quot;ZY&quot; SolutionNothing to say. Implementation123456789101112131415161718192021/** * @param &#123;number&#125; n * @return &#123;string&#125; */var convertToTitle = function(n) &#123; n -= 1; let base = 26; let len = 1; let ans = ""; while(n &gt;= base)&#123; n -= base; len += 1; base *= 26; &#125; while(len)&#123; ans += String.fromCharCode(n%26+65); len -= 1; n = Math.floor(n/26); &#125; return ans.split('').reverse().join('');&#125;;]]></content>
@@ -574,8 +588,8 @@
       </categories>
       <tags>
         <tag>CTF</tag>
-        <tag>Misc</tag>
         <tag>Crypto</tag>
+        <tag>Misc</tag>
       </tags>
   </entry>
   <entry>
@@ -587,11 +601,11 @@
       </categories>
       <tags>
         <tag>CTF</tag>
-        <tag>Misc</tag>
-        <tag>Crypto</tag>
         <tag>PWN</tag>
-        <tag>Web</tag>
+        <tag>Crypto</tag>
+        <tag>Misc</tag>
         <tag>Rev</tag>
+        <tag>Web</tag>
       </tags>
   </entry>
   <entry>
@@ -643,9 +657,9 @@
       </categories>
       <tags>
         <tag>CTF</tag>
-        <tag>Misc</tag>
-        <tag>Crypto</tag>
         <tag>PWN</tag>
+        <tag>Crypto</tag>
+        <tag>Misc</tag>
         <tag>Web</tag>
       </tags>
   </entry>
@@ -681,8 +695,8 @@
         <category>Tools</category>
       </categories>
       <tags>
-        <tag>Misc</tag>
         <tag>Crypto</tag>
+        <tag>Misc</tag>
       </tags>
   </entry>
   <entry>
@@ -694,11 +708,11 @@
       </categories>
       <tags>
         <tag>CTF</tag>
-        <tag>Misc</tag>
-        <tag>Crypto</tag>
         <tag>PWN</tag>
-        <tag>Web</tag>
+        <tag>Crypto</tag>
+        <tag>Misc</tag>
         <tag>Rev</tag>
+        <tag>Web</tag>
       </tags>
   </entry>
   <entry>
