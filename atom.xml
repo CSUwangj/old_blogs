@@ -35,6 +35,50 @@
   </entry>
   
   <entry>
+    <title>2019-01-22 Daily Challenge</title>
+    <link href="http://CSUwangj.github.io/2019-01-22-Daily-Challenge/"/>
+    <id>http://CSUwangj.github.io/2019-01-22-Daily-Challenge/</id>
+    <published>2019-01-21T16:03:31.000Z</published>
+    <updated>2019-01-21T16:44:21.911Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;What I&amp;#39;ve done today is &lt;em&gt;Digit cancelling fractions&lt;/em&gt; in &lt;em&gt;Rust&lt;/em&gt; and &lt;em&gt;Repeated String Match&lt;/em&gt; in &lt;em&gt;JavaScript&lt;/em&gt;.&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="DailyChallenge" scheme="http://CSUwangj.github.io/categories/DailyChallenge/"/>
+    
+    
+      <category term="Math" scheme="http://CSUwangj.github.io/tags/Math/"/>
+    
+      <category term="Algorithm" scheme="http://CSUwangj.github.io/tags/Algorithm/"/>
+    
+      <category term="LeetCode" scheme="http://CSUwangj.github.io/tags/LeetCode/"/>
+    
+      <category term="ProjectEuler" scheme="http://CSUwangj.github.io/tags/ProjectEuler/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>又一次装机</title>
+    <link href="http://CSUwangj.github.io/%E5%8F%88%E4%B8%80%E6%AC%A1%E8%A3%85%E6%9C%BA/"/>
+    <id>http://CSUwangj.github.io/又一次装机/</id>
+    <published>2019-01-21T02:41:05.000Z</published>
+    <updated>2019-01-21T16:50:09.901Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;更新了固态硬盘，所以又要重装电脑啦~&lt;br&gt;记录一蛤装机过程，主要还是给自己以后参考用。&lt;br&gt;
+    
+    </summary>
+    
+      <category term="Notes" scheme="http://CSUwangj.github.io/categories/Notes/"/>
+    
+    
+  </entry>
+  
+  <entry>
     <title>2019-01-21 Daily Challenge</title>
     <link href="http://CSUwangj.github.io/2019-01-21-Daily-Challenge/"/>
     <id>http://CSUwangj.github.io/2019-01-21-Daily-Challenge/</id>
@@ -461,58 +505,6 @@
     <summary type="html">
     
       &lt;p&gt;What I&amp;#39;ve done today is &lt;em&gt;Power digit sum&lt;/em&gt; in &lt;em&gt;Rust&lt;/em&gt; and &lt;em&gt;Swap Adjacent in LR String&lt;/em&gt; in &lt;em&gt;JavaScript&lt;/em&gt;.&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="DailyChallenge" scheme="http://CSUwangj.github.io/categories/DailyChallenge/"/>
-    
-    
-      <category term="Math" scheme="http://CSUwangj.github.io/tags/Math/"/>
-    
-      <category term="Algorithm" scheme="http://CSUwangj.github.io/tags/Algorithm/"/>
-    
-      <category term="LeetCode" scheme="http://CSUwangj.github.io/tags/LeetCode/"/>
-    
-      <category term="ProjectEuler" scheme="http://CSUwangj.github.io/tags/ProjectEuler/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>2019-01-04 Daily Challenge</title>
-    <link href="http://CSUwangj.github.io/2019-01-04-Daily-Challenge/"/>
-    <id>http://CSUwangj.github.io/2019-01-04-Daily-Challenge/</id>
-    <published>2019-01-04T06:50:05.000Z</published>
-    <updated>2019-01-04T07:37:54.394Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;What I&amp;#39;ve done today is &lt;em&gt;Lattice paths&lt;/em&gt; in &lt;em&gt;Rust&lt;/em&gt; and &lt;em&gt;Robot Return to Origin&lt;/em&gt; in &lt;em&gt;JavaScript&lt;/em&gt;.&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="DailyChallenge" scheme="http://CSUwangj.github.io/categories/DailyChallenge/"/>
-    
-    
-      <category term="Math" scheme="http://CSUwangj.github.io/tags/Math/"/>
-    
-      <category term="Algorithm" scheme="http://CSUwangj.github.io/tags/Algorithm/"/>
-    
-      <category term="LeetCode" scheme="http://CSUwangj.github.io/tags/LeetCode/"/>
-    
-      <category term="ProjectEuler" scheme="http://CSUwangj.github.io/tags/ProjectEuler/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>2019-01-03 Daily Challenge</title>
-    <link href="http://CSUwangj.github.io/2019-01-03-Daily-Challenge/"/>
-    <id>http://CSUwangj.github.io/2019-01-03-Daily-Challenge/</id>
-    <published>2019-01-02T16:04:05.000Z</published>
-    <updated>2019-01-02T16:08:58.634Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;What I&amp;#39;ve done today is &lt;em&gt;Longest Collatz sequence&lt;/em&gt; in &lt;em&gt;Rust&lt;/em&gt; and &lt;em&gt;Permutation Sequence&lt;/em&gt; in &lt;em&gt;JavaScript&lt;/em&gt;.&lt;/p&gt;
     
     </summary>
     

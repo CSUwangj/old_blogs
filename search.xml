@@ -9,6 +9,28 @@
       </categories>
   </entry>
   <entry>
+    <title><![CDATA[2019-01-22 Daily Challenge]]></title>
+    <url>%2F2019-01-22-Daily-Challenge%2F</url>
+    <content type="text"><![CDATA[What I&#39;ve done today is Digit cancelling fractions in Rust and Repeated String Match in JavaScript. MathProblemDigit cancelling fractionsProblem 33The fraction 49/98 is a curious fraction, as an inexperienced mathematician in attempting to simplify it may incorrectly believe that 49/98 = 4/8, which is correct, is obtained by cancelling the 9s. We shall consider fractions like, 30/50 = 3/5, to be trivial examples. There are exactly four non-trivial examples of this type of fraction, less than one in value, and containing two digits in the numerator and denominator. If the product of these four fractions is given in its lowest common terms, find the value of the denominator. SolutionBrute force. Implementation1234567891011121314151617181920fn main() &#123; let mut numerator = 1; let mut denominator = 1; for i in 1..9 &#123; for j in i+1..10 &#123; for k in 1..10 &#123; if (i*10 + k)*j == (k*10 + j)*i &#123; println!("&#123;&#125;/&#123;&#125; = &#123;&#125;/&#123;&#125;",i*10+k,k*10+j,i,j); numerator *= i; denominator *= j; &#125; &#125; &#125; &#125; println!("Answer is &#123;&#125;", denominator/gcd(denominator, numerator));&#125;fn gcd(a: usize, b: usize) -&gt; usize &#123; return if b == 0 &#123; a &#125; else &#123; gcd(b, a%b) &#125;&#125; AlgorithmProblem686. Repeated String MatchGiven two strings A and B, find the minimum number of times A has to be repeated such that B is a substring of it. If no such solution, return -1. For example, with A = &quot;abcd&quot; and B = &quot;cdabcdab&quot;. Return 3, because by repeating A three times (“abcdabcdabcd”), B is a substring of it; and B is not a substring of A repeated two times (&quot;abcdabcd&quot;). Note:The length of A and B will be between 1 and 10000. SolutionNothing to say. Implementation123456789101112/** * @param &#123;string&#125; A * @param &#123;string&#125; B * @return &#123;number&#125; */var repeatedStringMatch = function(A, B) &#123; let nstr = A; while(nstr.length &lt; B.length) nstr += A; return nstr.indexOf(B) !== -1 ? Math.ceil(B.length/A.length):((nstr+A).indexOf(B) === -1? -1:Math.ceil(B.length/A.length)+1);&#125;;// console.log(repeatedStringMatch("abcd","cdabcdab"));]]></content>
+      <categories>
+        <category>DailyChallenge</category>
+      </categories>
+      <tags>
+        <tag>Math</tag>
+        <tag>Algorithm</tag>
+        <tag>LeetCode</tag>
+        <tag>ProjectEuler</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[又一次装机]]></title>
+    <url>%2F%E5%8F%88%E4%B8%80%E6%AC%A1%E8%A3%85%E6%9C%BA%2F</url>
+    <content type="text"><![CDATA[更新了固态硬盘，所以又要重装电脑啦~记录一蛤装机过程，主要还是给自己以后参考用。 准备工作到https://www.microsoft.com/zh-cn/software-download/windows10下载创建安装盘的工具 到电脑厂商官网/硬件厂商官网下载驱动。 使用GeekUninstaller导出一份软件清单，并且按照清单下载安装程序（假如没有留下来的）。 查看Path里有没有什么需要配置的东西，保留ssh私钥。 测试驱动包会干些什么（别再给我搞个什么电脑管家我就艹了） 代码、浏览器都不用备份，我使用OneDrive/Chrome解决迁移问题（同步真是好，但是涉密千万别上网）。 UWP应用虽好，但是不一定在清单里，记得备份一下列表。 有注册的软件记得注销/记录注册码。 单机游戏记得备份存档，云存档不用。各个工具的设置如果能导出的话导一下。 安装过程安装过程就是反着来就是了。 顺便一提这次加了内存换了SSD，国产软件基本都丢虚拟机里了。 目前来看暂时没有想到什么值得一提的东西，可能是因为比较习惯了吧。]]></content>
+      <categories>
+        <category>Notes</category>
+      </categories>
+  </entry>
+  <entry>
     <title><![CDATA[2019-01-21 Daily Challenge]]></title>
     <url>%2F2019-01-21-Daily-Challenge%2F</url>
     <content type="text"><![CDATA[What I&#39;ve done today is Pandigital products in Rust and Candy in JavaScript. MathProblemPandigital productsProblem 32We shall say that an n-digit number is pandigital if it makes use of all the digits 1 to n exactly once; for example, the 5-digit number, 15234, is 1 through 5 pandigital. The product 7254 is unusual, as the identity, 39 × 186 = 7254, containing multiplicand, multiplier, and product is 1 through 9 pandigital. Find the sum of all products whose multiplicand/multiplier/product identity can be written as a 1 through 9 pandigital. HINT: Some products can be obtained in more than one way so be sure to only include it once in your sum. SolutionBecause there are nine digits, so multiplication will be $a\times bcde=fghi$ or $ab\times cde=fghi$. But apart from brute force approach, I can&#39;t find another solution. Implementation12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152535455565758596061use std::collections::HashSet;fn main() &#123; let mut set: HashSet&lt;i32&gt; = HashSet::new(); let mut ans = 0; for i in 1..10 &#123; for j in 1234..9877 &#123; if i*j &gt; 9999 &#123; break; &#125; if check(i, j, i*j) &#123; println!("&#123;&#125; * &#123;&#125; = &#123;&#125;", i, j, i*j); set.insert(i*j); &#125; &#125; &#125; for i in 12..99 &#123; for j in 123..988&#123; if i*j &gt; 9999 &#123; break; &#125; if check(i, j, i*j) &#123; println!("&#123;&#125; * &#123;&#125; = &#123;&#125;", i, j, i*j); set.insert(i*j); &#125; &#125; &#125; for num in set &#123; ans += num; &#125; println!("Answer is &#123;&#125;", ans);&#125;fn check(mut multiplicand: i32, mut multiplier: i32, mut product: i32) -&gt; bool &#123; let mut ok: [bool; 10] = [false; 10]; while multiplicand &gt; 0 &#123; let tmp = multiplicand % 10; multiplicand /= 10; if tmp == 0 || ok[tmp as usize] &#123; return false; &#125; ok[tmp as usize] = true; &#125; while multiplier &gt; 0 &#123; let tmp = multiplier % 10; multiplier /= 10; if tmp == 0 || ok[tmp as usize] &#123; return false; &#125; ok[tmp as usize] = true; &#125; while product &gt; 0 &#123; let tmp = product % 10; product /= 10; if tmp == 0 || ok[tmp as usize] &#123; return false; &#125; ok[tmp as usize] = true; &#125; return true;&#125; AlgorithmProblem135. CandyThere are N children standing in a line. Each child is assigned a rating value. You are giving candies to these children subjected to the following requirements: Each child must have at least one candy. Children with a higher rating get more candies than their neighbors. What is the minimum candies you must give? Example 1: 123Input: [1,0,2]Output: 5Explanation: You can allocate to the first, second and third child with 2, 1, 2 candies respectively. Example 2: 1234Input: [1,2,2]Output: 4Explanation: You can allocate to the first, second and third child with 1, 2, 1 candies respectively. The third child gets 1 candy because it satisfies the above two conditions. SolutionIf ultimate answer is arr[n], consider one position k, arr[k] can only be arr[k-1] + 1, 1, or arr[k+1] + 1, which means all we need is scanning ratings from left, and scanning ratings from right. Implementation1234567891011121314151617181920212223/** * @param &#123;number[]&#125; ratings * @return &#123;number&#125; */var candy = function(ratings) &#123; let n = ratings.length; let ans = 0; let left = new Array(n); let right = new Array(n); left[0] = 1; right[n-1] = 1; for(let i = 1; i &lt; n; ++i)&#123; left[i] = ratings[i] &gt; ratings[i-1]? left[i-1] + 1: 1; right[n-1-i] = ratings[n-1-i] &gt; ratings[n-i]? right[n-i] + 1: 1; &#125; for(let i = 0; i &lt; n; ++i)&#123; ans += Math.max(left[i], right[i]); &#125; return ans;&#125;;// console.log(candy([1,0,2]));// console.log(candy([1,2,2]));]]></content>
@@ -588,8 +610,8 @@
       </categories>
       <tags>
         <tag>CTF</tag>
-        <tag>Crypto</tag>
         <tag>Misc</tag>
+        <tag>Crypto</tag>
       </tags>
   </entry>
   <entry>
@@ -601,11 +623,11 @@
       </categories>
       <tags>
         <tag>CTF</tag>
-        <tag>PWN</tag>
-        <tag>Crypto</tag>
         <tag>Misc</tag>
-        <tag>Rev</tag>
+        <tag>Crypto</tag>
+        <tag>PWN</tag>
         <tag>Web</tag>
+        <tag>Rev</tag>
       </tags>
   </entry>
   <entry>
@@ -657,9 +679,9 @@
       </categories>
       <tags>
         <tag>CTF</tag>
-        <tag>PWN</tag>
-        <tag>Crypto</tag>
         <tag>Misc</tag>
+        <tag>Crypto</tag>
+        <tag>PWN</tag>
         <tag>Web</tag>
       </tags>
   </entry>
@@ -695,8 +717,8 @@
         <category>Tools</category>
       </categories>
       <tags>
-        <tag>Crypto</tag>
         <tag>Misc</tag>
+        <tag>Crypto</tag>
       </tags>
   </entry>
   <entry>
@@ -708,11 +730,11 @@
       </categories>
       <tags>
         <tag>CTF</tag>
-        <tag>PWN</tag>
-        <tag>Crypto</tag>
         <tag>Misc</tag>
-        <tag>Rev</tag>
+        <tag>Crypto</tag>
+        <tag>PWN</tag>
         <tag>Web</tag>
+        <tag>Rev</tag>
       </tags>
   </entry>
   <entry>
