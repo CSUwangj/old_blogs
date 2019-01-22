@@ -35,6 +35,32 @@
   </entry>
   
   <entry>
+    <title>2019-01-23 Daily Challenge</title>
+    <link href="http://CSUwangj.github.io/2019-01-23-Daily-Challenge/"/>
+    <id>http://CSUwangj.github.io/2019-01-23-Daily-Challenge/</id>
+    <published>2019-01-22T16:46:06.000Z</published>
+    <updated>2019-01-22T16:49:47.125Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;What I&amp;#39;ve done today is &lt;em&gt;Digit factorials&lt;/em&gt; in &lt;em&gt;Rust&lt;/em&gt; and &lt;em&gt;Search a 2D Matrix II&lt;/em&gt; in &lt;em&gt;JavaScript&lt;/em&gt;.&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="DailyChallenge" scheme="http://CSUwangj.github.io/categories/DailyChallenge/"/>
+    
+    
+      <category term="Math" scheme="http://CSUwangj.github.io/tags/Math/"/>
+    
+      <category term="Algorithm" scheme="http://CSUwangj.github.io/tags/Algorithm/"/>
+    
+      <category term="LeetCode" scheme="http://CSUwangj.github.io/tags/LeetCode/"/>
+    
+      <category term="ProjectEuler" scheme="http://CSUwangj.github.io/tags/ProjectEuler/"/>
+    
+  </entry>
+  
+  <entry>
     <title>2019-01-22 Daily Challenge</title>
     <link href="http://CSUwangj.github.io/2019-01-22-Daily-Challenge/"/>
     <id>http://CSUwangj.github.io/2019-01-22-Daily-Challenge/</id>
@@ -65,7 +91,7 @@
     <link href="http://CSUwangj.github.io/%E5%8F%88%E4%B8%80%E6%AC%A1%E8%A3%85%E6%9C%BA/"/>
     <id>http://CSUwangj.github.io/又一次装机/</id>
     <published>2019-01-21T02:41:05.000Z</published>
-    <updated>2019-01-21T16:50:09.901Z</updated>
+    <updated>2019-01-22T07:25:20.667Z</updated>
     
     <summary type="html">
     
@@ -479,32 +505,6 @@
     <summary type="html">
     
       &lt;p&gt;What I&amp;#39;ve done today is &lt;em&gt;Number letter counts&lt;/em&gt; in &lt;em&gt;Rust&lt;/em&gt; and &lt;em&gt;Reverse String&lt;/em&gt; in &lt;em&gt;JavaScript&lt;/em&gt;.&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="DailyChallenge" scheme="http://CSUwangj.github.io/categories/DailyChallenge/"/>
-    
-    
-      <category term="Math" scheme="http://CSUwangj.github.io/tags/Math/"/>
-    
-      <category term="Algorithm" scheme="http://CSUwangj.github.io/tags/Algorithm/"/>
-    
-      <category term="LeetCode" scheme="http://CSUwangj.github.io/tags/LeetCode/"/>
-    
-      <category term="ProjectEuler" scheme="http://CSUwangj.github.io/tags/ProjectEuler/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>2019-01-05 Daily Challenge</title>
-    <link href="http://CSUwangj.github.io/2019-01-05-Daily-Challenge/"/>
-    <id>http://CSUwangj.github.io/2019-01-05-Daily-Challenge/</id>
-    <published>2019-01-04T16:01:21.000Z</published>
-    <updated>2019-01-05T15:21:24.218Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;What I&amp;#39;ve done today is &lt;em&gt;Power digit sum&lt;/em&gt; in &lt;em&gt;Rust&lt;/em&gt; and &lt;em&gt;Swap Adjacent in LR String&lt;/em&gt; in &lt;em&gt;JavaScript&lt;/em&gt;.&lt;/p&gt;
     
     </summary>
     
