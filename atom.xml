@@ -35,6 +35,32 @@
   </entry>
   
   <entry>
+    <title>2019-01-24 Daily Challenge</title>
+    <link href="http://CSUwangj.github.io/2019-01-24-Daily-Challenge/"/>
+    <id>http://CSUwangj.github.io/2019-01-24-Daily-Challenge/</id>
+    <published>2019-01-23T16:13:03.000Z</published>
+    <updated>2019-01-23T16:29:12.063Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;What I&amp;#39;ve done today is &lt;em&gt;Circular primes&lt;/em&gt; in &lt;em&gt;Rust&lt;/em&gt; and &lt;em&gt;Super Ugly Number&lt;/em&gt; in &lt;em&gt;JavaScript&lt;/em&gt;.&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="DailyChallenge" scheme="http://CSUwangj.github.io/categories/DailyChallenge/"/>
+    
+    
+      <category term="Math" scheme="http://CSUwangj.github.io/tags/Math/"/>
+    
+      <category term="Algorithm" scheme="http://CSUwangj.github.io/tags/Algorithm/"/>
+    
+      <category term="LeetCode" scheme="http://CSUwangj.github.io/tags/LeetCode/"/>
+    
+      <category term="ProjectEuler" scheme="http://CSUwangj.github.io/tags/ProjectEuler/"/>
+    
+  </entry>
+  
+  <entry>
     <title>2019-01-23 Daily Challenge</title>
     <link href="http://CSUwangj.github.io/2019-01-23-Daily-Challenge/"/>
     <id>http://CSUwangj.github.io/2019-01-23-Daily-Challenge/</id>
@@ -479,32 +505,6 @@
     <summary type="html">
     
       &lt;p&gt;What I&amp;#39;ve done today is &lt;em&gt;Maximum path sum I&lt;/em&gt; in &lt;em&gt;Rust&lt;/em&gt; and &lt;em&gt;Valid Parenthesis String&lt;/em&gt; in &lt;em&gt;JavaScript&lt;/em&gt;.&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="DailyChallenge" scheme="http://CSUwangj.github.io/categories/DailyChallenge/"/>
-    
-    
-      <category term="Math" scheme="http://CSUwangj.github.io/tags/Math/"/>
-    
-      <category term="Algorithm" scheme="http://CSUwangj.github.io/tags/Algorithm/"/>
-    
-      <category term="LeetCode" scheme="http://CSUwangj.github.io/tags/LeetCode/"/>
-    
-      <category term="ProjectEuler" scheme="http://CSUwangj.github.io/tags/ProjectEuler/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>2019-01-06 Daily Challenge</title>
-    <link href="http://CSUwangj.github.io/2019-01-06-Daily-Challenge/"/>
-    <id>http://CSUwangj.github.io/2019-01-06-Daily-Challenge/</id>
-    <published>2019-01-06T15:12:35.000Z</published>
-    <updated>2019-01-05T16:00:44.685Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;What I&amp;#39;ve done today is &lt;em&gt;Number letter counts&lt;/em&gt; in &lt;em&gt;Rust&lt;/em&gt; and &lt;em&gt;Reverse String&lt;/em&gt; in &lt;em&gt;JavaScript&lt;/em&gt;.&lt;/p&gt;
     
     </summary>
     
