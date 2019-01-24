@@ -35,6 +35,32 @@
   </entry>
   
   <entry>
+    <title>2019-01-25 Daily Challenge</title>
+    <link href="http://CSUwangj.github.io/2019-01-25-Daily-Challenge/"/>
+    <id>http://CSUwangj.github.io/2019-01-25-Daily-Challenge/</id>
+    <published>2019-01-24T16:02:42.000Z</published>
+    <updated>2019-01-24T16:03:22.588Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;What I&amp;#39;ve done today is &lt;em&gt;Double-base palindromes&lt;/em&gt; in &lt;em&gt;Rust&lt;/em&gt; and &lt;em&gt;Find Mode in Binary Search Tree&lt;/em&gt; in &lt;em&gt;JavaScript&lt;/em&gt;.&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="DailyChallenge" scheme="http://CSUwangj.github.io/categories/DailyChallenge/"/>
+    
+    
+      <category term="Math" scheme="http://CSUwangj.github.io/tags/Math/"/>
+    
+      <category term="Algorithm" scheme="http://CSUwangj.github.io/tags/Algorithm/"/>
+    
+      <category term="LeetCode" scheme="http://CSUwangj.github.io/tags/LeetCode/"/>
+    
+      <category term="ProjectEuler" scheme="http://CSUwangj.github.io/tags/ProjectEuler/"/>
+    
+  </entry>
+  
+  <entry>
     <title>2019-01-24 Daily Challenge</title>
     <link href="http://CSUwangj.github.io/2019-01-24-Daily-Challenge/"/>
     <id>http://CSUwangj.github.io/2019-01-24-Daily-Challenge/</id>
@@ -479,32 +505,6 @@
     <summary type="html">
     
       &lt;p&gt;What I&amp;#39;ve done today is &lt;em&gt;Counting Sundays&lt;/em&gt; in &lt;em&gt;Rust&lt;/em&gt; and &lt;em&gt;N-Queens II&lt;/em&gt; in &lt;em&gt;JavaScript&lt;/em&gt;.&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="DailyChallenge" scheme="http://CSUwangj.github.io/categories/DailyChallenge/"/>
-    
-    
-      <category term="Math" scheme="http://CSUwangj.github.io/tags/Math/"/>
-    
-      <category term="Algorithm" scheme="http://CSUwangj.github.io/tags/Algorithm/"/>
-    
-      <category term="LeetCode" scheme="http://CSUwangj.github.io/tags/LeetCode/"/>
-    
-      <category term="ProjectEuler" scheme="http://CSUwangj.github.io/tags/ProjectEuler/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>2019-01-07 Daily Challenge</title>
-    <link href="http://CSUwangj.github.io/2019-01-07-Daily-Challenge/"/>
-    <id>http://CSUwangj.github.io/2019-01-07-Daily-Challenge/</id>
-    <published>2019-01-06T16:06:14.000Z</published>
-    <updated>2019-01-06T16:38:28.643Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;What I&amp;#39;ve done today is &lt;em&gt;Maximum path sum I&lt;/em&gt; in &lt;em&gt;Rust&lt;/em&gt; and &lt;em&gt;Valid Parenthesis String&lt;/em&gt; in &lt;em&gt;JavaScript&lt;/em&gt;.&lt;/p&gt;
     
     </summary>
     
