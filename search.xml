@@ -9,6 +9,20 @@
       </categories>
   </entry>
   <entry>
+    <title><![CDATA[2019-01-26 Daily Challenge]]></title>
+    <url>%2F2019-01-26-Daily-Challenge%2F</url>
+    <content type="text"><![CDATA[What I&#39;ve done today is Truncatable primes in Rust and Student Attendance Record II in JavaScript. MathProblemTruncatable primesProblem 37The number 3797 has an interesting property. Being prime itself, it is possible to continuously remove digits from left to right, and remain prime at each stage: 3797, 797, 97, and 7. Similarly we can work from right to left: 3797, 379, 37, and 3. Find the sum of the only eleven primes that are both truncatable from left to right and right to left. NOTE: 2, 3, 5, and 7 are not considered to be truncatable primes. SolutionNothing to say. Implementation123456789101112131415161718192021222324252627282930313233343536373839404142434445extern crate primal;use primal::Sieve;fn main() &#123; const LIMIT: usize = 1_000_000_000; let sieve: Sieve = Sieve::new(LIMIT); let mut ans = 0; let mut cnt = 0; let mut i = 1; while cnt &lt; 11 &#123; let tmp = sieve.nth_prime(i); if is_truncatable(tmp, &amp;sieve) &#123; ans += tmp; cnt += 1; println!("&#123;&#125;", tmp) &#125; i += 1; &#125; println!("Answer is &#123;&#125;", ans);&#125;fn is_truncatable(n: usize, sieve: &amp;Sieve) -&gt; bool &#123; let l = n.to_string().len(); if l == 1 &#123; return false; &#125; let mut base = 10usize.pow(l as u32 - 1); while base != 1 &#123; // println!("&#123;&#125;",n%base); if !sieve.is_prime(n % base) &#123; return false &#125; base /= 10; &#125; let mut n = n; while n != 0 &#123; // println!("&#123;&#125;",n); if !sieve.is_prime(n) &#123; return false; &#125; n /= 10; &#125; true&#125; AlgorithmProblem552. Student Attendance Record IIGiven a positive integer n, return the number of all possible attendance records with length n, which will be regarded as rewardable. The answer may be very large, return it after mod 109 + 7. A student attendance record is a string that only contains the following three characters: &#39;A&#39; : Absent. &#39;L&#39; : Late. &#39;P&#39; : Present. A record is regarded as rewardable if it doesn&#39;t contain more than one &#39;A&#39; (absent) or more than two continuous &#39;L&#39; (late). Example 1: 123456Input: n = 2Output: 8 Explanation:There are 8 records with length 2 will be regarded as rewardable:&quot;PP&quot; , &quot;AP&quot;, &quot;PA&quot;, &quot;LP&quot;, &quot;PL&quot;, &quot;AL&quot;, &quot;LA&quot;, &quot;LL&quot;Only &quot;AA&quot; won&apos;t be regarded as rewardable owing to more than one absent times. Note: The value of n won&#39;t exceed 100,000. SolutionThere is a DP problem. Let set a array $DP[n][6]$，where： $$DP[n][0]$$ means no Absent and no Late at last of record, $$DP[n][1]$$ means no Absent and one Late at last of record, $$DP[n][2]$$ means no Absent and two Late at last of record, $$DP[n][3]$$ means one Absent and no Late at last of record, $$DP[n][4]$$ means one Absent and one at last of record, $$DP[n][5]$$ means one Absent and two at last of record, so, $$DP[i][0] = \left{\begin{matrix} 1,i=1\\sum_{j=0}^2DP[i-1][j],i&gt;1\end{matrix}\right.​$$ $$DP[i][1] = \left{\begin{matrix} 1,i=1\DP[i-1][0],i&gt;1\end{matrix}\right.​$$ $$DP[i][2] = \left{\begin{matrix} 1,i=1\DP[i-1][1],i&gt;1\end{matrix}\right.​$$ $$DP[i][3] = \left{\begin{matrix} 1,i=1\\sum_{j=0}^5DP[i-1][j],i&gt;1\end{matrix}\right.$$ $$DP[i][4] = \left{\begin{matrix} 1,i=1\DP[i-1][3],i&gt;1\end{matrix}\right.$$ $$DP[i][5] = \left{\begin{matrix} 1,i=1\DP[i-1][4],i&gt;1\end{matrix}\right.$$ Implementation1234567891011121314151617181920212223242526272829/** * @param &#123;number&#125; n * @return &#123;number&#125; */var checkRecord = function(n) &#123; const MOD = 1000000007; let dp = []; dp.push([1, 1, 0, 1, 0, 0]); dp.push([0, 0, 0, 0, 0, 0]); for (let i = 1; i &lt; n; ++i) &#123; dp[i &amp; 1][0] = (dp[(~i) &amp; 1][0] + dp[(~i) &amp; 1][1]) % MOD; dp[i &amp; 1][0] = (dp[i &amp; 1][0] + dp[(~i) &amp; 1][2]) % MOD; dp[i &amp; 1][1] = dp[(~i) &amp; 1][0]; dp[i &amp; 1][2] = dp[(~i) &amp; 1][1]; dp[i &amp; 1][3] = 0; for (let j = 0; j &lt; 6; ++j) &#123; dp[i &amp; 1][3] += dp[(~i) &amp; 1][j]; dp[i &amp; 1][3] %= MOD; &#125; dp[i &amp; 1][4] = dp[(~i) &amp; 1][3]; dp[i &amp; 1][5] = dp[(~i) &amp; 1][4]; &#125; let ans = 0; for (let i = 0; i &lt; 6; ++i) &#123; ans += dp[(~n) &amp; 1][i]; ans %= MOD; &#125; return ans;&#125;;]]></content>
+      <categories>
+        <category>DailyChallenge</category>
+      </categories>
+      <tags>
+        <tag>Math</tag>
+        <tag>Algorithm</tag>
+        <tag>LeetCode</tag>
+        <tag>ProjectEuler</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[2019-01-25 Daily Challenge]]></title>
     <url>%2F2019-01-25-Daily-Challenge%2F</url>
     <content type="text"><![CDATA[What I&#39;ve done today is Double-base palindromes in Rust and Find Mode in Binary Search Tree in JavaScript. MathProblemDouble-base palindromesProblem 36The decimal number, 585 = 10010010012 (binary), is palindromic in both bases. Find the sum of all numbers, less than one million, which are palindromic in base 10 and base 2. (Please note that the palindromic number, in either base, may not include leading zeros.) SolutionIn fact I&#39;ve done something similar before, at 2018-12-25 Daily Challenge. There is quick way to find palindromes, but rewrite it in rust is a suffer. So I use brute force, which makes me happier :D Implementation12345678910111213141516171819202122232425262728293031fn main() &#123; const LIMIT: usize = 1_000_000; let mut ans: usize = 0; for i in 1..LIMIT &#123; if double_base_palindrome(i) &#123; println!("&#123;&#125;, &#123;&#125;", i, format!("&#123;:b&#125;", i)); ans += i; &#125; &#125; println!("Answer is &#123;&#125;", ans);&#125;fn double_base_palindrome(n: usize) -&gt; bool &#123; let s = n.to_string(); // println!("&#123;&#125;",s); let s = s.as_bytes(); for i in 0..(s.len()/2) &#123; if s[i] != s[s.len()-1-i] &#123; return false; &#125; &#125; let s = format!("&#123;:b&#125;", n); // println!("&#123;&#125;",s); let s = s.as_bytes(); for i in 0..(s.len()/2) &#123; if s[i] != s[s.len()-1-i] &#123; return false; &#125; &#125; true&#125; AlgorithmProblem501. Find Mode in Binary Search TreeGiven a binary search tree (BST) with duplicates, find all the mode(s)) (the most frequently occurred element) in the given BST. Assume a BST is defined as follows: The left subtree of a node contains only nodes with keys less than or equal to the node&#39;s key. The right subtree of a node contains only nodes with keys greater than or equal to the node&#39;s key. Both the left and right subtrees must also be binary search trees. For example:Given BST [1,null,2,2], 123451 \ 2 /2 return [2]. Note: If a tree has more than one mode, you can return them in any order. Follow up: Could you do that without using any extra space? (Assume that the implicit stack space incurred due to recursion does not count). SolutionFirst I solve it by using a set, then rewrite it with another approach with less space usage. Because problem is easy, so I don&#39;t want to explain my solution, check the code~:D Implementation12345678910111213141516171819202122232425262728293031/** * Definition for a binary tree node. * function TreeNode(val) &#123; * this.val = val; * this.left = this.right = null; * &#125; *//** * @param &#123;TreeNode&#125; root * @return &#123;number[]&#125; */var findMode = function(root) &#123; let map = new Map(); let ans = []; const travel = (root) =&gt; &#123; if (!root) return; if (map.has(root.val)) map.set(root.val, map.get(root.val) + 1); else map.set(root.val, 1); travel(root.left); travel(root.right); &#125;; travel(root); let mx = 0; for (const [_key, value] of map.entries()) &#123; mx = mx &lt; value? value: mx; &#125; for (const [key, value] of map.entries()) &#123; if (value === mx) ans.push(key); &#125; return ans;&#125;; 123456789101112131415161718192021222324252627282930313233/** * @param &#123;TreeNode&#125; root * @return &#123;number[]&#125; */var findMode = function(root) &#123; let ans = []; let cnt = 0; let mxcnt = 0; let cur = null; const inorder_travel = (root) =&gt; &#123; if (!root) return; inorder_travel(root.left); handle_val(root.val); inorder_travel(root.right); &#125;; const handle_val = (val) =&gt; &#123; if (val !== cur) &#123; cur = val; cnt = 1; &#125; else &#123; cnt += 1; &#125; if (cnt &gt; mxcnt) &#123; ans.splice(0, ans.length); ans.push(val); mxcnt = cnt; &#125; else if (cnt === mxcnt) &#123; ans.push(val); &#125; &#125;; inorder_travel(root); return ans;&#125;;]]></content>
@@ -652,8 +666,8 @@
       </categories>
       <tags>
         <tag>CTF</tag>
-        <tag>Crypto</tag>
         <tag>Misc</tag>
+        <tag>Crypto</tag>
       </tags>
   </entry>
   <entry>
@@ -665,8 +679,8 @@
       </categories>
       <tags>
         <tag>CTF</tag>
-        <tag>Crypto</tag>
         <tag>Misc</tag>
+        <tag>Crypto</tag>
         <tag>PWN</tag>
         <tag>Web</tag>
         <tag>Rev</tag>
@@ -721,8 +735,8 @@
       </categories>
       <tags>
         <tag>CTF</tag>
-        <tag>Crypto</tag>
         <tag>Misc</tag>
+        <tag>Crypto</tag>
         <tag>PWN</tag>
         <tag>Web</tag>
       </tags>
@@ -759,8 +773,8 @@
         <category>Tools</category>
       </categories>
       <tags>
-        <tag>Crypto</tag>
         <tag>Misc</tag>
+        <tag>Crypto</tag>
       </tags>
   </entry>
   <entry>
@@ -772,8 +786,8 @@
       </categories>
       <tags>
         <tag>CTF</tag>
-        <tag>Crypto</tag>
         <tag>Misc</tag>
+        <tag>Crypto</tag>
         <tag>PWN</tag>
         <tag>Web</tag>
         <tag>Rev</tag>
