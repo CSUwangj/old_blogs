@@ -35,11 +35,37 @@
   </entry>
   
   <entry>
+    <title>2019-01-27 Daily Challenge</title>
+    <link href="http://CSUwangj.github.io/2019-01-27-Daily-Challenge/"/>
+    <id>http://CSUwangj.github.io/2019-01-27-Daily-Challenge/</id>
+    <published>2019-01-26T16:11:33.000Z</published>
+    <updated>2019-01-26T16:11:57.118Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;What I&amp;#39;ve done today is &lt;em&gt;Pandigital multiples&lt;/em&gt; in &lt;em&gt;Rust&lt;/em&gt; and &lt;em&gt;K-th Symbol in Grammar&lt;/em&gt; in &lt;em&gt;JavaScript&lt;/em&gt;.&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="DailyChallenge" scheme="http://CSUwangj.github.io/categories/DailyChallenge/"/>
+    
+    
+      <category term="Math" scheme="http://CSUwangj.github.io/tags/Math/"/>
+    
+      <category term="Algorithm" scheme="http://CSUwangj.github.io/tags/Algorithm/"/>
+    
+      <category term="LeetCode" scheme="http://CSUwangj.github.io/tags/LeetCode/"/>
+    
+      <category term="ProjectEuler" scheme="http://CSUwangj.github.io/tags/ProjectEuler/"/>
+    
+  </entry>
+  
+  <entry>
     <title>2019-01-26 Daily Challenge</title>
     <link href="http://CSUwangj.github.io/2019-01-26-Daily-Challenge/"/>
     <id>http://CSUwangj.github.io/2019-01-26-Daily-Challenge/</id>
     <published>2019-01-25T16:08:13.000Z</published>
-    <updated>2019-01-25T16:08:39.947Z</updated>
+    <updated>2019-01-26T15:38:33.001Z</updated>
     
     <summary type="html">
     
@@ -479,32 +505,6 @@
     <summary type="html">
     
       &lt;p&gt;What I&amp;#39;ve done today is &lt;em&gt;Amicable number&lt;/em&gt; in &lt;em&gt;Rust&lt;/em&gt; and &lt;em&gt;Unique Morse Code Words&lt;/em&gt; in &lt;em&gt;JavaScript&lt;/em&gt;.&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="DailyChallenge" scheme="http://CSUwangj.github.io/categories/DailyChallenge/"/>
-    
-    
-      <category term="Math" scheme="http://CSUwangj.github.io/tags/Math/"/>
-    
-      <category term="Algorithm" scheme="http://CSUwangj.github.io/tags/Algorithm/"/>
-    
-      <category term="LeetCode" scheme="http://CSUwangj.github.io/tags/LeetCode/"/>
-    
-      <category term="ProjectEuler" scheme="http://CSUwangj.github.io/tags/ProjectEuler/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>2019-01-09 Daily Challenge</title>
-    <link href="http://CSUwangj.github.io/2019-01-09-Daily-Challenge/"/>
-    <id>http://CSUwangj.github.io/2019-01-09-Daily-Challenge/</id>
-    <published>2019-01-08T16:29:11.000Z</published>
-    <updated>2019-01-08T16:32:16.893Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;What I&amp;#39;ve done today is &lt;em&gt;Factorial digit sum&lt;/em&gt; in &lt;em&gt;Rust&lt;/em&gt; and &lt;em&gt;Minimum Window Substring&lt;/em&gt; in &lt;em&gt;JavaScript&lt;/em&gt;.&lt;/p&gt;
     
     </summary>
     

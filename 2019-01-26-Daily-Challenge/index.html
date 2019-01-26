@@ -124,10 +124,12 @@
 <meta property="og:site_name" content="LuckyDog">
 <meta property="og:description" content="What I&amp;#39;ve done today is Truncatable primes in Rust and Student Attendance Record II in JavaScript.">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-01-25T16:08:39.947Z">
+<meta property="og:image" content="http://csuwangj.github.io/2019-01-26-Daily-Challenge/3.png">
+<meta property="og:updated_time" content="2019-01-26T15:38:33.001Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="2019-01-26 Daily Challenge">
 <meta name="twitter:description" content="What I&amp;#39;ve done today is Truncatable primes in Rust and Student Attendance Record II in JavaScript.">
+<meta name="twitter:image" content="http://csuwangj.github.io/2019-01-26-Daily-Challenge/3.png">
 
 
 
@@ -392,7 +394,7 @@
                 
               
 
-              <time title="创建时间：2019-01-26 00:08:13 / 修改时间：00:08:39" itemprop="dateCreated datePublished" datetime="2019-01-26T00:08:13+08:00">2019-01-26</time>
+              <time title="创建时间：2019-01-26 00:08:13 / 修改时间：23:38:33" itemprop="dateCreated datePublished" datetime="2019-01-26T00:08:13+08:00">2019-01-26</time>
             
 
             
@@ -515,12 +517,13 @@
 <p>$$DP[n][4]$$ means one Absent and one <strong>at  last of record</strong>,</p>
 <p>$$DP[n][5]$$ means one Absent and two <strong>at  last of record</strong>,</p>
 <p>so,</p>
+<img src="/2019-01-26-Daily-Challenge/3.png" title="dp">
 <p>$$DP[i][0] = \left{\begin{matrix} 1,i=1\\sum_{j=0}^2DP[i-1][j],i&gt;1\end{matrix}\right.​$$</p>
 <p>$$DP[i][1] = \left{\begin{matrix} 1,i=1\DP[i-1][0],i&gt;1\end{matrix}\right.​$$</p>
 <p>$$DP[i][2] = \left{\begin{matrix} 1,i=1\DP[i-1][1],i&gt;1\end{matrix}\right.​$$</p>
 <p>$$DP[i][3] = \left{\begin{matrix} 1,i=1\\sum_{j=0}^5DP[i-1][j],i&gt;1\end{matrix}\right.$$</p>
 <p>$$DP[i][4] = \left{\begin{matrix} 1,i=1\DP[i-1][3],i&gt;1\end{matrix}\right.$$</p>
-<p>$$DP[i][5] = \left{\begin{matrix} 1,i=1\DP[i-1][4],i&gt;1\end{matrix}\right.$$</p>
+<p>$$DP[i][5] = \left{\begin{matrix} 1,i=1\DP[i-1][4],i&gt;1\end{matrix}\right.​$$</p>
 <h2 id="Implementation-1"><a href="#Implementation-1" class="headerlink" title="Implementation"></a>Implementation</h2><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * @param &#123;number&#125; n</span></span><br><span class="line"><span class="comment"> * @return &#123;number&#125;</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">var</span> checkRecord = <span class="function"><span class="keyword">function</span>(<span class="params">n</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">const</span> MOD = <span class="number">1000000007</span>;</span><br><span class="line">  <span class="keyword">let</span> dp = [];</span><br><span class="line">  dp.push([<span class="number">1</span>, <span class="number">1</span>, <span class="number">0</span>, <span class="number">1</span>, <span class="number">0</span>, <span class="number">0</span>]);</span><br><span class="line">  dp.push([<span class="number">0</span>, <span class="number">0</span>, <span class="number">0</span>, <span class="number">0</span>, <span class="number">0</span>, <span class="number">0</span>]);</span><br><span class="line">  <span class="keyword">for</span> (<span class="keyword">let</span> i = <span class="number">1</span>; i &lt; n; ++i) &#123;</span><br><span class="line">    dp[i &amp; <span class="number">1</span>][<span class="number">0</span>] = (dp[(~i) &amp; <span class="number">1</span>][<span class="number">0</span>] + dp[(~i) &amp; <span class="number">1</span>][<span class="number">1</span>]) % MOD;</span><br><span class="line">    dp[i &amp; <span class="number">1</span>][<span class="number">0</span>] = (dp[i &amp; <span class="number">1</span>][<span class="number">0</span>] + dp[(~i) &amp; <span class="number">1</span>][<span class="number">2</span>]) % MOD;</span><br><span class="line">    dp[i &amp; <span class="number">1</span>][<span class="number">1</span>] = dp[(~i) &amp; <span class="number">1</span>][<span class="number">0</span>];</span><br><span class="line">    dp[i &amp; <span class="number">1</span>][<span class="number">2</span>] = dp[(~i) &amp; <span class="number">1</span>][<span class="number">1</span>];</span><br><span class="line">    dp[i &amp; <span class="number">1</span>][<span class="number">3</span>] = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">let</span> j = <span class="number">0</span>; j &lt; <span class="number">6</span>; ++j) &#123;</span><br><span class="line">      dp[i &amp; <span class="number">1</span>][<span class="number">3</span>] += dp[(~i) &amp; <span class="number">1</span>][j];</span><br><span class="line">      dp[i &amp; <span class="number">1</span>][<span class="number">3</span>] %= MOD;</span><br><span class="line">    &#125;</span><br><span class="line">    dp[i &amp; <span class="number">1</span>][<span class="number">4</span>] = dp[(~i) &amp; <span class="number">1</span>][<span class="number">3</span>];</span><br><span class="line">    dp[i &amp; <span class="number">1</span>][<span class="number">5</span>] = dp[(~i) &amp; <span class="number">1</span>][<span class="number">4</span>];</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">let</span> ans = <span class="number">0</span>;</span><br><span class="line">  <span class="keyword">for</span> (<span class="keyword">let</span> i = <span class="number">0</span>; i &lt; <span class="number">6</span>; ++i) &#123;</span><br><span class="line">    ans += dp[(~n) &amp; <span class="number">1</span>][i];</span><br><span class="line">    ans %= MOD;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">return</span> ans;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
       
     </div>
@@ -551,10 +554,10 @@
   
     <li class="popular-posts-item">
       
-        <div class="popular-posts-date">2018-12-21</div>
+        <div class="popular-posts-date">2018-12-23</div>
       
       
-      <div class="popular-posts-title"><a href="/2018-12-21-Daily-Challenge/" rel="bookmark">2018-12-21 Daily Challenge</a></div>
+      <div class="popular-posts-title"><a href="/2018-12-23-Daily-Challenge/" rel="bookmark">2018-12-23 Daily Challenge</a></div>
       
     </li>
   
@@ -569,10 +572,10 @@
   
     <li class="popular-posts-item">
       
-        <div class="popular-posts-date">2018-12-23</div>
+        <div class="popular-posts-date">2019-01-24</div>
       
       
-      <div class="popular-posts-title"><a href="/2018-12-23-Daily-Challenge/" rel="bookmark">2018-12-23 Daily Challenge</a></div>
+      <div class="popular-posts-title"><a href="/2019-01-24-Daily-Challenge/" rel="bookmark">2019-01-24 Daily Challenge</a></div>
       
     </li>
   
@@ -682,8 +685,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/博文整理/" rel="prev" title="博文整理">
-                博文整理 <i class="fa fa-chevron-right"></i>
+              <a href="/2019-01-27-Daily-Challenge/" rel="prev" title="2019-01-27 Daily Challenge">
+                2019-01-27 Daily Challenge <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -772,7 +775,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">60</span>
+                    <span class="site-state-item-count">61</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -1038,7 +1041,7 @@
     
       <span class="post-meta-item-text">站点总字数：</span>
     
-    <span title="站点总字数">280k</span>
+    <span title="站点总字数">284k</span>
   
 
   
@@ -1049,7 +1052,7 @@
     
       <span class="post-meta-item-text">站点阅读时长 &asymp;</span>
     
-    <span title="站点阅读时长">7:47</span>
+    <span title="站点阅读时长">7:53</span>
   
 </div>
 
