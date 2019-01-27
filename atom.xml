@@ -35,6 +35,32 @@
   </entry>
   
   <entry>
+    <title>2019-01-28 Daily Challenge</title>
+    <link href="http://CSUwangj.github.io/2019-01-28-Daily-Challenge/"/>
+    <id>http://CSUwangj.github.io/2019-01-28-Daily-Challenge/</id>
+    <published>2019-01-27T16:04:05.000Z</published>
+    <updated>2019-01-27T16:04:42.689Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;What I&amp;#39;ve done today is &lt;em&gt;Integer right triangles&lt;/em&gt; in &lt;em&gt;Rust&lt;/em&gt; and &lt;em&gt;Implement Magic Dictionary&lt;/em&gt; in &lt;em&gt;JavaScript&lt;/em&gt;.&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="DailyChallenge" scheme="http://CSUwangj.github.io/categories/DailyChallenge/"/>
+    
+    
+      <category term="Math" scheme="http://CSUwangj.github.io/tags/Math/"/>
+    
+      <category term="Algorithm" scheme="http://CSUwangj.github.io/tags/Algorithm/"/>
+    
+      <category term="LeetCode" scheme="http://CSUwangj.github.io/tags/LeetCode/"/>
+    
+      <category term="ProjectEuler" scheme="http://CSUwangj.github.io/tags/ProjectEuler/"/>
+    
+  </entry>
+  
+  <entry>
     <title>2019-01-27 Daily Challenge</title>
     <link href="http://CSUwangj.github.io/2019-01-27-Daily-Challenge/"/>
     <id>http://CSUwangj.github.io/2019-01-27-Daily-Challenge/</id>
@@ -479,32 +505,6 @@
     <summary type="html">
     
       &lt;p&gt;What I&amp;#39;ve done today is &lt;em&gt;Names scores&lt;/em&gt; in &lt;em&gt;Rust&lt;/em&gt; and &lt;em&gt;Optimal Division&lt;/em&gt; in &lt;em&gt;JavaScript&lt;/em&gt;.&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="DailyChallenge" scheme="http://CSUwangj.github.io/categories/DailyChallenge/"/>
-    
-    
-      <category term="Math" scheme="http://CSUwangj.github.io/tags/Math/"/>
-    
-      <category term="Algorithm" scheme="http://CSUwangj.github.io/tags/Algorithm/"/>
-    
-      <category term="LeetCode" scheme="http://CSUwangj.github.io/tags/LeetCode/"/>
-    
-      <category term="ProjectEuler" scheme="http://CSUwangj.github.io/tags/ProjectEuler/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>2019-01-10 Daily Challenge</title>
-    <link href="http://CSUwangj.github.io/2019-01-10-Daily-Challenge/"/>
-    <id>http://CSUwangj.github.io/2019-01-10-Daily-Challenge/</id>
-    <published>2019-01-09T16:08:38.000Z</published>
-    <updated>2019-01-09T16:36:01.230Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;What I&amp;#39;ve done today is &lt;em&gt;Amicable number&lt;/em&gt; in &lt;em&gt;Rust&lt;/em&gt; and &lt;em&gt;Unique Morse Code Words&lt;/em&gt; in &lt;em&gt;JavaScript&lt;/em&gt;.&lt;/p&gt;
     
     </summary>
     
