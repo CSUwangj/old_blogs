@@ -35,6 +35,33 @@
   </entry>
   
   <entry>
+    <title>2019-01-30 Daily Challenge</title>
+    <link href="http://CSUwangj.github.io/2019-01-30-Daily-Challenge/"/>
+    <id>http://CSUwangj.github.io/2019-01-30-Daily-Challenge/</id>
+    <published>2019-01-29T16:06:35.000Z</published>
+    <updated>2019-01-29T16:06:56.751Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;What I&amp;#39;ve done today is &lt;em&gt;Pandigital prime&lt;/em&gt; in &lt;em&gt;Rust&lt;/em&gt; and &lt;em&gt;Repeated DNA Sequences&lt;/em&gt; in &lt;em&gt;JavaScript&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;I need more practice to write my own Dancing Link is JS.&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="DailyChallenge" scheme="http://CSUwangj.github.io/categories/DailyChallenge/"/>
+    
+    
+      <category term="Math" scheme="http://CSUwangj.github.io/tags/Math/"/>
+    
+      <category term="Algorithm" scheme="http://CSUwangj.github.io/tags/Algorithm/"/>
+    
+      <category term="LeetCode" scheme="http://CSUwangj.github.io/tags/LeetCode/"/>
+    
+      <category term="ProjectEuler" scheme="http://CSUwangj.github.io/tags/ProjectEuler/"/>
+    
+  </entry>
+  
+  <entry>
     <title>2019-01-29 Daily Challenge</title>
     <link href="http://CSUwangj.github.io/2019-01-29-Daily-Challenge/"/>
     <id>http://CSUwangj.github.io/2019-01-29-Daily-Challenge/</id>
@@ -480,32 +507,6 @@
     <summary type="html">
     
       &lt;p&gt;What I&amp;#39;ve done today is &lt;em&gt;Lexicographic permutations&lt;/em&gt; in &lt;em&gt;Rust&lt;/em&gt; and &lt;em&gt;Unique Binary Search Trees II&lt;/em&gt; in &lt;em&gt;JavaScript&lt;/em&gt;.&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="DailyChallenge" scheme="http://CSUwangj.github.io/categories/DailyChallenge/"/>
-    
-    
-      <category term="Math" scheme="http://CSUwangj.github.io/tags/Math/"/>
-    
-      <category term="Algorithm" scheme="http://CSUwangj.github.io/tags/Algorithm/"/>
-    
-      <category term="LeetCode" scheme="http://CSUwangj.github.io/tags/LeetCode/"/>
-    
-      <category term="ProjectEuler" scheme="http://CSUwangj.github.io/tags/ProjectEuler/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>2019-01-12 Daily Challenge</title>
-    <link href="http://CSUwangj.github.io/2019-01-12-Daily-Challenge/"/>
-    <id>http://CSUwangj.github.io/2019-01-12-Daily-Challenge/</id>
-    <published>2019-01-11T16:48:32.000Z</published>
-    <updated>2019-01-11T16:52:19.302Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;What I&amp;#39;ve done today is &lt;em&gt;Non-abundant sums&lt;/em&gt; in &lt;em&gt;Rust&lt;/em&gt; and &lt;em&gt;Word Ladder&lt;/em&gt; in &lt;em&gt;JavaScript&lt;/em&gt;.&lt;/p&gt;
     
     </summary>
     
