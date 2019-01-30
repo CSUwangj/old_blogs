@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://CSUwangj.github.io/"/>
-  <updated>2019-01-06T16:33:23.628Z</updated>
+  <updated>2019-01-30T07:14:55.543Z</updated>
   <id>http://CSUwangj.github.io/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="http://CSUwangj.github.io/%E5%8D%9A%E6%96%87%E6%95%B4%E7%90%86/"/>
     <id>http://CSUwangj.github.io/博文整理/</id>
     <published>8102-12-19T02:36:02.000Z</published>
-    <updated>2019-01-06T16:33:23.628Z</updated>
+    <updated>2019-01-30T07:14:55.543Z</updated>
     
     <summary type="html">
     
@@ -35,16 +35,36 @@
   </entry>
   
   <entry>
+    <title>ACM中一些常见的问题及原因</title>
+    <link href="http://CSUwangj.github.io/ACM%E4%B8%AD%E4%B8%80%E4%BA%9B%E5%B8%B8%E8%A7%81%E7%9A%84%E9%97%AE%E9%A2%98%E5%8F%8A%E5%8E%9F%E5%9B%A0/"/>
+    <id>http://CSUwangj.github.io/ACM中一些常见的问题及原因/</id>
+    <published>2019-01-30T09:23:34.000Z</published>
+    <updated>2019-01-30T09:23:34.720Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;最近在 ACM 群灌水，顺便解决了一点问题，感觉可能会成为日经系列，寻思可以写个博文专门写写，正好也是对自己学习知识的检验。&lt;/p&gt;
+&lt;p&gt;我觉得这篇文章阅读方式可以按照《C语言常见问题集》，遇到问题了来看看也行，电脑阅读的时候右边应该会有个目录可以跳转，顺着读一遍也行。&lt;/p&gt;
+&lt;p&gt;文章只能慢慢更新，因为我并不想随意地对待这种难得的问题，然而工作在身并不能全身心投入。&lt;/p&gt;
+&lt;p&gt;以下内容如无特殊声明，采用C99和C++11标准。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="ACM" scheme="http://CSUwangj.github.io/tags/ACM/"/>
+    
+  </entry>
+  
+  <entry>
     <title>2019-01-30 Daily Challenge</title>
     <link href="http://CSUwangj.github.io/2019-01-30-Daily-Challenge/"/>
     <id>http://CSUwangj.github.io/2019-01-30-Daily-Challenge/</id>
     <published>2019-01-29T16:06:35.000Z</published>
-    <updated>2019-01-29T16:06:56.751Z</updated>
+    <updated>2019-01-30T07:15:28.254Z</updated>
     
     <summary type="html">
     
       &lt;p&gt;What I&amp;#39;ve done today is &lt;em&gt;Pandigital prime&lt;/em&gt; in &lt;em&gt;Rust&lt;/em&gt; and &lt;em&gt;Repeated DNA Sequences&lt;/em&gt; in &lt;em&gt;JavaScript&lt;/em&gt;.&lt;/p&gt;
-&lt;p&gt;I need more practice to write my own Dancing Link is JS.&lt;/p&gt;
     
     </summary>
     
@@ -481,32 +501,6 @@
     <summary type="html">
     
       &lt;p&gt;What I&amp;#39;ve done today is &lt;em&gt;1000-digit Fibonacci number&lt;/em&gt; in &lt;em&gt;Rust&lt;/em&gt; and &lt;em&gt;Best Time to Buy and Sell Stock IV&lt;/em&gt; in &lt;em&gt;JavaScript&lt;/em&gt;.&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="DailyChallenge" scheme="http://CSUwangj.github.io/categories/DailyChallenge/"/>
-    
-    
-      <category term="Math" scheme="http://CSUwangj.github.io/tags/Math/"/>
-    
-      <category term="Algorithm" scheme="http://CSUwangj.github.io/tags/Algorithm/"/>
-    
-      <category term="LeetCode" scheme="http://CSUwangj.github.io/tags/LeetCode/"/>
-    
-      <category term="ProjectEuler" scheme="http://CSUwangj.github.io/tags/ProjectEuler/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>2019-01-13 Daily Challenge</title>
-    <link href="http://CSUwangj.github.io/2019-01-13-Daily-Challenge/"/>
-    <id>http://CSUwangj.github.io/2019-01-13-Daily-Challenge/</id>
-    <published>2019-01-12T16:02:16.000Z</published>
-    <updated>2019-01-12T16:15:01.079Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;What I&amp;#39;ve done today is &lt;em&gt;Lexicographic permutations&lt;/em&gt; in &lt;em&gt;Rust&lt;/em&gt; and &lt;em&gt;Unique Binary Search Trees II&lt;/em&gt; in &lt;em&gt;JavaScript&lt;/em&gt;.&lt;/p&gt;
     
     </summary>
     
