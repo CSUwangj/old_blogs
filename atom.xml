@@ -35,11 +35,37 @@
   </entry>
   
   <entry>
+    <title>2019-01-31 Daily Challenge</title>
+    <link href="http://CSUwangj.github.io/2019-01-31-Daily-Challenge/"/>
+    <id>http://CSUwangj.github.io/2019-01-31-Daily-Challenge/</id>
+    <published>2019-01-30T16:10:20.000Z</published>
+    <updated>2019-01-30T16:00:10.823Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;What I&amp;#39;ve done today is &lt;em&gt;Coded triangle numbers&lt;/em&gt; in &lt;em&gt;Rust&lt;/em&gt; and &lt;em&gt;Minimum Height Trees&lt;/em&gt; in &lt;em&gt;JavaScript&lt;/em&gt;.&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="DailyChallenge" scheme="http://CSUwangj.github.io/categories/DailyChallenge/"/>
+    
+    
+      <category term="Math" scheme="http://CSUwangj.github.io/tags/Math/"/>
+    
+      <category term="Algorithm" scheme="http://CSUwangj.github.io/tags/Algorithm/"/>
+    
+      <category term="LeetCode" scheme="http://CSUwangj.github.io/tags/LeetCode/"/>
+    
+      <category term="ProjectEuler" scheme="http://CSUwangj.github.io/tags/ProjectEuler/"/>
+    
+  </entry>
+  
+  <entry>
     <title>ACM中一些常见的问题及原因</title>
     <link href="http://CSUwangj.github.io/ACM%E4%B8%AD%E4%B8%80%E4%BA%9B%E5%B8%B8%E8%A7%81%E7%9A%84%E9%97%AE%E9%A2%98%E5%8F%8A%E5%8E%9F%E5%9B%A0/"/>
     <id>http://CSUwangj.github.io/ACM中一些常见的问题及原因/</id>
     <published>2019-01-30T09:23:34.000Z</published>
-    <updated>2019-01-30T09:23:34.720Z</updated>
+    <updated>2019-01-30T10:57:38.551Z</updated>
     
     <summary type="html">
     
@@ -49,6 +75,8 @@
 &lt;p&gt;以下内容如无特殊声明，采用C99和C++11标准。&lt;/p&gt;
     
     </summary>
+    
+      <category term="Notes" scheme="http://CSUwangj.github.io/categories/Notes/"/>
     
     
       <category term="ACM" scheme="http://CSUwangj.github.io/tags/ACM/"/>
@@ -475,32 +503,6 @@
     <summary type="html">
     
       &lt;p&gt;What I&amp;#39;ve done today is &lt;em&gt;Reciprocal cycles&lt;/em&gt; in &lt;em&gt;Rust&lt;/em&gt; and &lt;em&gt;Open the Lock&lt;/em&gt; in &lt;em&gt;JavaScript&lt;/em&gt;.&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="DailyChallenge" scheme="http://CSUwangj.github.io/categories/DailyChallenge/"/>
-    
-    
-      <category term="Math" scheme="http://CSUwangj.github.io/tags/Math/"/>
-    
-      <category term="Algorithm" scheme="http://CSUwangj.github.io/tags/Algorithm/"/>
-    
-      <category term="LeetCode" scheme="http://CSUwangj.github.io/tags/LeetCode/"/>
-    
-      <category term="ProjectEuler" scheme="http://CSUwangj.github.io/tags/ProjectEuler/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>2019-01-14 Daily Challenge</title>
-    <link href="http://CSUwangj.github.io/2019-01-14-Daily-Challenge/"/>
-    <id>http://CSUwangj.github.io/2019-01-14-Daily-Challenge/</id>
-    <published>2019-01-14T10:24:34.000Z</published>
-    <updated>2019-01-14T10:31:49.651Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;What I&amp;#39;ve done today is &lt;em&gt;1000-digit Fibonacci number&lt;/em&gt; in &lt;em&gt;Rust&lt;/em&gt; and &lt;em&gt;Best Time to Buy and Sell Stock IV&lt;/em&gt; in &lt;em&gt;JavaScript&lt;/em&gt;.&lt;/p&gt;
     
     </summary>
     

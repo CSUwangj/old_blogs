@@ -124,7 +124,7 @@
 <meta property="og:site_name" content="LuckyDog">
 <meta property="og:description" content="最近在 ACM 群灌水，顺便解决了一点问题，感觉可能会成为日经系列，寻思可以写个博文专门写写，正好也是对自己学习知识的检验。 我觉得这篇文章阅读方式可以按照《C语言常见问题集》，遇到问题了来看看也行，电脑阅读的时候右边应该会有个目录可以跳转，顺着读一遍也行。 文章只能慢慢更新，因为我并不想随意地对待这种难得的问题，然而工作在身并不能全身心投入。 以下内容如无特殊声明，采用C99和C++11标准。">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-01-30T09:23:34.720Z">
+<meta property="og:updated_time" content="2019-01-30T10:57:38.551Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="ACM中一些常见的问题及原因">
 <meta name="twitter:description" content="最近在 ACM 群灌水，顺便解决了一点问题，感觉可能会成为日经系列，寻思可以写个博文专门写写，正好也是对自己学习知识的检验。 我觉得这篇文章阅读方式可以按照《C语言常见问题集》，遇到问题了来看看也行，电脑阅读的时候右边应该会有个目录可以跳转，顺着读一遍也行。 文章只能慢慢更新，因为我并不想随意地对待这种难得的问题，然而工作在身并不能全身心投入。 以下内容如无特殊声明，采用C99和C++11标准。">
@@ -392,12 +392,34 @@
                 
               
 
-              <time title="创建时间：2019-01-30 17:23:34" itemprop="dateCreated datePublished" datetime="2019-01-30T17:23:34+08:00">2019-01-30</time>
+              <time title="创建时间：2019-01-30 17:23:34 / 修改时间：18:57:38" itemprop="dateCreated datePublished" datetime="2019-01-30T17:23:34+08:00">2019-01-30</time>
             
 
+            
+              
+
+              
             
           </span>
 
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Notes/" itemprop="url" rel="index"><span itemprop="name">Notes</span></a></span>
+
+                
+                
+              
+            </span>
           
 
           
@@ -432,7 +454,7 @@
                 
                   <span class="post-meta-item-text">本文字数：</span>
                 
-                <span title="本文字数">2.7k</span>
+                <span title="本文字数">3k</span>
               
 
               
@@ -503,7 +525,11 @@ are otherwise ignored.**
 <p>因为数组名是常量指针。</p>
 </blockquote>
 <p>肯定有认真听课的这样回答，但是很遗憾，不是的。数组名不是指针，但是它的确被转换成了指针。具体的内容可以搜索《说出来你们可能不信，但是数组名确实不是指针常量》。但是这个东西并不太重要，如果不当语言律师也没打算深度搞C，也没有必要理解。</p>
-<h1 id="在函数里开不了大数组吗？"><a href="#在函数里开不了大数组吗？" class="headerlink" title="在函数里开不了大数组吗？"></a>在函数里开不了大数组吗？</h1><h1 id="我开了一个很大的全局数组，但是编译无法通过，这是为什么？"><a href="#我开了一个很大的全局数组，但是编译无法通过，这是为什么？" class="headerlink" title="我开了一个很大的全局数组，但是编译无法通过，这是为什么？"></a>我开了一个很大的全局数组，但是编译无法通过，这是为什么？</h1><h1 id="为什么越界会导致-RE？为什么有时候越界不会-RE-但是会-TLE-WA？"><a href="#为什么越界会导致-RE？为什么有时候越界不会-RE-但是会-TLE-WA？" class="headerlink" title="为什么越界会导致 RE？为什么有时候越界不会 RE 但是会 TLE/WA？"></a>为什么越界会导致 RE？为什么有时候越界不会 RE 但是会 TLE/WA？</h1><h1 id="我只定义过一个-left，为什么编译器告诉我sdsd？"><a href="#我只定义过一个-left，为什么编译器告诉我sdsd？" class="headerlink" title="我只定义过一个 left，为什么编译器告诉我sdsd？"></a>我只定义过一个 left，为什么编译器告诉我<code>sdsd</code>？</h1><h1 id="我这样写有问题吗？为什么读入会失败？（关于整数的读入）"><a href="#我这样写有问题吗？为什么读入会失败？（关于整数的读入）" class="headerlink" title="我这样写有问题吗？为什么读入会失败？（关于整数的读入）"></a>我这样写有问题吗？为什么读入会失败？（关于整数的读入）</h1><h1 id="你总是说的堆栈，是指什么？"><a href="#你总是说的堆栈，是指什么？" class="headerlink" title="你总是说的堆栈，是指什么？"></a>你总是说的堆栈，是指什么？</h1>
+<h1 id="在函数里开不了大数组吗？"><a href="#在函数里开不了大数组吗？" class="headerlink" title="在函数里开不了大数组吗？"></a>在函数里开不了大数组吗？</h1><h1 id="我开了一个很大的全局数组，但是编译无法通过，这是为什么？"><a href="#我开了一个很大的全局数组，但是编译无法通过，这是为什么？" class="headerlink" title="我开了一个很大的全局数组，但是编译无法通过，这是为什么？"></a>我开了一个很大的全局数组，但是编译无法通过，这是为什么？</h1><h1 id="为什么越界会导致-RE？为什么有时候越界不会-RE-但是会-TLE-WA？"><a href="#为什么越界会导致-RE？为什么有时候越界不会-RE-但是会-TLE-WA？" class="headerlink" title="为什么越界会导致 RE？为什么有时候越界不会 RE 但是会 TLE/WA？"></a>为什么越界会导致 RE？为什么有时候越界不会 RE 但是会 TLE/WA？</h1><h1 id="我只定义过一个-left，为什么编译器告诉我-Error-reference-to-39-left-39-is-ambiguous？"><a href="#我只定义过一个-left，为什么编译器告诉我-Error-reference-to-39-left-39-is-ambiguous？" class="headerlink" title="我只定义过一个 left，为什么编译器告诉我[Error] reference to &#39;left&#39; is ambiguous？"></a>我只定义过一个 left，为什么编译器告诉我<code>[Error] reference to &#39;left&#39; is ambiguous</code>？</h1><p>如果你仔细查看报错信息，应该会看到类似</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">916	3	&#123;PATH&#125;	[Note] std::ios_base&amp; std::left(std::ios_base&amp;)</span><br></pre></td></tr></table></figure>
+<p>出现这种问题是因为引入的头文件中的变量，比如left这个是在<code>bits/ios_base.h</code>里，而<code>algorithm</code>里有count这样的函数。</p>
+<p>有两种方法可以解决，一是不要使用<code>using namespace std;</code>这个语句，另一个是不要用类似<code>left</code>, <code>count</code>这样的名称。从工程角度来说，第一个做法是比较合理的。</p>
+<h1 id="我这样写有问题吗？为什么读入会失败？（关于整数的读入）"><a href="#我这样写有问题吗？为什么读入会失败？（关于整数的读入）" class="headerlink" title="我这样写有问题吗？为什么读入会失败？（关于整数的读入）"></a>我这样写有问题吗？为什么读入会失败？（关于整数的读入）</h1><h1 id="你总是说的堆栈，是指什么？"><a href="#你总是说的堆栈，是指什么？" class="headerlink" title="你总是说的堆栈，是指什么？"></a>你总是说的堆栈，是指什么？</h1>
       
     </div>
 
@@ -622,8 +648,8 @@ are otherwise ignored.**
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/博文整理/" rel="prev" title="博文整理">
-                博文整理 <i class="fa fa-chevron-right"></i>
+              <a href="/2019-01-31-Daily-Challenge/" rel="prev" title="2019-01-31 Daily Challenge">
+                2019-01-31 Daily Challenge <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -712,7 +738,7 @@ are otherwise ignored.**
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">65</span>
+                    <span class="site-state-item-count">66</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -943,7 +969,7 @@ are otherwise ignored.**
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#为什么在读入的时候不加-amp-经常会-RE，但是数组名不加-amp-就没问题？"><span class="nav-number">1.</span> <span class="nav-text">为什么在读入的时候不加&amp;经常会 RE，但是数组名不加&amp;就没问题？</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#在函数里开不了大数组吗？"><span class="nav-number">2.</span> <span class="nav-text">在函数里开不了大数组吗？</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#我开了一个很大的全局数组，但是编译无法通过，这是为什么？"><span class="nav-number">3.</span> <span class="nav-text">我开了一个很大的全局数组，但是编译无法通过，这是为什么？</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#为什么越界会导致-RE？为什么有时候越界不会-RE-但是会-TLE-WA？"><span class="nav-number">4.</span> <span class="nav-text">为什么越界会导致 RE？为什么有时候越界不会 RE 但是会 TLE/WA？</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#我只定义过一个-left，为什么编译器告诉我sdsd？"><span class="nav-number">5.</span> <span class="nav-text">我只定义过一个 left，为什么编译器告诉我sdsd？</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#我这样写有问题吗？为什么读入会失败？（关于整数的读入）"><span class="nav-number">6.</span> <span class="nav-text">我这样写有问题吗？为什么读入会失败？（关于整数的读入）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#你总是说的堆栈，是指什么？"><span class="nav-number">7.</span> <span class="nav-text">你总是说的堆栈，是指什么？</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#为什么在读入的时候不加-amp-经常会-RE，但是数组名不加-amp-就没问题？"><span class="nav-number">1.</span> <span class="nav-text">为什么在读入的时候不加&amp;经常会 RE，但是数组名不加&amp;就没问题？</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#在函数里开不了大数组吗？"><span class="nav-number">2.</span> <span class="nav-text">在函数里开不了大数组吗？</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#我开了一个很大的全局数组，但是编译无法通过，这是为什么？"><span class="nav-number">3.</span> <span class="nav-text">我开了一个很大的全局数组，但是编译无法通过，这是为什么？</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#为什么越界会导致-RE？为什么有时候越界不会-RE-但是会-TLE-WA？"><span class="nav-number">4.</span> <span class="nav-text">为什么越界会导致 RE？为什么有时候越界不会 RE 但是会 TLE/WA？</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#我只定义过一个-left，为什么编译器告诉我-Error-reference-to-39-left-39-is-ambiguous？"><span class="nav-number">5.</span> <span class="nav-text">我只定义过一个 left，为什么编译器告诉我[Error] reference to &#39;left&#39; is ambiguous？</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#我这样写有问题吗？为什么读入会失败？（关于整数的读入）"><span class="nav-number">6.</span> <span class="nav-text">我这样写有问题吗？为什么读入会失败？（关于整数的读入）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#你总是说的堆栈，是指什么？"><span class="nav-number">7.</span> <span class="nav-text">你总是说的堆栈，是指什么？</span></a></li></ol></div>
             
 
           </div>
@@ -982,7 +1008,7 @@ are otherwise ignored.**
     
       <span class="post-meta-item-text">站点总字数：</span>
     
-    <span title="站点总字数">296k</span>
+    <span title="站点总字数">300k</span>
   
 
   
@@ -993,7 +1019,7 @@ are otherwise ignored.**
     
       <span class="post-meta-item-text">站点阅读时长 &asymp;</span>
     
-    <span title="站点阅读时长">8:13</span>
+    <span title="站点阅读时长">8:20</span>
   
 </div>
 
