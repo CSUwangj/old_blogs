@@ -35,6 +35,34 @@
   </entry>
   
   <entry>
+    <title>2019-02-01 Daily Challenge</title>
+    <link href="http://CSUwangj.github.io/2019-02-01-Daily-Challenge/"/>
+    <id>http://CSUwangj.github.io/2019-02-01-Daily-Challenge/</id>
+    <published>2019-02-01T06:59:13.000Z</published>
+    <updated>2019-02-01T07:10:48.024Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;What I&amp;#39;ve done today is &lt;em&gt;Sub-string divisibility&lt;/em&gt; in &lt;em&gt;Rust&lt;/em&gt; and &lt;em&gt;Numbers With Same Consecutive Differences&lt;/em&gt; in &lt;em&gt;JavaScript&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;I also spent a few hours at Vidar Team&amp;#39;s HGAME2019, and go through Crypto and Web Challenge.&lt;/p&gt;
+&lt;p&gt;Misc is boring, RE is boring too, PWN is interesting, but DotA2 is more interesting ;D&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="DailyChallenge" scheme="http://CSUwangj.github.io/categories/DailyChallenge/"/>
+    
+    
+      <category term="Math" scheme="http://CSUwangj.github.io/tags/Math/"/>
+    
+      <category term="ProjectEuler" scheme="http://CSUwangj.github.io/tags/ProjectEuler/"/>
+    
+      <category term="Algorithm" scheme="http://CSUwangj.github.io/tags/Algorithm/"/>
+    
+      <category term="LeetCode" scheme="http://CSUwangj.github.io/tags/LeetCode/"/>
+    
+  </entry>
+  
+  <entry>
     <title>2019-01-31 Daily Challenge</title>
     <link href="http://CSUwangj.github.io/2019-01-31-Daily-Challenge/"/>
     <id>http://CSUwangj.github.io/2019-01-31-Daily-Challenge/</id>
@@ -52,11 +80,11 @@
     
       <category term="Math" scheme="http://CSUwangj.github.io/tags/Math/"/>
     
+      <category term="ProjectEuler" scheme="http://CSUwangj.github.io/tags/ProjectEuler/"/>
+    
       <category term="Algorithm" scheme="http://CSUwangj.github.io/tags/Algorithm/"/>
     
       <category term="LeetCode" scheme="http://CSUwangj.github.io/tags/LeetCode/"/>
-    
-      <category term="ProjectEuler" scheme="http://CSUwangj.github.io/tags/ProjectEuler/"/>
     
   </entry>
   
@@ -65,7 +93,7 @@
     <link href="http://CSUwangj.github.io/ACM%E4%B8%AD%E4%B8%80%E4%BA%9B%E5%B8%B8%E8%A7%81%E7%9A%84%E9%97%AE%E9%A2%98%E5%8F%8A%E5%8E%9F%E5%9B%A0/"/>
     <id>http://CSUwangj.github.io/ACM中一些常见的问题及原因/</id>
     <published>2019-01-30T09:23:34.000Z</published>
-    <updated>2019-01-30T10:57:38.551Z</updated>
+    <updated>2019-02-01T04:47:17.150Z</updated>
     
     <summary type="html">
     
@@ -101,11 +129,11 @@
     
       <category term="Math" scheme="http://CSUwangj.github.io/tags/Math/"/>
     
+      <category term="ProjectEuler" scheme="http://CSUwangj.github.io/tags/ProjectEuler/"/>
+    
       <category term="Algorithm" scheme="http://CSUwangj.github.io/tags/Algorithm/"/>
     
       <category term="LeetCode" scheme="http://CSUwangj.github.io/tags/LeetCode/"/>
-    
-      <category term="ProjectEuler" scheme="http://CSUwangj.github.io/tags/ProjectEuler/"/>
     
   </entry>
   
@@ -128,11 +156,11 @@
     
       <category term="Math" scheme="http://CSUwangj.github.io/tags/Math/"/>
     
+      <category term="ProjectEuler" scheme="http://CSUwangj.github.io/tags/ProjectEuler/"/>
+    
       <category term="Algorithm" scheme="http://CSUwangj.github.io/tags/Algorithm/"/>
     
       <category term="LeetCode" scheme="http://CSUwangj.github.io/tags/LeetCode/"/>
-    
-      <category term="ProjectEuler" scheme="http://CSUwangj.github.io/tags/ProjectEuler/"/>
     
   </entry>
   
@@ -154,11 +182,11 @@
     
       <category term="Math" scheme="http://CSUwangj.github.io/tags/Math/"/>
     
+      <category term="ProjectEuler" scheme="http://CSUwangj.github.io/tags/ProjectEuler/"/>
+    
       <category term="Algorithm" scheme="http://CSUwangj.github.io/tags/Algorithm/"/>
     
       <category term="LeetCode" scheme="http://CSUwangj.github.io/tags/LeetCode/"/>
-    
-      <category term="ProjectEuler" scheme="http://CSUwangj.github.io/tags/ProjectEuler/"/>
     
   </entry>
   
@@ -180,11 +208,11 @@
     
       <category term="Math" scheme="http://CSUwangj.github.io/tags/Math/"/>
     
+      <category term="ProjectEuler" scheme="http://CSUwangj.github.io/tags/ProjectEuler/"/>
+    
       <category term="Algorithm" scheme="http://CSUwangj.github.io/tags/Algorithm/"/>
     
       <category term="LeetCode" scheme="http://CSUwangj.github.io/tags/LeetCode/"/>
-    
-      <category term="ProjectEuler" scheme="http://CSUwangj.github.io/tags/ProjectEuler/"/>
     
   </entry>
   
@@ -206,11 +234,11 @@
     
       <category term="Math" scheme="http://CSUwangj.github.io/tags/Math/"/>
     
+      <category term="ProjectEuler" scheme="http://CSUwangj.github.io/tags/ProjectEuler/"/>
+    
       <category term="Algorithm" scheme="http://CSUwangj.github.io/tags/Algorithm/"/>
     
       <category term="LeetCode" scheme="http://CSUwangj.github.io/tags/LeetCode/"/>
-    
-      <category term="ProjectEuler" scheme="http://CSUwangj.github.io/tags/ProjectEuler/"/>
     
   </entry>
   
@@ -232,11 +260,11 @@
     
       <category term="Math" scheme="http://CSUwangj.github.io/tags/Math/"/>
     
+      <category term="ProjectEuler" scheme="http://CSUwangj.github.io/tags/ProjectEuler/"/>
+    
       <category term="Algorithm" scheme="http://CSUwangj.github.io/tags/Algorithm/"/>
     
       <category term="LeetCode" scheme="http://CSUwangj.github.io/tags/LeetCode/"/>
-    
-      <category term="ProjectEuler" scheme="http://CSUwangj.github.io/tags/ProjectEuler/"/>
     
   </entry>
   
@@ -258,11 +286,11 @@
     
       <category term="Math" scheme="http://CSUwangj.github.io/tags/Math/"/>
     
+      <category term="ProjectEuler" scheme="http://CSUwangj.github.io/tags/ProjectEuler/"/>
+    
       <category term="Algorithm" scheme="http://CSUwangj.github.io/tags/Algorithm/"/>
     
       <category term="LeetCode" scheme="http://CSUwangj.github.io/tags/LeetCode/"/>
-    
-      <category term="ProjectEuler" scheme="http://CSUwangj.github.io/tags/ProjectEuler/"/>
     
   </entry>
   
@@ -284,11 +312,11 @@
     
       <category term="Math" scheme="http://CSUwangj.github.io/tags/Math/"/>
     
+      <category term="ProjectEuler" scheme="http://CSUwangj.github.io/tags/ProjectEuler/"/>
+    
       <category term="Algorithm" scheme="http://CSUwangj.github.io/tags/Algorithm/"/>
     
       <category term="LeetCode" scheme="http://CSUwangj.github.io/tags/LeetCode/"/>
-    
-      <category term="ProjectEuler" scheme="http://CSUwangj.github.io/tags/ProjectEuler/"/>
     
   </entry>
   
@@ -310,11 +338,11 @@
     
       <category term="Math" scheme="http://CSUwangj.github.io/tags/Math/"/>
     
+      <category term="ProjectEuler" scheme="http://CSUwangj.github.io/tags/ProjectEuler/"/>
+    
       <category term="Algorithm" scheme="http://CSUwangj.github.io/tags/Algorithm/"/>
     
       <category term="LeetCode" scheme="http://CSUwangj.github.io/tags/LeetCode/"/>
-    
-      <category term="ProjectEuler" scheme="http://CSUwangj.github.io/tags/ProjectEuler/"/>
     
   </entry>
   
@@ -354,11 +382,11 @@
     
       <category term="Math" scheme="http://CSUwangj.github.io/tags/Math/"/>
     
+      <category term="ProjectEuler" scheme="http://CSUwangj.github.io/tags/ProjectEuler/"/>
+    
       <category term="Algorithm" scheme="http://CSUwangj.github.io/tags/Algorithm/"/>
     
       <category term="LeetCode" scheme="http://CSUwangj.github.io/tags/LeetCode/"/>
-    
-      <category term="ProjectEuler" scheme="http://CSUwangj.github.io/tags/ProjectEuler/"/>
     
   </entry>
   
@@ -380,11 +408,11 @@
     
       <category term="Math" scheme="http://CSUwangj.github.io/tags/Math/"/>
     
+      <category term="ProjectEuler" scheme="http://CSUwangj.github.io/tags/ProjectEuler/"/>
+    
       <category term="Algorithm" scheme="http://CSUwangj.github.io/tags/Algorithm/"/>
     
       <category term="LeetCode" scheme="http://CSUwangj.github.io/tags/LeetCode/"/>
-    
-      <category term="ProjectEuler" scheme="http://CSUwangj.github.io/tags/ProjectEuler/"/>
     
   </entry>
   
@@ -406,11 +434,11 @@
     
       <category term="Math" scheme="http://CSUwangj.github.io/tags/Math/"/>
     
+      <category term="ProjectEuler" scheme="http://CSUwangj.github.io/tags/ProjectEuler/"/>
+    
       <category term="Algorithm" scheme="http://CSUwangj.github.io/tags/Algorithm/"/>
     
       <category term="LeetCode" scheme="http://CSUwangj.github.io/tags/LeetCode/"/>
-    
-      <category term="ProjectEuler" scheme="http://CSUwangj.github.io/tags/ProjectEuler/"/>
     
   </entry>
   
@@ -432,11 +460,11 @@
     
       <category term="Math" scheme="http://CSUwangj.github.io/tags/Math/"/>
     
+      <category term="ProjectEuler" scheme="http://CSUwangj.github.io/tags/ProjectEuler/"/>
+    
       <category term="Algorithm" scheme="http://CSUwangj.github.io/tags/Algorithm/"/>
     
       <category term="LeetCode" scheme="http://CSUwangj.github.io/tags/LeetCode/"/>
-    
-      <category term="ProjectEuler" scheme="http://CSUwangj.github.io/tags/ProjectEuler/"/>
     
   </entry>
   
@@ -459,11 +487,11 @@
     
       <category term="Math" scheme="http://CSUwangj.github.io/tags/Math/"/>
     
+      <category term="ProjectEuler" scheme="http://CSUwangj.github.io/tags/ProjectEuler/"/>
+    
       <category term="Algorithm" scheme="http://CSUwangj.github.io/tags/Algorithm/"/>
     
       <category term="LeetCode" scheme="http://CSUwangj.github.io/tags/LeetCode/"/>
-    
-      <category term="ProjectEuler" scheme="http://CSUwangj.github.io/tags/ProjectEuler/"/>
     
   </entry>
   
@@ -485,37 +513,11 @@
     
       <category term="Math" scheme="http://CSUwangj.github.io/tags/Math/"/>
     
-      <category term="Algorithm" scheme="http://CSUwangj.github.io/tags/Algorithm/"/>
-    
-      <category term="LeetCode" scheme="http://CSUwangj.github.io/tags/LeetCode/"/>
-    
       <category term="ProjectEuler" scheme="http://CSUwangj.github.io/tags/ProjectEuler/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>2019-01-15 Daily Challenge</title>
-    <link href="http://CSUwangj.github.io/2019-01-15-Daily-Challenge/"/>
-    <id>http://CSUwangj.github.io/2019-01-15-Daily-Challenge/</id>
-    <published>2019-01-14T16:52:50.000Z</published>
-    <updated>2019-01-15T08:59:21.400Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;What I&amp;#39;ve done today is &lt;em&gt;Reciprocal cycles&lt;/em&gt; in &lt;em&gt;Rust&lt;/em&gt; and &lt;em&gt;Open the Lock&lt;/em&gt; in &lt;em&gt;JavaScript&lt;/em&gt;.&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="DailyChallenge" scheme="http://CSUwangj.github.io/categories/DailyChallenge/"/>
-    
-    
-      <category term="Math" scheme="http://CSUwangj.github.io/tags/Math/"/>
     
       <category term="Algorithm" scheme="http://CSUwangj.github.io/tags/Algorithm/"/>
     
       <category term="LeetCode" scheme="http://CSUwangj.github.io/tags/LeetCode/"/>
-    
-      <category term="ProjectEuler" scheme="http://CSUwangj.github.io/tags/ProjectEuler/"/>
     
   </entry>
   
