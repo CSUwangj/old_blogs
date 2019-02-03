@@ -35,6 +35,32 @@
   </entry>
   
   <entry>
+    <title>2019-02-04 Daily Challenge</title>
+    <link href="http://CSUwangj.github.io/2019-02-04-Daily-Challenge/"/>
+    <id>http://CSUwangj.github.io/2019-02-04-Daily-Challenge/</id>
+    <published>2019-02-03T16:00:50.000Z</published>
+    <updated>2019-02-03T16:01:15.876Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;What I&amp;#39;ve done today is &lt;em&gt;Triangular, pentagonal, and hexagonal&lt;/em&gt; in &lt;em&gt;Rust&lt;/em&gt; and &lt;em&gt;LRU Cache&lt;/em&gt; in &lt;em&gt;JavaScript&lt;/em&gt;.&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="DailyChallenge" scheme="http://CSUwangj.github.io/categories/DailyChallenge/"/>
+    
+    
+      <category term="Math" scheme="http://CSUwangj.github.io/tags/Math/"/>
+    
+      <category term="Algorithm" scheme="http://CSUwangj.github.io/tags/Algorithm/"/>
+    
+      <category term="LeetCode" scheme="http://CSUwangj.github.io/tags/LeetCode/"/>
+    
+      <category term="ProjectEuler" scheme="http://CSUwangj.github.io/tags/ProjectEuler/"/>
+    
+  </entry>
+  
+  <entry>
     <title>2019-02-03 Daily Challenge</title>
     <link href="http://CSUwangj.github.io/2019-02-03-Daily-Challenge/"/>
     <id>http://CSUwangj.github.io/2019-02-03-Daily-Challenge/</id>
@@ -478,32 +504,6 @@
     <summary type="html">
     
       &lt;p&gt;What I&amp;#39;ve done today is &lt;em&gt;Digit fifth powers&lt;/em&gt; in &lt;em&gt;Rust&lt;/em&gt; and &lt;em&gt;Valid Square&lt;/em&gt; in &lt;em&gt;JavaScript&lt;/em&gt;.&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="DailyChallenge" scheme="http://CSUwangj.github.io/categories/DailyChallenge/"/>
-    
-    
-      <category term="Math" scheme="http://CSUwangj.github.io/tags/Math/"/>
-    
-      <category term="Algorithm" scheme="http://CSUwangj.github.io/tags/Algorithm/"/>
-    
-      <category term="LeetCode" scheme="http://CSUwangj.github.io/tags/LeetCode/"/>
-    
-      <category term="ProjectEuler" scheme="http://CSUwangj.github.io/tags/ProjectEuler/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>2019-01-18 Daily Challenge</title>
-    <link href="http://CSUwangj.github.io/2019-01-18-Daily-Challenge/"/>
-    <id>http://CSUwangj.github.io/2019-01-18-Daily-Challenge/</id>
-    <published>2019-01-17T17:22:10.000Z</published>
-    <updated>2019-01-17T17:31:42.050Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;What I&amp;#39;ve done today is &lt;em&gt;Distinct powers&lt;/em&gt; in &lt;del&gt;&lt;em&gt;Oral Calculation&lt;/em&gt;&lt;/del&gt;&lt;em&gt;Rust&lt;/em&gt; and &lt;em&gt;To Lower Case&lt;/em&gt; in &lt;em&gt;JavaScript&lt;/em&gt;.&lt;/p&gt;
     
     </summary>
     
