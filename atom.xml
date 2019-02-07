@@ -35,6 +35,32 @@
   </entry>
   
   <entry>
+    <title>2019-02-08 Daily Challenge</title>
+    <link href="http://CSUwangj.github.io/2019-02-08-Daily-Challenge/"/>
+    <id>http://CSUwangj.github.io/2019-02-08-Daily-Challenge/</id>
+    <published>2019-02-07T16:05:41.000Z</published>
+    <updated>2019-02-07T16:07:47.460Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;What I&amp;#39;ve done today is &lt;em&gt;Self powers&lt;/em&gt; in &lt;em&gt;Rust&lt;/em&gt; and &lt;em&gt;Summary Ranges&lt;/em&gt; in &lt;em&gt;JavaScript&lt;/em&gt;.&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="DailyChallenge" scheme="http://CSUwangj.github.io/categories/DailyChallenge/"/>
+    
+    
+      <category term="Math" scheme="http://CSUwangj.github.io/tags/Math/"/>
+    
+      <category term="Algorithm" scheme="http://CSUwangj.github.io/tags/Algorithm/"/>
+    
+      <category term="LeetCode" scheme="http://CSUwangj.github.io/tags/LeetCode/"/>
+    
+      <category term="ProjectEuler" scheme="http://CSUwangj.github.io/tags/ProjectEuler/"/>
+    
+  </entry>
+  
+  <entry>
     <title>2019-02-07 Daily Challenge</title>
     <link href="http://CSUwangj.github.io/2019-02-07-Daily-Challenge/"/>
     <id>http://CSUwangj.github.io/2019-02-07-Daily-Challenge/</id>
@@ -500,24 +526,6 @@
       <category term="LeetCode" scheme="http://CSUwangj.github.io/tags/LeetCode/"/>
     
       <category term="ProjectEuler" scheme="http://CSUwangj.github.io/tags/ProjectEuler/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>又一次装机</title>
-    <link href="http://CSUwangj.github.io/%E5%8F%88%E4%B8%80%E6%AC%A1%E8%A3%85%E6%9C%BA/"/>
-    <id>http://CSUwangj.github.io/又一次装机/</id>
-    <published>2019-01-21T02:41:05.000Z</published>
-    <updated>2019-01-22T07:25:20.667Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;更新了固态硬盘，所以又要重装电脑啦~&lt;br&gt;记录一蛤装机过程，主要还是给自己以后参考用。&lt;br&gt;
-    
-    </summary>
-    
-      <category term="Notes" scheme="http://CSUwangj.github.io/categories/Notes/"/>
-    
     
   </entry>
   
