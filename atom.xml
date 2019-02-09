@@ -35,6 +35,32 @@
   </entry>
   
   <entry>
+    <title>2019-02-09 Daily Challenge</title>
+    <link href="http://CSUwangj.github.io/2019-02-09-Daily-Challenge/"/>
+    <id>http://CSUwangj.github.io/2019-02-09-Daily-Challenge/</id>
+    <published>2019-02-09T09:45:05.000Z</published>
+    <updated>2019-02-09T10:13:06.674Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;What I&amp;#39;ve done today is &lt;em&gt;Prime digit replacements&lt;/em&gt; in &lt;em&gt;Rust&lt;/em&gt; and &lt;em&gt;Find Minimum in Rotated Sorted Array&lt;/em&gt; in &lt;em&gt;JavaScript&lt;/em&gt;.&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="DailyChallenge" scheme="http://CSUwangj.github.io/categories/DailyChallenge/"/>
+    
+    
+      <category term="Math" scheme="http://CSUwangj.github.io/tags/Math/"/>
+    
+      <category term="Algorithm" scheme="http://CSUwangj.github.io/tags/Algorithm/"/>
+    
+      <category term="LeetCode" scheme="http://CSUwangj.github.io/tags/LeetCode/"/>
+    
+      <category term="ProjectEuler" scheme="http://CSUwangj.github.io/tags/ProjectEuler/"/>
+    
+  </entry>
+  
+  <entry>
     <title>2019-02-08 Daily Challenge</title>
     <link href="http://CSUwangj.github.io/2019-02-08-Daily-Challenge/"/>
     <id>http://CSUwangj.github.io/2019-02-08-Daily-Challenge/</id>
@@ -487,32 +513,6 @@
     <summary type="html">
     
       &lt;p&gt;What I&amp;#39;ve done today is &lt;em&gt;Digit factorials&lt;/em&gt; in &lt;em&gt;Rust&lt;/em&gt; and &lt;em&gt;Search a 2D Matrix II&lt;/em&gt; in &lt;em&gt;JavaScript&lt;/em&gt;.&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="DailyChallenge" scheme="http://CSUwangj.github.io/categories/DailyChallenge/"/>
-    
-    
-      <category term="Math" scheme="http://CSUwangj.github.io/tags/Math/"/>
-    
-      <category term="Algorithm" scheme="http://CSUwangj.github.io/tags/Algorithm/"/>
-    
-      <category term="LeetCode" scheme="http://CSUwangj.github.io/tags/LeetCode/"/>
-    
-      <category term="ProjectEuler" scheme="http://CSUwangj.github.io/tags/ProjectEuler/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>2019-01-22 Daily Challenge</title>
-    <link href="http://CSUwangj.github.io/2019-01-22-Daily-Challenge/"/>
-    <id>http://CSUwangj.github.io/2019-01-22-Daily-Challenge/</id>
-    <published>2019-01-21T16:03:31.000Z</published>
-    <updated>2019-01-21T16:44:21.911Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;What I&amp;#39;ve done today is &lt;em&gt;Digit cancelling fractions&lt;/em&gt; in &lt;em&gt;Rust&lt;/em&gt; and &lt;em&gt;Repeated String Match&lt;/em&gt; in &lt;em&gt;JavaScript&lt;/em&gt;.&lt;/p&gt;
     
     </summary>
     
