@@ -117,7 +117,7 @@
 
 
   <meta name="description" content="What I&amp;#39;ve done today is Even Fibonacci numbers in Rust and K-th Smallest Prime Fraction in cpp.">
-<meta name="keywords" content="Math,Algorithm,LeetCode,ProjectEuler,Fibonacci">
+<meta name="keywords" content="Math,ProjectEuler,Algorithm,LeetCode,Fibonacci">
 <meta property="og:type" content="article">
 <meta property="og:title" content="2018-12-22 Daily Challenge">
 <meta property="og:url" content="http://CSUwangj.github.io/2018-12-22-Daily-Challenge/index.html">
@@ -530,7 +530,7 @@
 <p>Sadly saying that I find num_bigint crate is much slower than Python original computation...</p>
 <p>And secondly I find that I&#39;m not capable to write a quick matrix exponentiation in Rust...</p>
 <p>Leave them alone until I can do it...</p>
-<h2 id="Implementation"><a href="#Implementation" class="headerlink" title="Implementation"></a>Implementation</h2><figure class="highlight rust"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">extern</span> <span class="keyword">crate</span> num_bigint;</span><br><span class="line"><span class="keyword">extern</span> <span class="keyword">crate</span> num_traits;</span><br><span class="line"></span><br><span class="line"><span class="keyword">use</span> num_bigint::&#123;BigUint&#125;;</span><br><span class="line"><span class="keyword">use</span> num_traits::&#123;Zero&#125;;</span><br><span class="line"><span class="keyword">use</span> std::mem::replace;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">fn</span> <span class="title">main</span></span>() &#123;</span><br><span class="line">    <span class="built_in">println!</span>(<span class="string">"Used for don't need to delete it...&#123;&#125;"</span>, fib(<span class="number">2</span>));</span><br><span class="line">    <span class="built_in">println!</span>(<span class="string">"Used for don't need to delete it...&#123;&#125;"</span>, fibonacci_recursive(<span class="number">2</span>));</span><br><span class="line">    <span class="keyword">let</span> <span class="keyword">mut</span> x0: <span class="built_in">u64</span> = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">let</span> <span class="keyword">mut</span> x1: <span class="built_in">u64</span> = <span class="number">2</span>;</span><br><span class="line">    <span class="keyword">let</span> <span class="keyword">mut</span> x2: <span class="built_in">u64</span>;</span><br><span class="line">    <span class="keyword">let</span> <span class="keyword">mut</span> sum: <span class="built_in">u64</span> = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">while</span> x1 &lt;= <span class="number">4000000</span> &#123;</span><br><span class="line">        x2 = x0 + <span class="number">4</span>*x1;</span><br><span class="line">        x0 = x1;</span><br><span class="line">        x1 = x2;</span><br><span class="line">        sum += x0;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">println!</span>(<span class="string">"The answer is &#123;&#125;"</span>, sum);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// Implication using bigint, but its so slow...</span></span><br><span class="line"><span class="function"><span class="keyword">fn</span> <span class="title">fib</span></span>(n: <span class="built_in">usize</span>) -&gt; BigUint &#123;</span><br><span class="line">    <span class="keyword">let</span> <span class="keyword">mut</span> f0: BigUint = Zero::zero();</span><br><span class="line">    <span class="keyword">let</span> <span class="keyword">mut</span> f1: BigUint = BigUint::parse_bytes(b"<span class="number">2</span><span class="string">", 10).unwrap();</span></span><br><span class="line"><span class="string">    let four: BigUint = BigUint::parse_bytes(b"</span><span class="number">4</span><span class="string">", 10).unwrap();</span></span><br><span class="line"><span class="string">    let mut f2: BigUint;</span></span><br><span class="line"><span class="string">    for _ in 0..n &#123;</span></span><br><span class="line"><span class="string">        f2 = f0 + &amp;four * &amp;f1;</span></span><br><span class="line"><span class="string">        // This is a low cost way of swapping f0 with f1 and f1 with f2.</span></span><br><span class="line"><span class="string">        f0 = replace(&amp;mut f1, f2);</span></span><br><span class="line"><span class="string">    &#125;</span></span><br><span class="line"><span class="string">    f0</span></span><br><span class="line"><span class="string">&#125;</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">fn fibonacci_recursive(n: u64) -&gt; u64 &#123;</span></span><br><span class="line"><span class="string">    let mut x0: u64 = 0;</span></span><br><span class="line"><span class="string">    let mut x1: u64 = 1;</span></span><br><span class="line"><span class="string">    for _ in 0..n&#123;</span></span><br><span class="line"><span class="string">        x1 = x0 + x1;</span></span><br><span class="line"><span class="string">        x0 = x1 - x0;</span></span><br><span class="line"><span class="string">    &#125;</span></span><br><span class="line"><span class="string">    x0</span></span><br><span class="line"><span class="string">&#125;</span></span><br></pre></td></tr></table></figure>
+<h2 id="Implementation"><a href="#Implementation" class="headerlink" title="Implementation"></a>Implementation</h2><figure class="highlight rust"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">extern</span> <span class="keyword">crate</span> num_bigint;</span><br><span class="line"><span class="keyword">extern</span> <span class="keyword">crate</span> num_traits;</span><br><span class="line"></span><br><span class="line"><span class="keyword">use</span> num_bigint::&#123;BigUint&#125;;</span><br><span class="line"><span class="keyword">use</span> num_traits::&#123;Zero&#125;;</span><br><span class="line"><span class="keyword">use</span> std::mem::replace;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">fn</span> <span class="title">main</span></span>() &#123;</span><br><span class="line">    <span class="built_in">println!</span>(<span class="string">"Used for don't need to delete it...&#123;&#125;"</span>, fib(<span class="number">2</span>));</span><br><span class="line">    <span class="built_in">println!</span>(<span class="string">"Used for don't need to delete it...&#123;&#125;"</span>, fibonacci_recursive(<span class="number">2</span>));</span><br><span class="line">    <span class="keyword">let</span> <span class="keyword">mut</span> x0: <span class="built_in">u64</span> = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">let</span> <span class="keyword">mut</span> x1: <span class="built_in">u64</span> = <span class="number">2</span>;</span><br><span class="line">    <span class="keyword">let</span> <span class="keyword">mut</span> x2: <span class="built_in">u64</span>;</span><br><span class="line">    <span class="keyword">let</span> <span class="keyword">mut</span> sum: <span class="built_in">u64</span> = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">while</span> x1 &lt;= <span class="number">4000000</span> &#123;</span><br><span class="line">        x2 = x0 + <span class="number">4</span>*x1;</span><br><span class="line">        x0 = x1;</span><br><span class="line">        x1 = x2;</span><br><span class="line">        sum += x0;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">println!</span>(<span class="string">"The answer is &#123;&#125;"</span>, sum);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// Implication using bigint, but its so slow...</span></span><br><span class="line"><span class="function"><span class="keyword">fn</span> <span class="title">fib</span></span>(n: <span class="built_in">usize</span>) -&gt; BigUint &#123;</span><br><span class="line">    <span class="keyword">let</span> <span class="keyword">mut</span> f0: BigUint = Zero::zero();</span><br><span class="line">    <span class="keyword">let</span> <span class="keyword">mut</span> f1: BigUint = BigUint::parse_bytes(<span class="string">b"2"</span>, <span class="number">10</span>).unwrap();</span><br><span class="line">    <span class="keyword">let</span> four: BigUint = BigUint::parse_bytes(<span class="string">b"4"</span>, <span class="number">10</span>).unwrap();</span><br><span class="line">    <span class="keyword">let</span> <span class="keyword">mut</span> f2: BigUint;</span><br><span class="line">    <span class="keyword">for</span> _ <span class="keyword">in</span> <span class="number">0</span>..n &#123;</span><br><span class="line">        f2 = f0 + &amp;four * &amp;f1;</span><br><span class="line">        <span class="comment">// This is a low cost way of swapping f0 with f1 and f1 with f2.</span></span><br><span class="line">        f0 = replace(&amp;<span class="keyword">mut</span> f1, f2);</span><br><span class="line">    &#125;</span><br><span class="line">    f0</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">fn</span> <span class="title">fibonacci_recursive</span></span>(n: <span class="built_in">u64</span>) -&gt; <span class="built_in">u64</span> &#123;</span><br><span class="line">    <span class="keyword">let</span> <span class="keyword">mut</span> x0: <span class="built_in">u64</span> = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">let</span> <span class="keyword">mut</span> x1: <span class="built_in">u64</span> = <span class="number">1</span>;</span><br><span class="line">    <span class="keyword">for</span> _ <span class="keyword">in</span> <span class="number">0</span>..n&#123;</span><br><span class="line">        x1 = x0 + x1;</span><br><span class="line">        x0 = x1 - x0;</span><br><span class="line">    &#125;</span><br><span class="line">    x0</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <h1 id="Algorithm"><a href="#Algorithm" class="headerlink" title="Algorithm"></a>Algorithm</h1><h2 id="Problem-1"><a href="#Problem-1" class="headerlink" title="Problem"></a>Problem</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">786. K-th Smallest Prime Fraction</span><br><span class="line"></span><br><span class="line">A sorted list A contains 1, plus some number of primes.  Then, for every p &lt; q in the list, we consider the fraction p/q.</span><br><span class="line"></span><br><span class="line">What is the K-th smallest fraction considered?  Return your answer as an array of ints, where answer[0] = p and answer[1] = q.</span><br><span class="line"></span><br><span class="line">Examples:</span><br><span class="line">Input: A = [1, 2, 3, 5], K = 3</span><br><span class="line">Output: [2, 5]</span><br><span class="line">Explanation:</span><br><span class="line">The fractions to be considered in sorted order are:</span><br><span class="line">1/5, 1/3, 2/5, 1/2, 3/5, 2/3.</span><br><span class="line">The third fraction is 2/5.</span><br><span class="line"></span><br><span class="line">Input: A = [1, 7], K = 1</span><br><span class="line">Output: [1, 7]</span><br><span class="line">Note:</span><br><span class="line"></span><br><span class="line">A will have length between 2 and 2000.</span><br><span class="line">Each A[i] will be between 1 and 30000.</span><br><span class="line">K will be between 1 and A.length * (A.length - 1) / 2.</span><br></pre></td></tr></table></figure>
 <h2 id="Solution-1"><a href="#Solution-1" class="headerlink" title="Solution"></a>Solution</h2><p>I think that avoiding computation of fractions is impossible. So time complexity is at least $O(n^2)$.</p>
 <p>And I remembered algorithm that find k-th element with idea of quick sort.</p>
@@ -555,19 +555,10 @@
   
     <li class="popular-posts-item">
       
-        <div class="popular-posts-date">2019-01-17</div>
+        <div class="popular-posts-date">2019-01-16</div>
       
       
-      <div class="popular-posts-title"><a href="/2019-01-17-Daily-Challenge/" rel="bookmark">2019-01-17 Daily Challenge</a></div>
-      
-    </li>
-  
-    <li class="popular-posts-item">
-      
-        <div class="popular-posts-date">2019-02-11</div>
-      
-      
-      <div class="popular-posts-title"><a href="/2019-02-11-Daily-Challenge/" rel="bookmark">2019-02-11 Daily Challenge</a></div>
+      <div class="popular-posts-title"><a href="/2019-01-16-Daily-Challenge/" rel="bookmark">2019-01-16 Daily Challenge</a></div>
       
     </li>
   
@@ -577,6 +568,15 @@
       
       
       <div class="popular-posts-title"><a href="/2018-12-21-Daily-Challenge/" rel="bookmark">2018-12-21 Daily Challenge</a></div>
+      
+    </li>
+  
+    <li class="popular-posts-item">
+      
+        <div class="popular-posts-date">2019-01-02</div>
+      
+      
+      <div class="popular-posts-title"><a href="/2019-01-02-Daily-Challenge/" rel="bookmark">2019-01-02 Daily Challenge</a></div>
       
     </li>
   
@@ -662,11 +662,11 @@
           
             <a href="/tags/Math/" rel="tag"># Math</a>
           
+            <a href="/tags/ProjectEuler/" rel="tag"># ProjectEuler</a>
+          
             <a href="/tags/Algorithm/" rel="tag"># Algorithm</a>
           
             <a href="/tags/LeetCode/" rel="tag"># LeetCode</a>
-          
-            <a href="/tags/ProjectEuler/" rel="tag"># ProjectEuler</a>
           
             <a href="/tags/Fibonacci/" rel="tag"># Fibonacci</a>
           
@@ -796,7 +796,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">77</span>
+                    <span class="site-state-item-count">78</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -1066,7 +1066,7 @@
     
       <span class="post-meta-item-text">站点总字数：</span>
     
-    <span title="站点总字数">338k</span>
+    <span title="站点总字数">348k</span>
   
 
   
@@ -1077,7 +1077,7 @@
     
       <span class="post-meta-item-text">站点阅读时长 &asymp;</span>
     
-    <span title="站点阅读时长">9:23</span>
+    <span title="站点阅读时长">9:40</span>
   
 </div>
 
