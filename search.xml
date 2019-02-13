@@ -9,6 +9,20 @@
       </categories>
   </entry>
   <entry>
+    <title><![CDATA[2019-02-14 Daily Challenge]]></title>
+    <url>%2F2019-02-14-Daily-Challenge%2F</url>
+    <content type="text"><![CDATA[What I&#39;ve done today is Poker hands in Rust and Minimum Moves to Equal Array Elements in JavaScript. MathProblemPowerful digit sumProblem 56A googol ($10^{100}$) is a massive number: one followed by one-hundred zeros; $100^{100}$ is almost unimaginably large: one followed by two-hundred zeros. Despite their size, the sum of the digits in each number is only 1. Considering natural numbers of the form, $a^b$, where a, b &lt; 100, what is the maximum digital sum? SolutionNothing to say. Implementation1234567891011121314151617181920extern crate num_bigint;extern crate num_traits;use num_bigint::&#123;BigUint&#125;;use num_traits::&#123;FromPrimitive&#125;;fn main() &#123; let mut ans = 0; for i in 1..101 &#123; let base: BigUint = FromPrimitive::from_usize(i).unwrap(); let mut tmp: BigUint = FromPrimitive::from_usize(i).unwrap(); for _j in 0..100 &#123; let sum = tmp.to_str_radix(10).chars() .fold(0, |a, b| a+b as usize - '0' as usize); ans = if ans &lt; sum &#123; sum &#125; else &#123; ans &#125;; tmp = tmp * &amp;base; &#125; &#125; println!("Answer is &#123;&#125;", ans);&#125; AlgorithmProblem93. Restore IP AddressesGiven a string containing only digits, restore it by returning all possible valid IP address combinations. Example: 12Input: &quot;25525511135&quot;Output: [&quot;255.255.11.135&quot;, &quot;255.255.111.35&quot;] SolutionSimple DFS. Implementation1234567891011121314151617181920212223242526/** * @param &#123;string&#125; s * @return &#123;string[]&#125; */var restoreIpAddresses = function(s) &#123; let ans = []; let arr = []; const isValid = (s) =&gt; &#123; return (+s &lt; 256) &amp;&amp; (+s+"" === s); &#125;; const dfs = (index, cursor) =&gt; &#123; // console.log(index, cursor, arr); if (index === 4 || cursor &gt;= s.length) &#123; if (cursor === s.length &amp;&amp; index === 4) ans.push(arr.join(".")); return; &#125; for (let i = 1; i &lt; 4; ++i) &#123; if (cursor+i &lt;= s.length &amp;&amp; isValid(s.substr(cursor, i))) &#123; arr[index] = s.substr(cursor, i); dfs(index+1, cursor+i); &#125; &#125; &#125;; dfs(0, 0); return ans;&#125;;]]></content>
+      <categories>
+        <category>DailyChallenge</category>
+      </categories>
+      <tags>
+        <tag>Math</tag>
+        <tag>Algorithm</tag>
+        <tag>LeetCode</tag>
+        <tag>ProjectEuler</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[2019-02-13 Daily Challenge]]></title>
     <url>%2F2019-02-13-Daily-Challenge%2F</url>
     <content type="text"><![CDATA[What I&#39;ve done today is Poker hands in Rust and Minimum Moves to Equal Array Elements in JavaScript. MathProblemLychrel numbersProblem 55If we take 47, reverse and add, 47 + 74 = 121, which is palindromic. Not all numbers produce palindromes so quickly. For example, 349 + 943 = 1292,1292 + 2921 = 42134213 + 3124 = 7337 That is, 349 took three iterations to arrive at a palindrome. Although no one has proved it yet, it is thought that some numbers, like 196, never produce a palindrome. A number that never forms a palindrome through the reverse and add process is called a Lychrel number. Due to the theoretical nature of these numbers, and for the purpose of this problem, we shall assume that a number is Lychrel until proven otherwise. In addition you are given that for every number below ten-thousand, it will either (i) become a palindrome in less than fifty iterations, or, (ii) no one, with all the computing power that exists, has managed so far to map it to a palindrome. In fact, 10677 is the first number to be shown to require over fifty iterations before producing a palindrome: 4668731596684224866951378664 (53 iterations, 28-digits). Surprisingly, there are palindromic numbers that are themselves Lychrel numbers; the first example is 4994. How many Lychrel numbers are there below ten-thousand? NOTE: Wording was modified slightly on 24 April 2007 to emphasise the theoretical nature of Lychrel numbers. SolutionNothing to say. Implementation12345678910111213141516171819202122232425262728293031323334353637383940fn main() &#123; let mut ans = 0; for i in 10..10_000 &#123; let mut tmp = i128::from(i); tmp += reverse(tmp); let mut cnt = 1; while cnt &lt; 50 &amp;&amp; !is_palindrome(tmp) &#123; cnt += 1; // println!("&#123;&#125;, &#123;&#125;, &#123;&#125;", i, tmp, reverse(tmp)); tmp += reverse(tmp); &#125; if cnt == 50 &#123; println!("&#123;&#125;", i); ans += 1; &#125; &#125; println!("Answer is &#123;&#125;", ans);&#125;fn is_palindrome(n: i128) -&gt; bool &#123; let s = n.to_string(); // println!("&#123;&#125;",s); let s = s.as_bytes(); for i in 0..(s.len()/2) &#123; if s[i] != s[s.len()-1-i] &#123; return false; &#125; &#125; true&#125;fn reverse(mut n: i128) -&gt; i128 &#123; let mut ans = 0; while n!= 0 &#123; ans *= 10; ans += n%10; n /= 10; &#125; ans&#125; AlgorithmProblem81. Search in Rotated Sorted Array IISuppose an array sorted in ascending order is rotated at some pivot unknown to you beforehand. (i.e., [0,0,1,2,2,5,6] might become [2,5,6,0,0,1,2]). You are given a target value to search. If found in the array return true, otherwise return false. Example 1: 12Input: nums = [2,5,6,0,0,1,2], target = 0Output: true Example 2: 12Input: nums = [2,5,6,0,0,1,2], target = 3Output: false Follow up: This is a follow up problem to Search in Rotated Sorted Array, where nums may contain duplicates. Would this affect the run-time complexity? How and why? SolutionNothing to say. Implementation1234567891011/** * @param &#123;number[]&#125; nums * @param &#123;number&#125; target * @return &#123;boolean&#125; */var search = function(nums, target) &#123; for (let i = 0; i &lt; nums.length; ++i) &#123; if (nums[i] === target) return true; &#125; return false;&#125;;]]></content>
@@ -929,8 +943,8 @@
       </categories>
       <tags>
         <tag>CTF</tag>
-        <tag>Crypto</tag>
         <tag>Misc</tag>
+        <tag>Crypto</tag>
       </tags>
   </entry>
   <entry>
@@ -942,8 +956,8 @@
       </categories>
       <tags>
         <tag>CTF</tag>
-        <tag>Crypto</tag>
         <tag>Misc</tag>
+        <tag>Crypto</tag>
         <tag>PWN</tag>
         <tag>Rev</tag>
         <tag>Web</tag>
@@ -998,8 +1012,8 @@
       </categories>
       <tags>
         <tag>CTF</tag>
-        <tag>Crypto</tag>
         <tag>Misc</tag>
+        <tag>Crypto</tag>
         <tag>PWN</tag>
         <tag>Web</tag>
       </tags>
@@ -1036,8 +1050,8 @@
         <category>Tools</category>
       </categories>
       <tags>
-        <tag>Crypto</tag>
         <tag>Misc</tag>
+        <tag>Crypto</tag>
       </tags>
   </entry>
   <entry>
@@ -1049,8 +1063,8 @@
       </categories>
       <tags>
         <tag>CTF</tag>
-        <tag>Crypto</tag>
         <tag>Misc</tag>
+        <tag>Crypto</tag>
         <tag>PWN</tag>
         <tag>Rev</tag>
         <tag>Web</tag>
