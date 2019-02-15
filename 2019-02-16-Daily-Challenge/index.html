@@ -116,18 +116,20 @@
 
 
 
-  <meta name="description" content="What I&amp;#39;ve done today is Pandigital prime in Rust and Repeated DNA Sequences in JavaScript.">
+  <meta name="description" content="What I&amp;#39;ve done today is Spiral primes in Rust and First Bad Version in JavaScript.">
 <meta name="keywords" content="Math,Algorithm,LeetCode,ProjectEuler">
 <meta property="og:type" content="article">
-<meta property="og:title" content="2019-01-30 Daily Challenge">
-<meta property="og:url" content="http://CSUwangj.github.io/2019-01-30-Daily-Challenge/index.html">
+<meta property="og:title" content="2019-02-16 Daily Challenge">
+<meta property="og:url" content="http://CSUwangj.github.io/2019-02-16-Daily-Challenge/index.html">
 <meta property="og:site_name" content="LuckyDog">
-<meta property="og:description" content="What I&amp;#39;ve done today is Pandigital prime in Rust and Repeated DNA Sequences in JavaScript.">
+<meta property="og:description" content="What I&amp;#39;ve done today is Spiral primes in Rust and First Bad Version in JavaScript.">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-01-30T07:15:28.254Z">
+<meta property="og:image" content="http://csuwangj.github.io/2019-02-16-Daily-Challenge/09.png">
+<meta property="og:updated_time" content="2019-02-15T16:09:35.758Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="2019-01-30 Daily Challenge">
-<meta name="twitter:description" content="What I&amp;#39;ve done today is Pandigital prime in Rust and Repeated DNA Sequences in JavaScript.">
+<meta name="twitter:title" content="2019-02-16 Daily Challenge">
+<meta name="twitter:description" content="What I&amp;#39;ve done today is Spiral primes in Rust and First Bad Version in JavaScript.">
+<meta name="twitter:image" content="http://csuwangj.github.io/2019-02-16-Daily-Challenge/09.png">
 
 
 
@@ -136,7 +138,7 @@
 
 
 
-  <link rel="canonical" href="http://CSUwangj.github.io/2019-01-30-Daily-Challenge/"/>
+  <link rel="canonical" href="http://CSUwangj.github.io/2019-02-16-Daily-Challenge/"/>
 
 
 
@@ -146,7 +148,7 @@
   };
 </script>
 
-  <title>2019-01-30 Daily Challenge | LuckyDog</title>
+  <title>2019-02-16 Daily Challenge | LuckyDog</title>
   
 
 
@@ -350,7 +352,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://CSUwangj.github.io/2019-01-30-Daily-Challenge/">
+    <link itemprop="mainEntityOfPage" href="http://CSUwangj.github.io/2019-02-16-Daily-Challenge/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="CSUwangj">
@@ -367,7 +369,7 @@
 
         
         
-          <h2 class="post-title" itemprop="name headline">2019-01-30 Daily Challenge
+          <h2 class="post-title" itemprop="name headline">2019-02-16 Daily Challenge
               
             
           </h2>
@@ -392,7 +394,7 @@
                 
               
 
-              <time title="创建时间：2019-01-30 00:06:35 / 修改时间：15:15:28" itemprop="dateCreated datePublished" datetime="2019-01-30T00:06:35+08:00">2019-01-30</time>
+              <time title="创建时间：2019-02-16 00:09:22 / 修改时间：00:09:35" itemprop="dateCreated datePublished" datetime="2019-02-16T00:09:22+08:00">2019-02-16</time>
             
 
             
@@ -429,10 +431,10 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2019-01-30-Daily-Challenge/#comments" itemprop="discussionUrl">
+                <a href="/2019-02-16-Daily-Challenge/#comments" itemprop="discussionUrl">
                 
                   <span class="post-comments-count disqus-comment-count"
-                        data-disqus-identifier="2019-01-30-Daily-Challenge/" itemprop="commentCount"></span>
+                        data-disqus-identifier="2019-02-16-Daily-Challenge/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -454,7 +456,7 @@
                 
                   <span class="post-meta-item-text">本文字数：</span>
                 
-                <span title="本文字数">2.3k</span>
+                <span title="本文字数">3k</span>
               
 
               
@@ -468,7 +470,7 @@
                 
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
-                <span title="阅读时长">4 分钟</span>
+                <span title="阅读时长">5 分钟</span>
               
             </div>
           
@@ -488,18 +490,22 @@
       
 
       
-        <p>What I&#39;ve done today is <em>Pandigital prime</em> in <em>Rust</em> and <em>Repeated DNA Sequences</em> in <em>JavaScript</em>.</p>
+        <p>What I&#39;ve done today is <em>Spiral primes</em> in <em>Rust</em> and <em>First Bad Version</em> in <em>JavaScript</em>.</p>
 <a id="more"></a>
-<h1 id="Math"><a href="#Math" class="headerlink" title="Math"></a>Math</h1><h2 id="Problem"><a href="#Problem" class="headerlink" title="Problem"></a>Problem</h2><h3 id="Pandigital-prime"><a href="#Pandigital-prime" class="headerlink" title="Pandigital prime"></a>Pandigital prime</h3><h3 id="Problem-41"><a href="#Problem-41" class="headerlink" title="Problem 41"></a>Problem 41</h3><p>We shall say that an <em>n</em>-digit number is pandigital if it makes use of all the digits 1 to <em>n</em> exactly once. For example, 2143 is a 4-digit pandigital and is also prime.</p>
-<p>What is the largest <em>n</em>-digit pandigital prime that exists?</p>
-<h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2><p>So many pandigital problems...</p>
-<h2 id="Implementation"><a href="#Implementation" class="headerlink" title="Implementation"></a>Implementation</h2><figure class="highlight rust"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">extern</span> <span class="keyword">crate</span> primal;</span><br><span class="line"></span><br><span class="line"><span class="keyword">use</span> primal::StreamingSieve;</span><br><span class="line"><span class="keyword">use</span> primal::Primes;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">fn</span> <span class="title">main</span></span>() &#123;</span><br><span class="line">    <span class="keyword">let</span> <span class="keyword">mut</span> ans = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">let</span> up_bd = StreamingSieve::prime_pi(<span class="number">1_000_000_000usize</span>);</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> Primes::all().take(up_bd) &#123;</span><br><span class="line">        <span class="keyword">if</span> is_pandigital(i) &#123;</span><br><span class="line">            <span class="built_in">println!</span>(<span class="string">"&#123;&#125;"</span>, i);</span><br><span class="line">            ans = i;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">println!</span>(<span class="string">"Answer is &#123;&#125;"</span>, ans);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">fn</span> <span class="title">is_pandigital</span></span>(n: <span class="built_in">usize</span>) -&gt; <span class="built_in">bool</span> &#123;</span><br><span class="line">    <span class="comment">// println!("n = &#123;&#125;", n);</span></span><br><span class="line">    <span class="keyword">let</span> l = n.to_string().len();</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> <span class="number">1</span>..(l+<span class="number">1</span>) &#123;</span><br><span class="line">        <span class="keyword">let</span> <span class="keyword">mut</span> tmp = n;</span><br><span class="line">        <span class="keyword">let</span> <span class="keyword">mut</span> is_ok = <span class="literal">false</span>;</span><br><span class="line">        <span class="keyword">while</span> tmp != <span class="number">0</span> &#123;</span><br><span class="line">            <span class="keyword">if</span> tmp % <span class="number">10</span> == i &amp;&amp; is_ok == <span class="literal">false</span> &#123;</span><br><span class="line">                is_ok = <span class="literal">true</span></span><br><span class="line">            &#125; <span class="keyword">else</span> <span class="keyword">if</span> tmp % <span class="number">10</span> == i &amp;&amp; is_ok == <span class="literal">true</span> &#123;</span><br><span class="line">                <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="comment">// println!("&#123;&#125;", tmp);</span></span><br><span class="line">            tmp /= <span class="number">10</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span> !is_ok &#123;</span><br><span class="line">            <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="literal">true</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h1 id="Algorithm"><a href="#Algorithm" class="headerlink" title="Algorithm"></a>Algorithm</h1><h2 id="Problem-1"><a href="#Problem-1" class="headerlink" title="Problem"></a>Problem</h2><h3 id="187-Repeated-DNA-Sequences"><a href="#187-Repeated-DNA-Sequences" class="headerlink" title="187. Repeated DNA Sequences"></a>187. Repeated DNA Sequences</h3><p>All DNA is composed of a series of nucleotides abbreviated as A, C, G, and T, for example: &quot;ACGAATTCCG&quot;. When studying DNA, it is sometimes useful to identify repeated sequences within the DNA.</p>
-<p>Write a function to find all the 10-letter-long sequences (substrings) that occur more than once in a DNA molecule.</p>
+<h1 id="Math"><a href="#Math" class="headerlink" title="Math"></a>Math</h1><h2 id="Problem"><a href="#Problem" class="headerlink" title="Problem"></a>Problem</h2><h3 id="Spiral-primes"><a href="#Spiral-primes" class="headerlink" title="Spiral primes"></a>Spiral primes</h3><h3 id="Problem-58"><a href="#Problem-58" class="headerlink" title="Problem 58"></a>Problem 58</h3><p>Starting with 1 and spiralling anticlockwise in the following way, a square spiral with side length 7 is formed.</p>
+<p><strong>37</strong> 36 35 34 33 32 <strong>31</strong><br>38 <strong>17</strong> 16 15 14 <strong>13</strong> 30<br>39 18  <strong>5</strong>  4  <strong>3</strong> 12 29<br>40 19  6  1  2 11 28<br>41 20  <strong>7</strong>  8  9 10 27<br>42 21 22 23 24 25 26<br><strong>43</strong> 44 45 46 47 48 49</p>
+<p>It is interesting to note that the odd squares lie along the bottom right diagonal, but what is more interesting is that 8 out of the 13 numbers lying along both diagonals are prime; that is, a ratio of 8/13 ≈ 62%.</p>
+<p>If one complete new layer is wrapped around the spiral above, a square spiral with side length 9 will be formed. If this process is continued, what is the side length of the square spiral for which the ratio of primes along both diagonals first falls below 10%?</p>
+<h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2><p>Nothing to say.</p>
+<h2 id="Implementation"><a href="#Implementation" class="headerlink" title="Implementation"></a>Implementation</h2><figure class="highlight rust"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">extern</span> <span class="keyword">crate</span> primal;</span><br><span class="line"></span><br><span class="line"><span class="keyword">use</span> primal::Sieve;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">fn</span> <span class="title">main</span></span>() &#123;</span><br><span class="line">    <span class="keyword">let</span> sieve: Sieve = Sieve::new(<span class="number">1_000_000_000</span>);</span><br><span class="line">    <span class="keyword">let</span> <span class="keyword">mut</span> cur: <span class="built_in">usize</span> = <span class="number">1</span>;</span><br><span class="line">    <span class="keyword">let</span> <span class="keyword">mut</span> spiral: <span class="built_in">usize</span> = <span class="number">1</span>;</span><br><span class="line">    <span class="keyword">let</span> <span class="keyword">mut</span> prime: <span class="built_in">usize</span> = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">let</span> bound = <span class="number">0.1</span>;</span><br><span class="line">    <span class="keyword">let</span> ans: <span class="built_in">usize</span>;</span><br><span class="line">    <span class="keyword">loop</span> &#123;</span><br><span class="line">        <span class="keyword">let</span> ratio = prime <span class="keyword">as</span> <span class="built_in">f64</span> / (spiral * <span class="number">4</span> - <span class="number">3</span>) <span class="keyword">as</span> <span class="built_in">f64</span>;</span><br><span class="line">        <span class="built_in">println!</span>(<span class="string">"&#123;&#125;, &#123;&#125;"</span>, spiral, ratio);</span><br><span class="line">        <span class="keyword">if</span> ratio &lt; bound &amp;&amp; spiral != <span class="number">1</span> &#123;</span><br><span class="line">            ans = spiral * <span class="number">2</span> - <span class="number">1</span>;</span><br><span class="line">            <span class="keyword">break</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">for</span> _i <span class="keyword">in</span> <span class="number">0</span>..<span class="number">4</span> &#123;</span><br><span class="line">            cur += spiral * <span class="number">2</span>;</span><br><span class="line">            <span class="keyword">if</span> sieve.is_prime(cur) &#123;</span><br><span class="line">                prime += <span class="number">1</span>;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        spiral += <span class="number">1</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">println!</span>(<span class="string">"Answer is &#123;&#125;"</span>, ans);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h1 id="Algorithm"><a href="#Algorithm" class="headerlink" title="Algorithm"></a>Algorithm</h1><h2 id="Problem-1"><a href="#Problem-1" class="headerlink" title="Problem"></a>Problem</h2><h3 id="278-First-Bad-Version"><a href="#278-First-Bad-Version" class="headerlink" title="278. First Bad Version"></a>278. First Bad Version</h3><p>You are a product manager and currently leading a team to develop a new product. Unfortunately, the latest version of your product fails the quality check. Since each version is developed based on the previous version, all the versions after a bad version are also bad.</p>
+<p>Suppose you have <code>n</code> versions <code>[1, 2, ..., n]</code> and you want to find out the first bad one, which causes all the following ones to be bad.</p>
+<p>You are given an API <code>bool isBadVersion(version)</code> which will return whether <code>version</code> is bad. Implement a function to find the first bad version. You should minimize the number of calls to the API.</p>
 <p><strong>Example:</strong></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Input: s = &quot;AAAAACCCCCAAAAACCCCCCAAAAAGGGTTT&quot;</span><br><span class="line"></span><br><span class="line">Output: [&quot;AAAAACCCCC&quot;, &quot;CCCCCAAAAA&quot;]</span><br></pre></td></tr></table></figure>
-<h2 id="Solution-1"><a href="#Solution-1" class="headerlink" title="Solution"></a>Solution</h2><p>Nothing to say.</p>
-<h2 id="Implementation-1"><a href="#Implementation-1" class="headerlink" title="Implementation"></a>Implementation</h2><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * @param &#123;string&#125; s</span></span><br><span class="line"><span class="comment"> * @return &#123;string[]&#125;</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">var</span> findRepeatedDnaSequences = <span class="function"><span class="keyword">function</span>(<span class="params">s</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">let</span> set = <span class="keyword">new</span> <span class="built_in">Set</span>();</span><br><span class="line">  <span class="keyword">let</span> ans = <span class="keyword">new</span> <span class="built_in">Set</span>();</span><br><span class="line">  <span class="keyword">for</span> (<span class="keyword">let</span> i = <span class="number">0</span>; i &lt;= s.length<span class="number">-10</span>; ++i) &#123;</span><br><span class="line">    <span class="keyword">let</span> tmp = s.substr(i, <span class="number">10</span>);</span><br><span class="line">    <span class="keyword">if</span> (set.has(tmp)) ans.add(tmp);</span><br><span class="line">    set.add(tmp);</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">return</span> <span class="built_in">Array</span>.from(ans);</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">Given n = 5, and version = 4 is the first bad version.</span><br><span class="line"></span><br><span class="line">call isBadVersion(3) -&gt; false</span><br><span class="line">call isBadVersion(5) -&gt; true</span><br><span class="line">call isBadVersion(4) -&gt; true</span><br><span class="line"></span><br><span class="line">Then 4 is the first bad version.</span><br></pre></td></tr></table></figure>
+<h2 id="Solution-1"><a href="#Solution-1" class="headerlink" title="Solution"></a>Solution</h2><p>Simple binary search.</p>
+<h2 id="Implementation-1"><a href="#Implementation-1" class="headerlink" title="Implementation"></a>Implementation</h2><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> solution = <span class="function"><span class="keyword">function</span>(<span class="params">isBadVersion</span>) </span>&#123;</span><br><span class="line">  <span class="comment">/**</span></span><br><span class="line"><span class="comment">   * @param &#123;integer&#125; n Total versions</span></span><br><span class="line"><span class="comment">   * @return &#123;integer&#125; The first bad version</span></span><br><span class="line"><span class="comment">   */</span></span><br><span class="line">  <span class="keyword">return</span> <span class="function"><span class="keyword">function</span>(<span class="params">n</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">let</span> begin = <span class="number">1</span>;</span><br><span class="line">    <span class="keyword">let</span> end = n;</span><br><span class="line">    <span class="keyword">while</span> (begin &lt; end) &#123;</span><br><span class="line">      <span class="keyword">let</span> mid = <span class="built_in">Math</span>.floor((begin+end)/<span class="number">2</span>);</span><br><span class="line">      <span class="keyword">if</span> (isBadVersion(mid)) end = mid;</span><br><span class="line">      <span class="keyword">else</span> begin = mid + <span class="number">1</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> begin;</span><br><span class="line">  &#125;;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+<p><img src="/2019-02-16-Daily-Challenge/09.png" title="ha">;D</p>
 
       
     </div>
@@ -604,7 +610,7 @@
     <strong>本文作者： </strong>CSUwangj</li>
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
-    <a href="http://CSUwangj.github.io/2019-01-30-Daily-Challenge/" title="2019-01-30 Daily Challenge">http://CSUwangj.github.io/2019-01-30-Daily-Challenge/</a>
+    <a href="http://CSUwangj.github.io/2019-02-16-Daily-Challenge/" title="2019-02-16 Daily Challenge">http://CSUwangj.github.io/2019-02-16-Daily-Challenge/</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc/4.0/" rel="external nofollow" target="_blank">CC BY-NC 4.0</a> 许可协议。欢迎你将我的收获分享出去，记得署名哟~</li>
@@ -651,8 +657,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019-01-29-Daily-Challenge/" rel="next" title="2019-01-29 Daily Challenge">
-                <i class="fa fa-chevron-left"></i> 2019-01-29 Daily Challenge
+              <a href="/2019-02-15-Daily-Challenge/" rel="next" title="2019-02-15 Daily Challenge">
+                <i class="fa fa-chevron-left"></i> 2019-02-15 Daily Challenge
               </a>
             
           </div>
@@ -661,8 +667,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/ACM中一些常见的问题及原因/" rel="prev" title="ACM中一些常见的问题及原因">
-                ACM中一些常见的问题及原因 <i class="fa fa-chevron-right"></i>
+              <a href="/博文整理/" rel="prev" title="博文整理">
+                博文整理 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -986,7 +992,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Math"><span class="nav-number">1.</span> <span class="nav-text">Math</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Problem"><span class="nav-number">1.1.</span> <span class="nav-text">Problem</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Pandigital-prime"><span class="nav-number">1.1.1.</span> <span class="nav-text">Pandigital prime</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Problem-41"><span class="nav-number">1.1.2.</span> <span class="nav-text">Problem 41</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Solution"><span class="nav-number">1.2.</span> <span class="nav-text">Solution</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Implementation"><span class="nav-number">1.3.</span> <span class="nav-text">Implementation</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Algorithm"><span class="nav-number">2.</span> <span class="nav-text">Algorithm</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Problem-1"><span class="nav-number">2.1.</span> <span class="nav-text">Problem</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#187-Repeated-DNA-Sequences"><span class="nav-number">2.1.1.</span> <span class="nav-text">187. Repeated DNA Sequences</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Solution-1"><span class="nav-number">2.2.</span> <span class="nav-text">Solution</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Implementation-1"><span class="nav-number">2.3.</span> <span class="nav-text">Implementation</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Math"><span class="nav-number">1.</span> <span class="nav-text">Math</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Problem"><span class="nav-number">1.1.</span> <span class="nav-text">Problem</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Spiral-primes"><span class="nav-number">1.1.1.</span> <span class="nav-text">Spiral primes</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Problem-58"><span class="nav-number">1.1.2.</span> <span class="nav-text">Problem 58</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Solution"><span class="nav-number">1.2.</span> <span class="nav-text">Solution</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Implementation"><span class="nav-number">1.3.</span> <span class="nav-text">Implementation</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Algorithm"><span class="nav-number">2.</span> <span class="nav-text">Algorithm</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Problem-1"><span class="nav-number">2.1.</span> <span class="nav-text">Problem</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#278-First-Bad-Version"><span class="nav-number">2.1.1.</span> <span class="nav-text">278. First Bad Version</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Solution-1"><span class="nav-number">2.2.</span> <span class="nav-text">Solution</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Implementation-1"><span class="nav-number">2.3.</span> <span class="nav-text">Implementation</span></a></li></ol></li></ol></div>
             
 
           </div>
@@ -1172,9 +1178,9 @@
   
     <script type="text/javascript">
       var disqus_config = function () {
-        this.page.url = 'http://CSUwangj.github.io/2019-01-30-Daily-Challenge/';
-        this.page.identifier = '2019-01-30-Daily-Challenge/';
-        this.page.title = '2019-01-30 Daily Challenge';
+        this.page.url = 'http://CSUwangj.github.io/2019-02-16-Daily-Challenge/';
+        this.page.identifier = '2019-02-16-Daily-Challenge/';
+        this.page.title = '2019-02-16 Daily Challenge';
         };
       function loadComments () {
         var d = document, s = d.createElement('script');
