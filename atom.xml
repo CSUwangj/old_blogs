@@ -35,15 +35,41 @@
   </entry>
   
   <entry>
+    <title>2019-02-19 Daily Challenge</title>
+    <link href="http://CSUwangj.github.io/2019-02-19-Daily-Challenge/"/>
+    <id>http://CSUwangj.github.io/2019-02-19-Daily-Challenge/</id>
+    <published>2019-02-19T02:50:43.000Z</published>
+    <updated>2019-02-19T03:06:59.595Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;What I&amp;#39;ve done today is &lt;em&gt;Cyclical figurate numbers&lt;/em&gt; in &lt;em&gt;Rust&lt;/em&gt; and &lt;em&gt;Binary Tree Cameras&lt;/em&gt; in &lt;em&gt;JavaScript&lt;/em&gt;.&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="DailyChallenge" scheme="http://CSUwangj.github.io/categories/DailyChallenge/"/>
+    
+    
+      <category term="Math" scheme="http://CSUwangj.github.io/tags/Math/"/>
+    
+      <category term="Algorithm" scheme="http://CSUwangj.github.io/tags/Algorithm/"/>
+    
+      <category term="LeetCode" scheme="http://CSUwangj.github.io/tags/LeetCode/"/>
+    
+      <category term="ProjectEuler" scheme="http://CSUwangj.github.io/tags/ProjectEuler/"/>
+    
+  </entry>
+  
+  <entry>
     <title>2019-02-18 Daily Challenge</title>
     <link href="http://CSUwangj.github.io/2019-02-18-Daily-Challenge/"/>
     <id>http://CSUwangj.github.io/2019-02-18-Daily-Challenge/</id>
     <published>2019-02-17T16:01:36.000Z</published>
-    <updated>2019-02-17T16:01:54.057Z</updated>
+    <updated>2019-02-19T02:52:04.060Z</updated>
     
     <summary type="html">
     
-      &lt;p&gt;What I&amp;#39;ve done today is &lt;em&gt;Generate Parentheses&lt;/em&gt; in &lt;em&gt;Rust&lt;/em&gt; and &lt;em&gt;Prime pair sets&lt;/em&gt; in &lt;em&gt;JavaScript&lt;/em&gt;.&lt;/p&gt;
+      &lt;p&gt;What I&amp;#39;ve done today is &lt;em&gt;Prime pair sets&lt;/em&gt; in &lt;em&gt;Rust&lt;/em&gt; and &lt;em&gt;Generate Parentheses&lt;/em&gt; in &lt;em&gt;JavaScript&lt;/em&gt;.&lt;/p&gt;
     
     </summary>
     
@@ -489,32 +515,6 @@
       &lt;p&gt;What I&amp;#39;ve done today is &lt;em&gt;Sub-string divisibility&lt;/em&gt; in &lt;em&gt;Rust&lt;/em&gt; and &lt;em&gt;Numbers With Same Consecutive Differences&lt;/em&gt; in &lt;em&gt;JavaScript&lt;/em&gt;.&lt;/p&gt;
 &lt;p&gt;I also spent a few hours at Vidar Team&amp;#39;s HGAME2019, and go through Crypto and Web Challenge.&lt;/p&gt;
 &lt;p&gt;Misc is boring, RE is boring too, PWN is interesting, but DotA2 is more interesting ;D&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="DailyChallenge" scheme="http://CSUwangj.github.io/categories/DailyChallenge/"/>
-    
-    
-      <category term="Math" scheme="http://CSUwangj.github.io/tags/Math/"/>
-    
-      <category term="Algorithm" scheme="http://CSUwangj.github.io/tags/Algorithm/"/>
-    
-      <category term="LeetCode" scheme="http://CSUwangj.github.io/tags/LeetCode/"/>
-    
-      <category term="ProjectEuler" scheme="http://CSUwangj.github.io/tags/ProjectEuler/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>2019-01-31 Daily Challenge</title>
-    <link href="http://CSUwangj.github.io/2019-01-31-Daily-Challenge/"/>
-    <id>http://CSUwangj.github.io/2019-01-31-Daily-Challenge/</id>
-    <published>2019-01-30T16:10:20.000Z</published>
-    <updated>2019-01-30T16:00:10.823Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;What I&amp;#39;ve done today is &lt;em&gt;Coded triangle numbers&lt;/em&gt; in &lt;em&gt;Rust&lt;/em&gt; and &lt;em&gt;Minimum Height Trees&lt;/em&gt; in &lt;em&gt;JavaScript&lt;/em&gt;.&lt;/p&gt;
     
     </summary>
     
