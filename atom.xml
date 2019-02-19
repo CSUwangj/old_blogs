@@ -35,11 +35,37 @@
   </entry>
   
   <entry>
+    <title>2019-02-20 Daily Challenge</title>
+    <link href="http://CSUwangj.github.io/2019-02-20-Daily-Challenge/"/>
+    <id>http://CSUwangj.github.io/2019-02-20-Daily-Challenge/</id>
+    <published>2019-02-19T16:02:07.000Z</published>
+    <updated>2019-02-19T16:02:30.729Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;What I&amp;#39;ve done today is &lt;em&gt;Cubic permutations&lt;/em&gt; in &lt;em&gt;Rust&lt;/em&gt; and &lt;em&gt;Lemonade Change&lt;/em&gt; in &lt;em&gt;JavaScript&lt;/em&gt;.&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="DailyChallenge" scheme="http://CSUwangj.github.io/categories/DailyChallenge/"/>
+    
+    
+      <category term="Math" scheme="http://CSUwangj.github.io/tags/Math/"/>
+    
+      <category term="Algorithm" scheme="http://CSUwangj.github.io/tags/Algorithm/"/>
+    
+      <category term="LeetCode" scheme="http://CSUwangj.github.io/tags/LeetCode/"/>
+    
+      <category term="ProjectEuler" scheme="http://CSUwangj.github.io/tags/ProjectEuler/"/>
+    
+  </entry>
+  
+  <entry>
     <title>2019-02-19 Daily Challenge</title>
     <link href="http://CSUwangj.github.io/2019-02-19-Daily-Challenge/"/>
     <id>http://CSUwangj.github.io/2019-02-19-Daily-Challenge/</id>
     <published>2019-02-19T02:50:43.000Z</published>
-    <updated>2019-02-19T03:06:59.595Z</updated>
+    <updated>2019-02-19T03:08:18.433Z</updated>
     
     <summary type="html">
     
@@ -487,34 +513,6 @@
     <summary type="html">
     
       &lt;p&gt;What I&amp;#39;ve done today is &lt;em&gt;Pentagon numbers&lt;/em&gt; in &lt;em&gt;Rust&lt;/em&gt; and &lt;em&gt;Binary Tree Postorder Traversal&lt;/em&gt; in &lt;em&gt;JavaScript&lt;/em&gt;.&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="DailyChallenge" scheme="http://CSUwangj.github.io/categories/DailyChallenge/"/>
-    
-    
-      <category term="Math" scheme="http://CSUwangj.github.io/tags/Math/"/>
-    
-      <category term="Algorithm" scheme="http://CSUwangj.github.io/tags/Algorithm/"/>
-    
-      <category term="LeetCode" scheme="http://CSUwangj.github.io/tags/LeetCode/"/>
-    
-      <category term="ProjectEuler" scheme="http://CSUwangj.github.io/tags/ProjectEuler/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>2019-02-01 Daily Challenge</title>
-    <link href="http://CSUwangj.github.io/2019-02-01-Daily-Challenge/"/>
-    <id>http://CSUwangj.github.io/2019-02-01-Daily-Challenge/</id>
-    <published>2019-02-01T06:59:13.000Z</published>
-    <updated>2019-02-01T07:10:48.024Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;What I&amp;#39;ve done today is &lt;em&gt;Sub-string divisibility&lt;/em&gt; in &lt;em&gt;Rust&lt;/em&gt; and &lt;em&gt;Numbers With Same Consecutive Differences&lt;/em&gt; in &lt;em&gt;JavaScript&lt;/em&gt;.&lt;/p&gt;
-&lt;p&gt;I also spent a few hours at Vidar Team&amp;#39;s HGAME2019, and go through Crypto and Web Challenge.&lt;/p&gt;
-&lt;p&gt;Misc is boring, RE is boring too, PWN is interesting, but DotA2 is more interesting ;D&lt;/p&gt;
     
     </summary>
     
