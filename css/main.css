@@ -557,7 +557,7 @@ pre,
 }
 pre,
 code {
-  font-family: consolas, Menlo, "PingFang SC", "Microsoft YaHei", monospace;
+  font-family: "Fira Code", Consolas, monospace;
 }
 code {
   padding: 2px 4px;
@@ -2063,7 +2063,7 @@ img:hover {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #c7ff63;
+  background: #ff7804;
 }
 .links-of-blogroll {
   font-size: 13px;
