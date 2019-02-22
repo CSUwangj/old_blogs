@@ -35,6 +35,31 @@
   </entry>
   
   <entry>
+    <title>2019-02-22 Daily Challenge</title>
+    <link href="http://CSUwangj.github.io/2019-02-22-Daily-Challenge/"/>
+    <id>http://CSUwangj.github.io/2019-02-22-Daily-Challenge/</id>
+    <published>2019-02-22T10:53:33.000Z</published>
+    <updated>2019-02-22T11:47:52.683Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;I&amp;#39;ve get tired with leetcode, especially meet strange runtime at yesterday. So I jumped into codewors and want to learn some fp and ES6 from Space :D&lt;/p&gt;
+&lt;p&gt;What I&amp;#39;ve done today is &lt;em&gt;Odd period square roots&lt;/em&gt; in &lt;em&gt;Rust&lt;/em&gt; and &lt;em&gt;Jaden Casing Strings&lt;/em&gt; in &lt;em&gt;JavaScript&lt;/em&gt;.&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="DailyChallenge" scheme="http://CSUwangj.github.io/categories/DailyChallenge/"/>
+    
+    
+      <category term="Math" scheme="http://CSUwangj.github.io/tags/Math/"/>
+    
+      <category term="ProjectEuler" scheme="http://CSUwangj.github.io/tags/ProjectEuler/"/>
+    
+      <category term="CodeWars" scheme="http://CSUwangj.github.io/tags/CodeWars/"/>
+    
+  </entry>
+  
+  <entry>
     <title>2019-02-21 Daily Challenge</title>
     <link href="http://CSUwangj.github.io/2019-02-21-Daily-Challenge/"/>
     <id>http://CSUwangj.github.io/2019-02-21-Daily-Challenge/</id>
@@ -483,32 +508,6 @@
     <id>http://CSUwangj.github.io/2019-02-04-Daily-Challenge/</id>
     <published>2019-02-03T16:00:50.000Z</published>
     <updated>2019-02-03T16:01:15.876Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;What I&amp;#39;ve done today is &lt;em&gt;Triangular, pentagonal, and hexagonal&lt;/em&gt; in &lt;em&gt;Rust&lt;/em&gt; and &lt;em&gt;LRU Cache&lt;/em&gt; in &lt;em&gt;JavaScript&lt;/em&gt;.&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="DailyChallenge" scheme="http://CSUwangj.github.io/categories/DailyChallenge/"/>
-    
-    
-      <category term="Math" scheme="http://CSUwangj.github.io/tags/Math/"/>
-    
-      <category term="Algorithm" scheme="http://CSUwangj.github.io/tags/Algorithm/"/>
-    
-      <category term="LeetCode" scheme="http://CSUwangj.github.io/tags/LeetCode/"/>
-    
-      <category term="ProjectEuler" scheme="http://CSUwangj.github.io/tags/ProjectEuler/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>2019-02-03 Daily Challenge</title>
-    <link href="http://CSUwangj.github.io/2019-02-03-Daily-Challenge/"/>
-    <id>http://CSUwangj.github.io/2019-02-03-Daily-Challenge/</id>
-    <published>2019-02-02T21:55:40.000Z</published>
-    <updated>2019-02-02T21:56:23.975Z</updated>
     
     <summary type="html">
     

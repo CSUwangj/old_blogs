@@ -9,6 +9,19 @@
       </categories>
   </entry>
   <entry>
+    <title><![CDATA[2019-02-22 Daily Challenge]]></title>
+    <url>%2F2019-02-22-Daily-Challenge%2F</url>
+    <content type="text"><![CDATA[I&#39;ve get tired with leetcode, especially meet strange runtime at yesterday. So I jumped into codewors and want to learn some fp and ES6 from Space :D What I&#39;ve done today is Odd period square roots in Rust and Jaden Casing Strings in JavaScript. MathProblemOdd period square rootsProblem 64All square roots are periodic when written as continued fractions and can be written in the form: For example, let us consider √23: If we continue we would get the following expansion: The process can be summarised as follows: It can be seen that the sequence is repeating. For conciseness, we use the notation √23 = [4;(1,3,1,8)], to indicate that the block (1,3,1,8) repeats indefinitely. The first ten continued fraction representations of (irrational) square roots are: √2=[1;(2)], period=1√3=[1;(1,2)], period=2√5=[2;(4)], period=1√6=[2;(2,4)], period=2√7=[2;(1,1,1,4)], period=4√8=[2;(1,4)], period=2√10=[3;(6)], period=1√11=[3;(3,6)], period=2√12= [3;(2,6)], period=2√13=[3;(1,1,1,1,6)], period=5 Exactly four continued fractions, for N ≤ 13, have an odd period. How many continued fractions for N ≤ 10000 have an odd period? SolutionI &quot;borrow&quot; something from wikipedia but don&#39;t get it known... Implementation12345678910111213141516171819202122232425262728fn main() &#123; let mut ans = 0; for i in 1..10001 &#123; ans += get_period(i) &amp; 1; &#125; println!("Answer is &#123;&#125;", ans);&#125;fn get_period(n: i32) -&gt; i32 &#123; let root = (n as f64).sqrt() as i32; if root * root == n &#123; return 0; &#125; let mut extra = root; let mut numerator = 0; let mut denominator = 1; let mut period = 0; while extra != 2 * root &#123; numerator = denominator * extra - numerator; if (n - numerator * numerator) % denominator != 0 &amp;&amp; (root + numerator) % denominator != 0 &#123; panic!("???"); &#125; denominator = (n - numerator * numerator) / denominator; extra = (root + numerator) / denominator; period += 1; &#125; period&#125; CodewarProblemJaden Casing Strings Jaden Smith, the son of Will Smith, is the star of films such as The Karate Kid (2010) and After Earth (2013). Jaden is also known for some of his philosophy that he delivers via Twitter. When writing on Twitter, he is known for almost always capitalizing every word. Your task is to convert strings to how they would be written by Jaden Smith. The strings are actual quotes from Jaden Smith, but they are not capitalized in the same way he originally typed them. Example: 12Not Jaden-Cased: &quot;How can mirrors be real if our eyes aren&apos;t real&quot;Jaden-Cased: &quot;How Can Mirrors Be Real If Our Eyes Aren&apos;t Real&quot; Note that the Java version expects a return value of null for an empty string or null Solution123String.prototype.toJadenCase = function () &#123; return this.split(" ").map(([a, ...i]) =&gt; [a.toUpperCase(), ...i].join("")).join(" ");&#125;;]]></content>
+      <categories>
+        <category>DailyChallenge</category>
+      </categories>
+      <tags>
+        <tag>Math</tag>
+        <tag>ProjectEuler</tag>
+        <tag>CodeWars</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[2019-02-21 Daily Challenge]]></title>
     <url>%2F2019-02-21-Daily-Challenge%2F</url>
     <content type="text"><![CDATA[What I&#39;ve done today is Powerful digit counts in Rust and Partition to K Equal Sum Subsets in JavaScript. MathProblemPowerful digit countsProblem 63The 5-digit number, 16807=75, is also a fifth power. Similarly, the 9-digit number, 134217728=89, is a ninth power. How many n-digit positive integers exist which are also an nth power? SolutionKnowledge behind this problem is easy to understand but not easy to illustrate, so check my code~ Implementation1234567891011121314151617fn main() &#123; let mut ans = 0; for i in 1u128..10u128 &#123; let mut stop = false; // Don't stop! let mut exp: u32 = 1; while !stop &#123; let len = i.pow(exp).to_string().len(); if len != exp as usize &#123; stop = true; &#125; else &#123; ans += 1; &#125; exp += 1; &#125; &#125; println!("Answer is &#123;&#125;", ans);&#125; AlgorithmProblem698. Partition to K Equal Sum SubsetsGiven an array of integers nums and a positive integer k, find whether it&#39;s possible to divide this array into k non-empty subsets whose sums are all equal. Example 1: 123Input: nums = [4, 3, 2, 3, 5, 2, 1], k = 4Output: TrueExplanation: It&apos;s possible to divide it into 4 subsets (5), (1, 4), (2,3), (2,3) with equal sums. Note: 1 &lt;= k &lt;= len(nums) &lt;= 16. 0 &lt; nums[i] &lt; 10000. SolutionJS&#39;s sort is just like shit. Implementation123456789101112131415161718192021222324252627282930/** * @param &#123;number[]&#125; nums * @param &#123;number&#125; k * @return &#123;boolean&#125; */var canPartitionKSubsets = function(nums, k) &#123; let sum = 0; for (let i = 0; i &lt; nums.length; ++i) sum+=nums[i]; let part = sum/k; for (let i = 0; i &lt; nums.length; ++i) if (nums[i] &gt; part) return false; if (sum % k !== 0 || nums.length &lt; k ) return false; let used = Array.from(&#123;length:nums.length&#125;, x=&gt;false); let left = nums.length; return (function dfs(target, start) &#123; if (left === 0) return true; if (target === 0) return dfs(part, 0); for(let i = start; i &lt; nums.length; ++i) &#123; if (!used[i] &amp;&amp; nums[i] &lt;= target) &#123; used[i] = true; left -= 1; if (dfs(target - nums[i], i + 1)) return true; used[i] = false; left += 1; &#125; &#125; return false; &#125;)(part, 0);&#125;;// console.log(canPartitionKSubsets([18,20,39,73,96,99,101,111,114,190,207,295,471,649,700,1037], 4));]]></content>
@@ -1041,8 +1054,8 @@
       </categories>
       <tags>
         <tag>CTF</tag>
-        <tag>Misc</tag>
         <tag>Crypto</tag>
+        <tag>Misc</tag>
       </tags>
   </entry>
   <entry>
@@ -1054,8 +1067,8 @@
       </categories>
       <tags>
         <tag>CTF</tag>
-        <tag>Misc</tag>
         <tag>Crypto</tag>
+        <tag>Misc</tag>
         <tag>PWN</tag>
         <tag>Web</tag>
         <tag>Rev</tag>
@@ -1110,8 +1123,8 @@
       </categories>
       <tags>
         <tag>CTF</tag>
-        <tag>Misc</tag>
         <tag>Crypto</tag>
+        <tag>Misc</tag>
         <tag>PWN</tag>
         <tag>Web</tag>
       </tags>
@@ -1148,8 +1161,8 @@
         <category>Tools</category>
       </categories>
       <tags>
-        <tag>Misc</tag>
         <tag>Crypto</tag>
+        <tag>Misc</tag>
       </tags>
   </entry>
   <entry>
@@ -1161,8 +1174,8 @@
       </categories>
       <tags>
         <tag>CTF</tag>
-        <tag>Misc</tag>
         <tag>Crypto</tag>
+        <tag>Misc</tag>
         <tag>PWN</tag>
         <tag>Web</tag>
         <tag>Rev</tag>
