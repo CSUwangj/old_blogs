@@ -35,11 +35,35 @@
   </entry>
   
   <entry>
+    <title>2019-02-23 Daily Challenge</title>
+    <link href="http://CSUwangj.github.io/2019-02-23-Daily-Challenge/"/>
+    <id>http://CSUwangj.github.io/2019-02-23-Daily-Challenge/</id>
+    <published>2019-02-23T12:42:12.000Z</published>
+    <updated>2019-02-23T12:55:28.221Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;What I&amp;#39;ve done today is &lt;em&gt;Convergents of e&lt;/em&gt; in &lt;em&gt;Rust&lt;/em&gt; and &lt;em&gt;Sum of two lowest positive integers&lt;/em&gt; in &lt;em&gt;JavaScript&lt;/em&gt;.&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="DailyChallenge" scheme="http://CSUwangj.github.io/categories/DailyChallenge/"/>
+    
+    
+      <category term="Math" scheme="http://CSUwangj.github.io/tags/Math/"/>
+    
+      <category term="ProjectEuler" scheme="http://CSUwangj.github.io/tags/ProjectEuler/"/>
+    
+      <category term="CodeWars" scheme="http://CSUwangj.github.io/tags/CodeWars/"/>
+    
+  </entry>
+  
+  <entry>
     <title>2019-02-22 Daily Challenge</title>
     <link href="http://CSUwangj.github.io/2019-02-22-Daily-Challenge/"/>
     <id>http://CSUwangj.github.io/2019-02-22-Daily-Challenge/</id>
     <published>2019-02-22T10:53:33.000Z</published>
-    <updated>2019-02-22T11:47:52.683Z</updated>
+    <updated>2019-02-23T12:55:44.359Z</updated>
     
     <summary type="html">
     
@@ -486,32 +510,6 @@
     
       &lt;p&gt;Happy new year!~&lt;/p&gt;
 &lt;p&gt;What I&amp;#39;ve done today is &lt;em&gt;Distinct primes factors&lt;/em&gt; in &lt;em&gt;Rust&lt;/em&gt; and &lt;em&gt;Longest Univalue Path&lt;/em&gt; in &lt;em&gt;JavaScript&lt;/em&gt;.&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="DailyChallenge" scheme="http://CSUwangj.github.io/categories/DailyChallenge/"/>
-    
-    
-      <category term="Math" scheme="http://CSUwangj.github.io/tags/Math/"/>
-    
-      <category term="Algorithm" scheme="http://CSUwangj.github.io/tags/Algorithm/"/>
-    
-      <category term="LeetCode" scheme="http://CSUwangj.github.io/tags/LeetCode/"/>
-    
-      <category term="ProjectEuler" scheme="http://CSUwangj.github.io/tags/ProjectEuler/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>2019-02-04 Daily Challenge</title>
-    <link href="http://CSUwangj.github.io/2019-02-04-Daily-Challenge/"/>
-    <id>http://CSUwangj.github.io/2019-02-04-Daily-Challenge/</id>
-    <published>2019-02-03T16:00:50.000Z</published>
-    <updated>2019-02-03T16:01:15.876Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;What I&amp;#39;ve done today is &lt;em&gt;Triangular, pentagonal, and hexagonal&lt;/em&gt; in &lt;em&gt;Rust&lt;/em&gt; and &lt;em&gt;LRU Cache&lt;/em&gt; in &lt;em&gt;JavaScript&lt;/em&gt;.&lt;/p&gt;
     
     </summary>
     

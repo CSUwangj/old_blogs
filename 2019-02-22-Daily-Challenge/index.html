@@ -124,16 +124,15 @@
 <meta property="og:site_name" content="LuckyDog">
 <meta property="og:description" content="I&amp;#39;ve get tired with leetcode, especially meet strange runtime at yesterday. So I jumped into codewors and want to learn some fp and ES6 from Space :D What I&amp;#39;ve done today is Odd period square">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="https://projecteuler.net/images/icon_info.png">
 <meta property="og:image" content="http://csuwangj.github.io/2019-02-22-Daily-Challenge/1.png">
 <meta property="og:image" content="http://csuwangj.github.io/2019-02-22-Daily-Challenge/2.png">
 <meta property="og:image" content="http://csuwangj.github.io/2019-02-22-Daily-Challenge/3.png">
 <meta property="og:image" content="http://csuwangj.github.io/2019-02-22-Daily-Challenge/4.png">
-<meta property="og:updated_time" content="2019-02-22T11:47:52.683Z">
+<meta property="og:updated_time" content="2019-02-23T12:55:44.359Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="2019-02-22 Daily Challenge">
 <meta name="twitter:description" content="I&amp;#39;ve get tired with leetcode, especially meet strange runtime at yesterday. So I jumped into codewors and want to learn some fp and ES6 from Space :D What I&amp;#39;ve done today is Odd period square">
-<meta name="twitter:image" content="https://projecteuler.net/images/icon_info.png">
+<meta name="twitter:image" content="http://csuwangj.github.io/2019-02-22-Daily-Challenge/1.png">
 
 
 
@@ -398,12 +397,24 @@
                 
               
 
-              <time title="创建时间：2019-02-22 18:53:33 / 修改时间：19:47:52" itemprop="dateCreated datePublished" datetime="2019-02-22T18:53:33+08:00">2019-02-22</time>
+              <time title="创建时间：2019-02-22 18:53:33" itemprop="dateCreated datePublished" datetime="2019-02-22T18:53:33+08:00">2019-02-22</time>
             
 
             
               
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2019-02-23 20:55:44" itemprop="dateModified" datetime="2019-02-23T20:55:44+08:00">2019-02-23</time>
               
             
           </span>
@@ -497,7 +508,7 @@
         <p>I&#39;ve get tired with leetcode, especially meet strange runtime at yesterday. So I jumped into codewors and want to learn some fp and ES6 from Space :D</p>
 <p>What I&#39;ve done today is <em>Odd period square roots</em> in <em>Rust</em> and <em>Jaden Casing Strings</em> in <em>JavaScript</em>.</p>
 <a id="more"></a>
-<h1 id="Math"><a href="#Math" class="headerlink" title="Math"></a>Math</h1><h2 id="Problem"><a href="#Problem" class="headerlink" title="Problem"></a>Problem</h2><h2 id="Odd-period-square-roots"><a href="#Odd-period-square-roots" class="headerlink" title="Odd period square roots"></a>Odd period square roots</h2><h3 id="Problem-64"><a href="#Problem-64" class="headerlink" title="Problem 64"></a>Problem 64<img src="https://projecteuler.net/images/icon_info.png" alt="img"></h3><p>All square roots are periodic when written as continued fractions and can be written in the form:</p>
+<h1 id="Math"><a href="#Math" class="headerlink" title="Math"></a>Math</h1><h2 id="Problem"><a href="#Problem" class="headerlink" title="Problem"></a>Problem</h2><h3 id="Odd-period-square-roots"><a href="#Odd-period-square-roots" class="headerlink" title="Odd period square roots"></a>Odd period square roots</h3><h3 id="Problem-64"><a href="#Problem-64" class="headerlink" title="Problem 64"></a>Problem 64</h3><p>All square roots are periodic when written as continued fractions and can be written in the form:</p>
 <img src="/2019-02-22-Daily-Challenge/1.png">
 <p>For example, let us consider √23:</p>
 <img src="/2019-02-22-Daily-Challenge/2.png">
@@ -512,7 +523,7 @@
 <p>How many continued fractions for N ≤ 10000 have an odd period?</p>
 <h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2><p>I &quot;borrow&quot; something from wikipedia but don&#39;t get it known...</p>
 <h2 id="Implementation"><a href="#Implementation" class="headerlink" title="Implementation"></a>Implementation</h2><figure class="highlight rust"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">fn</span> <span class="title">main</span></span>() &#123;</span><br><span class="line">    <span class="keyword">let</span> <span class="keyword">mut</span> ans = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> <span class="number">1</span>..<span class="number">10001</span> &#123;</span><br><span class="line">        ans += get_period(i) &amp; <span class="number">1</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">println!</span>(<span class="string">"Answer is &#123;&#125;"</span>, ans);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">fn</span> <span class="title">get_period</span></span>(n: <span class="built_in">i32</span>) -&gt; <span class="built_in">i32</span> &#123;</span><br><span class="line">    <span class="keyword">let</span> root = (n <span class="keyword">as</span> <span class="built_in">f64</span>).sqrt() <span class="keyword">as</span> <span class="built_in">i32</span>;</span><br><span class="line">    <span class="keyword">if</span> root * root == n &#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">let</span> <span class="keyword">mut</span> extra = root;</span><br><span class="line">    <span class="keyword">let</span> <span class="keyword">mut</span> numerator = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">let</span> <span class="keyword">mut</span> denominator = <span class="number">1</span>;</span><br><span class="line">    <span class="keyword">let</span> <span class="keyword">mut</span> period = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">while</span> extra != <span class="number">2</span> * root &#123;</span><br><span class="line">        numerator = denominator * extra - numerator;</span><br><span class="line">        <span class="keyword">if</span> (n - numerator * numerator) % denominator != <span class="number">0</span> &amp;&amp; (root + numerator) % denominator != <span class="number">0</span> &#123;</span><br><span class="line">            <span class="built_in">panic!</span>(<span class="string">"???"</span>);</span><br><span class="line">        &#125;</span><br><span class="line">        denominator = (n - numerator * numerator) / denominator;</span><br><span class="line">        extra = (root + numerator) / denominator;</span><br><span class="line">        period += <span class="number">1</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    period</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h1 id="Codewar"><a href="#Codewar" class="headerlink" title="Codewar"></a>Codewar</h1><h2 id="Problem-1"><a href="#Problem-1" class="headerlink" title="Problem"></a>Problem</h2><h4 id="Jaden-Casing-Strings"><a href="#Jaden-Casing-Strings" class="headerlink" title="Jaden Casing Strings"></a>Jaden Casing Strings</h4><ul>
+<h1 id="Codewar"><a href="#Codewar" class="headerlink" title="Codewar"></a>Codewar</h1><h2 id="Problem-1"><a href="#Problem-1" class="headerlink" title="Problem"></a>Problem</h2><h3 id="Jaden-Casing-Strings"><a href="#Jaden-Casing-Strings" class="headerlink" title="Jaden Casing Strings"></a>Jaden Casing Strings</h3><ul>
 <li><p>Jaden Smith, the son of Will Smith, is the star of films such as The Karate Kid (2010) and After Earth (2013). Jaden is also known for <a href="https://twitter.com/officialjaden" target="_blank" rel="noopener">some of his philosophy that he delivers via Twitter</a>. When writing on Twitter, he is known for almost always capitalizing every word.</p>
 <p>Your task is to convert strings to how they would be written by Jaden Smith. The strings are actual quotes from Jaden Smith, but they are not capitalized in the same way he originally typed them.</p>
 <p>Example:</p>
@@ -533,28 +544,28 @@
   
     <li class="popular-posts-item">
       
-        <div class="popular-posts-date">2019-01-21</div>
+        <div class="popular-posts-date">2019-02-23</div>
       
       
-      <div class="popular-posts-title"><a href="/2019-01-21-Daily-Challenge/" rel="bookmark">2019-01-21 Daily Challenge</a></div>
-      
-    </li>
-  
-    <li class="popular-posts-item">
-      
-        <div class="popular-posts-date">2019-02-17</div>
-      
-      
-      <div class="popular-posts-title"><a href="/2019-02-17-Daily-Challenge/" rel="bookmark">2019-02-17 Daily Challenge</a></div>
+      <div class="popular-posts-title"><a href="/2019-02-23-Daily-Challenge/" rel="bookmark">2019-02-23 Daily Challenge</a></div>
       
     </li>
   
     <li class="popular-posts-item">
       
-        <div class="popular-posts-date">2018-12-21</div>
+        <div class="popular-posts-date">2019-01-23</div>
       
       
-      <div class="popular-posts-title"><a href="/2018-12-21-Daily-Challenge/" rel="bookmark">2018-12-21 Daily Challenge</a></div>
+      <div class="popular-posts-title"><a href="/2019-01-23-Daily-Challenge/" rel="bookmark">2019-01-23 Daily Challenge</a></div>
+      
+    </li>
+  
+    <li class="popular-posts-item">
+      
+        <div class="popular-posts-date">2018-12-22</div>
+      
+      
+      <div class="popular-posts-title"><a href="/2018-12-22-Daily-Challenge/" rel="bookmark">2018-12-22 Daily Challenge</a></div>
       
     </li>
   
@@ -569,10 +580,10 @@
   
     <li class="popular-posts-item">
       
-        <div class="popular-posts-date">2018-12-22</div>
+        <div class="popular-posts-date">2018-12-24</div>
       
       
-      <div class="popular-posts-title"><a href="/2018-12-22-Daily-Challenge/" rel="bookmark">2018-12-22 Daily Challenge</a></div>
+      <div class="popular-posts-title"><a href="/2018-12-24-Daily-Challenge/" rel="bookmark">2018-12-24 Daily Challenge</a></div>
       
     </li>
   
@@ -680,8 +691,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/博文整理/" rel="prev" title="博文整理">
-                博文整理 <i class="fa fa-chevron-right"></i>
+              <a href="/2019-02-23-Daily-Challenge/" rel="prev" title="2019-02-23 Daily Challenge">
+                2019-02-23 Daily Challenge <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -770,7 +781,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">88</span>
+                    <span class="site-state-item-count">89</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -1007,7 +1018,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Math"><span class="nav-number">1.</span> <span class="nav-text">Math</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Problem"><span class="nav-number">1.1.</span> <span class="nav-text">Problem</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Odd-period-square-roots"><span class="nav-number">1.2.</span> <span class="nav-text">Odd period square roots</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Problem-64"><span class="nav-number">1.2.1.</span> <span class="nav-text">Problem 64</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Solution"><span class="nav-number">1.3.</span> <span class="nav-text">Solution</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Implementation"><span class="nav-number">1.4.</span> <span class="nav-text">Implementation</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Codewar"><span class="nav-number">2.</span> <span class="nav-text">Codewar</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Problem-1"><span class="nav-number">2.1.</span> <span class="nav-text">Problem</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Jaden-Casing-Strings"><span class="nav-number">2.1.0.1.</span> <span class="nav-text">Jaden Casing Strings</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Solution-1"><span class="nav-number">2.2.</span> <span class="nav-text">Solution</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Math"><span class="nav-number">1.</span> <span class="nav-text">Math</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Problem"><span class="nav-number">1.1.</span> <span class="nav-text">Problem</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Odd-period-square-roots"><span class="nav-number">1.1.1.</span> <span class="nav-text">Odd period square roots</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Problem-64"><span class="nav-number">1.1.2.</span> <span class="nav-text">Problem 64</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Solution"><span class="nav-number">1.2.</span> <span class="nav-text">Solution</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Implementation"><span class="nav-number">1.3.</span> <span class="nav-text">Implementation</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Codewar"><span class="nav-number">2.</span> <span class="nav-text">Codewar</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Problem-1"><span class="nav-number">2.1.</span> <span class="nav-text">Problem</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Jaden-Casing-Strings"><span class="nav-number">2.1.1.</span> <span class="nav-text">Jaden Casing Strings</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Solution-1"><span class="nav-number">2.2.</span> <span class="nav-text">Solution</span></a></li></ol></li></ol></div>
             
 
           </div>
@@ -1046,7 +1057,7 @@
     
       <span class="post-meta-item-text">站点总字数：</span>
     
-    <span title="站点总字数">387k</span>
+    <span title="站点总字数">390k</span>
   
 
   
@@ -1057,7 +1068,7 @@
     
       <span class="post-meta-item-text">站点阅读时长 &asymp;</span>
     
-    <span title="站点阅读时长">10:45</span>
+    <span title="站点阅读时长">10:49</span>
   
 </div>
 
