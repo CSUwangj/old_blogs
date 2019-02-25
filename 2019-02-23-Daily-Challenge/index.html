@@ -126,7 +126,7 @@
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="http://csuwangj.github.io/2019-02-23-Daily-Challenge/1.png">
 <meta property="og:image" content="http://csuwangj.github.io/2019-02-23-Daily-Challenge/2.png">
-<meta property="og:updated_time" content="2019-02-23T12:55:28.221Z">
+<meta property="og:updated_time" content="2019-02-25T02:30:44.385Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="2019-02-23 Daily Challenge">
 <meta name="twitter:description" content="What I&amp;#39;ve done today is Convergents of e in Rust and Sum of two lowest positive integers in JavaScript.">
@@ -395,12 +395,24 @@
                 
               
 
-              <time title="创建时间：2019-02-23 20:42:12 / 修改时间：20:55:28" itemprop="dateCreated datePublished" datetime="2019-02-23T20:42:12+08:00">2019-02-23</time>
+              <time title="创建时间：2019-02-23 20:42:12" itemprop="dateCreated datePublished" datetime="2019-02-23T20:42:12+08:00">2019-02-23</time>
             
 
             
               
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2019-02-25 10:30:44" itemprop="dateModified" datetime="2019-02-25T10:30:44+08:00">2019-02-25</time>
               
             
           </span>
@@ -457,7 +469,7 @@
                 
                   <span class="post-meta-item-text">本文字数：</span>
                 
-                <span title="本文字数">2.6k</span>
+                <span title="本文字数">2.8k</span>
               
 
               
@@ -471,7 +483,7 @@
                 
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
-                <span title="阅读时长">4 分钟</span>
+                <span title="阅读时长">5 分钟</span>
               
             </div>
           
@@ -510,7 +522,7 @@
 <h1 id="Algorithm"><a href="#Algorithm" class="headerlink" title="Algorithm"></a>Algorithm</h1><h2 id="Problem-1"><a href="#Problem-1" class="headerlink" title="Problem"></a>Problem</h2><h3 id="Sum-of-two-lowest-positive-integers"><a href="#Sum-of-two-lowest-positive-integers" class="headerlink" title="Sum of two lowest positive integers"></a>Sum of two lowest positive integers</h3><p>Create a function that returns the sum of the two lowest positive numbers given an array of minimum 4 integers. No floats or empty arrays will be passed.</p>
 <p>For example, when an array is passed like <code>[19, 5, 42, 2, 77]</code>, the output should be <code>7</code>.</p>
 <p><code>[10, 343445353, 3453445, 3453545353453]</code> should return <code>3453455</code>.</p>
-<h2 id="Solution-1"><a href="#Solution-1" class="headerlink" title="Solution"></a>Solution</h2><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">sumTwoSmallestNumbers</span>(<span class="params">numbers</span>) </span>&#123;  </span><br><span class="line">  numbers.sort(<span class="function">(<span class="params">a, b</span>) =&gt;</span> a-b);</span><br><span class="line">  <span class="keyword">return</span> numbers[<span class="number">0</span>]+numbers[<span class="number">1</span>];</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> sumTwoSmallestNumbers = <span class="function">(<span class="params">numbers</span>) =&gt;</span> numbers.sort(<span class="function">(<span class="params">a, b</span>) =&gt;</span> a-b).slice(<span class="number">0</span>, <span class="number">2</span>).reduce(<span class="function">(<span class="params">a, b</span>) =&gt;</span> a+b);</span><br></pre></td></tr></table></figure>
+<h2 id="Solution-1"><a href="#Solution-1" class="headerlink" title="Solution"></a>Solution</h2><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">sumTwoSmallestNumbers</span>(<span class="params">numbers</span>) </span>&#123;  </span><br><span class="line">  numbers.sort(<span class="function">(<span class="params">a, b</span>) =&gt;</span> a-b);</span><br><span class="line">  <span class="keyword">return</span> numbers[<span class="number">0</span>]+numbers[<span class="number">1</span>];</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> sumTwoSmallestNumbers = <span class="function">(<span class="params">numbers</span>) =&gt;</span> </span><br><span class="line">  numbers</span><br><span class="line">    .sort(<span class="function">(<span class="params">a, b</span>) =&gt;</span> a-b)</span><br><span class="line">    .slice(<span class="number">0</span>, <span class="number">2</span>)</span><br><span class="line">    .reduce(<span class="function">(<span class="params">a, b</span>) =&gt;</span> a+b);</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> sumTwoSmallestNumbers = <span class="function">(<span class="params">numbers</span>) =&gt;</span> </span><br><span class="line">  numbers</span><br><span class="line">    .reduce(</span><br><span class="line">      (a, b) =&gt; [...a, b].sort(<span class="function">(<span class="params">a, b</span>) =&gt;</span> a-b).slice(<span class="number">0</span>, <span class="number">2</span>), </span><br><span class="line">      [<span class="built_in">Number</span>.MAX_SAFE_INTEGER, <span class="built_in">Number</span>.MAX_SAFE_INTEGER]</span><br><span class="line">    )</span><br><span class="line">    .reduce(<span class="function">(<span class="params">a, b</span>) =&gt;</span> a+b);</span><br></pre></td></tr></table></figure>
 
       
     </div>
@@ -523,15 +535,6 @@
   
     <li class="popular-posts-item">
       
-        <div class="popular-posts-date">2019-02-22</div>
-      
-      
-      <div class="popular-posts-title"><a href="/2019-02-22-Daily-Challenge/" rel="bookmark">2019-02-22 Daily Challenge</a></div>
-      
-    </li>
-  
-    <li class="popular-posts-item">
-      
         <div class="popular-posts-date">2019-02-24</div>
       
       
@@ -541,19 +544,19 @@
   
     <li class="popular-posts-item">
       
-        <div class="popular-posts-date">2019-01-23</div>
+        <div class="popular-posts-date">2019-02-22</div>
       
       
-      <div class="popular-posts-title"><a href="/2019-01-23-Daily-Challenge/" rel="bookmark">2019-01-23 Daily Challenge</a></div>
+      <div class="popular-posts-title"><a href="/2019-02-22-Daily-Challenge/" rel="bookmark">2019-02-22 Daily Challenge</a></div>
       
     </li>
   
     <li class="popular-posts-item">
       
-        <div class="popular-posts-date">2019-02-12</div>
+        <div class="popular-posts-date">2018-12-24</div>
       
       
-      <div class="popular-posts-title"><a href="/2019-02-12-Daily-Challenge/" rel="bookmark">2019-02-12 Daily Challenge</a></div>
+      <div class="popular-posts-title"><a href="/2018-12-24-Daily-Challenge/" rel="bookmark">2018-12-24 Daily Challenge</a></div>
       
     </li>
   
@@ -563,6 +566,15 @@
       
       
       <div class="popular-posts-title"><a href="/2018-12-23-Daily-Challenge/" rel="bookmark">2018-12-23 Daily Challenge</a></div>
+      
+    </li>
+  
+    <li class="popular-posts-item">
+      
+        <div class="popular-posts-date">2018-12-25</div>
+      
+      
+      <div class="popular-posts-title"><a href="/2018-12-25-Daily-Challenge/" rel="bookmark">2018-12-25 Daily Challenge</a></div>
       
     </li>
   
@@ -760,7 +772,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">90</span>
+                    <span class="site-state-item-count">92</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -1036,7 +1048,7 @@
     
       <span class="post-meta-item-text">站点总字数：</span>
     
-    <span title="站点总字数">394k</span>
+    <span title="站点总字数">396k</span>
   
 
   
@@ -1047,7 +1059,7 @@
     
       <span class="post-meta-item-text">站点阅读时长 &asymp;</span>
     
-    <span title="站点阅读时长">10:57</span>
+    <span title="站点阅读时长">11:01</span>
   
 </div>
 
