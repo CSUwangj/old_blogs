@@ -35,6 +35,33 @@
   </entry>
   
   <entry>
+    <title>2019-02-27 Daily Challenge</title>
+    <link href="http://CSUwangj.github.io/2019-02-27-Daily-Challenge/"/>
+    <id>http://CSUwangj.github.io/2019-02-27-Daily-Challenge/</id>
+    <published>2019-02-26T16:06:29.000Z</published>
+    <updated>2019-02-26T16:06:42.045Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;What I&amp;#39;ve done today is and &lt;em&gt;Vowel Count&lt;/em&gt; in &lt;em&gt;JavaScript&lt;/em&gt;.&lt;/p&gt;
+&lt;h1 id=&quot;CodeWars&quot;&gt;&lt;a href=&quot;#CodeWars&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="DailyChallenge" scheme="http://CSUwangj.github.io/categories/DailyChallenge/"/>
+    
+    
+      <category term="CodeWars" scheme="http://CSUwangj.github.io/tags/CodeWars/"/>
+    
+  </entry>
+  
+  <entry>
     <title>2019-02-26 Daily Challenge</title>
     <link href="http://CSUwangj.github.io/2019-02-26-Daily-Challenge/"/>
     <id>http://CSUwangj.github.io/2019-02-26-Daily-Challenge/</id>
@@ -485,32 +512,6 @@
     <summary type="html">
     
       &lt;p&gt;What I&amp;#39;ve done today is &lt;em&gt;Prime digit replacements&lt;/em&gt; in &lt;em&gt;Rust&lt;/em&gt; and &lt;em&gt;Find Minimum in Rotated Sorted Array&lt;/em&gt; in &lt;em&gt;JavaScript&lt;/em&gt;.&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="DailyChallenge" scheme="http://CSUwangj.github.io/categories/DailyChallenge/"/>
-    
-    
-      <category term="Math" scheme="http://CSUwangj.github.io/tags/Math/"/>
-    
-      <category term="Algorithm" scheme="http://CSUwangj.github.io/tags/Algorithm/"/>
-    
-      <category term="LeetCode" scheme="http://CSUwangj.github.io/tags/LeetCode/"/>
-    
-      <category term="ProjectEuler" scheme="http://CSUwangj.github.io/tags/ProjectEuler/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>2019-02-08 Daily Challenge</title>
-    <link href="http://CSUwangj.github.io/2019-02-08-Daily-Challenge/"/>
-    <id>http://CSUwangj.github.io/2019-02-08-Daily-Challenge/</id>
-    <published>2019-02-07T16:05:41.000Z</published>
-    <updated>2019-02-07T16:07:47.460Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;What I&amp;#39;ve done today is &lt;em&gt;Self powers&lt;/em&gt; in &lt;em&gt;Rust&lt;/em&gt; and &lt;em&gt;Summary Ranges&lt;/em&gt; in &lt;em&gt;JavaScript&lt;/em&gt;.&lt;/p&gt;
     
     </summary>
     
