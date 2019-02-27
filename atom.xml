@@ -35,22 +35,35 @@
   </entry>
   
   <entry>
+    <title>2019-02-28 Daily Challenge</title>
+    <link href="http://CSUwangj.github.io/2019-02-28-Daily-Challenge/"/>
+    <id>http://CSUwangj.github.io/2019-02-28-Daily-Challenge/</id>
+    <published>2019-02-27T16:41:30.000Z</published>
+    <updated>2019-02-27T16:42:31.213Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;What I&amp;#39;ve done today is and &lt;em&gt;Tribonacci Sequence&lt;/em&gt; in &lt;em&gt;JavaScript&lt;/em&gt;.&lt;br&gt;
+    
+    </summary>
+    
+      <category term="DailyChallenge" scheme="http://CSUwangj.github.io/categories/DailyChallenge/"/>
+    
+    
+      <category term="CodeWars" scheme="http://CSUwangj.github.io/tags/CodeWars/"/>
+    
+  </entry>
+  
+  <entry>
     <title>2019-02-27 Daily Challenge</title>
     <link href="http://CSUwangj.github.io/2019-02-27-Daily-Challenge/"/>
     <id>http://CSUwangj.github.io/2019-02-27-Daily-Challenge/</id>
     <published>2019-02-26T16:06:29.000Z</published>
-    <updated>2019-02-26T16:06:42.045Z</updated>
+    <updated>2019-02-27T16:42:33.247Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;p&gt;What I&amp;#39;ve done today is and &lt;em&gt;Vowel Count&lt;/em&gt; in &lt;em&gt;JavaScript&lt;/em&gt;.&lt;/p&gt;
-&lt;h1 id=&quot;CodeWars&quot;&gt;&lt;a href=&quot;#CodeWars&quot;
-        
-      
+      &lt;p&gt;What I&amp;#39;ve done today is and &lt;em&gt;Find The Parity Outlier&lt;/em&gt; in &lt;em&gt;JavaScript&lt;/em&gt;.&lt;br&gt;
     
     </summary>
     
@@ -66,18 +79,11 @@
     <link href="http://CSUwangj.github.io/2019-02-26-Daily-Challenge/"/>
     <id>http://CSUwangj.github.io/2019-02-26-Daily-Challenge/</id>
     <published>2019-02-25T16:01:36.000Z</published>
-    <updated>2019-02-25T16:02:03.586Z</updated>
+    <updated>2019-02-27T03:31:22.080Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;p&gt;What I&amp;#39;ve done today is and &lt;em&gt;Vowel Count&lt;/em&gt; in &lt;em&gt;JavaScript&lt;/em&gt;.&lt;/p&gt;
-&lt;h1 id=&quot;CodeWars&quot;&gt;&lt;a href=&quot;#CodeWars&quot;
-        
-      
+      &lt;p&gt;What I&amp;#39;ve done today is and &lt;em&gt;Vowel Count&lt;/em&gt; in &lt;em&gt;JavaScript&lt;/em&gt;.&lt;/p&gt;
     
     </summary>
     
@@ -93,18 +99,11 @@
     <link href="http://CSUwangj.github.io/2019-02-25-Daily-Challenge/"/>
     <id>http://CSUwangj.github.io/2019-02-25-Daily-Challenge/</id>
     <published>2019-02-24T16:35:16.000Z</published>
-    <updated>2019-02-24T16:36:59.611Z</updated>
+    <updated>2019-02-27T03:31:41.675Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;p&gt;What I&amp;#39;ve done today is and &lt;em&gt;Find the divisors!&lt;/em&gt; in &lt;em&gt;JavaScript&lt;/em&gt;.&lt;/p&gt;
-&lt;h1 id=&quot;CodeWars&quot;&gt;&lt;a href=&quot;#CodeWars&quot;
-        
-      
+      &lt;p&gt;What I&amp;#39;ve done today is and &lt;em&gt;Find the divisors!&lt;/em&gt; in &lt;em&gt;JavaScript&lt;/em&gt;.&lt;/p&gt;
     
     </summary>
     
@@ -486,32 +485,6 @@
     <summary type="html">
     
       &lt;p&gt;What I&amp;#39;ve done today is &lt;em&gt;Permuted multiples&lt;/em&gt; in &lt;em&gt;Rust&lt;/em&gt; and &lt;em&gt;Find Minimum in Rotated Sorted Array II&lt;/em&gt; in &lt;em&gt;JavaScript&lt;/em&gt;.&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="DailyChallenge" scheme="http://CSUwangj.github.io/categories/DailyChallenge/"/>
-    
-    
-      <category term="Math" scheme="http://CSUwangj.github.io/tags/Math/"/>
-    
-      <category term="Algorithm" scheme="http://CSUwangj.github.io/tags/Algorithm/"/>
-    
-      <category term="LeetCode" scheme="http://CSUwangj.github.io/tags/LeetCode/"/>
-    
-      <category term="ProjectEuler" scheme="http://CSUwangj.github.io/tags/ProjectEuler/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>2019-02-09 Daily Challenge</title>
-    <link href="http://CSUwangj.github.io/2019-02-09-Daily-Challenge/"/>
-    <id>http://CSUwangj.github.io/2019-02-09-Daily-Challenge/</id>
-    <published>2019-02-09T09:45:05.000Z</published>
-    <updated>2019-02-09T10:13:06.674Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;What I&amp;#39;ve done today is &lt;em&gt;Prime digit replacements&lt;/em&gt; in &lt;em&gt;Rust&lt;/em&gt; and &lt;em&gt;Find Minimum in Rotated Sorted Array&lt;/em&gt; in &lt;em&gt;JavaScript&lt;/em&gt;.&lt;/p&gt;
     
     </summary>
     

@@ -116,18 +116,18 @@
 
 
 
-  <meta name="description" content="What I&amp;#39;ve done today is and Vowel Count in JavaScript. CodeWarsProblemFind The Parity OutlierYou are given an array (which will have a length of at least 3, but could be very large) containing int">
+  <meta name="description" content="What I&amp;#39;ve done today is and Find The Parity Outlier in JavaScript.">
 <meta name="keywords" content="CodeWars">
 <meta property="og:type" content="article">
 <meta property="og:title" content="2019-02-27 Daily Challenge">
 <meta property="og:url" content="http://CSUwangj.github.io/2019-02-27-Daily-Challenge/index.html">
 <meta property="og:site_name" content="LuckyDog">
-<meta property="og:description" content="What I&amp;#39;ve done today is and Vowel Count in JavaScript. CodeWarsProblemFind The Parity OutlierYou are given an array (which will have a length of at least 3, but could be very large) containing int">
+<meta property="og:description" content="What I&amp;#39;ve done today is and Find The Parity Outlier in JavaScript.">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-02-26T16:06:42.045Z">
+<meta property="og:updated_time" content="2019-02-27T16:42:33.247Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="2019-02-27 Daily Challenge">
-<meta name="twitter:description" content="What I&amp;#39;ve done today is and Vowel Count in JavaScript. CodeWarsProblemFind The Parity OutlierYou are given an array (which will have a length of at least 3, but could be very large) containing int">
+<meta name="twitter:description" content="What I&amp;#39;ve done today is and Find The Parity Outlier in JavaScript.">
 
 
 
@@ -392,12 +392,24 @@
                 
               
 
-              <time title="创建时间：2019-02-27 00:06:29 / 修改时间：00:06:42" itemprop="dateCreated datePublished" datetime="2019-02-27T00:06:29+08:00">2019-02-27</time>
+              <time title="创建时间：2019-02-27 00:06:29" itemprop="dateCreated datePublished" datetime="2019-02-27T00:06:29+08:00">2019-02-27</time>
             
 
             
               
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2019-02-28 00:42:33" itemprop="dateModified" datetime="2019-02-28T00:42:33+08:00">2019-02-28</time>
               
             
           </span>
@@ -454,7 +466,7 @@
                 
                   <span class="post-meta-item-text">本文字数：</span>
                 
-                <span title="本文字数">963</span>
+                <span title="本文字数">975</span>
               
 
               
@@ -488,7 +500,7 @@
       
 
       
-        <p>What I&#39;ve done today is and <em>Vowel Count</em> in <em>JavaScript</em>.</p>
+        <p>What I&#39;ve done today is and <em>Find The Parity Outlier</em> in <em>JavaScript</em>.<br><a id="more"></a></p>
 <h1 id="CodeWars"><a href="#CodeWars" class="headerlink" title="CodeWars"></a>CodeWars</h1><h2 id="Problem"><a href="#Problem" class="headerlink" title="Problem"></a>Problem</h2><h3 id="Find-The-Parity-Outlier"><a href="#Find-The-Parity-Outlier" class="headerlink" title="Find The Parity Outlier"></a>Find The Parity Outlier</h3><p>You are given an array (which will have a length of at least 3, but could be very large) containing integers. The array is either entirely comprised of odd integers or entirely comprised of even integers except for a single integer <code>N</code>. Write a method that takes the array as an argument and returns this &quot;outlier&quot; <code>N</code>.</p>
 <h2 id="Examples"><a href="#Examples" class="headerlink" title="Examples"></a>Examples</h2><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">[<span class="number">2</span>, <span class="number">4</span>, <span class="number">0</span>, <span class="number">100</span>, <span class="number">4</span>, <span class="number">11</span>, <span class="number">2602</span>, <span class="number">36</span>]</span><br><span class="line">Should <span class="keyword">return</span>: <span class="number">11</span> (the only odd number)</span><br><span class="line"></span><br><span class="line">[<span class="number">160</span>, <span class="number">3</span>, <span class="number">1719</span>, <span class="number">19</span>, <span class="number">11</span>, <span class="number">13</span>, <span class="number">-21</span>]</span><br><span class="line">Should <span class="keyword">return</span>: <span class="number">160</span> (the only even number)</span><br></pre></td></tr></table></figure>
 <h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">findOutlier</span>(<span class="params">integers</span>)</span>&#123;</span><br><span class="line">  odd = integers.filter(<span class="function"><span class="params">a</span> =&gt;</span> a&amp;<span class="number">1</span>);</span><br><span class="line">  even = integers.filter(<span class="function"><span class="params">a</span> =&gt;</span> ~a&amp;<span class="number">1</span>);</span><br><span class="line">  <span class="keyword">return</span> odd.length===<span class="number">1</span>?odd[<span class="number">0</span>]:even[<span class="number">0</span>];</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">findOutlier</span>(<span class="params">integers</span>)</span>&#123;</span><br><span class="line">  <span class="keyword">return</span> integers</span><br><span class="line">    .slice(<span class="number">0</span>, <span class="number">3</span>)</span><br><span class="line">    .filter(<span class="function"><span class="params">a</span> =&gt;</span> a&amp;<span class="number">1</span>)</span><br><span class="line">    .length&lt;<span class="number">2</span>?</span><br><span class="line">    integers.find(<span class="function"><span class="params">a</span> =&gt;</span> a&amp;<span class="number">1</span>):</span><br><span class="line">    integers.find(<span class="function"><span class="params">a</span> =&gt;</span> ~a&amp;<span class="number">1</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
@@ -513,6 +525,15 @@
   
     <li class="popular-posts-item">
       
+        <div class="popular-posts-date">2019-02-26</div>
+      
+      
+      <div class="popular-posts-title"><a href="/2019-02-26-Daily-Challenge/" rel="bookmark">2019-02-26 Daily Challenge</a></div>
+      
+    </li>
+  
+    <li class="popular-posts-item">
+      
         <div class="popular-posts-date">2019-02-23</div>
       
       
@@ -531,19 +552,10 @@
   
     <li class="popular-posts-item">
       
-        <div class="popular-posts-date">2019-02-25</div>
+        <div class="popular-posts-date">2019-02-28</div>
       
       
-      <div class="popular-posts-title"><a href="/2019-02-25-Daily-Challenge/" rel="bookmark">2019-02-25 Daily Challenge</a></div>
-      
-    </li>
-  
-    <li class="popular-posts-item">
-      
-        <div class="popular-posts-date">2019-02-26</div>
-      
-      
-      <div class="popular-posts-title"><a href="/2019-02-26-Daily-Challenge/" rel="bookmark">2019-02-26 Daily Challenge</a></div>
+      <div class="popular-posts-title"><a href="/2019-02-28-Daily-Challenge/" rel="bookmark">2019-02-28 Daily Challenge</a></div>
       
     </li>
   
@@ -647,8 +659,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/博文整理/" rel="prev" title="博文整理">
-                博文整理 <i class="fa fa-chevron-right"></i>
+              <a href="/2019-02-28-Daily-Challenge/" rel="prev" title="2019-02-28 Daily Challenge">
+                2019-02-28 Daily Challenge <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -737,7 +749,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">93</span>
+                    <span class="site-state-item-count">94</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -1013,7 +1025,7 @@
     
       <span class="post-meta-item-text">站点总字数：</span>
     
-    <span title="站点总字数">397k</span>
+    <span title="站点总字数">398k</span>
   
 
   
@@ -1024,7 +1036,7 @@
     
       <span class="post-meta-item-text">站点阅读时长 &asymp;</span>
     
-    <span title="站点阅读时长">11:01</span>
+    <span title="站点阅读时长">11:04</span>
   
 </div>
 
