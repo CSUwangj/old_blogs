@@ -35,11 +35,31 @@
   </entry>
   
   <entry>
+    <title>2019-03-01 Daily Challenge</title>
+    <link href="http://CSUwangj.github.io/2019-03-01-Daily-Challenge/"/>
+    <id>http://CSUwangj.github.io/2019-03-01-Daily-Challenge/</id>
+    <published>2019-03-01T01:01:02.000Z</published>
+    <updated>2019-03-01T01:02:48.583Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;What I&amp;#39;ve done today is and &lt;em&gt;Tribonacci Sequence&lt;/em&gt; in &lt;em&gt;JavaScript&lt;/em&gt;.&lt;br&gt;
+    
+    </summary>
+    
+      <category term="DailyChallenge" scheme="http://CSUwangj.github.io/categories/DailyChallenge/"/>
+    
+    
+      <category term="CodeWars" scheme="http://CSUwangj.github.io/tags/CodeWars/"/>
+    
+  </entry>
+  
+  <entry>
     <title>ACTF Junior 2019 Official WriteUP of CSUWangj&#39;s Challenge</title>
     <link href="http://CSUwangj.github.io/ACTF-Junior-2019-Official-WriteUP-of-CSUWangj-s-Challenge/"/>
     <id>http://CSUwangj.github.io/ACTF-Junior-2019-Official-WriteUP-of-CSUWangj-s-Challenge/</id>
     <published>2019-02-28T07:55:24.000Z</published>
-    <updated>2019-02-28T07:57:17.421Z</updated>
+    <updated>2019-02-28T08:39:37.267Z</updated>
     
     <summary type="html">
     
@@ -461,32 +481,6 @@
     <summary type="html">
     
       &lt;p&gt;What I&amp;#39;ve done today is &lt;em&gt;Poker hands&lt;/em&gt; in &lt;em&gt;Rust&lt;/em&gt; and &lt;em&gt;Minimum Moves to Equal Array Elements&lt;/em&gt; in &lt;em&gt;JavaScript&lt;/em&gt;.&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="DailyChallenge" scheme="http://CSUwangj.github.io/categories/DailyChallenge/"/>
-    
-    
-      <category term="Math" scheme="http://CSUwangj.github.io/tags/Math/"/>
-    
-      <category term="Algorithm" scheme="http://CSUwangj.github.io/tags/Algorithm/"/>
-    
-      <category term="LeetCode" scheme="http://CSUwangj.github.io/tags/LeetCode/"/>
-    
-      <category term="ProjectEuler" scheme="http://CSUwangj.github.io/tags/ProjectEuler/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>2019-02-11 Daily Challenge</title>
-    <link href="http://CSUwangj.github.io/2019-02-11-Daily-Challenge/"/>
-    <id>http://CSUwangj.github.io/2019-02-11-Daily-Challenge/</id>
-    <published>2019-02-10T16:01:32.000Z</published>
-    <updated>2019-02-10T16:02:36.603Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;What I&amp;#39;ve done today is &lt;em&gt;Combinatoric selections&lt;/em&gt; in &lt;em&gt;Rust&lt;/em&gt; and &lt;em&gt;Search in Rotated Sorted Array&lt;/em&gt; in &lt;em&gt;JavaScript&lt;/em&gt;.&lt;/p&gt;
     
     </summary>
     
