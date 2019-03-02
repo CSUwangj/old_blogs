@@ -35,15 +35,35 @@
   </entry>
   
   <entry>
+    <title>2019-03-02 Daily Challenge</title>
+    <link href="http://CSUwangj.github.io/2019-03-02-Daily-Challenge/"/>
+    <id>http://CSUwangj.github.io/2019-03-02-Daily-Challenge/</id>
+    <published>2019-03-02T04:38:25.000Z</published>
+    <updated>2019-03-02T06:22:23.818Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;What I&amp;#39;ve done today is &lt;em&gt;Valid Braces&lt;/em&gt; in &lt;em&gt;JavaScript&lt;/em&gt;.&lt;br&gt;
+    
+    </summary>
+    
+      <category term="DailyChallenge" scheme="http://CSUwangj.github.io/categories/DailyChallenge/"/>
+    
+    
+      <category term="CodeWars" scheme="http://CSUwangj.github.io/tags/CodeWars/"/>
+    
+  </entry>
+  
+  <entry>
     <title>2019-03-01 Daily Challenge</title>
     <link href="http://CSUwangj.github.io/2019-03-01-Daily-Challenge/"/>
     <id>http://CSUwangj.github.io/2019-03-01-Daily-Challenge/</id>
     <published>2019-03-01T01:01:02.000Z</published>
-    <updated>2019-03-01T01:02:48.583Z</updated>
+    <updated>2019-03-02T06:18:55.822Z</updated>
     
     <summary type="html">
     
-      &lt;p&gt;What I&amp;#39;ve done today is and &lt;em&gt;Tribonacci Sequence&lt;/em&gt; in &lt;em&gt;JavaScript&lt;/em&gt;.&lt;br&gt;
+      &lt;p&gt;What I&amp;#39;ve done today is &lt;em&gt;Create Phone Number&lt;/em&gt; in &lt;em&gt;JavaScript&lt;/em&gt;.&lt;br&gt;
     
     </summary>
     
@@ -87,11 +107,11 @@
     <link href="http://CSUwangj.github.io/2019-02-28-Daily-Challenge/"/>
     <id>http://CSUwangj.github.io/2019-02-28-Daily-Challenge/</id>
     <published>2019-02-27T16:41:30.000Z</published>
-    <updated>2019-02-27T16:42:31.213Z</updated>
+    <updated>2019-03-01T06:27:49.081Z</updated>
     
     <summary type="html">
     
-      &lt;p&gt;What I&amp;#39;ve done today is and &lt;em&gt;Tribonacci Sequence&lt;/em&gt; in &lt;em&gt;JavaScript&lt;/em&gt;.&lt;br&gt;
+      &lt;p&gt;What I&amp;#39;ve done today is &lt;em&gt;Tribonacci Sequence&lt;/em&gt; in &lt;em&gt;JavaScript&lt;/em&gt;.&lt;br&gt;
     
     </summary>
     
@@ -107,11 +127,11 @@
     <link href="http://CSUwangj.github.io/2019-02-27-Daily-Challenge/"/>
     <id>http://CSUwangj.github.io/2019-02-27-Daily-Challenge/</id>
     <published>2019-02-26T16:06:29.000Z</published>
-    <updated>2019-02-27T16:42:33.247Z</updated>
+    <updated>2019-03-01T06:27:57.116Z</updated>
     
     <summary type="html">
     
-      &lt;p&gt;What I&amp;#39;ve done today is and &lt;em&gt;Find The Parity Outlier&lt;/em&gt; in &lt;em&gt;JavaScript&lt;/em&gt;.&lt;br&gt;
+      &lt;p&gt;What I&amp;#39;ve done today is &lt;em&gt;Find The Parity Outlier&lt;/em&gt; in &lt;em&gt;JavaScript&lt;/em&gt;.&lt;br&gt;
     
     </summary>
     
@@ -127,11 +147,11 @@
     <link href="http://CSUwangj.github.io/2019-02-26-Daily-Challenge/"/>
     <id>http://CSUwangj.github.io/2019-02-26-Daily-Challenge/</id>
     <published>2019-02-25T16:01:36.000Z</published>
-    <updated>2019-02-27T03:31:22.080Z</updated>
+    <updated>2019-03-01T06:28:04.526Z</updated>
     
     <summary type="html">
     
-      &lt;p&gt;What I&amp;#39;ve done today is and &lt;em&gt;Vowel Count&lt;/em&gt; in &lt;em&gt;JavaScript&lt;/em&gt;.&lt;/p&gt;
+      &lt;p&gt;What I&amp;#39;ve done today is &lt;em&gt;Vowel Count&lt;/em&gt; in &lt;em&gt;JavaScript&lt;/em&gt;.&lt;/p&gt;
     
     </summary>
     
@@ -147,11 +167,11 @@
     <link href="http://CSUwangj.github.io/2019-02-25-Daily-Challenge/"/>
     <id>http://CSUwangj.github.io/2019-02-25-Daily-Challenge/</id>
     <published>2019-02-24T16:35:16.000Z</published>
-    <updated>2019-02-27T03:31:41.675Z</updated>
+    <updated>2019-03-01T06:28:11.942Z</updated>
     
     <summary type="html">
     
-      &lt;p&gt;What I&amp;#39;ve done today is and &lt;em&gt;Find the divisors!&lt;/em&gt; in &lt;em&gt;JavaScript&lt;/em&gt;.&lt;/p&gt;
+      &lt;p&gt;What I&amp;#39;ve done today is &lt;em&gt;Find the divisors!&lt;/em&gt; in &lt;em&gt;JavaScript&lt;/em&gt;.&lt;/p&gt;
     
     </summary>
     
@@ -451,32 +471,6 @@
     <id>http://CSUwangj.github.io/2019-02-13-Daily-Challenge/</id>
     <published>2019-02-12T16:11:30.000Z</published>
     <updated>2019-02-12T16:13:17.965Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;What I&amp;#39;ve done today is &lt;em&gt;Poker hands&lt;/em&gt; in &lt;em&gt;Rust&lt;/em&gt; and &lt;em&gt;Minimum Moves to Equal Array Elements&lt;/em&gt; in &lt;em&gt;JavaScript&lt;/em&gt;.&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="DailyChallenge" scheme="http://CSUwangj.github.io/categories/DailyChallenge/"/>
-    
-    
-      <category term="Math" scheme="http://CSUwangj.github.io/tags/Math/"/>
-    
-      <category term="Algorithm" scheme="http://CSUwangj.github.io/tags/Algorithm/"/>
-    
-      <category term="LeetCode" scheme="http://CSUwangj.github.io/tags/LeetCode/"/>
-    
-      <category term="ProjectEuler" scheme="http://CSUwangj.github.io/tags/ProjectEuler/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>2019-02-12 Daily Challenge</title>
-    <link href="http://CSUwangj.github.io/2019-02-12-Daily-Challenge/"/>
-    <id>http://CSUwangj.github.io/2019-02-12-Daily-Challenge/</id>
-    <published>2019-02-12T11:39:03.000Z</published>
-    <updated>2019-02-12T11:44:30.383Z</updated>
     
     <summary type="html">
     

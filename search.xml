@@ -9,9 +9,20 @@
       </categories>
   </entry>
   <entry>
+    <title><![CDATA[2019-03-02 Daily Challenge]]></title>
+    <url>%2F2019-03-02-Daily-Challenge%2F</url>
+    <content type="text"><![CDATA[What I&#39;ve done today is Valid Braces in JavaScript. CodeWarsProblemValid BracesWrite a function that takes a string of braces, and determines if the order of the braces is valid. It should return true if the string is valid, and false if it&#39;s invalid. This Kata is similar to the Valid Parentheses Kata, but introduces new characters: brackets [], and curly braces {}. Thanks to @arnedag for the idea! All input strings will be nonempty, and will only consist of parentheses, brackets and curly braces: ()[]{}. What is considered Valid?A string of braces is considered valid if all braces are matched with the correct brace. Examples12345"()&#123;&#125;[]" =&gt; True"([&#123;&#125;])" =&gt; True"(&#125;" =&gt; False"[(])" =&gt; False"[(&#123;&#125;)](]" =&gt; False Solution12345678910111213141516171819202122232425262728293031323334353637function validBraces(braces)&#123; let stack = []; for (let i = 0; i &lt; braces.length; ++i) &#123; if (braces[i] === "(" || braces[i] === "[" || braces[i] === "&#123;") &#123; stack.push(braces[i]); &#125; else &#123; if (!stack.length) return false; if (braces[i] === ")") &#123; if (stack[stack.length-1] !== "(") return false; stack.pop(); &#125; else if (braces[i] === "]") &#123; if (stack[stack.length-1] !== "[") return false; stack.pop(); &#125; else &#123; if (stack[stack.length-1] !== "&#123;") return false; stack.pop(); &#125; &#125; &#125; return !stack.length;&#125;function validBraces(braces)&#123; let matches = &#123; '(':')', '&#123;':'&#125;', '[':']' &#125;; let stack = []; for (let i = 0; i &lt; braces.length; i++) &#123; let currentChar = braces[i]; if (matches[currentChar]) stack.push(currentChar); else if (currentChar !== matches[stack.pop()]) return false; &#125; return stack.length === 0; &#125;function validBraces(braces)&#123; while(/\(\)|\[\]|\&#123;\&#125;/g.test(braces))&#123;braces = braces.replace(/\(\)|\[\]|\&#123;\&#125;/g,"")&#125; return !braces.length; &#125;]]></content>
+      <categories>
+        <category>DailyChallenge</category>
+      </categories>
+      <tags>
+        <tag>CodeWars</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[2019-03-01 Daily Challenge]]></title>
     <url>%2F2019-03-01-Daily-Challenge%2F</url>
-    <content type="text"><![CDATA[What I&#39;ve done today is and Tribonacci Sequence in JavaScript. CodeWarsProblemCreate Phone NumberWrite a function that accepts an array of 10 integers (between 0 and 9), that returns a string of those numbers in the form of a phone number. Example:1createPhoneNumber([1, 2, 3, 4, 5, 6, 7, 8, 9, 0]) // =&gt; returns "(123) 456-7890" The returned format must be correct in order to complete this challenge.Don&#39;t forget the space after the closing parentheses! Solution1234567function createPhoneNumber(numbers)&#123; return `($&#123;numbers.slice(0, 3).toString().replace(/,/gi, '')&#125;) $&#123;numbers.slice(3, 6).toString().replace(/,/gi, '')&#125;-$&#123;numbers.slice(6, 10).toString().replace(/,/gi, '')&#125;`;&#125;function createPhoneNumber(numbers)&#123; return numbers.join('').replace(/(...)(...)(.*)/, '($1) $2-$3');&#125;]]></content>
+    <content type="text"><![CDATA[What I&#39;ve done today is Create Phone Number in JavaScript. CodeWarsProblemCreate Phone NumberWrite a function that accepts an array of 10 integers (between 0 and 9), that returns a string of those numbers in the form of a phone number. Example:1createPhoneNumber([1, 2, 3, 4, 5, 6, 7, 8, 9, 0]) // =&gt; returns "(123) 456-7890" The returned format must be correct in order to complete this challenge.Don&#39;t forget the space after the closing parentheses! Solution1234567function createPhoneNumber(numbers)&#123; return `($&#123;numbers.slice(0, 3).toString().replace(/,/gi, '')&#125;) $&#123;numbers.slice(3, 6).toString().replace(/,/gi, '')&#125;-$&#123;numbers.slice(6, 10).toString().replace(/,/gi, '')&#125;`;&#125;function createPhoneNumber(numbers)&#123; return numbers.join('').replace(/(...)(...)(.*)/, '($1) $2-$3');&#125;]]></content>
       <categories>
         <category>DailyChallenge</category>
       </categories>
@@ -37,7 +48,7 @@
   <entry>
     <title><![CDATA[2019-02-28 Daily Challenge]]></title>
     <url>%2F2019-02-28-Daily-Challenge%2F</url>
-    <content type="text"><![CDATA[What I&#39;ve done today is and Tribonacci Sequence in JavaScript. CodeWarsProblemTribonacci SequenceWell met with Fibonacci bigger brother, AKA Tribonacci. As the name may already reveal, it works basically like a Fibonacci, but summing the last 3 (instead of 2) numbers of the sequence to generate the next. And, worse part of it, regrettably I won&#39;t get to hear non-native Italian speakers trying to pronounce it :( So, if we are to start our Tribonacci sequence with [1, 1, 1] as a starting input (AKA signature), we have this sequence: 1[1, 1 ,1, 3, 5, 9, 17, 31, ...] But what if we started with [0, 0, 1] as a signature? As starting with [0, 1] instead of [1, 1] basically shifts the common Fibonacci sequence by once place, you may be tempted to think that we would get the same sequence shifted by 2 places, but that is not the case and we would get: 1[0, 0, 1, 1, 2, 4, 7, 13, 24, ...] Well, you may have guessed it by now, but to be clear: you need to create a fibonacci function that given a signature array/list, returns the first n elements - signature included of the so seeded sequence. Signature will always contain 3 numbers; n will always be a non-negative number; if n == 0, then return an empty array and be ready for anything else which is not clearly specified ;) If you enjoyed this kata more advanced and generalized version of it can be found in the Xbonacci kata [Personal thanks to Professor Jim Fowler on Coursera for his awesome classes that I really recommend to any math enthusiast and for showing me this mathematical curiosity too with his usual contagious passion :)]]]></content>
+    <content type="text"><![CDATA[What I&#39;ve done today is Tribonacci Sequence in JavaScript. CodeWarsProblemTribonacci SequenceWell met with Fibonacci bigger brother, AKA Tribonacci. As the name may already reveal, it works basically like a Fibonacci, but summing the last 3 (instead of 2) numbers of the sequence to generate the next. And, worse part of it, regrettably I won&#39;t get to hear non-native Italian speakers trying to pronounce it :( So, if we are to start our Tribonacci sequence with [1, 1, 1] as a starting input (AKA signature), we have this sequence: 1[1, 1 ,1, 3, 5, 9, 17, 31, ...] But what if we started with [0, 0, 1] as a signature? As starting with [0, 1] instead of [1, 1] basically shifts the common Fibonacci sequence by once place, you may be tempted to think that we would get the same sequence shifted by 2 places, but that is not the case and we would get: 1[0, 0, 1, 1, 2, 4, 7, 13, 24, ...] Well, you may have guessed it by now, but to be clear: you need to create a fibonacci function that given a signature array/list, returns the first n elements - signature included of the so seeded sequence. Signature will always contain 3 numbers; n will always be a non-negative number; if n == 0, then return an empty array and be ready for anything else which is not clearly specified ;) If you enjoyed this kata more advanced and generalized version of it can be found in the Xbonacci kata [Personal thanks to Professor Jim Fowler on Coursera for his awesome classes that I really recommend to any math enthusiast and for showing me this mathematical curiosity too with his usual contagious passion :)]]]></content>
       <categories>
         <category>DailyChallenge</category>
       </categories>
@@ -48,7 +59,7 @@
   <entry>
     <title><![CDATA[2019-02-27 Daily Challenge]]></title>
     <url>%2F2019-02-27-Daily-Challenge%2F</url>
-    <content type="text"><![CDATA[What I&#39;ve done today is and Find The Parity Outlier in JavaScript. CodeWarsProblemFind The Parity OutlierYou are given an array (which will have a length of at least 3, but could be very large) containing integers. The array is either entirely comprised of odd integers or entirely comprised of even integers except for a single integer N. Write a method that takes the array as an argument and returns this &quot;outlier&quot; N. Examples12345[2, 4, 0, 100, 4, 11, 2602, 36]Should return: 11 (the only odd number)[160, 3, 1719, 19, 11, 13, -21]Should return: 160 (the only even number) Solution1234567891011121314function findOutlier(integers)&#123; odd = integers.filter(a =&gt; a&amp;1); even = integers.filter(a =&gt; ~a&amp;1); return odd.length===1?odd[0]:even[0];&#125;function findOutlier(integers)&#123; return integers .slice(0, 3) .filter(a =&gt; a&amp;1) .length&lt;2? integers.find(a =&gt; a&amp;1): integers.find(a =&gt; ~a&amp;1);&#125;]]></content>
+    <content type="text"><![CDATA[What I&#39;ve done today is Find The Parity Outlier in JavaScript. CodeWarsProblemFind The Parity OutlierYou are given an array (which will have a length of at least 3, but could be very large) containing integers. The array is either entirely comprised of odd integers or entirely comprised of even integers except for a single integer N. Write a method that takes the array as an argument and returns this &quot;outlier&quot; N. Examples12345[2, 4, 0, 100, 4, 11, 2602, 36]Should return: 11 (the only odd number)[160, 3, 1719, 19, 11, 13, -21]Should return: 160 (the only even number) Solution1234567891011121314function findOutlier(integers)&#123; odd = integers.filter(a =&gt; a&amp;1); even = integers.filter(a =&gt; ~a&amp;1); return odd.length===1?odd[0]:even[0];&#125;function findOutlier(integers)&#123; return integers .slice(0, 3) .filter(a =&gt; a&amp;1) .length&lt;2? integers.find(a =&gt; a&amp;1): integers.find(a =&gt; ~a&amp;1);&#125;]]></content>
       <categories>
         <category>DailyChallenge</category>
       </categories>
@@ -59,7 +70,7 @@
   <entry>
     <title><![CDATA[2019-02-26 Daily Challenge]]></title>
     <url>%2F2019-02-26-Daily-Challenge%2F</url>
-    <content type="text"><![CDATA[What I&#39;ve done today is and Vowel Count in JavaScript. CodeWarsProblemVowel CountReturn the number (count) of vowels in the given string. We will consider a, e, i, o, and u as vowels for this Kata. The input string will only consist of lower case letters and/or spaces. Solution1234567function getCount(str) &#123; return (str.match(/[aeiou]/gi)||[]).length;&#125;function getCount(str) &#123; return str.replace(/[^aeiou]/gi, "").length;&#125;]]></content>
+    <content type="text"><![CDATA[What I&#39;ve done today is Vowel Count in JavaScript. CodeWarsProblemVowel CountReturn the number (count) of vowels in the given string. We will consider a, e, i, o, and u as vowels for this Kata. The input string will only consist of lower case letters and/or spaces. Solution1234567function getCount(str) &#123; return (str.match(/[aeiou]/gi)||[]).length;&#125;function getCount(str) &#123; return str.replace(/[^aeiou]/gi, "").length;&#125;]]></content>
       <categories>
         <category>DailyChallenge</category>
       </categories>
@@ -70,7 +81,7 @@
   <entry>
     <title><![CDATA[2019-02-25 Daily Challenge]]></title>
     <url>%2F2019-02-25-Daily-Challenge%2F</url>
-    <content type="text"><![CDATA[What I&#39;ve done today is and Find the divisors! in JavaScript. CodeWarsProblemFind the divisors!Create a function named divisors/Divisors that takes an integer n &gt; 1 and returns an array with all of the integer&#39;s divisors(except for 1 and the number itself), from smallest to largest. If the number is prime return the string &#39;(integer) is prime&#39; (null in C#) (use Either String a in Haskell and Result&lt;Vec&lt;u32&gt;, String&gt; in Rust). Example:123divisors(12); // should return [2,3,4,6]divisors(25); // should return [5]divisors(13); // should return "13 is prime" Solution1234function divisors(integer) &#123; s = Array.apply(null, &#123;length: Math.ceil((integer+1)/2)&#125;).map(Number.call, Number).slice(2).filter(x =&gt; integer % x===0); return s.length?s:`$&#123;integer&#125; is prime`;&#125;;]]></content>
+    <content type="text"><![CDATA[What I&#39;ve done today is Find the divisors! in JavaScript. CodeWarsProblemFind the divisors!Create a function named divisors/Divisors that takes an integer n &gt; 1 and returns an array with all of the integer&#39;s divisors(except for 1 and the number itself), from smallest to largest. If the number is prime return the string &#39;(integer) is prime&#39; (null in C#) (use Either String a in Haskell and Result&lt;Vec&lt;u32&gt;, String&gt; in Rust). Example:123divisors(12); // should return [2,3,4,6]divisors(25); // should return [5]divisors(13); // should return "13 is prime" Solution1234function divisors(integer) &#123; s = Array.apply(null, &#123;length: Math.ceil((integer+1)/2)&#125;).map(Number.call, Number).slice(2).filter(x =&gt; integer % x===0); return s.length?s:`$&#123;integer&#125; is prime`;&#125;;]]></content>
       <categories>
         <category>DailyChallenge</category>
       </categories>
@@ -1137,8 +1148,8 @@
         <category>Notes</category>
       </categories>
       <tags>
-        <tag>ACM</tag>
         <tag>Crypto</tag>
+        <tag>ACM</tag>
       </tags>
   </entry>
   <entry>
@@ -1166,8 +1177,8 @@
         <tag>Crypto</tag>
         <tag>Misc</tag>
         <tag>PWN</tag>
-        <tag>Web</tag>
         <tag>Rev</tag>
+        <tag>Web</tag>
       </tags>
   </entry>
   <entry>
@@ -1273,8 +1284,8 @@
         <tag>Crypto</tag>
         <tag>Misc</tag>
         <tag>PWN</tag>
-        <tag>Web</tag>
         <tag>Rev</tag>
+        <tag>Web</tag>
       </tags>
   </entry>
   <entry>
