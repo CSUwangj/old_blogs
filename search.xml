@@ -9,6 +9,17 @@
       </categories>
   </entry>
   <entry>
+    <title><![CDATA[2019-03-05 Daily Challenge]]></title>
+    <url>%2F2019-03-05-Daily-Challenge%2F</url>
+    <content type="text"><![CDATA[What I&#39;ve done today is Build a pile of Cubes in JavaScript. CodeWarsProblemBuild a pile of CubesYour task is to construct a building which will be a pile of n cubes. The cube at the bottom will have a volume of n^3, the cube above will have volume of (n-1)^3 and so on until the top which will have a volume of 1^3. You are given the total volume m of the building. Being given m can you find the number n of cubes you will have to build? The parameter of the function findNb (find_nb, find-nb, findNb) will be an integer m and you have to return the integer n such as n^3 + (n-1)^3 + ... + 1^3 = m if such a n exists or -1 if there is no such n. Examples:1234567findNb(1071225) --&gt; 45findNb(91716553919377) --&gt; -1mov rdi, 1071225call find_nb ; rax &lt;-- 45mov rdi, 91716553919377call find_nb ; rax &lt;-- -1 Solution1234567891011121314151617function findNb(m) &#123; let cur = 0; let sum = 0; while (sum &lt; m) &#123; cur += 1; sum += cur * cur * cur; &#125; return sum===m?cur:-1;&#125;function findNb(m) &#123; let n = 0; while (m &gt; 0) &#123; n += 1; m -= n ** 3; return m ? -1 : n&#125;]]></content>
+      <categories>
+        <category>DailyChallenge</category>
+      </categories>
+      <tags>
+        <tag>CodeWars</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[2019-03-04 Daily Challenge]]></title>
     <url>%2F2019-03-04-Daily-Challenge%2F</url>
     <content type="text"><![CDATA[What I&#39;ve done today is Array.diff in JavaScript. CodeWarsProblemArray.diffYour goal in this kata is to implement a difference function, which subtracts one list from another and returns the result. It should remove all values from list a, which are present in list b. 1array_diff([1,2],[1]) == [2] If a value is present in b, all of its occurrences must be removed from the other: 1array_diff([1,2,2,2,3],[2]) == [1,3] Solution12345678function array_diff(a, b) &#123; return a.filter(e =&gt; !b.includes(e));&#125;function array_diff(a, b) &#123; b = new Set(b) return a.filter(v =&gt; !b.has(v))&#125;]]></content>
@@ -60,9 +71,9 @@
         <category>WriteUp</category>
       </categories>
       <tags>
-        <tag>Misc</tag>
-        <tag>Crypto</tag>
         <tag>CTF</tag>
+        <tag>Crypto</tag>
+        <tag>Misc</tag>
         <tag>PWN</tag>
         <tag>Forensics</tag>
       </tags>
@@ -1182,9 +1193,9 @@
         <category>WriteUp</category>
       </categories>
       <tags>
-        <tag>Misc</tag>
-        <tag>Crypto</tag>
         <tag>CTF</tag>
+        <tag>Crypto</tag>
+        <tag>Misc</tag>
       </tags>
   </entry>
   <entry>
@@ -1195,12 +1206,12 @@
         <category>WriteUp</category>
       </categories>
       <tags>
-        <tag>Misc</tag>
-        <tag>Crypto</tag>
         <tag>CTF</tag>
+        <tag>Crypto</tag>
+        <tag>Misc</tag>
         <tag>PWN</tag>
-        <tag>Rev</tag>
         <tag>Web</tag>
+        <tag>Rev</tag>
       </tags>
   </entry>
   <entry>
@@ -1223,8 +1234,8 @@
         <category>WriteUp</category>
       </categories>
       <tags>
-        <tag>Crypto</tag>
         <tag>CTF</tag>
+        <tag>Crypto</tag>
       </tags>
   </entry>
   <entry>
@@ -1251,9 +1262,9 @@
         <category>WriteUp</category>
       </categories>
       <tags>
-        <tag>Misc</tag>
-        <tag>Crypto</tag>
         <tag>CTF</tag>
+        <tag>Crypto</tag>
+        <tag>Misc</tag>
         <tag>PWN</tag>
         <tag>Web</tag>
       </tags>
@@ -1290,8 +1301,8 @@
         <category>Tools</category>
       </categories>
       <tags>
-        <tag>Misc</tag>
         <tag>Crypto</tag>
+        <tag>Misc</tag>
       </tags>
   </entry>
   <entry>
@@ -1302,12 +1313,12 @@
         <category>WriteUp</category>
       </categories>
       <tags>
-        <tag>Misc</tag>
-        <tag>Crypto</tag>
         <tag>CTF</tag>
+        <tag>Crypto</tag>
+        <tag>Misc</tag>
         <tag>PWN</tag>
-        <tag>Rev</tag>
         <tag>Web</tag>
+        <tag>Rev</tag>
       </tags>
   </entry>
   <entry>
@@ -1318,8 +1329,8 @@
         <category>WriteUp</category>
       </categories>
       <tags>
-        <tag>Misc</tag>
         <tag>CTF</tag>
+        <tag>Misc</tag>
         <tag>Rev</tag>
       </tags>
   </entry>

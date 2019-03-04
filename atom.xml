@@ -35,11 +35,31 @@
   </entry>
   
   <entry>
+    <title>2019-03-05 Daily Challenge</title>
+    <link href="http://CSUwangj.github.io/2019-03-05-Daily-Challenge/"/>
+    <id>http://CSUwangj.github.io/2019-03-05-Daily-Challenge/</id>
+    <published>2019-03-04T16:00:21.000Z</published>
+    <updated>2019-03-04T16:01:54.906Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;What I&amp;#39;ve done today is &lt;em&gt;Build a pile of Cubes&lt;/em&gt; in &lt;em&gt;JavaScript&lt;/em&gt;.&lt;br&gt;
+    
+    </summary>
+    
+      <category term="DailyChallenge" scheme="http://CSUwangj.github.io/categories/DailyChallenge/"/>
+    
+    
+      <category term="CodeWars" scheme="http://CSUwangj.github.io/tags/CodeWars/"/>
+    
+  </entry>
+  
+  <entry>
     <title>2019-03-04 Daily Challenge</title>
     <link href="http://CSUwangj.github.io/2019-03-04-Daily-Challenge/"/>
     <id>http://CSUwangj.github.io/2019-03-04-Daily-Challenge/</id>
     <published>2019-03-03T16:22:20.000Z</published>
-    <updated>2019-03-03T16:23:11.364Z</updated>
+    <updated>2019-03-04T16:01:10.228Z</updated>
     
     <summary type="html">
     
@@ -130,11 +150,11 @@
       <category term="WriteUp" scheme="http://CSUwangj.github.io/categories/WriteUp/"/>
     
     
-      <category term="Misc" scheme="http://CSUwangj.github.io/tags/Misc/"/>
+      <category term="CTF" scheme="http://CSUwangj.github.io/tags/CTF/"/>
     
       <category term="Crypto" scheme="http://CSUwangj.github.io/tags/Crypto/"/>
     
-      <category term="CTF" scheme="http://CSUwangj.github.io/tags/CTF/"/>
+      <category term="Misc" scheme="http://CSUwangj.github.io/tags/Misc/"/>
     
       <category term="PWN" scheme="http://CSUwangj.github.io/tags/PWN/"/>
     
@@ -437,32 +457,6 @@
     <summary type="html">
     
       &lt;p&gt;What I&amp;#39;ve done today is &lt;em&gt;Spiral primes&lt;/em&gt; in &lt;em&gt;Rust&lt;/em&gt; and &lt;em&gt;First Bad Version&lt;/em&gt; in &lt;em&gt;JavaScript&lt;/em&gt;.&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="DailyChallenge" scheme="http://CSUwangj.github.io/categories/DailyChallenge/"/>
-    
-    
-      <category term="Math" scheme="http://CSUwangj.github.io/tags/Math/"/>
-    
-      <category term="Algorithm" scheme="http://CSUwangj.github.io/tags/Algorithm/"/>
-    
-      <category term="LeetCode" scheme="http://CSUwangj.github.io/tags/LeetCode/"/>
-    
-      <category term="ProjectEuler" scheme="http://CSUwangj.github.io/tags/ProjectEuler/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>2019-02-15 Daily Challenge</title>
-    <link href="http://CSUwangj.github.io/2019-02-15-Daily-Challenge/"/>
-    <id>http://CSUwangj.github.io/2019-02-15-Daily-Challenge/</id>
-    <published>2019-02-14T16:08:00.000Z</published>
-    <updated>2019-02-14T16:09:50.284Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;What I&amp;#39;ve done today is &lt;em&gt;Square root convergents&lt;/em&gt; in &lt;em&gt;Rust&lt;/em&gt; and &lt;em&gt;Merge Intervals&lt;/em&gt; in &lt;em&gt;JavaScript&lt;/em&gt;.&lt;/p&gt;
     
     </summary>
     
