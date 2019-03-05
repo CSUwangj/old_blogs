@@ -35,6 +35,27 @@
   </entry>
   
   <entry>
+    <title>2019-03-06 Daily Challenge</title>
+    <link href="http://CSUwangj.github.io/2019-03-06-Daily-Challenge/"/>
+    <id>http://CSUwangj.github.io/2019-03-06-Daily-Challenge/</id>
+    <published>2019-03-05T16:38:14.000Z</published>
+    <updated>2019-03-05T16:40:40.751Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;What I&amp;#39;ve done today is &lt;em&gt;Weight for weight&lt;/em&gt; in &lt;em&gt;JavaScript&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;Although solution is clever, I still think that this problem is so dumb. Bad details, bad description towards input and output, and bad input.&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="DailyChallenge" scheme="http://CSUwangj.github.io/categories/DailyChallenge/"/>
+    
+    
+      <category term="CodeWars" scheme="http://CSUwangj.github.io/tags/CodeWars/"/>
+    
+  </entry>
+  
+  <entry>
     <title>2019-03-05 Daily Challenge</title>
     <link href="http://CSUwangj.github.io/2019-03-05-Daily-Challenge/"/>
     <id>http://CSUwangj.github.io/2019-03-05-Daily-Challenge/</id>
@@ -152,9 +173,9 @@
     
       <category term="CTF" scheme="http://CSUwangj.github.io/tags/CTF/"/>
     
-      <category term="Crypto" scheme="http://CSUwangj.github.io/tags/Crypto/"/>
-    
       <category term="Misc" scheme="http://CSUwangj.github.io/tags/Misc/"/>
+    
+      <category term="Crypto" scheme="http://CSUwangj.github.io/tags/Crypto/"/>
     
       <category term="PWN" scheme="http://CSUwangj.github.io/tags/PWN/"/>
     
@@ -431,32 +452,6 @@
     <summary type="html">
     
       &lt;p&gt;What I&amp;#39;ve done today is &lt;em&gt;XOR decryption&lt;/em&gt; in &lt;em&gt;Rust&lt;/em&gt; and &lt;em&gt;Sort List&lt;/em&gt; in &lt;em&gt;JavaScript&lt;/em&gt;.&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="DailyChallenge" scheme="http://CSUwangj.github.io/categories/DailyChallenge/"/>
-    
-    
-      <category term="Math" scheme="http://CSUwangj.github.io/tags/Math/"/>
-    
-      <category term="Algorithm" scheme="http://CSUwangj.github.io/tags/Algorithm/"/>
-    
-      <category term="LeetCode" scheme="http://CSUwangj.github.io/tags/LeetCode/"/>
-    
-      <category term="ProjectEuler" scheme="http://CSUwangj.github.io/tags/ProjectEuler/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>2019-02-16 Daily Challenge</title>
-    <link href="http://CSUwangj.github.io/2019-02-16-Daily-Challenge/"/>
-    <id>http://CSUwangj.github.io/2019-02-16-Daily-Challenge/</id>
-    <published>2019-02-15T16:09:22.000Z</published>
-    <updated>2019-02-15T16:09:35.758Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;What I&amp;#39;ve done today is &lt;em&gt;Spiral primes&lt;/em&gt; in &lt;em&gt;Rust&lt;/em&gt; and &lt;em&gt;First Bad Version&lt;/em&gt; in &lt;em&gt;JavaScript&lt;/em&gt;.&lt;/p&gt;
     
     </summary>
     

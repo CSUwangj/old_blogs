@@ -9,6 +9,17 @@
       </categories>
   </entry>
   <entry>
+    <title><![CDATA[2019-03-06 Daily Challenge]]></title>
+    <url>%2F2019-03-06-Daily-Challenge%2F</url>
+    <content type="text"><![CDATA[What I&#39;ve done today is Weight for weight in JavaScript. Although solution is clever, I still think that this problem is so dumb. Bad details, bad description towards input and output, and bad input. CodeWarsProblemWeight for weightMy friend John and I are members of the &quot;Fat to Fit Club (FFC)&quot;. John is worried because each month a list with the weights of members is published and each month he is the last on the list which means he is the heaviest. I am the one who establishes the list so I told him: &quot;Don&#39;t worry any more, I will modify the order of the list&quot;. It was decided to attribute a &quot;weight&quot; to numbers. The weight of a number will be from now on the sum of its digits. For example 99 will have &quot;weight&quot; 18, 100 will have &quot;weight&quot; 1 so in the list 100 will come before 99. Given a string with the weights of FFC members in normal order can you give this string ordered by &quot;weights&quot; of these numbers? Example:1&quot;56 65 74 100 99 68 86 180 90&quot;` ordered by numbers weights becomes: `&quot;100 180 90 56 65 74 68 86 99&quot; When two numbers have the same &quot;weight&quot;, let us class them as if they were strings and not numbers: 100 is before 180 because its &quot;weight&quot; (1) is less than the one of 180 (9) and 180 is before 90 since, having the same &quot;weight&quot; (9), it comes before as a string. All numbers in the list are positive numbers and the list can be empty. Notes it may happen that the input string have leading, trailing whitespaces and more than a unique whitespace between two consecutive numbers Don&#39;t modify the input For C: The result is freed. Solution12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152535455565758function orderWeight(strng) &#123; return strng.match(/[^ ]+/gi) .map(Number) .map(a =&gt; a.toString()) .sort((a, b) =&gt; &#123; return a.split("").map(e =&gt; +e).reduce((a, b) =&gt; a + b) - b.split("").map(e =&gt; +e).reduce((a, b) =&gt; a + b) ? a.split("").map(e =&gt; +e).reduce((a, b) =&gt; a + b) - b.split("").map(e =&gt; +e).reduce((a, b) =&gt; a + b) : (a &lt; b ? -1 : (a &gt; b ? 1 : 0)); &#125;).join(" ")&#125;function orderWeight(strng) &#123; const digitsum = (num) =&gt; num.split("").map(e =&gt; +e).reduce((a, b) =&gt; a + b); if (strng.search(/[^ ]+/) === -1) return ""; return strng.match(/[^ ]+/gi) .map(Number) .map(a =&gt; a.toString()) .sort((a, b) =&gt; &#123; return digitsum(a)-digitsum(b) ? digitsum(a)-digitsum(b) : (a &lt; b ? -1 : (a &gt; b ? 1 : 0)); &#125;).join(" ")&#125;function orderWeight(strng) &#123; const digitsum = (num) =&gt; num.split("").map(e =&gt; +e).reduce((a, b) =&gt; a + b); if (strng.search(/[^ ]+/) === -1) return ""; return strng.match(/[^ ]+/gi) .map(Number) .map(a =&gt; a.toString()) .sort((a, b) =&gt; &#123; return digitsum(a)-digitsum(b) ? digitsum(a)-digitsum(b) : a.localeCompare(b); &#125;).join(" ")&#125;function orderWeight(strng) &#123; return strng .split(" ") .map(function(v) &#123; return &#123; val: v, key: v.split("").reduce(function(prev, curr) &#123; return parseInt(prev) + parseInt(curr); &#125;, 0) &#125;; &#125;) .sort(function(a, b) &#123; return a.key == b.key ? a.val.localeCompare(b.val) : (a.key - b.key); &#125;) .map(function(v) &#123; return v.val; &#125;) .join(" ");&#125;]]></content>
+      <categories>
+        <category>DailyChallenge</category>
+      </categories>
+      <tags>
+        <tag>CodeWars</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[2019-03-05 Daily Challenge]]></title>
     <url>%2F2019-03-05-Daily-Challenge%2F</url>
     <content type="text"><![CDATA[What I&#39;ve done today is Build a pile of Cubes in JavaScript. CodeWarsProblemBuild a pile of CubesYour task is to construct a building which will be a pile of n cubes. The cube at the bottom will have a volume of n^3, the cube above will have volume of (n-1)^3 and so on until the top which will have a volume of 1^3. You are given the total volume m of the building. Being given m can you find the number n of cubes you will have to build? The parameter of the function findNb (find_nb, find-nb, findNb) will be an integer m and you have to return the integer n such as n^3 + (n-1)^3 + ... + 1^3 = m if such a n exists or -1 if there is no such n. Examples:1234567findNb(1071225) --&gt; 45findNb(91716553919377) --&gt; -1mov rdi, 1071225call find_nb ; rax &lt;-- 45mov rdi, 91716553919377call find_nb ; rax &lt;-- -1 Solution1234567891011121314151617function findNb(m) &#123; let cur = 0; let sum = 0; while (sum &lt; m) &#123; cur += 1; sum += cur * cur * cur; &#125; return sum===m?cur:-1;&#125;function findNb(m) &#123; let n = 0; while (m &gt; 0) &#123; n += 1; m -= n ** 3; return m ? -1 : n&#125;]]></content>
@@ -72,8 +83,8 @@
       </categories>
       <tags>
         <tag>CTF</tag>
-        <tag>Crypto</tag>
         <tag>Misc</tag>
+        <tag>Crypto</tag>
         <tag>PWN</tag>
         <tag>Forensics</tag>
       </tags>
@@ -1194,8 +1205,8 @@
       </categories>
       <tags>
         <tag>CTF</tag>
-        <tag>Crypto</tag>
         <tag>Misc</tag>
+        <tag>Crypto</tag>
       </tags>
   </entry>
   <entry>
@@ -1207,8 +1218,8 @@
       </categories>
       <tags>
         <tag>CTF</tag>
-        <tag>Crypto</tag>
         <tag>Misc</tag>
+        <tag>Crypto</tag>
         <tag>PWN</tag>
         <tag>Web</tag>
         <tag>Rev</tag>
@@ -1263,8 +1274,8 @@
       </categories>
       <tags>
         <tag>CTF</tag>
-        <tag>Crypto</tag>
         <tag>Misc</tag>
+        <tag>Crypto</tag>
         <tag>PWN</tag>
         <tag>Web</tag>
       </tags>
@@ -1301,8 +1312,8 @@
         <category>Tools</category>
       </categories>
       <tags>
-        <tag>Crypto</tag>
         <tag>Misc</tag>
+        <tag>Crypto</tag>
       </tags>
   </entry>
   <entry>
@@ -1314,8 +1325,8 @@
       </categories>
       <tags>
         <tag>CTF</tag>
-        <tag>Crypto</tag>
         <tag>Misc</tag>
+        <tag>Crypto</tag>
         <tag>PWN</tag>
         <tag>Web</tag>
         <tag>Rev</tag>
