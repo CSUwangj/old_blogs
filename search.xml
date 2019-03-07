@@ -9,6 +9,17 @@
       </categories>
   </entry>
   <entry>
+    <title><![CDATA[2019-03-08 Daily Challenge]]></title>
+    <url>%2F2019-03-08-Daily-Challenge%2F</url>
+    <content type="text"><![CDATA[What I&#39;ve done today is PaginationHelper in JavaScript. Problem is misleading and description is like shit. Data is poor. CodeWarsProblemPaginationHelperFor this exercise you will be strengthening your page-fu mastery. You will complete the PaginationHelper class, which is a utility class helpful for querying paging information related to an array. The class is designed to take in an array of values and an integer indicating how many items will be allowed per each page. The types of values contained within the collection/array are not relevant. The following are some examples of how this class is used: 123456789101112var helper = new PaginationHelper(['a','b','c','d','e','f'], 4);helper.pageCount(); //should == 2helper.itemCount(); //should == 6helper.pageItemCount(0); //should == 4helper.pageItemCount(1); // last page - should == 2helper.pageItemCount(2); // should == -1 since the page is invalid// pageIndex takes an item index and returns the page that it belongs onhelper.pageIndex(5); //should == 1 (zero based index)helper.pageIndex(2); //should == 0helper.pageIndex(20); //should == -1helper.pageIndex(-10); //should == -1 Solution123456789101112131415161718192021222324252627282930313233// TODO: complete this object/class// The constructor takes in an array of items and a integer indicating how many// items fit within a single pagefunction PaginationHelper(collection, itemsPerPage)&#123; this.cap = itemsPerPage; this.size = collection.length;&#125;// returns the number of items within the entire collectionPaginationHelper.prototype.itemCount = function() &#123; return this.size;&#125;// returns the number of pagesPaginationHelper.prototype.pageCount = function() &#123; return Math.ceil(this.size/this.cap);&#125;// returns the number of items on the current page. page_index is zero based.// this method should return -1 for pageIndex values that are out of rangePaginationHelper.prototype.pageItemCount = function(pageIndex) &#123; if (pageIndex &lt; 0 || pageIndex &gt; Math.floor(this.size/this.cap)) return -1; else if (pageIndex === Math.floor(this.size/this.cap)) return this.size % this.cap; return this.cap;&#125;// determines what page an item is on. Zero based indexes// this method should return -1 for itemIndex values that are out of rangePaginationHelper.prototype.pageIndex = function(itemIndex) &#123; if (itemIndex &lt; 0 || itemIndex &gt;= this.size) return -1; return this.size===0?-1:Math.floor(itemIndex/this.cap);&#125; 12345678910111213141516171819202122232425262728293031323334// TODO: complete this object/class// The constructor takes in an array of items and a integer indicating how many// items fit within a single pagefunction PaginationHelper(collection, itemsPerPage)&#123; this.cap = itemsPerPage; this.size = collection.length;&#125;// returns the number of items within the entire collectionPaginationHelper.prototype.itemCount = function() &#123; return this.size;&#125;// returns the number of pagesPaginationHelper.prototype.pageCount = function() &#123; return Math.ceil(this.size/this.cap);&#125;// returns the number of items on the current page. page_index is zero based.// this method should return -1 for pageIndex values that are out of rangePaginationHelper.prototype.pageItemCount = function(pageIndex) &#123; return pageIndex &lt; this.pageCount() ? Math.min(this.itemsPerPage, this.size - pageIndex * this.cap) : -1;&#125;// determines what page an item is on. Zero based indexes// this method should return -1 for itemIndex values that are out of rangePaginationHelper.prototype.pageIndex = function(itemIndex) &#123; return itemIndex &lt; this.size &amp;&amp; itemIndex &gt;= 0 ? Math.floor(itemIndex/this.cap) : -1;&#125;]]></content>
+      <categories>
+        <category>DailyChallenge</category>
+      </categories>
+      <tags>
+        <tag>CodeWars</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[2019-03-07 Daily Challenge]]></title>
     <url>%2F2019-03-07-Daily-Challenge%2F</url>
     <content type="text"><![CDATA[What I&#39;ve done today is Extract the domain name from a URL in JavaScript. Problem is misleading and description is like shit. Data is poor. CodeWarsProblemExtract the domain name from a URLWrite a function that when given a URL as a string, parses out just the domain name and returns it as a string. For example: 123domainName("http://github.com/carbonfive/raygun") == "github" domainName("http://www.zombie-bites.com") == "zombie-bites"domainName("https://www.cnet.com") == "cnet" Solution123456function domainName(url)&#123; let s = url.replace(/https?:\/\//, "").split("/")[0]; s = s.split("."); if (s.length &gt; 2 &amp;&amp; s[s.length-2] == "co") return s[s.length-3]; else return s[s.length-2];&#125; In fact subdomain does not need to be &quot;www&quot;, so... Shit problem]]></content>
@@ -93,8 +104,8 @@
         <category>WriteUp</category>
       </categories>
       <tags>
-        <tag>Misc</tag>
         <tag>Crypto</tag>
+        <tag>Misc</tag>
         <tag>CTF</tag>
         <tag>PWN</tag>
         <tag>Forensics</tag>
@@ -1215,8 +1226,8 @@
         <category>WriteUp</category>
       </categories>
       <tags>
-        <tag>Misc</tag>
         <tag>Crypto</tag>
+        <tag>Misc</tag>
         <tag>CTF</tag>
       </tags>
   </entry>
@@ -1228,8 +1239,8 @@
         <category>WriteUp</category>
       </categories>
       <tags>
-        <tag>Misc</tag>
         <tag>Crypto</tag>
+        <tag>Misc</tag>
         <tag>CTF</tag>
         <tag>PWN</tag>
         <tag>Web</tag>
@@ -1284,8 +1295,8 @@
         <category>WriteUp</category>
       </categories>
       <tags>
-        <tag>Misc</tag>
         <tag>Crypto</tag>
+        <tag>Misc</tag>
         <tag>CTF</tag>
         <tag>PWN</tag>
         <tag>Web</tag>
@@ -1323,8 +1334,8 @@
         <category>Tools</category>
       </categories>
       <tags>
-        <tag>Misc</tag>
         <tag>Crypto</tag>
+        <tag>Misc</tag>
       </tags>
   </entry>
   <entry>
@@ -1335,8 +1346,8 @@
         <category>WriteUp</category>
       </categories>
       <tags>
-        <tag>Misc</tag>
         <tag>Crypto</tag>
+        <tag>Misc</tag>
         <tag>CTF</tag>
         <tag>PWN</tag>
         <tag>Web</tag>
