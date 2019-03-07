@@ -35,6 +35,27 @@
   </entry>
   
   <entry>
+    <title>2019-03-07 Daily Challenge</title>
+    <link href="http://CSUwangj.github.io/2019-03-07-Daily-Challenge/"/>
+    <id>http://CSUwangj.github.io/2019-03-07-Daily-Challenge/</id>
+    <published>2019-03-07T02:19:46.000Z</published>
+    <updated>2019-03-07T02:22:53.169Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;What I&amp;#39;ve done today is &lt;em&gt;Extract the domain name from a URL&lt;/em&gt; in &lt;em&gt;JavaScript&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;Problem is misleading and description is like shit. Data is poor.&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="DailyChallenge" scheme="http://CSUwangj.github.io/categories/DailyChallenge/"/>
+    
+    
+      <category term="CodeWars" scheme="http://CSUwangj.github.io/tags/CodeWars/"/>
+    
+  </entry>
+  
+  <entry>
     <title>2019-03-06 Daily Challenge</title>
     <link href="http://CSUwangj.github.io/2019-03-06-Daily-Challenge/"/>
     <id>http://CSUwangj.github.io/2019-03-06-Daily-Challenge/</id>
@@ -171,11 +192,11 @@
       <category term="WriteUp" scheme="http://CSUwangj.github.io/categories/WriteUp/"/>
     
     
-      <category term="CTF" scheme="http://CSUwangj.github.io/tags/CTF/"/>
-    
       <category term="Misc" scheme="http://CSUwangj.github.io/tags/Misc/"/>
     
       <category term="Crypto" scheme="http://CSUwangj.github.io/tags/Crypto/"/>
+    
+      <category term="CTF" scheme="http://CSUwangj.github.io/tags/CTF/"/>
     
       <category term="PWN" scheme="http://CSUwangj.github.io/tags/PWN/"/>
     
@@ -426,32 +447,6 @@
     <summary type="html">
     
       &lt;p&gt;What I&amp;#39;ve done today is &lt;em&gt;Prime pair sets&lt;/em&gt; in &lt;em&gt;Rust&lt;/em&gt; and &lt;em&gt;Generate Parentheses&lt;/em&gt; in &lt;em&gt;JavaScript&lt;/em&gt;.&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="DailyChallenge" scheme="http://CSUwangj.github.io/categories/DailyChallenge/"/>
-    
-    
-      <category term="Math" scheme="http://CSUwangj.github.io/tags/Math/"/>
-    
-      <category term="Algorithm" scheme="http://CSUwangj.github.io/tags/Algorithm/"/>
-    
-      <category term="LeetCode" scheme="http://CSUwangj.github.io/tags/LeetCode/"/>
-    
-      <category term="ProjectEuler" scheme="http://CSUwangj.github.io/tags/ProjectEuler/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>2019-02-17 Daily Challenge</title>
-    <link href="http://CSUwangj.github.io/2019-02-17-Daily-Challenge/"/>
-    <id>http://CSUwangj.github.io/2019-02-17-Daily-Challenge/</id>
-    <published>2019-02-16T17:04:46.000Z</published>
-    <updated>2019-02-16T17:07:19.559Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;What I&amp;#39;ve done today is &lt;em&gt;XOR decryption&lt;/em&gt; in &lt;em&gt;Rust&lt;/em&gt; and &lt;em&gt;Sort List&lt;/em&gt; in &lt;em&gt;JavaScript&lt;/em&gt;.&lt;/p&gt;
     
     </summary>
     

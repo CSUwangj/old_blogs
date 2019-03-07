@@ -9,6 +9,17 @@
       </categories>
   </entry>
   <entry>
+    <title><![CDATA[2019-03-07 Daily Challenge]]></title>
+    <url>%2F2019-03-07-Daily-Challenge%2F</url>
+    <content type="text"><![CDATA[What I&#39;ve done today is Extract the domain name from a URL in JavaScript. Problem is misleading and description is like shit. Data is poor. CodeWarsProblemExtract the domain name from a URLWrite a function that when given a URL as a string, parses out just the domain name and returns it as a string. For example: 123domainName("http://github.com/carbonfive/raygun") == "github" domainName("http://www.zombie-bites.com") == "zombie-bites"domainName("https://www.cnet.com") == "cnet" Solution123456function domainName(url)&#123; let s = url.replace(/https?:\/\//, "").split("/")[0]; s = s.split("."); if (s.length &gt; 2 &amp;&amp; s[s.length-2] == "co") return s[s.length-3]; else return s[s.length-2];&#125; In fact subdomain does not need to be &quot;www&quot;, so... Shit problem]]></content>
+      <categories>
+        <category>DailyChallenge</category>
+      </categories>
+      <tags>
+        <tag>CodeWars</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[2019-03-06 Daily Challenge]]></title>
     <url>%2F2019-03-06-Daily-Challenge%2F</url>
     <content type="text"><![CDATA[What I&#39;ve done today is Weight for weight in JavaScript. Although solution is clever, I still think that this problem is so dumb. Bad details, bad description towards input and output, and bad input. CodeWarsProblemWeight for weightMy friend John and I are members of the &quot;Fat to Fit Club (FFC)&quot;. John is worried because each month a list with the weights of members is published and each month he is the last on the list which means he is the heaviest. I am the one who establishes the list so I told him: &quot;Don&#39;t worry any more, I will modify the order of the list&quot;. It was decided to attribute a &quot;weight&quot; to numbers. The weight of a number will be from now on the sum of its digits. For example 99 will have &quot;weight&quot; 18, 100 will have &quot;weight&quot; 1 so in the list 100 will come before 99. Given a string with the weights of FFC members in normal order can you give this string ordered by &quot;weights&quot; of these numbers? Example:1&quot;56 65 74 100 99 68 86 180 90&quot;` ordered by numbers weights becomes: `&quot;100 180 90 56 65 74 68 86 99&quot; When two numbers have the same &quot;weight&quot;, let us class them as if they were strings and not numbers: 100 is before 180 because its &quot;weight&quot; (1) is less than the one of 180 (9) and 180 is before 90 since, having the same &quot;weight&quot; (9), it comes before as a string. All numbers in the list are positive numbers and the list can be empty. Notes it may happen that the input string have leading, trailing whitespaces and more than a unique whitespace between two consecutive numbers Don&#39;t modify the input For C: The result is freed. Solution12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152535455565758function orderWeight(strng) &#123; return strng.match(/[^ ]+/gi) .map(Number) .map(a =&gt; a.toString()) .sort((a, b) =&gt; &#123; return a.split("").map(e =&gt; +e).reduce((a, b) =&gt; a + b) - b.split("").map(e =&gt; +e).reduce((a, b) =&gt; a + b) ? a.split("").map(e =&gt; +e).reduce((a, b) =&gt; a + b) - b.split("").map(e =&gt; +e).reduce((a, b) =&gt; a + b) : (a &lt; b ? -1 : (a &gt; b ? 1 : 0)); &#125;).join(" ")&#125;function orderWeight(strng) &#123; const digitsum = (num) =&gt; num.split("").map(e =&gt; +e).reduce((a, b) =&gt; a + b); if (strng.search(/[^ ]+/) === -1) return ""; return strng.match(/[^ ]+/gi) .map(Number) .map(a =&gt; a.toString()) .sort((a, b) =&gt; &#123; return digitsum(a)-digitsum(b) ? digitsum(a)-digitsum(b) : (a &lt; b ? -1 : (a &gt; b ? 1 : 0)); &#125;).join(" ")&#125;function orderWeight(strng) &#123; const digitsum = (num) =&gt; num.split("").map(e =&gt; +e).reduce((a, b) =&gt; a + b); if (strng.search(/[^ ]+/) === -1) return ""; return strng.match(/[^ ]+/gi) .map(Number) .map(a =&gt; a.toString()) .sort((a, b) =&gt; &#123; return digitsum(a)-digitsum(b) ? digitsum(a)-digitsum(b) : a.localeCompare(b); &#125;).join(" ")&#125;function orderWeight(strng) &#123; return strng .split(" ") .map(function(v) &#123; return &#123; val: v, key: v.split("").reduce(function(prev, curr) &#123; return parseInt(prev) + parseInt(curr); &#125;, 0) &#125;; &#125;) .sort(function(a, b) &#123; return a.key == b.key ? a.val.localeCompare(b.val) : (a.key - b.key); &#125;) .map(function(v) &#123; return v.val; &#125;) .join(" ");&#125;]]></content>
@@ -82,9 +93,9 @@
         <category>WriteUp</category>
       </categories>
       <tags>
-        <tag>CTF</tag>
         <tag>Misc</tag>
         <tag>Crypto</tag>
+        <tag>CTF</tag>
         <tag>PWN</tag>
         <tag>Forensics</tag>
       </tags>
@@ -1204,9 +1215,9 @@
         <category>WriteUp</category>
       </categories>
       <tags>
-        <tag>CTF</tag>
         <tag>Misc</tag>
         <tag>Crypto</tag>
+        <tag>CTF</tag>
       </tags>
   </entry>
   <entry>
@@ -1217,9 +1228,9 @@
         <category>WriteUp</category>
       </categories>
       <tags>
-        <tag>CTF</tag>
         <tag>Misc</tag>
         <tag>Crypto</tag>
+        <tag>CTF</tag>
         <tag>PWN</tag>
         <tag>Web</tag>
         <tag>Rev</tag>
@@ -1245,8 +1256,8 @@
         <category>WriteUp</category>
       </categories>
       <tags>
-        <tag>CTF</tag>
         <tag>Crypto</tag>
+        <tag>CTF</tag>
       </tags>
   </entry>
   <entry>
@@ -1273,9 +1284,9 @@
         <category>WriteUp</category>
       </categories>
       <tags>
-        <tag>CTF</tag>
         <tag>Misc</tag>
         <tag>Crypto</tag>
+        <tag>CTF</tag>
         <tag>PWN</tag>
         <tag>Web</tag>
       </tags>
@@ -1324,9 +1335,9 @@
         <category>WriteUp</category>
       </categories>
       <tags>
-        <tag>CTF</tag>
         <tag>Misc</tag>
         <tag>Crypto</tag>
+        <tag>CTF</tag>
         <tag>PWN</tag>
         <tag>Web</tag>
         <tag>Rev</tag>
@@ -1340,8 +1351,8 @@
         <category>WriteUp</category>
       </categories>
       <tags>
-        <tag>CTF</tag>
         <tag>Misc</tag>
+        <tag>CTF</tag>
         <tag>Rev</tag>
       </tags>
   </entry>
