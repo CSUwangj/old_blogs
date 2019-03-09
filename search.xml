@@ -9,6 +9,17 @@
       </categories>
   </entry>
   <entry>
+    <title><![CDATA[2019-03-10 Daily Challenge]]></title>
+    <url>%2F2019-03-10-Daily-Challenge%2F</url>
+    <content type="text"><![CDATA[What I&#39;ve done today is Where my anagrams at? in JavaScript. Problem is misleading and description is like shit. Data is poor. CodeWarsProblemWhere my anagrams at?What is an anagram? Well, two words are anagrams of each other if they both contain the same letters. For example: 1234567&apos;abba&apos; &amp; &apos;baab&apos; == true&apos;abba&apos; &amp; &apos;bbaa&apos; == true&apos;abba&apos; &amp; &apos;abbba&apos; == false&apos;abba&apos; &amp; &apos;abca&apos; == false Write a function that will find all the anagrams of a word from a list. You will be given two inputs a word and an array with words. You should return an array of all the anagrams or an empty array if there are none. For example: 12345anagrams('abba', ['aabb', 'abcd', 'bbaa', 'dada']) =&gt; ['aabb', 'bbaa']anagrams('racer', ['crazer', 'carer', 'racar', 'caers', 'racer']) =&gt; ['carer', 'racer']anagrams('laser', ['lazing', 'lazy', 'lacer']) =&gt; [] Solution123456789101112131415161718192021function anagrams(word, words) &#123; return words.filter(w =&gt; word.split("").sort().join("")===w.split("").sort().join(""))&#125;////function anagrams(word, words) &#123; word = word.split("").sort().join(""); return words.filter(w =&gt; word===w.split("").sort().join(""))&#125;////String.prototype.sort = function() &#123; return this.split("").sort().join("");&#125;;function anagrams(word, words) &#123; return words.filter(x =&gt; x.sort() === word.sort());&#125;////]]></content>
+      <categories>
+        <category>DailyChallenge</category>
+      </categories>
+      <tags>
+        <tag>CodeWars</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[2019-03-09 Daily Challenge]]></title>
     <url>%2F2019-03-09-Daily-Challenge%2F</url>
     <content type="text"><![CDATA[What I&#39;ve done today is Simple Pig Latin in JavaScript. Problem is misleading and description is like shit. Data is poor. CodeWarsProblemSimple Pig LatinMove the first letter of each word to the end of it, then add &quot;ay&quot; to the end of the word. Leave punctuation marks untouched. Examples12pigIt('Pig latin is cool'); // igPay atinlay siay oolcaypigIt('Hello world !'); // elloHay orldway ! Solution1234567function pigIt(str)&#123; return str.replace(/([a-zA-Z])([a-zA-Z]*)/gi, "$2$1ay");&#125;function pigIt(str)&#123; return str.replace(/(\w)(\w*)/gi, "$2$1ay");&#125;]]></content>
@@ -115,8 +126,8 @@
         <category>WriteUp</category>
       </categories>
       <tags>
-        <tag>Misc</tag>
         <tag>Crypto</tag>
+        <tag>Misc</tag>
         <tag>CTF</tag>
         <tag>PWN</tag>
         <tag>Forensics</tag>
@@ -1237,8 +1248,8 @@
         <category>WriteUp</category>
       </categories>
       <tags>
-        <tag>Misc</tag>
         <tag>Crypto</tag>
+        <tag>Misc</tag>
         <tag>CTF</tag>
       </tags>
   </entry>
@@ -1250,12 +1261,12 @@
         <category>WriteUp</category>
       </categories>
       <tags>
-        <tag>Misc</tag>
         <tag>Crypto</tag>
+        <tag>Misc</tag>
         <tag>CTF</tag>
         <tag>PWN</tag>
-        <tag>Rev</tag>
         <tag>Web</tag>
+        <tag>Rev</tag>
       </tags>
   </entry>
   <entry>
@@ -1306,8 +1317,8 @@
         <category>WriteUp</category>
       </categories>
       <tags>
-        <tag>Misc</tag>
         <tag>Crypto</tag>
+        <tag>Misc</tag>
         <tag>CTF</tag>
         <tag>PWN</tag>
         <tag>Web</tag>
@@ -1345,8 +1356,8 @@
         <category>Tools</category>
       </categories>
       <tags>
-        <tag>Misc</tag>
         <tag>Crypto</tag>
+        <tag>Misc</tag>
       </tags>
   </entry>
   <entry>
@@ -1357,12 +1368,12 @@
         <category>WriteUp</category>
       </categories>
       <tags>
-        <tag>Misc</tag>
         <tag>Crypto</tag>
+        <tag>Misc</tag>
         <tag>CTF</tag>
         <tag>PWN</tag>
-        <tag>Rev</tag>
         <tag>Web</tag>
+        <tag>Rev</tag>
       </tags>
   </entry>
   <entry>
