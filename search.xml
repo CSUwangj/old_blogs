@@ -9,9 +9,20 @@
       </categories>
   </entry>
   <entry>
+    <title><![CDATA[2019-03-12 Daily Challenge]]></title>
+    <url>%2F2019-03-12-Daily-Challenge%2F</url>
+    <content type="text"><![CDATA[What I&#39;ve done today is Range Extraction in JavaScript. Currying is awesome! CodeWarsProblemRange ExtractionA format for expressing an ordered list of integers is to use a comma separated list of either individual integers or a range of integers denoted by the starting integer separated from the end integer in the range by a dash, &#39;-&#39;. The range includes all integers in the interval including both endpoints. It is not considered a range unless it spans at least 3 numbers. For example (&quot;12, 13, 15-17&quot;) Complete the solution so that it takes a list of integers in increasing order and returns a correctly formatted string in the range format. Example: 12solution([-6, -3, -2, -1, 0, 1, 3, 4, 5, 7, 8, 9, 10, 11, 14, 15, 17, 18, 19, 20]);// returns "-6,-3-1,3-5,7-11,14,15,17-20" Solution12345678910111213141516171819202122232425262728293031323334353637383940function solution(list) &#123; let ans = ""; if (!list.length) return ans; let cur = list[0]; let begin = list[0]; for (let i = 1; i &lt; list.length; ++i) &#123; if (list[i] === cur + 1) &#123; cur += 1; &#125; else &#123; if (cur - begin &gt; 1) &#123; ans += `$&#123;begin&#125;-$&#123;cur&#125;,`; &#125; else &#123; ans += begin === cur ? `$&#123;begin&#125;,` : `$&#123;begin&#125;,$&#123;cur&#125;,`; &#125; begin = cur = list[i]; &#125; &#125; if (cur - begin &gt; 1) &#123; ans += `$&#123;begin&#125;-$&#123;cur&#125;,`; &#125; else &#123; ans += begin === cur ? `$&#123;begin&#125;,` : `$&#123;begin&#125;,$&#123;cur&#125;,`; &#125; return ans.slice(0, ans.length - 1);&#125;function solution(list) &#123; for (let i = 0; i &lt; list.length; ++i) &#123; let index = i; while (list[index] - list[index+1] === -1) index += 1; if (index !== 0 &amp;&amp; index - i &gt; 1) list.splice(i, index-i+1, list[i]+"-"+list[index]); &#125; return list.join();&#125;const solution = l =&gt; l.map((cur, i, arr) =&gt; (cur - 1 === arr[i - 1] &amp;&amp; cur + 1 === arr[i + 1] ? "-" : cur)) .map((cur, i, arr) =&gt; (cur !== arr[i + 1] ? cur : "@")) .filter(e =&gt; e !== "@") .join(",") .replace(/(,-,)/g, "-");]]></content>
+      <categories>
+        <category>DailyChallenge</category>
+      </categories>
+      <tags>
+        <tag>CodeWars</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[2019-03-11 Daily Challenge]]></title>
     <url>%2F2019-03-11-Daily-Challenge%2F</url>
-    <content type="text"><![CDATA[What I&#39;ve done today is A Chain adding function in JavaScript. Problem is misleading and description is like shit. Data is poor. CodeWarsProblemA Chain adding functionWe want to create a function that will add numbers together when called in succession. 12add(1)(2);// returns 3 We also want to be able to continue to add numbers to our chain. 123add(1)(2)(3); // 6add(1)(2)(3)(4); // 10add(1)(2)(3)(4)(5); // 15 and so on. A single call should return the number passed in. 1add(1); // 1 We should be able to store the returned values and reuse them. 12345var addTwo = add(2);addTwo; // 2addTwo + 5; // 7addTwo(3); // 5addTwo(3)(5); // 10 We can assume any number being passed in will be valid whole number. Solution12345function add(n)&#123; const f = (x) =&gt; add(x+n); f.valueOf = () =&gt; n; return f;&#125;]]></content>
+    <content type="text"><![CDATA[What I&#39;ve done today is A Chain adding function in JavaScript. Currying is awesome! CodeWarsProblemA Chain adding functionWe want to create a function that will add numbers together when called in succession. 12add(1)(2);// returns 3 We also want to be able to continue to add numbers to our chain. 123add(1)(2)(3); // 6add(1)(2)(3)(4); // 10add(1)(2)(3)(4)(5); // 15 and so on. A single call should return the number passed in. 1add(1); // 1 We should be able to store the returned values and reuse them. 12345var addTwo = add(2);addTwo; // 2addTwo + 5; // 7addTwo(3); // 5addTwo(3)(5); // 10 We can assume any number being passed in will be valid whole number. Solution12345function add(n)&#123; const f = (x) =&gt; add(x+n); f.valueOf = () =&gt; n; return f;&#125;]]></content>
       <categories>
         <category>DailyChallenge</category>
       </categories>
@@ -139,8 +150,8 @@
       <tags>
         <tag>CTF</tag>
         <tag>Crypto</tag>
-        <tag>PWN</tag>
         <tag>Misc</tag>
+        <tag>PWN</tag>
         <tag>Forensics</tag>
       </tags>
   </entry>
@@ -1274,8 +1285,8 @@
       <tags>
         <tag>CTF</tag>
         <tag>Crypto</tag>
-        <tag>PWN</tag>
         <tag>Misc</tag>
+        <tag>PWN</tag>
         <tag>Web</tag>
         <tag>Rev</tag>
       </tags>
@@ -1330,8 +1341,8 @@
       <tags>
         <tag>CTF</tag>
         <tag>Crypto</tag>
-        <tag>PWN</tag>
         <tag>Misc</tag>
+        <tag>PWN</tag>
         <tag>Web</tag>
       </tags>
   </entry>
@@ -1381,8 +1392,8 @@
       <tags>
         <tag>CTF</tag>
         <tag>Crypto</tag>
-        <tag>PWN</tag>
         <tag>Misc</tag>
+        <tag>PWN</tag>
         <tag>Web</tag>
         <tag>Rev</tag>
       </tags>

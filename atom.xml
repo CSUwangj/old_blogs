@@ -35,16 +35,37 @@
   </entry>
   
   <entry>
+    <title>2019-03-12 Daily Challenge</title>
+    <link href="http://CSUwangj.github.io/2019-03-12-Daily-Challenge/"/>
+    <id>http://CSUwangj.github.io/2019-03-12-Daily-Challenge/</id>
+    <published>2019-03-11T16:14:59.000Z</published>
+    <updated>2019-03-11T16:16:27.500Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;What I&amp;#39;ve done today is &lt;em&gt;Range Extraction&lt;/em&gt; in &lt;em&gt;JavaScript&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;Currying is awesome!&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="DailyChallenge" scheme="http://CSUwangj.github.io/categories/DailyChallenge/"/>
+    
+    
+      <category term="CodeWars" scheme="http://CSUwangj.github.io/tags/CodeWars/"/>
+    
+  </entry>
+  
+  <entry>
     <title>2019-03-11 Daily Challenge</title>
     <link href="http://CSUwangj.github.io/2019-03-11-Daily-Challenge/"/>
     <id>http://CSUwangj.github.io/2019-03-11-Daily-Challenge/</id>
     <published>2019-03-11T06:10:36.000Z</published>
-    <updated>2019-03-11T06:12:15.994Z</updated>
+    <updated>2019-03-11T16:15:32.327Z</updated>
     
     <summary type="html">
     
       &lt;p&gt;What I&amp;#39;ve done today is &lt;em&gt;A Chain adding function&lt;/em&gt; in &lt;em&gt;JavaScript&lt;/em&gt;.&lt;/p&gt;
-&lt;p&gt;Problem is misleading and description is like shit. Data is poor.&lt;/p&gt;
+&lt;p&gt;Currying is awesome!&lt;/p&gt;
     
     </summary>
     
@@ -279,9 +300,9 @@
     
       <category term="Crypto" scheme="http://CSUwangj.github.io/tags/Crypto/"/>
     
-      <category term="PWN" scheme="http://CSUwangj.github.io/tags/PWN/"/>
-    
       <category term="Misc" scheme="http://CSUwangj.github.io/tags/Misc/"/>
+    
+      <category term="PWN" scheme="http://CSUwangj.github.io/tags/PWN/"/>
     
       <category term="Forensics" scheme="http://CSUwangj.github.io/tags/Forensics/"/>
     
@@ -403,31 +424,6 @@
     <summary type="html">
     
       &lt;p&gt;What I&amp;#39;ve done today is &lt;em&gt;Convergents of e&lt;/em&gt; in &lt;em&gt;Rust&lt;/em&gt; and &lt;em&gt;Sum of two lowest positive integers&lt;/em&gt; in &lt;em&gt;JavaScript&lt;/em&gt;.&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="DailyChallenge" scheme="http://CSUwangj.github.io/categories/DailyChallenge/"/>
-    
-    
-      <category term="Math" scheme="http://CSUwangj.github.io/tags/Math/"/>
-    
-      <category term="ProjectEuler" scheme="http://CSUwangj.github.io/tags/ProjectEuler/"/>
-    
-      <category term="CodeWars" scheme="http://CSUwangj.github.io/tags/CodeWars/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>2019-02-22 Daily Challenge</title>
-    <link href="http://CSUwangj.github.io/2019-02-22-Daily-Challenge/"/>
-    <id>http://CSUwangj.github.io/2019-02-22-Daily-Challenge/</id>
-    <published>2019-02-22T10:53:33.000Z</published>
-    <updated>2019-02-23T12:55:44.359Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;I&amp;#39;ve get tired with leetcode, especially meet strange runtime at yesterday. So I jumped into codewors and want to learn some fp and ES6 from Space :D&lt;/p&gt;
-&lt;p&gt;What I&amp;#39;ve done today is &lt;em&gt;Odd period square roots&lt;/em&gt; in &lt;em&gt;Rust&lt;/em&gt; and &lt;em&gt;Jaden Casing Strings&lt;/em&gt; in &lt;em&gt;JavaScript&lt;/em&gt;.&lt;/p&gt;
     
     </summary>
     
