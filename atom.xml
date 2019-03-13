@@ -35,6 +35,26 @@
   </entry>
   
   <entry>
+    <title>2019-03-14 Daily Challenge</title>
+    <link href="http://CSUwangj.github.io/2019-03-14-Daily-Challenge/"/>
+    <id>http://CSUwangj.github.io/2019-03-14-Daily-Challenge/</id>
+    <published>2019-03-13T16:09:22.000Z</published>
+    <updated>2019-03-13T16:11:42.537Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;What I&amp;#39;ve done today is &lt;em&gt;Moving Zeros To The End&lt;/em&gt; in &lt;em&gt;JavaScript&lt;/em&gt;.&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="DailyChallenge" scheme="http://CSUwangj.github.io/categories/DailyChallenge/"/>
+    
+    
+      <category term="CodeWars" scheme="http://CSUwangj.github.io/tags/CodeWars/"/>
+    
+  </entry>
+  
+  <entry>
     <title>2019-03-13 Daily Challenge</title>
     <link href="http://CSUwangj.github.io/2019-03-13-Daily-Challenge/"/>
     <id>http://CSUwangj.github.io/2019-03-13-Daily-Challenge/</id>
@@ -318,9 +338,9 @@
     
       <category term="CTF" scheme="http://CSUwangj.github.io/tags/CTF/"/>
     
-      <category term="Misc" scheme="http://CSUwangj.github.io/tags/Misc/"/>
-    
       <category term="Crypto" scheme="http://CSUwangj.github.io/tags/Crypto/"/>
+    
+      <category term="Misc" scheme="http://CSUwangj.github.io/tags/Misc/"/>
     
       <category term="PWN" scheme="http://CSUwangj.github.io/tags/PWN/"/>
     
@@ -403,32 +423,6 @@
     
       <category term="DailyChallenge" scheme="http://CSUwangj.github.io/categories/DailyChallenge/"/>
     
-    
-      <category term="CodeWars" scheme="http://CSUwangj.github.io/tags/CodeWars/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>2019-02-24 Daily Challenge</title>
-    <link href="http://CSUwangj.github.io/2019-02-24-Daily-Challenge/"/>
-    <id>http://CSUwangj.github.io/2019-02-24-Daily-Challenge/</id>
-    <published>2019-02-24T08:17:32.000Z</published>
-    <updated>2019-02-25T02:31:04.851Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;What I&amp;#39;ve done today is &lt;em&gt;Diophantine equation&lt;/em&gt; in &lt;em&gt;Rust&lt;/em&gt; and &lt;em&gt;Printer Errors&lt;/em&gt; in &lt;em&gt;JavaScript&lt;/em&gt;.&lt;/p&gt;
-&lt;p&gt;BTW, I found math became more and more difficult, far more than I&amp;#39;ve expected. I decided to learn some practical course before returning to math.&lt;/p&gt;
-&lt;p&gt;So there will be only CodeWars after today~&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="DailyChallenge" scheme="http://CSUwangj.github.io/categories/DailyChallenge/"/>
-    
-    
-      <category term="Math" scheme="http://CSUwangj.github.io/tags/Math/"/>
-    
-      <category term="ProjectEuler" scheme="http://CSUwangj.github.io/tags/ProjectEuler/"/>
     
       <category term="CodeWars" scheme="http://CSUwangj.github.io/tags/CodeWars/"/>
     
