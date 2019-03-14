@@ -35,6 +35,26 @@
   </entry>
   
   <entry>
+    <title>2019-03-15 Daily Challenge</title>
+    <link href="http://CSUwangj.github.io/2019-03-15-Daily-Challenge/"/>
+    <id>http://CSUwangj.github.io/2019-03-15-Daily-Challenge/</id>
+    <published>2019-03-14T16:10:10.000Z</published>
+    <updated>2019-03-14T16:11:47.909Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;What I&amp;#39;ve done today is &lt;em&gt;Pete, the baker&lt;/em&gt; in &lt;em&gt;JavaScript&lt;/em&gt;.&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="DailyChallenge" scheme="http://CSUwangj.github.io/categories/DailyChallenge/"/>
+    
+    
+      <category term="CodeWars" scheme="http://CSUwangj.github.io/tags/CodeWars/"/>
+    
+  </entry>
+  
+  <entry>
     <title>2019-03-14 Daily Challenge</title>
     <link href="http://CSUwangj.github.io/2019-03-14-Daily-Challenge/"/>
     <id>http://CSUwangj.github.io/2019-03-14-Daily-Challenge/</id>
@@ -338,9 +358,9 @@
     
       <category term="CTF" scheme="http://CSUwangj.github.io/tags/CTF/"/>
     
-      <category term="Crypto" scheme="http://CSUwangj.github.io/tags/Crypto/"/>
-    
       <category term="Misc" scheme="http://CSUwangj.github.io/tags/Misc/"/>
+    
+      <category term="Crypto" scheme="http://CSUwangj.github.io/tags/Crypto/"/>
     
       <category term="PWN" scheme="http://CSUwangj.github.io/tags/PWN/"/>
     
@@ -398,26 +418,6 @@
     <summary type="html">
     
       &lt;p&gt;What I&amp;#39;ve done today is &lt;em&gt;Vowel Count&lt;/em&gt; in &lt;em&gt;JavaScript&lt;/em&gt;.&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="DailyChallenge" scheme="http://CSUwangj.github.io/categories/DailyChallenge/"/>
-    
-    
-      <category term="CodeWars" scheme="http://CSUwangj.github.io/tags/CodeWars/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>2019-02-25 Daily Challenge</title>
-    <link href="http://CSUwangj.github.io/2019-02-25-Daily-Challenge/"/>
-    <id>http://CSUwangj.github.io/2019-02-25-Daily-Challenge/</id>
-    <published>2019-02-24T16:35:16.000Z</published>
-    <updated>2019-03-01T06:28:11.942Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;What I&amp;#39;ve done today is &lt;em&gt;Find the divisors!&lt;/em&gt; in &lt;em&gt;JavaScript&lt;/em&gt;.&lt;/p&gt;
     
     </summary>
     
