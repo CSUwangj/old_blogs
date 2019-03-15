@@ -35,6 +35,26 @@
   </entry>
   
   <entry>
+    <title>2019-03-16 Daily Challenge</title>
+    <link href="http://CSUwangj.github.io/2019-03-16-Daily-Challenge/"/>
+    <id>http://CSUwangj.github.io/2019-03-16-Daily-Challenge/</id>
+    <published>2019-03-15T16:53:11.000Z</published>
+    <updated>2019-03-15T16:54:33.826Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;What I&amp;#39;ve done today is &lt;em&gt;Nesting Structure Comparison&lt;/em&gt; in &lt;em&gt;JavaScript&lt;/em&gt;.&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="DailyChallenge" scheme="http://CSUwangj.github.io/categories/DailyChallenge/"/>
+    
+    
+      <category term="CodeWars" scheme="http://CSUwangj.github.io/tags/CodeWars/"/>
+    
+  </entry>
+  
+  <entry>
     <title>2019-03-15 Daily Challenge</title>
     <link href="http://CSUwangj.github.io/2019-03-15-Daily-Challenge/"/>
     <id>http://CSUwangj.github.io/2019-03-15-Daily-Challenge/</id>
@@ -398,26 +418,6 @@
     <summary type="html">
     
       &lt;p&gt;What I&amp;#39;ve done today is &lt;em&gt;Find The Parity Outlier&lt;/em&gt; in &lt;em&gt;JavaScript&lt;/em&gt;.&lt;br&gt;
-    
-    </summary>
-    
-      <category term="DailyChallenge" scheme="http://CSUwangj.github.io/categories/DailyChallenge/"/>
-    
-    
-      <category term="CodeWars" scheme="http://CSUwangj.github.io/tags/CodeWars/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>2019-02-26 Daily Challenge</title>
-    <link href="http://CSUwangj.github.io/2019-02-26-Daily-Challenge/"/>
-    <id>http://CSUwangj.github.io/2019-02-26-Daily-Challenge/</id>
-    <published>2019-02-25T16:01:36.000Z</published>
-    <updated>2019-03-01T06:28:04.526Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;What I&amp;#39;ve done today is &lt;em&gt;Vowel Count&lt;/em&gt; in &lt;em&gt;JavaScript&lt;/em&gt;.&lt;/p&gt;
     
     </summary>
     

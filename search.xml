@@ -9,6 +9,17 @@
       </categories>
   </entry>
   <entry>
+    <title><![CDATA[2019-03-16 Daily Challenge]]></title>
+    <url>%2F2019-03-16-Daily-Challenge%2F</url>
+    <content type="text"><![CDATA[What I&#39;ve done today is Nesting Structure Comparison in JavaScript. CodeWarsProblemNesting Structure ComparisonComplete the function/method (depending on the language) to return true/True when its argument is an array that has the same nesting structure as the first array. For example: 12345678910111213 // should return true[ 1, 1, 1 ].sameStructureAs( [ 2, 2, 2 ] ); [ 1, [ 1, 1 ] ].sameStructureAs( [ 2, [ 2, 2 ] ] ); // should return false [ 1, [ 1, 1 ] ].sameStructureAs( [ [ 2, 2 ], 2 ] ); [ 1, [ 1, 1 ] ].sameStructureAs( [ [ 2 ], 2 ] ); // should return true[ [ [ ], [ ] ] ].sameStructureAs( [ [ [ ], [ ] ] ] ); // should return false[ [ [ ], [ ] ] ].sameStructureAs( [ [ 1, 1 ] ] ); Solution12345678910111213141516Array.prototype.sameStructureAs = function (other) &#123; if (this.length !== other.length) return false; for (let i = 0; i &lt; this.length; ++i) &#123; if (Array.isArray(this[i]) &amp;&amp; !this[i].sameStructureAs(other[i])) return false; if (!Array.isArray(this[i]) &amp;&amp; Array.isArray(other[i])) return false; &#125; return true;&#125;;////Array.prototype.sameStructureAs = function (other) &#123; return (this.length === other.length) ? this.every( (e, i) =&gt; Array.isArray(e) ? e.sameStructureAs(other[i]) : true ) : false;&#125;;]]></content>
+      <categories>
+        <category>DailyChallenge</category>
+      </categories>
+      <tags>
+        <tag>CodeWars</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[2019-03-15 Daily Challenge]]></title>
     <url>%2F2019-03-15-Daily-Challenge%2F</url>
     <content type="text"><![CDATA[What I&#39;ve done today is Pete, the baker in JavaScript. CodeWarsProblemPete, the bakerPete likes to bake some cakes. He has some recipes and ingredients. Unfortunately he is not good in maths. Can you help him to find out, how many cakes he could bake considering his recipes? Write a function cakes(), which takes the recipe (object) and the available ingredients (also an object) and returns the maximum number of cakes Pete can bake (integer). For simplicity there are no units for the amounts (e.g. 1 lb of flour or 200 g of sugar are simply 1 or 200). Ingredients that are not present in the objects, can be considered as 0. Examples: 1234// must return 2cakes(&#123;flour: 500, sugar: 200, eggs: 1&#125;, &#123;flour: 1200, sugar: 1200, eggs: 5, milk: 200&#125;); // must return 0cakes(&#123;apples: 3, flour: 300, sugar: 150, milk: 100, oil: 100&#125;, &#123;sugar: 500, flour: 2000, milk: 2000&#125;); Solution123456789101112131415161718function cakes(recipe, available) &#123; let ans = Object.keys(recipe) .reduce( (a, b) =&gt; Math.min(a, Math.floor(available[b] / recipe[b])), Number.MAX_SAFE_INTEGER ); return isNaN(ans) ? 0 : ans;&#125;////function cakes(recipe, available) &#123; return Object.keys(recipe) .reduce( (a, b) =&gt; Math.min(a, Math.floor(available[b] / recipe[b]) || 0), Infinity );&#125;]]></content>
