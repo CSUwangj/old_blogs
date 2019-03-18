@@ -9,6 +9,17 @@
       </categories>
   </entry>
   <entry>
+    <title><![CDATA[2019-03-18 Daily Challenge]]></title>
+    <url>%2F2019-03-18-Daily-Challenge%2F</url>
+    <content type="text"><![CDATA[What I&#39;ve done today is Binary multiple of 3 in JavaScript. FSM is interesting! CodeWarsProblemBinary multiple of 3In this kata, your task is to create a regular expression capable of evaluating binary strings (strings with only 1s and 0s) and determining whether the given string represents a number divisible by 3. Take into account that: An empty string might be evaluated to true (it&#39;s not going to be tested, so you don&#39;t need to worry about it - unless you want) The input should consist only of binary digits - no spaces, other digits, alphanumeric characters, etc. There might be leading 0s. Examples (Javascript) multipleof3Regex.test(&#39;000&#39;) should be true multipleof3Regex.test(&#39;001&#39;) should be false multipleof3Regex.test(&#39;011&#39;) should be true multipleof3Regex.test(&#39;110&#39;) should be true multipleof3Regex.test(&#39; abc &#39;) should be false You can check more in the example test cases NoteThere&#39;s a way to develop an automata (FSM) that evaluates if strings representing numbers in a given base are divisible by a given number. You might want to check an example of an automata for doing this same particular task here. If you want to understand better the inner principles behind it, you might want to study how to get the modulo of an arbitrarily large number taking one digit at a time. SolutionAll you need to do is to build a Finite-state machine. If you&#39;ve learned CP, you&#39;ll know that regular expression is same as DFA(If I don&#39;t get it wrong). Also, here is an interesting website for regular expression. 1var multipleOf3Regex = /^(0*(1(1|(01*0)+1))*)*$/;]]></content>
+      <categories>
+        <category>DailyChallenge</category>
+      </categories>
+      <tags>
+        <tag>CodeWars</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[2019-03-17 Daily Challenge]]></title>
     <url>%2F2019-03-17-Daily-Challenge%2F</url>
     <content type="text"><![CDATA[What I&#39;ve done today is Counting Change Combinations in JavaScript. DP sucks. CodeWarsProblemCounting Change CombinationsWrite a function that counts how many different ways you can make change for an amount of money, given an array of coin denominations. For example, there are 3 ways to give change for 4 if you have coins with denomination 1 and 2: 11+1+1+1, 1+1+2, 2+2. The order of coins does not matter: 11+1+2 == 2+1+1 Also, assume that you have an infinite amount of coins. Your function should take an amount to change and an array of unique denominations for the coins: 123countChange(4, [1,2]) // =&gt; 3countChange(10, [5,2,3]) // =&gt; 4countChange(11, [5,7]) // =&gt; 0 Solution12345678910111213141516171819202122232425var countChange = function (money, coins) &#123; let dp = new Array(money + 1).fill(0); dp[0] = 1; for (let coin of coins) &#123; for (let i = 0; i &lt;= money - coin; ++i) &#123; if (dp[i]) dp[i + coin] += dp[i]; &#125; &#125; return dp[money];&#125;////const countChange = (money, coins) =&gt; money === 0 ? 1 : coins.filter(e =&gt; e &lt;= money).reduce((s, _, i, coins) =&gt; s + countChange(money - coins[i], coins.slice(i)), 0);////let countChange = (money, coins) =&gt; &#123; let [coin, ...rest] = coins; if (!coin) return 0; if (money &lt; 0) return 0; if (money === 0) return 1; return countChange(money - coin, coins) + countChange(money, rest);&#125;]]></content>
@@ -1342,8 +1353,8 @@
         <tag>Crypto</tag>
         <tag>Misc</tag>
         <tag>PWN</tag>
-        <tag>Web</tag>
         <tag>Rev</tag>
+        <tag>Web</tag>
       </tags>
   </entry>
   <entry>
@@ -1449,8 +1460,8 @@
         <tag>Crypto</tag>
         <tag>Misc</tag>
         <tag>PWN</tag>
-        <tag>Web</tag>
         <tag>Rev</tag>
+        <tag>Web</tag>
       </tags>
   </entry>
   <entry>

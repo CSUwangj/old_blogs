@@ -35,6 +35,27 @@
   </entry>
   
   <entry>
+    <title>2019-03-18 Daily Challenge</title>
+    <link href="http://CSUwangj.github.io/2019-03-18-Daily-Challenge/"/>
+    <id>http://CSUwangj.github.io/2019-03-18-Daily-Challenge/</id>
+    <published>2019-03-18T11:18:45.000Z</published>
+    <updated>2019-03-18T11:24:10.926Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;What I&amp;#39;ve done today is &lt;em&gt;Binary multiple of 3&lt;/em&gt; in &lt;em&gt;JavaScript&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;FSM is interesting!&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="DailyChallenge" scheme="http://CSUwangj.github.io/categories/DailyChallenge/"/>
+    
+    
+      <category term="CodeWars" scheme="http://CSUwangj.github.io/tags/CodeWars/"/>
+    
+  </entry>
+  
+  <entry>
     <title>2019-03-17 Daily Challenge</title>
     <link href="http://CSUwangj.github.io/2019-03-17-Daily-Challenge/"/>
     <id>http://CSUwangj.github.io/2019-03-17-Daily-Challenge/</id>
@@ -406,26 +427,6 @@
       <category term="PWN" scheme="http://CSUwangj.github.io/tags/PWN/"/>
     
       <category term="Forensics" scheme="http://CSUwangj.github.io/tags/Forensics/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>2019-02-28 Daily Challenge</title>
-    <link href="http://CSUwangj.github.io/2019-02-28-Daily-Challenge/"/>
-    <id>http://CSUwangj.github.io/2019-02-28-Daily-Challenge/</id>
-    <published>2019-02-27T16:41:30.000Z</published>
-    <updated>2019-03-01T06:27:49.081Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;What I&amp;#39;ve done today is &lt;em&gt;Tribonacci Sequence&lt;/em&gt; in &lt;em&gt;JavaScript&lt;/em&gt;.&lt;br&gt;
-    
-    </summary>
-    
-      <category term="DailyChallenge" scheme="http://CSUwangj.github.io/categories/DailyChallenge/"/>
-    
-    
-      <category term="CodeWars" scheme="http://CSUwangj.github.io/tags/CodeWars/"/>
     
   </entry>
   
