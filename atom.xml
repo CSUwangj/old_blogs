@@ -35,6 +35,29 @@
   </entry>
   
   <entry>
+    <title>Regex Golf Challenge</title>
+    <link href="http://CSUwangj.github.io/Regex-Golf-Challenge/"/>
+    <id>http://CSUwangj.github.io/Regex-Golf-Challenge/</id>
+    <published>2019-03-18T13:23:34.000Z</published>
+    <updated>2019-03-19T10:35:28.316Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Interesting challenges for regular expression newbie like me~&lt;/p&gt;
+&lt;p&gt;TBC...&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="WriteUp" scheme="http://CSUwangj.github.io/categories/WriteUp/"/>
+    
+    
+      <category term="WARGAME" scheme="http://CSUwangj.github.io/tags/WARGAME/"/>
+    
+      <category term="RegularExpression" scheme="http://CSUwangj.github.io/tags/RegularExpression/"/>
+    
+  </entry>
+  
+  <entry>
     <title>2019-03-18 Daily Challenge</title>
     <link href="http://CSUwangj.github.io/2019-03-18-Daily-Challenge/"/>
     <id>http://CSUwangj.github.io/2019-03-18-Daily-Challenge/</id>
@@ -399,34 +422,6 @@
     
     
       <category term="CodeWars" scheme="http://CSUwangj.github.io/tags/CodeWars/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>ACTF Junior 2019 Official WriteUP of CSUWangj&#39;s Challenge</title>
-    <link href="http://CSUwangj.github.io/ACTF-Junior-2019-Official-WriteUP-of-CSUWangj-s-Challenge/"/>
-    <id>http://CSUwangj.github.io/ACTF-Junior-2019-Official-WriteUP-of-CSUWangj-s-Challenge/</id>
-    <published>2019-02-28T07:55:24.000Z</published>
-    <updated>2019-03-03T16:23:38.869Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;日常出锅、、、&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="WriteUp" scheme="http://CSUwangj.github.io/categories/WriteUp/"/>
-    
-    
-      <category term="CTF" scheme="http://CSUwangj.github.io/tags/CTF/"/>
-    
-      <category term="Crypto" scheme="http://CSUwangj.github.io/tags/Crypto/"/>
-    
-      <category term="Misc" scheme="http://CSUwangj.github.io/tags/Misc/"/>
-    
-      <category term="PWN" scheme="http://CSUwangj.github.io/tags/PWN/"/>
-    
-      <category term="Forensics" scheme="http://CSUwangj.github.io/tags/Forensics/"/>
     
   </entry>
   
