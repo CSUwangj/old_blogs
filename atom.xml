@@ -35,6 +35,29 @@
   </entry>
   
   <entry>
+    <title>2019-03-19 Daily Challenge</title>
+    <link href="http://CSUwangj.github.io/2019-03-19-Daily-Challenge/"/>
+    <id>http://CSUwangj.github.io/2019-03-19-Daily-Challenge/</id>
+    <published>2019-03-19T11:11:02.000Z</published>
+    <updated>2019-03-19T11:33:31.503Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Change again.&lt;/p&gt;
+&lt;p&gt;I change challenges into challenging my self learning, so there will be my daily notes for what I&amp;#39;ve learn.&lt;/p&gt;
+&lt;p&gt;TBH I don&amp;#39;t know if it&amp;#39;s a good enough form as which to record it.&lt;/p&gt;
+&lt;p&gt;Let&amp;#39;s try it~&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="DailyChallenge" scheme="http://CSUwangj.github.io/categories/DailyChallenge/"/>
+    
+    
+      <category term="NumberTheory" scheme="http://CSUwangj.github.io/tags/NumberTheory/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Regex Golf Challenge</title>
     <link href="http://CSUwangj.github.io/Regex-Golf-Challenge/"/>
     <id>http://CSUwangj.github.io/Regex-Golf-Challenge/</id>
@@ -395,26 +418,6 @@
     <summary type="html">
     
       &lt;p&gt;What I&amp;#39;ve done today is &lt;em&gt;Valid Braces&lt;/em&gt; in &lt;em&gt;JavaScript&lt;/em&gt;.&lt;br&gt;
-    
-    </summary>
-    
-      <category term="DailyChallenge" scheme="http://CSUwangj.github.io/categories/DailyChallenge/"/>
-    
-    
-      <category term="CodeWars" scheme="http://CSUwangj.github.io/tags/CodeWars/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>2019-03-01 Daily Challenge</title>
-    <link href="http://CSUwangj.github.io/2019-03-01-Daily-Challenge/"/>
-    <id>http://CSUwangj.github.io/2019-03-01-Daily-Challenge/</id>
-    <published>2019-03-01T01:01:02.000Z</published>
-    <updated>2019-03-02T06:18:55.822Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;What I&amp;#39;ve done today is &lt;em&gt;Create Phone Number&lt;/em&gt; in &lt;em&gt;JavaScript&lt;/em&gt;.&lt;br&gt;
     
     </summary>
     
