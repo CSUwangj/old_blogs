@@ -35,11 +35,32 @@
   </entry>
   
   <entry>
+    <title>2019-03-21 Daily Challenge</title>
+    <link href="http://CSUwangj.github.io/2019-03-21-Daily-Challenge/"/>
+    <id>http://CSUwangj.github.io/2019-03-21-Daily-Challenge/</id>
+    <published>2019-03-20T16:02:58.000Z</published>
+    <updated>2019-03-21T15:26:01.147Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Today I&amp;#39;ve been reading &lt;a href=&quot;https://www.engr.mun.ca/~howard/PAPERS/ldc_tutorial.pdf&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;A Tutorial on Linear and Differential Cryptanalysis&lt;/a&gt; and finally finish reading it. I&amp;#39;ve found more interesting stuff like &lt;a href=&quot;http://www.theamazingking.com/crypto-linear.php&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;The Amazing King - Linear Cryptanalysis Tutorial&lt;/a&gt; &lt;a href=&quot;http://www.theamazingking.com/crypto-diff.php&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;The Amazing King - Differential Cryptanalysis Tutorial&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Still there will be only some casual notes.&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="DailiyChallenge" scheme="http://CSUwangj.github.io/categories/DailiyChallenge/"/>
+    
+    
+      <category term="Cryptography" scheme="http://CSUwangj.github.io/tags/Cryptography/"/>
+    
+  </entry>
+  
+  <entry>
     <title>2019-03-20 Daily Challenge</title>
     <link href="http://CSUwangj.github.io/2019-03-20-Daily-Challenge/"/>
     <id>http://CSUwangj.github.io/2019-03-20-Daily-Challenge/</id>
     <published>2019-03-20T02:11:15.000Z</published>
-    <updated>2019-03-20T15:58:52.358Z</updated>
+    <updated>2019-03-20T16:03:58.820Z</updated>
     
     <summary type="html">
     
@@ -398,26 +419,6 @@
     <summary type="html">
     
       &lt;p&gt;What I&amp;#39;ve done today is &lt;em&gt;Array.diff&lt;/em&gt; in &lt;em&gt;JavaScript&lt;/em&gt;.&lt;br&gt;
-    
-    </summary>
-    
-      <category term="DailyChallenge" scheme="http://CSUwangj.github.io/categories/DailyChallenge/"/>
-    
-    
-      <category term="CodeWars" scheme="http://CSUwangj.github.io/tags/CodeWars/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>2019-03-03 Daily Challenge</title>
-    <link href="http://CSUwangj.github.io/2019-03-03-Daily-Challenge/"/>
-    <id>http://CSUwangj.github.io/2019-03-03-Daily-Challenge/</id>
-    <published>2019-03-02T16:28:53.000Z</published>
-    <updated>2019-03-03T16:22:31.895Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;What I&amp;#39;ve done today is &lt;em&gt;Directions Reduction&lt;/em&gt; in &lt;em&gt;JavaScript&lt;/em&gt;.&lt;br&gt;
     
     </summary>
     

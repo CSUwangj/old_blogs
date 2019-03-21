@@ -9,9 +9,20 @@
       </categories>
   </entry>
   <entry>
+    <title><![CDATA[2019-03-21 Daily Challenge]]></title>
+    <url>%2F2019-03-21-Daily-Challenge%2F</url>
+    <content type="text"><![CDATA[Today I&#39;ve been reading A Tutorial on Linear and Differential Cryptanalysis and finally finish reading it. I&#39;ve found more interesting stuff like The Amazing King - Linear Cryptanalysis Tutorial The Amazing King - Differential Cryptanalysis Tutorial Still there will be only some casual notes. Linear cryptanalysis tries to take advantage of high probability occurrences of linear expressions involving plaintext bits, ciphertext bits, and subkey bits. Differential cryptanalysis exploits the high probability of certain occurrences of plaintext differences and differences into the last round of the cipher. It&#39;s easy to distinguish these two techniques when you know what they are doing. I&#39;ve been suffering at crypto challenge at rest of my relaxing time, so. ;_;]]></content>
+      <categories>
+        <category>DailiyChallenge</category>
+      </categories>
+      <tags>
+        <tag>Cryptography</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[2019-03-20 Daily Challenge]]></title>
     <url>%2F2019-03-20-Daily-Challenge%2F</url>
-    <content type="text"><![CDATA[Let&#39;s write some notes takes while challenging my self learning. Today I&#39;ve been reading A Tutorial on Linear and Differential Cryptanalysis. Not done yet, so I just write some casual notes, which can help to write some more detailed article(at least I wish). The cipher that we shall use to present the concepts is a basic Substitution-Permutation Network (SPN). We will focus our discussion on a cipher, illustrated in Figure 1, that takes a 16-bit input block and processes the block by repeating the basic operations of a round four times. Each round consists of (1) substitution, (2) a transposition of the bits (i.e., permutation of the bit positions), and (3) key mixing. This basic structure was presented by Feistel back in 1973 [15] and these basic operations are similar to what is found in DES and many other modern ciphers, including Rijndael. SPN is really useful. a subkey is applied following the last round, ensuring that the last layer of substitution cannot be easily ignored by a cryptanalyst that simply works backward through the last round’s substitution. Apart from the advantage of symmetry of processing(symmetry of encryption/decryption), there is a reason to apply subkey at the last round. Piling-Up Lemmafor $n$ independent, random binary variables, $X_1,X_2,...X_n$, $$Pr(X_1\oplus ...\oplus X_n=0)=1/2+2^{n-1}\prod_{i=1}^n\varepsilon_i$$ or, equivalently $$\varepsilon_{1,2,...,n}=2^{n-1}\prod_{i=1}^n\varepsilon_i$$ where $\varepsilon_i,2,...,n$ represents the bias of $X_1\oplus ...\oplus X_n=0$. It&#39;s easy to prove it by induction, I think.]]></content>
+    <content type="text"><![CDATA[Let&#39;s write some notes takes while challenging my self learning. Today I&#39;ve been reading A Tutorial on Linear and Differential Cryptanalysis. Not done yet, so I just write some casual notes, which can help to write some more detailed article(at least I wish). The cipher that we shall use to present the concepts is a basic Substitution-Permutation Network (SPN). We will focus our discussion on a cipher, illustrated in Figure 1, that takes a 16-bit input block and processes the block by repeating the basic operations of a round four times. Each round consists of (1) substitution, (2) a transposition of the bits (i.e., permutation of the bit positions), and (3) key mixing. This basic structure was presented by Feistel back in 1973 [15] and these basic operations are similar to what is found in DES and many other modern ciphers, including Rijndael. SPN is really useful. a subkey is applied following the last round, ensuring that the last layer of substitution cannot be easily ignored by a cryptanalyst that simply works backward through the last round’s substitution. Apart from the advantage of symmetry of processing(symmetry of encryption/decryption), there is a reason to apply subkey at the last round. Piling-Up Lemma for $n$ independent, random binary variables, $X_1,X_2,...X_n$, $$Pr(X_1\oplus ...\oplus X_n=0)=1/2+2^{n-1}\prod_{i=1}^n\varepsilon_i$$ or, equivalently $$\varepsilon_{1,2,...,n}=2^{n-1}\prod_{i=1}^n\varepsilon_i$$ where $\varepsilon_i,2,...,n$ represents the bias of $X_1\oplus ...\oplus X_n=0$. It&#39;s easy to prove it by induction, I think.]]></content>
       <categories>
         <category>DailyChallenge</category>
       </categories>
@@ -248,9 +259,9 @@
         <category>WriteUp</category>
       </categories>
       <tags>
-        <tag>CTF</tag>
         <tag>Misc</tag>
         <tag>Crypto</tag>
+        <tag>CTF</tag>
         <tag>PWN</tag>
         <tag>Forensics</tag>
       </tags>
@@ -1370,9 +1381,9 @@
         <category>WriteUp</category>
       </categories>
       <tags>
-        <tag>CTF</tag>
         <tag>Misc</tag>
         <tag>Crypto</tag>
+        <tag>CTF</tag>
       </tags>
   </entry>
   <entry>
@@ -1383,9 +1394,9 @@
         <category>WriteUp</category>
       </categories>
       <tags>
-        <tag>CTF</tag>
         <tag>Misc</tag>
         <tag>Crypto</tag>
+        <tag>CTF</tag>
         <tag>PWN</tag>
         <tag>Web</tag>
         <tag>Rev</tag>
@@ -1411,8 +1422,8 @@
         <category>WriteUp</category>
       </categories>
       <tags>
-        <tag>CTF</tag>
         <tag>Crypto</tag>
+        <tag>CTF</tag>
       </tags>
   </entry>
   <entry>
@@ -1439,9 +1450,9 @@
         <category>WriteUp</category>
       </categories>
       <tags>
-        <tag>CTF</tag>
         <tag>Misc</tag>
         <tag>Crypto</tag>
+        <tag>CTF</tag>
         <tag>PWN</tag>
         <tag>Web</tag>
       </tags>
@@ -1490,9 +1501,9 @@
         <category>WriteUp</category>
       </categories>
       <tags>
-        <tag>CTF</tag>
         <tag>Misc</tag>
         <tag>Crypto</tag>
+        <tag>CTF</tag>
         <tag>PWN</tag>
         <tag>Web</tag>
         <tag>Rev</tag>
@@ -1506,8 +1517,8 @@
         <category>WriteUp</category>
       </categories>
       <tags>
-        <tag>CTF</tag>
         <tag>Misc</tag>
+        <tag>CTF</tag>
         <tag>Rev</tag>
       </tags>
   </entry>
