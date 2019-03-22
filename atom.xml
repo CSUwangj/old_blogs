@@ -35,6 +35,26 @@
   </entry>
   
   <entry>
+    <title>2019-03-22 Daily Challenge</title>
+    <link href="http://CSUwangj.github.io/2019-03-22-Daily-Challenge/"/>
+    <id>http://CSUwangj.github.io/2019-03-22-Daily-Challenge/</id>
+    <published>2019-03-21T16:06:05.000Z</published>
+    <updated>2019-03-22T16:40:49.549Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;I&amp;#39;ve complete a linear cryptanalysis attack towards simple a toy SPN cipher, I feel very veryyyyy happy!&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="DailyChallenge" scheme="http://CSUwangj.github.io/categories/DailyChallenge/"/>
+    
+    
+      <category term="Cryptography" scheme="http://CSUwangj.github.io/tags/Cryptography/"/>
+    
+  </entry>
+  
+  <entry>
     <title>2019-03-21 Daily Challenge</title>
     <link href="http://CSUwangj.github.io/2019-03-21-Daily-Challenge/"/>
     <id>http://CSUwangj.github.io/2019-03-21-Daily-Challenge/</id>
@@ -399,26 +419,6 @@
     <summary type="html">
     
       &lt;p&gt;What I&amp;#39;ve done today is &lt;em&gt;Build a pile of Cubes&lt;/em&gt; in &lt;em&gt;JavaScript&lt;/em&gt;.&lt;br&gt;
-    
-    </summary>
-    
-      <category term="DailyChallenge" scheme="http://CSUwangj.github.io/categories/DailyChallenge/"/>
-    
-    
-      <category term="CodeWars" scheme="http://CSUwangj.github.io/tags/CodeWars/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>2019-03-04 Daily Challenge</title>
-    <link href="http://CSUwangj.github.io/2019-03-04-Daily-Challenge/"/>
-    <id>http://CSUwangj.github.io/2019-03-04-Daily-Challenge/</id>
-    <published>2019-03-03T16:22:20.000Z</published>
-    <updated>2019-03-04T16:01:10.228Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;What I&amp;#39;ve done today is &lt;em&gt;Array.diff&lt;/em&gt; in &lt;em&gt;JavaScript&lt;/em&gt;.&lt;br&gt;
     
     </summary>
     
