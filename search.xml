@@ -9,6 +9,17 @@
       </categories>
   </entry>
   <entry>
+    <title><![CDATA[2019-03-25 Daily Challenge]]></title>
+    <url>%2F2019-03-25-Daily-Challenge%2F</url>
+    <content type="text"><![CDATA[I&#39;ve been busy build challenges for ACTF2019, and it&#39;s private so, there isn&#39;t anything.]]></content>
+      <categories>
+        <category>DailyChallenge</category>
+      </categories>
+      <tags>
+        <tag>Cryptography</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[2019-03-24 Daily Challenge]]></title>
     <url>%2F2019-03-24-Daily-Challenge%2F</url>
     <content type="text"><![CDATA[I&#39;ve been busy build challenges for ACTF2019, and it&#39;s private so, there isn&#39;t anything.]]></content>
@@ -293,9 +304,9 @@
       </categories>
       <tags>
         <tag>CTF</tag>
+        <tag>PWN</tag>
         <tag>Misc</tag>
         <tag>Crypto</tag>
-        <tag>PWN</tag>
         <tag>Forensics</tag>
       </tags>
   </entry>
@@ -1428,9 +1439,9 @@
       </categories>
       <tags>
         <tag>CTF</tag>
+        <tag>PWN</tag>
         <tag>Misc</tag>
         <tag>Crypto</tag>
-        <tag>PWN</tag>
         <tag>Rev</tag>
         <tag>Web</tag>
       </tags>
@@ -1484,9 +1495,9 @@
       </categories>
       <tags>
         <tag>CTF</tag>
+        <tag>PWN</tag>
         <tag>Misc</tag>
         <tag>Crypto</tag>
-        <tag>PWN</tag>
         <tag>Web</tag>
       </tags>
   </entry>
@@ -1535,9 +1546,9 @@
       </categories>
       <tags>
         <tag>CTF</tag>
+        <tag>PWN</tag>
         <tag>Misc</tag>
         <tag>Crypto</tag>
-        <tag>PWN</tag>
         <tag>Rev</tag>
         <tag>Web</tag>
       </tags>
