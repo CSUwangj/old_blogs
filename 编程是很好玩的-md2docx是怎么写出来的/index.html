@@ -125,6 +125,8 @@
 <meta property="og:description" content="花了一个多月写了一个工具，写一点东西帮助想重新造轮子的朋友~">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="http://csuwangj.github.io/编程是很好玩的-md2docx是怎么写出来的/design.jpg">
+<meta property="og:image" content="http://csuwangj.github.io/编程是很好玩的-md2docx是怎么写出来的/P.jpg">
+<meta property="og:image" content="http://csuwangj.github.io/编程是很好玩的-md2docx是怎么写出来的/PD.jpg">
 <meta property="og:updated_time" content="2019-08-22T03:34:37.243Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="编程是很好玩的--md2docx是怎么写出来的">
@@ -567,8 +569,8 @@
 </blockquote>
 <p>这里要再吹一下 MSDN 的文档，在习惯之后感觉真好用。</p>
 <p>有了文档以后还需要一些例子，这里有<a href="https://docs.microsoft.com/en-us/office/open-xml/working-with-paragraphs" target="_blank" rel="noopener">微软的例子</a>，另一个是 <a href="https://github.com/EricWhiteDev/Open-Xml-PowerTools" target="_blank" rel="noopener">Github上的例子</a>。除了这两个以外，一定要强烈推荐的是 Open XML SDK 2.5 Productivity Tool，这个工具通过<a href="https://www.microsoft.com/en-us/download/details.aspx?id=30425" target="_blank" rel="noopener">微软下载中心</a>下载。这个工具可以将现有的 .docx\.pptx\.xlsx 文件转换为可以直接生成等价文件的 C# 代码，并且还可以顺便查看对应结构的文档。</p>
-
-
+<img src="/编程是很好玩的-md2docx是怎么写出来的/P.jpg" title="generated code">
+<img src="/编程是很好玩的-md2docx是怎么写出来的/PD.jpg" title="documentation">
 <p>于是思路和例子都有了，甚至可以对着抄的例子都有了，接下来需要的东西就是粘合和重构了。</p>
 <h1 id="其他思路"><a href="#其他思路" class="headerlink" title="其他思路"></a>其他思路</h1><p>解析 Markdown 这里自然不必多说，不论已经有的那么多轮子，就算从头写一个 Parser 也不是太大的负担，主要考虑的还是操作 .docx 文件这一重。</p>
 <p>Eiric White 在博客中提到了了 <a href="http://www.ericwhite.com/blog/open-xml-sdk-for-javascript/" target="_blank" rel="noopener">Open XML SDK for JavaScript</a>，不过里面相关的资料还有不少在建设当中，不知道具体情况如何。</p>
