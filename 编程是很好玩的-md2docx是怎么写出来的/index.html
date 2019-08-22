@@ -1,0 +1,1811 @@
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<html class="theme-next mist use-motion" lang="zh-CN">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2"/>
+<meta name="theme-color" content="#222">
+
+
+
+  
+  
+  <link rel="stylesheet" href="/lib/needsharebutton/needsharebutton.css">
+
+
+
+
+
+
+
+  
+  
+  <link rel="stylesheet" media="all" href="/lib/Han/dist/han.min.css?v=3.3">
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=6.3.0" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=6.3.0">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=6.3.0">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=6.3.0">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=6.3.0" color="#222">
+
+
+
+
+
+
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Mist',
+    version: '6.3.0',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":true,"scrollpercent":false,"onmobile":false},
+    fancybox: false,
+    fastclick: false,
+    lazyload: false,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+  
+
+
+
+
+  <meta name="description" content="花了一个多月写了一个工具，写一点东西帮助想重新造轮子的朋友~">
+<meta name="keywords" content="Software,C_sharp,open_xml_sdk">
+<meta property="og:type" content="article">
+<meta property="og:title" content="编程是很好玩的--md2docx是怎么写出来的">
+<meta property="og:url" content="http://CSUwangj.github.io/编程是很好玩的-md2docx是怎么写出来的/index.html">
+<meta property="og:site_name" content="LuckyDog">
+<meta property="og:description" content="花了一个多月写了一个工具，写一点东西帮助想重新造轮子的朋友~">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="http://csuwangj.github.io/编程是很好玩的-md2docx是怎么写出来的/design.jpg">
+<meta property="og:updated_time" content="2019-08-22T03:34:37.243Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="编程是很好玩的--md2docx是怎么写出来的">
+<meta name="twitter:description" content="花了一个多月写了一个工具，写一点东西帮助想重新造轮子的朋友~">
+<meta name="twitter:image" content="http://csuwangj.github.io/编程是很好玩的-md2docx是怎么写出来的/design.jpg">
+
+
+
+  <link rel="alternate" href="/atom.xml" title="LuckyDog" type="application/atom+xml" />
+
+
+
+
+  <link rel="canonical" href="http://CSUwangj.github.io/编程是很好玩的-md2docx是怎么写出来的/"/>
+
+
+
+<script type="text/javascript" id="page.configurations">
+  CONFIG.page = {
+    sidebar: "",
+  };
+</script>
+
+  <title>编程是很好玩的--md2docx是怎么写出来的 | LuckyDog</title>
+  
+
+
+
+
+
+
+
+
+
+  <noscript>
+  <style type="text/css">
+    .use-motion .motion-element,
+    .use-motion .brand,
+    .use-motion .menu-item,
+    .sidebar-inner,
+    .use-motion .post-block,
+    .use-motion .pagination,
+    .use-motion .comments,
+    .use-motion .post-header,
+    .use-motion .post-body,
+    .use-motion .collection-title { opacity: initial; }
+
+    .use-motion .logo,
+    .use-motion .site-title,
+    .use-motion .site-subtitle {
+      opacity: initial;
+      top: initial;
+    }
+
+    .use-motion {
+      .logo-line-before i { left: initial; }
+      .logo-line-after i { right: initial; }
+    }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">LuckyDog</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+    
+      
+        <h1 class="site-subtitle" itemprop="description">CSUwangj</h1>
+      
+    
+  </div>
+
+  <div class="site-nav-toggle">
+    <button aria-label="切换导航栏">
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  
+    <ul id="menu" class="menu">
+      
+        
+        
+        
+          
+          <li class="menu-item menu-item-home">
+    <a href="/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-home"></i> <br />首页</a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-about">
+    <a href="/about/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-user"></i> <br />关于</a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-tags">
+    <a href="/tags/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />标签</a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-categories">
+    <a href="/categories/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-th"></i> <br />分类</a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-archives">
+    <a href="/archives/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />归档</a>
+  </li>
+
+      
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />搜索</a>
+        </li>
+      
+    </ul>
+  
+
+  
+    
+
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off"
+             placeholder="找点exciting的东西" spellcheck="false"
+             type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+
+  
+
+
+
+</div>
+    </header>
+
+    
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://CSUwangj.github.io/编程是很好玩的-md2docx是怎么写出来的/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="CSUwangj">
+      <meta itemprop="description" content="Just keep in mind that hacking is very rarely in a sequence.">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="LuckyDog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">编程是很好玩的--md2docx是怎么写出来的
+              
+            
+          </h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2019-08-19 21:18:08" itemprop="dateCreated datePublished" datetime="2019-08-19T21:18:08+08:00">2019-08-19</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2019-08-22 11:34:37" itemprop="dateModified" datetime="2019-08-22T11:34:37+08:00">2019-08-22</time>
+              
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Notes/" itemprop="url" rel="index"><span itemprop="name">Notes</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/编程是很好玩的-md2docx是怎么写出来的/#comments" itemprop="discussionUrl">
+                
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="编程是很好玩的-md2docx是怎么写出来的/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+            <div class="post-symbolscount">
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">本文字数：</span>
+                
+                <span title="本文字数">7.5k</span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">13 分钟</span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body han-init-context" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>花了一个多月写了一个工具，写一点东西帮助想重新造轮子的朋友~</p>
+<a id="more"></a>
+<p>我在上个月花了半个月的时间补充相关知识后，在这个月花了几天时间写出了一个将给定 markdown 按照一定格式渲染成 .docx 文件的工具，代码已经开源在<a href="https://github.com/CSUwangj/md2docx-csharp" target="_blank" rel="noopener">github</a>上。但是这个项目目的只是给中南信安学子使用，而且封面格式只按照某个老师的要求来的，如果有定制的需求，还是需要自己动手，那么这里就写一篇文章简单介绍一下完成这个过程中可能用到的资料、工具和可能踩到的坑。</p>
+<p>行文中会将用到的资源用超链接放在里面，但为了方便，也会在末尾用<a href="#参考资料">一个列表</a>把资料列出来。</p>
+<p>文章会先介绍 .docx文件和 markdown，是相对比较底层的简单介绍，如果只是关心程序是如何完成的，则完全可以跳过这部分。然后文章会介绍实现里的一些细节，我的实现用了 C#，开发时用的是 Visual Studio，使用的库为 Microsoft.Community.Toolkit（markdown parser）和 Open XML SDK（操作.docx文件）。</p>
+<h1 id="docx-文件解析"><a href="#docx-文件解析" class="headerlink" title=".docx 文件解析"></a>.docx 文件解析</h1><p>.docx 这个后缀所对应的文件格式全写是 <a href="https://en.wikipedia.org/wiki/Office_Open_XML_file_formats" target="_blank" rel="noopener">Office Open XML</a>。实质上就是一个包含了一系列有一定结构的 xml 文件的zip包，只需修改后缀名就可以用通用的解压软件将其解压并观察到里面的结构。</p>
+<p>正如在维基页面所示，Office Open XML 对应了几种文件格式，分别是document, presentation, workbook，也就是我们常说的word, ppt, excel。在 Office Open XML 文件里，会用到几种不同的标识语言，有兴趣的在维基页面可以进一步了解。基于以上信息，不难想到我们最主要需要了解是 Office Open XML document 的文件格式，和其中被大量用到的 WordprocessingML 语言。从这一步开始，维基页面上的内容就比较深入并且主要由各种标准文件组成，从这里开始我推荐从<a href="https://docs.microsoft.com/en-us/office/open-xml/structure-of-a-wordprocessingml-document" target="_blank" rel="noopener">微软的文档</a>或者<a href="http://officeopenxml.com/anatomyofOOXML.php" target="_blank" rel="noopener">officeopenxml.com</a>，如果倾向看视频了解并且不介意英文视频，那么可以考虑<a href="http://www.ericwhite.com/blog/introduction-to-wordprocessingml-series/" target="_blank" rel="noopener">Eric 的博客</a>，他是曾经在微软开发 Open XML SDK 的开发人员，并且离职以后依然在空闲时间继续这方面的工作。在这一节的末尾将会简单介绍 Open XML SDK，在<a href="#编程实现">之后的章节</a>展开介绍。</p>
+<p>为了完成我们的目标，Office Open XML 中各组成部分最主要需要关注的是 Main Document、Style Definitions，若是需要页眉、页脚，则还需要 Header、Footer 这两个部分。其他没有提及的内容并非无意义，而只是与目标相关性没有这么高，所以有需要的请自行翻阅文档。剩下不会继续介绍的部分有 Comments、Document Settings、Endnotes、Footnotes、Glossary Document。</p>
+<p>Style Definitions 包含了和格式相关的各种东西，仅仅从复用的角度来说，也应当将格式作为存入这里而不是设置一个可以把某一段变成某种格式的函数。具体如何操作这部分的内容来达到我们所需的效果将在<a href="#参考资料">之后</a>具体说。其中除了寻常可见的各种格式如正文、多级标题之外，还有一种特殊的元素值得留意，就是 latentStyles。Office 内置了相当多的格式（大概200多种），如果每一个格式都将其存放在每一个文档里，显然是没必要的，但是也不能就将其直接删去让软件自己从自己的库里读取，这也就是 latentStyles 起作用的地方。原文说的是</p>
+<blockquote>
+<p><em>延迟样式</em>引用任何一组已知的应用程序的未包括在当前文档中的样式定义。</p>
+</blockquote>
+<p>Main Document 是一个文档所需的最基本的内容，在里面设置正文的各种内容、格式。这里可以简单介绍的是，正文的最基本的构成内容是 Paragraph，在 xml 中用 \&lt;p> 节点表示，每个 Paragraph 都会包含对应的段落格式（用 \&lt;pPr> 节点表示），文字块和一些其他可选的属性。我们直接创建的 word 文档中，段落格式通常是基于某个已有的格式加上一些其他的选项。既然 Paragraph 是以行分隔的，那么具体到中间某些文字需要区别于段落的格式，也就必然需要单独的一个对象来表示，也就是文字块 Run。Run 在 xml 中用 \&lt;r> 节点表示，其格式用 \&lt;rPr> 表示。</p>
+<h1 id="markdown-的区别"><a href="#markdown-的区别" class="headerlink" title="markdown 的区别"></a>markdown 的区别</h1><p>markdown 是一种标志语言，所谓标致语言，根据维基的说法</p>
+<blockquote>
+<p>是一种将文本（Text）以及文本相关的其他信息结合起来，展现出关于文档结构和数据处理细节的计算机文字编码。与文本相关的其他信息（包括例如文本的结构和表示信息等）与原来的文本结合在一起，但是使用标记（markup）进行标识。</p>
+</blockquote>
+<p>既然要处理它，那么我们同样要找到它的标准才行。</p>
+<p>但是很可惜，直接叫 markdown 的标准严格意义上并不存在，这里的原因是作者对于在“markdown”这个名字上进行标准的强烈反对，原因是作者认为</p>
+<blockquote>
+<p>I believe Markdown’s success is <em>due to</em>, not in spite of, its lack of standardization. And its success is not disputable.</p>
+</blockquote>
+<p>当然，即便是这样说了，为了继续推广、应用，自然就会有各家做出自己的定义，其中据我了解比较流行的标准有<a href="https://commonmark.org/" target="_blank" rel="noopener">CommonMark</a>和<a href="https://github.github.com/gfm/" target="_blank" rel="noopener">Github Flavored Markdown(GFM)</a>，除此之外，正如 markdown 的发展一样，除了这些标准以外还有许多个人实现的、组织开发的拓展，用于丰富 markdown 的表达形式（所以作者对标准化的反对也可以理解）。</p>
+<h1 id="编程实现"><a href="#编程实现" class="headerlink" title="编程实现"></a>编程实现</h1><h2 id="实现思路"><a href="#实现思路" class="headerlink" title="实现思路"></a>实现思路</h2><p>要做的东西就是一个 markdown render，就是将 markdown 文档中的每个元素映射到固定的 .docx 文档组成部分。因为已经选定了 Open XML SDK，而最新的只支持 C#，所以问题就是要找个现有的 parser（毕竟我暂时还不想写个 parser 来复习编译原理）。parser 在这个工程中是相当重要的，因为 parser 确定以后，能支持的语法类型定了，markdown 能表达的格式也就定了，表达能力也就有了一个限制。同时这也是我踩的一个大坑，导致增加了之后重构所需的工作量。</p>
+<h2 id="markdown-parser"><a href="#markdown-parser" class="headerlink" title="markdown parser"></a>markdown parser</h2><p>因为搜索时不够细致，我错误地采用了 <a href="https://github.com/windows-toolkit/WindowsCommunityToolkit" target="_blank" rel="noopener">Microsoft.Community.Toolkit</a> 中的 markdown parser，且不提支持的语法不够丰富，最令我无法忍受的是它居然不认为标题的<code>#</code>后面需要加个空格！但是当我发现这一点的时候已经晚了，工具已经到了0.9版。</p>
+<p>不过也有一个好事，大概可能也许是因为打着微软的名头，尽管是社区维护的包，<a href="https://docs.microsoft.com/en-us/dotnet/api/microsoft.toolkit.parsers.markdown?view=win-comm-toolkit-dotnet-stable" target="_blank" rel="noopener">文档</a>是十分详细的。</p>
+<p>简单来说，这个 parser 认为 markdown 由 MarkdownBlock 构成，MarkdownBlock 分为</p>
+<ul>
+<li>CodeBlock</li>
+<li>HeaderBlock</li>
+<li>HorizontalRuleBlock</li>
+<li>LinkReferenceBlock</li>
+<li>ListBlock</li>
+<li>ParagraphBlock</li>
+<li>QuoteBlock</li>
+<li>TableBlock</li>
+<li>YamlHeaderBlock</li>
+</ul>
+<p>QuoteBlock 中包含的依然是 Block，如果有用的话会比较难处理；ListBlock 包含的也是 Block，不过我理解来ListBlock 只应该包含列表，所以不算很棘手；YamlHeaderBlock 有且仅有一块并且一定放在头部的位置，获得的是一个<code>Dictionary&lt;string, string&gt;</code>；HorizontalRuleBlock 就一水平线； CodeBlock 中只有纯文本，以及编程语言的名称，只要不是想渲染彩色代码，也不难做。LinkReferenceBlock、TableBlock 我没有用到，所以这里掠过。 ParagraphBlock、HeaderBlock 由 MarkdownInline 构成，这里大概可以类比成 .docx 文档里段落和文字块的关系。MarkdownInline 分为</p>
+<ul>
+<li>BoldTextInline</li>
+<li>CodeInline</li>
+<li>EmojiInline</li>
+<li>HyperlinkInline</li>
+<li>ImageInline</li>
+<li>ItalicTextInline</li>
+<li>LinkAnchorInline</li>
+<li>MarkdownLinkInline</li>
+<li>StrikethroughTextInline</li>
+<li>SubscriptTextInline</li>
+<li>SuperscriptTextInline</li>
+<li>TextRunInline</li>
+</ul>
+<p>通过以上关系，我考虑得到的结果是下面这个图</p>
+<img src="/编程是很好玩的-md2docx是怎么写出来的/design.jpg" title="Correspondence">
+<p>处理嵌套、交错的 MarkdownInline 其实挺简单，只需要一个简单的 DFS，遇到新的非 TextRunInline 的话就加上心的格式，然后继续DFS。下面是一个简单的示例代码</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br></pre></td><td class="code"><pre><span class="line">// 输出嵌套的类HTML样子的（伪）渲染效果</span><br><span class="line">static void dfs(MarkdownInline inline)</span><br><span class="line">&#123;</span><br><span class="line">    if (inline is TextRunInline txt)</span><br><span class="line">    &#123;</span><br><span class="line">        Console.Write($&quot;txt&#123;txt.Text&#125;&quot;);</span><br><span class="line">    &#125;</span><br><span class="line">    else if (inline is CodeInline code)</span><br><span class="line">    &#123;</span><br><span class="line">        Console.Write($&quot;code&#123;code.Text&#125;&quot;);</span><br><span class="line">    &#125;</span><br><span class="line">    else if (inline is BoldTextInline bd)</span><br><span class="line">    &#123;</span><br><span class="line">        foreach(var e in bd.Inlines)</span><br><span class="line">        &#123;</span><br><span class="line">            Console.Write(&quot;&lt;Bold&gt;&quot;);</span><br><span class="line">            dfs(e);</span><br><span class="line">            Console.Write(&quot;&lt;/Bold&gt;&quot;);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    else if (inline is ItalicTextInline it)</span><br><span class="line">    &#123;</span><br><span class="line">        foreach(var e in it.Inlines)</span><br><span class="line">        &#123;</span><br><span class="line">            Console.Write(&quot;&lt;Italic&gt;&quot;);</span><br><span class="line">            dfs(e);</span><br><span class="line">            Console.Write(&quot;&lt;/Italic&gt;&quot;);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    else if (inline is StrikethroughTextInline st)</span><br><span class="line">    &#123;</span><br><span class="line">        foreach (var e in st.Inlines)</span><br><span class="line">        &#123;</span><br><span class="line">            Console.Write(&quot;&lt;Strike&gt;&quot;);</span><br><span class="line">            dfs(e);</span><br><span class="line">            Console.Write(&quot;&lt;/Strike&gt;&quot;);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    else if (inline is SubscriptTextInline ss)</span><br><span class="line">    &#123;</span><br><span class="line">        foreach (var e in ss.Inlines)</span><br><span class="line">        &#123;</span><br><span class="line">            Console.Write(&quot;&lt;Subs&gt;&quot;);</span><br><span class="line">            dfs(e);</span><br><span class="line">            Console.Write(&quot;&lt;/Subs&gt;&quot;);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    else if (inline is SuperscriptTextInline sp)</span><br><span class="line">    &#123;</span><br><span class="line">        foreach (var e in sp.Inlines)</span><br><span class="line">        &#123;</span><br><span class="line">            Console.Write(&quot;&lt;Super&gt;&quot;);</span><br><span class="line">            dfs(e);</span><br><span class="line">            Console.Write(&quot;&lt;/Super&gt;&quot;);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>现在处理思路也有了，对应关系也找了，接下来再把操作 .docx 文件解决了这个软件也就完成了。</p>
+<h2 id="Open-XML-SDK"><a href="#Open-XML-SDK" class="headerlink" title="Open XML SDK"></a>Open XML SDK</h2><p>Open XML SDK 是由微软开发维护的用于在 Office Word, Excel, and PowerPoint 上进行编程的工具，整个 SDK 已经开源在 <a href="https://github.com/OfficeDev/Open-XML-SDK" target="_blank" rel="noopener">github</a> 上。至于文档，则如 README 所言</p>
+<blockquote>
+<p>The functionality of the specific classes in this version of the Open XML SDK is similar to version 2.5, therefore the <a href="http://msdn.microsoft.com/en-us/library/office/bb448854.aspx" target="_blank" rel="noopener">Open XML SDK 2.5 for Office</a> documentation available on MSDN is still accurate.</p>
+<p>In addition to open sourcing of the SDK, Microsoft has opened up the conceptual documentation for public review / contributions. A copy of the documentation is available for you to edit and review <a href="https://github.com/OfficeDev/office-content" target="_blank" rel="noopener">in GitHub</a>.</p>
+</blockquote>
+<p>这里要再吹一下 MSDN 的文档，在习惯之后感觉真好用。</p>
+<p>有了文档以后还需要一些例子，这里有<a href="https://docs.microsoft.com/en-us/office/open-xml/working-with-paragraphs" target="_blank" rel="noopener">微软的例子</a>，另一个是 <a href="https://github.com/EricWhiteDev/Open-Xml-PowerTools" target="_blank" rel="noopener">Github上的例子</a>。除了这两个以外，一定要强烈推荐的是 Open XML SDK 2.5 Productivity Tool，这个工具通过<a href="https://www.microsoft.com/en-us/download/details.aspx?id=30425" target="_blank" rel="noopener">微软下载中心</a>下载。这个工具可以将现有的 .docx\.pptx\.xlsx 文件转换为可以直接生成等价文件的 C# 代码，并且还可以顺便查看对应结构的文档。</p>
+
+
+<p>于是思路和例子都有了，甚至可以对着抄的例子都有了，接下来需要的东西就是粘合和重构了。</p>
+<h1 id="其他思路"><a href="#其他思路" class="headerlink" title="其他思路"></a>其他思路</h1><p>解析 Markdown 这里自然不必多说，不论已经有的那么多轮子，就算从头写一个 Parser 也不是太大的负担，主要考虑的还是操作 .docx 文件这一重。</p>
+<p>Eiric White 在博客中提到了了 <a href="http://www.ericwhite.com/blog/open-xml-sdk-for-javascript/" target="_blank" rel="noopener">Open XML SDK for JavaScript</a>，不过里面相关的资料还有不少在建设当中，不知道具体情况如何。</p>
+<p>其次 python 有一个包叫做 <a href="https://python-docx.readthedocs.io/en/latest/" target="_blank" rel="noopener">python-docx</a>，实现了不小的一部分 Open XML 相关的操作，可惜貌似连设置中文字体都需要 hook 到比较底层的实现，不是很优雅的选择，而且没有保障，所以如果需要用到中文建议还是跳过这个选择把（不过看这篇文章的会有非中文文档的需求吗）。</p>
+<p>除此之外就剩下两个比较底层的做法：<a href="https://docs.microsoft.com/en-us/windows/win32/com/component-object-model--com--portal" target="_blank" rel="noopener">COM Programming</a> 和 直接操作 XML。</p>
+<p>除了原生支持的 VC、VB 以外，已经有多种语言对 COM 做了封装，其中包括比较常见的 <a href="https://sourceforge.net/projects/jacob-project/" target="_blank" rel="noopener">Java</a>、<a href="https://pypi.org/project/pywin32/" target="_blank" rel="noopener">python</a>、<a href="https://www.npmjs.com/package/win32com" target="_blank" rel="noopener">JavaScript</a>。</p>
+<p>另一个正如前文所说，.Open XML 文件实质上就是一个包含了一系列有一定结构的 xml 文件的zip包，那么只需要操作多个 xml 文件，最后将其打包也就完成了。如果这里有需求，可以参考 Open XML 相关的文档。各语言大部分都有 zip、xml 相关的库，这里也就不再赘述。</p>
+<h1 id="后续工作"><a href="#后续工作" class="headerlink" title="后续工作"></a>后续工作</h1><p>我自己的软件算是做出了一个 Minimum Viable Product，还有很多不足，接下来我打算利用空闲时间做以下工作。（如果被开了就全职一下，嘤）</p>
+<ul>
+<li>加入测试（但是目前怎么测试我还没想好，可能参考 Open-Xml-PowerTools 里的测试），顺便重构</li>
+<li>搭 CI</li>
+<li>更换 markdown parser</li>
+<li>将输出格式设置从硬编码改为 json（但是坦白说目前还没想好怎么处理类似封面、页眉、页脚、摘要之类的东西）</li>
+<li>加入页眉、页脚</li>
+<li>加入图片、图题</li>
+<li>加入表格</li>
+</ul>
+<h1 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h1><ul>
+<li>Office Open XML<ul>
+<li><a href="https://en.wikipedia.org/wiki/Office_Open_XML_file_formats" target="_blank" rel="noopener">wikipedia</a></li>
+<li><a href="http://www.ericwhite.com/blog/introduction-to-wordprocessingml-series/" target="_blank" rel="noopener">Introduction to WordprocessingML Series</a></li>
+<li><a href="https://docs.microsoft.com/en-us/office/open-xml/structure-of-a-wordprocessingml-document" target="_blank" rel="noopener">微软文档</a></li>
+<li><a href="http://officeopenxml.com/anatomyofOOXML.php" target="_blank" rel="noopener">officeopenxml.com</a></li>
+</ul>
+</li>
+<li>Markdown<ul>
+<li><a href="https://commonmark.org/" target="_blank" rel="noopener">CommonMark</a></li>
+<li><a href="https://github.github.com/gfm/" target="_blank" rel="noopener">Github Flavored Markdown(GFM)</a></li>
+<li><a href="https://docs.microsoft.com/en-us/dotnet/api/microsoft.toolkit.parsers.markdown?view=win-comm-toolkit-dotnet-stable" target="_blank" rel="noopener">Microsoft.Toolkit.Parsers文档</a></li>
+<li><a href="https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/090542f0fdd0aeeabb6140316ff51da31afdbed2/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/MarkdownTextBlock/InitialContent.md" target="_blank" rel="noopener">Microsoft.Toolkit.Parsers 对应的 Markdown 标准</a></li>
+</ul>
+</li>
+<li>Open XML SDK<ul>
+<li><a href="https://github.com/OfficeDev/Open-XML-SDK" target="_blank" rel="noopener">GitHub repo</a></li>
+<li><a href="http://msdn.microsoft.com/en-us/library/office/bb448854.aspx" target="_blank" rel="noopener">Open XML SDK 2.5 Documentataion</a></li>
+<li><a href="https://docs.microsoft.com/en-us/office/open-xml/working-with-paragraphs" target="_blank" rel="noopener">Microsoft Examples</a></li>
+<li><a href="https://github.com/EricWhiteDev/Open-Xml-PowerTools" target="_blank" rel="noopener">Other Examples</a></li>
+<li><a href="https://www.microsoft.com/en-us/download/details.aspx?id=30425" target="_blank" rel="noopener">Open XML SDK 2.5 Productivity Tool</a></li>
+</ul>
+</li>
+<li>Other<ul>
+<li><a href="http://www.ericwhite.com/blog/open-xml-sdk-for-javascript/" target="_blank" rel="noopener">Open XML SDK for JavaScript</a></li>
+<li><a href="https://python-docx.readthedocs.io/en/latest/" target="_blank" rel="noopener">python-docx</a></li>
+<li><a href="https://docs.microsoft.com/en-us/windows/win32/com/component-object-model--com--portal" target="_blank" rel="noopener">COM Programming</a></li>
+<li><a href="https://sourceforge.net/projects/jacob-project/" target="_blank" rel="noopener">JACOB - Java COM Bridge</a></li>
+<li><a href="https://pypi.org/project/pywin32/" target="_blank" rel="noopener">pywin32</a></li>
+<li><a href="https://www.npmjs.com/package/win32com" target="_blank" rel="noopener">npm - win32com</a></li>
+</ul>
+</li>
+</ul>
+
+      
+    </div>
+
+    
+      
+
+  <div class="popular-posts-header">相关文章</div>
+  <ul class="popular-posts">
+  
+    <li class="popular-posts-item">
+      
+        <div class="popular-posts-date">2018-03-01</div>
+      
+      
+      <div class="popular-posts-title"><a href="/安装式工具集合/" rel="bookmark">安装式工具集合</a></div>
+      
+    </li>
+  
+  </ul>
+
+
+    
+	
+    
+    
+    
+
+    
+
+    
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div>欢迎请我喝听肥仔快乐水~</div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>资瓷一下</span>
+  </button>
+  <div id="QR" style="display: none;">
+
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="/images/wechatpay.png" alt="CSUwangj 鹅厂支付"/>
+        <p>鹅厂支付</p>
+      </div>
+    
+
+    
+      <div id="alipay" style="display: inline-block">
+        <img id="alipay_qr" src="/images/Alipay.jpg" alt="CSUwangj 月饼厂支付"/>
+        <p>月饼厂支付</p>
+      </div>
+    
+
+    
+
+  </div>
+</div>
+
+      </div>
+    
+
+    
+      <div>
+        <ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者： </strong>CSUwangj</li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    <a href="http://CSUwangj.github.io/编程是很好玩的-md2docx是怎么写出来的/" title="编程是很好玩的--md2docx是怎么写出来的">http://CSUwangj.github.io/编程是很好玩的-md2docx是怎么写出来的/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc/4.0/" rel="external nofollow" target="_blank">CC BY-NC 4.0</a> 许可协议。欢迎你将我的收获分享出去，记得署名哟~</li>
+</ul>
+
+      </div>
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/Software/" rel="tag"># Software</a>
+          
+            <a href="/tags/C-sharp/" rel="tag"># C_sharp</a>
+          
+            <a href="/tags/open-xml-sdk/" rel="tag"># open_xml_sdk</a>
+          
+        </div>
+      
+
+      
+      
+        <div class="post-widgets">
+        
+
+        
+
+        
+          
+          <div id="needsharebutton-postbottom">
+            <span class="btn">
+              <i class="fa fa-share-alt" aria-hidden="true"></i>
+            </span>
+          </div>
+        
+        </div>
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2019-03-25-Daily-Challenge/" rel="next" title="2019-03-25 Daily Challenge">
+                <i class="fa fa-chevron-left"></i> 2019-03-25 Daily Challenge
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/博文整理/" rel="prev" title="博文整理">
+                博文整理 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+  
+    <div class="comments" id="comments">
+      <div id="disqus_thread">
+        <noscript>
+          Please enable JavaScript to view the
+          <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+        </noscript>
+      </div>
+    </div>
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image"
+                src="/images/avatar.jpg"
+                alt="CSUwangj" />
+            
+              <p class="site-author-name" itemprop="name">CSUwangj</p>
+              <p class="site-description motion-element" itemprop="description">Just keep in mind that hacking is very rarely in a sequence.</p>
+          </div>
+
+          
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="/archives/">
+                
+                    <span class="site-state-item-count">122</span>
+                    <span class="site-state-item-name">日志</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-categories">
+                  <a href="/categories/index.html">
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">5</span>
+                    <span class="site-state-item-name">分类</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-tags">
+                  <a href="/tags/index.html">
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">36</span>
+                    <span class="site-state-item-name">标签</span>
+                  </a>
+                </div>
+              
+            </nav>
+          
+
+          
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
+          
+
+          
+            <div class="links-of-author motion-element">
+              
+                <span class="links-of-author-item">
+                  <a href="https://github.com/CSUwangj" target="_blank" title="GitHub" rel="external nofollow"><i class="fa fa-fw fa-github"></i>GitHub</a>
+                  
+                </span>
+              
+                <span class="links-of-author-item">
+                  <a href="mailto:CSUwangj@protonmail.com" target="_blank" title="E-Mail" rel="external nofollow"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                  
+                </span>
+              
+            </div>
+          
+
+          
+          
+            <div class="cc-license motion-element" itemprop="license">
+              <a href="https://creativecommons.org/licenses/by-nc/4.0/" class="cc-opacity" target="_blank" rel="external nofollow">
+                <img src="/images/cc-by-nc.svg" alt="Creative Commons" />
+              </a>
+            </div>
+          
+
+          
+          
+            <div class="links-of-blogroll motion-element links-of-blogroll-block">
+              <div class="links-of-blogroll-title">
+                <i class="fa  fa-fw fa-link"></i>
+                Links
+              </div>
+              <ul class="links-of-blogroll-list">
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://www.cnblogs.com/0xJDchen/" title="领路人JDchen学长" target="_blank">领路人JDchen学长</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="https://www.caomingpei.com/" title="李默瑾" target="_blank">李默瑾</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="https://huanghantao.github.io/" title="黄含绦" target="_blank">黄含绦</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="https://www.cnblogs.com/0xHack/" title="吉祥物" target="_blank">吉祥物</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="https://wangyx-max.github.io/" title="社会我王哥" target="_blank">社会我王哥</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://wolfbolin.cn/" title="WolfBolin" target="_blank">WolfBolin</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://phosphorus.tech/" title="磷登万" target="_blank">磷登万</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="https://blog.yuki-nagato.com/" title="长门有希" target="_blank">长门有希</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://0xpoker.cuit.site/" title="Poker" target="_blank">Poker</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://yulige.top/" title="郁离歌哥" target="_blank">郁离歌哥</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="https://www.jianshu.com/u/fa23d591f030" title="Error404" target="_blank">Error404</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="https://www.jianshu.com/u/bf30f18c872c" title="王一航" target="_blank">王一航</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="https://www.lhaihai.wang/" title="Lhaihai" target="_blank">Lhaihai</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://www.cnblogs.com/wushangguo/" title="伍尚国" target="_blank">伍尚国</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://www.porlockz.com/" title="Porlockz" target="_blank">Porlockz</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="https://zickshen.github.io/" title="ZickShen" target="_blank">ZickShen</a>
+                  </li>
+                
+              </ul>
+            </div>
+          
+
+          
+            
+          
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#docx-文件解析"><span class="nav-number">1.</span> <span class="nav-text">.docx 文件解析</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#markdown-的区别"><span class="nav-number">2.</span> <span class="nav-text">markdown 的区别</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#编程实现"><span class="nav-number">3.</span> <span class="nav-text">编程实现</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#实现思路"><span class="nav-number">3.1.</span> <span class="nav-text">实现思路</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#markdown-parser"><span class="nav-number">3.2.</span> <span class="nav-text">markdown parser</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Open-XML-SDK"><span class="nav-number">3.3.</span> <span class="nav-text">Open XML SDK</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#其他思路"><span class="nav-number">4.</span> <span class="nav-text">其他思路</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#后续工作"><span class="nav-number">5.</span> <span class="nav-text">后续工作</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#参考资料"><span class="nav-number">6.</span> <span class="nav-text">参考资料</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+        <div class="back-to-top">
+          <i class="fa fa-arrow-up"></i>
+          
+        </div>
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; 2018 &mdash; <span itemprop="copyrightYear">2019</span>
+  <span class="with-love" id="animate">
+    <i class="fa fa-CSUwangj"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">CSUwangj</span>
+
+  
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-area-chart"></i>
+    </span>
+    
+      <span class="post-meta-item-text">站点总字数：</span>
+    
+    <span title="站点总字数">452k</span>
+  
+
+  
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-coffee"></i>
+    </span>
+    
+      <span class="post-meta-item-text">站点阅读时长 &asymp;</span>
+    
+    <span title="站点阅读时长">12:34</span>
+  
+</div>
+
+
+  
+
+
+
+  <div class="powered-by">大声地使用 <a class="theme-link" target="_blank" rel="external nofollow" href="https://hexo.io">Hexo</a> ！ v3.7.1</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" rel="external nofollow" href="https://github.com/theme-next/hexo-theme-next">NexT.Mist</a> v6.3.0</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+
+  <div style="display: none;">
+    <script src="//s95.cnzz.com/z_stat.php?id=1274292879&web_id=1274292879" language="JavaScript"></script>
+  </div>
+
+
+
+        
+      </div>
+    </footer>
+
+    
+
+    
+      <div id="needsharebutton-float">
+        <span class="btn">
+          <i class="fa fa-share-alt" aria-hidden="true"></i>
+        </span>
+      </div>
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=6.3.0"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=6.3.0"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=6.3.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=6.3.0"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=6.3.0"></script>
+
+
+
+  
+
+  
+    <script id="dsq-count-scr" src="https://CSUwangj.disqus.com/count.js" async></script>
+  
+
+  
+    <script type="text/javascript">
+      var disqus_config = function () {
+        this.page.url = 'http://CSUwangj.github.io/编程是很好玩的-md2docx是怎么写出来的/';
+        this.page.identifier = '编程是很好玩的-md2docx是怎么写出来的/';
+        this.page.title = '编程是很好玩的--md2docx是怎么写出来的';
+        };
+      function loadComments () {
+        var d = document, s = d.createElement('script');
+        s.src = 'https://CSUwangj.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', '' + +new Date());
+        (d.head || d.body).appendChild(s);
+      }
+      
+        loadComments();
+      
+    </script>
+  
+
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+
+  
+
+  
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';        
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
+
+  
+  
+
+  
+  
+
+  
+    
+      <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+        processEscapes: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      },
+      TeX: {equationNumbers: { autoNumber: "AMS" }}
+    });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+      var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/mathjax@2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+    
+  
+
+
+  
+  
+  
+  <script src="/lib/needsharebutton/needsharebutton.js"></script>
+
+  <script>
+    
+      pbOptions = {};
+      
+          pbOptions.iconStyle = "box";
+      
+          pbOptions.boxForm = "horizontal";
+      
+          pbOptions.position = "bottomCenter";
+      
+          pbOptions.networks = "Weibo,Wechat,Douban,QQZone,Twitter,Facebook";
+      
+      new needShareButton('#needsharebutton-postbottom', pbOptions);
+    
+    
+      flOptions = {};
+      
+          flOptions.iconStyle = "box";
+      
+          flOptions.boxForm = "horizontal";
+      
+          flOptions.position = "middleRight";
+      
+          flOptions.networks = "Weibo,Wechat,Douban,QQZone,Twitter,Facebook";
+      
+      new needShareButton('#needsharebutton-float', flOptions);
+    
+  </script>
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+  
+  <script src="/lib/bookmark/bookmark.min.js?v=1.0"></script>
+  <script type="text/javascript">
+  
+    bookmark.scrollToMark('auto', "#更多");
+  
+  </script>
+
+
+  
+  <style>
+    .copy-btn {
+      display: inline-block;
+      padding: 6px 12px;
+      font-size: 13px;
+      font-weight: 700;
+      line-height: 20px;
+      color: #333;
+      white-space: nowrap;
+      vertical-align: middle;
+      cursor: pointer;
+      background-color: #eee;
+      background-image: linear-gradient(#fcfcfc, #eee);
+      border: 1px solid #d5d5d5;
+      border-radius: 3px;
+      user-select: none;
+      outline: 0;
+    }
+
+    .highlight-wrap .copy-btn {
+      transition: opacity .3s ease-in-out;
+      opacity: 0;
+      padding: 2px 6px;
+      position: absolute;
+      right: 4px;
+      top: 8px;
+    }
+
+    .highlight-wrap:hover .copy-btn,
+    .highlight-wrap .copy-btn:focus {
+      opacity: 1
+    }
+
+    .highlight-wrap {
+      position: relative;
+    }
+  </style>
+  <script>
+    $('.highlight').each(function (i, e) {
+      var $wrap = $('<div>').addClass('highlight-wrap')
+      $(e).after($wrap)
+      $wrap.append($('<button>').addClass('copy-btn').append('复制').on('click', function (e) {
+        var code = $(this).parent().find('.code').find('.line').map(function (i, e) {
+          return $(e).text()
+        }).toArray().join('\n')
+        var ta = document.createElement('textarea')
+        document.body.appendChild(ta)
+        ta.style.position = 'absolute'
+        ta.style.top = '0px'
+        ta.style.left = '0px'
+        ta.value = code
+        ta.select()
+        ta.focus()
+        var result = document.execCommand('copy')
+        document.body.removeChild(ta)
+        
+          if(result)$(this).text('复制成功')
+          else $(this).text('复制失败')
+        
+        $(this).blur()
+      })).on('mouseleave', function (e) {
+        var $b = $(this).find('.copy-btn')
+        setTimeout(function () {
+          $b.text('复制')
+        }, 300)
+      }).append(e)
+    })
+  </script>
+
+
+  
+</body>
+</html>
