@@ -35,11 +35,36 @@
   </entry>
   
   <entry>
+    <title>How to recover DES master key from round key</title>
+    <link href="http://CSUwangj.github.io/How-to-recover-DES-master-key-from-round-key/"/>
+    <id>http://CSUwangj.github.io/How-to-recover-DES-master-key-from-round-key/</id>
+    <published>2019-11-09T14:13:16.000Z</published>
+    <updated>2019-11-09T15:17:59.973Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;TLDR&quot;&gt;&lt;a href=&quot;#TLDR&quot; class=&quot;headerlink&quot; title=&quot;TLDR&quot;&gt;&lt;/a&gt;TLDR&lt;/h1&gt;&lt;p&gt;Reverse the picking(or called compressing) process where extract round key from part of master key to get most of master key(56bits), use parity to recover last 8bits.&lt;/p&gt;
+&lt;p&gt;If the dumbass/fuckhead/shithead who created this question forgot or not known parity, just fuck it.&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Notes" scheme="http://CSUwangj.github.io/categories/Notes/"/>
+    
+    
+      <category term="Cryptography" scheme="http://CSUwangj.github.io/tags/Cryptography/"/>
+    
+      <category term="CTF" scheme="http://CSUwangj.github.io/tags/CTF/"/>
+    
+      <category term="fuck" scheme="http://CSUwangj.github.io/tags/fuck/"/>
+    
+  </entry>
+  
+  <entry>
     <title>编程是很好玩的--md2docx是怎么写出来的</title>
     <link href="http://CSUwangj.github.io/%E7%BC%96%E7%A8%8B%E6%98%AF%E5%BE%88%E5%A5%BD%E7%8E%A9%E7%9A%84-md2docx%E6%98%AF%E6%80%8E%E4%B9%88%E5%86%99%E5%87%BA%E6%9D%A5%E7%9A%84/"/>
     <id>http://CSUwangj.github.io/编程是很好玩的-md2docx是怎么写出来的/</id>
     <published>2019-08-19T13:18:08.000Z</published>
-    <updated>2019-08-22T03:34:37.243Z</updated>
+    <updated>2019-08-22T04:44:31.836Z</updated>
     
     <summary type="html">
     
@@ -412,27 +437,6 @@
     <summary type="html">
     
       &lt;p&gt;What I&amp;#39;ve done today is &lt;em&gt;Where my anagrams at?&lt;/em&gt; in &lt;em&gt;JavaScript&lt;/em&gt;.&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="DailyChallenge" scheme="http://CSUwangj.github.io/categories/DailyChallenge/"/>
-    
-    
-      <category term="CodeWars" scheme="http://CSUwangj.github.io/tags/CodeWars/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>2019-03-09 Daily Challenge</title>
-    <link href="http://CSUwangj.github.io/2019-03-09-Daily-Challenge/"/>
-    <id>http://CSUwangj.github.io/2019-03-09-Daily-Challenge/</id>
-    <published>2019-03-09T00:48:52.000Z</published>
-    <updated>2019-03-09T00:50:57.642Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;What I&amp;#39;ve done today is &lt;em&gt;Simple Pig Latin&lt;/em&gt; in &lt;em&gt;JavaScript&lt;/em&gt;.&lt;/p&gt;
-&lt;p&gt;Problem is misleading and description is like shit. Data is poor.&lt;/p&gt;
     
     </summary>
     
