@@ -51,9 +51,9 @@
       <category term="Notes" scheme="http://CSUwangj.github.io/categories/Notes/"/>
     
     
-      <category term="Cryptography" scheme="http://CSUwangj.github.io/tags/Cryptography/"/>
-    
       <category term="CTF" scheme="http://CSUwangj.github.io/tags/CTF/"/>
+    
+      <category term="Cryptography" scheme="http://CSUwangj.github.io/tags/Cryptography/"/>
     
       <category term="fuck" scheme="http://CSUwangj.github.io/tags/fuck/"/>
     
@@ -84,163 +84,6 @@
   </entry>
   
   <entry>
-    <title>2019-03-25 Daily Challenge</title>
-    <link href="http://CSUwangj.github.io/2019-03-25-Daily-Challenge/"/>
-    <id>http://CSUwangj.github.io/2019-03-25-Daily-Challenge/</id>
-    <published>2019-03-25T14:47:48.000Z</published>
-    <updated>2019-03-25T14:59:52.410Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;p&gt;I&amp;#39;ve been busy build challenges for ACTF2019, and it&amp;#39;s private so, there isn&amp;#39;t anything.&lt;/p&gt;
-&lt;p&gt;Holy shit, why there&amp;#39;s
-        
-      
-    
-    </summary>
-    
-      <category term="DailyChallenge" scheme="http://CSUwangj.github.io/categories/DailyChallenge/"/>
-    
-    
-      <category term="Cryptography" scheme="http://CSUwangj.github.io/tags/Cryptography/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>2019-03-24 Daily Challenge</title>
-    <link href="http://CSUwangj.github.io/2019-03-24-Daily-Challenge/"/>
-    <id>http://CSUwangj.github.io/2019-03-24-Daily-Challenge/</id>
-    <published>2019-03-24T13:40:16.000Z</published>
-    <updated>2019-03-24T13:41:44.546Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;p&gt;I&amp;#39;ve been busy build challenges for ACTF2019, and it&amp;#39;s private so, there isn&amp;#39;t
-        
-      
-    
-    </summary>
-    
-      <category term="DailyChallenge" scheme="http://CSUwangj.github.io/categories/DailyChallenge/"/>
-    
-    
-      <category term="Cryptography" scheme="http://CSUwangj.github.io/tags/Cryptography/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>2019-03-23 Daily Challenge</title>
-    <link href="http://CSUwangj.github.io/2019-03-23-Daily-Challenge/"/>
-    <id>http://CSUwangj.github.io/2019-03-23-Daily-Challenge/</id>
-    <published>2019-03-23T15:34:14.000Z</published>
-    <updated>2019-03-23T15:47:11.227Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;Due to visit of my friend, I spent a lot of time playing with him. It&amp;#39;s so relaxing, so I&amp;#39;m not productive this weekend. :D&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="DailyChallenge" scheme="http://CSUwangj.github.io/categories/DailyChallenge/"/>
-    
-    
-      <category term="Cryptography" scheme="http://CSUwangj.github.io/tags/Cryptography/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>2019-03-22 Daily Challenge</title>
-    <link href="http://CSUwangj.github.io/2019-03-22-Daily-Challenge/"/>
-    <id>http://CSUwangj.github.io/2019-03-22-Daily-Challenge/</id>
-    <published>2019-03-21T16:06:05.000Z</published>
-    <updated>2019-03-22T16:40:49.549Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;I&amp;#39;ve complete a linear cryptanalysis attack towards simple a toy SPN cipher, I feel very veryyyyy happy!&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="DailyChallenge" scheme="http://CSUwangj.github.io/categories/DailyChallenge/"/>
-    
-    
-      <category term="Cryptography" scheme="http://CSUwangj.github.io/tags/Cryptography/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>2019-03-21 Daily Challenge</title>
-    <link href="http://CSUwangj.github.io/2019-03-21-Daily-Challenge/"/>
-    <id>http://CSUwangj.github.io/2019-03-21-Daily-Challenge/</id>
-    <published>2019-03-20T16:02:58.000Z</published>
-    <updated>2019-03-21T15:26:01.147Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;Today I&amp;#39;ve been reading &lt;a href=&quot;https://www.engr.mun.ca/~howard/PAPERS/ldc_tutorial.pdf&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;A Tutorial on Linear and Differential Cryptanalysis&lt;/a&gt; and finally finish reading it. I&amp;#39;ve found more interesting stuff like &lt;a href=&quot;http://www.theamazingking.com/crypto-linear.php&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;The Amazing King - Linear Cryptanalysis Tutorial&lt;/a&gt; &lt;a href=&quot;http://www.theamazingking.com/crypto-diff.php&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;The Amazing King - Differential Cryptanalysis Tutorial&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Still there will be only some casual notes.&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="DailiyChallenge" scheme="http://CSUwangj.github.io/categories/DailiyChallenge/"/>
-    
-    
-      <category term="Cryptography" scheme="http://CSUwangj.github.io/tags/Cryptography/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>2019-03-20 Daily Challenge</title>
-    <link href="http://CSUwangj.github.io/2019-03-20-Daily-Challenge/"/>
-    <id>http://CSUwangj.github.io/2019-03-20-Daily-Challenge/</id>
-    <published>2019-03-20T02:11:15.000Z</published>
-    <updated>2019-03-20T16:03:58.820Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;Let&amp;#39;s write some notes takes while challenging my self learning.&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="DailyChallenge" scheme="http://CSUwangj.github.io/categories/DailyChallenge/"/>
-    
-    
-      <category term="Cryptography" scheme="http://CSUwangj.github.io/tags/Cryptography/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>2019-03-19 Daily Challenge</title>
-    <link href="http://CSUwangj.github.io/2019-03-19-Daily-Challenge/"/>
-    <id>http://CSUwangj.github.io/2019-03-19-Daily-Challenge/</id>
-    <published>2019-03-19T11:11:02.000Z</published>
-    <updated>2019-03-19T11:33:31.503Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;Change again.&lt;/p&gt;
-&lt;p&gt;I change challenges into challenging my self learning, so there will be my daily notes for what I&amp;#39;ve learn.&lt;/p&gt;
-&lt;p&gt;TBH I don&amp;#39;t know if it&amp;#39;s a good enough form as which to record it.&lt;/p&gt;
-&lt;p&gt;Let&amp;#39;s try it~&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="DailyChallenge" scheme="http://CSUwangj.github.io/categories/DailyChallenge/"/>
-    
-    
-      <category term="NumberTheory" scheme="http://CSUwangj.github.io/tags/NumberTheory/"/>
-    
-  </entry>
-  
-  <entry>
     <title>Regex Golf Challenge</title>
     <link href="http://CSUwangj.github.io/Regex-Golf-Challenge/"/>
     <id>http://CSUwangj.github.io/Regex-Golf-Challenge/</id>
@@ -264,186 +107,481 @@
   </entry>
   
   <entry>
-    <title>2019-03-18 Daily Challenge</title>
-    <link href="http://CSUwangj.github.io/2019-03-18-Daily-Challenge/"/>
-    <id>http://CSUwangj.github.io/2019-03-18-Daily-Challenge/</id>
-    <published>2019-03-18T11:18:45.000Z</published>
-    <updated>2019-03-18T11:24:10.926Z</updated>
+    <title>ACTF Junior 2019 Official WriteUP of CSUWangj&#39;s Challenge</title>
+    <link href="http://CSUwangj.github.io/ACTF-Junior-2019-Official-WriteUP-of-CSUWangj-s-Challenge/"/>
+    <id>http://CSUwangj.github.io/ACTF-Junior-2019-Official-WriteUP-of-CSUWangj-s-Challenge/</id>
+    <published>2019-02-28T07:55:24.000Z</published>
+    <updated>2019-03-03T16:23:38.869Z</updated>
     
     <summary type="html">
     
-      &lt;p&gt;What I&amp;#39;ve done today is &lt;em&gt;Binary multiple of 3&lt;/em&gt; in &lt;em&gt;JavaScript&lt;/em&gt;.&lt;/p&gt;
-&lt;p&gt;FSM is interesting!&lt;/p&gt;
+      &lt;p&gt;日常出锅、、、&lt;/p&gt;
     
     </summary>
     
-      <category term="DailyChallenge" scheme="http://CSUwangj.github.io/categories/DailyChallenge/"/>
+      <category term="WriteUp" scheme="http://CSUwangj.github.io/categories/WriteUp/"/>
     
     
-      <category term="CodeWars" scheme="http://CSUwangj.github.io/tags/CodeWars/"/>
+      <category term="Misc" scheme="http://CSUwangj.github.io/tags/Misc/"/>
+    
+      <category term="Crypto" scheme="http://CSUwangj.github.io/tags/Crypto/"/>
+    
+      <category term="CTF" scheme="http://CSUwangj.github.io/tags/CTF/"/>
+    
+      <category term="PWN" scheme="http://CSUwangj.github.io/tags/PWN/"/>
+    
+      <category term="Forensics" scheme="http://CSUwangj.github.io/tags/Forensics/"/>
     
   </entry>
   
   <entry>
-    <title>2019-03-17 Daily Challenge</title>
-    <link href="http://CSUwangj.github.io/2019-03-17-Daily-Challenge/"/>
-    <id>http://CSUwangj.github.io/2019-03-17-Daily-Challenge/</id>
-    <published>2019-03-16T16:00:48.000Z</published>
-    <updated>2019-03-16T16:03:30.947Z</updated>
+    <title>ACM中一些常见的问题及原因</title>
+    <link href="http://CSUwangj.github.io/ACM%E4%B8%AD%E4%B8%80%E4%BA%9B%E5%B8%B8%E8%A7%81%E7%9A%84%E9%97%AE%E9%A2%98%E5%8F%8A%E5%8E%9F%E5%9B%A0/"/>
+    <id>http://CSUwangj.github.io/ACM中一些常见的问题及原因/</id>
+    <published>2019-01-30T09:23:34.000Z</published>
+    <updated>2019-11-12T17:24:17.638Z</updated>
     
     <summary type="html">
     
-      &lt;p&gt;What I&amp;#39;ve done today is &lt;em&gt;Counting Change Combinations&lt;/em&gt; in &lt;em&gt;JavaScript&lt;/em&gt;.&lt;/p&gt;
-&lt;p&gt;DP sucks.&lt;/p&gt;
+      &lt;p&gt;[TOC]&lt;/p&gt;
+&lt;p&gt;最近在 ACM 群灌水，顺便解决了一点问题，感觉可能会成为日经系列，寻思可以写个博文专门写写，正好也是对自己学习知识的检验。&lt;/p&gt;
+&lt;p&gt;我觉得这篇文章阅读方式可以按照《C语言常见问题集》，遇到问题了来看看也行，电脑阅读的时候右边应该会有个目录可以跳转，顺着读一遍也行。&lt;/p&gt;
+&lt;p&gt;文章只能慢慢更新，因为我并不想随意地对待这种难得的问题，然而工作在身并不能全身心投入。&lt;/p&gt;
+&lt;p&gt;以下内容如无特殊声明，采用C99和C++11标准。&lt;/p&gt;
     
     </summary>
     
-      <category term="DailyChallenge" scheme="http://CSUwangj.github.io/categories/DailyChallenge/"/>
+      <category term="Notes" scheme="http://CSUwangj.github.io/categories/Notes/"/>
     
     
-      <category term="CodeWars" scheme="http://CSUwangj.github.io/tags/CodeWars/"/>
+      <category term="ACM" scheme="http://CSUwangj.github.io/tags/ACM/"/>
     
   </entry>
   
   <entry>
-    <title>2019-03-16 Daily Challenge</title>
-    <link href="http://CSUwangj.github.io/2019-03-16-Daily-Challenge/"/>
-    <id>http://CSUwangj.github.io/2019-03-16-Daily-Challenge/</id>
-    <published>2019-03-15T16:53:11.000Z</published>
-    <updated>2019-03-15T16:54:33.826Z</updated>
+    <title>又一次装机</title>
+    <link href="http://CSUwangj.github.io/%E5%8F%88%E4%B8%80%E6%AC%A1%E8%A3%85%E6%9C%BA/"/>
+    <id>http://CSUwangj.github.io/又一次装机/</id>
+    <published>2019-01-21T02:41:05.000Z</published>
+    <updated>2019-01-22T07:25:20.667Z</updated>
     
     <summary type="html">
     
-      &lt;p&gt;What I&amp;#39;ve done today is &lt;em&gt;Nesting Structure Comparison&lt;/em&gt; in &lt;em&gt;JavaScript&lt;/em&gt;.&lt;/p&gt;
+      &lt;p&gt;更新了固态硬盘，所以又要重装电脑啦~&lt;br&gt;记录一蛤装机过程，主要还是给自己以后参考用。&lt;br&gt;
     
     </summary>
     
-      <category term="DailyChallenge" scheme="http://CSUwangj.github.io/categories/DailyChallenge/"/>
+      <category term="Notes" scheme="http://CSUwangj.github.io/categories/Notes/"/>
     
-    
-      <category term="CodeWars" scheme="http://CSUwangj.github.io/tags/CodeWars/"/>
     
   </entry>
   
   <entry>
-    <title>2019-03-15 Daily Challenge</title>
-    <link href="http://CSUwangj.github.io/2019-03-15-Daily-Challenge/"/>
-    <id>http://CSUwangj.github.io/2019-03-15-Daily-Challenge/</id>
-    <published>2019-03-14T16:10:10.000Z</published>
-    <updated>2019-03-14T16:11:47.909Z</updated>
+    <title>Cryptography_Engineering_Exercise</title>
+    <link href="http://CSUwangj.github.io/Cryptography-Engineering-Exercise/"/>
+    <id>http://CSUwangj.github.io/Cryptography-Engineering-Exercise/</id>
+    <published>2018-08-23T16:42:29.000Z</published>
+    <updated>2018-08-24T16:49:26.328Z</updated>
     
     <summary type="html">
     
-      &lt;p&gt;What I&amp;#39;ve done today is &lt;em&gt;Pete, the baker&lt;/em&gt; in &lt;em&gt;JavaScript&lt;/em&gt;.&lt;/p&gt;
+      &lt;p&gt;Cryptography Engineer在目前看来是一本十分不错的讲密码学的书。既然书名都叫密码学工程了，那就更应该动手做点练习了，这里就是用于存放部分练习以及索引的。&lt;/p&gt;
     
     </summary>
     
-      <category term="DailyChallenge" scheme="http://CSUwangj.github.io/categories/DailyChallenge/"/>
+      <category term="Notes" scheme="http://CSUwangj.github.io/categories/Notes/"/>
     
     
-      <category term="CodeWars" scheme="http://CSUwangj.github.io/tags/CodeWars/"/>
+      <category term="Crypto" scheme="http://CSUwangj.github.io/tags/Crypto/"/>
+    
+      <category term="Engineering" scheme="http://CSUwangj.github.io/tags/Engineering/"/>
     
   </entry>
   
   <entry>
-    <title>2019-03-14 Daily Challenge</title>
-    <link href="http://CSUwangj.github.io/2019-03-14-Daily-Challenge/"/>
-    <id>http://CSUwangj.github.io/2019-03-14-Daily-Challenge/</id>
-    <published>2019-03-13T16:09:22.000Z</published>
-    <updated>2019-03-13T16:11:42.537Z</updated>
+    <title>OverTheWire-Bandit全攻略+解析</title>
+    <link href="http://CSUwangj.github.io/OverTheWire-Bandit%E5%85%A8%E6%94%BB%E7%95%A5-%E8%A7%A3%E6%9E%90/"/>
+    <id>http://CSUwangj.github.io/OverTheWire-Bandit全攻略-解析/</id>
+    <published>2018-08-23T08:10:57.000Z</published>
+    <updated>2019-03-18T13:25:25.603Z</updated>
     
     <summary type="html">
     
-      &lt;p&gt;What I&amp;#39;ve done today is &lt;em&gt;Moving Zeros To The End&lt;/em&gt; in &lt;em&gt;JavaScript&lt;/em&gt;.&lt;/p&gt;
+      &lt;ul&gt;
+&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot; checked&gt; &lt;a href=&quot;http://overthewire.org/wargames/bandit/bandit0.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Level 0&lt;/a&gt;&lt;/li&gt;
+&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot; checked&gt; &lt;a href=&quot;http://overthewire.org/wargames/bandit/bandit1.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Level 0 → Level 1&lt;/a&gt;&lt;/li&gt;
+&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot; checked&gt; &lt;a href=&quot;http://overthewire.org/wargames/bandit/bandit2.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Level 1 → Level 2&lt;/a&gt;&lt;/li&gt;
+&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot; checked&gt; &lt;a href=&quot;http://overthewire.org/wargames/bandit/bandit3.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Level 2 → Level 3&lt;/a&gt;&lt;/li&gt;
+&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot; checked&gt; &lt;a href=&quot;http://overthewire.org/wargames/bandit/bandit4.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Level 3 → Level 4&lt;/a&gt;&lt;/li&gt;
+&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot; checked&gt; &lt;a href=&quot;http://overthewire.org/wargames/bandit/bandit5.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Level 4 → Level 5&lt;/a&gt;&lt;/li&gt;
+&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot; checked&gt; &lt;a href=&quot;http://overthewire.org/wargames/bandit/bandit6.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Level 5 → Level 6&lt;/a&gt;&lt;/li&gt;
+&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot; checked&gt; &lt;a href=&quot;http://overthewire.org/wargames/bandit/bandit7.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Level 6 → Level 7&lt;/a&gt;&lt;/li&gt;
+&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot; checked&gt; &lt;a href=&quot;http://overthewire.org/wargames/bandit/bandit8.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Level 7 → Level 8&lt;/a&gt;&lt;/li&gt;
+&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot; checked&gt; &lt;a href=&quot;http://overthewire.org/wargames/bandit/bandit9.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Level 8 → Level 9&lt;/a&gt;&lt;/li&gt;
+&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot; checked&gt; &lt;a href=&quot;http://overthewire.org/wargames/bandit/bandit10.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Level 9 → Level 10&lt;/a&gt;&lt;/li&gt;
+&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot; checked&gt; &lt;a href=&quot;http://overthewire.org/wargames/bandit/bandit11.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Level 10 → Level 11&lt;/a&gt;&lt;/li&gt;
+&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot; checked&gt; &lt;a href=&quot;http://overthewire.org/wargames/bandit/bandit12.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Level 11 → Level 12&lt;/a&gt;&lt;/li&gt;
+&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot; checked&gt; &lt;a href=&quot;http://overthewire.org/wargames/bandit/bandit13.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Level 12 → Level 13&lt;/a&gt;&lt;/li&gt;
+&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot; checked&gt; &lt;a href=&quot;http://overthewire.org/wargames/bandit/bandit14.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Level 13 → Level 14&lt;/a&gt;&lt;/li&gt;
+&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot;&gt; &lt;a href=&quot;http://overthewire.org/wargames/bandit/bandit15.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Level 14 → Level 15&lt;/a&gt;&lt;/li&gt;
+&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot;&gt; &lt;a href=&quot;http://overthewire.org/wargames/bandit/bandit16.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Level 15 → Level 16&lt;/a&gt;&lt;/li&gt;
+&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot;&gt; &lt;a href=&quot;http://overthewire.org/wargames/bandit/bandit17.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Level 16 → Level 17&lt;/a&gt;&lt;/li&gt;
+&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot;&gt; &lt;a href=&quot;http://overthewire.org/wargames/bandit/bandit18.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Level 17 → Level 18&lt;/a&gt;&lt;/li&gt;
+&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot;&gt; &lt;a href=&quot;http://overthewire.org/wargames/bandit/bandit19.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Level 18 → Level 19&lt;/a&gt;&lt;/li&gt;
+&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot;&gt; &lt;a href=&quot;http://overthewire.org/wargames/bandit/bandit20.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Level 19 → Level 20&lt;/a&gt;&lt;/li&gt;
+&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot;&gt; &lt;a href=&quot;http://overthewire.org/wargames/bandit/bandit21.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Level 20 → Level 21&lt;/a&gt;&lt;/li&gt;
+&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot;&gt; &lt;a href=&quot;http://overthewire.org/wargames/bandit/bandit22.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Level 21 → Level 22&lt;/a&gt;&lt;/li&gt;
+&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot;&gt; &lt;a href=&quot;http://overthewire.org/wargames/bandit/bandit23.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Level 22 → Level 23&lt;/a&gt;&lt;/li&gt;
+&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot;&gt; &lt;a href=&quot;http://overthewire.org/wargames/bandit/bandit24.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Level 23 → Level 24&lt;/a&gt;&lt;/li&gt;
+&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot;&gt; &lt;a href=&quot;http://overthewire.org/wargames/bandit/bandit25.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Level 24 → Level 25&lt;/a&gt;&lt;/li&gt;
+&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot;&gt; &lt;a href=&quot;http://overthewire.org/wargames/bandit/bandit26.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Level 25 → Level 26&lt;/a&gt;&lt;/li&gt;
+&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot;&gt; &lt;a href=&quot;http://overthewire.org/wargames/bandit/bandit27.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Level 26 → Level 27&lt;/a&gt;&lt;/li&gt;
+&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot;&gt; &lt;a href=&quot;http://overthewire.org/wargames/bandit/bandit28.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Level 27 → Level 28&lt;/a&gt;&lt;/li&gt;
+&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot;&gt; &lt;a href=&quot;http://overthewire.org/wargames/bandit/bandit29.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Level 28 → Level 29&lt;/a&gt;&lt;/li&gt;
+&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot;&gt; &lt;a href=&quot;http://overthewire.org/wargames/bandit/bandit30.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Level 29 → Level 30&lt;/a&gt;&lt;/li&gt;
+&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot;&gt; &lt;a href=&quot;http://overthewire.org/wargames/bandit/bandit31.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Level 30 → Level 31&lt;/a&gt;&lt;/li&gt;
+&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot;&gt; &lt;a href=&quot;http://overthewire.org/wargames/bandit/bandit32.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Level 31 → Level 32&lt;/a&gt;&lt;/li&gt;
+&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot;&gt; &lt;a href=&quot;http://overthewire.org/wargames/bandit/bandit33.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Level 32 → Level 33&lt;/a&gt;&lt;/li&gt;
+&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot;&gt; &lt;a href=&quot;http://overthewire.org/wargames/bandit/bandit34.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Level 33 → Level 34&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
     
     </summary>
     
-      <category term="DailyChallenge" scheme="http://CSUwangj.github.io/categories/DailyChallenge/"/>
+      <category term="WriteUp" scheme="http://CSUwangj.github.io/categories/WriteUp/"/>
     
     
-      <category term="CodeWars" scheme="http://CSUwangj.github.io/tags/CodeWars/"/>
+      <category term="WARGAME" scheme="http://CSUwangj.github.io/tags/WARGAME/"/>
+    
+      <category term="LinuxNotes" scheme="http://CSUwangj.github.io/tags/LinuxNotes/"/>
     
   </entry>
   
   <entry>
-    <title>2019-03-13 Daily Challenge</title>
-    <link href="http://CSUwangj.github.io/2019-03-13-Daily-Challenge/"/>
-    <id>http://CSUwangj.github.io/2019-03-13-Daily-Challenge/</id>
-    <published>2019-03-12T16:03:32.000Z</published>
-    <updated>2019-03-12T16:03:59.866Z</updated>
+    <title>Exploit-Exercise_Fusion全攻略+解析</title>
+    <link href="http://CSUwangj.github.io/Exploit-Exercise-Fusion%E5%85%A8%E6%94%BB%E7%95%A5-%E8%A7%A3%E6%9E%90/"/>
+    <id>http://CSUwangj.github.io/Exploit-Exercise-Fusion全攻略-解析/</id>
+    <published>2018-08-02T17:31:36.000Z</published>
+    <updated>2019-03-18T13:26:18.890Z</updated>
     
     <summary type="html">
     
-      &lt;p&gt;What I&amp;#39;ve done today is &lt;em&gt;Strip Comments&lt;/em&gt; in &lt;em&gt;JavaScript&lt;/em&gt;.&lt;/p&gt;
-&lt;p&gt;Regex is awesome!&lt;/p&gt;
+      &lt;p&gt;目前进度：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot; checked&gt; Level 00&lt;/li&gt;
+&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot;&gt; Level 01&lt;/li&gt;
+&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot;&gt; Level 02&lt;/li&gt;
+&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot;&gt; Level 03&lt;/li&gt;
+&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot;&gt; Level 04&lt;/li&gt;
+&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot;&gt; Level 05&lt;/li&gt;
+&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot;&gt; Level 06&lt;/li&gt;
+&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot;&gt; Level 07&lt;/li&gt;
+&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot;&gt; Level 08&lt;/li&gt;
+&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot;&gt; Level 09&lt;/li&gt;
+&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot;&gt; Level 10&lt;/li&gt;
+&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot;&gt; Level 11&lt;/li&gt;
+&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot;&gt; Level 12&lt;/li&gt;
+&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot;&gt; Level 13&lt;/li&gt;
+&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot;&gt; Level 14&lt;/li&gt;
+&lt;/ul&gt;
     
     </summary>
     
-      <category term="DailyChallenge" scheme="http://CSUwangj.github.io/categories/DailyChallenge/"/>
+      <category term="WriteUp" scheme="http://CSUwangj.github.io/categories/WriteUp/"/>
     
     
-      <category term="CodeWars" scheme="http://CSUwangj.github.io/tags/CodeWars/"/>
+      <category term="WARGAME" scheme="http://CSUwangj.github.io/tags/WARGAME/"/>
+    
+      <category term="PWN" scheme="http://CSUwangj.github.io/tags/PWN/"/>
+    
+      <category term="stackoverflow" scheme="http://CSUwangj.github.io/tags/stackoverflow/"/>
+    
+      <category term="mitigation" scheme="http://CSUwangj.github.io/tags/mitigation/"/>
     
   </entry>
   
   <entry>
-    <title>2019-03-12 Daily Challenge</title>
-    <link href="http://CSUwangj.github.io/2019-03-12-Daily-Challenge/"/>
-    <id>http://CSUwangj.github.io/2019-03-12-Daily-Challenge/</id>
-    <published>2019-03-11T16:14:59.000Z</published>
-    <updated>2019-03-11T16:17:57.554Z</updated>
+    <title>Exploit-Exercise_Protostar全攻略+解析</title>
+    <link href="http://CSUwangj.github.io/Exploit-Exercise-Protostar%E5%85%A8%E6%94%BB%E7%95%A5-%E8%A7%A3%E6%9E%90/"/>
+    <id>http://CSUwangj.github.io/Exploit-Exercise-Protostar全攻略-解析/</id>
+    <published>2018-07-22T06:46:15.000Z</published>
+    <updated>2019-03-18T13:26:11.891Z</updated>
     
     <summary type="html">
     
-      &lt;p&gt;What I&amp;#39;ve done today is &lt;em&gt;Range Extraction&lt;/em&gt; in &lt;em&gt;JavaScript&lt;/em&gt;.&lt;/p&gt;
+      &lt;p&gt;目前进度：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot; checked&gt; Stack 0&lt;/li&gt;
+&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot; checked&gt; Stack 1&lt;/li&gt;
+&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot; checked&gt; Stack 2&lt;/li&gt;
+&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot; checked&gt; Stack 3&lt;/li&gt;
+&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot;&gt; 小结一：C/C++程序中的栈&lt;/li&gt;
+&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot; checked&gt; Stack 4&lt;/li&gt;
+&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot;&gt; 小结二：EIP能好怎&lt;/li&gt;
+&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot; checked&gt; Stack 5&lt;/li&gt;
+&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot;&gt; 小结三：shellcode&lt;/li&gt;
+&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot; checked&gt; Stack 6&lt;/li&gt;
+&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot; checked&gt; Stack 7&lt;/li&gt;
+&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot; checked&gt; Format 0&lt;/li&gt;
+&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot; checked&gt; Format 1&lt;/li&gt;
+&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot; checked&gt; Format 2&lt;/li&gt;
+&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot; checked&gt; Format 3&lt;/li&gt;
+&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot; checked&gt; Format 4&lt;/li&gt;
+&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot;&gt; 小结四：格式化字符串&lt;/li&gt;
+&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot; checked&gt; Heap 0&lt;/li&gt;
+&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot; checked&gt; Heap 1&lt;/li&gt;
+&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot; checked&gt; Heap 2&lt;/li&gt;
+&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot; checked&gt; Heap 3&lt;/li&gt;
+&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot; checked&gt; Net 0&lt;/li&gt;
+&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot; checked&gt; Net 1&lt;/li&gt;
+&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot; checked&gt; Net 2&lt;/li&gt;
+&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot; checked&gt; Final 0&lt;/li&gt;
+&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot; checked&gt; Final 1&lt;/li&gt;
+&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot; checked&gt; Final 2&lt;/li&gt;
+&lt;/ul&gt;
     
     </summary>
     
-      <category term="DailyChallenge" scheme="http://CSUwangj.github.io/categories/DailyChallenge/"/>
+      <category term="WriteUp" scheme="http://CSUwangj.github.io/categories/WriteUp/"/>
     
     
-      <category term="CodeWars" scheme="http://CSUwangj.github.io/tags/CodeWars/"/>
+      <category term="WARGAME" scheme="http://CSUwangj.github.io/tags/WARGAME/"/>
+    
+      <category term="PWN" scheme="http://CSUwangj.github.io/tags/PWN/"/>
+    
+      <category term="stackoverflow" scheme="http://CSUwangj.github.io/tags/stackoverflow/"/>
+    
+      <category term="formatstring" scheme="http://CSUwangj.github.io/tags/formatstring/"/>
+    
+      <category term="heapoverflow" scheme="http://CSUwangj.github.io/tags/heapoverflow/"/>
+    
+      <category term="unlink" scheme="http://CSUwangj.github.io/tags/unlink/"/>
     
   </entry>
   
   <entry>
-    <title>2019-03-11 Daily Challenge</title>
-    <link href="http://CSUwangj.github.io/2019-03-11-Daily-Challenge/"/>
-    <id>http://CSUwangj.github.io/2019-03-11-Daily-Challenge/</id>
-    <published>2019-03-11T06:10:36.000Z</published>
-    <updated>2019-03-12T16:03:29.128Z</updated>
+    <title>在pip连不上网的时候安装pwntools</title>
+    <link href="http://CSUwangj.github.io/%E5%9C%A8pip%E8%BF%9E%E4%B8%8D%E4%B8%8A%E7%BD%91%E7%9A%84%E6%97%B6%E5%80%99%E5%AE%89%E8%A3%85pwntools/"/>
+    <id>http://CSUwangj.github.io/在pip连不上网的时候安装pwntools/</id>
+    <published>2018-07-21T06:38:02.000Z</published>
+    <updated>2018-07-30T02:00:33.000Z</updated>
     
     <summary type="html">
     
-      &lt;p&gt;What I&amp;#39;ve done today is &lt;em&gt;A Chain adding function&lt;/em&gt; in &lt;em&gt;JavaScript&lt;/em&gt;.&lt;/p&gt;
-&lt;p&gt;Currying is awesome!&lt;/p&gt;
+      &lt;p&gt;本文描述了这样一种特殊情况下安装pwntools的解决方案：有方法联网，但是pip连不上网。 &lt;/p&gt;
     
     </summary>
     
-      <category term="DailyChallenge" scheme="http://CSUwangj.github.io/categories/DailyChallenge/"/>
+      <category term="Notes" scheme="http://CSUwangj.github.io/categories/Notes/"/>
     
     
-      <category term="CodeWars" scheme="http://CSUwangj.github.io/tags/CodeWars/"/>
+      <category term="PWN" scheme="http://CSUwangj.github.io/tags/PWN/"/>
     
   </entry>
   
   <entry>
-    <title>2019-03-10 Daily Challenge</title>
-    <link href="http://CSUwangj.github.io/2019-03-10-Daily-Challenge/"/>
-    <id>http://CSUwangj.github.io/2019-03-10-Daily-Challenge/</id>
-    <published>2019-03-09T16:04:01.000Z</published>
-    <updated>2019-03-11T06:11:46.259Z</updated>
+    <title>CTF用环境搭建</title>
+    <link href="http://CSUwangj.github.io/CTF%E7%94%A8%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/"/>
+    <id>http://CSUwangj.github.io/CTF用环境搭建/</id>
+    <published>2018-07-20T06:57:49.000Z</published>
+    <updated>2019-01-31T02:11:25.985Z</updated>
     
     <summary type="html">
     
-      &lt;p&gt;What I&amp;#39;ve done today is &lt;em&gt;Where my anagrams at?&lt;/em&gt; in &lt;em&gt;JavaScript&lt;/em&gt;.&lt;/p&gt;
+      &lt;h1 id=&quot;目前工具集合&quot;&gt;&lt;a href=&quot;#目前工具集合&quot; class=&quot;headerlink&quot; title=&quot;目前工具集合&quot;&gt;&lt;/a&gt;目前工具集合&lt;/h1&gt;&lt;h2 id=&quot;环境&quot;&gt;&lt;a href=&quot;#环境&quot; class=&quot;headerlink&quot; title=&quot;环境&quot;&gt;&lt;/a&gt;环境&lt;/h2&gt;&lt;ul&gt;
+&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot; checked&gt; 86架构及基本库&lt;/li&gt;
+&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot; checked&gt; wine32&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;安装式&quot;&gt;&lt;a href=&quot;#安装式&quot; class=&quot;headerlink&quot; title=&quot;安装式&quot;&gt;&lt;/a&gt;安装式&lt;/h2&gt;&lt;p&gt;这里的话就是那种安装以后直接用的，也有的是插件&lt;/p&gt;
+&lt;ul&gt;
+&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot; checked&gt; pwndbg&lt;/li&gt;
+&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot; checked&gt; r2&lt;/li&gt;
+&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot; checked&gt; Audacity&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;非安装式&quot;&gt;&lt;a href=&quot;#非安装式&quot; class=&quot;headerlink&quot; title=&quot;非安装式&quot;&gt;&lt;/a&gt;非安装式&lt;/h2&gt;&lt;p&gt;这里的是不用/不能安装的库，比如脚本等&lt;/p&gt;
+&lt;p&gt;统一放置在/opt/目录下，可能根据类别再分&lt;/p&gt;
+&lt;ul&gt;
+&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot; checked&gt; rsatool&lt;/li&gt;
+&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot; checked&gt; cloacked-pixel&lt;/li&gt;
+&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot; checked&gt; volatility&lt;/li&gt;
+&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot; checked&gt; routerpassview&lt;/li&gt;
+&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot; checked&gt; Stegsolve &lt;/li&gt;
+&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot;&gt; CTFcrackTools&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;Python库&quot;&gt;&lt;a href=&quot;#Python库&quot; class=&quot;headerlink&quot; title=&quot;Python库&quot;&gt;&lt;/a&gt;Python库&lt;/h2&gt;&lt;ul&gt;
+&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot; checked&gt; pwntools&lt;/li&gt;
+&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot; checked&gt; gmpy2&lt;/li&gt;
+&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot; checked&gt; unicorn&lt;/li&gt;
+&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot; checked&gt; zio&lt;/li&gt;
+&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot; checked&gt; angr&lt;/li&gt;
+&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot; checked&gt; request &lt;/li&gt;
+&lt;/ul&gt;
     
     </summary>
     
-      <category term="DailyChallenge" scheme="http://CSUwangj.github.io/categories/DailyChallenge/"/>
+      <category term="Notes" scheme="http://CSUwangj.github.io/categories/Notes/"/>
     
     
-      <category term="CodeWars" scheme="http://CSUwangj.github.io/tags/CodeWars/"/>
+      <category term="CTF" scheme="http://CSUwangj.github.io/tags/CTF/"/>
+    
+      <category term="environment" scheme="http://CSUwangj.github.io/tags/environment/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>关于散列函数的一点思考</title>
+    <link href="http://CSUwangj.github.io/%E5%85%B3%E4%BA%8E%E6%95%A3%E5%88%97%E5%87%BD%E6%95%B0%E7%9A%84%E4%B8%80%E7%82%B9%E6%80%9D%E8%80%83/"/>
+    <id>http://CSUwangj.github.io/关于散列函数的一点思考/</id>
+    <published>2018-06-02T17:35:47.000Z</published>
+    <updated>2018-07-30T02:00:33.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;今天在ACM群灌水的时候因为一个题目引发了一些思考，题目是&lt;a href=&quot;http://qscoj.cn/#/contest/show/220&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;比赛链接&lt;/a&gt;的A题&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Notes" scheme="http://CSUwangj.github.io/categories/Notes/"/>
+    
+    
+      <category term="Crypto" scheme="http://CSUwangj.github.io/tags/Crypto/"/>
+    
+      <category term="ACM" scheme="http://CSUwangj.github.io/tags/ACM/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>AFCTF2018-Crypto_OfficialWriteUp</title>
+    <link href="http://CSUwangj.github.io/AFCTF2018-Crypto-OfficialWriteUp/"/>
+    <id>http://CSUwangj.github.io/AFCTF2018-Crypto-OfficialWriteUp/</id>
+    <published>2018-05-21T06:46:15.000Z</published>
+    <updated>2018-08-01T16:28:25.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;最后四个题没人做出来&lt;/p&gt;
+&lt;p&gt;题目丢到了github，欢迎来玩~&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/CSUwangj/AFCTF2018-Crypto&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://github.com/CSUwangj/AFCTF2018-Crypto&lt;/a&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="WriteUp" scheme="http://CSUwangj.github.io/categories/WriteUp/"/>
+    
+    
+      <category term="Misc" scheme="http://CSUwangj.github.io/tags/Misc/"/>
+    
+      <category term="Crypto" scheme="http://CSUwangj.github.io/tags/Crypto/"/>
+    
+      <category term="CTF" scheme="http://CSUwangj.github.io/tags/CTF/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>JarvisOJ-WP合集</title>
+    <link href="http://CSUwangj.github.io/JarvisOJ-WP%E5%90%88%E9%9B%86/"/>
+    <id>http://CSUwangj.github.io/JarvisOJ-WP合集/</id>
+    <published>2018-05-10T01:11:00.000Z</published>
+    <updated>2018-08-14T12:12:38.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt; 因为预感进度表会很长，所以不放了&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="WriteUp" scheme="http://CSUwangj.github.io/categories/WriteUp/"/>
+    
+    
+      <category term="Misc" scheme="http://CSUwangj.github.io/tags/Misc/"/>
+    
+      <category term="Crypto" scheme="http://CSUwangj.github.io/tags/Crypto/"/>
+    
+      <category term="CTF" scheme="http://CSUwangj.github.io/tags/CTF/"/>
+    
+      <category term="PWN" scheme="http://CSUwangj.github.io/tags/PWN/"/>
+    
+      <category term="Web" scheme="http://CSUwangj.github.io/tags/Web/"/>
+    
+      <category term="Rev" scheme="http://CSUwangj.github.io/tags/Rev/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>*ctf magic_number WP</title>
+    <link href="http://CSUwangj.github.io/ctf-magic-number-WP/"/>
+    <id>http://CSUwangj.github.io/ctf-magic-number-WP/</id>
+    <published>2018-04-27T13:48:19.000Z</published>
+    <updated>2018-07-30T02:00:33.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;99次内猜14个[0,1023]内的数，那肯定是不仅二分而且要整体二分了&lt;/p&gt;
+&lt;p&gt;简单说来是&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="WriteUp" scheme="http://CSUwangj.github.io/categories/WriteUp/"/>
+    
+    
+      <category term="CTF" scheme="http://CSUwangj.github.io/tags/CTF/"/>
+    
+      <category term="PPC" scheme="http://CSUwangj.github.io/tags/PPC/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>id0-rsa WP合集</title>
+    <link href="http://CSUwangj.github.io/id0-rsa-WP%E5%90%88%E9%9B%86/"/>
+    <id>http://CSUwangj.github.io/id0-rsa-WP合集/</id>
+    <published>2018-04-19T07:53:15.000Z</published>
+    <updated>2018-07-30T02:00:33.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;忙里偷闲做做题wwwwwwwwwwwww&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="WriteUp" scheme="http://CSUwangj.github.io/categories/WriteUp/"/>
+    
+    
+      <category term="Crypto" scheme="http://CSUwangj.github.io/tags/Crypto/"/>
+    
+      <category term="CTF" scheme="http://CSUwangj.github.io/tags/CTF/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>安装式工具集合</title>
+    <link href="http://CSUwangj.github.io/%E5%AE%89%E8%A3%85%E5%BC%8F%E5%B7%A5%E5%85%B7%E9%9B%86%E5%90%88/"/>
+    <id>http://CSUwangj.github.io/安装式工具集合/</id>
+    <published>2018-03-01T13:59:01.000Z</published>
+    <updated>2018-07-30T02:00:33.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;持续更新ing&lt;/p&gt;
+&lt;p&gt;可能以后还会重新整理&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Tools" scheme="http://CSUwangj.github.io/categories/Tools/"/>
+    
+    
+      <category term="Software" scheme="http://CSUwangj.github.io/tags/Software/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>逆向工程核心原理学习笔记（一）</title>
+    <link href="http://CSUwangj.github.io/%E9%80%86%E5%90%91%E5%B7%A5%E7%A8%8B%E6%A0%B8%E5%BF%83%E5%8E%9F%E7%90%86%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%88%E4%B8%80%EF%BC%89/"/>
+    <id>http://CSUwangj.github.io/逆向工程核心原理学习笔记（一）/</id>
+    <published>2018-02-26T13:52:44.000Z</published>
+    <updated>2018-07-30T02:00:33.000Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
     
   </entry>
   
