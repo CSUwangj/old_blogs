@@ -131,7 +131,7 @@
 <meta property="og:image" content="http://csuwangj.github.io/ACM中一些常见的问题及原因/1573620431685.png">
 <meta property="og:image" content="http://csuwangj.github.io/ACM中一些常见的问题及原因/1573620523529.png">
 <meta property="og:image" content="http://csuwangj.github.io/ACM中一些常见的问题及原因/1573620621212.png">
-<meta property="og:updated_time" content="2019-11-13T05:03:48.906Z">
+<meta property="og:updated_time" content="2019-11-13T12:26:54.291Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="ACM中一些常见的问题及原因">
 <meta name="twitter:description" content="最近在 ACM 群灌水，顺便解决了一点问题，感觉可能会成为日经系列，寻思可以写个博文专门写写，正好也是对自己学习知识的检验。 我觉得这篇文章阅读方式可以按照《C语言常见问题集》，遇到问题了来看看也行，电脑阅读的时候右边应该会有个目录可以跳转，顺着读一遍也行。 文章只能慢慢更新，因为我并不想随意地对待这种难得的问题，然而工作在身并不能全身心投入。 以下内容如无特殊声明，采用C99和C++11标准。">
@@ -417,7 +417,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2019-11-13 13:03:48" itemprop="dateModified" datetime="2019-11-13T13:03:48+08:00">2019-11-13</time>
+                <time title="修改时间：2019-11-13 20:26:54" itemprop="dateModified" datetime="2019-11-13T20:26:54+08:00">2019-11-13</time>
               
             
           </span>
@@ -474,7 +474,7 @@
                 
                   <span class="post-meta-item-text">本文字数：</span>
                 
-                <span title="本文字数">8.9k</span>
+                <span title="本文字数">9.2k</span>
               
 
               
@@ -580,6 +580,16 @@ are otherwise ignored.**
 <p>接下来我们深入到程序编译成的汇编代码里调试看一下，发现RE是出现在<img src="/ACM中一些常见的问题及原因/1573577931809.png" width="1573579083511"></p>
 <p>后来找了办法确定了RAX里存放的是数组的地址，但是除此之外也不知道为什么会出这个错。</p>
 <p>我理解来电脑不应该分配那么多内存，也就是分配阶段就应该出问题了，而不是在写东西的时候才有问题。</p>
+<hr>
+<p>和<a href="https://blog.yuki-nagato.com/" target="_blank" rel="noopener">yuki nagato</a>讨论有了一个新的猜测</p>
+<blockquote>
+<p>yuki nagato<br>关于这个问题，我觉得应该是因为未初始化的全局变量位于bss段，系统在程序开始执行时只是记录了它的大小，没有给它实际分配内存</p>
+<p>yuki nagato<br>在首次访问的时候，系统会给它分配全零的页面，这时候会触发相关的错误</p>
+<p>CSUwangj<br>嗯嗯，感觉你说的有道理</p>
+<p>CSUwangj<br>这样子的话，我想想有没有办法验证</p>
+<p>CSUwangj<br>似乎直接调试windows可能可以验证这个</p>
+</blockquote>
+<p>但是由于本人调试Windows经验不足，验证期限无限期延长...欢迎大牛帮帮忙提提PR</p>
 <h1 id="为什么越界会导致-RE？"><a href="#为什么越界会导致-RE？" class="headerlink" title="为什么越界会导致 RE？"></a>为什么越界会导致 RE？</h1><p>一句话回答就是，越界写会导致向不该写的地方写入数据。</p>
 <p>详细展开的话，如果是对函数里的局部变量进行了越界写，那么可能会破坏程序运行时的调用栈，导致返回地址改变，这类情况也可以归结为栈溢出，而且这个名称同时也对应了历史上一类很有名的漏洞——<a href="https://www.52pojie.cn/thread-974510-1-1.html" target="_blank" rel="noopener">栈溢出漏洞</a>。</p>
 <p>如果是对static变量、局部变量、使用new或者*alloc分配的变量进行越界写，因为它们分配在堆上，造成的问题也就是堆溢出，同样的，堆溢出也对应了<a href="https://cloud.tencent.com/developer/article/1083866" target="_blank" rel="noopener">堆溢出漏洞</a>。</p>
@@ -1114,7 +1124,7 @@ are otherwise ignored.**
     
       <span class="post-meta-item-text">站点阅读时长 &asymp;</span>
     
-    <span title="站点阅读时长">4:18</span>
+    <span title="站点阅读时长">4:19</span>
   
 </div>
 
