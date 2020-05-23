@@ -35,6 +35,28 @@
   </entry>
   
   <entry>
+    <title>游戏的随机，随机的游戏（一）：当我们讨论伪随机时我们在讨论什么</title>
+    <link href="http://CSUwangj.github.io/%E6%B8%B8%E6%88%8F%E7%9A%84%E9%9A%8F%E6%9C%BA%EF%BC%8C%E9%9A%8F%E6%9C%BA%E7%9A%84%E6%B8%B8%E6%88%8F%EF%BC%88%E4%B8%80%EF%BC%89%EF%BC%9A%E5%BD%93%E6%88%91%E4%BB%AC%E8%AE%A8%E8%AE%BA%E4%BC%AA%E9%9A%8F%E6%9C%BA%E6%97%B6%E6%88%91%E4%BB%AC%E5%9C%A8%E8%AE%A8%E8%AE%BA%E4%BB%80%E4%B9%88/"/>
+    <id>http://CSUwangj.github.io/游戏的随机，随机的游戏（一）：当我们讨论伪随机时我们在讨论什么/</id>
+    <published>2020-05-18T06:14:17.000Z</published>
+    <updated>2020-05-23T17:06:21.390Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;我们生活的世界充满了随机，在娱乐时也是。从一次次抽卡、掉落物品，平A转出的暴击，甚至在每一次攻击，背后都有概率的影子。你是否曾看到“计算机里只有伪随机”，又看到有人说“伪随机抽奖机制确保中奖”？他们说的分别是什么？我为什么还抽不到想要的SSR？为什么她17张牌秒了我？&lt;/p
+        
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
     <title>How to recover DES master key from round key</title>
     <link href="http://CSUwangj.github.io/How-to-recover-DES-master-key-from-round-key/"/>
     <id>http://CSUwangj.github.io/How-to-recover-DES-master-key-from-round-key/</id>
@@ -567,20 +589,6 @@
     
     
       <category term="Software" scheme="http://CSUwangj.github.io/tags/Software/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>逆向工程核心原理学习笔记（一）</title>
-    <link href="http://CSUwangj.github.io/%E9%80%86%E5%90%91%E5%B7%A5%E7%A8%8B%E6%A0%B8%E5%BF%83%E5%8E%9F%E7%90%86%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%88%E4%B8%80%EF%BC%89/"/>
-    <id>http://CSUwangj.github.io/逆向工程核心原理学习笔记（一）/</id>
-    <published>2018-02-26T13:52:44.000Z</published>
-    <updated>2018-07-30T02:00:33.000Z</updated>
-    
-    <summary type="html">
-    
-    </summary>
-    
     
   </entry>
   
