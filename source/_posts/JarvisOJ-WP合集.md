@@ -476,25 +476,25 @@ PCTF{256b_i5_m3dium}
 
 ## [Ｘ] hard RSA
 
-> ## RSA 衍生算法——Rabin 算法
->
-> ### 攻击条件
->
-> Rabin 算法的特征在于 $e=2$。
->
-> ### 攻击原理
->
+ ## RSA 衍生算法——Rabin 算法
+
+ ### 攻击条件
+
+ Rabin 算法的特征在于 $e=2​$。
+
+ ### 攻击原理
+
 > 密文：
 >
-> $c=m^2modn$
+> $c=m^2\mod n$
 >
 > 解密：
 >
 > - 计算出 $m^p$ 和 $m^q$：
 >
-> $$m_p=\sqrt{c}modp$$
+> $$m_p=\sqrt{c}\mod p$$
 >
-> $$m_q=\sqrt{c}modq$$
+> $$m_q=\sqrt{c}\mod q$$
 >
 > - 用扩展欧几里得计算出 $y_p$ 和 $y_q$：
 >

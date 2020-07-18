@@ -3,9 +3,9 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: LuckyBlog
-subtitle: LuckDog
-description: CSUwangj's blog~
+title: LuckyDog
+subtitle: CSUwangj
+description: Just keep in mind that hacking is very rarely in a sequence.
 author: CSUwangj
 language: zh-CN
 timezone:
@@ -14,7 +14,7 @@ timezone:
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
 url: http://CSUwangj.github.io/
 root: /
-permalink: :year/:month/:day/:title/
+permalink: :title/
 permalink_defaults:
 
 # Directory
@@ -104,7 +104,7 @@ feed:
 theme: next-reloaded
 
 leancloud_counter_security:
-  enable_sync: true
+  enable_sync: false
   app_id: zeF6sm997gd33RkGk6pWMFHm-gzGzoHsz
   app_key: 36WJhdApeyIDHAXA0lQ6HYPl
   username: CSUwangj
@@ -115,6 +115,8 @@ admin:
   password_hash: $2a$10$am.WgtW4DBj09s3wUJDPK.GwBoTWyc9lyQ3apwKBnrDJD0WDRt/Ui
   secret: ~!@#$%^&*()_+{}|:"<>?,./l;'[]\`-=
   
+marked:
+  smartypants: false
 # Security
 ##
 encrypt:

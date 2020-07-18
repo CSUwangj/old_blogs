@@ -17,7 +17,6 @@ date: 2018-07-20 14:57:49
 
 - [x] 86架构及基本库
 - [x] wine32
-- [ ] pattern
 
 ## 安装式
 
@@ -80,6 +79,7 @@ apt-get install wine32
 ### pwndbg
 
 ```bash
+apt-get install python3.7-dev
 git clone https://github.com/pwndbg/pwndbg /opt/pwndbg
 cd /opt/pwndbg
 ./setup.sh 
@@ -124,7 +124,7 @@ apt-get install audacity
 | zio      | `pip install termcolor zio`    |                                    |
 | angr     | `pip install angr`             |                                    |
 | unicorn  | `pip install unicorn`          | pwntools自带，但是不妨碍你只安装它 |
-|          | `pip install request`          |                                    |
+| request  | `pip install request`          |                                    |
 
 
 

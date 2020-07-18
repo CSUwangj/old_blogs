@@ -27,7 +27,7 @@ summary:
 dpkg --add-architecture i386 
 apt-get update
 apt-get -f dist-upgrade 
-apt-get install lib32c-dev lib32stdc++6  
+apt-get install lib32c-dev lib32stdc++6 libc6:i386 gcc-multilib
 apt-get install python2.7 python-pip python-dev git libssl-dev libffi-dev build-essential
 pip install pwntools
 git clone https://github.com/pwndbg/pwndbg /opt/pwndbg
@@ -40,8 +40,8 @@ cd /opt/pwndbg
 -    Exploit-Exercise
 
      - [ ] Nebula
-     - [ ] [Protostar](http://csuwangj.top/2018/07/22/Exploit-Exercise-Protostar%E5%85%A8%E6%94%BB%E7%95%A5-%E8%A7%A3%E6%9E%90/)
-     - [ ] Fusion
+     - [x] [Protostar](http://csuwangj.top/2018/07/22/Exploit-Exercise-Protostar%E5%85%A8%E6%94%BB%E7%95%A5-%E8%A7%A3%E6%9E%90/)（解析还没写XD）
+     - [ ] [Fusion](https://csuwangj.github.io/2018/08/03/Exploit-Exercise-Fusion%E5%85%A8%E6%94%BB%E7%95%A5-%E8%A7%A3%E6%9E%90/)
      -    Main Sequence
           - [ ] Main Sequence
           - [ ] Story line

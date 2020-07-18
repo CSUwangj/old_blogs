@@ -7,6 +7,4 @@ date: 2018-05-18 20:42:11
 >
 > ——苏珊·奈曼《为什么长大》
 
-安全方面的小菜鸟，因为幸运拿到了实习OFFER。
-
-一路走来，感谢有你们的陪伴，无以为报！
+Good morning, and in case I don't see you, good afternoon, good evening and good night~
