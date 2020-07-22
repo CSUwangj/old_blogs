@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://CSUwangj.github.io/"/>
-  <updated>2019-01-30T07:14:55.543Z</updated>
+  <updated>2019-01-30T07:14:55.000Z</updated>
   <id>http://CSUwangj.github.io/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="http://CSUwangj.github.io/%E5%8D%9A%E6%96%87%E6%95%B4%E7%90%86/"/>
     <id>http://CSUwangj.github.io/博文整理/</id>
     <published>8102-12-19T02:36:02.000Z</published>
-    <updated>2019-01-30T07:14:55.543Z</updated>
+    <updated>2019-01-30T07:14:55.000Z</updated>
     
     <summary type="html">
     
@@ -35,21 +35,52 @@
   </entry>
   
   <entry>
+    <title>像做项目一样做毕设</title>
+    <link href="http://CSUwangj.github.io/%E5%83%8F%E5%81%9A%E9%A1%B9%E7%9B%AE%E4%B8%80%E6%A0%B7%E5%81%9A%E6%AF%95%E8%AE%BE-1/"/>
+    <id>http://CSUwangj.github.io/像做项目一样做毕设-1/</id>
+    <published>2020-07-22T13:35:25.000Z</published>
+    <updated>2020-07-22T13:35:25.701Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>像做项目一样做毕设</title>
+    <link href="http://CSUwangj.github.io/%E5%83%8F%E5%81%9A%E9%A1%B9%E7%9B%AE%E4%B8%80%E6%A0%B7%E5%81%9A%E6%AF%95%E8%AE%BE/"/>
+    <id>http://CSUwangj.github.io/像做项目一样做毕设/</id>
+    <published>2020-07-22T12:57:08.000Z</published>
+    <updated>2020-07-22T13:22:37.804Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;绪论&quot;&gt;&lt;a href=&quot;#绪论&quot; class=&quot;headerlink&quot; title=&quot;绪论&quot;&gt;&lt;/a&gt;绪论&lt;/h1&gt;&lt;p&gt;整理自己在学校的东西，看到自己为了毕业设计开的项目，觉得自己的这份经验值得分享一下，所以整理一下发出来，帮助学弟学妹开始自己的毕设。&lt;/p&gt;
+&lt;p&gt;本文主要分为两个部分，一个是工作流，另一个是小技巧：工作流包括了我从联系导师、确认选题到最后完成设计、申请推优的大流程；小技巧则是我认为在毕设过程中提升了我工作效率的一些设计、软件。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Notes" scheme="http://CSUwangj.github.io/categories/Notes/"/>
+    
+    
+      <category term="Graduation" scheme="http://CSUwangj.github.io/tags/Graduation/"/>
+    
+      <category term="Project Management" scheme="http://CSUwangj.github.io/tags/Project-Management/"/>
+    
+  </entry>
+  
+  <entry>
     <title>游戏的随机，随机的游戏（一）：当我们讨论伪随机时我们在讨论什么</title>
     <link href="http://CSUwangj.github.io/%E6%B8%B8%E6%88%8F%E7%9A%84%E9%9A%8F%E6%9C%BA%EF%BC%8C%E9%9A%8F%E6%9C%BA%E7%9A%84%E6%B8%B8%E6%88%8F%EF%BC%88%E4%B8%80%EF%BC%89%EF%BC%9A%E5%BD%93%E6%88%91%E4%BB%AC%E8%AE%A8%E8%AE%BA%E4%BC%AA%E9%9A%8F%E6%9C%BA%E6%97%B6%E6%88%91%E4%BB%AC%E5%9C%A8%E8%AE%A8%E8%AE%BA%E4%BB%80%E4%B9%88/"/>
     <id>http://CSUwangj.github.io/游戏的随机，随机的游戏（一）：当我们讨论伪随机时我们在讨论什么/</id>
     <published>2020-05-18T06:14:17.000Z</published>
-    <updated>2020-05-23T17:06:21.390Z</updated>
+    <updated>2020-07-18T18:31:12.260Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;p&gt;我们生活的世界充满了随机，在娱乐时也是。从一次次抽卡、掉落物品，平A转出的暴击，甚至在每一次攻击，背后都有概率的影子。你是否曾看到“计算机里只有伪随机”，又看到有人说“伪随机抽奖机制确保中奖”？他们说的分别是什么？我为什么还抽不到想要的SSR？为什么她17张牌秒了我？&lt;/p
-        
-      
+      &lt;p&gt;我们生活的世界充满了随机，在娱乐时也是。从一次次抽卡、掉落物品，平A转出的暴击，甚至在每一次攻击，背后都有概率的影子。你是否曾看到“计算机里只有伪随机”，又看到有人说“伪随机抽奖机制确保中奖”？他们说的分别是什么？我为什么还抽不到想要的SSR？为什么她17张牌秒了我？&lt;/p&gt;
     
     </summary>
     
@@ -61,7 +92,7 @@
     <link href="http://CSUwangj.github.io/How-to-recover-DES-master-key-from-round-key/"/>
     <id>http://CSUwangj.github.io/How-to-recover-DES-master-key-from-round-key/</id>
     <published>2019-11-09T14:13:16.000Z</published>
-    <updated>2019-11-09T15:17:59.973Z</updated>
+    <updated>2019-11-09T15:17:59.000Z</updated>
     
     <summary type="html">
     
@@ -86,7 +117,7 @@
     <link href="http://CSUwangj.github.io/%E7%BC%96%E7%A8%8B%E6%98%AF%E5%BE%88%E5%A5%BD%E7%8E%A9%E7%9A%84-md2docx%E6%98%AF%E6%80%8E%E4%B9%88%E5%86%99%E5%87%BA%E6%9D%A5%E7%9A%84/"/>
     <id>http://CSUwangj.github.io/编程是很好玩的-md2docx是怎么写出来的/</id>
     <published>2019-08-19T13:18:08.000Z</published>
-    <updated>2019-08-22T04:44:31.836Z</updated>
+    <updated>2019-08-22T04:44:31.000Z</updated>
     
     <summary type="html">
     
@@ -110,7 +141,7 @@
     <link href="http://CSUwangj.github.io/Regex-Golf-Challenge/"/>
     <id>http://CSUwangj.github.io/Regex-Golf-Challenge/</id>
     <published>2019-03-18T13:23:34.000Z</published>
-    <updated>2019-05-06T06:05:32.455Z</updated>
+    <updated>2019-05-06T06:05:32.000Z</updated>
     
     <summary type="html">
     
@@ -133,7 +164,7 @@
     <link href="http://CSUwangj.github.io/ACTF-Junior-2019-Official-WriteUP-of-CSUWangj-s-Challenge/"/>
     <id>http://CSUwangj.github.io/ACTF-Junior-2019-Official-WriteUP-of-CSUWangj-s-Challenge/</id>
     <published>2019-02-28T07:55:24.000Z</published>
-    <updated>2019-03-03T16:23:38.869Z</updated>
+    <updated>2020-07-18T18:54:33.936Z</updated>
     
     <summary type="html">
     
@@ -146,13 +177,13 @@
     
       <category term="CTF" scheme="http://CSUwangj.github.io/tags/CTF/"/>
     
-      <category term="Misc" scheme="http://CSUwangj.github.io/tags/Misc/"/>
-    
       <category term="Crypto" scheme="http://CSUwangj.github.io/tags/Crypto/"/>
     
-      <category term="PWN" scheme="http://CSUwangj.github.io/tags/PWN/"/>
+      <category term="Misc" scheme="http://CSUwangj.github.io/tags/Misc/"/>
     
       <category term="Forensics" scheme="http://CSUwangj.github.io/tags/Forensics/"/>
+    
+      <category term="PWN" scheme="http://CSUwangj.github.io/tags/PWN/"/>
     
   </entry>
   
@@ -161,7 +192,7 @@
     <link href="http://CSUwangj.github.io/ACM%E4%B8%AD%E4%B8%80%E4%BA%9B%E5%B8%B8%E8%A7%81%E7%9A%84%E9%97%AE%E9%A2%98%E5%8F%8A%E5%8E%9F%E5%9B%A0/"/>
     <id>http://CSUwangj.github.io/ACM中一些常见的问题及原因/</id>
     <published>2019-01-30T09:23:34.000Z</published>
-    <updated>2020-06-16T09:27:55.775Z</updated>
+    <updated>2020-06-16T09:27:55.000Z</updated>
     
     <summary type="html">
     
@@ -184,7 +215,7 @@
     <link href="http://CSUwangj.github.io/%E5%8F%88%E4%B8%80%E6%AC%A1%E8%A3%85%E6%9C%BA/"/>
     <id>http://CSUwangj.github.io/又一次装机/</id>
     <published>2019-01-21T02:41:05.000Z</published>
-    <updated>2019-01-22T07:25:20.667Z</updated>
+    <updated>2019-01-22T07:25:20.000Z</updated>
     
     <summary type="html">
     
@@ -202,7 +233,7 @@
     <link href="http://CSUwangj.github.io/Cryptography-Engineering-Exercise/"/>
     <id>http://CSUwangj.github.io/Cryptography-Engineering-Exercise/</id>
     <published>2018-08-23T16:42:29.000Z</published>
-    <updated>2018-08-24T16:49:26.328Z</updated>
+    <updated>2018-08-24T16:49:26.000Z</updated>
     
     <summary type="html">
     
@@ -224,7 +255,7 @@
     <link href="http://CSUwangj.github.io/OverTheWire-Bandit%E5%85%A8%E6%94%BB%E7%95%A5-%E8%A7%A3%E6%9E%90/"/>
     <id>http://CSUwangj.github.io/OverTheWire-Bandit全攻略-解析/</id>
     <published>2018-08-23T08:10:57.000Z</published>
-    <updated>2019-03-18T13:25:25.603Z</updated>
+    <updated>2019-03-18T13:25:25.000Z</updated>
     
     <summary type="html">
     
@@ -282,7 +313,7 @@
     <link href="http://CSUwangj.github.io/Exploit-Exercise-Fusion%E5%85%A8%E6%94%BB%E7%95%A5-%E8%A7%A3%E6%9E%90/"/>
     <id>http://CSUwangj.github.io/Exploit-Exercise-Fusion全攻略-解析/</id>
     <published>2018-08-02T17:31:36.000Z</published>
-    <updated>2019-03-18T13:26:18.890Z</updated>
+    <updated>2019-03-18T13:26:18.000Z</updated>
     
     <summary type="html">
     
@@ -310,9 +341,9 @@
       <category term="WriteUp" scheme="http://CSUwangj.github.io/categories/WriteUp/"/>
     
     
-      <category term="WARGAME" scheme="http://CSUwangj.github.io/tags/WARGAME/"/>
-    
       <category term="PWN" scheme="http://CSUwangj.github.io/tags/PWN/"/>
+    
+      <category term="WARGAME" scheme="http://CSUwangj.github.io/tags/WARGAME/"/>
     
       <category term="stackoverflow" scheme="http://CSUwangj.github.io/tags/stackoverflow/"/>
     
@@ -325,7 +356,7 @@
     <link href="http://CSUwangj.github.io/Exploit-Exercise-Protostar%E5%85%A8%E6%94%BB%E7%95%A5-%E8%A7%A3%E6%9E%90/"/>
     <id>http://CSUwangj.github.io/Exploit-Exercise-Protostar全攻略-解析/</id>
     <published>2018-07-22T06:46:15.000Z</published>
-    <updated>2019-03-18T13:26:11.891Z</updated>
+    <updated>2019-03-18T13:26:11.000Z</updated>
     
     <summary type="html">
     
@@ -365,9 +396,9 @@
       <category term="WriteUp" scheme="http://CSUwangj.github.io/categories/WriteUp/"/>
     
     
-      <category term="WARGAME" scheme="http://CSUwangj.github.io/tags/WARGAME/"/>
-    
       <category term="PWN" scheme="http://CSUwangj.github.io/tags/PWN/"/>
+    
+      <category term="WARGAME" scheme="http://CSUwangj.github.io/tags/WARGAME/"/>
     
       <category term="stackoverflow" scheme="http://CSUwangj.github.io/tags/stackoverflow/"/>
     
@@ -404,7 +435,7 @@
     <link href="http://CSUwangj.github.io/CTF%E7%94%A8%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/"/>
     <id>http://CSUwangj.github.io/CTF用环境搭建/</id>
     <published>2018-07-20T06:57:49.000Z</published>
-    <updated>2019-01-31T02:11:25.985Z</updated>
+    <updated>2019-01-31T02:11:25.000Z</updated>
     
     <summary type="html">
     
@@ -464,9 +495,9 @@
       <category term="Notes" scheme="http://CSUwangj.github.io/categories/Notes/"/>
     
     
-      <category term="Crypto" scheme="http://CSUwangj.github.io/tags/Crypto/"/>
-    
       <category term="ACM" scheme="http://CSUwangj.github.io/tags/ACM/"/>
+    
+      <category term="Crypto" scheme="http://CSUwangj.github.io/tags/Crypto/"/>
     
   </entry>
   
@@ -490,9 +521,9 @@
     
       <category term="CTF" scheme="http://CSUwangj.github.io/tags/CTF/"/>
     
-      <category term="Misc" scheme="http://CSUwangj.github.io/tags/Misc/"/>
-    
       <category term="Crypto" scheme="http://CSUwangj.github.io/tags/Crypto/"/>
+    
+      <category term="Misc" scheme="http://CSUwangj.github.io/tags/Misc/"/>
     
   </entry>
   
@@ -514,15 +545,15 @@
     
       <category term="CTF" scheme="http://CSUwangj.github.io/tags/CTF/"/>
     
-      <category term="Misc" scheme="http://CSUwangj.github.io/tags/Misc/"/>
-    
       <category term="Crypto" scheme="http://CSUwangj.github.io/tags/Crypto/"/>
+    
+      <category term="Misc" scheme="http://CSUwangj.github.io/tags/Misc/"/>
     
       <category term="PWN" scheme="http://CSUwangj.github.io/tags/PWN/"/>
     
-      <category term="Web" scheme="http://CSUwangj.github.io/tags/Web/"/>
-    
       <category term="Rev" scheme="http://CSUwangj.github.io/tags/Rev/"/>
+    
+      <category term="Web" scheme="http://CSUwangj.github.io/tags/Web/"/>
     
   </entry>
   
@@ -546,49 +577,6 @@
       <category term="CTF" scheme="http://CSUwangj.github.io/tags/CTF/"/>
     
       <category term="PPC" scheme="http://CSUwangj.github.io/tags/PPC/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>id0-rsa WP合集</title>
-    <link href="http://CSUwangj.github.io/id0-rsa-WP%E5%90%88%E9%9B%86/"/>
-    <id>http://CSUwangj.github.io/id0-rsa-WP合集/</id>
-    <published>2018-04-19T07:53:15.000Z</published>
-    <updated>2018-07-30T02:00:33.000Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;忙里偷闲做做题wwwwwwwwwwwww&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="WriteUp" scheme="http://CSUwangj.github.io/categories/WriteUp/"/>
-    
-    
-      <category term="CTF" scheme="http://CSUwangj.github.io/tags/CTF/"/>
-    
-      <category term="Crypto" scheme="http://CSUwangj.github.io/tags/Crypto/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>安装式工具集合</title>
-    <link href="http://CSUwangj.github.io/%E5%AE%89%E8%A3%85%E5%BC%8F%E5%B7%A5%E5%85%B7%E9%9B%86%E5%90%88/"/>
-    <id>http://CSUwangj.github.io/安装式工具集合/</id>
-    <published>2018-03-01T13:59:01.000Z</published>
-    <updated>2018-07-30T02:00:33.000Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;持续更新ing&lt;/p&gt;
-&lt;p&gt;可能以后还会重新整理&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="Tools" scheme="http://CSUwangj.github.io/categories/Tools/"/>
-    
-    
-      <category term="Software" scheme="http://CSUwangj.github.io/tags/Software/"/>
     
   </entry>
   
