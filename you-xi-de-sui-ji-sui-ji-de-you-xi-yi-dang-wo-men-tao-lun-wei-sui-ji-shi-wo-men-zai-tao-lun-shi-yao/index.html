@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+      <!-- Enable responsiveness on mobile devices-->
+      <!-- viewport-fit=cover is to support iPhone X rounded corners and notch in landscape-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, viewport-fit=cover">
+
+      <title></title>
+
+      <!-- CSS -->
+      <link rel="stylesheet" href="https:&#x2F;&#x2F;CSUwangj.github.io&#x2F;css&#x2F;lib&#x2F;font-awesome.min.css">
+      <link rel="stylesheet" href="https:&#x2F;&#x2F;CSUwangj.github.io&#x2F;site.css">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface">
+      <script type="text/javascript" charset="utf-8" src="https:&#x2F;&#x2F;CSUwangj.github.io&#x2F;js&#x2F;sidebar.js"></script>
+
+      
+        <link rel="alternate" type="application/atom+xml" title="RSS" href="https://CSUwangj.github.io/atom.xml">
+      
+
+      
+      
+    </head>
+
+    <body>
+      
+      
+        <header name="header">
+          <div>
+            <div class="logo"><a href="https:&#x2F;&#x2F;CSUwangj.github.io">LuckyDog</a></div>
+            <nav class="menu">
+              
+                <a href="https:&#x2F;&#x2F;CSUwangj.github.io" class="nav-item-home">
+                  Home
+                </a>
+              
+                <a href="https:&#x2F;&#x2F;CSUwangj.github.io&#x2F;categories" class="nav-item-categories">
+                  Categories
+                </a>
+              
+                <a href="https:&#x2F;&#x2F;CSUwangj.github.io&#x2F;tags" class="nav-item-tags">
+                  Tags
+                </a>
+              
+                <a href="https:&#x2F;&#x2F;CSUwangj.github.io&#x2F;about" class="nav-item-about">
+                  About
+                </a>
+              
+                <a href="https:&#x2F;&#x2F;CSUwangj.github.io&#x2F;archives" class="nav-item-archives">
+                  Archives
+                </a>
+              
+            </nav>
+          </div>
+        </header>
+      
+
+      <main class="content container" name="main">
+        <div class="content-wrapper">
+          
+  <div class="post">
+    <h1 class="post-title">游戏的随机，随机的游戏（一）：当我们讨论伪随机时我们在讨论什么</h1>
+    <span class="post-date">2020-05-18</span>
+    <p>我们生活的世界充满了随机，在娱乐时也是。从一次次抽卡、掉落物品，平A转出的暴击，甚至在每一次攻击，背后都有概率的影子。你是否曾看到“计算机里只有伪随机”，又看到有人说“伪随机抽奖机制确保中奖”？他们说的分别是什么？我为什么还抽不到想要的SSR？为什么她17张牌秒了我？</p>
+<span id="continue-reading"></span>
+<p>其实上面的两句话都是正确的，但是两句话中的“伪随机”说的却不是一个东西：</p>
+<p>前者说的是“伪随机数生成器”生成的随机数，生成器就是负责在程序里掷骰子的那个部件。</p>
+<p>后一句话“伪随机抽奖机制确保中奖”说的东西在数学上称为“随机数采样”，这种随机来源于电子游戏中以“伪随机分布”而著称的Warcraft3采样算法，所以后来便用伪随机分布来代指这种随机。</p>
+<p>为什么有随机数采样这个东西，原因很简单——假如我们只有六面骰子，但是我们所需要的结果却可能是0-100的整数，可能是更大的整数，还可能是小数，将骰子投出的结果转化为最后我们需要的结果，就是采样的意义。当然，什么都不做也可以视作是一种采样，就好像高中我们学过的f(x)=x也是一个函数一样，尽管它什么都没做，但是我们也可以认为它是一种映射关系。</p>
+<p>这两种“伪随机”被同时运用到游戏程序中，它们协作的流程大致如下图：</p>
+<p><img src="https://CSUwangj.github.io/you-xi-de-sui-ji-sui-ji-de-you-xi-yi-dang-wo-men-tao-lun-wei-sui-ji-shi-wo-men-zai-tao-lun-shi-yao/%E6%B5%81%E7%A8%8B%E5%9B%BE.png" alt="协作流程" /></p>
+<p>首先程序往往会选定一个或多个用户无法控制的值作为种子，比如当前时间精确到小数点后5位的值，用户是系统里的第几个，接着将种子输入到伪随机数生成器中，之后伪随机数生成器会不断地生成随机数，随机数又经过一重伪随机分布算法后得出最终结果反馈给用户。</p>
+<p>举一个例子来说（以下内容为示例，和实际存在的软件、网站无关），某游戏提供给玩家一个抽奖系统，首先它将用户的UID作为初始种子<img src="https://CSUwangj.github.io/you-xi-de-sui-ji-sui-ji-de-you-xi-yi-dang-wo-men-tao-lun-wei-sui-ji-shi-wo-men-zai-tao-lun-shi-yao/UID.png" alt="UID" />输入到伪随机数生成器；伪随机数生成器的逻辑是，先将种子除以101的余数作为初始状态，在此基础上，每次先用初始状态乘2加23，将结果除101的余数即作为当前产生的结果，也作为下一次产生随机数的初始状态；随后伪随机分布算法运算的逻辑是，若用户是第一次抽奖或者中奖后第一次抽奖，那么若随机数小于等于10，则中奖；若用户不是第一次抽奖并且上次抽奖没有中奖，那么若随机数小于等于20就中奖。我们将获得余数的这个运算用%来表示，于是可以用下图来解释三次抽奖结果：</p>
+<p><img src="https://CSUwangj.github.io/you-xi-de-sui-ji-sui-ji-de-you-xi-yi-dang-wo-men-tao-lun-wei-sui-ji-shi-wo-men-zai-tao-lun-shi-yao/%E7%A4%BA%E4%BE%8B.png" alt="示例" /></p>
+<p>到这里这一节就完了。随机数除了应用在游戏中，还被应用到我们的通信中，被应用到和我们信息安全切身相关的地方。那么，我们为什么要说“伪”随机数生成器？什么是好的随机数生成器？为什么会有乘2加23的操作？</p>
+<p>这些问题就留到下一节来谈吧。上面个用到的算法其实是一个古老而有名的伪随机数生成器——线性同余方法，有兴趣的朋友可以自己先了解。</p>
+
+  </div>
+
+        </div>
+
+        
+          <button class="sidebar-toggle" onclick="openSidebar()">O</button>
+          <aside class="sidebar" name="sidebar">
+            <div class="site-author" itemprop="author" itemtype="https://schema.org/Person">
+              
+              <img class="site-author-image" itemprop="image"
+                src="https:&#x2F;&#x2F;CSUwangj.github.io&#x2F;img&#x2F;avatar.png"
+                alt="CSUwangj" />
+              
+              <p class="site-author-name">CSUwangj</p>
+              <p class="site-author-quote">Just keep in mind that hacking is very rarely in a sequence.</p>
+            </div>
+            <div class="feed-link">
+              
+                <a rel="alternate" type="application/atom+xml" title="RSS" href="https://CSUwangj.github.io/atom.xml">
+                  RSS
+                </a>
+              
+            </div>
+            <div class="links-of-author">
+              
+                <a href="https:&#x2F;&#x2F;github.com&#x2F;CSUwangj" title="Github" class="author-link">
+                  <i class="fa fw fa-github"></i>
+                </a>
+              
+            </div>
+            <div class="links-of-blogroll">
+              
+                <a href="https:&#x2F;&#x2F;zickshen.github.io&#x2F;">zickshen</a>
+              
+            </div>
+          </aside>
+        
+
+      </main>
+
+      
+        <footer name="footer">
+          <div class="copyright">
+            <span item="copyrightYear">© 2018-2020</span>
+            <span class="author">CSUwangj</span>
+          </div>
+          <div class="powered-by">
+            Powered by <a href="https://www.getzola.org/">Zola</a> Theme <a href="https://github.com/CSUwangj/DogFood">DogFood</a>
+          </div>
+        </footer>
+      
+    </body>
+
+</html>

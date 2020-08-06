@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+      <!-- Enable responsiveness on mobile devices-->
+      <!-- viewport-fit=cover is to support iPhone X rounded corners and notch in landscape-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, viewport-fit=cover">
+
+      <title></title>
+
+      <!-- CSS -->
+      <link rel="stylesheet" href="https:&#x2F;&#x2F;CSUwangj.github.io&#x2F;css&#x2F;lib&#x2F;font-awesome.min.css">
+      <link rel="stylesheet" href="https:&#x2F;&#x2F;CSUwangj.github.io&#x2F;site.css">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface">
+      <script type="text/javascript" charset="utf-8" src="https:&#x2F;&#x2F;CSUwangj.github.io&#x2F;js&#x2F;sidebar.js"></script>
+
+      
+        <link rel="alternate" type="application/atom+xml" title="RSS" href="https://CSUwangj.github.io/atom.xml">
+      
+
+      
+      
+    </head>
+
+    <body>
+      
+      
+        <header name="header">
+          <div>
+            <div class="logo"><a href="https:&#x2F;&#x2F;CSUwangj.github.io">LuckyDog</a></div>
+            <nav class="menu">
+              
+                <a href="https:&#x2F;&#x2F;CSUwangj.github.io" class="nav-item-home">
+                  Home
+                </a>
+              
+                <a href="https:&#x2F;&#x2F;CSUwangj.github.io&#x2F;categories" class="nav-item-categories">
+                  Categories
+                </a>
+              
+                <a href="https:&#x2F;&#x2F;CSUwangj.github.io&#x2F;tags" class="nav-item-tags">
+                  Tags
+                </a>
+              
+                <a href="https:&#x2F;&#x2F;CSUwangj.github.io&#x2F;about" class="nav-item-about">
+                  About
+                </a>
+              
+                <a href="https:&#x2F;&#x2F;CSUwangj.github.io&#x2F;archives" class="nav-item-archives">
+                  Archives
+                </a>
+              
+            </nav>
+          </div>
+        </header>
+      
+
+      <main class="content container" name="main">
+        <div class="content-wrapper">
+          
+  <div class="post">
+    <h1 class="post-title">PWN学习记录</h1>
+    <span class="post-date">2018-02-10</span>
+    <p>学习PWN的记录</p>
+<p>可能会有路线，看填坑进度……</p>
+<span id="continue-reading"></span>
+<h1 id="huan-jing-pei-zhi">环境配置</h1>
+<p>按理说第一篇是要说一下这个</p>
+<p>我是Kali 2.0，所以就按照如下指令输进去就行了</p>
+<pre style="background-color:#2b303b;">
+<code><span style="color:#bf616a;">dpkg --add-architecture</span><span style="color:#c0c5ce;"> i386 </span><span style="color:#c0c5ce;">
+</span><span style="color:#bf616a;">apt-get</span><span style="color:#c0c5ce;"> update</span><span style="color:#c0c5ce;">
+</span><span style="color:#bf616a;">apt-get -f</span><span style="color:#c0c5ce;"> dist-upgrade </span><span style="color:#c0c5ce;">
+</span><span style="color:#bf616a;">apt-get</span><span style="color:#c0c5ce;"> install lib32c-dev lib32stdc++6 libc6:i386 gcc-multilib</span><span style="color:#c0c5ce;">
+</span><span style="color:#bf616a;">apt-get</span><span style="color:#c0c5ce;"> install python2.7 python-pip python-dev git libssl-dev libffi-dev build-essential</span><span style="color:#c0c5ce;">
+</span><span style="color:#bf616a;">pip</span><span style="color:#c0c5ce;"> install pwntools</span><span style="color:#c0c5ce;">
+</span><span style="color:#bf616a;">git</span><span style="color:#c0c5ce;"> clone https://github.com/pwndbg/pwndbg /opt/pwndbg</span><span style="color:#c0c5ce;">
+</span><span style="color:#96b5b4;">cd</span><span style="color:#c0c5ce;"> /opt/pwndbg</span><span style="color:#c0c5ce;">
+</span><span style="color:#bf616a;">./setup.sh</span><span style="color:#c0c5ce;">
+</span></code></pre><h1 id="xue-xi-ji-lu-ji-wpdi-zhi">学习记录及WP地址</h1>
+<ul>
+<li>
+<p>Exploit-Exercise</p>
+<ul>
+<li>[ ] Nebula</li>
+<li>[x] <a href="http://csuwangj.top/2018/07/22/Exploit-Exercise-Protostar%E5%85%A8%E6%94%BB%E7%95%A5-%E8%A7%A3%E6%9E%90/">Protostar</a>（解析还没写XD）</li>
+<li>[ ] <a href="https://csuwangj.github.io/2018/08/03/Exploit-Exercise-Fusion%E5%85%A8%E6%94%BB%E7%95%A5-%E8%A7%A3%E6%9E%90/">Fusion</a></li>
+<li>Main Sequence
+<ul>
+<li>[ ] Main Sequence</li>
+<li>[ ] Story line</li>
+<li>[ ] Setup instructions</li>
+<li>[ ] Irate Manticore</li>
+<li>[ ] Touchy Owl</li>
+<li>[ ] Wild Amphibian</li>
+<li>[ ] Storming Bear</li>
+<li>[ ] Screaming Jesus</li>
+<li>[ ] Fabled Scorpion</li>
+<li>[ ] Selfish Dragonfly</li>
+<li>[ ] Vicious Platypus</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>CTF</p>
+<ul>
+<li>HGAME2018
+<ul>
+<li><a href="http://csuwangj.github.io/2018/02/08/HGAME2018-week1WP/">week1</a>
+<ul>
+<li>[x] guess_number</li>
+<li>[x] flag_server</li>
+<li>[x] zazahui</li>
+</ul>
+</li>
+<li><a href="http://csuwangj.top/2018/02/16/HGAME2018-week2%E9%83%A8%E5%88%86WP/">week2</a>
+<ul>
+<li>[x] ez_shellcode</li>
+<li>[x] ez bash jail</li>
+<li>[ ] hacker_system_ver1</li>
+<li>[ ] ez_shellcode_ver2</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>To be continue...</p>
+</li>
+</ul>
+
+  </div>
+
+        </div>
+
+        
+          <button class="sidebar-toggle" onclick="openSidebar()">O</button>
+          <aside class="sidebar" name="sidebar">
+            <div class="site-author" itemprop="author" itemtype="https://schema.org/Person">
+              
+              <img class="site-author-image" itemprop="image"
+                src="https:&#x2F;&#x2F;CSUwangj.github.io&#x2F;img&#x2F;avatar.png"
+                alt="CSUwangj" />
+              
+              <p class="site-author-name">CSUwangj</p>
+              <p class="site-author-quote">Just keep in mind that hacking is very rarely in a sequence.</p>
+            </div>
+            <div class="feed-link">
+              
+                <a rel="alternate" type="application/atom+xml" title="RSS" href="https://CSUwangj.github.io/atom.xml">
+                  RSS
+                </a>
+              
+            </div>
+            <div class="links-of-author">
+              
+                <a href="https:&#x2F;&#x2F;github.com&#x2F;CSUwangj" title="Github" class="author-link">
+                  <i class="fa fw fa-github"></i>
+                </a>
+              
+            </div>
+            <div class="links-of-blogroll">
+              
+                <a href="https:&#x2F;&#x2F;zickshen.github.io&#x2F;">zickshen</a>
+              
+            </div>
+          </aside>
+        
+
+      </main>
+
+      
+        <footer name="footer">
+          <div class="copyright">
+            <span item="copyrightYear">© 2018-2020</span>
+            <span class="author">CSUwangj</span>
+          </div>
+          <div class="powered-by">
+            Powered by <a href="https://www.getzola.org/">Zola</a> Theme <a href="https://github.com/CSUwangj/DogFood">DogFood</a>
+          </div>
+        </footer>
+      
+    </body>
+
+</html>

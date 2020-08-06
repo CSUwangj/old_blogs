@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+      <!-- Enable responsiveness on mobile devices-->
+      <!-- viewport-fit=cover is to support iPhone X rounded corners and notch in landscape-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, viewport-fit=cover">
+
+      <title></title>
+
+      <!-- CSS -->
+      <link rel="stylesheet" href="https:&#x2F;&#x2F;CSUwangj.github.io&#x2F;css&#x2F;lib&#x2F;font-awesome.min.css">
+      <link rel="stylesheet" href="https:&#x2F;&#x2F;CSUwangj.github.io&#x2F;site.css">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface">
+      <script type="text/javascript" charset="utf-8" src="https:&#x2F;&#x2F;CSUwangj.github.io&#x2F;js&#x2F;sidebar.js"></script>
+
+      
+        <link rel="alternate" type="application/atom+xml" title="RSS" href="https://CSUwangj.github.io/atom.xml">
+      
+
+      
+      
+    </head>
+
+    <body>
+      
+      
+        <header name="header">
+          <div>
+            <div class="logo"><a href="https:&#x2F;&#x2F;CSUwangj.github.io">LuckyDog</a></div>
+            <nav class="menu">
+              
+                <a href="https:&#x2F;&#x2F;CSUwangj.github.io" class="nav-item-home">
+                  Home
+                </a>
+              
+                <a href="https:&#x2F;&#x2F;CSUwangj.github.io&#x2F;categories" class="nav-item-categories">
+                  Categories
+                </a>
+              
+                <a href="https:&#x2F;&#x2F;CSUwangj.github.io&#x2F;tags" class="nav-item-tags">
+                  Tags
+                </a>
+              
+                <a href="https:&#x2F;&#x2F;CSUwangj.github.io&#x2F;about" class="nav-item-about">
+                  About
+                </a>
+              
+                <a href="https:&#x2F;&#x2F;CSUwangj.github.io&#x2F;archives" class="nav-item-archives">
+                  Archives
+                </a>
+              
+            </nav>
+          </div>
+        </header>
+      
+
+      <main class="content container" name="main">
+        <div class="content-wrapper">
+          
+  <div class="post">
+    <h1 class="post-title">CTF用环境搭建</h1>
+    <span class="post-date">2018-07-20</span>
+    <h1 id="mu-qian-gong-ju-ji-he">目前工具集合</h1>
+<h2 id="huan-jing">环境</h2>
+<ul>
+<li>[x] 86架构及基本库</li>
+<li>[x] wine32</li>
+</ul>
+<h2 id="an-zhuang-shi">安装式</h2>
+<p>这里的话就是那种安装以后直接用的，也有的是插件</p>
+<ul>
+<li>[x] pwndbg</li>
+<li>[x] r2</li>
+<li>[x] Audacity</li>
+</ul>
+<h2 id="fei-an-zhuang-shi">非安装式</h2>
+<p>这里的是不用/不能安装的库，比如脚本等</p>
+<p>统一放置在/opt/目录下，可能根据类别再分</p>
+<ul>
+<li>[x] rsatool</li>
+<li>[x] cloacked-pixel</li>
+<li>[x] volatility</li>
+<li>[x] routerpassview</li>
+<li>[x] Stegsolve </li>
+<li>[ ] CTFcrackTools</li>
+</ul>
+<h2 id="pythonku">Python库</h2>
+<ul>
+<li>[x] pwntools</li>
+<li>[x] gmpy2</li>
+<li>[x] unicorn</li>
+<li>[x] zio</li>
+<li>[x] angr</li>
+<li>[x] request </li>
+</ul>
+<!--more-->
+<h1 id="zheng-wen">正文</h1>
+<h2 id="huan-jing-1">环境</h2>
+<h3 id="86jia-gou-ji-qi-ge-bie-ji-ben-ku">86架构及其个别基本库</h3>
+<pre style="background-color:#2b303b;">
+<code><span style="color:#bf616a;">dpkg --add-architecture</span><span style="color:#c0c5ce;"> i386 </span><span style="color:#c0c5ce;">
+</span><span style="color:#bf616a;">apt-get</span><span style="color:#c0c5ce;"> update</span><span style="color:#c0c5ce;">
+</span><span style="color:#bf616a;">apt-get -f</span><span style="color:#c0c5ce;"> dist-upgrade </span><span style="color:#c0c5ce;">
+</span><span style="color:#bf616a;">apt-get</span><span style="color:#c0c5ce;"> update</span><span style="color:#c0c5ce;">
+</span><span style="color:#bf616a;">apt-get</span><span style="color:#c0c5ce;"> install lib32c-dev lib32stdc++6  </span><span style="color:#c0c5ce;">
+</span></code></pre><h3 id="wine32">wine32</h3>
+<pre style="background-color:#2b303b;">
+<code><span style="color:#bf616a;">apt-get</span><span style="color:#c0c5ce;"> install wine32</span><span style="color:#c0c5ce;">
+</span></code></pre><h2 id="an-zhuang-shi-1">安装式</h2>
+<h3 id="pwndbg">pwndbg</h3>
+<pre style="background-color:#2b303b;">
+<code><span style="color:#bf616a;">apt-get</span><span style="color:#c0c5ce;"> install python3.7-dev</span><span style="color:#c0c5ce;">
+</span><span style="color:#bf616a;">git</span><span style="color:#c0c5ce;"> clone https://github.com/pwndbg/pwndbg /opt/pwndbg</span><span style="color:#c0c5ce;">
+</span><span style="color:#96b5b4;">cd</span><span style="color:#c0c5ce;"> /opt/pwndbg</span><span style="color:#c0c5ce;">
+</span><span style="color:#bf616a;">./setup.sh </span><span style="color:#c0c5ce;">
+</span></code></pre>
+<p>如果对pip无法用的时候怎么安装感兴趣，可以戳<a href="http://csuwangj.top/2018/07/21/%E5%9C%A8pip%E8%BF%9E%E4%B8%8D%E4%B8%8A%E7%BD%91%E7%9A%84%E6%97%B6%E5%80%99%E5%AE%89%E8%A3%85pwntools/">这里</a></p>
+<h3 id="r2">r2</h3>
+<pre style="background-color:#2b303b;">
+<code><span style="color:#bf616a;">git</span><span style="color:#c0c5ce;"> clone https://github.com/radare/radare2.git /opt/r2</span><span style="color:#c0c5ce;">
+</span><span style="color:#96b5b4;">cd</span><span style="color:#c0c5ce;"> /opt/r2/</span><span style="color:#c0c5ce;">
+</span><span style="color:#bf616a;">sys/install.sh </span><span style="color:#c0c5ce;">
+</span></code></pre><h3 id="audacity">Audacity</h3>
+<pre style="background-color:#2b303b;">
+<code><span style="color:#bf616a;">apt-get</span><span style="color:#c0c5ce;"> install audacity</span><span style="color:#c0c5ce;">
+</span></code></pre><h2 id="fei-an-zhuang-shi-1">非安装式</h2>
+<table><thead><tr><th>工具</th><th>指令</th><th>备注</th></tr></thead><tbody>
+<tr><td>rsatool</td><td><code>git clone https://github.com/ius/rsatool.git /opt/Crypto/rsatool</code></td><td>Openssl RSA密钥生成</td></tr>
+<tr><td>cloacked-pixel</td><td><code>git clone https://github.com/livz/cloacked-pixel /opt/Steganography/cloacked-pixel</code></td><td>图像隐写</td></tr>
+<tr><td>pattern</td><td>无</td><td></td></tr>
+<tr><td>volatility</td><td><code>git clone https://github.com/volatilityfoundation/volatility.git /opt/Forensics/volatility</code></td><td>内存取证</td></tr>
+<tr><td></td><td></td><td></td></tr>
+</tbody></table>
+<h2 id="pythonku-1">Python库</h2>
+<p>默认在pip能用的情况下，默认为python2.7，其他版本会备注</p>
+<table><thead><tr><th>工具</th><th>指令</th><th>备注</th></tr></thead><tbody>
+<tr><td>pwntools</td><td><code>pip install pwntools</code></td><td></td></tr>
+<tr><td>gmpy2</td><td><code>apt-get install python-gmpy2</code></td><td></td></tr>
+<tr><td>zio</td><td><code>pip install termcolor zio</code></td><td></td></tr>
+<tr><td>angr</td><td><code>pip install angr</code></td><td></td></tr>
+<tr><td>unicorn</td><td><code>pip install unicorn</code></td><td>pwntools自带，但是不妨碍你只安装它</td></tr>
+<tr><td>request</td><td><code>pip install request</code></td><td></td></tr>
+</tbody></table>
+
+  </div>
+
+        </div>
+
+        
+          <button class="sidebar-toggle" onclick="openSidebar()">O</button>
+          <aside class="sidebar" name="sidebar">
+            <div class="site-author" itemprop="author" itemtype="https://schema.org/Person">
+              
+              <img class="site-author-image" itemprop="image"
+                src="https:&#x2F;&#x2F;CSUwangj.github.io&#x2F;img&#x2F;avatar.png"
+                alt="CSUwangj" />
+              
+              <p class="site-author-name">CSUwangj</p>
+              <p class="site-author-quote">Just keep in mind that hacking is very rarely in a sequence.</p>
+            </div>
+            <div class="feed-link">
+              
+                <a rel="alternate" type="application/atom+xml" title="RSS" href="https://CSUwangj.github.io/atom.xml">
+                  RSS
+                </a>
+              
+            </div>
+            <div class="links-of-author">
+              
+                <a href="https:&#x2F;&#x2F;github.com&#x2F;CSUwangj" title="Github" class="author-link">
+                  <i class="fa fw fa-github"></i>
+                </a>
+              
+            </div>
+            <div class="links-of-blogroll">
+              
+                <a href="https:&#x2F;&#x2F;zickshen.github.io&#x2F;">zickshen</a>
+              
+            </div>
+          </aside>
+        
+
+      </main>
+
+      
+        <footer name="footer">
+          <div class="copyright">
+            <span item="copyrightYear">© 2018-2020</span>
+            <span class="author">CSUwangj</span>
+          </div>
+          <div class="powered-by">
+            Powered by <a href="https://www.getzola.org/">Zola</a> Theme <a href="https://github.com/CSUwangj/DogFood">DogFood</a>
+          </div>
+        </footer>
+      
+    </body>
+
+</html>

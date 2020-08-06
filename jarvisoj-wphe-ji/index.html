@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+      <!-- Enable responsiveness on mobile devices-->
+      <!-- viewport-fit=cover is to support iPhone X rounded corners and notch in landscape-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, viewport-fit=cover">
+
+      <title></title>
+
+      <!-- CSS -->
+      <link rel="stylesheet" href="https:&#x2F;&#x2F;CSUwangj.github.io&#x2F;css&#x2F;lib&#x2F;font-awesome.min.css">
+      <link rel="stylesheet" href="https:&#x2F;&#x2F;CSUwangj.github.io&#x2F;site.css">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface">
+      <script type="text/javascript" charset="utf-8" src="https:&#x2F;&#x2F;CSUwangj.github.io&#x2F;js&#x2F;sidebar.js"></script>
+
+      
+        <link rel="alternate" type="application/atom+xml" title="RSS" href="https://CSUwangj.github.io/atom.xml">
+      
+
+      
+      
+    </head>
+
+    <body>
+      
+      
+        <header name="header">
+          <div>
+            <div class="logo"><a href="https:&#x2F;&#x2F;CSUwangj.github.io">LuckyDog</a></div>
+            <nav class="menu">
+              
+                <a href="https:&#x2F;&#x2F;CSUwangj.github.io" class="nav-item-home">
+                  Home
+                </a>
+              
+                <a href="https:&#x2F;&#x2F;CSUwangj.github.io&#x2F;categories" class="nav-item-categories">
+                  Categories
+                </a>
+              
+                <a href="https:&#x2F;&#x2F;CSUwangj.github.io&#x2F;tags" class="nav-item-tags">
+                  Tags
+                </a>
+              
+                <a href="https:&#x2F;&#x2F;CSUwangj.github.io&#x2F;about" class="nav-item-about">
+                  About
+                </a>
+              
+                <a href="https:&#x2F;&#x2F;CSUwangj.github.io&#x2F;archives" class="nav-item-archives">
+                  Archives
+                </a>
+              
+            </nav>
+          </div>
+        </header>
+      
+
+      <main class="content container" name="main">
+        <div class="content-wrapper">
+          
+  <div class="post">
+    <h1 class="post-title">JarvisOJ-WP合集</h1>
+    <span class="post-date">2018-05-10</span>
+    <p>因为预感进度表会很长，所以不放了</p>
+<span id="continue-reading"></span>
+<h1 id="bu-zi-ci-tiao-zhuan-de-jin-du-biao">不资瓷跳转的进度表</h1>
+<ul>
+<li>[x] Basic
+<ul>
+<li>[x] base64</li>
+<li>[x] 关于USS Lab.</li>
+<li>[x] veryeasy</li>
+<li>[x] 段子</li>
+<li>[x] 手贱</li>
+<li>[x] 美丽的实验室logo</li>
+<li>[x] 神秘的文件</li>
+<li>[x] 公倍数</li>
+<li>[x] Easy Crackme</li>
+<li>[x] Secret</li>
+<li>[x] 爱吃培根的出题人</li>
+<li>[x] Easy RSA</li>
+<li>[x] ROPGadget</li>
+<li>[x] 取证</li>
+<li>[x] 熟悉的声音</li>
+<li>[x] Baby's Crack</li>
+<li>[x] Help!!</li>
+<li>[x] Shellcode</li>
+<li>[x] A Piece Of Cake</li>
+<li>[x] -.-字符串</li>
+<li>[x] 德军的密码</li>
+<li>[x] 握手包</li>
+</ul>
+</li>
+<li>[x] Crypto
+<ul>
+<li>[x] Medium RSA</li>
+<li>[ ] BrokenPic</li>
+<li>[x] hard RSA</li>
+</ul>
+</li>
+</ul>
+<h1 id="x-basic">[Ｘ] Basic</h1>
+<h2 id="x-base64">[Ｘ] base64</h2>
+<p>注意到没有小写字母和大点的数字，猜测是base32，解完以后是一个十六进制字符串，转ASCII解得</p>
+<h3 id="flag">flag</h3>
+<p>PCTF{Just_t3st_h4v3_f4n}</p>
+<h2 id="x-guan-yu-uss-lab">[Ｘ] 关于USS Lab.</h2>
+<p>搜索得到答案，注意题目里说的是USS Lab。</p>
+<p>顺便其实点开about就能看到全称（233</p>
+<h3 id="flag-1">flag</h3>
+<p>PCTF{ubiquitous_system_security}</p>
+<h2 id="x-veryeasy">[Ｘ] veryeasy</h2>
+<p>打开文件我就知道要用strings命令，但是我就不，我就翻</p>
+<h3 id="flag-2">flag</h3>
+<p>PCTF{strings_i5_3asy_isnt_i7}</p>
+<h2 id="x-duan-zi">[Ｘ] 段子</h2>
+<p>将锟斤拷存ANSI编码，然后HEX编辑器打开就好</p>
+<h3 id="flag-3">flag</h3>
+<p>PCTF{EFBFBDEFBFBD}</p>
+<h2 id="x-shou-jian">[Ｘ] 手贱</h2>
+<p>直接解MD5，然后发现说不是标准MD5值，发现长度为33</p>
+<p>再看看具体的，发现里面有个$L$的小写，删了解MD5得flag</p>
+<h3 id="flag-4">flag</h3>
+<p>PCTF{hack}</p>
+<h2 id="x-mei-li-de-shi-yan-shi-logo">[Ｘ] 美丽的实验室logo</h2>
+<p>binwalk没有额外东西</p>
+<p>但是可以发现不是裸的jpg，strings可以看到Adobe公司工具编辑的痕迹，回去继续</p>
+<hr />
+<p>不对，用Stegsolver的Frame Browser看到了flag</p>
+<h3 id="flag-5">flag</h3>
+<p>PCTF{You_are_R3ally_Car3ful}</p>
+<h2 id="x-veryeasyrsa">[Ｘ] veryeasyRSA</h2>
+<p>RSA-tool直接上啦~</p>
+<p><img src="https://CSUwangj.github.io/jarvisoj-wphe-ji/1525919629975.png" alt="veryeasyRSA" /></p>
+<h3 id="flag-6">flag</h3>
+<p>PCTF{19178568796155560423675975774142829153827883709027717723363077606260717434369}</p>
+<h2 id="x-shen-mi-de-wen-jian">[Ｘ] 神秘的文件</h2>
+<p>file/binwalk指令得到这是一个exT文件系统数据，strings结果也奇怪</p>
+<p><img src="https://CSUwangj.github.io/jarvisoj-wphe-ji/1525920969858.png" alt="神秘的文件" /></p>
+<p>索性打开文件看，发现有一堆\x00</p>
+<p>但是往下翻发现有些其他东西</p>
+<p><img src="https://CSUwangj.github.io/jarvisoj-wphe-ji/1525921057979.png" alt="神秘的文件_2" /></p>
+<p>然后找到P/C/T，想着能不能移除<code>\x00</code>得到flag</p>
+<p>然后的确得到了，但是结果失败了</p>
+<p><img src="https://CSUwangj.github.io/jarvisoj-wphe-ji/1525922016986.png" alt="神秘的文件_3" /></p>
+<p>因为错位包括前后错位，所以直接拼凑也是会失败的</p>
+<p>看来还是需要文件系统，用命令</p>
+<p><code>mount -o loop haha.f38a74f55b4e193561d1b707211cf7eb /mnt</code></p>
+<p>装载文件系统之后，发现每个文件里一个字符，所以写出脚本</p>
+<pre style="background-color:#2b303b;">
+<code><span style="color:#b48ead;">import </span><span style="color:#c0c5ce;">os</span><span style="color:#c0c5ce;">
+s = &quot;&quot;</span><span style="color:#c0c5ce;">
+</span><span style="color:#b48ead;">for </span><span style="color:#c0c5ce;">i </span><span style="color:#b48ead;">in </span><span style="color:#96b5b4;">range</span><span style="color:#c0c5ce;">(</span><span style="color:#d08770;">0</span><span style="color:#c0c5ce;">, </span><span style="color:#d08770;">254</span><span style="color:#c0c5ce;">):</span><span style="color:#c0c5ce;">
+	f = </span><span style="color:#96b5b4;">open</span><span style="color:#c0c5ce;">(</span><span style="color:#bf616a;">str</span><span style="color:#c0c5ce;">(i), &quot;</span><span style="color:#a3be8c;">r</span><span style="color:#c0c5ce;">&quot;)</span><span style="color:#c0c5ce;">
+	s += f.</span><span style="color:#bf616a;">read</span><span style="color:#c0c5ce;">()</span><span style="color:#c0c5ce;">
+	f.</span><span style="color:#bf616a;">close</span><span style="color:#c0c5ce;">()</span><span style="color:#c0c5ce;">
+</span><span style="color:#96b5b4;">print</span><span style="color:#c0c5ce;">(s)</span><span style="color:#c0c5ce;">
+</span></code></pre>
+<p>得到flag</p>
+<h3 id="flag-7">flag</h3>
+<p>PCTF{P13c3_7oghter_i7}</p>
+<h2 id="x-gong-bei-shu">[Ｘ] 公倍数</h2>
+<p>1s大概做1e8的计算，所以可以直接暴力算就好</p>
+<p>代码就没必要放了吧~</p>
+<h3 id="flag-8">flag</h3>
+<p>PCTF{233333333166666668}</p>
+<h2 id="x-easy-crackme">[Ｘ] Easy Crackme</h2>
+<p><img src="https://CSUwangj.github.io/jarvisoj-wphe-ji/1525966589251.png" alt="Easy Crackme" /></p>
+<p>算法很简单，第一位异或以后，后面24位每6位一组和对应位置异或，然后进行比较</p>
+<p>写出逆算法</p>
+<pre style="background-color:#2b303b;">
+<code><span style="color:#b48ead;">#include </span><span style="color:#c0c5ce;">&lt;</span><span style="color:#a3be8c;">bits/stdc++.h</span><span style="color:#c0c5ce;">&gt;</span><span style="color:#c0c5ce;">
+</span><span style="color:#b48ead;">using namespace</span><span style="color:#c0c5ce;"> std;</span><span style="color:#c0c5ce;">
+</span><span style="color:#b48ead;">unsigned char</span><span style="color:#c0c5ce;"> a[</span><span style="color:#d08770;">27</span><span style="color:#c0c5ce;">] = {</span><span style="color:#c0c5ce;">
+    </span><span style="color:#d08770;">0xFB</span><span style="color:#c0c5ce;">, </span><span style="color:#d08770;">0x9E</span><span style="color:#c0c5ce;">, </span><span style="color:#d08770;">0x67</span><span style="color:#c0c5ce;">, </span><span style="color:#d08770;">0x12</span><span style="color:#c0c5ce;">, </span><span style="color:#d08770;">0x4E</span><span style="color:#c0c5ce;">, </span><span style="color:#d08770;">0x9D</span><span style="color:#c0c5ce;">, </span><span style="color:#d08770;">0x98</span><span style="color:#c0c5ce;">, </span><span style="color:#d08770;">0xAB</span><span style="color:#c0c5ce;">, </span><span style="color:#d08770;">0x00</span><span style="color:#c0c5ce;">, </span><span style="color:#d08770;">0x06</span><span style="color:#c0c5ce;">, </span><span style="color:#d08770;">0x46</span><span style="color:#c0c5ce;">, </span><span style="color:#d08770;">0x8A</span><span style="color:#c0c5ce;">, </span><span style="color:#d08770;">0xF4</span><span style="color:#c0c5ce;">, </span><span style="color:#d08770;">0xB4</span><span style="color:#c0c5ce;">, </span><span style="color:#d08770;">0x06</span><span style="color:#c0c5ce;">, </span><span style="color:#d08770;">0x0B</span><span style="color:#c0c5ce;">,</span><span style="color:#c0c5ce;">
+    </span><span style="color:#d08770;">0x43</span><span style="color:#c0c5ce;">, </span><span style="color:#d08770;">0xDC</span><span style="color:#c0c5ce;">, </span><span style="color:#d08770;">0xD9</span><span style="color:#c0c5ce;">, </span><span style="color:#d08770;">0xA4</span><span style="color:#c0c5ce;">, </span><span style="color:#d08770;">0x6C</span><span style="color:#c0c5ce;">, </span><span style="color:#d08770;">0x31</span><span style="color:#c0c5ce;">, </span><span style="color:#d08770;">0x74</span><span style="color:#c0c5ce;">, </span><span style="color:#d08770;">0x9C</span><span style="color:#c0c5ce;">, </span><span style="color:#d08770;">0xD2</span><span style="color:#c0c5ce;">, </span><span style="color:#d08770;">0xA0</span><span style="color:#c0c5ce;">, </span><span style="color:#d08770;">0</span><span style="color:#c0c5ce;">
+};</span><span style="color:#c0c5ce;">
+</span><span style="color:#b48ead;">int</span><span style="color:#c0c5ce;"> ar[</span><span style="color:#d08770;">6</span><span style="color:#c0c5ce;">] = {-</span><span style="color:#d08770;">35</span><span style="color:#c0c5ce;">,</span><span style="color:#d08770;">51</span><span style="color:#c0c5ce;">,</span><span style="color:#d08770;">84</span><span style="color:#c0c5ce;">,</span><span style="color:#d08770;">53</span><span style="color:#c0c5ce;">,-</span><span style="color:#d08770;">17</span><span style="color:#c0c5ce;">,-</span><span style="color:#d08770;">85</span><span style="color:#c0c5ce;">};</span><span style="color:#c0c5ce;">
+</span><span style="color:#b48ead;">int </span><span style="color:#8fa1b3;">main</span><span style="color:#c0c5ce;">()</span><span style="color:#c0c5ce;">
+{</span><span style="color:#c0c5ce;">
+	a[</span><span style="color:#d08770;">0</span><span style="color:#c0c5ce;">]^=</span><span style="color:#d08770;">0xab</span><span style="color:#c0c5ce;">;</span><span style="color:#c0c5ce;">
+	</span><span style="color:#b48ead;">for</span><span style="color:#c0c5ce;">(</span><span style="color:#b48ead;">int</span><span style="color:#c0c5ce;"> i=</span><span style="color:#d08770;">0</span><span style="color:#c0c5ce;">;i&lt;</span><span style="color:#d08770;">25</span><span style="color:#c0c5ce;">;++i){</span><span style="color:#c0c5ce;">
+		a[i+</span><span style="color:#d08770;">1</span><span style="color:#c0c5ce;">]^=ar[i%</span><span style="color:#d08770;">6</span><span style="color:#c0c5ce;">];</span><span style="color:#c0c5ce;">
+	}</span><span style="color:#c0c5ce;">
+	</span><span style="color:#96b5b4;">puts</span><span style="color:#c0c5ce;">((</span><span style="color:#b48ead;">const char </span><span style="color:#c0c5ce;">*)a);</span><span style="color:#c0c5ce;">
+    </span><span style="color:#b48ead;">return </span><span style="color:#d08770;">0</span><span style="color:#c0c5ce;">;</span><span style="color:#c0c5ce;">
+}</span><span style="color:#c0c5ce;">
+</span><span style="color:#c0c5ce;">
+</span></code></pre><h3 id="flag-9">flag</h3>
+<p>PCTF{r3v3Rse_i5_v3ry_eAsy}</p>
+<h2 id="x-secret">[Ｘ]  Secret</h2>
+<p>打开，F12，网络，刷新，得到</p>
+<p><img src="https://CSUwangj.github.io/jarvisoj-wphe-ji/1525960605970.png" alt="Secret" /></p>
+<h3 id="flag-10">flag</h3>
+<p>PCTF{Welcome_to_phrackCTF_2016}</p>
+<h2 id="x-ai-chi-pei-gen-de-chu-ti-ren">[Ｘ]  爱吃培根的出题人</h2>
+<p>提示够明显了，小写字母-&gt;A，大写字母-&gt;B，<a href="https://mothereff.in/bacon">培根密码解密</a></p>
+<h3 id="flag-11">flag</h3>
+<h2 id="x-easy-rsa">[Ｘ] Easy RSA</h2>
+<p>提示明显</p>
+<h3 id="flag-12">flag</h3>
+<p>PCTF{3a5Y}</p>
+<h2 id="x-ropgadget">[Ｘ] ROPGadget</h2>
+<p><img src="https://CSUwangj.github.io/jarvisoj-wphe-ji/1525961626864.png" alt="ROPGadget" /></p>
+<h3 id="flag-13">flag</h3>
+<p>PCTF{94C38B08890A5BC3}</p>
+<h2 id="x-qu-zheng">[Ｘ] 取证</h2>
+<p>搜索得软件名Volatility</p>
+<h3 id="flag-14">flag</h3>
+<p>PCTF{volatility}</p>
+<h2 id="x-shou-xi-de-sheng-yin">[Ｘ] 熟悉的声音</h2>
+<p>摩尔斯-&gt;凯撒</p>
+<h3 id="flag-15">flag</h3>
+<p>PCTF{PHRACKCTF}</p>
+<h2 id="x-baby-s-crack">[Ｘ] Baby's Crack</h2>
+<p>很简单的加密，都不用写逆算法了，直接爆破吧！</p>
+<pre style="background-color:#2b303b;">
+<code><span style="color:#b48ead;">#include </span><span style="color:#c0c5ce;">&lt;</span><span style="color:#a3be8c;">string.h</span><span style="color:#c0c5ce;">&gt;</span><span style="color:#c0c5ce;">
+</span><span style="color:#b48ead;">#include </span><span style="color:#c0c5ce;">&lt;</span><span style="color:#a3be8c;">stdio.h</span><span style="color:#c0c5ce;">&gt;</span><span style="color:#c0c5ce;">
+</span><span style="color:#b48ead;">char</span><span style="color:#c0c5ce;"> a[] = &quot;</span><span style="color:#a3be8c;">jeihjiiklwjnk{ljj{kflghhj{ilk{k{kij{ihlgkfkhkwhhjgly</span><span style="color:#c0c5ce;">&quot;;</span><span style="color:#c0c5ce;">
+</span><span style="color:#b48ead;">char</span><span style="color:#c0c5ce;"> b[] = &quot;</span><span style="color:#a3be8c;">jeihjiiklwjnk{ljj{kflghhj{ilk{k{kij{ihlgkfkhkwhhjgly</span><span style="color:#c0c5ce;">&quot;;</span><span style="color:#65737e;">//这里可以为空，我只是方便设置长度搞得</span><span style="color:#65737e;">
+</span><span style="color:#b48ead;">int </span><span style="color:#8fa1b3;">main</span><span style="color:#c0c5ce;">()</span><span style="color:#c0c5ce;">
+{</span><span style="color:#c0c5ce;">
+	</span><span style="color:#b48ead;">int</span><span style="color:#c0c5ce;"> len = </span><span style="color:#96b5b4;">strlen</span><span style="color:#c0c5ce;">(a);</span><span style="color:#c0c5ce;">
+	</span><span style="color:#b48ead;">for</span><span style="color:#c0c5ce;">(</span><span style="color:#b48ead;">int</span><span style="color:#c0c5ce;"> i=</span><span style="color:#d08770;">0</span><span style="color:#c0c5ce;">;i&lt;len;++i){</span><span style="color:#c0c5ce;">
+		</span><span style="color:#b48ead;">int</span><span style="color:#c0c5ce;"> ok = </span><span style="color:#d08770;">0</span><span style="color:#c0c5ce;">;</span><span style="color:#c0c5ce;">
+		</span><span style="color:#b48ead;">for</span><span style="color:#c0c5ce;">(</span><span style="color:#b48ead;">int</span><span style="color:#c0c5ce;"> j=</span><span style="color:#d08770;">32</span><span style="color:#c0c5ce;">;j&lt;</span><span style="color:#d08770;">255</span><span style="color:#c0c5ce;">&amp;&amp;!ok;++j){</span><span style="color:#c0c5ce;">
+			</span><span style="color:#b48ead;">int</span><span style="color:#c0c5ce;"> cur = j;</span><span style="color:#c0c5ce;">
+			</span><span style="color:#b48ead;">if </span><span style="color:#c0c5ce;">( j &gt; </span><span style="color:#d08770;">47 </span><span style="color:#c0c5ce;">&amp;&amp; j &lt;= </span><span style="color:#d08770;">96 </span><span style="color:#c0c5ce;">){</span><span style="color:#c0c5ce;">
+          		j += </span><span style="color:#d08770;">53</span><span style="color:#c0c5ce;">;</span><span style="color:#c0c5ce;">
+        	}</span><span style="color:#b48ead;">else if </span><span style="color:#c0c5ce;">( j &lt;= </span><span style="color:#d08770;">46 </span><span style="color:#c0c5ce;">){</span><span style="color:#c0c5ce;">
+          		j += j % </span><span style="color:#d08770;">11</span><span style="color:#c0c5ce;">;</span><span style="color:#c0c5ce;">
+        	}</span><span style="color:#b48ead;">else</span><span style="color:#c0c5ce;">{</span><span style="color:#c0c5ce;">
+          		j = </span><span style="color:#d08770;">61 </span><span style="color:#c0c5ce;">* (j / </span><span style="color:#d08770;">61</span><span style="color:#c0c5ce;">);</span><span style="color:#c0c5ce;">
+        	}</span><span style="color:#c0c5ce;">
+        	</span><span style="color:#b48ead;">if</span><span style="color:#c0c5ce;">(j==a[i]){</span><span style="color:#c0c5ce;">
+        		</span><span style="color:#65737e;">//ok=1;这里加上注释是为了确认每次解的唯一</span><span style="color:#65737e;">
+</span><span style="color:#c0c5ce;">        		b[i]=cur;</span><span style="color:#c0c5ce;">
+        		</span><span style="color:#96b5b4;">putchar</span><span style="color:#c0c5ce;">(cur);</span><span style="color:#c0c5ce;">
+        	}</span><span style="color:#c0c5ce;">
+        	j=cur;</span><span style="color:#c0c5ce;">
+        }</span><span style="color:#c0c5ce;">
+        </span><span style="color:#96b5b4;">putchar</span><span style="color:#c0c5ce;">(&#39;</span><span style="color:#96b5b4;">\n</span><span style="color:#c0c5ce;">&#39;);</span><span style="color:#c0c5ce;">
+    }</span><span style="color:#c0c5ce;">
+    </span><span style="color:#96b5b4;">puts</span><span style="color:#c0c5ce;">(b);</span><span style="color:#c0c5ce;">
+	</span><span style="color:#b48ead;">return </span><span style="color:#d08770;">0</span><span style="color:#c0c5ce;">;</span><span style="color:#c0c5ce;">
+}</span><span style="color:#c0c5ce;">
+</span></code></pre>
+<p>得到的结果转ASCII就好</p>
+<h3 id="flag-16">flag</h3>
+<p>PCTF{You_ar3_Good_Crack3R}</p>
+<h2 id="x-help">[Ｘ] Help!!</h2>
+<p><img src="https://CSUwangj.github.io/jarvisoj-wphe-ji/1525968750571.png" alt="Help!!" /></p>
+<p>打开word没有发现flag，binwalk/strings也没有</p>
+<p>于是解压word，发现有两张图，OK</p>
+<h3 id="flag-17">flag</h3>
+<p>PCTF{You_Know_moR3_4boUt_woRd}</p>
+<h2 id="x-shellcode">[Ｘ] Shellcode</h2>
+<p><img src="https://CSUwangj.github.io/jarvisoj-wphe-ji/1525973282058.png" alt="Shellcode" /></p>
+<h3 id="flag-18">flag</h3>
+<p>PCTF{Begin_4_good_pwnn3r}</p>
+<h2 id="x-a-piece-of-cake">[Ｘ] A Piece Of Cake</h2>
+<p>一眼就看出来是单表替换，quip解决</p>
+<h3 id="flag-19">flag</h3>
+<p>PCTF{substitutepassisveryeasyyougotit}</p>
+<h2 id="x-zi-fu-chuan">[Ｘ] -.-字符串</h2>
+<p>一目了然</p>
+<h3 id="flag-20">flag</h3>
+<p>522018D665387D1DA931812B77763410</p>
+<h2 id="x-de-jun-de-mi-ma">[Ｘ] 德军的密码</h2>
+<p><img src="https://CSUwangj.github.io/jarvisoj-wphe-ji/1525970989136.png" alt="德军的密码" /></p>
+<p>然后解得flag</p>
+<h3 id="flag-21">flag</h3>
+<p>WELCOMECISRG</p>
+<h2 id="x-wo-shou-bao">[Ｘ] 握手包</h2>
+<p>下载发现是个cap包，中文搜索无果，搜&quot;Kali handshake crack&quot;，搜到hashcat，找到<a href="https://hashcat.net/wiki/doku.php?id=cracking_wpawpa2">这个网站</a></p>
+<p>照葫芦画瓢</p>
+<pre style="background-color:#2b303b;">
+<code><span style="color:#bf616a;">A:</span><span style="color:#96b5b4;">\D</span><span style="color:#bf616a;">ownloads</span><span style="color:#96b5b4;">\C</span><span style="color:#bf616a;">ompressed</span><span style="color:#96b5b4;">\h</span><span style="color:#bf616a;">ashcat-4.1.0</span><span style="color:#c0c5ce;">
+</span><span style="color:#bf616a;">λ</span><span style="color:#c0c5ce;"> hashcat64.exe</span><span style="color:#bf616a;"> -m</span><span style="color:#c0c5ce;"> 2500 9640_1525972232.hccapx rockyou.txt</span><span style="color:#c0c5ce;">
+</span><span style="color:#bf616a;">hashcat</span><span style="color:#c0c5ce;"> (v4.1.0) </span><span style="color:#bf616a;">starting...</span><span style="color:#c0c5ce;">
+</span><span style="color:#c0c5ce;">
+</span><span style="color:#bf616a;">*</span><span style="color:#c0c5ce;"> Device </span><span style="color:#65737e;">#1: WARNING! Kernel exec timeout is not disabled.</span><span style="color:#65737e;">
+</span><span style="color:#c0c5ce;">             This may cause &quot;</span><span style="color:#a3be8c;">CL_OUT_OF_RESOURCES</span><span style="color:#c0c5ce;">&quot; or related errors.</span><span style="color:#c0c5ce;">
+             </span><span style="color:#bf616a;">To</span><span style="color:#c0c5ce;"> disable the timeout, see: https://hashcat.net/q/timeoutpatch</span><span style="color:#c0c5ce;">
+</span><span style="color:#bf616a;">*</span><span style="color:#c0c5ce;"> Device </span><span style="color:#65737e;">#2: Intel&#39;s OpenCL runtime (GPU only) is currently broken.</span><span style="color:#65737e;">
+</span><span style="color:#c0c5ce;">             We are waiting for updated OpenCL drivers from Intel.</span><span style="color:#c0c5ce;">
+             </span><span style="color:#bf616a;">You</span><span style="color:#c0c5ce;"> can use</span><span style="color:#bf616a;"> --force</span><span style="color:#c0c5ce;"> to override, but do not report related errors.</span><span style="color:#c0c5ce;">
+</span><span style="color:#8fa1b3;">nvmlDeviceGetFanSpeed</span><span style="color:#c0c5ce;">(): Not Supported</span><span style="color:#c0c5ce;">
+</span><span style="color:#c0c5ce;">
+OpenCL Platform </span><span style="color:#65737e;">#1: NVIDIA Corporation</span><span style="color:#65737e;">
+</span><span style="color:#c0c5ce;">======================================</span><span style="color:#c0c5ce;">
+* Device </span><span style="color:#65737e;">#1: GeForce GTX 965M, 512/2048 MB allocatable, 8MCU</span><span style="color:#65737e;">
+</span><span style="color:#c0c5ce;">
+OpenCL Platform </span><span style="color:#65737e;">#2: Intel(R) Corporation</span><span style="color:#65737e;">
+</span><span style="color:#c0c5ce;">========================================</span><span style="color:#c0c5ce;">
+* Device </span><span style="color:#65737e;">#2: Intel(R) HD Graphics 530, skipped.</span><span style="color:#65737e;">
+</span><span style="color:#c0c5ce;">* Device </span><span style="color:#65737e;">#3: Intel(R) Core(TM) i7-6700HQ CPU @ 2.60GHz, skipped.</span><span style="color:#65737e;">
+</span><span style="color:#c0c5ce;">
+Hashes: 1 digests; 1 unique digests, 1 unique salts</span><span style="color:#c0c5ce;">
+Bitmaps: 16 bits, 65536 entries, 0x0000ffff mask, 262144 bytes, 5/13 rotates</span><span style="color:#c0c5ce;">
+Rules: 1</span><span style="color:#c0c5ce;">
+</span><span style="color:#c0c5ce;">
+Applicable optimizers:</span><span style="color:#c0c5ce;">
+* Zero-Byte</span><span style="color:#c0c5ce;">
+* Single-Hash</span><span style="color:#c0c5ce;">
+* Single-Salt</span><span style="color:#c0c5ce;">
+* Slow-Hash-SIMD-LOOP</span><span style="color:#c0c5ce;">
+</span><span style="color:#c0c5ce;">
+Minimum password length supported by kernel: 8</span><span style="color:#c0c5ce;">
+Maximum password length supported by kernel: 63</span><span style="color:#c0c5ce;">
+</span><span style="color:#c0c5ce;">
+Watchdog: Temperature abort trigger set to 90c</span><span style="color:#c0c5ce;">
+</span><span style="color:#c0c5ce;">
+Dictionary cache built:</span><span style="color:#c0c5ce;">
+* Filename..: rockyou.txt</span><span style="color:#c0c5ce;">
+* Passwords.: 14344390</span><span style="color:#c0c5ce;">
+* Bytes.....: 139921496</span><span style="color:#c0c5ce;">
+* Keyspace..: 14344383</span><span style="color:#c0c5ce;">
+* Runtime...: 3 secs</span><span style="color:#c0c5ce;">
+</span><span style="color:#c0c5ce;">
+e56452df7244988624af174fa692d81d:560a64ffe917:b8ee65ac640b:Flag_is_here:11223344</span><span style="color:#c0c5ce;">
+</span><span style="color:#c0c5ce;">
+Session..........: hashcat</span><span style="color:#c0c5ce;">
+Status...........: Cracked</span><span style="color:#c0c5ce;">
+Hash.Type........: WPA/WPA2</span><span style="color:#c0c5ce;">
+Hash.Target......: Flag_is_here (</span><span style="color:#bf616a;">AP:56:0a:64:ff:e9:17</span><span style="color:#c0c5ce;"> STA:b8:ee:65:ac:64:0b)</span><span style="color:#c0c5ce;">
+</span><span style="color:#bf616a;">Time.Started.....:</span><span style="color:#c0c5ce;"> Fri May 11 01:17:21 2018 (3 secs)</span><span style="color:#c0c5ce;">
+</span><span style="color:#bf616a;">Time.Estimated...:</span><span style="color:#c0c5ce;"> Fri May 11 01:17:24 2018 (0 secs)</span><span style="color:#c0c5ce;">
+</span><span style="color:#bf616a;">Guess.Base.......:</span><span style="color:#c0c5ce;"> File (rockyou.txt)</span><span style="color:#c0c5ce;">
+</span><span style="color:#bf616a;">Guess.Queue......:</span><span style="color:#c0c5ce;"> 1/1 (100.00%)</span><span style="color:#c0c5ce;">
+</span><span style="color:#bf616a;">Speed.Dev.#1.....:</span><span style="color:#c0c5ce;">    91621 H/s (10.79ms) </span><span style="color:#bf616a;">@</span><span style="color:#c0c5ce;"> Accel:32 Loops:16 Thr:1024 Vec:1</span><span style="color:#c0c5ce;">
+</span><span style="color:#bf616a;">Recovered........:</span><span style="color:#c0c5ce;"> 1/1 (100.00%) </span><span style="color:#bf616a;">Digests,</span><span style="color:#c0c5ce;"> 1/1 (100.00%) </span><span style="color:#bf616a;">Salts</span><span style="color:#c0c5ce;">
+</span><span style="color:#bf616a;">Progress.........:</span><span style="color:#c0c5ce;"> 593466/14344383 (4.14%)</span><span style="color:#c0c5ce;">
+</span><span style="color:#bf616a;">Rejected.........:</span><span style="color:#c0c5ce;"> 331322/593466 (55.83%)</span><span style="color:#c0c5ce;">
+</span><span style="color:#bf616a;">Restore.Point....:</span><span style="color:#c0c5ce;"> 0/14344383 (0.00%)</span><span style="color:#c0c5ce;">
+</span><span style="color:#bf616a;">Candidates.#1....:</span><span style="color:#c0c5ce;"> 123456789 -&gt; rinabelle</span><span style="color:#c0c5ce;">
+</span><span style="color:#bf616a;">HWMon.Dev.#1.....:</span><span style="color:#c0c5ce;"> Temp: 68c Util: 98% Core:1151MHz Mem:2505MHz Bus:16</span><span style="color:#c0c5ce;">
+</span><span style="color:#c0c5ce;">
+</span><span style="color:#bf616a;">Started:</span><span style="color:#c0c5ce;"> Fri May 11 01:17:04 2018</span><span style="color:#c0c5ce;">
+</span><span style="color:#bf616a;">Stopped:</span><span style="color:#c0c5ce;"> Fri May 11 01:17:25 2018</span><span style="color:#c0c5ce;">
+</span></code></pre><h3 id="flag-22">flag</h3>
+<p>flag{11223344}</p>
+<h1 id="crypto">[　] Crypto</h1>
+<h2 id="x-medium-rsa">[Ｘ] Medium RSA</h2>
+<pre style="background-color:#2b303b;">
+<code><span style="color:#bf616a;">λ</span><span style="color:#c0c5ce;"> openssl rsa</span><span style="color:#bf616a;"> -pubin -in</span><span style="color:#c0c5ce;"> pubkey.pem</span><span style="color:#bf616a;"> -text -modulus</span><span style="color:#c0c5ce;">
+</span><span style="color:#bf616a;">WARNING:</span><span style="color:#c0c5ce;"> can&#39;</span><span style="color:#a3be8c;">t open config file: /usr/local/ssl/openssl.cnf</span><span style="color:#a3be8c;">
+Public-Key: (256 bit)</span><span style="color:#a3be8c;">
+Modulus:</span><span style="color:#a3be8c;">
+    00:c2:63:6a:e5:c3:d8:e4:3f:fb:97:ab:09:02:8f:</span><span style="color:#a3be8c;">
+    1a:ac:6c:0b:f6:cd:3d:70:eb:ca:28:1b:ff:e9:7f:</span><span style="color:#a3be8c;">
+    be:30:dd</span><span style="color:#a3be8c;">
+Exponent: 65537 (0x10001)</span><span style="color:#a3be8c;">
+Modulus=C2636AE5C3D8E43FFB97AB09028F1AAC6C0BF6CD3D70EBCA281BFFE97FBE30DD</span><span style="color:#a3be8c;">
+writing RSA key</span><span style="color:#a3be8c;">
+-----BEGIN PUBLIC KEY-----</span><span style="color:#a3be8c;">
+MDwwDQYJKoZIhvcNAQEBBQADKwAwKAIhAMJjauXD2OQ/+5erCQKPGqxsC/bNPXDr</span><span style="color:#a3be8c;">
+yigb/+l/vjDdAgMBAAE=</span><span style="color:#a3be8c;">
+-----END PUBLIC KEY-----</span><span style="color:#a3be8c;">
+</span><span style="color:#a3be8c;">
+</span></code></pre>
+<p>然后分解这个数，用RSAtools输出私钥文件</p>
+<pre style="background-color:#2b303b;">
+<code><span style="color:#bf616a;">λ</span><span style="color:#c0c5ce;"> python rsatool.py</span><span style="color:#bf616a;"> -f</span><span style="color:#c0c5ce;"> PEM</span><span style="color:#bf616a;"> -o</span><span style="color:#c0c5ce;"> key.pem</span><span style="color:#bf616a;"> -p</span><span style="color:#c0c5ce;"> 275127860351348928173285174381581152299</span><span style="color:#bf616a;"> -q</span><span style="color:#c0c5ce;"> 319576316814478949870590164193048 041239</span><span style="color:#c0c5ce;">
+</span><span style="color:#bf616a;">Using</span><span style="color:#c0c5ce;"> (p, q) </span><span style="color:#bf616a;">to</span><span style="color:#c0c5ce;"> initialise RSA instance</span><span style="color:#c0c5ce;">
+</span><span style="color:#c0c5ce;">
+</span><span style="color:#bf616a;">n</span><span style="color:#c0c5ce;"> =</span><span style="color:#c0c5ce;">
+</span><span style="color:#bf616a;">c2636ae5c3d8e43ffb97ab09028f1aac6c0bf6cd3d70ebca281bffe97fbe30dd</span><span style="color:#c0c5ce;">
+</span><span style="color:#c0c5ce;">
+</span><span style="color:#bf616a;">e</span><span style="color:#c0c5ce;"> = 65537 (0x10001)</span><span style="color:#c0c5ce;">
+</span><span style="color:#c0c5ce;">
+</span><span style="color:#bf616a;">d</span><span style="color:#c0c5ce;"> =</span><span style="color:#c0c5ce;">
+</span><span style="color:#bf616a;">1806799bd44ce649122b78b43060c786f8b77fb1593e0842da063ba0d8728bf1</span><span style="color:#c0c5ce;">
+</span><span style="color:#c0c5ce;">
+</span><span style="color:#bf616a;">p</span><span style="color:#c0c5ce;"> = 275127860351348928173285174381581152299 (0xcefbb2cf7e18a98ebedc36e3e7c3b02b)</span><span style="color:#c0c5ce;">
+</span><span style="color:#c0c5ce;">
+</span><span style="color:#bf616a;">q</span><span style="color:#c0c5ce;"> = 319576316814478949870590164193048041239 (0xf06c28e91c8922b9c236e23560c09717)</span><span style="color:#c0c5ce;">
+</span><span style="color:#c0c5ce;">
+</span><span style="color:#bf616a;">Saving</span><span style="color:#c0c5ce;"> PEM as key.pem</span><span style="color:#c0c5ce;">
+</span></code></pre>
+<p>之后解密</p>
+<p><code>λ openssl rsautl -decrypt -inkey key.pem -in flag.enc -out flag</code></p>
+<h3 id="flag-23">flag</h3>
+<p>PCTF{256b_i5_m3dium}</p>
+<h2 id="brokenpic">[　] BrokenPic</h2>
+<h3 id="flag-24">flag</h3>
+<h2 id="x-hard-rsa">[Ｘ] hard RSA</h2>
+<h2 id="rsa-yan-sheng-suan-fa-rabin-suan-fa">RSA 衍生算法——Rabin 算法</h2>
+<h3 id="gong-ji-tiao-jian">攻击条件</h3>
+<p>Rabin 算法的特征在于 $e=2​$。</p>
+<h3 id="gong-ji-yuan-li">攻击原理</h3>
+<blockquote>
+<p>密文：</p>
+<p>$c=m^2\mod n$</p>
+<p>解密：</p>
+<ul>
+<li>计算出 $m^p$ 和 $m^q$：</li>
+</ul>
+<p>$$m_p=\sqrt{c}\mod p$$</p>
+<p>$$m_q=\sqrt{c}\mod q$$</p>
+<ul>
+<li>用扩展欧几里得计算出 $y_p$ 和 $y_q$：</li>
+</ul>
+<p>$y_p⋅p+y_q⋅q=1$</p>
+<ul>
+<li>解出四个明文：</li>
+</ul>
+<p>$$a=(y_p⋅p⋅m_q+y_q⋅q⋅m_p)modn$$</p>
+<p>$$b=n−a$$</p>
+<p>$$c=(y_p⋅p⋅m_q−y_q⋅q⋅m_p)modn$$</p>
+<p>$$d=n−c$$</p>
+<p>注意：如果 $$p≡q≡3(mod4)$$，则</p>
+<p>$$mp=c^{\frac{1}{4}(p+1)}modp$$</p>
+<p>$$mq=c^{\frac14(q+1)}modq$$</p>
+<p>而一般情况下，$p≡q≡3(mod4)p $是满足的，对于不满足的情况下，请参考相应的算法解决。</p>
+</blockquote>
+<pre style="background-color:#2b303b;">
+<code><span style="color:#65737e;">#!/usr/bin/python</span><span style="color:#65737e;">
+# coding=utf-8</span><span style="color:#65737e;">
+</span><span style="color:#b48ead;">import </span><span style="color:#c0c5ce;">gmpy2</span><span style="color:#c0c5ce;">
+</span><span style="color:#b48ead;">import </span><span style="color:#c0c5ce;">string</span><span style="color:#c0c5ce;">
+</span><span style="color:#b48ead;">from </span><span style="color:#c0c5ce;">Crypto.PublicKey </span><span style="color:#b48ead;">import </span><span style="color:#bf616a;">RSA</span><span style="color:#c0c5ce;">
+</span><span style="color:#c0c5ce;">
+</span><span style="color:#65737e;"># 读取公钥参数</span><span style="color:#65737e;">
+</span><span style="color:#b48ead;">with </span><span style="color:#96b5b4;">open</span><span style="color:#c0c5ce;">(&#39;</span><span style="color:#a3be8c;">pubkey.pem</span><span style="color:#c0c5ce;">&#39;, &#39;</span><span style="color:#a3be8c;">r</span><span style="color:#c0c5ce;">&#39;) </span><span style="color:#b48ead;">as </span><span style="color:#c0c5ce;">f:</span><span style="color:#c0c5ce;">
+    key = RSA.</span><span style="color:#bf616a;">importKey</span><span style="color:#c0c5ce;">(f)</span><span style="color:#c0c5ce;">
+    N = key.n</span><span style="color:#c0c5ce;">
+    e = key.e</span><span style="color:#c0c5ce;">
+</span><span style="color:#b48ead;">with </span><span style="color:#96b5b4;">open</span><span style="color:#c0c5ce;">(&#39;</span><span style="color:#a3be8c;">flag.enc</span><span style="color:#c0c5ce;">&#39;, &#39;</span><span style="color:#a3be8c;">r</span><span style="color:#c0c5ce;">&#39;) </span><span style="color:#b48ead;">as </span><span style="color:#c0c5ce;">f:</span><span style="color:#c0c5ce;">
+    cipher = f.</span><span style="color:#bf616a;">read</span><span style="color:#c0c5ce;">().</span><span style="color:#bf616a;">encode</span><span style="color:#c0c5ce;">(&#39;</span><span style="color:#a3be8c;">hex</span><span style="color:#c0c5ce;">&#39;)</span><span style="color:#c0c5ce;">
+    cipher = string.</span><span style="color:#bf616a;">atoi</span><span style="color:#c0c5ce;">(cipher, </span><span style="color:#bf616a;">base</span><span style="color:#c0c5ce;">=</span><span style="color:#d08770;">16</span><span style="color:#c0c5ce;">)</span><span style="color:#c0c5ce;">
+    </span><span style="color:#65737e;"># print cipher</span><span style="color:#65737e;">
+</span><span style="color:#b48ead;">print </span><span style="color:#c0c5ce;">&quot;</span><span style="color:#a3be8c;">please input p</span><span style="color:#c0c5ce;">&quot;</span><span style="color:#c0c5ce;">
+p = </span><span style="color:#bf616a;">int</span><span style="color:#c0c5ce;">(</span><span style="color:#96b5b4;">raw_input</span><span style="color:#c0c5ce;">(), </span><span style="color:#d08770;">10</span><span style="color:#c0c5ce;">)</span><span style="color:#c0c5ce;">
+</span><span style="color:#b48ead;">print </span><span style="color:#c0c5ce;">&#39;</span><span style="color:#a3be8c;">please input q</span><span style="color:#c0c5ce;">&#39;</span><span style="color:#c0c5ce;">
+q = </span><span style="color:#bf616a;">int</span><span style="color:#c0c5ce;">(</span><span style="color:#96b5b4;">raw_input</span><span style="color:#c0c5ce;">(), </span><span style="color:#d08770;">10</span><span style="color:#c0c5ce;">)</span><span style="color:#c0c5ce;">
+</span><span style="color:#65737e;"># 计算yp和yq</span><span style="color:#65737e;">
+</span><span style="color:#c0c5ce;">inv_p = gmpy2.</span><span style="color:#bf616a;">invert</span><span style="color:#c0c5ce;">(p, q)</span><span style="color:#c0c5ce;">
+inv_q = gmpy2.</span><span style="color:#bf616a;">invert</span><span style="color:#c0c5ce;">(q, p)</span><span style="color:#c0c5ce;">
+</span><span style="color:#c0c5ce;">
+</span><span style="color:#65737e;"># 计算mp和mq</span><span style="color:#65737e;">
+</span><span style="color:#c0c5ce;">mp = </span><span style="color:#96b5b4;">pow</span><span style="color:#c0c5ce;">(cipher, (p + </span><span style="color:#d08770;">1</span><span style="color:#c0c5ce;">) / </span><span style="color:#d08770;">4</span><span style="color:#c0c5ce;">, p)</span><span style="color:#c0c5ce;">
+mq = </span><span style="color:#96b5b4;">pow</span><span style="color:#c0c5ce;">(cipher, (q + </span><span style="color:#d08770;">1</span><span style="color:#c0c5ce;">) / </span><span style="color:#d08770;">4</span><span style="color:#c0c5ce;">, q)</span><span style="color:#c0c5ce;">
+</span><span style="color:#c0c5ce;">
+</span><span style="color:#65737e;"># 计算a,b,c,d</span><span style="color:#65737e;">
+</span><span style="color:#c0c5ce;">a = (inv_p * p * mq + inv_q * q * mp) % N</span><span style="color:#c0c5ce;">
+b = N - </span><span style="color:#bf616a;">int</span><span style="color:#c0c5ce;">(a)</span><span style="color:#c0c5ce;">
+c = (inv_p * p * mq - inv_q * q * mp) % N</span><span style="color:#c0c5ce;">
+d = N - </span><span style="color:#bf616a;">int</span><span style="color:#c0c5ce;">(c)</span><span style="color:#c0c5ce;">
+</span><span style="color:#c0c5ce;">
+</span><span style="color:#b48ead;">for </span><span style="color:#c0c5ce;">i </span><span style="color:#b48ead;">in </span><span style="color:#c0c5ce;">(a, b, c, d):</span><span style="color:#c0c5ce;">
+    s = &#39;</span><span style="color:#d08770;">%x</span><span style="color:#c0c5ce;">&#39; % i</span><span style="color:#c0c5ce;">
+    </span><span style="color:#b48ead;">if </span><span style="color:#96b5b4;">len</span><span style="color:#c0c5ce;">(s) % </span><span style="color:#d08770;">2 </span><span style="color:#c0c5ce;">!= </span><span style="color:#d08770;">0</span><span style="color:#c0c5ce;">:</span><span style="color:#c0c5ce;">
+        s = &#39;</span><span style="color:#a3be8c;">0</span><span style="color:#c0c5ce;">&#39; + s</span><span style="color:#c0c5ce;">
+    </span><span style="color:#b48ead;">print </span><span style="color:#c0c5ce;">s.</span><span style="color:#bf616a;">decode</span><span style="color:#c0c5ce;">(&#39;</span><span style="color:#a3be8c;">hex</span><span style="color:#c0c5ce;">&#39;)</span><span style="color:#c0c5ce;">
+</span></code></pre><h3 id="flag-25">flag</h3>
+<p>PCTF{sp3ci4l_rsa}</p>
+
+  </div>
+
+        </div>
+
+        
+          <button class="sidebar-toggle" onclick="openSidebar()">O</button>
+          <aside class="sidebar" name="sidebar">
+            <div class="site-author" itemprop="author" itemtype="https://schema.org/Person">
+              
+              <img class="site-author-image" itemprop="image"
+                src="https:&#x2F;&#x2F;CSUwangj.github.io&#x2F;img&#x2F;avatar.png"
+                alt="CSUwangj" />
+              
+              <p class="site-author-name">CSUwangj</p>
+              <p class="site-author-quote">Just keep in mind that hacking is very rarely in a sequence.</p>
+            </div>
+            <div class="feed-link">
+              
+                <a rel="alternate" type="application/atom+xml" title="RSS" href="https://CSUwangj.github.io/atom.xml">
+                  RSS
+                </a>
+              
+            </div>
+            <div class="links-of-author">
+              
+                <a href="https:&#x2F;&#x2F;github.com&#x2F;CSUwangj" title="Github" class="author-link">
+                  <i class="fa fw fa-github"></i>
+                </a>
+              
+            </div>
+            <div class="links-of-blogroll">
+              
+                <a href="https:&#x2F;&#x2F;zickshen.github.io&#x2F;">zickshen</a>
+              
+            </div>
+          </aside>
+        
+
+      </main>
+
+      
+        <footer name="footer">
+          <div class="copyright">
+            <span item="copyrightYear">© 2018-2020</span>
+            <span class="author">CSUwangj</span>
+          </div>
+          <div class="powered-by">
+            Powered by <a href="https://www.getzola.org/">Zola</a> Theme <a href="https://github.com/CSUwangj/DogFood">DogFood</a>
+          </div>
+        </footer>
+      
+    </body>
+
+</html>

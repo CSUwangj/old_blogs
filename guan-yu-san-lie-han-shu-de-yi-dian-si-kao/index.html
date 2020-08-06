@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+      <!-- Enable responsiveness on mobile devices-->
+      <!-- viewport-fit=cover is to support iPhone X rounded corners and notch in landscape-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, viewport-fit=cover">
+
+      <title></title>
+
+      <!-- CSS -->
+      <link rel="stylesheet" href="https:&#x2F;&#x2F;CSUwangj.github.io&#x2F;css&#x2F;lib&#x2F;font-awesome.min.css">
+      <link rel="stylesheet" href="https:&#x2F;&#x2F;CSUwangj.github.io&#x2F;site.css">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface">
+      <script type="text/javascript" charset="utf-8" src="https:&#x2F;&#x2F;CSUwangj.github.io&#x2F;js&#x2F;sidebar.js"></script>
+
+      
+        <link rel="alternate" type="application/atom+xml" title="RSS" href="https://CSUwangj.github.io/atom.xml">
+      
+
+      
+      
+    </head>
+
+    <body>
+      
+      
+        <header name="header">
+          <div>
+            <div class="logo"><a href="https:&#x2F;&#x2F;CSUwangj.github.io">LuckyDog</a></div>
+            <nav class="menu">
+              
+                <a href="https:&#x2F;&#x2F;CSUwangj.github.io" class="nav-item-home">
+                  Home
+                </a>
+              
+                <a href="https:&#x2F;&#x2F;CSUwangj.github.io&#x2F;categories" class="nav-item-categories">
+                  Categories
+                </a>
+              
+                <a href="https:&#x2F;&#x2F;CSUwangj.github.io&#x2F;tags" class="nav-item-tags">
+                  Tags
+                </a>
+              
+                <a href="https:&#x2F;&#x2F;CSUwangj.github.io&#x2F;about" class="nav-item-about">
+                  About
+                </a>
+              
+                <a href="https:&#x2F;&#x2F;CSUwangj.github.io&#x2F;archives" class="nav-item-archives">
+                  Archives
+                </a>
+              
+            </nav>
+          </div>
+        </header>
+      
+
+      <main class="content container" name="main">
+        <div class="content-wrapper">
+          
+  <div class="post">
+    <h1 class="post-title">关于散列函数的一点思考</h1>
+    <span class="post-date">2018-06-03</span>
+    <p>今天在ACM群灌水的时候因为一个题目引发了一些思考，题目是<a href="http://qscoj.cn/#/contest/show/220">比赛链接</a>的A题</p>
+<span id="continue-reading"></span>
+<p>其实题目很明显，3e4的字符串总量，1e3的字符串长度上限，样例就显示了有字母、数字、符号，就10M内存，用字典树妥妥炸了。</p>
+<p>所以就哈希呗。</p>
+<p>幸运的是STL里就有自带的hash函数，于是就水过去了。</p>
+<pre style="background-color:#2b303b;">
+<code><span style="color:#b48ead;">#include </span><span style="color:#c0c5ce;">&lt;</span><span style="color:#a3be8c;">bits/stdc++.h</span><span style="color:#c0c5ce;">&gt;</span><span style="color:#c0c5ce;">
+</span><span style="color:#b48ead;">using namespace</span><span style="color:#c0c5ce;"> std;</span><span style="color:#c0c5ce;">
+</span><span style="color:#b48ead;">int </span><span style="color:#8fa1b3;">main</span><span style="color:#c0c5ce;">()</span><span style="color:#c0c5ce;">
+{</span><span style="color:#c0c5ce;">
+	ios::</span><span style="color:#bf616a;">sync_with_stdio</span><span style="color:#c0c5ce;">(</span><span style="color:#d08770;">0</span><span style="color:#c0c5ce;">);</span><span style="color:#c0c5ce;">
+	set&lt;</span><span style="color:#b48ead;">long long</span><span style="color:#c0c5ce;">&gt; m;</span><span style="color:#c0c5ce;">
+	hash&lt;string&gt; h;</span><span style="color:#c0c5ce;">
+	</span><span style="color:#b48ead;">int</span><span style="color:#c0c5ce;"> n;</span><span style="color:#c0c5ce;">
+	string temp;</span><span style="color:#c0c5ce;">
+	cin&gt;&gt;n;</span><span style="color:#c0c5ce;">
+	</span><span style="color:#b48ead;">while</span><span style="color:#c0c5ce;">(n--){</span><span style="color:#c0c5ce;">
+		cin&gt;&gt;temp;</span><span style="color:#c0c5ce;">
+		m.</span><span style="color:#bf616a;">insert</span><span style="color:#c0c5ce;">(</span><span style="color:#bf616a;">h</span><span style="color:#c0c5ce;">(temp));</span><span style="color:#c0c5ce;">
+	}</span><span style="color:#c0c5ce;">
+	cout&lt;&lt;m.</span><span style="color:#bf616a;">size</span><span style="color:#c0c5ce;">()&lt;&lt;endl;</span><span style="color:#c0c5ce;">
+	</span><span style="color:#b48ead;">return </span><span style="color:#d08770;">0</span><span style="color:#c0c5ce;">;</span><span style="color:#c0c5ce;">
+}</span><span style="color:#c0c5ce;">
+</span></code></pre>
+<p>因为其实3e4这个字符串数量还是比较大的，在群里聊起了碰撞的问题，然后发现还是有丶东西，索性写一篇博文分析一下。</p>
+<h2 id="san-lie-han-shu-jian-jie">散列函数简介</h2>
+<p>散列函数，也称哈希函数，是一种将任意大小数据映射到固定长度数字的单向函数。</p>
+<p>散列函数常见于密码学的目的，随着密码学渗透到计算机的方方面面，因为其一些有用的特性也被用于ACM竞赛中。</p>
+<p>通常来说，好的散列函数拥有以下几个特性：</p>
+<ol>
+<li>确定性。固定输入对应的散列值是固定的。</li>
+<li>分布均一。优秀的散列函数会使得所有值可能出现的概率尽量一致，这也导出了后面引出的一些特性。</li>
+<li>值域固定。比如<code>std::hash</code>的值域为size_t的可表示范围，SHA-1的值域为$[0,2^{160}-1]$。</li>
+</ol>
+<p>于是，用于密码学的散列函数经常有以下的特性：</p>
+<ol>
+<li>单向性。这里有两个含义，一方面来说既然任意大小的数据都被映射到固定范围的一些值上，那么必然是一个多对一的关系，这就是第一个单向的原因；第二个原因则是函数本身的算法经常会保证无法通过散列值计算原始数据可能的集合。</li>
+<li>雪崩效应。一个比特的改变，可能就会引起值的大幅度变化（按CryptoExchane的说法，是一半以上的比特）。这样就很难通过碰撞发起攻击了。</li>
+<li>抗碰撞性。这里具体又分为两种，一种为抗弱碰撞性，另一种为抗强碰撞性，分别对应第二原像攻击和碰撞攻击。
+<ol>
+<li>抗弱碰撞性。指对于某散列函数$H()$与任意给定的$x$，找到$y≠x$且$H(x)=H(y)$在计算上不可行。</li>
+<li>抗强碰撞性。值对于某散列函数$H()$而言，找到$H(x)=H(y)$且$x≠y$这样的数对在计算上不可行。</li>
+</ol>
+</li>
+<li>公开性。为了鉴别需求，常见的散列函数算法公开，这样任何能够编程的人都可以自己编程验证散列值。</li>
+</ol>
+<h2 id="acmzhong-de-san-lie-han-shu">ACM中的散列函数</h2>
+<p>这里毕竟一个是我也退役了，没碰ACM有些时日，另一个我打ACM时也没有学得很深，所以这里的举例只能拿我们讲课的课件来粗糙地分析一下了，如果有误欢迎指出。</p>
+<p>顺便ACM这比赛打过的同学就知道，不可能真写一个类似MD5这样的散列函数，ACM中的散列函数我通常用一句话概括：“又不是不能用。”</p>
+<p>对于ACM当然是够用的，用其他地方就，再商量吧~</p>
+<h3 id="zhi-jie-mo-yu-fa">直接模余法</h3>
+<p>首先对于整数来说，最简单的方式就是模余法了，这也是很多<strong>题目</strong>处理大数的方式。模余法要尽量模上一个<strong>素数</strong>，这样会使得冲突的可能性降低。</p>
+<p>但是选手在写题的时候通常不会直接模余，因为即便这样冲突降低，但是依然不小，而且会后续规避这样冲突的处理操作并不是很舒服。</p>
+<h3 id="zhuan-huan-mo-yu-fa">转换(模余)法</h3>
+<p>这里请看这个例题<a href="http://acm.hdu.edu.cn/showproblem.php?pid=1496">(</a><a href="http://acm.hdu.edu.cn/showproblem.php?pid=1496">HDOJ-1496 Equations</a><a href="http://acm.hdu.edu.cn/showproblem.php?pid=1496">)</a> </p>
+<p>题意简单，就类似“百钱买百鸡”问题。</p>
+<p>但是如果直接暴力地四重循环，那可就很嗨了……虽说一般一秒做$10^8$简单计算的确可以，但是这题的数据的确就是在超时的边缘。</p>
+<p>正确的做法就是预处理两个变量所有可能对应值的相反数，然后进行查找。</p>
+<p>但是如果直接搞，那就需要开$2×10^7$大小的数组，不仅在MLE的边缘，而且还有初始化TLE的风险。</p>
+<p>所以这里就可以用散列了。具体讨论见<a href="http://acm.hdu.edu.cn/forum/read.php?tid=3276&amp;fpage=0&amp;toread=&amp;page=2">这里</a></p>
+<p>同样的，对于一个纯字母的字符串来说，也可以进行这样的转换。就是将一个字符串视为二十六进制的数字，然后求这个数字的十进制值，因为可能会溢出，就模上一个素数如$1000000007$这样的。</p>
+<h3 id="zi-fu-chuan-hash-elfhash">字符串HASH——ELFHASH</h3>
+<p>这里直接放它的代码吧，十分简短。</p>
+<pre style="background-color:#2b303b;">
+<code><span style="color:#65737e;">// ELF Hash Function  </span><span style="color:#65737e;">
+</span><span style="color:#b48ead;">unsigned int </span><span style="color:#8fa1b3;">ELFHash</span><span style="color:#c0c5ce;">(</span><span style="color:#b48ead;">char </span><span style="color:#c0c5ce;">*</span><span style="color:#bf616a;">str</span><span style="color:#c0c5ce;">)  </span><span style="color:#c0c5ce;">
+{  </span><span style="color:#c0c5ce;">
+    </span><span style="color:#b48ead;">unsigned int</span><span style="color:#c0c5ce;"> hash = </span><span style="color:#d08770;">0</span><span style="color:#c0c5ce;">;  </span><span style="color:#c0c5ce;">
+    </span><span style="color:#b48ead;">unsigned int</span><span style="color:#c0c5ce;"> x = </span><span style="color:#d08770;">0</span><span style="color:#c0c5ce;">;  </span><span style="color:#c0c5ce;">
+  </span><span style="color:#c0c5ce;">
+    </span><span style="color:#b48ead;">while </span><span style="color:#c0c5ce;">(*str)  </span><span style="color:#c0c5ce;">
+    {  </span><span style="color:#c0c5ce;">
+        hash = (hash &lt;&lt; </span><span style="color:#d08770;">4</span><span style="color:#c0c5ce;">) + (*str++);</span><span style="color:#65737e;">//hash左移4位，把当前字符ASCII存入hash低四位。   </span><span style="color:#65737e;">
+        </span><span style="color:#b48ead;">if </span><span style="color:#c0c5ce;">((x = hash &amp; </span><span style="color:#d08770;">0xF0000000</span><span style="color:#b48ead;">L</span><span style="color:#c0c5ce;">) != </span><span style="color:#d08770;">0</span><span style="color:#c0c5ce;">)  </span><span style="color:#c0c5ce;">
+        {  </span><span style="color:#c0c5ce;">
+            </span><span style="color:#65737e;">//如果最高的四位不为0，则说明字符多余7个，现在正在存第7个字符，如果不处理，再加下一个字符时，第一个字符会被移出，因此要有如下处理。  </span><span style="color:#65737e;">
+            //该处理，如果最高位为0，就会仅仅影响5-8位，否则会影响5-31位，因为C语言使用的算数移位  </span><span style="color:#65737e;">
+            //因为1-4位刚刚存储了新加入到字符，所以不能&gt;&gt;28  </span><span style="color:#65737e;">
+</span><span style="color:#c0c5ce;">            hash ^= (x &gt;&gt; </span><span style="color:#d08770;">24</span><span style="color:#c0c5ce;">);  </span><span style="color:#c0c5ce;">
+            </span><span style="color:#65737e;">//上面这行代码并不会对X有影响，本身X和hash的高4位相同，下面这行代码&amp;~即对28-31(高4位)位清零。  </span><span style="color:#65737e;">
+</span><span style="color:#c0c5ce;">            hash &amp;= ~x;  </span><span style="color:#c0c5ce;">
+        }  </span><span style="color:#c0c5ce;">
+    }  </span><span style="color:#c0c5ce;">
+    </span><span style="color:#65737e;">//返回一个符号位为0的数，即丢弃最高位，以免函数外产生影响。(我们可以考虑，如果只有字符，符号位不可能为负)  </span><span style="color:#65737e;">
+    </span><span style="color:#b48ead;">return </span><span style="color:#c0c5ce;">(hash &amp; </span><span style="color:#d08770;">0x7FFFFFFF</span><span style="color:#c0c5ce;">);  </span><span style="color:#c0c5ce;">
+}  </span><span style="color:#c0c5ce;">
+</span></code></pre>
+<p>这个函数写起来十分简单。我把注释也复制过来了，就不多解释了。</p>
+<h2 id="san-lie-zhi-peng-zhuang-liao-zen-yao-ban">散列值碰撞了，怎么办？</h2>
+<p>扯了那么多前篇，终于到这篇博文真实目的了，不过估计会很短……</p>
+<p>既然是散列函数，就要面对这个问题，一旦发生碰撞，很多问题就出来了，这里就简单分析一下针对散列函数的几个攻击吧。同时也会分析一下在ACM中散列函数的一点使用方法。</p>
+<h3 id="qiong-ju-gong-ji">穷举攻击</h3>
+<p>对于一个理想的散列函数来说，既然满足了上面的几个特性，穷举攻击需要的次数应该就是$\frac{值域}{2}$。</p>
+<p>给你一个懂事的微笑。</p>
+<h3 id="sheng-ri-gong-ji">生日攻击</h3>
+<p>现在我们就尝试攻击散列函数的强抗碰撞性。这里以<code>std::hash</code>为例。</p>
+<p><img src="https://CSUwangj.github.io/guan-yu-san-lie-han-shu-de-yi-dian-si-kao/1527960903963.png" alt="cpp reference" /></p>
+<p>基于散列函数的几个特性来说，我们得到值域内任意值的可能性都为$\frac1{2^{32}}$。那么，在计算不同的任意$n$个字符串候，这些散列值都不冲突的可能性就是$\frac{2^{32}-1}{2^{32}}×\frac{2^{32}-2}{2^{32}}×...×\frac{2^{32}-n+1}{2^{32}}$。</p>
+<p>对于题目给的数据，使用下面Python代码可以计算得不发生冲突的概率为$0.9005311337474664$即发生错误的可能性为$0.0994688662525336$。</p>
+<pre style="background-color:#2b303b;">
+<code><span style="color:#65737e;"># a.py</span><span style="color:#65737e;">
+</span><span style="color:#c0c5ce;">a = </span><span style="color:#d08770;">1 </span><span style="color:#c0c5ce;">&lt;&lt; </span><span style="color:#d08770;">32</span><span style="color:#c0c5ce;">
+s = </span><span style="color:#d08770;">1</span><span style="color:#c0c5ce;">
+</span><span style="color:#b48ead;">for </span><span style="color:#c0c5ce;">i </span><span style="color:#b48ead;">in </span><span style="color:#96b5b4;">range</span><span style="color:#c0c5ce;">(</span><span style="color:#d08770;">0</span><span style="color:#c0c5ce;">, </span><span style="color:#d08770;">30000</span><span style="color:#c0c5ce;">):</span><span style="color:#c0c5ce;">
+	s *= (a-i)/a</span><span style="color:#c0c5ce;">
+</span><span style="color:#96b5b4;">print</span><span style="color:#c0c5ce;">(s)</span><span style="color:#c0c5ce;">
+</span><span style="color:#65737e;">#python a.py</span><span style="color:#65737e;">
+#0.9005311337474664</span><span style="color:#65737e;">
+</span></code></pre>
+<p>可见这个数字对于脸白的人来说是够了的。</p>
+<h3 id="jiao-lian-wo-lian-hei-duo-zhong-san-lie-han-shu">教练我脸黑——多重散列函数</h3>
+<p>那么我们就要考虑找路子了，这里又有两条分支了：</p>
+<ol>
+<li>既然一个散列函数不行，那我就再来一个。之前是把字母字符串视为二十六进制数，那我就加个ELFHASH。这样做的好处是发生冲突的可能性稳定下降（变为两者发生冲突的乘积），坏处是编码难度上升。</li>
+<li>加盐，加不同的盐值。但是这里要求散列函数是对块进行操作的。</li>
+</ol>
+<p>加盐，可以简单理解为在字符串前/后面加上一个字符串，这样就可以使散列值发生变化。</p>
+<p>对散列函数的要求是显而易见的，因为不论是二十六进制还是ELFHASH，只要之前字符串的散列值是同一个，那么在加盐后结果也不会发生改变。（块的大小对这里也会有影响，这里留给读者自行考虑）</p>
+<p>对于<a href="https://stackoverflow.com/questions/19411742/what-is-the-default-hash-function-used-in-c-stdunordered-map?utm_medium=organic&amp;utm_source=google_rich_qa&amp;utm_campaign=google_rich_qa">GCC</a>的<code>std::hash</code>来说，它用的是$MurmurHash Unaligned 2$，是一个分块大小为4的非密码学散列函数。</p>
+<p>考虑理想状况，我们将多个盐值对应的不同散列值作为比对的标准，我们就能在一定程度上解决冲突，这里又能分出两条线。</p>
+<h4 id="jiang-bu-tong-san-lie-zhi-fang-zai-bu-tong-rong-qi-li">将不同散列值放在不同容器里</h4>
+<p>考虑这样的比对算法</p>
+<pre style="background-color:#2b303b;">
+<code><span style="color:#65737e;">//There is a bunch of set containers named s[0]/s[1]/etc</span><span style="color:#65737e;">
+</span><span style="color:#c0c5ce;">string str;</span><span style="color:#c0c5ce;">
+cin &gt;&gt;str;</span><span style="color:#c0c5ce;">
+temp = </span><span style="color:#bf616a;">hash</span><span style="color:#c0c5ce;">(str)</span><span style="color:#c0c5ce;">
+</span><span style="color:#b48ead;">if</span><span style="color:#c0c5ce;">(!s[</span><span style="color:#d08770;">0</span><span style="color:#c0c5ce;">].</span><span style="color:#bf616a;">count</span><span style="color:#c0c5ce;">(temp)){</span><span style="color:#c0c5ce;">
+	s[</span><span style="color:#d08770;">0</span><span style="color:#c0c5ce;">].</span><span style="color:#bf616a;">insert</span><span style="color:#c0c5ce;">(temp)</span><span style="color:#c0c5ce;">
+	count++</span><span style="color:#c0c5ce;">
+}</span><span style="color:#b48ead;">else</span><span style="color:#c0c5ce;">{</span><span style="color:#c0c5ce;">
+	temp = </span><span style="color:#bf616a;">hash</span><span style="color:#c0c5ce;">(str+&quot;</span><span style="color:#a3be8c;">salt1</span><span style="color:#c0c5ce;">&quot;)</span><span style="color:#c0c5ce;">
+	</span><span style="color:#b48ead;">if</span><span style="color:#c0c5ce;">(!s[</span><span style="color:#d08770;">1</span><span style="color:#c0c5ce;">].</span><span style="color:#bf616a;">count</span><span style="color:#c0c5ce;">(temp)){</span><span style="color:#c0c5ce;">
+		s[</span><span style="color:#d08770;">1</span><span style="color:#c0c5ce;">].</span><span style="color:#bf616a;">insert</span><span style="color:#c0c5ce;">(temp)</span><span style="color:#c0c5ce;">
+		count++</span><span style="color:#c0c5ce;">
+    }</span><span style="color:#b48ead;">else</span><span style="color:#c0c5ce;">{</span><span style="color:#c0c5ce;">
+		</span><span style="color:#65737e;">//etc</span><span style="color:#65737e;">
+    </span><span style="color:#c0c5ce;">}</span><span style="color:#c0c5ce;">
+}</span><span style="color:#c0c5ce;">
+</span></code></pre>
+<p>那么可能会发生这样的问题，就是字符串s在第一次比对时和a串冲突，在第二次比对时又和b串冲突。</p>
+<p>易知对于固定数量$n$的生日攻击来说，不发生冲突的概率$p$是一定的，假设多重散列函数就像我们所想的一样工作，那么该实验可以认为是一个成功率为$1-p$的伯努利实验。</p>
+<p>在$m$重散列函数的情况下，均发生冲突的可能性是$P_0(m)=C_m^0(1-p)^m$，取这次题目的数据来说，两重散列函数发生冲突的概率为$0.009894055353564416$。</p>
+<h4 id="jiang-ge-san-lie-zhi-bao-zhuang-cheng-yi-ge-zheng-ti">将各散列值包装成一个整体</h4>
+<p>也就是说算法改为</p>
+<pre style="background-color:#2b303b;">
+<code><span style="color:#b48ead;">struct </span><span style="color:#c0c5ce;">hashv{</span><span style="color:#c0c5ce;">
+	size_t v[</span><span style="color:#d08770;">2</span><span style="color:#c0c5ce;">];</span><span style="color:#c0c5ce;">
+};</span><span style="color:#c0c5ce;">
+set&lt;hashv&gt; s;</span><span style="color:#c0c5ce;">
+</span><span style="color:#c0c5ce;">
+string str;</span><span style="color:#c0c5ce;">
+cin&gt;&gt;str;</span><span style="color:#c0c5ce;">
+hashv </span><span style="color:#8fa1b3;">temp</span><span style="color:#c0c5ce;">
+</span><span style="color:#8fa1b3;">temp</span><span style="color:#c0c5ce;">.</span><span style="color:#bf616a;">v</span><span style="color:#c0c5ce;">[</span><span style="color:#d08770;">0</span><span style="color:#c0c5ce;">] = </span><span style="color:#bf616a;">hash</span><span style="color:#c0c5ce;">(str)</span><span style="color:#c0c5ce;">
+temp.</span><span style="color:#bf616a;">v</span><span style="color:#c0c5ce;">[</span><span style="color:#d08770;">1</span><span style="color:#c0c5ce;">] = </span><span style="color:#bf616a;">hash</span><span style="color:#c0c5ce;">(str+&quot;</span><span style="color:#a3be8c;">salt</span><span style="color:#c0c5ce;">&quot;)</span><span style="color:#c0c5ce;">
+</span><span style="color:#b48ead;">if</span><span style="color:#c0c5ce;">(!s.</span><span style="color:#bf616a;">count</span><span style="color:#c0c5ce;">(temp)){</span><span style="color:#c0c5ce;">
+    s.</span><span style="color:#bf616a;">insert</span><span style="color:#c0c5ce;">(temp);</span><span style="color:#c0c5ce;">
+    count++;</span><span style="color:#c0c5ce;">
+}</span><span style="color:#c0c5ce;">
+</span></code></pre>
+<p>理想状态下，此时发生单次冲突的概率为两次散列均冲突的概率，即两者的乘积，也就是$2^{64}-2^{33}+1$</p>
+<p>利用以下python代码计算得在题设情况下，不发生冲突的可能性为$0.9999999999999999999971601954045129840219384586382661991347799758614026869784477630643202473665079505271849114917935938025327598810920608449$ ，太强辣！</p>
+<pre style="background-color:#2b303b;">
+<code><span style="color:#b48ead;">from </span><span style="color:#c0c5ce;">decimal </span><span style="color:#b48ead;">import </span><span style="color:#d08770;">*</span><span style="color:#c0c5ce;">
+a = </span><span style="color:#d08770;">1 </span><span style="color:#c0c5ce;">&lt;&lt; </span><span style="color:#d08770;">64 </span><span style="color:#c0c5ce;">- </span><span style="color:#d08770;">1</span><span style="color:#c0c5ce;">&lt;&lt;</span><span style="color:#d08770;">33 </span><span style="color:#c0c5ce;">+</span><span style="color:#d08770;">1</span><span style="color:#c0c5ce;">
+a = </span><span style="color:#bf616a;">Decimal</span><span style="color:#c0c5ce;">(</span><span style="color:#bf616a;">str</span><span style="color:#c0c5ce;">(a))</span><span style="color:#c0c5ce;">
+</span><span style="color:#96b5b4;">print</span><span style="color:#c0c5ce;">(a)</span><span style="color:#c0c5ce;">
+s = </span><span style="color:#bf616a;">Decimal</span><span style="color:#c0c5ce;">(&quot;</span><span style="color:#a3be8c;">1</span><span style="color:#c0c5ce;">&quot;)</span><span style="color:#c0c5ce;">
+</span><span style="color:#bf616a;">getcontext</span><span style="color:#c0c5ce;">().prec = </span><span style="color:#d08770;">2000</span><span style="color:#c0c5ce;">
+</span><span style="color:#b48ead;">for </span><span style="color:#c0c5ce;">i </span><span style="color:#b48ead;">in </span><span style="color:#96b5b4;">range</span><span style="color:#c0c5ce;">(</span><span style="color:#d08770;">0</span><span style="color:#c0c5ce;">, </span><span style="color:#d08770;">30000</span><span style="color:#c0c5ce;">):</span><span style="color:#c0c5ce;">
+	</span><span style="color:#b48ead;">if </span><span style="color:#c0c5ce;">not i% </span><span style="color:#d08770;">1000</span><span style="color:#c0c5ce;">:</span><span style="color:#c0c5ce;">
+		</span><span style="color:#96b5b4;">print</span><span style="color:#c0c5ce;">(i)</span><span style="color:#c0c5ce;">
+	s *= (a-</span><span style="color:#bf616a;">Decimal</span><span style="color:#c0c5ce;">(</span><span style="color:#bf616a;">str</span><span style="color:#c0c5ce;">(i)))/a</span><span style="color:#c0c5ce;">
+</span><span style="color:#96b5b4;">print</span><span style="color:#c0c5ce;">(s)</span><span style="color:#c0c5ce;">
+</span></code></pre>
+<p>可以发现，这样做以后是几何倍数降低发生碰撞的可能性了。</p>
+<p>那么只有一个考虑了，就是这个结构体打算怎么写，不过这个问题就不是我操心的啦~</p>
+<h2 id="hou-ji">后记</h2>
+<p>思考使我快乐，即便这篇文章很水嘻嘻嘻</p>
+<p>睡觉去啦~</p>
+
+  </div>
+
+        </div>
+
+        
+          <button class="sidebar-toggle" onclick="openSidebar()">O</button>
+          <aside class="sidebar" name="sidebar">
+            <div class="site-author" itemprop="author" itemtype="https://schema.org/Person">
+              
+              <img class="site-author-image" itemprop="image"
+                src="https:&#x2F;&#x2F;CSUwangj.github.io&#x2F;img&#x2F;avatar.png"
+                alt="CSUwangj" />
+              
+              <p class="site-author-name">CSUwangj</p>
+              <p class="site-author-quote">Just keep in mind that hacking is very rarely in a sequence.</p>
+            </div>
+            <div class="feed-link">
+              
+                <a rel="alternate" type="application/atom+xml" title="RSS" href="https://CSUwangj.github.io/atom.xml">
+                  RSS
+                </a>
+              
+            </div>
+            <div class="links-of-author">
+              
+                <a href="https:&#x2F;&#x2F;github.com&#x2F;CSUwangj" title="Github" class="author-link">
+                  <i class="fa fw fa-github"></i>
+                </a>
+              
+            </div>
+            <div class="links-of-blogroll">
+              
+                <a href="https:&#x2F;&#x2F;zickshen.github.io&#x2F;">zickshen</a>
+              
+            </div>
+          </aside>
+        
+
+      </main>
+
+      
+        <footer name="footer">
+          <div class="copyright">
+            <span item="copyrightYear">© 2018-2020</span>
+            <span class="author">CSUwangj</span>
+          </div>
+          <div class="powered-by">
+            Powered by <a href="https://www.getzola.org/">Zola</a> Theme <a href="https://github.com/CSUwangj/DogFood">DogFood</a>
+          </div>
+        </footer>
+      
+    </body>
+
+</html>

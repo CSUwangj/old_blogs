@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+      <!-- Enable responsiveness on mobile devices-->
+      <!-- viewport-fit=cover is to support iPhone X rounded corners and notch in landscape-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, viewport-fit=cover">
+
+      <title></title>
+
+      <!-- CSS -->
+      <link rel="stylesheet" href="https:&#x2F;&#x2F;CSUwangj.github.io&#x2F;css&#x2F;lib&#x2F;font-awesome.min.css">
+      <link rel="stylesheet" href="https:&#x2F;&#x2F;CSUwangj.github.io&#x2F;site.css">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface">
+      <script type="text/javascript" charset="utf-8" src="https:&#x2F;&#x2F;CSUwangj.github.io&#x2F;js&#x2F;sidebar.js"></script>
+
+      
+        <link rel="alternate" type="application/atom+xml" title="RSS" href="https://CSUwangj.github.io/atom.xml">
+      
+
+      
+      
+    </head>
+
+    <body>
+      
+      
+        <header name="header">
+          <div>
+            <div class="logo"><a href="https:&#x2F;&#x2F;CSUwangj.github.io">LuckyDog</a></div>
+            <nav class="menu">
+              
+                <a href="https:&#x2F;&#x2F;CSUwangj.github.io" class="nav-item-home">
+                  Home
+                </a>
+              
+                <a href="https:&#x2F;&#x2F;CSUwangj.github.io&#x2F;categories" class="nav-item-categories">
+                  Categories
+                </a>
+              
+                <a href="https:&#x2F;&#x2F;CSUwangj.github.io&#x2F;tags" class="nav-item-tags">
+                  Tags
+                </a>
+              
+                <a href="https:&#x2F;&#x2F;CSUwangj.github.io&#x2F;about" class="nav-item-about">
+                  About
+                </a>
+              
+                <a href="https:&#x2F;&#x2F;CSUwangj.github.io&#x2F;archives" class="nav-item-archives">
+                  Archives
+                </a>
+              
+            </nav>
+          </div>
+        </header>
+      
+
+      <main class="content container" name="main">
+        <div class="content-wrapper">
+          
+  <div class="post">
+    <h1 class="post-title">HIT2018新生赛部分WP</h1>
+    <span class="post-date">2018-02-03</span>
+    <p>只会写水题，要好好学习了</p>
+<span id="continue-reading"></span>
+<h2 id="baby-android">Baby Android</h2>
+<p>安卓逆向助手打开，发现就是异或，两个字符串摘一下异或一下得到flag</p>
+<p><img src="https://CSUwangj.github.io/hit2018xin-sheng-sai/snipaste20180201_181332.jpg" alt="Baby_Android" /></p>
+<h2 id="easy-xor">Easy_XOR</h2>
+<p>发现出题人拿同一个密钥加密了两个文件，而且还有一份明文，直接异或得到flag（所以感觉这个是不是没考中考点？）</p>
+<p><img src="https://CSUwangj.github.io/hit2018xin-sheng-sai/snipaste20180201_115025.jpg" alt="EASY_XOR" /></p>
+<h2 id="hitctf-2018qian-dao">HITCTF 2018签到</h2>
+<p>不会翻墙学个P的计算机呀，翻墙搜索看视频得到flag</p>
+<p><img src="https://CSUwangj.github.io/hit2018xin-sheng-sai/snipaste20180201_090539.jpg" alt="签到" /></p>
+<h2 id="baso4">BaSO4</h2>
+<p>就是base64/32混合嘛，其实这种混合的一般来说很好解，因为</p>
+<ul>
+<li>Base64中有[0-9a-zA-Z+/=]</li>
+<li>Base32中有[A-Z2-7=]</li>
+<li>Base16中有[0-9A-F]</li>
+</ul>
+<p>于是拿出以前写的脚本手动选择跑一下（等有空改成自动的）</p>
+<p><img src="https://CSUwangj.github.io/hit2018xin-sheng-sai/snipaste20180201_094323.jpg" alt="BaSO4" /></p>
+<h2 id="gong-ji-liu-liang-fen-xi">攻击流量分析</h2>
+<p>看前面就是尝试找flag未遂，一堆404，拖到最后终于看到200。</p>
+<p><img src="https://CSUwangj.github.io/hit2018xin-sheng-sai/snipaste20180201_091517.jpg" alt="攻击流量分析1" /></p>
+<p>把数据保存下来跑一边gzuncompress就好</p>
+<p>我是用在线工具搞得，所以为了复制不可见字符先base64一下咯</p>
+<p><img src="https://CSUwangj.github.io/hit2018xin-sheng-sai/snipaste20180201_093215.jpg" alt="攻击流量分析2" /></p>
+<h2 id="jian-pan-liu-liang-fen-xi">键盘流量分析</h2>
+<p>首先用命令</p>
+<pre style="background-color:#2b303b;">
+<code><span style="color:#c0c5ce;">tshark -r keyboard.pcap -T field -e usb.capdata &gt; usbdata.txt</span><span style="color:#c0c5ce;">
+</span></code></pre>
+<p>把按键数据抓出来</p>
+<p>然后发现只有中间的是8字节的键盘数据，反正也不多就干脆看着敲出来了</p>
+<p>用第三个字节查表，首字节的02表示上档键，这个不知道也可以猜出来</p>
+<p><img src="https://CSUwangj.github.io/hit2018xin-sheng-sai/snipaste20180201_105518.jpg" alt="键盘流量分析" /></p>
+<h2 id="use-your-ida-shi-jian-dao-yi-hou-tu-ran-xiang-dao">use_your_ida（时间到以后突然想到）</h2>
+<p>时间到以后群友一说距离视图突然反应过来……</p>
+<p>给大佬递IDA.jpg……</p>
+<p><img src="https://CSUwangj.github.io/hit2018xin-sheng-sai/snipaste20180202_222509.jpg" alt="use_your_ida" /></p>
+<p>算是一种隐写吧，大概</p>
+
+  </div>
+
+        </div>
+
+        
+          <button class="sidebar-toggle" onclick="openSidebar()">O</button>
+          <aside class="sidebar" name="sidebar">
+            <div class="site-author" itemprop="author" itemtype="https://schema.org/Person">
+              
+              <img class="site-author-image" itemprop="image"
+                src="https:&#x2F;&#x2F;CSUwangj.github.io&#x2F;img&#x2F;avatar.png"
+                alt="CSUwangj" />
+              
+              <p class="site-author-name">CSUwangj</p>
+              <p class="site-author-quote">Just keep in mind that hacking is very rarely in a sequence.</p>
+            </div>
+            <div class="feed-link">
+              
+                <a rel="alternate" type="application/atom+xml" title="RSS" href="https://CSUwangj.github.io/atom.xml">
+                  RSS
+                </a>
+              
+            </div>
+            <div class="links-of-author">
+              
+                <a href="https:&#x2F;&#x2F;github.com&#x2F;CSUwangj" title="Github" class="author-link">
+                  <i class="fa fw fa-github"></i>
+                </a>
+              
+            </div>
+            <div class="links-of-blogroll">
+              
+                <a href="https:&#x2F;&#x2F;zickshen.github.io&#x2F;">zickshen</a>
+              
+            </div>
+          </aside>
+        
+
+      </main>
+
+      
+        <footer name="footer">
+          <div class="copyright">
+            <span item="copyrightYear">© 2018-2020</span>
+            <span class="author">CSUwangj</span>
+          </div>
+          <div class="powered-by">
+            Powered by <a href="https://www.getzola.org/">Zola</a> Theme <a href="https://github.com/CSUwangj/DogFood">DogFood</a>
+          </div>
+        </footer>
+      
+    </body>
+
+</html>
